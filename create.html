@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create Your Invitation — Live Editor | InviteHub</title>
+<meta name="description" content="Build a digital invitation in five steps: choose the event, add your details, upload photos, pick colours and fonts, then preview it live. Everything stays in your browser — nothing is uploaded.">
+<meta name="keywords" content="create invitation online, invitation maker, custom wedding invite, birthday invitation editor, digital invite builder, free invitation creator">
+<meta name="theme-color" content="#FDFAFB">
+<link rel="canonical" href="https://invitehub.example.com/create.html">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InviteHub">
+<meta property="og:title" content="Create Your Invitation — Live Editor | InviteHub">
+<meta property="og:description" content="Five steps from blank card to shareable invitation, with a live preview beside every field.">
+<meta property="og:url" content="https://invitehub.example.com/create.html">
+<meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Create Your Invitation — Live Editor | InviteHub">
+<meta name="twitter:description" content="Five steps from blank card to shareable invitation.">
+<meta name="twitter:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo/invitehub-mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap"></noscript>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('invitehub:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
+
+<script src="js/main.js" defer></script>
+<script src="js/templates.js" defer></script>
+<script src="js/countdown.js" defer></script>
+<script src="js/preview.js" defer></script>
+<script src="js/share.js" defer></script>
+<script src="js/link.js" defer></script>
+<script src="js/export.js" defer></script>
+<script src="js/create.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="nav__backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container container--wide" aria-label="Main navigation">
+    <a class="nav__brand" href="index.html" aria-label="InviteHub home">
+      <img src="images/logo/invitehub-mark.svg" alt="" width="38" height="38" data-eager>
+      <span class="nav__brand-text">
+        <span class="nav__brand-name">Invite<span>Hub</span></span>
+        <span class="nav__brand-tag">Digital Invitations</span>
+      </span>
+    </a>
+    <ul class="nav__list" id="primary-nav">
+      <li class="nav__drawer-close">
+        <button class="drawer-close" type="button" data-nav-close aria-label="Close navigation menu">
+          <i data-icon="close" data-icon-size="20"></i>
+        </button>
+      </li>
+      <li><a class="nav__link" href="index.html">Home</a></li>
+      <li><a class="nav__link" href="templates.html">Invitations</a></li>
+      <li><a class="nav__link" href="categories.html">Categories</a></li>
+      <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+      <li><a class="nav__link" href="index.html#how-it-works">How It Works</a></li>
+      <li><a class="nav__link" href="about.html">About</a></li>
+      <li><a class="nav__link" href="contact.html">Contact</a></li>
+      <li class="nav__drawer-cta">
+        <a class="btn btn--primary btn--block" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+        <a class="btn btn--secondary btn--block" href="faq.html"><i data-icon="message-circle" data-icon-size="18"></i><span>FAQ</span></a>
+      </li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn btn--primary nav__cta" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main" data-create-page>
+
+  <section class="page-hero" style="padding-bottom:var(--space-5)">
+    <div class="container container--wide">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Create Invitation</li>
+      </ol>
+      <h1 style="font-size:var(--step-4)">Create Your Invitation</h1>
+      <p>Fill in the left, watch the card on the right. Your draft is saved in this browser as you go — you can close the tab and come back to it.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container container--wide">
+
+      <div class="notice notice--info" style="margin-bottom:var(--space-6)">
+        <i data-icon="info" data-icon-size="20"></i>
+        <div>
+          <strong>Demonstration mode</strong>
+          This build runs entirely in your browser. Photos are read locally and never uploaded, drafts live in this browser's storage only, and no payment is taken.
+        </div>
+      </div>
+
+      <!-- Stepper -->
+      <nav class="stepper" aria-label="Invitation steps">
+        <button class="step is-active" type="button" data-step-btn="1" aria-current="step">
+          <span class="step__num"><span class="num">1</span><i data-icon="check" data-icon-size="17"></i></span>
+          <span class="step__text"><b>Event</b><small>What are you hosting?</small></span>
+        </button>
+        <button class="step" type="button" data-step-btn="2" disabled>
+          <span class="step__num"><span class="num">2</span><i data-icon="check" data-icon-size="17"></i></span>
+          <span class="step__text"><b>Details</b><small>Names, date, venue</small></span>
+        </button>
+        <button class="step" type="button" data-step-btn="3" disabled>
+          <span class="step__num"><span class="num">3</span><i data-icon="check" data-icon-size="17"></i></span>
+          <span class="step__text"><b>Media</b><small>Photos &amp; music</small></span>
+        </button>
+        <button class="step" type="button" data-step-btn="4" disabled>
+          <span class="step__num"><span class="num">4</span><i data-icon="check" data-icon-size="17"></i></span>
+          <span class="step__text"><b>Design</b><small>Template &amp; colours</small></span>
+        </button>
+        <button class="step" type="button" data-step-btn="5" disabled>
+          <span class="step__num"><span class="num">5</span><i data-icon="check" data-icon-size="17"></i></span>
+          <span class="step__text"><b>Payment</b><small>Choose a plan</small></span>
+        </button>
+        <button class="step" type="button" data-step-btn="6" disabled>
+          <span class="step__num"><span class="num">6</span><i data-icon="check" data-icon-size="17"></i></span>
+          <span class="step__text"><b>Done</b><small>Link &amp; files</small></span>
+        </button>
+      </nav>
+
+      <div class="progress-track" style="margin-bottom:var(--space-6)">
+        <div class="progress-track__fill" data-step-progress style="width:0%"></div>
+      </div>
+      <p class="sr-only" data-step-live aria-live="polite">Step 1 of 6</p>
+
+      <div class="create-layout">
+
+        <!-- ===================== FORM COLUMN ===================== -->
+        <form class="panel" data-create-form novalidate>
+
+          <!-- STEP 1 -->
+          <section class="wizard-panel is-active" data-step-panel="1" aria-labelledby="step1-title">
+            <h2 id="step1-title" style="font-size:var(--step-2)">What are you celebrating?</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Pick the occasion. The wording, the layout and the suggested templates all change to match it.</p>
+            <div class="option-grid" data-event-tiles role="radiogroup" aria-label="Event type"></div>
+          </section>
+
+          <!-- STEP 2 -->
+          <section class="wizard-panel" data-step-panel="2" aria-labelledby="step2-title" hidden>
+            <h2 id="step2-title" style="font-size:var(--step-2)">Event details</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Only the date and venue are required — everything else is optional and can be left blank.</p>
+
+            <div class="form-grid">
+              <div class="field field--full">
+                <label class="field__label" for="f-title">Event title <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-title" name="title" type="text" required data-label="Event title" placeholder="e.g. The Wedding Celebration" autocomplete="off">
+                <p class="field__hint">Shown in small caps above the names.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-host">Host name</label>
+                <input class="input" id="f-host" name="hostName" type="text" data-label="Host name" placeholder="e.g. Mr. &amp; Mrs. Suresh Kumar" autocomplete="off">
+                <p class="field__hint">Usually the parents or the organising family.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-groom">Groom’s name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-groom" name="groomName" type="text" required data-label="Groom’s name" placeholder="e.g. Rahul" autocomplete="off">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-bride">Bride’s name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-bride" name="brideName" type="text" required data-label="Bride’s name" placeholder="e.g. Priya" autocomplete="off">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field field--full" hidden>
+                <label class="field__label" for="f-person">Birthday person <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-person" name="personName" type="text" required data-label="Name" placeholder="e.g. Aarav" autocomplete="off">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-date">Date <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-date" name="date" type="date" required data-label="Date">
+                <p class="field__hint">Drives the countdown timer.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-time">Time</label>
+                <input class="input" id="f-time" name="time" type="time" data-label="Time">
+                <p class="field__hint">Leave blank for an all-day event.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-venue">Venue <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="f-venue" name="venue" type="text" required data-label="Venue" placeholder="e.g. Grand Palace Hall" autocomplete="off">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-address">Full address</label>
+                <textarea class="textarea" id="f-address" name="address" rows="2" data-label="Address" placeholder="Street, area, city, PIN code" style="min-height:80px"></textarea>
+                <p class="field__hint">Used for the Directions button when no maps link is given.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-maps">Google Maps URL</label>
+                <input class="input" id="f-maps" name="mapsUrl" type="url" data-label="Google Maps URL" placeholder="https://maps.app.goo.gl/…" autocomplete="off">
+                <p class="field__hint">Open the venue in Google Maps, tap Share, then paste the link here.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-phone">Contact number</label>
+                <input class="input" id="f-phone" name="phone" type="tel" data-label="Contact number" placeholder="+91 98765 43210" autocomplete="tel">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-email">Contact email</label>
+                <input class="input" id="f-email" name="email" type="email" data-label="Contact email" placeholder="you@example.com" autocomplete="email">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-message">Invitation message</label>
+                <textarea class="textarea" id="f-message" name="message" rows="4" data-label="Invitation message" placeholder="Request the pleasure of your company as we begin our life together…"></textarea>
+                <p class="field__hint">Two or three warm sentences work best.</p>
+                <p class="field__error" role="alert"></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 3 -->
+          <section class="wizard-panel" data-step-panel="3" aria-labelledby="step3-title" hidden>
+            <h2 id="step3-title" style="font-size:var(--step-2)">Photos &amp; music</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Images are read straight from your device and shown in the preview. They never leave this browser.</p>
+
+            <div class="stack">
+              <div class="field">
+                <span class="field__label">Main photo</span>
+                <div class="dropzone" data-drop-photo tabindex="0" role="button" aria-label="Choose a main photo">
+                  <i data-icon="upload" data-icon-size="34"></i>
+                  <strong>Drop a photo here or click to browse</strong>
+                  <small>JPG, PNG or WebP · up to 8 MB · shown as a circle on the card</small>
+                  <input type="file" accept="image/*">
+                </div>
+                <div class="thumb-grid" data-preview-slot></div>
+              </div>
+
+              <div class="field">
+                <span class="field__label">Background image</span>
+                <div class="dropzone" data-drop-background tabindex="0" role="button" aria-label="Choose a background image">
+                  <i data-icon="image" data-icon-size="34"></i>
+                  <strong>Drop a background here or click to browse</strong>
+                  <small>Sits behind a soft tint so your text stays readable</small>
+                  <input type="file" accept="image/*">
+                </div>
+                <div class="thumb-grid" data-preview-slot></div>
+              </div>
+
+              <div class="field">
+                <span class="field__label">Photo gallery <span class="badge">up to 6</span></span>
+                <div class="dropzone" data-drop-gallery tabindex="0" role="button" aria-label="Choose gallery photos">
+                  <i data-icon="layers" data-icon-size="34"></i>
+                  <strong>Drop up to six photos here or click to browse</strong>
+                  <small>Displayed as a neat grid inside the invitation</small>
+                  <input type="file" accept="image/*" multiple>
+                </div>
+                <div class="thumb-grid" data-gallery-thumbs></div>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-music">Background music</label>
+                <select class="select" id="f-music" name="music">
+                  <option value="none">No music</option>
+                  <option value="Soft Piano">Soft Piano — gentle and classic</option>
+                  <option value="Shehnai">Shehnai — traditional wedding</option>
+                  <option value="Acoustic Guitar">Acoustic Guitar — warm and modern</option>
+                  <option value="Celebration Beat">Celebration Beat — upbeat party</option>
+                  <option value="Temple Bells">Temple Bells — devotional</option>
+                </select>
+                <p class="field__hint">Playback arrives with the hosted version. For now the choice is recorded on the card.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 4 -->
+          <section class="wizard-panel" data-step-panel="4" aria-labelledby="step4-title" hidden>
+            <h2 id="step4-title" style="font-size:var(--step-2)">Design</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Start from a template, then change any colour or font you like. Every change shows up instantly on the right.</p>
+
+            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-4)">Template</h3>
+            <div class="option-grid" data-template-picker role="radiogroup" aria-label="Template"></div>
+
+            <h3 style="font-size:var(--step-1);margin:var(--space-7) 0 var(--space-4)">Colour palette</h3>
+            <div class="swatch-row" data-color-presets role="group" aria-label="Colour presets"></div>
+
+            <div class="form-grid" style="margin-top:var(--space-5)">
+              <div class="field">
+                <label class="field__label" for="c-primary">Primary colour</label>
+                <input id="c-primary" type="color" data-color="primary" value="#8B2F58">
+                <p class="field__hint">Names and headings.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-secondary">Secondary colour</label>
+                <input id="c-secondary" type="color" data-color="secondary" value="#B98A2E">
+                <p class="field__hint">Ornaments and dividers.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-bg1">Background — top</label>
+                <input id="c-bg1" type="color" data-color="bg1" value="#FDF0F4">
+                <p class="field__hint">Body text adjusts automatically for contrast.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="c-bg2">Background — bottom</label>
+                <input id="c-bg2" type="color" data-color="bg2" value="#F6D9E4">
+                <p class="field__hint">Creates the soft gradient.</p>
+              </div>
+            </div>
+
+            <p><button class="btn btn--ghost btn--sm" type="button" data-reset-colors><i data-icon="rotate-ccw" data-icon-size="16"></i><span>Reset to template colours</span></button></p>
+
+            <h3 style="font-size:var(--step-1);margin:var(--space-7) 0 var(--space-4)">Typography &amp; motion</h3>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="f-font">Heading font</label>
+                <select class="select" id="f-font" name="font">
+                  <option value="playfair">Playfair Display — classic serif</option>
+                  <option value="cormorant">Cormorant Garamond — refined serif</option>
+                  <option value="dmsans">DM Sans — clean modern sans</option>
+                  <option value="greatvibes">Great Vibes — flowing script</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-animation">Entrance animation</label>
+                <select class="select" id="f-animation" name="animation">
+                  <option value="fade">Fade in — subtle</option>
+                  <option value="pop">Pop in — playful</option>
+                  <option value="none">None</option>
+                </select>
+                <p class="field__hint">Respects each guest's reduced-motion setting.</p>
+              </div>
+            </div>
+
+            <h3 style="font-size:var(--step-1);margin:var(--space-7) 0 var(--space-4)">Sections to include</h3>
+            <div class="option-grid">
+              <label class="option-tile"><input type="checkbox" name="showCountdown" checked><span class="option-tile__box"><i data-icon="clock" data-icon-size="28"></i><span>Countdown</span><small>Live timer</small></span></label>
+              <label class="option-tile"><input type="checkbox" name="showMaps" checked><span class="option-tile__box"><i data-icon="map-pin" data-icon-size="28"></i><span>Directions</span><small>Google Maps</small></span></label>
+              <label class="option-tile"><input type="checkbox" name="showRsvp" checked><span class="option-tile__box"><i data-icon="user-check" data-icon-size="28"></i><span>RSVP</span><small>Guest replies</small></span></label>
+              <label class="option-tile"><input type="checkbox" name="showGallery" checked><span class="option-tile__box"><i data-icon="image" data-icon-size="28"></i><span>Gallery</span><small>Your photos</small></span></label>
+            </div>
+          </section>
+
+          <!-- STEP 5 — Payment (test mode: selecting a plan charges nothing) -->
+          <section class="wizard-panel" data-step-panel="5" aria-labelledby="step5-title" hidden>
+            <h2 id="step5-title" style="font-size:var(--step-2)">Payment</h2>
+
+            <h3 style="font-size:var(--step-1);margin:var(--space-5) 0 var(--space-2)">Optional — keep it online for longer</h3>
+            <p class="muted" style="font-size:var(--step--1);margin-bottom:var(--space-5)">
+              Your page above is already made and yours to keep, at no cost. These plans are only for when
+              you would like us to <em>host</em> it at a permanent link instead.<br>
+              <strong>Currently selected: <span data-plan-summary>7-day plan · ₹50</span></strong>
+            </p>
+
+            <div class="pricing-grid">
+              <article class="plan" data-plan-card="1"><div class="plan__duration">1 Day</div><div class="plan__price"><span class="cur">₹</span><span class="amt">10</span></div><p class="plan__per">Same-day party</p><button class="btn btn--secondary btn--block" type="button" data-plan-pick="1" data-plan-price="10">Select</button></article>
+              <article class="plan" data-plan-card="7"><div class="plan__duration">7 Days</div><div class="plan__price"><span class="cur">₹</span><span class="amt">50</span></div><p class="plan__per">A week of reminders</p><button class="btn btn--secondary btn--block" type="button" data-plan-pick="7" data-plan-price="50">Select</button></article>
+              <article class="plan" data-plan-card="30"><div class="plan__duration">30 Days</div><div class="plan__price"><span class="cur">₹</span><span class="amt">180</span></div><p class="plan__per">Wedding-season favourite</p><button class="btn btn--secondary btn--block" type="button" data-plan-pick="30" data-plan-price="180">Select</button></article>
+              <article class="plan" data-plan-card="365"><div class="plan__duration">365 Days</div><div class="plan__price"><span class="cur">₹</span><span class="amt">999</span></div><p class="plan__per">A full year</p><button class="btn btn--secondary btn--block" type="button" data-plan-pick="365" data-plan-price="999">Select</button></article>
+            </div>
+
+            <p class="center" style="margin-top:var(--space-5)">
+              <a class="btn btn--ghost btn--sm" href="pricing.html"><span>Compare all seven durations</span><i data-icon="arrow-right" data-icon-size="16"></i></a>
+            </p>
+
+            <div class="notice notice--warn" style="margin-top:var(--space-6)">
+              <i data-icon="credit-card" data-icon-size="20"></i>
+              <div><strong>Testing stage — nothing is charged</strong>“Make Me Payment” does not open a payment gateway or request any card details. It simply saves your invitation files and takes you to the finished page.</div>
+            </div>
+
+          </section>
+
+          <!-- STEP 6 — saved, with the link, sharing and the file itself -->
+          <section class="wizard-panel" data-step-panel="6" aria-labelledby="step6-title" hidden>
+            <h2 id="step6-title" style="font-size:var(--step-2)">Done — and nothing to pay.</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Your page has been written to <code>invitation_card/</code> and is ready to open, print or send. Below are the link your guests would see, the QR code for a printed card, and the file itself.</p>
+
+            <div class="link-box">
+              <code data-share-link>https://invitehub.example.com/i/my-invitation</code>
+              <button class="btn btn--primary btn--sm" type="button" data-share="copy"><i data-icon="copy" data-icon-size="16"></i><span>Copy Link</span></button>
+            </div>
+
+            <div class="share-buttons" style="margin-bottom:var(--space-6)">
+              <button class="share-btn share-btn--whatsapp" type="button" data-share="whatsapp"><i data-icon="whatsapp" data-icon-size="18"></i><span>WhatsApp</span></button>
+              <button class="share-btn share-btn--facebook" type="button" data-share="facebook"><i data-icon="facebook" data-icon-size="18"></i><span>Facebook</span></button>
+              <button class="share-btn share-btn--telegram" type="button" data-share="telegram"><i data-icon="telegram" data-icon-size="18"></i><span>Telegram</span></button>
+              <button class="share-btn share-btn--email" type="button" data-share="email"><i data-icon="mail" data-icon-size="18"></i><span>Email</span></button>
+              <button class="share-btn share-btn--qr" type="button" data-share="qr"><i data-icon="qr-code" data-icon-size="18"></i><span>QR Code</span></button>
+              <button class="share-btn" type="button" data-share="native"><i data-icon="share" data-icon-size="18"></i><span>More…</span></button>
+            </div>
+
+            <div class="qr-holder" data-create-qr style="width:max-content;margin-bottom:var(--space-6)" aria-label="QR code for your invitation link"></div>
+
+            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Your invitation page</h3>
+            <div class="notice" data-export-box style="margin-bottom:var(--space-6)">
+              <i data-icon="file-text" data-icon-size="20"></i>
+              <div>
+                <strong data-export-title>How this link works</strong>
+                <ul class="preview-specs" data-card-files style="margin:var(--space-3) 0 0"></ul>
+                <div class="btn-group" style="margin-top:var(--space-4)">
+                  <a class="btn btn--primary" data-invite-open href="#" target="_blank" rel="noopener"><i data-icon="external-link" data-icon-size="18"></i><span>Open it as a guest sees it</span></a>
+                  <button class="btn btn--ghost btn--sm" type="button" data-export-download><i data-icon="download" data-icon-size="16"></i><span>Download .html</span></button>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Everything on your card</h3>
+            <table class="spec-table">
+              <tbody data-card-summary></tbody>
+            </table>
+          </section>
+
+          <!-- Wizard navigation -->
+          <div class="wizard-nav">
+            <button class="btn btn--ghost" type="button" data-step-prev hidden><i data-icon="arrow-left" data-icon-size="18"></i><span>Back</span></button>
+            <button class="btn btn--primary btn--lg" type="button" data-step-next><span>Continue</span><i data-icon="arrow-right" data-icon-size="19"></i></button>
+          </div>
+        </form>
+
+        <!-- ===================== PREVIEW COLUMN ===================== -->
+        <aside class="create-preview" aria-label="Live invitation preview">
+          <div class="preview-toolbar">
+            <span class="preview-toolbar__label">Live preview</span>
+            <div class="device-switch" role="group" aria-label="Preview device">
+              <button type="button" data-preview-device="mobile" aria-pressed="true" aria-label="Preview on mobile" title="Mobile"><i data-icon="smartphone" data-icon-size="17"></i></button>
+              <button type="button" data-preview-device="desktop" aria-pressed="false" aria-label="Preview on desktop" title="Desktop"><i data-icon="monitor" data-icon-size="17"></i></button>
+            </div>
+          </div>
+
+          <div class="preview-stage" data-device="mobile">
+            <div data-create-preview></div>
+          </div>
+
+          <p class="muted center" style="font-size:.76rem;margin-top:var(--space-3)" data-draft-stamp>Draft saves automatically in this browser</p>
+
+          <div class="btn-group" style="margin-top:var(--space-4);justify-content:center">
+            <button class="btn btn--ghost btn--sm" type="button" data-draft-print><i data-icon="download" data-icon-size="16"></i><span>Print / Save PDF</span></button>
+            <button class="btn btn--ghost btn--sm" type="button" data-draft-reset><i data-icon="trash" data-icon-size="16"></i><span>Start over</span></button>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <noscript>
+    <div class="container" style="padding-bottom:var(--space-8)">
+      <div class="notice notice--warn">
+        <i data-icon="alert-circle" data-icon-size="20"></i>
+        <div><strong>JavaScript is required for the editor</strong>The live invitation builder needs JavaScript. You can still <a href="templates.html">browse templates</a> and read every other page without it.</div>
+      </div>
+    </div>
+  </noscript>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-brand__logo" href="index.html">
+          <img src="images/logo/invitehub-mark.svg" alt="" width="40" height="40" loading="lazy">
+          <span>Invite<em>Hub</em></span>
+        </a>
+        <p>Beautiful digital invitations for every special moment.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteHub on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
+          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteHub on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
+          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteHub on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
+          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteHub on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
+          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteHub on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
+      <div class="footer-col"><h3>Learn</h3><ul><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div class="footer-col"><h3>Company</h3><ul><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> InviteHub. All rights reserved.</p>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top"><i data-icon="arrow-up" data-icon-size="21"></i></button>
+
+</body>
+</html>

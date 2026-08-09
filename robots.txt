@@ -1,0 +1,12 @@
+# InviteHub — robots.txt
+# Replace the Sitemap host below with your own GitHub Pages URL, e.g.
+# https://username.github.io/InviteHub/sitemap.xml
+
+User-agent: *
+Allow: /
+
+# Nothing here is private, but there is no value in indexing raw assets.
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://invitehub.example.com/sitemap.xml

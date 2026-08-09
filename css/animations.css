@@ -1,0 +1,282 @@
+/* ==========================================================================
+   InviteHub — Animations
+   Keyframes, scroll-reveal utilities, decorative motion.
+   Every effect here degrades to "no motion" under prefers-reduced-motion.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Keyframes
+   -------------------------------------------------------------------------- */
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-slide-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes fade-slide-left {
+  from { opacity: 0; transform: translateX(-24px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes pop-in {
+  0%   { opacity: 0; transform: scale(.9); }
+  70%  { transform: scale(1.02); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0) rotate(var(--rot, 0deg)); }
+  50%      { transform: translateY(-16px) rotate(var(--rot, 0deg)); }
+}
+
+@keyframes float-y-soft {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-9px); }
+}
+
+@keyframes orb-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(24px, -18px) scale(1.07); }
+  66%      { transform: translate(-18px, 14px) scale(.95); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -180% 0; }
+  100% { background-position: 180% 0; }
+}
+
+@keyframes gradient-pan {
+  0%, 100% { background-position: 0% 50%; }
+  50%      { background-position: 100% 50%; }
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 45%, transparent); }
+  70%  { box-shadow: 0 0 0 14px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+@keyframes toast-in {
+  from { opacity: 0; transform: translateX(28px) scale(.96); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes toast-out {
+  to { opacity: 0; transform: translateX(28px) scale(.96); }
+}
+
+@keyframes tick-flip {
+  0%   { transform: translateY(-38%); opacity: 0; }
+  100% { transform: none; opacity: 1; }
+}
+
+@keyframes confetti-fall {
+  0%   { transform: translateY(-14vh) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  100% { transform: translateY(104vh) rotate(680deg); opacity: 0; }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: .25; transform: scale(.8); }
+  50%      { opacity: 1;   transform: scale(1.15); }
+}
+
+/* --------------------------------------------------------------------------
+   2. Scroll reveal
+   Elements start hidden only once JS confirms it can observe them
+   (the .js-reveal-ready class on <html> is set by main.js), so users
+   without JS always see full content.
+   -------------------------------------------------------------------------- */
+
+.js-reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 620ms var(--ease-out),
+    transform 620ms var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.js-reveal-ready [data-reveal="left"]  { transform: translateX(-30px); }
+.js-reveal-ready [data-reveal="right"] { transform: translateX(30px); }
+.js-reveal-ready [data-reveal="zoom"]  { transform: scale(.94); }
+.js-reveal-ready [data-reveal="fade"]  { transform: none; }
+
+.js-reveal-ready [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}
+
+/* Staggered children: set --reveal-delay per index in markup or via JS */
+[data-reveal-group] > * { --reveal-delay: calc(var(--i, 0) * 70ms); }
+
+/* --------------------------------------------------------------------------
+   3. Decorative motion
+   -------------------------------------------------------------------------- */
+
+.hero__phone { animation: float-y-soft 7s var(--ease) infinite; }
+
+.hero__float {
+  animation: float-y 8s var(--ease) infinite;
+  transition: transform var(--t-slow) var(--ease), box-shadow var(--t-slow) var(--ease);
+}
+.hero__float--1 { --rot: -7deg;  animation-duration: 8.5s; animation-delay: -.4s; }
+.hero__float--2 { --rot:  6deg;  animation-duration: 7.2s; animation-delay: -2.1s; }
+.hero__float--3 { --rot:  8deg;  animation-duration: 9.4s; animation-delay: -3.4s; }
+.hero__float--4 { --rot: -5deg;  animation-duration: 8s;   animation-delay: -1.2s; }
+.hero__float:hover { animation-play-state: paused; transform: translateY(-8px) rotate(0deg) scale(1.05); box-shadow: var(--shadow-xl); }
+
+.hero__orb { animation: orb-drift 18s ease-in-out infinite; }
+.hero__orb--b { animation-duration: 22s; animation-direction: reverse; }
+
+.animate-float { animation: float-y-soft 6s var(--ease) infinite; }
+.animate-fade-in { animation: fade-in var(--t-slow) var(--ease) both; }
+.animate-pop { animation: pop-in 420ms var(--ease-out) both; }
+.animate-spin { animation: spin 1s linear infinite; }
+.animate-pulse-ring { animation: pulse-ring 2.4s var(--ease) infinite; }
+
+/* Gradient text/background that slowly pans */
+.animate-gradient {
+  background-size: 220% 220%;
+  animation: gradient-pan 9s var(--ease) infinite;
+}
+
+/* Skeleton shimmer for loading placeholders */
+.skeleton,
+.skeleton-card__media,
+.skeleton-card__line {
+  background: linear-gradient(
+    100deg,
+    var(--surface-2) 26%,
+    color-mix(in srgb, var(--fg-faint) 16%, var(--surface-2)) 42%,
+    var(--surface-2) 58%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+/* Countdown digits swap in with a subtle flip */
+.cd-value.is-ticking { animation: tick-flip 380ms var(--ease-out); }
+
+/* Sparkles used as decorative accents around headings */
+.sparkle { animation: sparkle 2.6s var(--ease) infinite; transform-origin: center; }
+.sparkle--2 { animation-delay: .7s; }
+.sparkle--3 { animation-delay: 1.4s; }
+
+/* Confetti burst layer (created by JS on successful actions) */
+.confetti-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  pointer-events: none;
+  overflow: hidden;
+}
+.confetti-piece {
+  position: absolute;
+  top: 0;
+  width: 9px;
+  height: 15px;
+  border-radius: 2px;
+  animation: confetti-fall var(--dur, 2.6s) linear var(--delay, 0s) forwards;
+}
+
+/* Nav links get an animated underline on hover */
+.nav__link { position: relative; }
+.nav__link::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  bottom: 4px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--grad-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t-base) var(--ease);
+}
+.nav__link:hover::after { transform: scaleX(1); }
+.nav__link[aria-current="page"]::after { transform: scaleX(1); }
+
+/* Card media parallax-ish lift already handled in style.css; add sheen sweep */
+.template-card__media::after,
+.category-card__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, .34) 50%, transparent 62%);
+  transform: translateX(-110%);
+  transition: transform 900ms var(--ease-out);
+  pointer-events: none;
+  z-index: 1;
+}
+.template-card:hover .template-card__media::after,
+.category-card:hover .category-card__media::after { transform: translateX(110%); }
+
+/* Buttons ripple-lite: pressed feedback */
+.btn::after,
+.chip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0;
+  transition: opacity var(--t-fast) var(--ease);
+  pointer-events: none;
+}
+.btn, .chip { position: relative; overflow: hidden; }
+.btn:active::after, .chip:active::after { opacity: .1; }
+
+/* Page-level entrance for main content */
+.page-enter { animation: fade-slide-in 520ms var(--ease-out) both; }
+
+/* --------------------------------------------------------------------------
+   4. Reduced motion
+   -------------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .js-reveal-ready [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .hero__phone,
+  .hero__float,
+  .hero__orb,
+  .animate-float,
+  .sparkle { animation: none !important; }
+
+  .confetti-layer { display: none !important; }
+
+  .template-card__media::after,
+  .category-card__media::after { display: none; }
+}
+
+/* Users who explicitly ask for less motion via the in-app toggle */
+[data-motion="off"] *,
+[data-motion="off"] *::before,
+[data-motion="off"] *::after {
+  animation: none !important;
+  transition-duration: .001ms !important;
+}

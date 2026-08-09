@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Template Preview | InviteHub</title>
+<meta name="description" content="Preview any InviteHub invitation template at full size — on mobile and desktop, with zoom and full screen — before you personalise it with your own details.">
+<meta name="keywords" content="invitation preview, template preview, e-invite demo, wedding card preview, digital invitation example">
+<meta name="theme-color" content="#FDFAFB">
+<link rel="canonical" href="https://invitehub.example.com/preview.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="InviteHub">
+<meta property="og:title" content="Template Preview | InviteHub">
+<meta property="og:description" content="See exactly how your invitation will look to guests before you personalise it.">
+<meta property="og:url" content="https://invitehub.example.com/preview.html">
+<meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Template Preview | InviteHub">
+<meta name="twitter:description" content="See exactly how your invitation will look to guests.">
+<meta name="twitter:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo/invitehub-mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap"></noscript>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('invitehub:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
+
+<script src="js/main.js" defer></script>
+<script src="js/templates.js" defer></script>
+<script src="js/countdown.js" defer></script>
+<script src="js/preview.js" defer></script>
+<script src="js/share.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="nav__backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container container--wide" aria-label="Main navigation">
+    <a class="nav__brand" href="index.html" aria-label="InviteHub home">
+      <img src="images/logo/invitehub-mark.svg" alt="" width="38" height="38" data-eager>
+      <span class="nav__brand-text">
+        <span class="nav__brand-name">Invite<span>Hub</span></span>
+        <span class="nav__brand-tag">Digital Invitations</span>
+      </span>
+    </a>
+    <ul class="nav__list" id="primary-nav">
+      <li class="nav__drawer-close">
+        <button class="drawer-close" type="button" data-nav-close aria-label="Close navigation menu">
+          <i data-icon="close" data-icon-size="20"></i>
+        </button>
+      </li>
+      <li><a class="nav__link" href="index.html">Home</a></li>
+      <li><a class="nav__link" href="templates.html">Invitations</a></li>
+      <li><a class="nav__link" href="categories.html">Categories</a></li>
+      <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+      <li><a class="nav__link" href="index.html#how-it-works">How It Works</a></li>
+      <li><a class="nav__link" href="about.html">About</a></li>
+      <li><a class="nav__link" href="contact.html">Contact</a></li>
+      <li class="nav__drawer-cta">
+        <a class="btn btn--primary btn--block" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+        <a class="btn btn--secondary btn--block" href="faq.html"><i data-icon="message-circle" data-icon-size="18"></i><span>FAQ</span></a>
+      </li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn btn--primary nav__cta" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main" data-preview-page>
+
+  <section class="page-hero" style="padding-bottom:var(--space-5)">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="templates.html">Templates</a></li>
+        <li data-preview-crumb></li>
+      </ol>
+      <h1 style="font-size:var(--step-4)" data-preview-name>Template preview</h1>
+      <p class="muted" data-preview-category style="margin-top:var(--space-2)"></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container container--wide">
+      <div class="preview-layout">
+
+        <!-- Live invitation -->
+        <div>
+          <div class="preview-controls" role="group" aria-label="Preview controls">
+            <button class="btn btn--ghost btn--sm" type="button" data-zoom="-1" aria-label="Zoom out"><i data-icon="zoom-out" data-icon-size="17"></i></button>
+            <span class="zoom-level" data-zoom-level aria-live="polite">100%</span>
+            <button class="btn btn--ghost btn--sm" type="button" data-zoom="1" aria-label="Zoom in"><i data-icon="zoom-in" data-icon-size="17"></i></button>
+            <button class="btn btn--ghost btn--sm" type="button" data-zoom="0" aria-label="Reset zoom to 100 percent"><i data-icon="rotate-ccw" data-icon-size="17"></i></button>
+
+            <div class="device-switch" role="group" aria-label="Preview device">
+              <button type="button" data-device="mobile" aria-pressed="true" aria-label="Preview on mobile" title="Preview on mobile"><i data-icon="smartphone" data-icon-size="17"></i></button>
+              <button type="button" data-device="desktop" aria-pressed="false" aria-label="Preview on desktop" title="Preview on desktop"><i data-icon="monitor" data-icon-size="17"></i></button>
+            </div>
+
+            <button class="btn btn--ghost btn--sm" type="button" data-fullscreen aria-label="Toggle full screen"><i data-icon="maximize" data-icon-size="17"></i></button>
+            <a class="btn btn--ghost btn--sm" href="templates.html" aria-label="Back to all templates"><i data-icon="arrow-left" data-icon-size="17"></i><span>Back</span></a>
+          </div>
+
+          <div class="preview-frame" data-device="mobile" data-preview-frame aria-label="Live invitation preview"></div>
+
+          <p class="muted center" style="margin-top:var(--space-4);font-size:.8rem">
+            Tip: hold <kbd>Ctrl</kbd> (or <kbd>⌘</kbd>) and scroll inside the frame to zoom.
+          </p>
+        </div>
+
+        <!-- Details -->
+        <div>
+          <div class="preview-meta__title">
+            <div>
+              <h2 style="font-size:var(--step-2)" data-preview-name>Template</h2>
+              <p class="muted" data-preview-blurb style="font-size:var(--step--1);margin-top:var(--space-2)"></p>
+            </div>
+            <span data-preview-badge></span>
+          </div>
+
+          <h3 style="font-size:var(--step-1);margin-top:var(--space-6)">What this template includes</h3>
+          <ul class="preview-specs" data-preview-features></ul>
+
+          <h3 style="font-size:var(--step-1)">Specifications</h3>
+          <table class="spec-table">
+            <tbody data-preview-specs></tbody>
+          </table>
+
+          <div class="btn-group" style="flex-direction:column">
+            <a class="btn btn--primary btn--lg btn--block" data-preview-use href="create.html"><i data-icon="wand" data-icon-size="19"></i><span>Use This Template</span></a>
+            <button class="btn btn--secondary btn--block" type="button" data-preview-fav><i data-icon="heart" data-icon-size="18"></i><span>Save to favourites</span></button>
+            <button class="btn btn--ghost btn--block" type="button" data-share="copy"><i data-icon="copy" data-icon-size="18"></i><span>Copy link to this template</span></button>
+          </div>
+
+          <h3 style="font-size:var(--step-1);margin-top:var(--space-7)">Printed card artwork</h3>
+          <p class="muted" style="font-size:var(--step--1);margin-bottom:var(--space-4)">The same design as a portrait card, ready for a printed insert or a social post.</p>
+          <div data-preview-thumb style="max-width:280px"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container container--wide">
+      <div class="section-head">
+        <p class="eyebrow"><i data-icon="layers" data-icon-size="15"></i> More like this</p>
+        <h2>You Might Also Like</h2>
+      </div>
+      <div class="template-grid" data-preview-related></div>
+      <p class="center" style="margin-top:var(--space-6)">
+        <a class="btn btn--secondary btn--lg" href="templates.html"><i data-icon="search" data-icon-size="19"></i><span>Browse all templates</span></a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-brand__logo" href="index.html">
+          <img src="images/logo/invitehub-mark.svg" alt="" width="40" height="40" loading="lazy">
+          <span>Invite<em>Hub</em></span>
+        </a>
+        <p>Beautiful digital invitations for every special moment.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteHub on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
+          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteHub on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
+          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteHub on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
+          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteHub on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
+          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteHub on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
+      <div class="footer-col"><h3>Learn</h3><ul><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div class="footer-col"><h3>Company</h3><ul><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> InviteHub. All rights reserved.</p>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top"><i data-icon="arrow-up" data-icon-size="21"></i></button>
+
+</body>
+</html>
