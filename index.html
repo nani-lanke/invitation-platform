@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InviteHub — Create Beautiful Digital Invitations Online</title>
+<meta name="description" content="Design, personalise and share stunning digital invitations for weddings, birthdays, baby showers, festivals and corporate events. 47 free templates, live countdown, Google Maps, RSVP and one-tap WhatsApp sharing.">
+<meta name="keywords" content="digital invitation, online invitation maker, wedding invitation, birthday invitation, e-invite, WhatsApp invitation, save the date, invitation template, baby shower invite, festival greeting">
+<meta name="author" content="InviteHub">
+<meta name="theme-color" content="#FDFAFB">
+<link rel="canonical" href="https://invitehub.example.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InviteHub">
+<meta property="og:title" content="InviteHub — Create Beautiful Digital Invitations Online">
+<meta property="og:description" content="Design, personalise and share stunning digital invitations for every special occasion. Free templates, live countdown, maps and RSVP.">
+<meta property="og:url" content="https://invitehub.example.com/">
+<meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="InviteHub — Create Beautiful Digital Invitations Online">
+<meta name="twitter:description" content="Design, personalise and share stunning digital invitations for every special occasion.">
+<meta name="twitter:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo/invitehub-mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap"></noscript>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script>/* Applies the saved theme before first paint to avoid a flash. */
+(function(){try{var s=JSON.parse(localStorage.getItem('invitehub:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
+
+<script src="js/main.js" defer></script>
+<script src="js/templates.js" defer></script>
+<script src="js/countdown.js" defer></script>
+<script src="js/preview.js" defer></script>
+<script src="js/share.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "InviteHub",
+  "url": "https://invitehub.example.com/",
+  "description": "Create, personalise and share beautiful digital invitations for every occasion.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://invitehub.example.com/templates.html?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="nav__backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container container--wide" aria-label="Main navigation">
+    <a class="nav__brand" href="index.html" aria-label="InviteHub home">
+      <img src="images/logo/invitehub-mark.svg" alt="" width="38" height="38" data-eager>
+      <span class="nav__brand-text">
+        <span class="nav__brand-name">Invite<span>Hub</span></span>
+        <span class="nav__brand-tag">Digital Invitations</span>
+      </span>
+    </a>
+
+    <ul class="nav__list" id="primary-nav">
+      <li class="nav__drawer-close">
+        <button class="drawer-close" type="button" data-nav-close aria-label="Close navigation menu">
+          <i data-icon="close" data-icon-size="20"></i>
+        </button>
+      </li>
+      <li><a class="nav__link" href="index.html">Home</a></li>
+      <li><a class="nav__link" href="templates.html">Invitations</a></li>
+      <li><a class="nav__link" href="categories.html">Categories</a></li>
+      <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+      <li><a class="nav__link" href="#how-it-works">How It Works</a></li>
+      <li><a class="nav__link" href="about.html">About</a></li>
+      <li><a class="nav__link" href="contact.html">Contact</a></li>
+      <li class="nav__drawer-cta">
+        <a class="btn btn--primary btn--block" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+        <a class="btn btn--secondary btn--block" href="faq.html"><i data-icon="message-circle" data-icon-size="18"></i><span>FAQ</span></a>
+      </li>
+    </ul>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn btn--primary nav__cta" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container container--wide">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><i data-icon="sparkles" data-icon-size="15"></i> 47 designs · 18 occasions · free to try</p>
+          <h1 class="hero__title">
+            Create Beautiful Invitations
+            <span class="script text-gradient animate-gradient">Everyone Will Remember</span>
+          </h1>
+          <p class="hero__sub">Design, personalise and share stunning digital invitations for every special occasion — weddings, birthdays, baby showers, house warmings, festivals and corporate events.</p>
+
+          <div class="btn-group hero__cta">
+            <a class="btn btn--primary btn--lg" href="templates.html"><i data-icon="layers" data-icon-size="20"></i><span>Explore Invitations</span></a>
+            <a class="btn btn--secondary btn--lg" href="create.html"><i data-icon="wand" data-icon-size="20"></i><span>Create Invitation</span></a>
+          </div>
+
+          <div class="hero__ticker">
+            <span class="hero__avatars" aria-hidden="true"><span>RP</span><span>AK</span><span>SM</span><span>+</span></span>
+            <span>Loved by hosts planning weddings, first birthdays and everything in between.</span>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat"><strong data-stat="templates" data-stat-plus>47</strong><span>Ready-made templates</span></div>
+            <div class="hero__stat"><strong data-stat="categories">18</strong><span>Event categories</span></div>
+            <div class="hero__stat"><strong>60s</strong><span>To your first draft</span></div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <span class="hero__orb hero__orb--a" aria-hidden="true"></span>
+          <span class="hero__orb hero__orb--b" aria-hidden="true"></span>
+
+          <img class="hero__float hero__float--1" src="images/hero/card-birthday.svg" alt="Birthday invitation card design" width="260" height="340" loading="lazy">
+          <img class="hero__float hero__float--2" src="images/hero/card-baby.svg" alt="Baby shower invitation card design" width="260" height="340" loading="lazy">
+          <img class="hero__float hero__float--3" src="images/hero/card-festival.svg" alt="Festival greeting card design" width="260" height="340" loading="lazy">
+          <img class="hero__float hero__float--4" src="images/hero/card-corporate.svg" alt="Corporate event invitation card design" width="260" height="340" loading="lazy">
+
+          <img class="hero__phone" src="images/hero/hero-mockup.svg" alt="A phone showing a wedding invitation for Rahul and Priya with a live countdown, RSVP and directions buttons" width="420" height="780" data-eager fetchpriority="high">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="section section--soft" id="features">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2>Everything You Need for Your Special Event</h2>
+        <p>One link carries your whole invitation — the design, the details, the directions and the countdown. Guests open it on any phone, no app required.</p>
+      </div>
+
+      <div class="feature-grid rail" data-reveal-group
+           role="group" tabindex="0"
+           aria-label="Twelve features — scroll sideways, or use the arrow keys, to see them all">
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="palette"></i></div><h3>Beautiful Templates</h3><p>Forty-seven hand-designed cards across eighteen occasions, from royal wedding gold to neon birthday nights.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="wand"></i></div><h3>Easy Customisation</h3><p>Change names, dates, colours and fonts in a live editor. What you see is exactly what your guests receive.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="smartphone"></i></div><h3>Mobile Friendly</h3><p>Built mobile-first and tested from 320px upward, so the card looks right on the oldest phone in the family.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="share"></i></div><h3>Share Anywhere</h3><p>One link works on WhatsApp, Facebook, Telegram, email and SMS. Copy it once and send it everywhere.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="clock"></i></div><h3>Event Countdown</h3><p>A live timer ticks down to the moment — days, hours, minutes and seconds, updating on every open.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="image"></i></div><h3>Photo Gallery</h3><p>Add up to six photos of the couple, the baby or the venue and they appear right inside the invitation.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="map-pin"></i></div><h3>Google Maps</h3><p>A Directions button opens the venue in the guest's own maps app — no more copying addresses by hand.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="user-check"></i></div><h3>RSVP</h3><p>Let guests confirm attendance from the card itself, so you know your headcount before the caterer asks.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="music"></i></div><h3>Background Music</h3><p>Choose a gentle track that plays when the invitation opens, muted by default and always guest-controlled.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="qr-code"></i></div><h3>QR Code</h3><p>Print the generated QR on your paper card so anyone can scan straight through to the digital version.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="zap"></i></div><h3>Fast &amp; Lightweight</h3><p>No heavy frameworks and no tracking scripts — the whole page is a few hundred kilobytes and loads instantly.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="calendar-x"></i></div><h3>Automatic Expiry</h3><p>Pick how long the link stays live. When the plan ends the invitation retires itself. <span class="badge badge--soon">Coming soon</span></p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATEGORIES ================= -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><i data-icon="layers" data-icon-size="15"></i> Categories</p>
+        <h2>An Invitation for Every Occasion</h2>
+        <p>Pick the moment you are celebrating and we will show you only the designs that suit it.</p>
+      </div>
+
+      <div class="category-grid rail" data-category-grid data-limit="8" data-sort="count"
+           role="group" tabindex="0"
+           aria-label="Popular categories — scroll sideways, or use the arrow keys, to see them all"></div>
+
+      <p class="center" style="margin-top:var(--space-6)">
+        <a class="btn btn--secondary btn--lg" href="categories.html"><span>View all 18 categories</span><i data-icon="arrow-right" data-icon-size="19"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= TEMPLATE GALLERY ================= -->
+  <section class="section section--soft" id="templates">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><i data-icon="star" data-icon-size="15"></i> Most loved</p>
+        <h2>Templates Hosts Keep Coming Back To</h2>
+        <p>Hover any card to preview it, or open the full gallery to search and filter all forty-seven designs.</p>
+      </div>
+
+      <div class="template-grid rail" data-featured-templates data-limit="8"
+           role="group" tabindex="0"
+           aria-label="Featured templates — scroll sideways, or use the arrow keys, to see them all"></div>
+
+      <p class="center" style="margin-top:var(--space-6)">
+        <a class="btn btn--primary btn--lg" href="templates.html"><i data-icon="search" data-icon-size="19"></i><span>Browse all templates</span></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= LIVE SAMPLE ================= -->
+  <section class="section" id="sample">
+    <div class="container">
+      <div class="split-two" style="align-items:center">
+        <div data-reveal="left">
+          <p class="eyebrow"><i data-icon="eye" data-icon-size="15"></i> Live example</p>
+          <h2>This Is What Your Guests Will See</h2>
+          <p class="lead" style="margin-top:var(--space-4)">A real, working invitation — not a screenshot. The countdown below is running right now, the Directions button opens Google Maps, and the whole thing fits in a single link.</p>
+
+          <ul class="preview-specs" style="margin-top:var(--space-5)">
+            <li><i data-icon="check-circle" data-icon-size="18" style="color:var(--success)"></i><span>Opens instantly on any phone, tablet or laptop</span></li>
+            <li><i data-icon="check-circle" data-icon-size="18" style="color:var(--success)"></i><span>No app to install and no account for your guests</span></li>
+            <li><i data-icon="check-circle" data-icon-size="18" style="color:var(--success)"></i><span>Readable in both light and dark mode</span></li>
+            <li><i data-icon="check-circle" data-icon-size="18" style="color:var(--success)"></i><span>Works in every Indian and international time zone</span></li>
+          </ul>
+
+          <div class="btn-group" style="margin-top:var(--space-6)">
+            <a class="btn btn--primary" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Make mine</span></a>
+            <a class="btn btn--ghost" href="preview.html?template=royal-wedding"><i data-icon="external-link" data-icon-size="18"></i><span>Open full preview</span></a>
+          </div>
+        </div>
+
+        <div data-reveal="right" style="display:flex;justify-content:center">
+          <!-- Explicit width: the card inside is width:100%, which in a
+               shrink-to-fit flex item would otherwise resolve circularly
+               against its own max-content size. -->
+          <div data-sample-invitation="elegant-floral" style="width:100%;max-width:420px"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section section--soft" id="how-it-works">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><i data-icon="trending-up" data-icon-size="15"></i> How it works</p>
+        <h2>Four Steps From Idea to Inbox</h2>
+        <p>Most hosts finish their first draft in about a minute. You can come back and refine it as often as you like.</p>
+      </div>
+
+      <div class="steps-grid rail" data-reveal-group
+           role="group" tabindex="0"
+           aria-label="Four steps — scroll sideways, or use the arrow keys, to see them all">
+        <article class="step-card" data-reveal>
+          <div class="step-card__num">1</div>
+          <h3>Choose a Template</h3>
+          <p>Browse by occasion or search by name. Every design previews at full size before you commit, and free templates are marked clearly.</p>
+          <span class="step-card__connector" aria-hidden="true"></span>
+        </article>
+        <article class="step-card" data-reveal>
+          <div class="step-card__num">2</div>
+          <h3>Add Your Details</h3>
+          <p>Names, date, time, venue, a message and your photos. The card on the right updates as you type, so nothing is a surprise.</p>
+          <span class="step-card__connector" aria-hidden="true"></span>
+        </article>
+        <article class="step-card" data-reveal>
+          <div class="step-card__num">3</div>
+          <h3>Select Your Plan</h3>
+          <p>Decide how long the invitation should stay live — one day for a small party, a full year for a wedding season.</p>
+          <span class="step-card__connector" aria-hidden="true"></span>
+        </article>
+        <article class="step-card" data-reveal>
+          <div class="step-card__num">4</div>
+          <h3>Share Your Invitation</h3>
+          <p>Copy the link, send it on WhatsApp, or print the QR code on your paper card. Guests open it and RSVP in one tap.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SHARING ================= -->
+  <section class="section" id="share">
+    <div class="container">
+      <div class="share-panel" data-reveal>
+        <div>
+          <p class="eyebrow"><i data-icon="share" data-icon-size="15"></i> Sharing</p>
+          <h2 style="font-size:var(--step-3)">One Link. Every Guest.</h2>
+          <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Your invitation gets a short, readable web address. Send it to one person or five hundred — it costs the same and never lands in a spam folder.</p>
+
+          <div class="link-box">
+            <code data-share-link>https://invitehub.example.com/i/rahul-wedding</code>
+            <button class="btn btn--primary btn--sm" type="button" data-share="copy"><i data-icon="copy" data-icon-size="16"></i><span>Copy Link</span></button>
+          </div>
+          <p class="sr-only" data-share-text-source>You are invited to Rahul &amp; Priya's wedding on 25 December 2026.</p>
+
+          <div class="share-buttons">
+            <button class="share-btn share-btn--whatsapp" type="button" data-share="whatsapp"><i data-icon="whatsapp" data-icon-size="18"></i><span>WhatsApp</span></button>
+            <button class="share-btn share-btn--facebook" type="button" data-share="facebook"><i data-icon="facebook" data-icon-size="18"></i><span>Facebook</span></button>
+            <button class="share-btn share-btn--telegram" type="button" data-share="telegram"><i data-icon="telegram" data-icon-size="18"></i><span>Telegram</span></button>
+            <button class="share-btn share-btn--email" type="button" data-share="email"><i data-icon="mail" data-icon-size="18"></i><span>Email</span></button>
+            <button class="share-btn share-btn--qr" type="button" data-share="qr"><i data-icon="qr-code" data-icon-size="18"></i><span>QR Code</span></button>
+            <button class="share-btn" type="button" data-share="native"><i data-icon="share" data-icon-size="18"></i><span>More…</span></button>
+          </div>
+
+          <p class="muted" style="font-size:.78rem;margin-top:var(--space-4)">This is a demonstration address. Real, permanent invitation links arrive with the hosted version.</p>
+        </div>
+
+        <div class="qr-holder" data-qr="https://invitehub.example.com/i/rahul-wedding" aria-label="QR code linking to the sample invitation"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="section section--soft" id="pricing">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><i data-icon="ticket" data-icon-size="15"></i> Pricing</p>
+        <h2>Pay Once. Stay Live as Long as You Need.</h2>
+        <p>The invitation remains available for the selected duration. No subscription, no renewal, no surprises.</p>
+      </div>
+
+      <div class="pricing-grid rail" data-reveal-group
+           role="group" tabindex="0"
+           aria-label="Four plans — scroll sideways, or use the arrow keys, to see them all">
+        <article class="plan" data-reveal><div class="plan__duration">1 Day</div><div class="plan__price"><span class="cur">₹</span><span class="amt">10</span></div><p class="plan__per">Perfect for a same-day party</p><ul class="plan__list"><li><i data-icon="check" data-icon-size="17"></i><span>All free templates</span></li><li><i data-icon="check" data-icon-size="17"></i><span>Countdown &amp; maps</span></li></ul><button class="btn btn--secondary btn--block" type="button" data-soon="Hosting plans are not live yet — but you can already build and download your invitation page free from the editor.">Select Plan</button></article>
+        <article class="plan" data-reveal><div class="plan__duration">7 Days</div><div class="plan__price"><span class="cur">₹</span><span class="amt">50</span></div><p class="plan__per">A week of reminders</p><ul class="plan__list"><li><i data-icon="check" data-icon-size="17"></i><span>Everything in 1 Day</span></li><li><i data-icon="check" data-icon-size="17"></i><span>Photo gallery</span></li></ul><button class="btn btn--secondary btn--block" type="button" data-soon="Hosting plans are not live yet — but you can already build and download your invitation page free from the editor.">Select Plan</button></article>
+        <article class="plan is-featured" data-reveal><span class="plan__ribbon">Most popular</span><div class="plan__duration">30 Days</div><div class="plan__price"><span class="cur">₹</span><span class="amt">180</span></div><p class="plan__per">The wedding-season favourite</p><ul class="plan__list"><li><i data-icon="check" data-icon-size="17"></i><span>All 47 templates, as always</span></li><li><i data-icon="check" data-icon-size="17"></i><span>RSVP &amp; music</span></li></ul><button class="btn btn--primary btn--block" type="button" data-soon="Hosting plans are not live yet — but you can already build and download your invitation page free from the editor.">Select Plan</button></article>
+        <article class="plan" data-reveal><div class="plan__duration">365 Days</div><div class="plan__price"><span class="cur">₹</span><span class="amt">999</span></div><p class="plan__per">A full year of memories</p><ul class="plan__list"><li><i data-icon="check" data-icon-size="17"></i><span>Everything included</span></li><li><i data-icon="check" data-icon-size="17"></i><span>Keep it as a keepsake</span></li></ul><button class="btn btn--secondary btn--block" type="button" data-soon="Hosting plans are not live yet — but you can already build and download your invitation page free from the editor.">Select Plan</button></article>
+      </div>
+
+      <p class="center" style="margin-top:var(--space-6)">
+        <a class="btn btn--ghost" href="pricing.html"><span>See all seven durations</span><i data-icon="arrow-right" data-icon-size="18"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><i data-icon="message-circle" data-icon-size="15"></i> Questions</p>
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list" data-accordion-single data-reveal>
+        <div class="faq-item">
+          <button class="faq-item__trigger" type="button"><span>What is a digital invitation?</span><span class="faq-item__icon"><i data-icon="plus" data-icon-size="17"></i></span></button>
+          <div class="faq-item__panel"><div><p>A digital invitation is a web page instead of a printed card. It holds your names, date, venue and photos, and lives at its own link. Guests open it in their browser — there is no app to install and nothing to download.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger" type="button"><span>How do I create an invitation?</span><span class="faq-item__icon"><i data-icon="plus" data-icon-size="17"></i></span></button>
+          <div class="faq-item__panel"><div><p>Pick a template, fill in your event details, add photos if you want them, choose your colours, and preview. The whole flow lives on the <a href="create.html">Create Invitation</a> page and takes about a minute.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger" type="button"><span>Can I share the invitation on WhatsApp?</span><span class="faq-item__icon"><i data-icon="plus" data-icon-size="17"></i></span></button>
+          <div class="faq-item__panel"><div><p>Yes. Every invitation gets a plain web link, and there is a one-tap WhatsApp button that opens your chat list with the message already written. The same link works on Telegram, Facebook, email and SMS.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger" type="button"><span>How long will my invitation stay active?</span><span class="faq-item__icon"><i data-icon="plus" data-icon-size="17"></i></span></button>
+          <div class="faq-item__panel"><div><p>For exactly as long as the plan you choose — from a single day up to a full year. You can see all seven durations on the <a href="pricing.html">Pricing</a> page.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger" type="button"><span>Is this website the finished product?</span><span class="faq-item__icon"><i data-icon="plus" data-icon-size="17"></i></span></button>
+          <div class="faq-item__panel"><div><p>Not yet. This is a fully working front-end demonstration hosted on GitHub Pages. You can browse, personalise and preview everything, but drafts are saved only in your own browser and no payment is processed. Accounts, permanent links and payments arrive in the hosted version.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__trigger" type="button"><span>Can guests open it on an old phone?</span><span class="faq-item__icon"><i data-icon="plus" data-icon-size="17"></i></span></button>
+          <div class="faq-item__panel"><div><p>Yes. The layout is tested from 320px wide upward and the whole page is only a few hundred kilobytes, so it opens quickly even on a slow connection.</p></div></div>
+        </div>
+      </div>
+
+      <p class="center" style="margin-top:var(--space-6)">
+        <a class="btn btn--secondary" href="faq.html"><span>Read all 16 questions</span><i data-icon="arrow-right" data-icon-size="18"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band" data-reveal="zoom">
+        <h2>Your Event Deserves a Beautiful Invitation</h2>
+        <p>Start with any template, change everything, and see the result as you type. Nothing to install and nothing to pay while you are trying it out.</p>
+        <div class="btn-group" style="justify-content:center">
+          <a class="btn btn--primary btn--lg" href="create.html"><i data-icon="wand" data-icon-size="20"></i><span>Create Your Invitation</span></a>
+          <a class="btn btn--glass btn--lg" href="templates.html"><i data-icon="layers" data-icon-size="20"></i><span>Browse Templates</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-brand__logo" href="index.html">
+          <img src="images/logo/invitehub-mark.svg" alt="" width="40" height="40" loading="lazy">
+          <span>Invite<em>Hub</em></span>
+        </a>
+        <p>Beautiful digital invitations for every special moment.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteHub on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
+          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteHub on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
+          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteHub on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
+          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteHub on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
+          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteHub on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="templates.html">Templates</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="create.html">Create Invitation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="preview.html">Template Preview</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> InviteHub. All rights reserved.</p>
+      <nav aria-label="Legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Support</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top">
+  <i data-icon="arrow-up" data-icon-size="21"></i>
+</button>
+
+</body>
+</html>

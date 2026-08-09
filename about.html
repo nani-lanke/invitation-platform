@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About InviteHub — Why Digital Invitations</title>
+<meta name="description" content="InviteHub turns the printed invitation card into a living web page: easy to make, fast to send, beautiful on every phone, and kinder to the environment than a print run nobody keeps.">
+<meta name="keywords" content="about invitehub, why digital invitations, eco friendly invitations, paperless invites, online invitation benefits">
+<meta name="theme-color" content="#FDFAFB">
+<link rel="canonical" href="https://invitehub.example.com/about.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InviteHub">
+<meta property="og:title" content="About InviteHub — Why Digital Invitations">
+<meta property="og:description" content="The printed card, reimagined as a living web page — easier, faster, prettier and greener.">
+<meta property="og:url" content="https://invitehub.example.com/about.html">
+<meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About InviteHub — Why Digital Invitations">
+<meta name="twitter:description" content="The printed card, reimagined as a living web page.">
+<meta name="twitter:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo/invitehub-mark.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap"></noscript>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('invitehub:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
+
+<script src="js/main.js" defer></script>
+<script src="js/templates.js" defer></script>
+<script src="js/countdown.js" defer></script>
+<script src="js/preview.js" defer></script>
+<script src="js/share.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="nav__backdrop" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="nav container container--wide" aria-label="Main navigation">
+    <a class="nav__brand" href="index.html" aria-label="InviteHub home">
+      <img src="images/logo/invitehub-mark.svg" alt="" width="38" height="38" data-eager>
+      <span class="nav__brand-text">
+        <span class="nav__brand-name">Invite<span>Hub</span></span>
+        <span class="nav__brand-tag">Digital Invitations</span>
+      </span>
+    </a>
+    <ul class="nav__list" id="primary-nav">
+      <li class="nav__drawer-close">
+        <button class="drawer-close" type="button" data-nav-close aria-label="Close navigation menu">
+          <i data-icon="close" data-icon-size="20"></i>
+        </button>
+      </li>
+      <li><a class="nav__link" href="index.html">Home</a></li>
+      <li><a class="nav__link" href="templates.html">Invitations</a></li>
+      <li><a class="nav__link" href="categories.html">Categories</a></li>
+      <li><a class="nav__link" href="pricing.html">Pricing</a></li>
+      <li><a class="nav__link" href="index.html#how-it-works">How It Works</a></li>
+      <li><a class="nav__link" href="about.html">About</a></li>
+      <li><a class="nav__link" href="contact.html">Contact</a></li>
+      <li class="nav__drawer-cta">
+        <a class="btn btn--primary btn--block" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+        <a class="btn btn--secondary btn--block" href="faq.html"><i data-icon="message-circle" data-icon-size="18"></i><span>FAQ</span></a>
+      </li>
+    </ul>
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a class="btn btn--primary nav__cta" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
+        <span class="nav__toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>About</li>
+      </ol>
+      <p class="eyebrow"><i data-icon="sparkles" data-icon-size="15"></i> Our story</p>
+      <h1>The Card, Reimagined</h1>
+      <p>InviteHub exists because the most important detail on an invitation — the venue, the time, the door number — is the one that most often changes after the cards are already printed.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:var(--space-5)">
+    <div class="container">
+      <div class="split-two" style="align-items:center">
+        <div class="prose" data-reveal="left">
+          <h2>What is InviteHub?</h2>
+          <p>InviteHub is an online platform for creating digital invitations. Instead of a printed card that has to be designed, proofed, printed and physically delivered, you get a beautifully designed web page with its own link. You send that link; your guests open it.</p>
+          <p>Inside a single invitation you get the design, the names, the date, the venue with working directions, a live countdown, your photographs and an RSVP button — all of it readable on a five-year-old phone in a village with two bars of signal.</p>
+          <p>The result feels like a card because it was designed like one. Every template starts from real invitation typography: generous letter-spacing, a proper display serif, ornamental rules and a frame. It just happens to live on the web.</p>
+
+          <h2>Why digital invitations?</h2>
+          <p>Printed invitations are lovely, and nothing here argues otherwise. But they are also slow, expensive per copy, impossible to correct, and — for the ninety percent of guests who live in another city — an exercise in courier tracking.</p>
+          <p>A digital invitation solves the practical half of the problem while keeping the part that matters: something beautiful arriving in someone's hands, with your names on it.</p>
+        </div>
+
+        <div data-reveal="right" style="display:flex;justify-content:center">
+          <div data-sample-invitation="royal-wedding"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow"><i data-icon="check-circle" data-icon-size="15"></i> Benefits</p>
+        <h2>Six Reasons Hosts Switch</h2>
+      </div>
+
+      <div class="feature-grid" data-reveal-group>
+        <article class="feature" data-reveal>
+          <div class="feature__icon"><i data-icon="wand"></i></div>
+          <h3>Easy</h3>
+          <p>Five short steps and a live preview. If you can fill in a form, you can make an invitation that looks like it came from a studio.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <div class="feature__icon"><i data-icon="zap"></i></div>
+          <h3>Fast</h3>
+          <p>From blank page to shareable link in about a minute — and a correction to the venue takes ten seconds, not another print run.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <div class="feature__icon"><i data-icon="palette"></i></div>
+          <h3>Beautiful</h3>
+          <p>Forty-seven designs drawn specifically for invitations, with proper display typography and ornamental detail — not repurposed poster templates.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <div class="feature__icon"><i data-icon="share"></i></div>
+          <h3>Shareable</h3>
+          <p>One link travels on WhatsApp, Telegram, Facebook, email and SMS. No file sizes, no failed downloads, no “can you send it again?”.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <div class="feature__icon"><i data-icon="smartphone"></i></div>
+          <h3>Mobile friendly</h3>
+          <p>Designed at 320px first. It works on the newest phone in the family and the oldest one, in bright sun and in dark mode.</p>
+        </article>
+        <article class="feature" data-reveal>
+          <div class="feature__icon"><i data-icon="leaf"></i></div>
+          <h3>Environment friendly</h3>
+          <p>A wedding print run is typically several hundred cards, most of which are read once and thrown away. A link has no paper, no ink and no courier van.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container container--narrow prose">
+      <h2>Where this build stands today</h2>
+      <p>What you are reading right now is a complete front-end demonstration, built with plain HTML, CSS and JavaScript and hosted as a static site on GitHub Pages. Everything visual is real and finished: all forty-seven templates, the search and filtering, the live editor, the countdown, the QR encoder and the share targets all work exactly as they will in production.</p>
+      <p>What is deliberately absent is the server half. There are no accounts, no database, no image storage and no payment processing. Your draft is saved in your own browser's storage and your photos are read locally and never transmitted.</p>
+
+      <h3>What comes next</h3>
+      <p>The architecture was written with the upgrade in mind. Template and invitation data already flow through a promise-based access layer, so replacing the local catalogue with a live query changes one file and nothing else. The planned stack is:</p>
+      <ul>
+        <li><strong>Vercel</strong> for hosting and serverless routes</li>
+        <li><strong>Supabase</strong> for accounts, the invitation database and image storage</li>
+        <li><strong>Razorpay</strong> for UPI, card and net-banking payments</li>
+      </ul>
+      <p>With those in place, invitations get permanent unique URLs, automatic expiry and deletion at the end of your plan, RSVP responses you can actually read, and a dashboard for hosts running more than one event.</p>
+
+      <h3>How we think about your data</h3>
+      <p>Two principles, decided early and worth stating plainly. First, guest lists are not a product — we will not sell, rent or mine them. Second, expiry means deletion: when your plan ends, your uploaded photographs go, rather than sitting on a server indefinitely. The <a href="privacy.html">Privacy Policy</a> spells out exactly what is and is not collected today.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="cta-band" data-reveal="zoom">
+        <h2>See It For Yourself</h2>
+        <p>The editor is fully working right now. Build a real invitation, preview it on mobile and desktop, and decide from there.</p>
+        <div class="btn-group" style="justify-content:center">
+          <a class="btn btn--primary btn--lg" href="create.html"><i data-icon="wand" data-icon-size="20"></i><span>Create Invitation</span></a>
+          <a class="btn btn--glass btn--lg" href="templates.html"><i data-icon="layers" data-icon-size="20"></i><span>Browse Templates</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-brand__logo" href="index.html">
+          <img src="images/logo/invitehub-mark.svg" alt="" width="40" height="40" loading="lazy">
+          <span>Invite<em>Hub</em></span>
+        </a>
+        <p>Beautiful digital invitations for every special moment.</p>
+        <div class="social-row">
+          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteHub on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
+          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteHub on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
+          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteHub on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
+          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteHub on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
+          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteHub on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
+      <div class="footer-col"><h3>Learn</h3><ul><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div class="footer-col"><h3>Company</h3><ul><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> InviteHub. All rights reserved.</p>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></nav>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top" title="Back to top"><i data-icon="arrow-up" data-icon-size="21"></i></button>
+
+</body>
+</html>

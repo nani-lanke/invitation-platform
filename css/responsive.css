@@ -1,0 +1,384 @@
+/* ==========================================================================
+   InviteHub — Responsive layer
+   Mobile-first base lives in style.css; this file adapts it downward.
+   Tested breakpoints: 1920, 1440, 1280, 1024, 768, 600, 480, 425, 375, 320
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Ultra-wide: give the grid more room, keep line lengths sane
+   -------------------------------------------------------------------------- */
+
+@media (min-width: 1600px) {
+  :root { --container: 1320px; --container-wide: 1520px; }
+  .hero__visual { min-height: 700px; }
+  .hero__float { width: 168px; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 1280px — laptops
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1280px) {
+  .feature-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.4fr repeat(3, 1fr); gap: var(--space-5); }
+  .hero__float { width: 128px; }
+  .hero__float--2, .hero__float--3, .hero__float--4 { width: 118px; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 1100px — collapse the desktop nav into the drawer
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .nav__toggle { display: inline-flex; }
+
+  /* THE reason the drawer was one item tall.
+     A non-none backdrop-filter makes an element a containing block for its
+     position: fixed descendants. .nav__list is fixed with top:0;bottom:0,
+     so it was resolving against the 72px header instead of the viewport
+     and only the first link fitted. The drawer lives inside the header, so
+     the blur has to go at drawer widths; an opaque background keeps the
+     header readable over scrolled content. Desktop keeps its frosted glass
+     because there is no drawer up there. */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg);
+  }
+  .site-header.is-stuck { background: var(--bg); }
+
+  .nav__list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 95;
+    width: min(340px, 88vw);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    padding: calc(var(--header-h) + var(--space-4)) var(--space-5) var(--space-7);
+    background: var(--surface);
+    border-left: 1px solid var(--border);
+    box-shadow: var(--shadow-xl);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform var(--t-slow) var(--ease-out), visibility var(--t-slow);
+  }
+
+  .nav__list.is-open { transform: none; visibility: visible; }
+
+  .nav__link {
+    justify-content: flex-start;
+    min-height: 50px;
+    padding: 12px 16px;
+    border-radius: var(--r-md);
+    font-size: var(--step-0);
+  }
+  .nav__link::after { display: none; }
+
+  /* The drawer is a column flex container pinned to the full viewport
+     height. Seven 50px links plus the CTA block overflow a phone screen,
+     and flex items shrink by default — so the <li>s were being squashed
+     towards zero height and the links painted on top of each other,
+     leaving what looked like a single entry. (The CTA block escaped it
+     only because it sets its own display.) Pinning the basis makes the
+     drawer scroll, which is what overflow-y: auto is there for. */
+  .nav__list > li {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .nav__list .nav__link { display: flex; width: 100%; }
+
+  /* The open drawer covers the hamburger, so it needs its own way out
+     alongside the backdrop tap and the Escape key. */
+  .nav__list .nav__drawer-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: var(--space-2);
+  }
+  .drawer-close {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    background: var(--surface-2);
+    color: var(--fg);
+    transition: background-color var(--t-base) var(--ease), color var(--t-base) var(--ease);
+  }
+  .drawer-close:hover { background: var(--primary-soft); color: var(--primary-ink); }
+  .drawer-close svg { width: 20px; height: 20px; }
+
+  .nav__list .nav__drawer-cta {
+    margin-top: var(--space-5);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--border);
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  /* The header CTA button lives inside the drawer on small screens */
+  .nav__actions .nav__cta { display: none; }
+
+  .create-layout { grid-template-columns: 1fr; }
+  .create-preview { position: static; }
+  .preview-layout { grid-template-columns: 1fr; gap: var(--space-6); }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .step-card__connector { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 1024px — tablets landscape
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  :root { --space-9: 76px; --space-8: 54px; }
+
+  .hero__inner { grid-template-columns: 1fr; gap: var(--space-7); text-align: center; }
+  .hero__sub { margin-inline: auto; }
+  .hero__cta, .hero__ticker, .hero__stats { justify-content: center; }
+  .hero__stats { border-top: none; padding-top: 0; }
+  .hero__visual { min-height: 560px; order: -1; }
+  .hero__phone { width: min(300px, 66%); }
+
+  .split-two { grid-template-columns: 1fr; }
+  .share-panel { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .share-panel .share-buttons { justify-content: center; }
+  .toolbar { grid-template-columns: 1fr 1fr; }
+  .toolbar .search-field { grid-column: 1 / -1; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 900px
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: var(--space-6); }
+  .footer-brand { grid-column: 1 / -1; }
+  .template-grid { grid-template-columns: repeat(auto-fill, minmax(216px, 1fr)); }
+  .category-grid { grid-template-columns: repeat(auto-fill, minmax(232px, 1fr)); }
+  .modal__dialog { max-height: 94vh; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 768px — tablets portrait / large phones
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  :root {
+    --header-h: 64px;
+    --space-9: 64px;
+    --space-8: 48px;
+    --container: 100%;
+  }
+
+  .container { padding-inline: var(--space-4); }
+
+  .form-grid { grid-template-columns: 1fr; }
+
+  .hero { padding-block: var(--space-8); }
+  .hero__visual { min-height: 500px; }
+  .hero__float--1 { top: 2%; left: 0; }
+  .hero__float--3 { left: 0; bottom: 12%; }
+  .hero__float--4 { right: 0; }
+
+  .stepper { padding: var(--space-3); gap: 4px; }
+  .step { flex: 0 0 auto; }
+  .step__text { display: none; }
+  .step.is-active .step__text { display: block; }
+
+  .wizard-nav { flex-direction: column-reverse; align-items: stretch; }
+  .wizard-nav .btn { width: 100%; }
+
+  .preview-frame { min-height: 420px; padding: var(--space-4); }
+  .preview-controls { border-radius: var(--r-lg); }
+
+  .cta-band { padding: var(--space-7) var(--space-5); }
+
+  .toast-region { left: var(--space-4); right: var(--space-4); bottom: var(--space-4); max-width: none; }
+  .to-top { right: var(--space-4); bottom: var(--space-4); width: 44px; height: 44px; }
+  .toast-region:not(:empty) ~ .to-top { bottom: calc(var(--space-4) + 88px); }
+
+  .modal__dialog { border-radius: var(--r-lg); }
+  .modal__footer { justify-content: stretch; }
+  .modal__footer .btn { flex: 1; }
+
+  .footer-bottom { flex-direction: column; align-items: flex-start; text-align: left; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 600px — phones
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 600px) {
+  .section { padding-block: var(--space-8); }
+
+  .feature-grid { grid-template-columns: 1fr 1fr; gap: var(--space-3); }
+  .feature { padding: var(--space-4); }
+  .feature__icon { width: 42px; height: 42px; margin-bottom: var(--space-3); }
+  .feature__icon svg { width: 21px; height: 21px; }
+
+  .steps-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr 1fr; }
+  .toolbar { grid-template-columns: 1fr; position: static; }
+  .option-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .hero__stats { gap: var(--space-5); }
+  .hero__visual { min-height: 430px; }
+  .hero__phone { width: min(260px, 64%); }
+  .hero__float { width: 96px; }
+  .hero__float--2, .hero__float--3, .hero__float--4 { width: 92px; }
+
+  /* Card padding and header type are fluid in style.css (container units),
+     so there is deliberately no fixed-padding override here. */
+  .invitation__when { grid-template-columns: 1fr; gap: var(--space-2); }
+  .invitation__when-sep { width: 52px; height: 1px; margin-inline: auto; }
+  .invitation--corporate .invitation__when-sep { margin-inline: 0; }
+  .invitation__countdown { gap: 6px; }
+  .invitation__countdown .cd-value { font-size: 1.25rem; }
+
+  .share-panel { padding: var(--space-5); }
+  .panel { padding: var(--space-5); }
+  .modal__header, .modal__body { padding: var(--space-4); }
+
+  .breadcrumb { justify-content: flex-start; }
+  .page-hero { text-align: left; }
+  .page-hero p { margin-inline: 0; }
+  .section-head { text-align: left; }
+  .section-head p { margin-inline: 0; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 480px — small phones (425 / 375)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 480px) {
+  .template-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--space-3); }
+  .template-card { border-radius: var(--r-lg); }
+  .template-card__body { padding: var(--space-3) var(--space-4) var(--space-4); }
+  .template-card__body h3 { font-size: var(--step-0); }
+
+  /* Touch devices never get :hover — surface the actions permanently */
+  .template-card__overlay {
+    position: static;
+    opacity: 1;
+    flex-direction: row;
+    padding: 0 var(--space-4) var(--space-4);
+    background: none;
+    gap: var(--space-2);
+  }
+  .template-card__overlay .btn { min-width: 0; flex: 1; padding-inline: 10px; font-size: .78rem; }
+  .template-card__overlay .btn--glass { color: var(--fg); }
+
+  .category-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .plan { padding: var(--space-5) var(--space-4); }
+
+  .nav__brand-tag { display: none; }
+  .nav__brand img { width: 34px; height: 34px; }
+  .nav__brand-name { font-size: 1.15rem; }
+
+  .btn { padding: 10px 18px; }
+  .btn--lg { min-height: 50px; padding: 13px 24px; font-size: var(--step-0); }
+  .btn-group { gap: var(--space-2); }
+  .hero__cta .btn { flex: 1 1 100%; }
+
+  .thumb-grid { grid-template-columns: repeat(3, 1fr); }
+  .share-buttons { display: grid; grid-template-columns: 1fr 1fr; }
+  .share-btn { justify-content: center; }
+  .qr-holder canvas, .qr-holder svg { width: 148px; height: 148px; }
+
+  .preview-controls { gap: 6px; padding: var(--space-2); }
+  .preview-controls .btn--sm { padding: 8px 11px; }
+
+  .link-box { flex-wrap: wrap; padding: var(--space-3); border-radius: var(--r-md); }
+  .link-box code { flex-basis: 100%; }
+  .link-box .btn { width: 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   <= 360px — 320px baseline; nothing may overflow horizontally
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 360px) {
+  :root { --space-5: 18px; --space-6: 26px; }
+
+  .container { padding-inline: 14px; }
+
+  .feature-grid { grid-template-columns: 1fr; }
+  .option-grid { grid-template-columns: 1fr; }
+  .template-grid { grid-template-columns: 1fr; }
+  .share-buttons { grid-template-columns: 1fr; }
+  .thumb-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .hero__stats { flex-direction: column; gap: var(--space-4); }
+  .hero__float { display: none; }
+  .hero__float--1, .hero__float--4 { display: block; width: 84px; }
+
+  .invitation__countdown { grid-template-columns: repeat(2, 1fr); }
+  .invitation__gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* --------------------------------------------------------------------------
+   Coarse pointers: hover overlays are unreachable, so keep actions visible
+   -------------------------------------------------------------------------- */
+
+@media (hover: none) {
+  .template-card__overlay { opacity: 1; background: linear-gradient(180deg, transparent 42%, rgba(20, 7, 15, .82)); }
+  .template-card__overlay .btn { min-width: 0; }
+  .hero__float:hover { animation-play-state: running; }
+}
+
+/* --------------------------------------------------------------------------
+   Print — a guest may want a paper copy of the invitation
+   -------------------------------------------------------------------------- */
+
+@media print {
+  body::before,
+  .site-header,
+  .site-footer,
+  .to-top,
+  .toast-region,
+  .nav__backdrop,
+  .preview-controls,
+  .toolbar,
+  .filter-bar,
+  .wizard-nav,
+  .stepper,
+  .cta-band,
+  .share-panel,
+  .invitation__actions { display: none !important; }
+
+  body { background: #fff; color: #000; }
+
+  .invitation {
+    max-width: 100%;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .section { padding-block: 12px; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: .7em; color: #555; }
+  a[href^="#"]::after,
+  a[href^="javascript"]::after { content: ""; }
+}
+
+/* --------------------------------------------------------------------------
+   Forced colors (Windows high contrast)
+   -------------------------------------------------------------------------- */
+
+@media (forced-colors: active) {
+  .btn, .chip, .card, .panel, .template-card, .category-card, .plan, .faq-item, .toast, .modal__dialog {
+    border: 1px solid CanvasText;
+  }
+  .btn--primary { forced-color-adjust: none; background: Highlight; color: HighlightText; }
+  .template-card__overlay { background: Canvas; }
+  .fav-btn[aria-pressed="true"] svg { fill: Highlight; }
+}
