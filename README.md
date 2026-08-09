@@ -1,1 +1,0 @@
-# invitation-platform
