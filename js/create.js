@@ -319,10 +319,15 @@
        here beats letting the button fail with a 400. */
     var note = qs('[data-publish-note]', box);
     if (note) {
-      note.textContent = IH.publish.hasUploads(data)
-        ? 'Your uploaded photos cannot be published this way — use Download page folder for those, ' +
-          'or publish now and the card will use its template artwork instead.'
-        : '';
+      /* Uploads now publish too, but the request has a ceiling: Vercel
+         refuses a body over 4.5 MB, and base64 adds a third. Saying so
+         before the click beats a rejection after it. */
+      var weight = IH.publish.payloadSize(data);
+      note.textContent = !IH.publish.hasUploads(data) ? ''
+        : weight > 4 * 1024 * 1024
+          ? 'Your photos and music come to about ' + Math.round(weight / 1024 / 1024 * 10) / 10 +
+            ' MB, which is over the publishing limit. Use Download page folder for this one.'
+          : 'Your photos and music will be committed alongside the page.';
     }
 
     var steps = qs('[data-publish-steps]', box);
@@ -362,8 +367,8 @@
         if (open) open.href = result.url;
         if (holder) holder.hidden = false;
 
-        IH.toast.success(result.replaced
-          ? 'Republished — the address now shows your latest version.'
+        IH.toast.success(result.count > 1
+          ? 'Published — ' + result.count + ' files committed, page and media together.'
           : 'Published. The address is live now.', { title: result.file });
         IH.confetti(24);
       }).catch(function (err) {
