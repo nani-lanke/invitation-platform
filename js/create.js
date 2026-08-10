@@ -20,15 +20,35 @@
      1. Field visibility per event type
      ------------------------------------------------------------------ */
 
-  var COUPLE_EVENTS = ['wedding', 'engagement', 'reception', 'anniversary'];
-  var PERSON_EVENTS = ['birthday', 'naming-ceremony', 'graduation', 'retirement', 'farewell'];
+  /* Who the card is about, which is the only thing that really differs
+     between one celebration and the next. A wedding names two people, a
+     birthday names one, and a festival or a product launch names none —
+     its title is the whole identity. Everything downstream reads from
+     here, so adding an event type means adding one line. */
+  var NAME_MODE = {
+    wedding: 'couple', engagement: 'couple', reception: 'couple', anniversary: 'couple',
+    birthday: 'person', 'naming-ceremony': 'person', graduation: 'person',
+    retirement: 'person', farewell: 'person'
+  };
 
+  function nameMode(type) { return NAME_MODE[type] || 'title'; }
+
+  /* show  — is the field on screen at all for this event
+     need  — is it required
+
+     Only what the card cannot do without is required: whoever it is
+     about, and when it happens. A venue can be "to be confirmed", an
+     invitation can go out before the hall is booked, and the card renders
+     perfectly well without one — so it is asked for, not demanded. */
   var FIELD_RULES = {
-    brideName: function (type) { return COUPLE_EVENTS.indexOf(type) !== -1; },
-    groomName: function (type) { return COUPLE_EVENTS.indexOf(type) !== -1; },
-    personName: function (type) { return PERSON_EVENTS.indexOf(type) !== -1; },
-    title: function () { return true; },
-    hostName: function () { return true; }
+    groomName:  function (mode) { return { show: mode === 'couple', need: mode === 'couple' }; },
+    brideName:  function (mode) { return { show: mode === 'couple', need: mode === 'couple' }; },
+    personName: function (mode) { return { show: mode === 'person', need: mode === 'person' }; },
+    years:      function (mode, type) { return { show: type === 'anniversary', need: false }; },
+    title:      function (mode) { return { show: true, need: mode === 'title' }; },
+    hostName:   function ()     { return { show: true, need: false }; },
+    date:       function ()     { return { show: true, need: true }; },
+    venue:      function ()     { return { show: true, need: false }; }
   };
 
   var PERSON_LABELS = {
@@ -58,7 +78,7 @@
     birthday: 'birthday', 'baby-shower': 'baby-shower', 'naming-ceremony': 'naming-ceremony',
     'house-warming': 'house-warming', anniversary: 'anniversary', graduation: 'graduation',
     retirement: 'retirement', farewell: 'farewell', corporate: 'corporate',
-    religious: 'religious', festival: 'festival', 'school-events': 'school-events',
+    festival: 'festival', 'school-events': 'school-events',
     'college-events': 'college-events', party: 'party', 'community-events': 'community-events'
   };
 
@@ -79,6 +99,7 @@
       brideName: '',
       groomName: '',
       personName: '',
+      years: '',
       date: '',
       time: '',
       venue: '',
@@ -91,6 +112,7 @@
       background: '',
       gallery: [],
       music: 'none',
+      musicFile: '',
       font: 'playfair',
       colors: null,
       customColors: false,
@@ -137,14 +159,19 @@
     else data.colors = state.colors;
 
     // Fall back to friendly demo copy so the card never looks broken.
-    var sample = IH.invitation.SAMPLE;
     if (!data.title && !data.brideName && !data.groomName && !data.personName) {
       data.title = 'Your Event Title';
     }
-    if (COUPLE_EVENTS.indexOf(data.eventType) !== -1) {
+    if (nameMode(data.eventType) === 'couple') {
       if (!data.brideName && !data.groomName) { data.brideName = 'Bride'; data.groomName = 'Groom'; }
     }
-    if (!data.message) data.message = sample.message;
+    if (!data.message) {
+      /* messageFor arrived with the per-event sample copy; a browser still
+         holding an older preview.js must not be broken by asking for it. */
+      data.message = IH.invitation.messageFor
+        ? IH.invitation.messageFor(data.eventType)
+        : IH.invitation.SAMPLE.message;
+    }
     if (!data.venue) data.venue = 'Venue name';
     if (!data.date) {
       var d = new Date(); d.setMonth(d.getMonth() + 3);
@@ -271,13 +298,107 @@
   }
 
   /* ------------------------------------------------------------------
+     3d. Step 6 — publishing the invitation at its own address
+
+     The fragment link works with nothing deployed, but it is long and
+     unreadable. A host who owns the repository can instead commit the
+     invitation as a folder and hand out a short URL. js/publish.js does
+     the packing; this paints the address and the three steps to it. */
+  function paintPublish(data) {
+    var box = qs('[data-publish-box]', root);
+    if (!box || !IH.publish) return;
+
+    var where = IH.publish.slug(data);      // the .zip route: a folder per invitation
+    var served = IH.publish.page(data);     // the server route: one file per invitation
+
+    var urlOut = qs('[data-publish-url]', box);
+    if (urlOut) urlOut.textContent = served.url;
+
+    /* Publishing renders on the server from the fields alone, so an
+       invitation with uploaded photos has to go the .zip way. Saying so
+       here beats letting the button fail with a 400. */
+    var note = qs('[data-publish-note]', box);
+    if (note) {
+      note.textContent = IH.publish.hasUploads(data)
+        ? 'Your uploaded photos cannot be published this way — use Download page folder for those, ' +
+          'or publish now and the card will use its template artwork instead.'
+        : '';
+    }
+
+    var steps = qs('[data-publish-steps]', box);
+    if (steps) {
+      steps.innerHTML = [
+        '<li>' + IH.icon('globe', 18) + '<span><strong>Publish it now</strong> writes <code>' +
+          escapeHtml(served.path) + '</code> into the repository and the address works ' +
+          'straight away. Needs the Vercel deployment — GitHub Pages cannot run it.</span></li>',
+        '<li>' + IH.icon('download', 18) + '<span><strong>Download page folder</strong> gives you ' +
+          '<code>' + escapeHtml(where.file) + '</code> plus your photos and music, named to match ' +
+          'it, to unpack at the root of your repository and push yourself. This is the one that ' +
+          'keeps your uploads.</span></li>',
+        '<li>' + IH.icon('zap', 18) + '<span>Either way it becomes a real page, so WhatsApp and ' +
+          'Facebook can show a preview of it — which the link above can never do.</span></li>'
+      ].join('');
+    }
+  }
+
+  function initPublish() {
+    var box = qs('[data-publish-box]', root);
+    if (!box || !IH.publish) return;
+
+    on(qs('[data-publish-now]', box), 'click', function (evt) {
+      var btn = evt.currentTarget;
+      var label = qs('span', btn);
+      var was = label ? label.textContent : '';
+
+      btn.disabled = true;
+      if (label) label.textContent = 'Publishing…';
+
+      IH.publish.toServer(previewData()).then(function (result) {
+        var holder = qs('[data-publish-result]', box);
+        var out = qs('[data-publish-live]', box);
+        var open = qs('[data-publish-open]', box);
+
+        if (out) out.textContent = result.url;
+        if (open) open.href = result.url;
+        if (holder) holder.hidden = false;
+
+        IH.toast.success(result.replaced
+          ? 'Republished — the address now shows your latest version.'
+          : 'Published. The address is live now.', { title: result.file });
+        IH.confetti(24);
+      }).catch(function (err) {
+        IH.toast.error(err.message, { title: 'Not published' });
+      }).then(function () {
+        btn.disabled = false;
+        if (label) label.textContent = was;
+      });
+    });
+
+    on(qs('[data-publish-download]', box), 'click', function () {
+      var res = IH.publish.download(previewData());
+      IH.toast.success(res.file + ' saved — ' + res.count + ' file' +
+        (res.count === 1 ? '' : 's') + ' to unpack at the root of your repository.',
+        { title: 'Downloaded' });
+    });
+
+    on(qs('[data-publish-copy]', box), 'click', function () {
+      var url = IH.publish.slug(previewData()).url;
+      IH.share.copy(url).then(function () {
+        IH.toast.success('Address copied — it works once you have pushed the folder.', { title: 'Copied' });
+      }).catch(function () {
+        IH.toast.info('Copy this address: ' + url);
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------------
      4. Step 1 — event type tiles
      ------------------------------------------------------------------ */
 
   var EVENT_CHOICES = [
     'wedding', 'engagement', 'reception', 'birthday', 'baby-shower', 'naming-ceremony',
     'house-warming', 'anniversary', 'graduation', 'retirement', 'farewell', 'corporate',
-    'religious', 'festival', 'school-events', 'college-events', 'party', 'community-events', 'other'
+    'festival', 'school-events', 'college-events', 'party', 'community-events', 'other'
   ];
 
   function buildEventTiles() {
@@ -318,6 +439,7 @@
     }
 
     applyFieldRules();
+    paintEventTemplates();
     buildTemplatePicker();
     syncInputs();
     renderPreview();
@@ -326,33 +448,76 @@
 
   function applyFieldRules() {
     var type = state.eventType;
+    var mode = nameMode(type);
 
     Object.keys(FIELD_RULES).forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       if (!input) return;
       var field = input.closest('.field');
       if (!field) return;
-      var visible = FIELD_RULES[name](type);
-      field.hidden = !visible;
-      input.disabled = !visible;
-      if (!visible) IH.validate.clearError(input);
+
+      var rule = FIELD_RULES[name](mode, type);
+
+      /* Both, deliberately. The attribute is the honest signal — it takes
+         the field out of the accessibility tree too — but it only carries
+         `display: none` from the browser's own stylesheet, which any class
+         here outranks. An inline style cannot be outranked, so a stale or
+         missing stylesheet can never leave a Groom's name sitting on a
+         festival invitation. */
+      field.hidden = !rule.show;
+      field.style.display = rule.show ? '' : 'none';
+      input.disabled = !rule.show;
+
+      /* validate.field reads the attribute, so this is what actually
+         decides whether a blank value stops the wizard. */
+      if (rule.need && rule.show) input.setAttribute('required', '');
+      else input.removeAttribute('required');
+
+      /* The asterisk has to follow, or the form promises one thing and
+         enforces another. */
+      var star = qs('[data-req]', field);
+      if (star) star.hidden = !(rule.need && rule.show);
+
+      /* A field that is now hidden or optional must not keep an error
+         from the last event type the host was looking at. */
+      if (!rule.show || !rule.need) IH.validate.clearError(input);
     });
 
     var personInput = qs('[name="personName"]', root);
     if (personInput) {
       var labelNode = qs('.field__label', personInput.closest('.field'));
       if (labelNode) labelNode.childNodes[0].nodeValue = (PERSON_LABELS[type] || 'Name of the person') + ' ';
-      personInput.placeholder = type === 'birthday' ? 'e.g. Aarav' : 'e.g. Full name';
+      personInput.placeholder = 'As it should appear on the card';
+    }
+
+    /* "Event details" is what you write when you do not know which event.
+       The wizard does know by now, so the step says so: Wedding details,
+       Birthday details, House Warming details. */
+    var stepTitle = qs('#step2-title', root);
+    if (stepTitle) {
+      var meta = IH.invitation.EVENT_TYPES[type];
+      stepTitle.textContent = (meta && type !== 'other')
+        ? meta.label + ' details'
+        : 'Event details';
     }
 
     var titleInput = qs('[name="title"]', root);
     if (titleInput) titleInput.placeholder = TITLE_PLACEHOLDERS[type] || TITLE_PLACEHOLDERS.other;
 
+    /* One wedding sentence used to sit in every event's message box, which
+       made it a thing to delete rather than a thing to start from. The
+       wording now follows the occasion — the copy comes from the same
+       per-event samples the previews use, so there is one list, not two. */
+    var messageInput = qs('[name="message"]', root);
+    if (messageInput && IH.invitation.messageFor) {
+      messageInput.placeholder = IH.invitation.messageFor(type);
+    }
+
     var hostInput = qs('[name="hostName"]', root);
     if (hostInput) {
       hostInput.placeholder = type === 'corporate'
         ? 'e.g. Northwind Technologies'
-        : 'e.g. Mr. & Mrs. Suresh Kumar';
+        : 'e.g. Both families';
     }
   }
 
@@ -360,44 +525,169 @@
      5. Step 4 — template picker, colours, fonts
      ------------------------------------------------------------------ */
 
+  /* The same design is offered in two places — beside the occasion on
+     step 1, and in full on the Design step. They are separate radio
+     groups on purpose: one shared group would let the browser uncheck
+     the tile the visitor is looking at because a tile three steps away
+     holds the selection. markSelected keeps the two in agreement. */
+  function templateTile(t, group) {
+    var selected = t.slug === state.template;
+    return '<label class="option-tile">' +
+      '<input type="radio" name="' + (group || 'template') + '" value="' + escapeHtml(t.slug) + '"' + (selected ? ' checked' : '') + '>' +
+      '<span class="option-tile__box" style="padding:10px;gap:8px">' +
+        '<img src="' + escapeHtml(t.image) + '" alt="' + escapeHtml(t.name) + '" width="600" height="800" ' +
+             'loading="lazy" style="width:100%;border-radius:10px;aspect-ratio:3/4;object-fit:cover">' +
+        '<span>' + escapeHtml(t.name) + '</span>' +
+      '</span>' +
+    '</label>';
+  }
+
+  function grid(list, group) {
+    return '<div class="option-grid">' + list.map(function (t) {
+      return templateTile(t, group);
+    }).join('') + '</div>';
+  }
+
+  function byPopularity(a, b) { return b.popularity - a.popularity; }
+
+  function templatesFor(type) {
+    var cat = TEMPLATE_CATEGORY_FOR_EVENT[type];
+    if (!cat) return [];
+    return IH.data.templates
+      .filter(function (t) { return t.category === cat; })
+      .sort(byPopularity);
+  }
+
+  /* Checked state without a rebuild, so clicking a tile does not tear the
+     grid out from under the pointer. */
+  function markSelected() {
+    qsa('[name="template"], [name="templateQuick"]', root).forEach(function (input) {
+      input.checked = input.value === state.template;
+    });
+  }
+
+  /* Every route to choosing a design ends here, so a pick from step 1 and
+     a pick from the Design step do exactly the same thing. */
+  function selectTemplate(slug, announce) {
+    state.template = slug;
+    state.customColors = false;
+    IH.invitation.applyTemplate(state, slug);
+    markSelected();
+    syncColorInputs();
+    renderPreview();
+    saveDraft();
+
+    if (announce) {
+      var tpl = IH.data.getTemplate(slug);
+      if (tpl) IH.toast.success(tpl.name + ' applied to your invitation.');
+    }
+  }
+
+  /* Step 1 — the designs made for whatever was just chosen, shown right
+     there. The Design step still owns colours, fonts and the full
+     catalogue; this is only the shortcut that makes the occasion and its
+     artwork feel like one decision. */
+  var eventTemplatesBound = false;
+
+  function paintEventTemplates() {
+    var host = qs('[data-event-templates]', root);
+    if (!host) return;
+
+    /* Always painted, never revealed. This used to hide itself until an
+       occasion was chosen, which meant the column could sit empty on a
+       first visit and only appear after stepping away and back. There is
+       always a sensible set to show — the draft opens on a wedding — so
+       there is nothing for an empty state to do here. */
+    var type = state.eventType || 'wedding';
+    var meta = IH.invitation.EVENT_TYPES[type];
+    var label = meta ? meta.label.toLowerCase() : 'this occasion';
+    var matching = templatesFor(type);
+    var capped = false;
+
+    /* "Other" says nothing about what would suit, so rather than list all
+       47 here, show the most popular few and leave the rest to Design. */
+    if (!matching.length) {
+      matching = IH.data.templates.slice().sort(byPopularity).slice(0, 6);
+      capped = true;
+      label = 'any occasion';
+    }
+
+    /* The heading matches the one beside it so the two columns read as a
+       pair rather than a section and a footnote. */
+    host.innerHTML =
+      '<h2 style="font-size:var(--step-2)">Invitation templates</h2>' +
+      '<p class="muted" style="margin:var(--space-3) 0 var(--space-5)">' +
+        (capped
+          ? 'A few designs to start from — the Design step has all ' + IH.data.templates.length + '.'
+          : matching.length + ' design' + (matching.length === 1 ? '' : 's') +
+            ' made for ' + escapeHtml(label) + '. Pick one now or change it later in Design.') +
+      '</p>' +
+      grid(matching, 'templateQuick');
+
+    if (eventTemplatesBound) return;
+    eventTemplatesBound = true;
+
+    on(host, 'change', function (evt) {
+      if (evt.target.name !== 'templateQuick') return;
+      selectTemplate(evt.target.value, true);
+    });
+  }
+
+  var templatePickerBound = false;
+
+  /* Designs made for the chosen event, and only those, in the open. A
+     thin category used to be topped up with popular cards from anywhere,
+     which is why picking Graduation offered wedding cards: the padding
+     was indistinguishable from the real matches. They are still offered —
+     one graduation design is a poor choice — but folded away and named,
+     so nothing borrowed is mistaken for something intended. */
   function buildTemplatePicker() {
     var host = qs('[data-template-picker]', root);
     if (!host) return;
 
     var cat = TEMPLATE_CATEGORY_FOR_EVENT[state.eventType];
-    var list = IH.data.templates.filter(function (t) { return t.category === cat; });
-    if (list.length < 4) {
-      // Small categories get topped up with popular designs from anywhere.
-      var extras = IH.data.templates
-        .filter(function (t) { return t.category !== cat; })
-        .sort(function (a, b) { return b.popularity - a.popularity; })
-        .slice(0, 8 - list.length);
-      list = list.concat(extras);
+    var meta = IH.invitation.EVENT_TYPES[state.eventType];
+    var label = meta ? meta.label.toLowerCase() : 'this event';
+
+    /* "Other" says nothing about what would suit, so nothing is ranked
+       above anything else and the whole catalogue is offered plainly. */
+    if (!cat) {
+      host.innerHTML = grid(IH.data.templates.slice().sort(byPopularity));
+    } else {
+      var matching = templatesFor(state.eventType);
+      var others = IH.data.templates
+        .filter(function (t) { return t.category !== cat; }).sort(byPopularity);
+
+      var html = '';
+
+      if (matching.length) {
+        html += '<p class="tpl-group__note">' + matching.length + ' design' +
+                (matching.length === 1 ? '' : 's') + ' made for ' + escapeHtml(label) + '.' +
+                (matching.length < 4 ? ' Any design below works too.' : '') + '</p>' +
+                grid(matching);
+      }
+
+      if (others.length) {
+        html += '<details class="tpl-more"' + (matching.length ? '' : ' open') + '>' +
+          '<summary>' + (matching.length
+            ? 'Use a design from another occasion (' + others.length + ')'
+            : 'Choose from all ' + others.length + ' designs') + '</summary>' +
+          grid(others) +
+        '</details>';
+      }
+
+      host.innerHTML = html;
     }
 
-    host.innerHTML = list.map(function (t) {
-      var selected = t.slug === state.template;
-      return '<label class="option-tile">' +
-        '<input type="radio" name="template" value="' + escapeHtml(t.slug) + '"' + (selected ? ' checked' : '') + '>' +
-        '<span class="option-tile__box" style="padding:10px;gap:8px">' +
-          '<img src="' + escapeHtml(t.image) + '" alt="' + escapeHtml(t.name) + '" width="600" height="800" ' +
-               'loading="lazy" style="width:100%;border-radius:10px;aspect-ratio:3/4;object-fit:cover">' +
-          '<span>' + escapeHtml(t.name) + '</span>' +
-          '<small>Free</small>' +
-        '</span>' +
-      '</label>';
-    }).join('');
+    /* Bound once. The picker is rebuilt on every event-type change, and
+       re-binding here stacked a fresh handler each time — one click then
+       applied the template and toasted several times over. */
+    if (templatePickerBound) return;
+    templatePickerBound = true;
 
     on(host, 'change', function (evt) {
       if (evt.target.name !== 'template') return;
-      state.template = evt.target.value;
-      state.customColors = false;
-      IH.invitation.applyTemplate(state, state.template);
-      syncColorInputs();
-      renderPreview();
-      saveDraft();
-      var tpl = IH.data.getTemplate(state.template);
-      if (tpl) IH.toast.success(tpl.name + ' applied to your invitation.');
+      selectTemplate(evt.target.value, true);
     });
   }
 
@@ -517,6 +807,21 @@
   var MAX_DIMENSION = 1400;
   var MAX_FILE_BYTES = 8 * 1024 * 1024;
 
+  /* Audio is stored as read — there is no lossless way to shrink it in a
+     browser, and re-encoding music is not something to do behind
+     someone's back. The 8 MB ceiling is what keeps it sane. */
+  function readAudio(file) {
+    return new Promise(function (resolve, reject) {
+      if (!/^audio\//.test(file.type)) { reject(new Error(file.name + ' is not an audio file.')); return; }
+      if (file.size > MAX_FILE_BYTES) { reject(new Error(file.name + ' is larger than 8 MB.')); return; }
+
+      var reader = new FileReader();
+      reader.onerror = function () { reject(new Error('Could not read ' + file.name + '.')); };
+      reader.onload = function () { resolve({ data: reader.result, name: file.name }); };
+      reader.readAsDataURL(file);
+    });
+  }
+
   /* Downscale before storing so a 6 MB phone photo does not blow the
      localStorage quota or stall the preview. */
   function readImage(file) {
@@ -589,6 +894,62 @@
 
       paint();
     });
+
+    /* Background music. state.music keeps the original filename, which is
+       what the card and the export name the track by; state.musicFile
+       holds the audio itself. */
+    var musicZone = qs('[data-drop-music]', root);
+    if (musicZone) {
+      var musicInput = qs('input[type="file"]', musicZone);
+      var musicOut = qs('[data-music-slot]', root);
+
+      var paintMusic = function () {
+        if (!musicOut) return;
+        musicOut.innerHTML = state.musicFile
+          ? '<div class="picked-file">' + IH.icon('music', 18) +
+              '<span>' + escapeHtml(state.music || 'Background music') + '</span>' +
+              '<button class="btn btn--ghost btn--sm" type="button" data-remove-music>' +
+                IH.icon('close', 14) + '<span>Remove</span></button>' +
+            '</div>'
+          : '';
+      };
+
+      var acceptMusic = function (files) {
+        if (!files || !files.length) return;
+        readAudio(files[0]).then(function (picked) {
+          state.musicFile = picked.data;
+          state.music = picked.name;
+          paintMusic();
+          renderPreview();
+          saveDraft();
+          IH.toast.success('Music added. It stays in your browser until you publish or download.');
+        }).catch(function (err) { IH.toast.error(err.message); });
+      };
+
+      on(musicZone, 'click', function (evt) { if (evt.target !== musicInput) musicInput.click(); });
+      on(musicZone, 'keydown', function (evt) {
+        if (evt.key === 'Enter' || evt.key === ' ') { evt.preventDefault(); musicInput.click(); }
+      });
+      on(musicInput, 'change', function () { acceptMusic(musicInput.files); musicInput.value = ''; });
+      on(musicZone, 'dragover', function (evt) { evt.preventDefault(); musicZone.classList.add('is-dragging'); });
+      on(musicZone, 'dragleave', function () { musicZone.classList.remove('is-dragging'); });
+      on(musicZone, 'drop', function (evt) {
+        evt.preventDefault();
+        musicZone.classList.remove('is-dragging');
+        acceptMusic(evt.dataTransfer.files);
+      });
+
+      on(musicOut, 'click', function (evt) {
+        if (!evt.target.closest('[data-remove-music]')) return;
+        state.musicFile = '';
+        state.music = 'none';
+        paintMusic();
+        renderPreview();
+        saveDraft();
+      });
+
+      paintMusic();
+    }
 
     // Gallery (multiple)
     var galleryZone = qs('[data-drop-gallery]', root);
@@ -667,7 +1028,7 @@
      7. Text inputs -> state
      ------------------------------------------------------------------ */
 
-  var TEXT_FIELDS = ['title', 'hostName', 'brideName', 'groomName', 'personName', 'date', 'time',
+  var TEXT_FIELDS = ['title', 'hostName', 'brideName', 'groomName', 'personName', 'years', 'date', 'time',
     'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'];
 
   function initInputs() {
@@ -687,7 +1048,7 @@
       var input = qs('[name="' + name + '"]', root);
       if (input && input.value !== state[name]) input.value = state[name] || '';
     });
-    ['font', 'music', 'animation'].forEach(function (name) {
+    ['font', 'animation'].forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       if (input) input.value = state[name];
     });
@@ -697,8 +1058,7 @@
     });
     var eventInput = qs('[name="eventType"][value="' + state.eventType + '"]', root);
     if (eventInput) eventInput.checked = true;
-    var tplInput = qs('[name="template"][value="' + state.template + '"]', root);
-    if (tplInput) tplInput.checked = true;
+    markSelected();
     syncColorInputs();
   }
 
@@ -785,6 +1145,15 @@
       if (box.top < 0) stepper.scrollIntoView({ block: 'start', behavior: 'smooth' });
     }
 
+    /* The live preview is only worth its column once there is something
+       to look at. On the event step it would show placeholder names, so
+       it gives way to the templates for the occasion just chosen. */
+    var layout = qs('.create-layout', root);
+    var preview = qs('.create-preview', root);
+    if (layout) layout.classList.toggle('is-solo', n === 1);
+    if (preview) preview.hidden = (n === 1);
+
+    if (n === 1) paintEventTemplates();
     if (n === 4) buildTemplatePicker();
     if (n === DONE_STEP) {
       /* "Make Me Payment" lands here. Test mode: no gateway, no charge —
@@ -792,6 +1161,7 @@
          link, the sharing options and the QR code. */
       paintShareLink();
       paintCardSummary(previewData());
+      paintPublish(previewData());
       IH.confetti(36);
     }
     saveDraft();
@@ -843,6 +1213,7 @@
       state = defaultState();
       furthest = 1;
       applyFieldRules();
+      paintEventTemplates();
       buildTemplatePicker();
       syncInputs();
       if (root._paintGallery) root._paintGallery();
@@ -910,18 +1281,38 @@
     var hadDraft = !!IH.store.get(DRAFT_KEY, null);
     furthest = hadDraft ? Math.max(1, state.step || 1) : 1;
 
-    buildEventTiles();
-    buildDesignControls();
-    buildTemplatePicker();
-    initInputs();
-    initMedia();
-    initWizard();
-    initPreviewColumn();
-    initPlans();
-    initExport();
+    /* The page is laid out for step 1 before any of this runs — one
+       column, no preview — so that it never paints the preview and then
+       snatches it away. The cost of that is that showStep is what puts the
+       page right, and anything throwing on the way there would leave the
+       editor stuck in its opening pose with no preview at all.
 
-    applyFieldRules();
-    syncInputs();
+       So the parts that build the page are allowed to fail loudly in the
+       console without taking the wizard down with them. A stale cached
+       script is the usual culprit, which is why the notice says so. */
+    try {
+      buildEventTiles();
+      buildDesignControls();
+      paintEventTemplates();
+      buildTemplatePicker();
+      initInputs();
+      initMedia();
+      initWizard();
+      initPreviewColumn();
+      initPlans();
+      initExport();
+      initPublish();
+
+      applyFieldRules();
+      syncInputs();
+    } catch (err) {
+      if (window.console) console.error('InviteHub: the editor did not fully start —', err);
+      if (IH.toast) {
+        IH.toast.error('Part of the editor did not load. A hard refresh (Ctrl+F5) usually fixes it.',
+          { title: 'Something went wrong' });
+      }
+    }
+
     showStep(wanted ? 2 : (state.step || 1));
     renderPreview();
 

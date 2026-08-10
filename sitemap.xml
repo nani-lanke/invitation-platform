@@ -63,13 +63,6 @@
   </url>
 
   <url>
-    <loc>https://invitehub.example.com/contact.html</loc>
-    <lastmod>2026-08-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <url>
     <loc>https://invitehub.example.com/privacy.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>yearly</changefreq>

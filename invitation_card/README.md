@@ -1,44 +1,79 @@
 # invitation_card/
 
-Somewhere to keep finished invitation pages you want to publish as their own
-URL. Nothing writes here automatically.
+Finished invitation pages that are published as their own URL. Nothing writes
+here automatically — you commit what you want to publish.
 
-## Why nothing writes here automatically
+## The two ways to share an invitation
 
-This site is built for **GitHub Pages**, which is static hosting: it serves
-files, it never runs code. There is no process on the server that could
-receive a finished invitation and save it, and a browser is not allowed to
-write into a folder on your computer. So automatic file creation is not
-possible in production, and the editor no longer attempts it.
-
-## What happens instead
-
-A finished invitation becomes **a link, not a file**. Every detail is packed
-into the part of the URL after the `#`:
+**As a link.** The default. Every detail is packed into the part of the URL
+after the `#`, and `i.html` unpacks it:
 
 ```
-https://USERNAME.github.io/InviteHub/i.html#eyJlIjoid2VkZGluZyIsImIiOi...
+https://USERNAME.github.io/REPO/i.html#eyJlIjoid2VkZGluZyIsImIiOi...
 ```
 
-`i.html` reads that fragment and renders the card. The fragment is never sent
-to a server, so nothing has to be stored — the link works the moment your site
-is deployed. See [`js/link.js`](../js/link.js).
+Nothing is stored, so the link works the moment your site is deployed — but it
+is long, unreadable, and social apps cannot show a preview of it, because the
+fragment never reaches their scrapers. See [`js/link.js`](../js/link.js).
 
-## If you do want a real page at its own URL
+**As a page.** A folder committed here, which gives a short address anyone can
+read aloud, and a real HTTP 200 that WhatsApp and Facebook will preview:
 
-Two manual routes, both fine on GitHub Pages:
+```
+https://USERNAME.github.io/REPO/invitation_card/Nani-Lovely/2026-08-10/
+```
 
-1. **Download and commit.** In the editor's last step press **Download .html**,
-   drop the file in this folder, and push. It is then live at
-   `https://USERNAME.github.io/InviteHub/invitation_card/Their_Names.html`.
-   Photos are embedded in that file, so it needs nothing else.
+The cost is a `git push` per invitation. See [`js/publish.js`](../js/publish.js).
 
-2. **Hand-write one.** Copy [`Mohan_and_Sandhya.html`](Mohan_and_Sandhya.html)
-   and edit it. It links back to `../css/` and `../js/`, so keep it in this
-   folder.
+## Publishing a page
 
-Images referenced by a committed page can live in
-[`image_cards/`](image_cards/) beside it.
+In the editor's last step, under **Or give it a short address of its own**,
+press **Download page folder (.zip)**. Unpack it at the root of the repository
+— the archive already carries the full path, so nothing needs moving:
+
+```
+invitation_card/
+├── Groom_Bride_2026-08-10_1830.html
+├── main_image/
+│   └── Groom_Bride_2026-08-10_1830_image.jpg
+├── background_image/
+│   └── Groom_Bride_2026-08-10_1830_background.jpg
+├── sample_images/
+│   ├── Groom_Bride_2026-08-10_1830_image1.jpg
+│   └── Groom_Bride_2026-08-10_1830_image2.jpg
+└── background_music/
+    └── Groom_Bride_2026-08-10_1830_music.mp3
+```
+
+Then commit and push. GitHub Pages serves it within a minute.
+
+### Why a .zip and not the folder itself
+
+A browser is not allowed to create folders in your downloads — it can only save
+single files. The .zip is how the folder structure survives the trip, and it is
+built by hand in `js/publish.js`, so the site still needs nothing installed.
+
+## How the folder name is chosen
+
+`<Groom>-<Bride>/<YYYY-MM-DD>`, falling back to the person's name, the host's
+name, then the title. Accents, apostrophes and anything else a URL would have
+to escape are removed, so `José O'Brien` becomes `Jose-OBrien`. An invitation
+saved before its date is filled in lands under `undated/`.
+
+Two invitations for the same names on the same date resolve to the same folder
+and the second will overwrite the first. Rename one before committing if that
+is not what you want.
+
+## Older, flat pages
+
+`Name.html` sitting directly in this folder still works and is still served at
+`…/invitation_card/Name.html` — [`Mohan_and_Sandhya.html`](Mohan_and_Sandhya.html)
+is one, hand-written, and a fine thing to copy and edit. The editor's
+**Download .html** button produces this flat shape, with photos embedded, for
+when you want one file to send as an attachment rather than a page to publish.
+
+Both shapes link back to `../css/` and `../js/` at the right depth, so keep each
+page where it was written to live.
 
 ## Running the site locally
 
@@ -48,4 +83,5 @@ Any static server works — there is no build step and nothing to install:
 python -m http.server 8000
 ```
 
-Then open <http://localhost:8000>.
+Then open <http://localhost:8000>. The address shown in the editor follows
+whatever host you are on, so locally it will read `http://localhost:8000/…`.

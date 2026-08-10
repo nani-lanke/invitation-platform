@@ -138,11 +138,9 @@
 .hero__orb { animation: orb-drift 18s ease-in-out infinite; }
 .hero__orb--b { animation-duration: 22s; animation-direction: reverse; }
 
-.animate-float { animation: float-y-soft 6s var(--ease) infinite; }
 .animate-fade-in { animation: fade-in var(--t-slow) var(--ease) both; }
 .animate-pop { animation: pop-in 420ms var(--ease-out) both; }
 .animate-spin { animation: spin 1s linear infinite; }
-.animate-pulse-ring { animation: pulse-ring 2.4s var(--ease) infinite; }
 
 /* Gradient text/background that slowly pans */
 .animate-gradient {
@@ -169,8 +167,6 @@
 
 /* Sparkles used as decorative accents around headings */
 .sparkle { animation: sparkle 2.6s var(--ease) infinite; transform-origin: center; }
-.sparkle--2 { animation-delay: .7s; }
-.sparkle--3 { animation-delay: 1.4s; }
 
 /* Confetti burst layer (created by JS on successful actions) */
 .confetti-layer {
@@ -238,7 +234,6 @@
 .btn:active::after, .chip:active::after { opacity: .1; }
 
 /* Page-level entrance for main content */
-.page-enter { animation: fade-slide-in 520ms var(--ease-out) both; }
 
 /* --------------------------------------------------------------------------
    4. Reduced motion

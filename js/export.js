@@ -13,8 +13,12 @@
    Public surface:
      IH.exportPage.personName(state)  -> 'John Doe'
      IH.exportPage.fileName(state)    -> 'John_Doe.html'
-     IH.exportPage.buildHtml(state)   -> full document as a string
+     IH.exportPage.buildHtml(state, opts) -> full document as a string
      IH.exportPage.download(state)    -> triggers a browser download
+
+   opts.up is how far the page sits below the site root, as a path prefix
+   ('../' for invitation_card/Name.html, '../../../' for a page nested in
+   invitation_card/Names/Date/). js/publish.js uses it for the second form.
    ==================================================================== */
 
 (function () {
@@ -117,7 +121,14 @@
      2b. Photos → real files in invitation_card/images/
      ------------------------------------------------------------------ */
 
-  var IMAGE_DIR = 'image_cards';
+  /* One folder per kind of asset, beside the page rather than under it,
+     so every invitation's photos land together. */
+  var MAIN_DIR = 'main_image';
+  var BG_DIR = 'background_image';
+  var GALLERY_DIR = 'sample_images';
+  var MUSIC_DIR = 'background_music';
+  var ASSET_DIRS = [MAIN_DIR, BG_DIR, GALLERY_DIR, MUSIC_DIR];
+
   var MIME_EXT = {
     'image/jpeg': 'jpg', 'image/jpg': 'jpg', 'image/png': 'png',
     'image/webp': 'webp', 'image/gif': 'gif', 'image/avif': 'avif'
@@ -133,34 +144,64 @@
   }
 
   /* Returns a state whose image fields point at relative file paths, plus
-     the list of files that would sit beside it. Used when a host commits a
-     page into invitation_card/ and wants the photos as separate files. */
-  function extractAssets(state) {
-    var base = safeBase(personName(state));
+     the list of files that belong beside the page. Every name is built from
+     the same stem as the page, so an invitation's assets stay recognisably
+     its own however many share the folder. */
+  function extractAssets(state, baseName) {
+    var base = baseName === undefined ? safeBase(personName(state)) : String(baseName);
     var assets = [];
     var out = {};
     Object.keys(state).forEach(function (k) { out[k] = state[k]; });
 
-    function take(dataUrl, suffix) {
+    function take(dataUrl, dir, suffix) {
       if (!isDataUrl(dataUrl)) return dataUrl;
-      var name = base + '-' + suffix + '.' + extFor(dataUrl);
-      assets.push({ name: name, data: dataUrl });
-      return IMAGE_DIR + '/' + name;
+      var path = dir + '/' + base + '_' + suffix + '.' + extFor(dataUrl);
+      assets.push({ path: path, data: dataUrl });
+      return path;
     }
 
-    out.photo = take(state.photo, 'photo');
-    out.background = take(state.background, 'bg');
+    out.photo = take(state.photo, MAIN_DIR, 'image');
+    out.background = take(state.background, BG_DIR, 'background');
     out.gallery = (state.gallery || []).map(function (src, i) {
-      return take(src, 'gallery-' + (i + 1));
+      return take(src, GALLERY_DIR, 'image' + (i + 1));
     });
 
     return { state: out, assets: assets };
   }
 
-  function buildHtml(state) {
+  /* An image the host picked out of the repository is written as a path
+     from the site root ('images/hero/card-baby.svg'), which is wrong once
+     the page is sitting inside invitation_card/. Everything else already
+     resolves: data: URLs and absolute URLs carry no context, and the
+     asset folders are deliberately relative — they sit beside the page. */
+  function resolvePaths(state, up) {
+    function fix(src) {
+      if (typeof src !== 'string' || !src) return src;
+      if (/^(data:|https?:|\/\/|\/|\.\.?\/)/.test(src)) return src;
+      for (var i = 0; i < ASSET_DIRS.length; i++) {
+        if (src.slice(0, ASSET_DIRS[i].length + 1) === ASSET_DIRS[i] + '/') return src;
+      }
+      return up + src;
+    }
+
+    var out = {};
+    Object.keys(state).forEach(function (k) { out[k] = state[k]; });
+    out.photo = fix(state.photo);
+    out.background = fix(state.background);
+    out.musicFile = fix(state.musicFile);
+    if (state.gallery) out.gallery = state.gallery.map(fix);
+
+    return out;
+  }
+
+  function buildHtml(state, opts) {
+    /* How many folders up the shared css/ and js/ live. One level by
+       default; a page that owns a folder of its own passes more. */
+    var up = (opts && opts.up) || '../';
+
     var who = personName(state) || 'Our Celebration';
     var title = who + ' — ' + eventLabel(state) + ' Invitation';
-    var card = IH.invitation.render(state);
+    var card = IH.invitation.render(resolvePaths(state, up));
 
     return [
       '<!DOCTYPE html>',
@@ -171,18 +212,29 @@
       '<title>' + esc(title) + '</title>',
       '<meta name="description" content="' + esc(metaDescription(state)) + '">',
       '<meta name="generator" content="InviteHub">',
+      /* An invitation carries names, an address and a phone number. It is
+         meant for the people sent the link, not for search results — but
+         noindex only stops indexing, so the link-preview scrapers below
+         still read the page and show the card in WhatsApp. */
+      '<meta name="robots" content="noindex">',
       '<meta property="og:type" content="website">',
       '<meta property="og:title" content="' + esc(title) + '">',
       '<meta property="og:description" content="' + esc(metaDescription(state)) + '">',
+      /* A scraper has no page to resolve a relative URL against, so these
+         two are only worth writing when the caller knows the deployed
+         address. js/publish.js does; a plain download does not. */
+      opts && opts.canonical ? '<meta property="og:url" content="' + esc(opts.canonical) + '">' : '',
+      opts && opts.image ? '<meta property="og:image" content="' + esc(opts.image) + '">' : '',
+      opts && opts.image ? '<meta name="twitter:card" content="summary_large_image">' : '',
       '',
-      '<link rel="icon" href="../images/logo/favicon.svg" type="image/svg+xml">',
+      '<link rel="icon" href="' + up + 'images/logo/favicon.svg" type="image/svg+xml">',
       '<link rel="preconnect" href="https://fonts.googleapis.com">',
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap">',
       '',
-      '<link rel="stylesheet" href="../css/style.css">',
-      '<link rel="stylesheet" href="../css/animations.css">',
-      '<link rel="stylesheet" href="../css/responsive.css">',
+      '<link rel="stylesheet" href="' + up + 'css/style.css">',
+      '<link rel="stylesheet" href="' + up + 'css/animations.css">',
+      '<link rel="stylesheet" href="' + up + 'css/responsive.css">',
       '',
       '<style>',
       '  /* Spatial UI: the invitation floats as a lit glass window in front of',
@@ -270,16 +322,16 @@
       '  <div class="window" data-invitation-host>',
       card,
       '  </div>',
-      '  <p class="credit">Created with <a href="../index.html">InviteHub</a></p>',
+      '  <p class="credit">Created with <a href="' + up + 'index.html">InviteHub</a></p>',
       '</main>',
       '',
       '<script id="invitation-data" type="application/json">',
       escScript(JSON.stringify(leanState(state))),
       '<\/script>',
       '',
-      '<script src="../js/main.js" defer><\/script>',
-      '<script src="../js/countdown.js" defer><\/script>',
-      '<script src="../js/share.js" defer><\/script>',
+      '<script src="' + up + 'js/main.js" defer><\/script>',
+      '<script src="' + up + 'js/countdown.js" defer><\/script>',
+      '<script src="' + up + 'js/share.js" defer><\/script>',
       '<script>',
       '  /* The card above is already rendered, so the page reads fine with',
       '     JavaScript off. This starts the live countdown and adds the small',
@@ -340,10 +392,11 @@
 
   IH.exportPage = {
     FOLDER: FOLDER,
-    IMAGE_DIR: IMAGE_DIR,
+    ASSET_DIRS: ASSET_DIRS,
     personName: personName,
     safeBase: safeBase,
     fileName: fileName,
+    extractAssets: extractAssets,
     buildHtml: buildHtml,
     download: download
   };

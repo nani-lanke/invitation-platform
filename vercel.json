@@ -1,0 +1,33 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": false,
+  "trailingSlash": false,
+
+  "functions": {
+    "api/publish.js": { "includeFiles": "js/**" },
+    "api/check.js": { "includeFiles": "js/**" }
+  },
+
+  "rewrites": [
+    {
+      "source": "/invitation_card/:file(.+\\.html)",
+      "destination": "/api/invite?file=:file"
+    }
+  ],
+
+  "headers": [
+    {
+      "source": "/api/(publish|check)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store" }
+      ]
+    },
+    {
+      "comment": "The scripts depend on each other, so a browser holding an old copy of one and a new copy of another breaks the editor in ways that look random. Revalidating on every load costs a 304 and removes that entire class of fault.",
+      "source": "/(css|js)/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}

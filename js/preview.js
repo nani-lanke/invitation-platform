@@ -31,7 +31,6 @@
     retirement:        { label: 'Retirement',       icon: 'leaf',            kicker: 'Retirement Felicitation',      motif: 'laurel',   defaultTemplate: 'retirement-honour' },
     farewell:          { label: 'Farewell',         icon: 'users',           kicker: 'Farewell',                     motif: 'sparkles', defaultTemplate: 'farewell-evening' },
     corporate:         { label: 'Corporate',        icon: 'briefcase',       kicker: 'You are invited',              motif: 'chevron',  defaultTemplate: 'corporate-event' },
-    religious:         { label: 'Religious',        icon: 'praying-hands',   kicker: 'With divine blessings',        motif: 'lotus',    defaultTemplate: 'sacred-blessings' },
     festival:          { label: 'Festival',         icon: 'flame',           kicker: 'Festival Greetings',           motif: 'lotus',    defaultTemplate: 'festival-celebration' },
     'school-events':   { label: 'School Event',     icon: 'book-open',       kicker: 'School Event',                 motif: 'chevron',  defaultTemplate: 'annual-day' },
     'college-events':  { label: 'College Event',    icon: 'music',           kicker: 'College Event',                motif: 'chevron',  defaultTemplate: 'college-fest' },
@@ -137,21 +136,22 @@
     eventType: 'wedding',
     template: 'elegant-floral',
     title: 'The Wedding Celebration',
-    hostName: 'Mr. & Mrs. Suresh Kumar',
-    brideName: 'Priya',
-    groomName: 'Rahul',
+    hostName: 'Both Families',
+    brideName: 'Bride',
+    groomName: 'Groom',
     personName: '',
     date: '2026-12-25',
     time: '18:30',
     venue: 'Grand Palace Hall',
     address: 'Anna Salai, Chennai, Tamil Nadu 600002',
     mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Chennai',
-    phone: '+91 98765 43210',
-    email: 'rahul.priya@example.com',
+    phone: '0000000000',
+    email: 'hello@example.com',
     message: 'Request the pleasure of your company as we begin our life together. Your presence would make our day complete.',
     photo: '',
     gallery: [],
     music: 'none',
+    musicFile: '',
     font: 'playfair',
     showCountdown: true,
     showRsvp: true,
@@ -180,10 +180,29 @@
     return escapeHtml(data.title || EVENT_TYPES[type].label);
   }
 
+  /* 1st, 2nd, 3rd, 25th — and 11th/12th/13th, which break the pattern. */
+  function ordinal(value) {
+    var n = parseInt(value, 10);
+    if (!n || n < 1) return '';
+    var teens = n % 100;
+    var suffix = (teens >= 11 && teens <= 13)
+      ? 'th'
+      : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th');
+    return n + suffix;
+  }
+
   function subheadFor(data) {
     var type = data.eventType || 'other';
     if (type === 'birthday') {
       return data.title && data.personName ? escapeHtml(data.title) : 'is turning one year more!';
+    }
+    /* An anniversary is defined by which one it is, so the number goes
+       directly under the names rather than being left for the host to
+       work into the title themselves. */
+    if (type === 'anniversary') {
+      var nth = ordinal(data.years);
+      if (nth) return escapeHtml(nth + ' Anniversary');
+      return data.title ? escapeHtml(data.title) : '';
     }
     if (type === 'wedding' && data.title) return escapeHtml(data.title);
     return '';
@@ -192,6 +211,14 @@
   IH.invitation = {
     EVENT_TYPES: EVENT_TYPES,
     SAMPLE: SAMPLE,
+
+    /* The wording that suits one occasion suits no other, so the sample
+       copy is kept per event type. The editor borrows the message from
+       here rather than keeping a second list that would drift from it. */
+    messageFor: function (eventType) {
+      var sample = sampleForCategory(eventType);
+      return (sample && sample.message) || SAMPLE.message;
+    },
     formatDate: formatDate,
     formatTime: formatTime,
     toDateTime: toDateTime,
@@ -247,6 +274,7 @@
 
       html.push('<article class="invitation invitation--' + type + '" style="' + this.styleVars(data) + '" ' +
         'aria-label="' + escapeHtml(meta.label) + ' invitation preview">');
+
 
       html.push('<div class="invitation__ornament">' + ornament + '</div>');
 
@@ -318,8 +346,22 @@
 
       if (actions.length) html.push('<div class="invitation__actions">' + actions.join('') + '</div>');
 
-      html.push('<p class="invitation__footer">Created with InviteHub' +
-        (data.music && data.music !== 'none' ? ' · Music: ' + escapeHtml(data.music) : '') + '</p>');
+      /* A real player, not a note saying which song was chosen. Browsers
+         refuse to start audio a visitor did not ask for, so autoplay is
+         not on the table — and would be unwelcome anyway on a card that
+         might be opened in a quiet room. The controls are the feature. */
+      if (data.musicFile) {
+        html.push('<div class="invitation__music">' +
+          '<audio controls preload="none" src="' + escapeHtml(data.musicFile) + '">' +
+            'Your browser cannot play this audio.' +
+          '</audio>' +
+          (data.music && data.music !== 'none'
+            ? '<span class="invitation__music-name">' + escapeHtml(data.music) + '</span>'
+            : '') +
+        '</div>');
+      }
+
+      html.push('<p class="invitation__footer">Created with InviteHub</p>');
 
       html.push('</article>');
       return html.join('');
@@ -480,10 +522,9 @@
     });
     qsa('[data-preview-blurb]', scope).forEach(function (n) { n.textContent = tpl.blurb; });
 
-    if (badgeOut) {
-      // Every design is free to download; only publishing a link is paid.
-      badgeOut.innerHTML = '<span class="badge badge--free">' + IH.icon('check', 13) + 'Free to download</span>';
-    }
+    // No tier badge: every design is the same in that respect, so saying so
+    // on each one added a word without adding a distinction.
+    if (badgeOut) badgeOut.innerHTML = '';
 
     if (featOut) {
       featOut.innerHTML = tpl.features.map(function (f) {
@@ -525,23 +566,23 @@
   function sampleForCategory(category) {
     switch (category) {
       case 'birthday':
-        return { title: 'Turning Six!', personName: 'Aarav', hostName: 'Nithya & Karthik invite you', date: '2026-09-12', time: '16:00',
+        return { title: 'Turning Six!', personName: 'The Birthday Child', hostName: 'The parents invite you', date: '2026-09-12', time: '16:00',
           venue: 'The Play Loft', address: 'Velachery, Chennai 600042',
           message: 'Cake, games and a whole lot of noise. Come celebrate with us!' };
       case 'baby-shower':
-        return { title: 'Baby Shower', personName: 'Baby Sharma', hostName: 'The Sharma Family', date: '2026-10-04', time: '11:00',
+        return { title: 'Baby Shower', personName: 'Our Little One', hostName: 'The Family', date: '2026-10-04', time: '11:00',
           venue: 'Rose Garden Banquet', address: 'Adyar, Chennai 600020',
           message: 'Join us for a morning of blessings as we welcome our little one.' };
       case 'naming-ceremony':
-        return { title: 'Namakarana', personName: 'Our Baby Girl', hostName: 'Divya & Ashwin', date: '2026-08-30', time: '09:30',
+        return { title: 'Namakarana', personName: 'Our Baby Girl', hostName: 'The Parents', date: '2026-08-30', time: '09:30',
           venue: 'Sri Krishna Kalyana Mandapam', address: 'Mylapore, Chennai 600004',
           message: 'With the blessings of our elders, we name our daughter. Please join us.' };
       case 'house-warming':
-        return { title: 'Griha Pravesh', personName: '', hostName: 'Meera & Vignesh', date: '2026-07-18', time: '07:30',
+        return { title: 'Griha Pravesh', personName: '', hostName: 'The Family', date: '2026-07-18', time: '07:30',
           venue: 'Plot 42, Lakeview Enclave', address: 'Sholinganallur, Chennai 600119',
           message: 'We have built a home. Please come and bless it with your presence.' };
       case 'anniversary':
-        return { brideName: 'Lakshmi', groomName: 'Ramesh', title: '25 Years Together', hostName: 'With love, the Iyer family',
+        return { brideName: 'Bride', groomName: 'Groom', years: '25', title: '25 Years Together', hostName: 'With love, the family',
           date: '2026-11-08', time: '19:00', venue: 'Ocean Pearl Hall', address: 'Besant Nagar, Chennai 600090',
           message: 'Twenty-five years ago we said yes. Celebrate the silver year with us.' };
       case 'corporate':
@@ -549,25 +590,21 @@
           date: '2026-09-24', time: '10:00', venue: 'ITC Grand Chola, Ballroom 2', address: 'Guindy, Chennai 600032',
           message: 'A full day of product keynotes, partner sessions and networking. Seats are limited.' };
       case 'festival':
-        return { title: 'Deepavali Celebrations', hostName: 'The Raghavan Family', personName: '',
+        return { title: 'Deepavali Celebrations', hostName: 'The Family', personName: '',
           date: '2026-11-07', time: '18:00', venue: 'Our Home', address: 'T. Nagar, Chennai 600017',
           message: 'Lamps, sweets and good company. Wishing you a bright and joyful festival.' };
       case 'graduation':
-        return { title: 'Class of 2026', personName: 'Sanjay Menon', hostName: 'Proudly hosted by the Menon family',
+        return { title: 'Class of 2026', personName: 'The Graduate', hostName: 'Proudly hosted by the family',
           date: '2026-06-20', time: '17:00', venue: 'College Auditorium', address: 'Guindy, Chennai 600025',
           message: 'Four years, one degree and a lot of coffee. Come celebrate the finish line.' };
       case 'retirement':
-        return { title: 'A Life Well Served', personName: 'Mr. Venkatesan', hostName: 'The team at Southern Rail',
+        return { title: 'A Life Well Served', personName: 'Our Colleague', hostName: 'The team at Southern Rail',
           date: '2026-05-29', time: '18:00', venue: 'Officers Club', address: 'Egmore, Chennai 600008',
           message: 'Thirty-eight years of service. Join us as we say thank you.' };
       case 'farewell':
-        return { title: 'Farewell Evening', personName: 'Priya Nair', hostName: 'From all of us at Studio 9',
+        return { title: 'Farewell Evening', personName: 'Our Colleague', hostName: 'From all of us at Studio 9',
           date: '2026-04-30', time: '19:30', venue: 'The Terrace Cafe', address: 'Nungambakkam, Chennai 600034',
           message: 'One last evening together before the next chapter begins.' };
-      case 'religious':
-        return { title: 'Satyanarayana Puja', hostName: 'The Krishnan Family', personName: '',
-          date: '2026-08-16', time: '08:00', venue: 'Our Residence', address: 'Alwarpet, Chennai 600018',
-          message: 'Seeking your presence and blessings for the puja and lunch that follows.' };
       case 'school-events':
         return { title: 'Annual Day 2026', hostName: 'Greenfield Matriculation School', personName: '',
           date: '2026-12-12', time: '17:00', venue: 'School Grounds', address: 'Porur, Chennai 600116',
@@ -577,7 +614,7 @@
           date: '2026-10-16', time: '16:00', venue: 'Open Air Theatre', address: 'Taramani, Chennai 600113',
           message: 'Three days. Twenty events. One campus. Get your passes early.' };
       case 'party':
-        return { title: 'House Party', hostName: 'Rohit & Anjali', personName: '',
+        return { title: 'House Party', hostName: 'The Hosts', personName: '',
           date: '2026-06-06', time: '20:00', venue: 'Apartment 12B, Sea Breeze', address: 'ECR, Chennai 600119',
           message: 'Music, food and friends. Bring nothing but yourself.' };
       case 'community-events':
@@ -585,11 +622,11 @@
           date: '2026-05-10', time: '10:00', venue: 'Community Hall', address: 'Pallikaranai, Chennai 600100',
           message: 'Agenda: maintenance review, security update and the summer plan. All residents welcome.' };
       case 'engagement':
-        return { brideName: 'Meera', groomName: 'Arjun', title: 'Engagement Ceremony', hostName: 'Together with their families',
+        return { brideName: 'Bride', groomName: 'Groom', title: 'Engagement Ceremony', hostName: 'Together with their families',
           date: '2026-08-22', time: '11:00', venue: 'Hotel Saravana Bhavan Hall', address: 'Anna Nagar, Chennai 600040',
-          message: 'Two families, one promise. Please join us as Arjun and Meera exchange rings.' };
+          message: 'Two families, one promise. Please join us as the couple exchange rings.' };
       case 'reception':
-        return { brideName: 'Priya', groomName: 'Rahul', title: 'Wedding Reception', hostName: 'Together with their families',
+        return { brideName: 'Bride', groomName: 'Groom', title: 'Wedding Reception', hostName: 'Together with their families',
           date: '2026-12-26', time: '19:00', venue: 'Grand Palace Hall', address: 'Anna Salai, Chennai 600002',
           message: 'Dinner, music and celebration. Join us the evening after the wedding.' };
       default:
@@ -667,7 +704,6 @@
     if (specTable) {
       specTable.innerHTML =
         '<tr><th scope="row">Category</th><td>' + escapeHtml(tpl.categoryLabel) + '</td></tr>' +
-        '<tr><th scope="row">Price</th><td>Free to download</td></tr>' +
         '<tr><th scope="row">Orientation</th><td>Portrait 3:4</td></tr>' +
         '<tr><th scope="row">Best for</th><td>Mobile sharing &amp; WhatsApp</td></tr>' +
         '<tr><th scope="row">Added</th><td>' + escapeHtml(formatDate(tpl.added).full) + '</td></tr>';
@@ -707,6 +743,18 @@
           IH.invitation.applyTemplate(data, slug);
         }
       }
+
+      /* data-sample-gallery="a.webp|b.webp" fills the photo grid. The demo
+         card is otherwise the one place a visitor never sees the gallery,
+         because the sample carries no photos — and a feature nobody can
+         see on the page selling it may as well not exist. Opt-in by
+         attribute, so template previews elsewhere stay unphotographed. */
+      var shots = host.getAttribute('data-sample-gallery');
+      if (shots) {
+        data.gallery = shots.split('|').map(function (s) { return s.trim(); }).filter(Boolean);
+        data.showGallery = true;
+      }
+
       IH.invitation.mount(host, data);
     });
   }

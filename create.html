@@ -42,6 +42,7 @@
 <script src="js/share.js" defer></script>
 <script src="js/link.js" defer></script>
 <script src="js/export.js" defer></script>
+<script src="js/publish.js" defer></script>
 <script src="js/create.js" defer></script>
 </head>
 <body>
@@ -70,7 +71,6 @@
       <li><a class="nav__link" href="pricing.html">Pricing</a></li>
       <li><a class="nav__link" href="index.html#how-it-works">How It Works</a></li>
       <li><a class="nav__link" href="about.html">About</a></li>
-      <li><a class="nav__link" href="contact.html">Contact</a></li>
       <li class="nav__drawer-cta">
         <a class="btn btn--primary btn--block" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
         <a class="btn btn--secondary btn--block" href="faq.html"><i data-icon="message-circle" data-icon-size="18"></i><span>FAQ</span></a>
@@ -93,10 +93,6 @@
 
   <section class="page-hero" style="padding-bottom:var(--space-5)">
     <div class="container container--wide">
-      <ol class="breadcrumb">
-        <li><a href="index.html">Home</a></li>
-        <li>Create Invitation</li>
-      </ol>
       <h1 style="font-size:var(--step-4)">Create Your Invitation</h1>
       <p>Fill in the left, watch the card on the right. Your draft is saved in this browser as you go — you can close the tab and come back to it.</p>
     </div>
@@ -104,14 +100,6 @@
 
   <section class="section" style="padding-top:0">
     <div class="container container--wide">
-
-      <div class="notice notice--info" style="margin-bottom:var(--space-6)">
-        <i data-icon="info" data-icon-size="20"></i>
-        <div>
-          <strong>Demonstration mode</strong>
-          This build runs entirely in your browser. Photos are read locally and never uploaded, drafts live in this browser's storage only, and no payment is taken.
-        </div>
-      </div>
 
       <!-- Stepper -->
       <nav class="stepper" aria-label="Invitation steps">
@@ -146,59 +134,79 @@
       </div>
       <p class="sr-only" data-step-live aria-live="polite">Step 1 of 6</p>
 
-      <div class="create-layout">
+      <!-- Starts in the step-1 shape: one column, no preview. The scripts
+           are deferred, so leaving the preview visible here would paint it
+           and then snatch it away once create.js ran. showStep brings it
+           back the moment the wizard moves past the event step. -->
+      <div class="create-layout is-solo">
 
         <!-- ===================== FORM COLUMN ===================== -->
         <form class="panel" data-create-form novalidate>
 
           <!-- STEP 1 -->
           <section class="wizard-panel is-active" data-step-panel="1" aria-labelledby="step1-title">
-            <h2 id="step1-title" style="font-size:var(--step-2)">What are you celebrating?</h2>
-            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Pick the occasion. The wording, the layout and the suggested templates all change to match it.</p>
-            <div class="option-grid" data-event-tiles role="radiogroup" aria-label="Event type"></div>
+            <!-- The occasion and the designs made for it, side by side, so
+                 changing one is seen against the other. -->
+            <div class="event-layout">
+              <div class="event-layout__col">
+                <h2 id="step1-title" style="font-size:var(--step-2)">What are you celebrating?</h2>
+                <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Pick the occasion. The wording, the layout and the suggested templates all change to match it.</p>
+                <div class="option-grid" data-event-tiles role="radiogroup" aria-label="Event type"></div>
+              </div>
+
+              <div class="event-layout__col" data-event-templates role="radiogroup" aria-label="Invitation template"></div>
+            </div>
           </section>
 
           <!-- STEP 2 -->
           <section class="wizard-panel" data-step-panel="2" aria-labelledby="step2-title" hidden>
             <h2 id="step2-title" style="font-size:var(--step-2)">Event details</h2>
-            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Only the date and venue are required — everything else is optional and can be left blank.</p>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">You are only asked what this kind of celebration needs. Just the name and the date are required — everything else, venue included, can be left blank and filled in later.</p>
 
             <div class="form-grid">
               <div class="field field--full">
-                <label class="field__label" for="f-title">Event title <span class="req" aria-hidden="true">*</span></label>
-                <input class="input" id="f-title" name="title" type="text" required data-label="Event title" placeholder="e.g. The Wedding Celebration" autocomplete="off">
+                <label class="field__label" for="f-title">Event title <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-title" name="title" type="text" data-label="Event title" placeholder="e.g. The Wedding Celebration" autocomplete="off">
                 <p class="field__hint">Shown in small caps above the names.</p>
                 <p class="field__error" role="alert"></p>
               </div>
 
               <div class="field field--full">
                 <label class="field__label" for="f-host">Host name</label>
-                <input class="input" id="f-host" name="hostName" type="text" data-label="Host name" placeholder="e.g. Mr. &amp; Mrs. Suresh Kumar" autocomplete="off">
+                <input class="input" id="f-host" name="hostName" type="text" data-label="Host name" placeholder="e.g. Both families" autocomplete="off">
                 <p class="field__hint">Usually the parents or the organising family.</p>
                 <p class="field__error" role="alert"></p>
               </div>
 
               <div class="field">
-                <label class="field__label" for="f-groom">Groom’s name <span class="req" aria-hidden="true">*</span></label>
-                <input class="input" id="f-groom" name="groomName" type="text" required data-label="Groom’s name" placeholder="e.g. Rahul" autocomplete="off">
+                <label class="field__label" for="f-groom">Groom’s name <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-groom" name="groomName" type="text" data-label="Groom’s name" placeholder="Groom" autocomplete="off">
                 <p class="field__error" role="alert"></p>
               </div>
 
               <div class="field">
-                <label class="field__label" for="f-bride">Bride’s name <span class="req" aria-hidden="true">*</span></label>
-                <input class="input" id="f-bride" name="brideName" type="text" required data-label="Bride’s name" placeholder="e.g. Priya" autocomplete="off">
+                <label class="field__label" for="f-bride">Bride’s name <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-bride" name="brideName" type="text" data-label="Bride’s name" placeholder="Bride" autocomplete="off">
                 <p class="field__error" role="alert"></p>
               </div>
 
               <div class="field field--full" hidden>
-                <label class="field__label" for="f-person">Birthday person <span class="req" aria-hidden="true">*</span></label>
-                <input class="input" id="f-person" name="personName" type="text" required data-label="Name" placeholder="e.g. Aarav" autocomplete="off">
+                <label class="field__label" for="f-person">Birthday person <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-person" name="personName" type="text" data-label="Name" placeholder="As it should appear on the card" autocomplete="off">
+                <p class="field__error" role="alert"></p>
+              </div>
+
+              <!-- Anniversaries only. The card prints it as "25th Anniversary". -->
+              <div class="field" hidden>
+                <label class="field__label" for="f-years">Which anniversary?</label>
+                <input class="input" id="f-years" name="years" type="number" min="1" max="100" step="1" inputmode="numeric" data-label="Anniversary year" placeholder="e.g. 25" autocomplete="off">
+                <p class="field__hint">The number of years — printed on the card as 25th Anniversary.</p>
                 <p class="field__error" role="alert"></p>
               </div>
 
               <div class="field">
-                <label class="field__label" for="f-date">Date <span class="req" aria-hidden="true">*</span></label>
-                <input class="input" id="f-date" name="date" type="date" required data-label="Date">
+                <label class="field__label" for="f-date">Date <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-date" name="date" type="date" data-label="Date">
                 <p class="field__hint">Drives the countdown timer.</p>
                 <p class="field__error" role="alert"></p>
               </div>
@@ -211,8 +219,8 @@
               </div>
 
               <div class="field field--full">
-                <label class="field__label" for="f-venue">Venue <span class="req" aria-hidden="true">*</span></label>
-                <input class="input" id="f-venue" name="venue" type="text" required data-label="Venue" placeholder="e.g. Grand Palace Hall" autocomplete="off">
+                <label class="field__label" for="f-venue">Venue <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-venue" name="venue" type="text" data-label="Venue" placeholder="e.g. Grand Palace Hall" autocomplete="off">
                 <p class="field__error" role="alert"></p>
               </div>
 
@@ -232,7 +240,7 @@
 
               <div class="field">
                 <label class="field__label" for="f-phone">Contact number</label>
-                <input class="input" id="f-phone" name="phone" type="tel" data-label="Contact number" placeholder="+91 98765 43210" autocomplete="tel">
+                <input class="input" id="f-phone" name="phone" type="tel" data-label="Contact number" placeholder="0000000000" autocomplete="tel">
                 <p class="field__error" role="alert"></p>
               </div>
 
@@ -291,16 +299,15 @@
               </div>
 
               <div class="field">
-                <label class="field__label" for="f-music">Background music</label>
-                <select class="select" id="f-music" name="music">
-                  <option value="none">No music</option>
-                  <option value="Soft Piano">Soft Piano — gentle and classic</option>
-                  <option value="Shehnai">Shehnai — traditional wedding</option>
-                  <option value="Acoustic Guitar">Acoustic Guitar — warm and modern</option>
-                  <option value="Celebration Beat">Celebration Beat — upbeat party</option>
-                  <option value="Temple Bells">Temple Bells — devotional</option>
-                </select>
-                <p class="field__hint">Playback arrives with the hosted version. For now the choice is recorded on the card.</p>
+                <span class="field__label">Background music</span>
+                <div class="dropzone" data-drop-music tabindex="0" role="button" aria-label="Choose a background music file">
+                  <i data-icon="music" data-icon-size="34"></i>
+                  <strong>Drop a music file here or click to browse</strong>
+                  <small>MP3, M4A, OGG or WAV · up to 8 MB · guests press play</small>
+                  <input type="file" accept="audio/*">
+                </div>
+                <div data-music-slot></div>
+                <p class="field__hint">Browsers do not let a page start playing sound on its own, so the card shows a small player instead of surprising your guests.</p>
               </div>
             </div>
           </section>
@@ -311,7 +318,7 @@
             <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Start from a template, then change any colour or font you like. Every change shows up instantly on the right.</p>
 
             <h3 style="font-size:var(--step-1);margin-bottom:var(--space-4)">Template</h3>
-            <div class="option-grid" data-template-picker role="radiogroup" aria-label="Template"></div>
+            <div data-template-picker role="radiogroup" aria-label="Template"></div>
 
             <h3 style="font-size:var(--step-1);margin:var(--space-7) 0 var(--space-4)">Colour palette</h3>
             <div class="swatch-row" data-color-presets role="group" aria-label="Colour presets"></div>
@@ -435,6 +442,34 @@
               </div>
             </div>
 
+            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Or give it a short address of its own</h3>
+            <div class="notice" data-publish-box style="margin-bottom:var(--space-6)">
+              <i data-icon="globe" data-icon-size="20"></i>
+              <div>
+                <strong>A page in your repository</strong>
+                <p style="margin:var(--space-2) 0 0">Publish the invitation as a real page and the long link above becomes a short one your guests can read:</p>
+
+                <div class="link-box" style="margin-top:var(--space-3)">
+                  <code data-publish-url>…</code>
+                  <button class="btn btn--secondary btn--sm" type="button" data-publish-copy><i data-icon="copy" data-icon-size="16"></i><span>Copy</span></button>
+                </div>
+
+                <ol class="preview-specs" data-publish-steps style="margin:var(--space-4) 0 0"></ol>
+
+                <div class="btn-group" style="margin-top:var(--space-4)">
+                  <button class="btn btn--primary btn--sm" type="button" data-publish-now><i data-icon="globe" data-icon-size="16"></i><span>Publish it now</span></button>
+                  <button class="btn btn--ghost btn--sm" type="button" data-publish-download><i data-icon="download" data-icon-size="16"></i><span>Download page folder (.zip)</span></button>
+                </div>
+
+                <p class="muted" style="font-size:.78rem;margin:var(--space-3) 0 0" data-publish-note></p>
+
+                <div class="link-box" data-publish-result hidden style="margin:var(--space-4) 0 0">
+                  <code data-publish-live></code>
+                  <a class="btn btn--secondary btn--sm" data-publish-open href="#" target="_blank" rel="noopener"><i data-icon="external-link" data-icon-size="16"></i><span>Open</span></a>
+                </div>
+              </div>
+            </div>
+
             <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Everything on your card</h3>
             <table class="spec-table">
               <tbody data-card-summary></tbody>
@@ -449,7 +484,7 @@
         </form>
 
         <!-- ===================== PREVIEW COLUMN ===================== -->
-        <aside class="create-preview" aria-label="Live invitation preview">
+        <aside class="create-preview" aria-label="Live invitation preview" hidden>
           <div class="preview-toolbar">
             <span class="preview-toolbar__label">Live preview</span>
             <div class="device-switch" role="group" aria-label="Preview device">
@@ -504,11 +539,11 @@
       </div>
       <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
       <div class="footer-col"><h3>Learn</h3><ul><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li></ul></div>
-      <div class="footer-col"><h3>Company</h3><ul><li><a href="contact.html">Contact</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
+      <div class="footer-col"><h3>Company</h3><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span data-year>2026</span> InviteHub. All rights reserved.</p>
-      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Support</a></nav>
+      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
     </div>
   </div>
 </footer>

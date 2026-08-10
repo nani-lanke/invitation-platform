@@ -126,7 +126,6 @@ InviteHub/
 ├── pricing.html            All seven duration plans
 ├── preview.html            Full-page template preview
 ├── about.html              What InviteHub is and why
-├── contact.html            Contact form (validated client-side)
 ├── faq.html                16 questions, searchable
 ├── privacy.html            Privacy Policy
 ├── terms.html              Terms & Conditions

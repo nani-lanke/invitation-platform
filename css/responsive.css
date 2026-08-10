@@ -126,6 +126,8 @@
 
   .create-layout { grid-template-columns: 1fr; }
   .create-preview { position: static; }
+  /* Two grids of picture tiles side by side leave neither enough room. */
+  .event-layout { grid-template-columns: 1fr; }
   .preview-layout { grid-template-columns: 1fr; gap: var(--space-6); }
   .steps-grid { grid-template-columns: repeat(2, 1fr); }
   .step-card__connector { display: none; }
@@ -146,8 +148,10 @@
   .hero__phone { width: min(300px, 66%); }
 
   .split-two { grid-template-columns: 1fr; }
-  .share-panel { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-  .share-panel .share-buttons { justify-content: center; }
+  /* The stacked variant is part of a left-aligned column, not a card of
+     its own, so it keeps its alignment at every width. */
+  .share-panel:not(.share-panel--stacked) { grid-template-columns: 1fr; justify-items: center; text-align: center; }
+  .share-panel:not(.share-panel--stacked) .share-buttons { justify-content: center; }
   .toolbar { grid-template-columns: 1fr 1fr; }
   .toolbar .search-field { grid-column: 1 / -1; }
 }
@@ -242,11 +246,10 @@
   .invitation__countdown { gap: 6px; }
   .invitation__countdown .cd-value { font-size: 1.25rem; }
 
-  .share-panel { padding: var(--space-5); }
+  .share-panel:not(.share-panel--stacked) { padding: var(--space-5); }
   .panel { padding: var(--space-5); }
   .modal__header, .modal__body { padding: var(--space-4); }
 
-  .breadcrumb { justify-content: flex-start; }
   .page-hero { text-align: left; }
   .page-hero p { margin-inline: 0; }
   .section-head { text-align: left; }
@@ -321,7 +324,7 @@
   .hero__float--1, .hero__float--4 { display: block; width: 84px; }
 
   .invitation__countdown { grid-template-columns: repeat(2, 1fr); }
-  .invitation__gallery { grid-template-columns: repeat(2, 1fr); }
+  /* The gallery is two columns everywhere now, so it needs no override. */
 }
 
 /* --------------------------------------------------------------------------
