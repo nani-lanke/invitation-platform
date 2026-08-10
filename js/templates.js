@@ -32,7 +32,6 @@
     ['retirement', 'Retirement', 'leaf', 'Warm, dignified cards for a life well served and a chapter well closed.'],
     ['farewell', 'Farewell', 'users', 'Send-off invitations for colleagues, seniors and friends moving on.'],
     ['corporate', 'Corporate', 'briefcase', 'Structured, on-brand invites for launches, summits and annual meets.'],
-    ['religious', 'Religious', 'praying-hands', 'Puja, satsang and ceremony invitations with sacred motifs.'],
     ['festival', 'Festival', 'flame', 'Diwali, Pongal, Eid, Christmas and Navratri greetings in full colour.'],
     ['school-events', 'School Events', 'book-open', 'Annual days, sports meets and prize distributions made shareable.'],
     ['college-events', 'College Events', 'music', 'Fests, symposiums and cultural nights with bold campus energy.'],
@@ -101,11 +100,45 @@
     ['Farewell Evening', 'farewell-evening', 'farewell', 'free', '#221A2E', '#4A3663', '#E6D2F0', '#FFFFFF', '#B08FD0', 'music', 72, '2026-03-18', 'A soft, slightly nostalgic card for send-offs and last days.'],
     ['Retirement Honour', 'retirement-honour', 'retirement', 'premium', '#1E2A22', '#3F5E48', '#E8DBA6', '#F8F0CE', '#C9B063', 'leaves', 70, '2026-02-26', 'Laurel leaves and deep green for a dignified retirement felicitation.'],
     ['Naming Ceremony', 'naming-ceremony', 'naming-ceremony', 'premium', '#FFF6EC', '#F8DFC0', '#4A2810', '#8A4718', '#C98A2E', 'hands', 76, '2026-01-24', 'A Namakarana arch with folded hands and space for the chosen name.'],
-    ['Sacred Blessings', 'sacred-blessings', 'religious', 'free', '#FFF4E4', '#F6DDB4', '#4A2208', '#8A3D10', '#C98A2E', 'hands', 77, '2026-02-08', 'Saffron and sandal tones for pujas, homams and satsangs.'],
     ['Annual Day', 'annual-day', 'school-events', 'free', '#EEF4FF', '#CFE0FA', '#16294A', '#1F3D74', '#5A82C4', 'book', 73, '2026-03-09', 'A clean school-blue card parents can open and forward in one tap.'],
     ['College Fest', 'college-fest', 'college-events', 'premium', '#160D2B', '#4B1178', '#EEC6FF', '#FFFFFF', '#C77DF0', 'music', 84, '2026-03-22', 'Loud purple, music motifs and room for a three-day line-up.'],
     ['House Party', 'house-party', 'party', 'free', '#170F26', '#43196B', '#FFD6F0', '#FFFFFF', '#F472B6', 'confetti', 79, '2026-03-26', 'Confetti on midnight violet for get-togethers and reunions.'],
-    ['Community Meet', 'community-meet', 'community-events', 'free', '#F3F7F4', '#D6E7DC', '#163324', '#1E4736', '#56916C', 'flag', 68, '2026-03-05', 'Neutral, legible and welcoming — built for association notices.']
+    ['Community Meet', 'community-meet', 'community-events', 'free', '#F3F7F4', '#D6E7DC', '#163324', '#1E4736', '#56916C', 'flag', 68, '2026-03-05', 'Neutral, legible and welcoming — built for association notices.'],
+
+    ['Midnight Soiree', 'midnight-soiree', 'reception', 'free', '#0E1330', '#2A2F63', '#DCE2FF', '#FFFFFF', '#8FA0E8', 'lights', 79, '2026-04-02', 'Deep indigo with hanging lights for a reception that runs late.'],
+    ['Rose Gold Evening', 'rose-gold-evening', 'reception', 'free', '#3A1C28', '#7A3A4E', '#FBE0E6', '#FFF1F4', '#E0A0B0', 'mandala', 76, '2026-04-08', 'Rose gold on plum — warm, formal and easy to read on a phone.'],
+    ['Garden Reception', 'garden-reception', 'reception', 'free', '#12301F', '#2C5C3C', '#DFF2E4', '#FFFFFF', '#8DC79E', 'floral', 73, '2026-04-14', 'Leafy green and ivory for a reception held under open sky.'],
+    ['Sangeet Night', 'sangeet-night', 'wedding', 'free', '#2A0E38', '#701F63', '#FFD9F0', '#FFFFFF', '#E88FD0', 'music', 86, '2026-04-05', 'Magenta and gold for the music night before the wedding.'],
+    ['Mehendi Morning', 'mehendi-morning', 'wedding', 'free', '#26380C', '#5E7A18', '#F2F7CE', '#FFFFFF', '#C4D468', 'floral', 84, '2026-04-11', 'Fresh henna green with paisley for the mehendi morning.'],
+    ['Haldi Sunshine', 'haldi-sunshine', 'wedding', 'free', '#4A3005', '#A87410', '#FFEFC2', '#FFFFFF', '#EBBF4E', 'mandala', 82, '2026-04-17', 'Turmeric yellow and marigold for the haldi ritual.'],
+    ['Blessed Beginning', 'blessed-beginning', 'naming-ceremony', 'free', '#3A2410', '#7E5220', '#FBEBD2', '#FFFFFF', '#DDB278', 'hands', 74, '2026-04-03', 'Warm sandalwood tones and folded hands for the naming day.'],
+    ['Cradle Song', 'cradle-song', 'naming-ceremony', 'free', '#16324A', '#2E6285', '#DCEEF8', '#FFFFFF', '#8CC2DE', 'cloud', 71, '2026-04-09', 'Soft sky blue and drifting clouds for a gentle naming card.'],
+    ['First Name', 'first-name', 'naming-ceremony', 'free', '#3E1428', '#7C2F52', '#FCE2EC', '#FFFFFF', '#E098B4', 'mandala', 69, '2026-04-15', 'Blush rose with a fine mandala for announcing the chosen name.'],
+    ['Open Doors', 'open-doors', 'house-warming', 'free', '#1C3326', '#3E6B4C', '#E0F0E6', '#FFFFFF', '#8FC2A2', 'house', 72, '2026-04-06', 'Calm green and a clean roofline for a modern house warming.'],
+    ['Honour Roll', 'honour-roll', 'graduation', 'free', '#2A1436', '#5A2C6E', '#F0DEFA', '#FFFFFF', '#C08FD8', 'book', 78, '2026-04-04', 'Academic purple and an open book for convocation day.'],
+    ['Cap And Gown', 'cap-and-gown', 'graduation', 'free', '#12261E', '#28513E', '#DDF0E6', '#FFFFFF', '#8AC4A6', 'cap', 75, '2026-04-10', 'Deep green and gold, cut for a formal convocation notice.'],
+    ['Bright Future', 'bright-future', 'graduation', 'free', '#0F1F3E', '#254878', '#DCE8FC', '#FFFFFF', '#8AAAE0', 'stars', 72, '2026-04-16', 'Night blue with a scatter of stars for the year they finished.'],
+    ['Golden Years', 'golden-years', 'retirement', 'free', '#33280E', '#6E5720', '#F8E6BC', '#FFFFFF', '#DCBB6E', 'leaves', 74, '2026-04-07', 'Antique gold and laurel for a long career closing well.'],
+    ['Safe Harbour', 'safe-harbour', 'retirement', 'free', '#102A34', '#245663', '#DBEFF4', '#FFFFFF', '#87BFCE', 'flag', 70, '2026-04-13', 'Sea blue and quiet type for a dignified send-off.'],
+    ['With Gratitude', 'with-gratitude', 'retirement', 'free', '#33161C', '#6E3138', '#F8DEDF', '#FFFFFF', '#DC9298', 'leaves', 67, '2026-04-19', 'Warm russet and laurel for a thank-you gathering.'],
+    ['Until We Meet', 'until-we-meet', 'farewell', 'free', '#1B2440', '#3A4B7C', '#DFE5FA', '#FFFFFF', '#8E9DD4', 'lights', 73, '2026-04-05', 'Dusk blue and string lights for a last evening together.'],
+    ['New Chapter', 'new-chapter', 'farewell', 'free', '#2E1B0E', '#63401F', '#F6E2CE', '#FFFFFF', '#D9A86E', 'book', 70, '2026-04-12', 'Warm paper tones and an open book for someone moving on.'],
+    ['Send Off', 'send-off', 'farewell', 'free', '#14302C', '#2C645C', '#D8F0EA', '#FFFFFF', '#84C6BA', 'music', 68, '2026-04-18', 'Teal and a soft melody line for a team send-off.'],
+    ['Sports Day', 'sports-day', 'school-events', 'free', '#122C42', '#265C82', '#DAECF8', '#FFFFFF', '#84BADE', 'flag', 76, '2026-04-06', 'Bright field blue and pennants for sports day notices.'],
+    ['Prize Giving', 'prize-giving', 'school-events', 'free', '#331E08', '#6E4416', '#F8E4C6', '#FFFFFF', '#DCAE64', 'book', 73, '2026-04-12', 'Warm gold and an open book for prize day and speech day.'],
+    ['Science Fair', 'science-fair', 'school-events', 'free', '#101E36', '#22406E', '#DCE6FA', '#FFFFFF', '#88A4DC', 'stars', 70, '2026-04-18', 'Cool navy and constellations for exhibitions and science fairs.'],
+    ['Culturals Night', 'culturals-night', 'college-events', 'free', '#1E0C34', '#4E1878', '#EEC8FF', '#FFFFFF', '#C078E8', 'confetti', 82, '2026-04-03', 'Stage purple and confetti for culturals and cultural nights.'],
+    ['Tech Symposium', 'tech-symposium', 'college-events', 'free', '#08202C', '#134C60', '#D2EEF8', '#FFFFFF', '#74C2DC', 'geometric', 78, '2026-04-09', 'Circuit teal and clean geometry for symposiums and hackathons.'],
+    ['Freshers Party', 'freshers-party', 'college-events', 'free', '#340C22', '#701A4A', '#FCC8E4', '#FFFFFF', '#E874AE', 'balloons', 75, '2026-04-15', 'Hot pink and balloons for freshers and farewell parties.'],
+    ['Rooftop Night', 'rooftop-night', 'party', 'free', '#0E1424', '#26314E', '#DCE4F8', '#FFFFFF', '#8898C8', 'lights', 80, '2026-04-04', 'City night blue and warm bulbs for a rooftop get-together.'],
+    ['Dinner Party', 'dinner-party', 'party', 'free', '#2E1010', '#66282A', '#F8DCDC', '#FFFFFF', '#DC8E90', 'lights', 74, '2026-04-11', 'Deep claret and candlelight for a sit-down dinner.'],
+    ['Pool Party', 'pool-party', 'party', 'free', '#062A38', '#0F5C74', '#CDEEF8', '#FFFFFF', '#68C4E0', 'confetti', 71, '2026-04-17', 'Bright water blue and confetti for a summer pool party.'],
+    ['Residents Meet', 'residents-meet', 'community-events', 'free', '#14261C', '#2E5440', '#DCEEE2', '#FFFFFF', '#88BE9C', 'house', 70, '2026-04-07', 'Neutral green and rooflines for association and society notices.'],
+    ['Volunteer Drive', 'volunteer-drive', 'community-events', 'free', '#2A1808', '#5E3A14', '#F6E2C8', '#FFFFFF', '#D8A868', 'flag', 67, '2026-04-13', 'Earth tones and pennants for drives, camps and clean-ups.'],
+    ['Neighbourhood Fest', 'neighbourhood-fest', 'community-events', 'free', '#301028', '#682452', '#F8D8EE', '#FFFFFF', '#DC8CBC', 'confetti', 65, '2026-04-19', 'Festive plum and confetti for street fairs and colony days.'],
+    ['New Year Sparkle', 'new-year-sparkle', 'festival', 'free', '#0B0F26', '#1E2A5E', '#DCE4FF', '#FFFFFF', '#8C9EE0', 'stars', 88, '2026-04-02', 'Midnight blue and fireworks for New Year greetings and parties.'],
+    ['Onam Harvest', 'onam-harvest', 'festival', 'free', '#0E2A16', '#22602E', '#E2F4D8', '#FFFFFF', '#96CE7A', 'floral', 83, '2026-04-08', 'Pookalam greens and marigold for Onam wishes and sadhya.'],
+    ['Holi Colours', 'holi-colours', 'festival', 'free', '#2A0C34', '#7A1A5E', '#FFD6EE', '#FFFFFF', '#F074C0', 'confetti', 85, '2026-04-14', 'Gulal pinks and scattered colour for Holi invitations.']
   ];
 
   /* The tier column still sits in TEMPLATE_ROWS[3] so the rows keep their
@@ -216,18 +249,17 @@
      5. Card renderers
      ------------------------------------------------------------------ */
 
+  /* No tier badge. Every design carried the same "Free" label, which told a
+     visitor nothing except that the word was there — a distinction only
+     reads as one when something else is different. Payment applies to
+     publishing a link, not to the artwork, and the pricing page says so. */
   function templateCardHTML(t, eager) {
-    // Every design is free to download. A plan is only needed to publish a
-    // shareable link, which is a property of the invitation, not the design.
-    var badge = '<span class="badge badge--free">' + IH.icon('check', 13) + 'Free</span>';
-
     return '' +
       '<article class="template-card" data-template="' + escapeHtml(t.slug) + '" data-reveal="zoom">' +
         '<div class="template-card__media">' +
           '<img src="' + escapeHtml(t.image) + '" width="600" height="800" ' +
                (eager ? 'data-eager fetchpriority="high"' : 'loading="lazy"') + ' decoding="async" ' +
                'alt="' + escapeHtml(t.name + ' — ' + t.categoryLabel + ' invitation template') + '">' +
-          '<div class="template-card__badges">' + badge + '</div>' +
           '<button class="fav-btn" type="button" data-fav="' + escapeHtml(t.slug) + '" ' +
                   'data-fav-name="' + escapeHtml(t.name) + '" aria-pressed="false" ' +
                   'aria-label="Save ' + escapeHtml(t.name) + ' to favourites">' + IH.icon('heart', 19) + '</button>' +

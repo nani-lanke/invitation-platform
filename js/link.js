@@ -30,12 +30,12 @@
      into a guest's URL. */
   var FIELDS = {
     eventType: 'e', template: 't', title: 'ti', hostName: 'h',
-    brideName: 'b', groomName: 'g', personName: 'p',
+    brideName: 'b', groomName: 'g', personName: 'p', years: 'y',
     date: 'd', time: 'tm', venue: 'v', address: 'a', mapsUrl: 'm',
     phone: 'ph', email: 'em', message: 'ms',
     font: 'f', colors: 'c', customColors: 'cc', animation: 'an',
     showCountdown: 'sc', showRsvp: 'sr', showMaps: 'sm', showGallery: 'sg',
-    photo: 'pt', background: 'bg', gallery: 'gl'
+    photo: 'pt', background: 'bg', gallery: 'gl', musicFile: 'mf'
   };
 
   var REVERSE = {};

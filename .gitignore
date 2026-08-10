@@ -1,0 +1,12 @@
+# Local secrets. vercel dev reads .env.local — GITHUB_TOKEN lives there, and
+# committing it would hand anyone who reads the repo write access to it.
+.env
+.env.local
+.env*.local
+
+# Vercel's local build cache
+.vercel
+
+# OS and editor noise
+.DS_Store
+Thumbs.db

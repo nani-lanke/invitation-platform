@@ -419,9 +419,6 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   -webkit-backdrop-filter: blur(14px) saturate(140%);
 }
 
-.btn--gold { --btn-bd: transparent; --btn-fg: #FFFFFF; background: linear-gradient(120deg, var(--gold-500), var(--gold-400)); }
-[data-theme="dark"] .btn--gold { --btn-fg: #2A1C05; }
-
 .btn--sm { min-height: 38px; padding: 8px 16px; font-size: var(--step--1); }
 .btn--lg { min-height: 56px; padding: 15px 32px; font-size: var(--step-1); }
 .btn--block { width: 100%; }
@@ -429,21 +426,6 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
 .btn-group { display: flex; flex-wrap: wrap; gap: var(--space-3); }
 
 /* Icon-only round button */
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border: 1px solid var(--border);
-  border-radius: var(--r-pill);
-  background: var(--surface);
-  color: var(--fg-muted);
-  cursor: pointer;
-  transition: all var(--t-base) var(--ease);
-}
-.icon-btn svg { width: 20px; height: 20px; }
-.icon-btn:hover { color: var(--primary-ink); border-color: color-mix(in srgb, var(--primary) 40%, transparent); background: var(--primary-soft); transform: translateY(-2px); }
 
 /* --------------------------------------------------------------------------
    5. Badges, chips, pills
@@ -465,9 +447,6 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   white-space: nowrap;
 }
 .badge svg { width: 13px; height: 13px; }
-.badge--free { background: var(--success-soft); border-color: color-mix(in srgb, var(--success) 30%, transparent); color: var(--success); }
-.badge--premium { background: var(--gold-soft); border-color: color-mix(in srgb, var(--gold) 35%, transparent); color: var(--gold); }
-.badge--new { background: var(--primary-soft); border-color: color-mix(in srgb, var(--primary) 30%, transparent); color: var(--primary-ink); }
 .badge--soon { background: var(--secondary-soft); border-color: color-mix(in srgb, var(--secondary) 30%, transparent); color: var(--secondary-ink); }
 
 .chip {
@@ -512,14 +491,6 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   box-shadow: var(--shadow-sm);
   transition: transform var(--t-base) var(--ease), box-shadow var(--t-base) var(--ease), border-color var(--t-base) var(--ease);
 }
-
-.card--glass {
-  background: var(--surface-glass);
-  backdrop-filter: blur(18px) saturate(150%);
-  -webkit-backdrop-filter: blur(18px) saturate(150%);
-}
-
-.card--hover:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--border-strong); }
 
 .card__body { padding: var(--space-5); }
 
@@ -967,8 +938,6 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
 .template-card:focus-within .template-card__overlay { opacity: 1; }
 .template-card__overlay .btn { min-width: 168px; }
 
-.template-card__badges { position: absolute; top: var(--space-3); left: var(--space-3); display: flex; gap: 6px; z-index: 2; }
-
 .fav-btn {
   position: absolute;
   top: var(--space-3);
@@ -1021,7 +990,49 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
    12. Forms
    -------------------------------------------------------------------------- */
 
+/* Step 1 — the occasion on one side, the designs made for it on the other.
+   The preview column is hidden on this step (see .create-layout.is-solo),
+   which is what frees the width for two columns here. */
+.event-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--space-6); align-items: start; }
+.event-layout__col > h2:first-child,
+.event-layout__col > h3:first-child { margin-top: 0; }
+
+/* Template picker — designs made for the chosen event come first, and
+   anything borrowed from another occasion is folded away behind a
+   summary so the two are never mistaken for each other. */
+.tpl-group__note { font-size: var(--step--1); color: var(--fg-muted); margin-bottom: var(--space-4); }
+
+.tpl-more { margin-top: var(--space-6); border-top: 1px solid var(--border); padding-top: var(--space-5); }
+.tpl-more > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--step--1);
+  color: var(--fg-muted);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.tpl-more > summary::-webkit-details-marker { display: none; }
+.tpl-more > summary::before {
+  content: "";
+  width: 7px; height: 7px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform .2s ease;
+}
+.tpl-more[open] > summary::before { transform: rotate(45deg); }
+.tpl-more > summary:hover { color: var(--fg); }
+.tpl-more .option-grid { margin-top: var(--space-4); }
+
 .field { display: flex; flex-direction: column; gap: 7px; }
+
+/* The hidden attribute carries `display: none` only from the browser's own
+   stylesheet, which the rule above outranks — so a field the wizard hid for
+   this event type stayed on screen. js/create.js hides by attribute, so the
+   attribute has to win here. */
+.field[hidden] { display: none; }
 
 .field__label {
   font-size: var(--step--1);
@@ -1293,6 +1304,12 @@ input[type="range"]::-moz-range-thumb {
 .create-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: var(--space-6); align-items: start; }
 .create-preview { position: sticky; top: calc(var(--header-h) + 24px); }
 
+/* On the event step there is nothing to preview yet — the card would show
+   placeholder names to someone who has not typed one. The column steps
+   aside there so the templates for the chosen occasion get the full width,
+   which is what that space is actually worth at this point. */
+.create-layout.is-solo { grid-template-columns: minmax(0, 1fr); }
+
 .preview-toolbar {
   display: flex;
   align-items: center;
@@ -1488,8 +1505,76 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: 0 12px 28px -12px rgba(0,0,0,.4);
 }
 
-.invitation__gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: var(--space-5); }
-.invitation__gallery img { aspect-ratio: 1; width: 100%; object-fit: cover; border-radius: var(--r-sm); }
+/* Background music. The player is the browser's own — a custom one would
+   be a transport control to build, test and keep accessible, for a card
+   that plays a single track. */
+.invitation__music {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  margin-bottom: var(--space-5);
+}
+.invitation__music audio {
+  width: 100%;
+  max-width: 320px;
+  height: 38px;
+}
+.invitation__music-name {
+  font-size: .72rem;
+  letter-spacing: .04em;
+  opacity: .75;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* The chosen file, shown under its dropzone in the editor. */
+.picked-file {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+  padding: 8px 8px 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: var(--surface-2);
+  font-size: var(--step--1);
+}
+.picked-file > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.picked-file svg { flex-shrink: 0; color: var(--fg-muted); }
+
+/* Photo gallery — two columns. Three of them inside a card this narrow
+   left each photo about 110px wide: too small to make out a face, which
+   is the only reason the photos are there. Two gives them room. */
+.invitation__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: var(--space-5);
+}
+.invitation__gallery img {
+  aspect-ratio: 2 / 3;   /* 1 : 1.5 — upright, the way phones hold people */
+  width: 100%;
+  /* The whole photo, centred in its frame. `cover` filled the frame but
+     paid for it by cropping: a landscape group shot in an upright tile
+     loses everyone at the edges. Whatever the frame does not use becomes
+     a soft mat in the card's own ink, so it reads as a mount rather than
+     a gap. */
+  object-fit: contain;
+  object-position: center;
+  background: color-mix(in srgb, var(--inv-ink) 8%, transparent);
+  border-radius: var(--r-md);
+  border: 1px solid color-mix(in srgb, var(--inv-secondary) 45%, transparent);
+  box-shadow: 0 6px 16px -10px rgba(0, 0, 0, .5);
+}
+/* An odd number of photos would leave the last one stranded beside a gap,
+   so it takes the full width instead — and turns landscape, because 1:1.5
+   at double width would stand three times taller than the row above it. */
+.invitation__gallery img:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  aspect-ratio: 3 / 2;
+}
 
 .invitation__countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: var(--space-5); }
 .invitation__countdown .cd-unit {
@@ -1548,11 +1633,11 @@ input[type="range"]::-moz-range-thumb {
 .invitation--baby-shower::before { border-radius: 190px 190px var(--r-lg) var(--r-lg); }
 .invitation--baby-shower .invitation__names { font-style: italic; }
 
-/* House warming / naming / religious: arch frame */
-.invitation--house-warming, .invitation--naming-ceremony, .invitation--religious {
+/* House warming / naming: arch frame */
+.invitation--house-warming, .invitation--naming-ceremony {
   border-radius: var(--r-xl);
 }
-.invitation--house-warming::before, .invitation--naming-ceremony::before, .invitation--religious::before {
+.invitation--house-warming::before, .invitation--naming-ceremony::before {
   border-radius: 180px 180px var(--r-lg) var(--r-lg);
   inset: 14px 14px 14px;
 }
@@ -1814,6 +1899,34 @@ input[type="range"]::-moz-range-thumb {
   box-shadow: var(--shadow-md);
 }
 
+/* Inside one half of a split, this is not a panel in its own right — it is
+   the lower half of a column, continuing the copy above it. So it drops the
+   border, fill and padding that mark a standalone card, and stacks, having
+   no room for the QR beside the text.
+
+   These rules must follow .share-panel: the element carries both classes at
+   equal specificity, so the later one is the one that wins. */
+.share-panel--stacked {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  align-items: start;
+  margin-top: var(--space-7);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+/* Centred across the column: the code is a square object with nothing
+   beside it, so aligning it left would leave it looking dropped rather
+   than placed. */
+.share-panel--stacked .qr-holder { justify-self: center; margin-top: var(--space-5); }
+/* Big enough to scan from across a table, which is the whole point of
+   printing one. The column has the room — it was only shrunk to 132px on
+   the assumption it did not. */
+.share-panel--stacked .qr-holder canvas,
+.share-panel--stacked .qr-holder svg { width: 208px; height: 208px; max-width: 100%; }
+
 .link-box {
   display: flex;
   align-items: center;
@@ -1858,8 +1971,6 @@ input[type="range"]::-moz-range-thumb {
 .share-btn--facebook:hover  { background: #1877F2; }
 .share-btn--telegram:hover  { background: #229ED9; }
 .share-btn--email:hover     { background: var(--fg); color: var(--bg); }
-.share-btn--x:hover         { background: #111; }
-.share-btn--copy:hover      { background: var(--grad-brand); }
 .share-btn--qr:hover        { background: var(--secondary); }
 
 .qr-holder {
@@ -2082,8 +2193,6 @@ input[type="range"]::-moz-range-thumb {
 .notice--info svg { color: var(--secondary-ink); }
 .notice--warn { border-left-color: var(--warning); background: var(--warning-soft); }
 .notice--warn svg { color: var(--warning); }
-.notice--success { border-left-color: var(--success); background: var(--success-soft); }
-.notice--success svg { color: var(--success); }
 
 .prose { max-width: 76ch; }
 .prose h2 { font-size: var(--step-3); margin-top: var(--space-7); margin-bottom: var(--space-4); }
@@ -2097,14 +2206,7 @@ input[type="range"]::-moz-range-thumb {
 .page-hero { padding-block: var(--space-8) var(--space-7); text-align: center; }
 .page-hero p { max-width: 680px; margin: var(--space-4) auto 0; font-size: var(--step-1); color: var(--fg-muted); }
 
-.breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; list-style: none; padding: 0; margin: 0 0 var(--space-4); font-size: var(--step--1); color: var(--fg-faint); justify-content: center; }
-.breadcrumb li { display: flex; align-items: center; gap: 8px; }
-.breadcrumb li + li::before { content: "/"; color: var(--fg-faint); }
-.breadcrumb a { color: var(--fg-muted); text-decoration: none; }
-.breadcrumb a:hover { color: var(--primary-ink); }
-
 .split-two { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-6); }
-.split-media img { width: 100%; border-radius: var(--r-xl); box-shadow: var(--shadow-lg); }
 
 /* --------------------------------------------------------------------------
    22. Footer
