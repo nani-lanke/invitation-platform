@@ -27,7 +27,13 @@ const limit = require('./_limit');
 const github = require('./_github');
 
 const FOLDER = 'invitation_card';
-const MAX_BODY = 64 * 1024;   // the fields are text; anything larger is not
+const MAIN_DIR = 'main_image';
+const MUSIC_DIR = 'background_music';
+
+/* Vercel refuses a request body over 4.5 MB before this function runs, so
+   this only catches the cases it can still answer politely. _validate.js
+   holds the real ceiling. */
+const MAX_BODY = 5 * 1024 * 1024;
 
 /* The deployed origin, taken from the request rather than configured, so
    preview deployments and the production domain each describe themselves
@@ -82,20 +88,57 @@ module.exports = async function handler(req, res) {
        still gets the design they chose rather than the bare defaults. */
     if (!state.customColors) IH.invitation.applyTemplate(state, state.template);
 
-    const file = validate.fileName(IH, state);
+    const base = validate.baseName(IH, state);
+    const file = base + '.html';
     const path = FOLDER + '/' + file;
     const url = root + path;
 
-    const html = IH.exportPage.buildHtml(state, { up: '../', canonical: url });
+    /* extractAssets is the same function the .zip route calls, so the
+       server and the download produce identical paths rather than two
+       layouts that merely resemble each other. It rewrites the state's
+       data: URLs into the relative paths the page will ask for, and hands
+       back the bytes to commit alongside it. */
+    const split = IH.exportPage.extractAssets(state, base);
 
-    const written = await github.putFile(path, html, 'Publish invitation: ' + file);
+    let music = null;
+    if (String(state.musicFile || '').slice(0, 11) === 'data:audio/') {
+      const m = /^data:audio\/([\w.+-]+);/.exec(state.musicFile);
+      const ext = ({ mpeg: 'mp3', mp3: 'mp3', mp4: 'm4a', 'x-m4a': 'm4a',
+                     aac: 'aac', ogg: 'ogg', wav: 'wav', 'x-wav': 'wav',
+                     webm: 'webm', flac: 'flac' })[(m && m[1] || '').toLowerCase()] || 'mp3';
+      music = { path: MUSIC_DIR + '/' + base + '_music.' + ext, data: state.musicFile };
+      split.state.musicFile = music.path;
+    }
+
+    const mainPhoto = split.assets.filter(function (a) {
+      return a.path.indexOf(MAIN_DIR + '/') === 0;
+    })[0] || split.assets[0];
+
+    const html = IH.exportPage.buildHtml(split.state, {
+      up: '../',
+      canonical: url,
+      image: mainPhoto ? root + FOLDER + '/' + mainPhoto.path : ''
+    });
+
+    /* One commit for the page and everything it needs, so the invitation
+       is never live with its photos still missing. */
+    const files = [{ path: path, content: Buffer.from(html, 'utf8').toString('base64') }];
+    split.assets.concat(music ? [music] : []).forEach(function (a) {
+      files.push({
+        path: FOLDER + '/' + a.path,
+        content: String(a.data).slice(String(a.data).indexOf(',') + 1)
+      });
+    });
+
+    const written = await github.putFiles(files, 'Publish invitation: ' + file);
 
     return json(res, 201, {
       url: url,
       path: path,
       file: file,
-      replaced: written.replaced,
-      commit: written.url
+      files: files.map(function (f) { return f.path; }),
+      count: written.count,
+      commit: written.commit
     });
   } catch (err) {
     /* The message can name the repository or the token's permissions, so

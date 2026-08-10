@@ -369,7 +369,12 @@
     'eventType', 'template', 'title', 'hostName', 'brideName', 'groomName',
     'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone',
     'email', 'message', 'font', 'colors', 'customColors', 'animation',
-    'showCountdown', 'showRsvp', 'showMaps', 'showGallery'
+    'showCountdown', 'showRsvp', 'showMaps', 'showGallery',
+    /* The uploads travel too. The server checks each one's type and size
+       and commits them beside the page — see api/_validate.js for the
+       ceilings, which exist because Vercel refuses a request body over
+       4.5 MB before the function ever runs. */
+    'photo', 'background', 'gallery', 'musicFile', 'music'
   ];
 
   function payload(state) {
@@ -377,14 +382,26 @@
     SEND.forEach(function (key) {
       var value = state[key];
       if (value === undefined || value === null || value === '') return;
+      if (Array.isArray(value) && !value.length) return;
       out[key] = value;
     });
     return out;
   }
 
-  /* True when the host uploaded images, which the server will not take:
-     they are megabytes of data: URL, and a public endpoint cannot accept
-     them. Those invitations go out as the .zip instead. */
+  /* Roughly what the request will weigh. Uploads are base64, so the bytes
+     on the wire are about a third more than the files themselves — worth
+     knowing before the platform rejects the whole request. */
+  function payloadSize(state) {
+    var total = 0;
+    ['photo', 'background', 'musicFile'].forEach(function (k) {
+      if (typeof state[k] === 'string') total += state[k].length;
+    });
+    (state.gallery || []).forEach(function (src) {
+      if (typeof src === 'string') total += src.length;
+    });
+    return total;
+  }
+
   function hasUploads(state) {
     function uploaded(v) { return typeof v === 'string' && v.slice(0, 5) === 'data:'; }
     return uploaded(state.photo) || uploaded(state.background) ||
@@ -437,6 +454,7 @@
     zip: zip,
     download: download,
     hasUploads: hasUploads,
+    payloadSize: payloadSize,
     toServer: toServer
   };
 })(window, document);

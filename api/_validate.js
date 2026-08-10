@@ -15,13 +15,18 @@
      Locally that was only ever self-inflicted; published from a public
      form it is stored XSS on your own domain, so the scheme is checked.
 
-   * Photos are refused outright. They arrive as data: URLs, which are
-     megabytes each and the easiest way to fill a repository with junk.
-     Invitations published through the form are text and template art.
+   * Uploads are accepted but bounded. They arrive as data: URLs — the
+     easiest way to fill a repository with junk — so every one is checked
+     for a real image or audio type, capped on its own, and capped again
+     as a total. The ceiling is not arbitrary: a Vercel function refuses
+     a request body over 4.5 MB outright, and base64 inflates bytes by a
+     third, so anything larger never reaches this file to be rejected
+     politely. Better to fail here with a sentence that explains itself.
 
    Exports:
      clean(body) -> { ok: true, state } | { ok: false, error }
-     fileName(IH, state) -> 'Title_2026-08-10_1830.html'
+     baseName(IH, state) -> 'Groom_Bride_2026-08-10_1830'
+     fileName(IH, state) -> 'Groom_Bride_2026-08-10_1830.html'
    ==================================================================== */
 
 'use strict';
@@ -49,6 +54,24 @@ const TEXT = {
   animation:  30
 };
 
+/* Vercel caps a function's request body at 4.5 MB. Staying under it with
+   room to spare keeps the failure a readable message rather than a blank
+   413 from the platform. */
+const MAX_TOTAL = 4 * 1024 * 1024;
+const MAX_IMAGE = 2 * 1024 * 1024;
+const MAX_AUDIO = 3 * 1024 * 1024;
+const MAX_GALLERY = 6;
+
+const IMAGE_URL = /^data:image\/(jpeg|jpg|png|webp|gif|avif);base64,[A-Za-z0-9+/=]+$/;
+const AUDIO_URL = /^data:audio\/[\w.+-]+;base64,[A-Za-z0-9+/=]+$/;
+
+/* base64 carries 3 bytes in every 4 characters. */
+function decodedSize(dataUrl) {
+  const b64 = String(dataUrl).slice(String(dataUrl).indexOf(',') + 1);
+  const pad = b64.endsWith('==') ? 2 : b64.endsWith('=') ? 1 : 0;
+  return Math.floor(b64.length * 3 / 4) - pad;
+}
+
 const FLAGS = ['customColors', 'showCountdown', 'showRsvp', 'showMaps', 'showGallery'];
 const COLOR_KEYS = ['primary', 'secondary', 'bg1', 'bg2', 'ink'];
 
@@ -66,14 +89,6 @@ function text(value, max) {
 function clean(body) {
   if (!body || typeof body !== 'object') {
     return { ok: false, error: 'Expected an invitation object.' };
-  }
-
-  if (body.photo || body.background || (body.gallery && body.gallery.length)) {
-    return {
-      ok: false,
-      error: 'Published invitations cannot carry uploaded photos. ' +
-             'Use Download page folder to publish one with photos yourself.'
-    };
   }
 
   const state = {};
@@ -125,17 +140,68 @@ function clean(body) {
     return { ok: false, error: 'Give the invitation a title or a name first.' };
   }
 
+  /* Uploads. Each is checked for a real type before its size, so a text
+     file renamed .jpg is refused for what it is rather than for being
+     small enough to slip through. */
+  let budget = MAX_TOTAL;
+
+  function accept(value, kind, label) {
+    const pattern = kind === 'audio' ? AUDIO_URL : IMAGE_URL;
+    const cap = kind === 'audio' ? MAX_AUDIO : MAX_IMAGE;
+
+    if (typeof value !== 'string' || !value) return null;
+    if (!pattern.test(value)) {
+      throw new Error(label + ' is not a ' + (kind === 'audio' ? 'supported audio file' : 'supported image') + '.');
+    }
+    const size = decodedSize(value);
+    if (size > cap) {
+      throw new Error(label + ' is ' + Math.round(size / 1024 / 1024 * 10) / 10 +
+                      ' MB — the limit for publishing is ' + (cap / 1024 / 1024) + ' MB.');
+    }
+    budget -= size;
+    if (budget < 0) {
+      throw new Error('Together your photos and music are over ' +
+                      (MAX_TOTAL / 1024 / 1024) + ' MB. Remove one, or use Download page folder.');
+    }
+    return value;
+  }
+
+  try {
+    const photo = accept(body.photo, 'image', 'The main photo');
+    if (photo) state.photo = photo;
+
+    const background = accept(body.background, 'image', 'The background image');
+    if (background) state.background = background;
+
+    if (Array.isArray(body.gallery)) {
+      const gallery = [];
+      body.gallery.slice(0, MAX_GALLERY).forEach(function (src, i) {
+        const ok = accept(src, 'image', 'Gallery photo ' + (i + 1));
+        if (ok) gallery.push(ok);
+      });
+      if (gallery.length) state.gallery = gallery;
+    }
+
+    const music = accept(body.musicFile, 'audio', 'The background music');
+    if (music) {
+      state.musicFile = music;
+      if (typeof body.music === 'string') state.music = text(body.music, 120);
+    }
+  } catch (err) {
+    return { ok: false, error: err.message };
+  }
+
   return { ok: true, state: state };
 }
 
-/* The same stem js/publish.js builds, so a page published through the
-   server and one unpacked from the .zip land on the same address:
+/* The stem the page and all its assets share, matching baseName() in
+   js/publish.js so the .zip and the server produce the same layout:
 
-       Groom_Bride_2026-08-10_1830.html
+       Groom_Bride_2026-08-10_1830
 
    safeBase comes from js/export.js, so both sides agree on what a
    filesystem-safe name looks like. */
-function fileName(IH, state) {
+function baseName(IH, state) {
   const part = function (v) { return IH.exportPage.safeBase(String(v || '').trim()); };
   const groom = state.groomName ? part(state.groomName) : '';
   const bride = state.brideName ? part(state.brideName) : '';
@@ -150,7 +216,11 @@ function fileName(IH, state) {
   const parts = [who, /^\d{4}-\d{2}-\d{2}$/.test(state.date || '') ? state.date : 'undated'];
   if (/^\d{2}:\d{2}$/.test(state.time || '')) parts.push(state.time.replace(':', ''));
 
-  return parts.join('_') + '.html';
+  return parts.join('_');
 }
 
-module.exports = { clean: clean, fileName: fileName };
+function fileName(IH, state) {
+  return baseName(IH, state) + '.html';
+}
+
+module.exports = { clean: clean, baseName: baseName, fileName: fileName };

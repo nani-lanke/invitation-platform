@@ -104,4 +104,63 @@ async function putFile(repoPath, text, message) {
   };
 }
 
-module.exports = { config: config, getFile: getFile, putFile: putFile };
+/* ------------------------------------------------------------------
+   Many files, one commit.
+
+   The Contents API used above writes a single file per call, which for an
+   invitation with a photo, a background, a gallery and a track would mean
+   six commits for one action — six entries in the history, six rebuilds,
+   and a window where the page is live but its photos are not. The Git
+   Data API assembles everything first and moves the branch once:
+
+     blobs -> tree (on top of the current one) -> commit -> move the ref
+   ------------------------------------------------------------------ */
+
+async function api(cfg, path, init) {
+  const res = await fetch(API + '/repos/' + cfg.repo + path, Object.assign({
+    headers: Object.assign({ 'Content-Type': 'application/json' }, headers(cfg.token))
+  }, init || {}));
+
+  if (!res.ok) {
+    const detail = await res.text();
+    throw new Error('GitHub ' + res.status + ' on ' + path + ': ' + detail.slice(0, 300));
+  }
+  return res.json();
+}
+
+/* files: [{ path, content }] where content is base64 of the raw bytes. */
+async function putFiles(files, message) {
+  const cfg = config();
+  files.forEach(function (f) { safePath(f.path); });
+
+  const ref = await api(cfg, '/git/ref/heads/' + encodeURIComponent(cfg.branch));
+  const head = await api(cfg, '/git/commits/' + ref.object.sha);
+
+  const blobs = [];
+  for (const f of files) {
+    const blob = await api(cfg, '/git/blobs', {
+      method: 'POST',
+      body: JSON.stringify({ content: f.content, encoding: 'base64' })
+    });
+    blobs.push({ path: f.path, mode: '100644', type: 'blob', sha: blob.sha });
+  }
+
+  const tree = await api(cfg, '/git/trees', {
+    method: 'POST',
+    body: JSON.stringify({ base_tree: head.tree.sha, tree: blobs })
+  });
+
+  const commit = await api(cfg, '/git/commits', {
+    method: 'POST',
+    body: JSON.stringify({ message: message, tree: tree.sha, parents: [ref.object.sha] })
+  });
+
+  await api(cfg, '/git/refs/heads/' + encodeURIComponent(cfg.branch), {
+    method: 'PATCH',
+    body: JSON.stringify({ sha: commit.sha })
+  });
+
+  return { commit: commit.sha, count: files.length };
+}
+
+module.exports = { config: config, getFile: getFile, putFile: putFile, putFiles: putFiles };
