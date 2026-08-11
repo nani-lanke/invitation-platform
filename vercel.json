@@ -2,37 +2,31 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": false,
   "trailingSlash": false,
+
   "functions": {
-    "api/publish.js": {
-      "includeFiles": "js/**"
-    },
-    "api/check.js": {
-      "includeFiles": "js/**"
-    }
+    "api/publish.js": { "includeFiles": "js/**" },
+    "api/check.js": { "includeFiles": "js/**" }
   },
+
   "rewrites": [
     {
       "source": "/invitation_card/:file(.+\\.html)",
       "destination": "/api/invite?file=:file"
     }
   ],
+
   "headers": [
     {
       "source": "/api/(publish|check)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store"
-        }
+        { "key": "Cache-Control", "value": "no-store" }
       ]
     },
     {
+      "comment": "The scripts depend on each other...",
       "source": "/(css|js)/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     }
   ]
