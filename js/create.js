@@ -288,7 +288,7 @@
      disk. Download .html is offered for hosts who would rather send the
      file itself than a link. */
   function initExport() {
-    exportBox = qs('[data-export-box]', root);
+    var exportBox = qs('[data-export-box]', root);
     if (!exportBox || !IH.exportPage) return;
 
     on(qs('[data-export-download]', exportBox), 'click', function () {
