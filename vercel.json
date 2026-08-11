@@ -23,6 +23,7 @@
       ]
     },
     {
+      "comment": "The scripts depend on each other...",
       "source": "/(css|js)/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
