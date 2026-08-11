@@ -16,18 +16,23 @@
   ],
 
   "headers": [
-    {
-      "source": "/api/(publish|check)",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
-      ]
-    },
-    {
-      "comment": "The scripts depend on each other...",
-      "source": "/(css|js)/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
-      ]
-    }
-  ]
+  {
+    "source": "/api/(publish|check)",
+    "headers": [
+      {
+        "key": "Cache-Control",
+        "value": "no-store"
+      }
+    ]
+  },
+  {
+    "source": "/(css|js)/(.*)",
+    "headers": [
+      {
+        "key": "Cache-Control",
+        "value": "public, max-age=0, must-revalidate"
+      }
+    ]
+  }
+]
 }
