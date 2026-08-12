@@ -310,6 +310,11 @@
     var box = qs('[data-publish-box]', root);
     if (!box || !IH.publish) return;
 
+    /* Once this invitation has been committed to GitHub, the manual
+       button must not fire a second publish for the same invitation. */
+    var nowBtn = qs('[data-publish-now]', box);
+    if (nowBtn) nowBtn.disabled = !!state.published;
+
     var where = IH.publish.slug(data);      // the .zip route: a folder per invitation
     var served = IH.publish.page(data);     // the server route: one file per invitation
 
@@ -396,6 +401,7 @@
     if (!box || !IH.publish) return;
 
     on(qs('[data-publish-now]', box), 'click', function (evt) {
+      if (state.published) return; // already published — no second commit
       var btn = evt.currentTarget;
       var label = qs('span', btn);
       var was = label ? label.textContent : '';
@@ -404,7 +410,7 @@
       if (label) label.textContent = 'Publishing…';
 
       runPublish(box).catch(function () {}).then(function () {
-        btn.disabled = false;
+        btn.disabled = state.published; // stays disabled once it succeeds
         if (label) label.textContent = was;
       });
     });
