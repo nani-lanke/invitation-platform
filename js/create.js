@@ -377,6 +377,11 @@
         if (out) out.textContent = result.url;
         if (open) open.href = result.url;
         if (holder) holder.hidden = false;
+
+        /* Disable immediately, without waiting for the next paint,
+           so a fast second click can never queue a second commit. */
+        var nowBtn = qs('[data-publish-now]', publishBox);
+        if (nowBtn) nowBtn.disabled = true;
       }
 
       IH.toast.success(result.count > 1
