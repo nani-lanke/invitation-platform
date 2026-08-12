@@ -123,7 +123,9 @@
       showGallery: true,
       plan: '7',
       step: 1,
-      updatedAt: null
+      updatedAt: null,
+      published: false,
+      publishedAt: null
     };
   }
 
@@ -346,6 +348,49 @@
     }
   }
 
+  var publishInFlight = false;
+
+  /* The one path to the server, used by both the automatic publish at
+     Done and the manual "Publish it now" button below — so there is
+     exactly one call to IH.publish.toServer and exactly one place that
+     paints its result. */
+  function runPublish(box) {
+    if (publishInFlight) return Promise.resolve(null);
+    publishInFlight = true;
+
+    return IH.publish.toServer(previewData()).then(function (result) {
+      state.published = true;
+      state.publishedAt = new Date().toISOString();
+      saveDraft();
+
+      var publishBox = box || qs('[data-publish-box]', root);
+      if (publishBox) {
+        var holder = qs('[data-publish-result]', publishBox);
+        var out = qs('[data-publish-live]', publishBox);
+        var open = qs('[data-publish-open]', publishBox);
+
+        if (out) out.textContent = result.url;
+        if (open) open.href = result.url;
+        if (holder) holder.hidden = false;
+      }
+
+      IH.toast.success(result.count > 1
+        ? 'Published — ' + result.count + ' files committed, page and media together.'
+        : 'Published. The address is live now.', { title: result.file });
+      IH.confetti(24);
+      return result;
+    }).catch(function (err) {
+      IH.toast.error(err.message, { title: 'Not published' });
+      throw err;
+    }).then(function (result) {
+      publishInFlight = false;
+      return result;
+    }, function (err) {
+      publishInFlight = false;
+      throw err;
+    });
+  }
+
   function initPublish() {
     var box = qs('[data-publish-box]', root);
     if (!box || !IH.publish) return;
@@ -358,22 +403,7 @@
       btn.disabled = true;
       if (label) label.textContent = 'Publishing…';
 
-      IH.publish.toServer(previewData()).then(function (result) {
-        var holder = qs('[data-publish-result]', box);
-        var out = qs('[data-publish-live]', box);
-        var open = qs('[data-publish-open]', box);
-
-        if (out) out.textContent = result.url;
-        if (open) open.href = result.url;
-        if (holder) holder.hidden = false;
-
-        IH.toast.success(result.count > 1
-          ? 'Published — ' + result.count + ' files committed, page and media together.'
-          : 'Published. The address is live now.', { title: result.file });
-        IH.confetti(24);
-      }).catch(function (err) {
-        IH.toast.error(err.message, { title: 'Not published' });
-      }).then(function () {
+      runPublish(box).catch(function () {}).then(function () {
         btn.disabled = false;
         if (label) label.textContent = was;
       });
@@ -1168,6 +1198,16 @@
       paintCardSummary(previewData());
       paintPublish(previewData());
       IH.confetti(36);
+
+      /* The invitation is complete the moment it reaches this step, so it
+         publishes itself through the exact same IH.publish.toServer() call
+         "Publish it now" uses below — no second publishing system.
+         state.published rides along with the saved draft, so reloading or
+         stepping back to Done never fires a second commit for the same
+         invitation; only the button, on request, publishes again. */
+      if (!state.published && IH.publish) {
+        runPublish(qs('[data-publish-box]', root));
+      }
     }
     saveDraft();
   }
