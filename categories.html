@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="InviteHub">
 <meta property="og:title" content="Invitation Categories — 17 Occasions | InviteHub">
-<meta property="og:description" content="Find invitation designs made for your exact occasion — seventeen categories, eighty templates.">
+<meta property="og:description" content="Find invitation designs made for your exact occasion — seventeen categories, over three hundred templates.">
 <meta property="og:url" content="https://invitehub.example.com/categories.html">
 <meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
@@ -88,7 +88,6 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="eyebrow"><i data-icon="layers" data-icon-size="15"></i> 18 occasions</p>
       <h1>Browse by Occasion</h1>
       <p>Every category has designs made specifically for it — the wording, the motifs and the layout all change with the event, so a birthday card never looks like a wedding card.</p>
     </div>
@@ -96,20 +95,23 @@
 
   <section class="section" style="padding-top:var(--space-5)">
     <div class="container container--wide">
-      <div class="category-grid" data-category-grid></div>
+      <div class="category-grid rail rail--rows2" data-category-grid
+           role="group" tabindex="0"
+           aria-label="Browse categories — two rows, scroll sideways or use the arrow keys to see all 17"></div>
     </div>
   </section>
 
   <section class="section section--soft">
     <div class="container">
       <div class="section-head" data-reveal>
-        <p class="eyebrow"><i data-icon="star" data-icon-size="15"></i> Popular right now</p>
         <h2>Top Designs Across All Categories</h2>
-        <p>The eight templates hosts are choosing most often this season.</p>
+        <p>100 of the most-loved designs across every occasion — two rows, keep scrolling sideways for the rest.</p>
       </div>
-      <div class="template-grid" data-featured-templates data-limit="8"></div>
+      <div class="template-grid rail rail--rows2-across" data-featured-templates data-limit="100" data-balanced
+           role="group" tabindex="0"
+           aria-label="Top 100 templates — two rows, scroll sideways or use the arrow keys to see them all"></div>
       <p class="center" style="margin-top:var(--space-6)">
-        <a class="btn btn--primary btn--lg" href="templates.html"><i data-icon="search" data-icon-size="19"></i><span>Search all 80 templates</span></a>
+        <a class="btn btn--primary btn--lg" href="templates.html"><i data-icon="search" data-icon-size="19"></i><span>Search All 759 templates</span></a>
       </p>
     </div>
   </section>

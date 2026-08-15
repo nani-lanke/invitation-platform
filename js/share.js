@@ -531,69 +531,6 @@
     if (holder) return holder.textContent.trim();
     return 'You are invited! Open my invitation on InviteHub.';
   }
-
-  IH.share = {
-    targets: {
-      whatsapp: function (url, text) { return 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url); },
-      facebook: function (url) { return 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url); },
-      telegram: function (url, text) { return 'https://t.me/share/url?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text); },
-      x: function (url, text) { return 'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(text); },
-      email: function (url, text) { return 'mailto:?subject=' + encodeURIComponent('You are invited') + '&body=' + encodeURIComponent(text + '\n\n' + url); },
-      sms: function (url, text) { return 'sms:?&body=' + encodeURIComponent(text + ' ' + url); }
-    },
-
-    open: function (network, url, text) {
-      var build = this.targets[network];
-      if (!build) return false;
-      var href = build(url, text);
-      if (network === 'email' || network === 'sms') { window.location.href = href; return true; }
-      var win = window.open(href, '_blank', 'noopener,noreferrer,width=640,height=640');
-      if (!win) { window.location.href = href; }
-      return true;
-    },
-
-    copy: function (text) {
-      if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
-        return navigator.clipboard.writeText(text);
-      }
-      // Fallback for file:// and older browsers.
-      return new Promise(function (resolve, reject) {
-        var ta = document.createElement('textarea');
-        ta.value = text;
-        ta.setAttribute('readonly', '');
-        ta.style.cssText = 'position:fixed;top:-1000px;opacity:0';
-        document.body.appendChild(ta);
-        ta.select();
-        try {
-          var ok = document.execCommand('copy');
-          document.body.removeChild(ta);
-          ok ? resolve() : reject(new Error('copy rejected'));
-        } catch (err) {
-          document.body.removeChild(ta);
-          reject(err);
-        }
-      });
-    },
-
-    native: function (url, text, title) {
-      if (!navigator.share) return Promise.reject(new Error('unsupported'));
-      return navigator.share({ title: title || 'InviteHub invitation', text: text, url: url });
-    },
-
-    /* Build the demo invitation URL a host would receive. */
-    demoUrl: function (data) {
-      var parts = [];
-      if (data) {
-        if (data.groomName && data.brideName) parts.push(data.groomName, data.brideName);
-        else if (data.personName) parts.push(data.personName);
-        else if (data.title) parts.push(data.title);
-        if (data.eventType && data.eventType !== 'other') parts.push(data.eventType);
-      }
-      var slug = dom.slugify(parts.join(' ')) || 'my-invitation';
-      return IH.config.demoBaseUrl + slug;
-    }
-  };
-
   /* ==================================================================
      PART 3 — QR modal
      ================================================================== */

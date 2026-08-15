@@ -23,40 +23,183 @@
   /* Who the card is about, which is the only thing that really differs
      between one celebration and the next. A wedding names two people, a
      birthday names one, and a festival or a product launch names none —
-     its title is the whole identity. Everything downstream reads from
-     here, so adding an event type means adding one line. */
+     its title is the whole identity. This drives the friendly demo names
+     in the live preview only; the form itself is configured below. */
   var NAME_MODE = {
-    wedding: 'couple', engagement: 'couple', reception: 'couple', anniversary: 'couple',
+    wedding: 'couple', engagement: 'couple',
     birthday: 'person', 'naming-ceremony': 'person', graduation: 'person',
     retirement: 'person', farewell: 'person'
   };
 
   function nameMode(type) { return NAME_MODE[type] || 'title'; }
 
-  /* show  — is the field on screen at all for this event
-     need  — is it required
+  /* ------------------------------------------------------------------
+     The Details form, configured per event type.
+     One shared form is shown and relabelled to match the occasion — a
+     wedding asks for a groom and a bride, a graduation for one graduate,
+     a corporate event for the company behind it. A field appears when its
+     event type is listed below; an asterisk marks the ones that are
+     genuinely required (the title and the date, plus whoever the card is
+     about). Everything else is optional, so an invitation can go out
+     before the venue is booked.                                  */
 
-     Only what the card cannot do without is required: whoever it is
-     about, and when it happens. A venue can be "to be confirmed", an
-     invitation can go out before the hall is booked, and the card renders
-     perfectly well without one — so it is asked for, not demanded. */
-  var FIELD_RULES = {
-    groomName:  function (mode) { return { show: mode === 'couple', need: mode === 'couple' }; },
-    brideName:  function (mode) { return { show: mode === 'couple', need: mode === 'couple' }; },
-    personName: function (mode) { return { show: mode === 'person', need: mode === 'person' }; },
-    years:      function (mode, type) { return { show: type === 'anniversary', need: false }; },
-    title:      function (mode) { return { show: true, need: mode === 'title' }; },
-    hostName:   function ()     { return { show: true, need: false }; },
-    date:       function ()     { return { show: true, need: true }; },
-    venue:      function ()     { return { show: true, need: false }; }
+  /* Every input that can appear in the Details form. */
+  var ALL_FIELDS = ['title', 'hostName', 'groomName', 'brideName', 'personName',
+    'babyName', 'babyRelation', 'parentsName', 'organization', 'date', 'time', 'venue',
+    'address', 'mapsUrl', 'years', 'classCourse', 'department', 'role',
+    'yearsOfService', 'eventKind', 'theme', 'phone', 'email', 'message',
+    'additionalInformation'];
+
+  /* Which event type shows which fields. 'other' is the fallback. */
+  var FIELDS_BY_CATEGORY = {
+    wedding: ['title', 'hostName', 'groomName', 'brideName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    engagement: ['title', 'hostName', 'groomName', 'brideName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    reception: ['title', 'hostName', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    festival: ['title', 'hostName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'message', 'additionalInformation'],
+    birthday: ['title', 'hostName', 'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'baby-shower': ['title', 'hostName', 'personName', 'babyName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'naming-ceremony': ['title', 'hostName', 'babyName', 'babyRelation', 'parentsName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'house-warming': ['title', 'hostName', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    anniversary: ['title', 'hostName', 'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    graduation: ['title', 'hostName', 'personName', 'organization', 'classCourse', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    retirement: ['title', 'hostName', 'personName', 'role', 'yearsOfService', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    farewell: ['title', 'hostName', 'personName', 'role', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    corporate: ['title', 'hostName', 'organization', 'department', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'school-events': ['title', 'hostName', 'organization', 'classCourse', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'college-events': ['title', 'hostName', 'organization', 'department', 'classCourse', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    party: ['title', 'hostName', 'personName', 'theme', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'community-events': ['title', 'hostName', 'organization', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    other: ['title', 'hostName', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message']
   };
 
-  var PERSON_LABELS = {
-    birthday: 'Birthday person',
-    'naming-ceremony': 'Baby’s name',
-    graduation: 'Graduate’s name',
-    retirement: 'Retiring person',
-    farewell: 'Person being farewelled'
+  /* Fields that must be filled in before the wizard lets the host move on. */
+  var REQUIRED_BY_CATEGORY = {
+    wedding: ['title', 'groomName', 'brideName', 'date'],
+    engagement: ['title', 'groomName', 'brideName', 'date'],
+    reception: ['title', 'personName', 'date'],
+    festival: ['title', 'date'],
+    birthday: ['title', 'personName', 'date'],
+    'baby-shower': ['title', 'personName', 'date'],
+    'naming-ceremony': ['title', 'babyName', 'babyRelation', 'parentsName', 'date'],
+    'house-warming': ['title', 'personName', 'date'],
+    anniversary: ['title', 'personName', 'date'],
+    graduation: ['title', 'personName', 'date'],
+    retirement: ['title', 'personName', 'date'],
+    farewell: ['title', 'personName', 'date'],
+    corporate: ['title', 'organization', 'date'],
+    'school-events': ['title', 'organization', 'date'],
+    'college-events': ['title', 'organization', 'date'],
+    party: ['title', 'personName', 'date'],
+    'community-events': ['title', 'organization', 'date'],
+    other: ['title', 'date']
+  };
+
+  var BASE_LABELS = {
+    title: 'Event title',
+    hostName: 'Hosted by',
+    groomName: 'Groom’s name',
+    brideName: 'Bride’s name',
+    personName: 'Name',
+    babyName: 'Baby’s name / nickname',
+    babyRelation: 'Baby’s relation',
+    parentsName: 'Parents’ names',
+    organization: 'Organization / Institution',
+    date: 'Date',
+    time: 'Time',
+    venue: 'Venue',
+    address: 'Full address',
+    mapsUrl: 'Google Maps URL',
+    years: 'Years',
+    classCourse: 'Degree / Course',
+    department: 'Department',
+    role: 'Job title / Role',
+    yearsOfService: 'Years of service',
+    eventKind: 'Event type',
+    theme: 'Theme',
+    phone: 'Contact number',
+    email: 'Contact email',
+    message: 'Invitation message',
+    additionalInformation: 'Additional information'
+  };
+
+  /* Wording that differs by occasion. */
+  var FIELD_LABELS = {
+    groomName: { wedding: 'Groom’s name', engagement: 'Partner 1’s name' },
+    brideName: { wedding: 'Bride’s name', engagement: 'Partner 2’s name' },
+    personName: {
+      birthday: 'Birthday person’s name',
+      'baby-shower': 'Parent / Parents’ names',
+      'house-warming': 'Family / Host name',
+      anniversary: 'Couple’s name',
+      graduation: 'Graduate’s name',
+      retirement: 'Retiree’s name',
+      farewell: 'Person being honored',
+      reception: 'Couple’s name / Guest of honor',
+      party: 'Guest of honor / Celebrant'
+    },
+    babyName: {
+      'naming-ceremony': 'Baby’s name'
+    },
+    organization: {
+      corporate: 'Company / Organization name',
+      'school-events': 'School name',
+      'college-events': 'College / Institution name',
+      'community-events': 'Community / Group name',
+      graduation: 'Institution name'
+    },
+    classCourse: {
+      graduation: 'Degree / Course',
+      'school-events': 'Class / Grade',
+      'college-events': 'Course / Class'
+    },
+    role: {
+      retirement: 'Job title / Role',
+      farewell: 'Role / Position'
+    },
+    years: {
+      anniversary: 'Years together / Anniversary number',
+      birthday: 'Age / birthday number'
+    },
+    message: {
+      festival: 'Festival message / greeting',
+      'baby-shower': 'Shower message',
+      'naming-ceremony': 'Ceremony message',
+      'house-warming': 'Housewarming message',
+      anniversary: 'Anniversary message',
+      graduation: 'Graduation message',
+      retirement: 'Retirement message',
+      farewell: 'Farewell message',
+      corporate: 'Event message',
+      'school-events': 'Message',
+      'college-events': 'Event message',
+      party: 'Party message',
+      'community-events': 'Community message'
+    }
+  };
+
+  var FIELD_PLACEHOLDERS = {
+    babyName: {
+      'naming-ceremony': 'e.g. Baby’s first name'
+    },
+    organization: {
+      corporate: 'e.g. Northwind Technologies',
+      'school-events': 'e.g. Greenfield Public School',
+      'college-events': 'e.g. City Engineering College',
+      'community-events': 'e.g. Lakeview Residents Association',
+      graduation: 'e.g. City University'
+    }
+  };
+
+  function fieldLabel(name, type) {
+    var over = FIELD_LABELS[name];
+    return (over && over[type]) || BASE_LABELS[name] || name;
+  }
+
+  var STEP_TITLE_OVERRIDES = {
+    corporate: 'Corporate event details',
+    'school-events': 'School event details',
+    'college-events': 'College event details',
+    'community-events': 'Community event details'
   };
 
   var TITLE_PLACEHOLDERS = {
@@ -65,10 +208,17 @@
     reception: 'e.g. Wedding Reception',
     birthday: 'e.g. Turning Six!',
     'baby-shower': 'e.g. Baby Shower',
-    'naming-ceremony': 'e.g. Namakarana Ceremony',
+    'naming-ceremony': 'e.g. Naming Ceremony',
     'house-warming': 'e.g. Griha Pravesh',
     anniversary: 'e.g. 25 Years Together',
     corporate: 'e.g. Annual Partner Summit 2026',
+    festival: 'e.g. Diwali Celebration',
+    'school-events': 'e.g. School Annual Day 2026',
+    retirement: 'e.g. Retirement Felicitation',
+    farewell: 'e.g. Farewell Gathering',
+    'college-events': 'e.g. College Fest 2026',
+    party: 'e.g. House Party',
+    'community-events': 'e.g. Community Gathering',
     other: 'e.g. Our Special Event'
   };
 
@@ -99,6 +249,16 @@
       brideName: '',
       groomName: '',
       personName: '',
+      babyName: '',
+      babyRelation: 'Son',
+      parentsName: '',
+      organization: '',
+      classCourse: '',
+      department: '',
+      role: '',
+      yearsOfService: '',
+      eventKind: '',
+      theme: '',
       years: '',
       date: '',
       time: '',
@@ -108,6 +268,7 @@
       phone: '',
       email: '',
       message: '',
+      additionalInformation: '',
       photo: '',
       background: '',
       gallery: [],
@@ -121,7 +282,16 @@
       showRsvp: true,
       showMaps: true,
       showGallery: true,
-      plan: '7',
+      plan: '99',
+      hosted: false,
+      hostedUrl: '',
+      hostingPaid: false,
+      hostingPayment: null,
+      hostingPaymentId: '',
+      invitationId: '',
+      filename: '',
+      hostedAt: null,
+      hostingStatus: '',
       step: 1,
       updatedAt: null,
       published: false,
@@ -137,6 +307,20 @@
         if (saved[k] !== undefined && saved[k] !== null) base[k] = saved[k];
       });
     }
+
+    /* Older naming-ceremony drafts kept the baby's name in the shared
+       personName field, which is now dedicated to birthdays, graduations
+       and the other one-person occasions. A saved naming ceremony moves
+       that name into babyName so the form, the preview and the guest card
+       all read the same field. Nothing else is touched, so drafts of any
+       other occasion keep personName exactly as they saved it. */
+    if (base.eventType === 'naming-ceremony' && !base.babyName && base.personName) {
+      base.babyName = base.personName;
+      base.personName = '';
+    }
+    /* Relation is a rendering default, never a required real answer — a
+       draft saved before the field existed must still announce Son. */
+    if (!base.babyRelation) base.babyRelation = 'Son';
     return base;
   }
 
@@ -161,7 +345,7 @@
     else data.colors = state.colors;
 
     // Fall back to friendly demo copy so the card never looks broken.
-    if (!data.title && !data.brideName && !data.groomName && !data.personName) {
+    if (!data.title && !data.brideName && !data.groomName && !data.personName && !data.babyName) {
       data.title = 'Your Event Title';
     }
     if (nameMode(data.eventType) === 'couple') {
@@ -169,9 +353,11 @@
     }
     if (!data.message) {
       /* messageFor arrived with the per-event sample copy; a browser still
-         holding an older preview.js must not be broken by asking for it. */
+         holding an older preview.js must not be broken by asking for it.
+         A naming ceremony passes its relation so the sample reads Son or
+         Daughter to match the selection. */
       data.message = IH.invitation.messageFor
-        ? IH.invitation.messageFor(data.eventType)
+        ? IH.invitation.messageFor(data.eventType, data.babyRelation)
         : IH.invitation.SAMPLE.message;
     }
     if (!data.venue) data.venue = 'Venue name';
@@ -191,10 +377,13 @@
   }, 140);
 
   /* The guest-facing link and its QR code, shown on the final step.
-     The whole invitation travels inside the URL's fragment, so the link
-     works on static hosting with nothing written and nothing stored. */
+     After hosting, the link is the published invitation's own public URL
+     (generated once, server-side) — everything shares that one address.
+     Before hosting, the whole invitation travels inside the URL's
+     fragment, so the link works on static hosting with nothing written
+     and nothing stored. */
   function paintShareLink() {
-    var url = IH.link ? IH.link.build(previewData()) : location.href;
+    var url = state.hostedUrl || (IH.link ? IH.link.build(previewData()) : location.href);
 
     var linkOut = qs('[data-share-link]', root);
     if (linkOut) linkOut.textContent = url;
@@ -214,7 +403,7 @@
     if (openLink) openLink.href = url;
   }
 
-  var PAY_STEP = 5;    // plan choice - test mode, nothing is charged
+  var PAY_STEP = 5;    // hosting choice — free to skip, ₹99 to publish online
   var DONE_STEP = 6;   // the finished link, sharing and QR
 
   /* ------------------------------------------------------------------
@@ -236,13 +425,27 @@
       ['Occasion', IH.invitation.EVENT_TYPES[data.eventType] ? IH.invitation.EVENT_TYPES[data.eventType].label : 'Event'],
       ['Title', data.title],
       ['Hosted by', data.hostName],
-      ['Names', [data.groomName, data.brideName].filter(Boolean).join(' & ') || data.personName],
+      ['Names', data.eventType === 'naming-ceremony'
+        ? (data.babyName || data.personName)
+        : ([data.groomName, data.brideName].filter(Boolean).join(' & ') || data.personName || data.babyName || data.parentsName)],
+      ['Company / Institution', data.organization],
+      ['Department', data.department],
+      ['Course / Class', data.classCourse],
+      ['Role', data.role],
+      ['Years of service', data.yearsOfService],
+      ['Event type', data.eventKind],
+      ['Theme', data.theme],
+      ['Baby name', data.babyName],
+      ['Baby relation', data.babyRelation],
+      ['Parents', data.parentsName],
+      ['Years', data.years],
       ['Date', d.full ? d.weekday + ', ' + d.full : ''],
       ['Time', IH.invitation.formatTime(data.time)],
       ['Venue', data.venue],
       ['Address', data.address],
       ['Phone', data.phone],
       ['Email', data.email],
+      ['Additional info', data.additionalInformation],
       ['Template', tpl ? tpl.name : data.template],
       ['Font', data.font],
       ['Photos', photos ? String(photos) : ''],
@@ -262,15 +465,20 @@
     var files = qs('[data-card-files]', root);
     if (!files) return;
 
-    var url = IH.link ? IH.link.build(data) : '';
+    var url = state.hostedUrl || (IH.link ? IH.link.build(data) : '');
     var embedded = (data.gallery || []).filter(function (src) {
       return typeof src === 'string' && src.slice(0, 5) === 'data:';
     }).length + (String(data.photo || '').slice(0, 5) === 'data:' ? 1 : 0) +
       (String(data.background || '').slice(0, 5) === 'data:' ? 1 : 0);
 
+    var hosted = !!state.hostedUrl;
+
     var rows = [
-      '<li>' + IH.icon('link', 18) + '<span>Your invitation travels inside its own link — ' +
-        'nothing is stored on a server, so it works the moment your site is live.</span></li>',
+      hosted
+        ? '<li>' + IH.icon('globe', 18) + '<span>Your invitation is hosted online at its own public ' +
+          'address — guests open it directly, and WhatsApp shows a preview of it.</span></li>'
+        : '<li>' + IH.icon('link', 18) + '<span>Your invitation travels inside its own link — ' +
+          'nothing is stored on a server, so it works the moment your site is live.</span></li>',
       '<li>' + IH.icon('zap', 18) + '<span>Link length: ' + url.length +
         ' characters' + (url.length > 2000 ? ' — long, but WhatsApp and email carry it fine' : '') +
         '</span></li>'
@@ -305,21 +513,35 @@
      The fragment link works with nothing deployed, but it is long and
      unreadable. A host who owns the repository can instead commit the
      invitation as a folder and hand out a short URL. js/publish.js does
-     the packing; this paints the address and the three steps to it. */
+     the packing; this paints the address and the three steps to it.
+
+     The hosted address is generated once, on the server, when the page
+     is committed — the browser never builds it, so what is shown here
+     before publishing is a placeholder, not a guess at a URL. */
   function paintPublish(data) {
     var box = qs('[data-publish-box]', root);
     if (!box || !IH.publish) return;
 
+    var paid = !!state.hostingPaid;
+    /* Hosting is the paid part. Until a ₹99 payment has gone through, the
+      publish controls stay out of the way and a short notice points back
+      to the payment step instead. After payment, publishing works exactly
+      as before. */
+    var gate = qs('[data-publish-gate]', box);
+    var controls = qs('[data-publish-controls]', box);
+    if (gate) gate.hidden = paid;
+    if (controls) controls.hidden = !paid;
     /* Once this invitation has been committed to GitHub, the manual
        button must not fire a second publish for the same invitation. */
     var nowBtn = qs('[data-publish-now]', box);
     if (nowBtn) nowBtn.disabled = !!state.published;
 
     var where = IH.publish.slug(data);      // the .zip route: a folder per invitation
-    var served = IH.publish.page(data);     // the server route: one file per invitation
 
     var urlOut = qs('[data-publish-url]', box);
-    if (urlOut) urlOut.textContent = served.url;
+    if (urlOut) {
+      urlOut.textContent = state.hostedUrl || 'Publishing generates your unique link…';
+    }
 
     /* Publishing renders on the server from the fields alone, so an
        invitation with uploaded photos has to go the .zip way. Saying so
@@ -340,9 +562,10 @@
     var steps = qs('[data-publish-steps]', box);
     if (steps) {
       steps.innerHTML = [
-        '<li>' + IH.icon('globe', 18) + '<span><strong>Publish it now</strong> writes <code>' +
-          escapeHtml(served.path) + '</code> into the repository and the address works ' +
-          'straight away. Needs the Vercel deployment — GitHub Pages cannot run it.</span></li>',
+        '<li>' + IH.icon('globe', 18) + '<span><strong>Publish it now</strong> renders the page on the ' +
+          'server, commits it to <code>' + escapeHtml(where.dir) + '/</code> and returns your unique ' +
+          'public link (<code>&lt;name&gt;-&lt;id&gt;.html</code>). Needs the Vercel deployment — ' +
+          'GitHub Pages cannot run it.</span></li>',
         '<li>' + IH.icon('download', 18) + '<span><strong>Download page folder</strong> gives you ' +
           '<code>' + escapeHtml(where.file) + '</code> plus your photos and music, named to match ' +
           'it, to unpack at the root of your repository and push yourself. This is the one that ' +
@@ -355,14 +578,23 @@
 
   var publishInFlight = false;
 
+<<<<<<< HEAD
   /* The one path to the server, used by both the automatic publish at
      Done and the manual "Publish it now" button below — so there is
      exactly one call to IH.publish.toServer and exactly one place that
      paints its result. */
+=======
+  /* The one path to the server, used by both the ₹99 hosting flow at
+     Payment and the manual "Publish it now" button below — so there is
+     exactly one call to IH.publish.toServer and exactly one place that
+     paints its result. The server decides the filename and the public
+     URL; this module only ever displays what it returns. */
+>>>>>>> 3f46217 (Update invitation website)
   function runPublish(box) {
     if (publishInFlight) return Promise.resolve(null);
     publishInFlight = true;
 
+<<<<<<< HEAD
     return IH.publish.toServer(previewData()).then(function (result) {
       state.published = true;
       state.publishedAt = new Date().toISOString();
@@ -393,6 +625,72 @@
       IH.toast.error(err.message, { title: 'Not published' });
       throw err;
     }).then(function (result) {
+=======
+    return IH.publish.toServer(previewData(), state.hostingPayment)
+      .then(function (result) {
+        /* The page is committed; confirm the public address actually
+           serves it before anyone is told it is live. The rewrite reads
+           from GitHub, and GitHub is strongly consistent, so a couple of
+           short retries cover any edge propagation lag. */
+        var attempts = 0;
+        function probe() {
+          attempts += 1;
+          return fetch(result.publicUrl, { cache: 'no-store' }).then(function (res) {
+            if (!res.ok) throw new Error('unreachable');
+            return result;
+          }).catch(function () {
+            if (attempts < 3) {
+              return new Promise(function (resolve) {
+                setTimeout(function () { resolve(probe()); }, 700 * attempts);
+              });
+            }
+            throw new Error('unreachable');
+          });
+        }
+        return probe();
+      })
+      .then(function (result) {
+        state.published = true;
+        state.publishedAt = new Date().toISOString();
+        state.hostedUrl = result.publicUrl || result.url || state.hostedUrl;
+        state.invitationId = result.invitationId || '';
+        state.filename = result.filename || '';
+        state.hostedAt = result.hostedAt || state.hostedAt || new Date().toISOString();
+        state.hostingStatus = 'active';
+        saveDraft();
+
+        var publishBox = box || qs('[data-publish-box]', root);
+        if (publishBox) {
+          var holder = qs('[data-publish-result]', publishBox);
+          var out = qs('[data-publish-live]', publishBox);
+          var open = qs('[data-publish-open]', publishBox);
+
+          if (out) out.textContent = state.hostedUrl;
+          if (open) open.href = state.hostedUrl;
+          if (holder) holder.hidden = false;
+
+          /* Disable immediately, without waiting for the next paint,
+             so a fast second click can never queue a second commit. */
+          var nowBtn = qs('[data-publish-now]', publishBox);
+          if (nowBtn) nowBtn.disabled = true;
+        }
+
+        IH.toast.success(result.count > 1
+          ? 'Published — ' + result.count + ' files committed, page and media together.'
+          : 'Published. The address is live now.', { title: result.filename });
+        IH.confetti(24);
+        return result;
+      }).catch(function (err) {
+        /* A commit that landed but is not being served is still not a
+           live invitation — the user is told so rather than congratulated. */
+        if (err && err.message === 'unreachable') {
+          IH.toast.error('We couldn\'t publish your invitation yet. Please try again.', { title: 'Not live yet' });
+        } else {
+          IH.toast.error(err.message, { title: 'Not published' });
+        }
+        throw err;
+      }).then(function (result) {
+>>>>>>> 3f46217 (Update invitation website)
       publishInFlight = false;
       return result;
     }, function (err) {
@@ -405,8 +703,23 @@
     var box = qs('[data-publish-box]', root);
     if (!box || !IH.publish) return;
 
+    /* The gate notice's button sends the host back to the payment step
+       to pay ₹99 before publishing. */
+    on(qs('[data-publish-pay]', box), 'click', function () {
+      goToStep(PAY_STEP);
+      IH.toast.info('Hosting costs ₹99. Pay once to publish your invitation online.');
+    });
+
     on(qs('[data-publish-now]', box), 'click', function (evt) {
       if (state.published) return; // already published — no second commit
+<<<<<<< HEAD
+=======
+      if (!state.hostingPaid) {
+        goToStep(PAY_STEP);
+        IH.toast.info('Hosting costs ₹99. Pay once to publish your invitation online.');
+        return;
+      }
+>>>>>>> 3f46217 (Update invitation website)
       var btn = evt.currentTarget;
       var label = qs('span', btn);
       var was = label ? label.textContent : '';
@@ -428,11 +741,15 @@
     });
 
     on(qs('[data-publish-copy]', box), 'click', function () {
-      var url = IH.publish.slug(previewData()).url;
+      var url = state.hostedUrl || '';
+      if (!url) {
+        IH.toast.info('Publish the invitation first — its unique link appears here.');
+        return;
+      }
       IH.share.copy(url).then(function () {
-        IH.toast.success('Address copied — it works once you have pushed the folder.', { title: 'Copied' });
+        IH.toast.success('Invitation link copied to your clipboard.', { title: 'Copied' });
       }).catch(function () {
-        IH.toast.info('Copy this address: ' + url);
+        IH.toast.info('Copy this link: ' + url);
       });
     });
   }
@@ -494,15 +811,17 @@
 
   function applyFieldRules() {
     var type = state.eventType;
-    var mode = nameMode(type);
+    var shown = FIELDS_BY_CATEGORY[type] || FIELDS_BY_CATEGORY.other;
+    var need = REQUIRED_BY_CATEGORY[type] || REQUIRED_BY_CATEGORY.other;
 
-    Object.keys(FIELD_RULES).forEach(function (name) {
+    ALL_FIELDS.forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       if (!input) return;
       var field = input.closest('.field');
       if (!field) return;
 
-      var rule = FIELD_RULES[name](mode, type);
+      var on = shown.indexOf(name) !== -1;
+      var required = on && need.indexOf(name) !== -1;
 
       /* Both, deliberately. The attribute is the honest signal — it takes
          the field out of the accessibility tree too — but it only carries
@@ -510,42 +829,89 @@
          here outranks. An inline style cannot be outranked, so a stale or
          missing stylesheet can never leave a Groom's name sitting on a
          festival invitation. */
-      field.hidden = !rule.show;
-      field.style.display = rule.show ? '' : 'none';
-      input.disabled = !rule.show;
+      field.hidden = !on;
+      field.style.display = on ? '' : 'none';
+      input.disabled = !on;
 
       /* validate.field reads the attribute, so this is what actually
          decides whether a blank value stops the wizard. */
-      if (rule.need && rule.show) input.setAttribute('required', '');
+      if (required) input.setAttribute('required', '');
       else input.removeAttribute('required');
 
       /* The asterisk has to follow, or the form promises one thing and
          enforces another. */
       var star = qs('[data-req]', field);
-      if (star) star.hidden = !(rule.need && rule.show);
+      if (star) star.hidden = !required;
+
+      /* The label and its data-label (used for validation messages) follow
+         the occasion: a graduation card asks for a Graduate's name, an
+         engagement for Partner 1 and Partner 2, a school event for a
+         School name. */
+      var labelNode = qs('.field__label', field);
+      if (labelNode) {
+        var label = fieldLabel(name, type);
+        labelNode.childNodes[0].nodeValue = label + ' ';
+        input.setAttribute('data-label', label);
+      }
+
+      var placeholder = FIELD_PLACEHOLDERS[name] && FIELD_PLACEHOLDERS[name][type];
+      if (placeholder) input.placeholder = placeholder;
+
+      if (name === 'personName') {
+        if (type === 'house-warming') {
+          input.setAttribute('data-required-message', 'Please enter the family or host name.');
+        } else if (type === 'anniversary') {
+          input.setAttribute('data-required-message', 'Please enter the couple\'s name.');
+        } else if (type === 'party') {
+          input.setAttribute('data-required-message', 'Please enter the guest of honor or celebrant\'s name.');
+        } else {
+          input.removeAttribute('data-required-message');
+        }
+      }
+
+      if (name === 'organization') {
+        if (type === 'corporate') {
+          input.setAttribute('data-required-message', 'Please enter the company or organization name.');
+        } else if (type === 'school-events') {
+          input.setAttribute('data-required-message', 'Please enter the school name.');
+        } else if (type === 'college-events') {
+          input.setAttribute('data-required-message', 'Please enter the college or institution name.');
+        } else if (type === 'community-events') {
+          input.setAttribute('data-required-message', 'Please enter the community or group name.');
+        } else {
+          input.removeAttribute('data-required-message');
+        }
+      }
+
+      if (name === 'hostName') {
+        var hostHint = type === 'wedding'
+          ? 'Usually the family or people hosting the wedding.'
+          : type === 'naming-ceremony'
+            ? 'Usually the family or people hosting the ceremony.'
+            : 'Usually the family or people hosting the event.';
+        var hostHintNode = qs('.field__hint', field);
+        if (hostHintNode) hostHintNode.textContent = hostHint;
+      }
+
+      if (name === 'years' && on) {
+        var yearsHint = type === 'birthday'
+          ? 'The age the birthday is celebrating — leave blank if you would rather not share it.'
+          : 'The number of years — printed on the card as 25th Anniversary.';
+        var yearsHintNode = qs('.field__hint', field);
+        if (yearsHintNode) yearsHintNode.textContent = yearsHint;
+      }
+
+      /* A naming ceremony must name the baby, so the baby-shower hint about
+         keeping the name a surprise would contradict the required marker. */
+      if (name === 'babyName' && type === 'naming-ceremony') {
+        var babyHintNode = qs('.field__hint', field);
+        if (babyHintNode) babyHintNode.textContent = 'The little one’s name, as it should appear on the card.';
+      }
 
       /* A field that is now hidden or optional must not keep an error
          from the last event type the host was looking at. */
-      if (!rule.show || !rule.need) IH.validate.clearError(input);
+      if (!on || !required) IH.validate.clearError(input);
     });
-
-    var personInput = qs('[name="personName"]', root);
-    if (personInput) {
-      var labelNode = qs('.field__label', personInput.closest('.field'));
-      if (labelNode) labelNode.childNodes[0].nodeValue = (PERSON_LABELS[type] || 'Name of the person') + ' ';
-      personInput.placeholder = 'As it should appear on the card';
-    }
-
-    /* "Event details" is what you write when you do not know which event.
-       The wizard does know by now, so the step says so: Wedding details,
-       Birthday details, House Warming details. */
-    var stepTitle = qs('#step2-title', root);
-    if (stepTitle) {
-      var meta = IH.invitation.EVENT_TYPES[type];
-      stepTitle.textContent = (meta && type !== 'other')
-        ? meta.label + ' details'
-        : 'Event details';
-    }
 
     var titleInput = qs('[name="title"]', root);
     if (titleInput) titleInput.placeholder = TITLE_PLACEHOLDERS[type] || TITLE_PLACEHOLDERS.other;
@@ -556,14 +922,17 @@
        per-event samples the previews use, so there is one list, not two. */
     var messageInput = qs('[name="message"]', root);
     if (messageInput && IH.invitation.messageFor) {
-      messageInput.placeholder = IH.invitation.messageFor(type);
+      messageInput.placeholder = IH.invitation.messageFor(type, state.babyRelation);
     }
 
-    var hostInput = qs('[name="hostName"]', root);
-    if (hostInput) {
-      hostInput.placeholder = type === 'corporate'
-        ? 'e.g. Northwind Technologies'
-        : 'e.g. Both families';
+    /* "Event details" is what you write when you do not know which event.
+       The wizard does know by now, so the step says so: Wedding details,
+       Birthday details, Corporate event details. */
+    var stepTitle = qs('#step2-title', root);
+    if (stepTitle) {
+      var meta = IH.invitation.EVENT_TYPES[type];
+      stepTitle.textContent = STEP_TITLE_OVERRIDES[type] ||
+        ((meta && type !== 'other') ? meta.label + ' details' : 'Event details');
     }
   }
 
@@ -1074,8 +1443,10 @@
      7. Text inputs -> state
      ------------------------------------------------------------------ */
 
-  var TEXT_FIELDS = ['title', 'hostName', 'brideName', 'groomName', 'personName', 'years', 'date', 'time',
-    'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'];
+  var TEXT_FIELDS = ['title', 'hostName', 'groomName', 'brideName', 'personName', 'babyName', 'parentsName',
+    'organization', 'classCourse', 'department', 'role', 'yearsOfService', 'eventKind', 'theme',
+    'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message',
+    'additionalInformation'];
 
   function initInputs() {
     TEXT_FIELDS.forEach(function (name) {
@@ -1087,6 +1458,23 @@
         saveDraft();
       });
     });
+
+    /* The relation is a dropdown, so it announces its change with a
+       change event rather than an input event like the text fields. */
+    var relInput = qs('[name="babyRelation"]', root);
+    if (relInput) {
+      on(relInput, 'change', function () {
+        state.babyRelation = relInput.value;
+        /* Keep the empty-message hint in step with the selection so a
+           naming ceremony never offers "our daughter" copy for a son. */
+        var msgInput = qs('[name="message"]', root);
+        if (msgInput && !(msgInput.value || '').trim() && IH.invitation.messageFor) {
+          msgInput.placeholder = IH.invitation.messageFor(state.eventType, state.babyRelation);
+        }
+        renderPreview();
+        saveDraft();
+      });
+    }
   }
 
   function syncInputs() {
@@ -1094,6 +1482,8 @@
       var input = qs('[name="' + name + '"]', root);
       if (input && input.value !== state[name]) input.value = state[name] || '';
     });
+    var relInput = qs('[name="babyRelation"]', root);
+    if (relInput) relInput.value = state.babyRelation || 'Son';
     ['font', 'animation'].forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       if (input) input.value = state[name];
@@ -1175,7 +1565,7 @@
       if (n === TOTAL_STEPS) { next.hidden = true; }
       else {
         next.hidden = false;
-        if (label) label.textContent = n === PAY_STEP ? 'Make Me Payment' : 'Continue';
+        if (label) label.textContent = 'Continue';
       }
     }
 
@@ -1201,13 +1591,16 @@
 
     if (n === 1) paintEventTemplates();
     if (n === 4) buildTemplatePicker();
+    if (n === PAY_STEP) paintHostingStatus();
     if (n === DONE_STEP) {
-      /* "Make Me Payment" lands here. Test mode: no gateway, no charge —
-         the click simply writes the page and its images, then shows the
-         link, the sharing options and the QR code. */
+      /* Reaching the last step is free — the invitation is complete, and
+         it can be downloaded or shared as it is. Online hosting stays a
+         separate, paid choice: only a successful ₹99 payment calls
+         runPublish, never this step on its own. */
       paintShareLink();
       paintCardSummary(previewData());
       paintPublish(previewData());
+      paintHostingStatus();
       IH.confetti(36);
 
       /* The invitation is complete the moment it reaches this step, so it
@@ -1283,27 +1676,274 @@
   }
 
   /* ------------------------------------------------------------------
-     10. Plan selection (demo only)
+     10. Hosting — the single ₹99 plan
      ------------------------------------------------------------------ */
 
-  function initPlans() {
-    qsa('[data-plan-pick]', root).forEach(function (btn) {
-      on(btn, 'click', function () {
-        state.plan = btn.getAttribute('data-plan-pick');
-        qsa('[data-plan-card]', root).forEach(function (card) {
-          card.classList.toggle('is-selected', card.getAttribute('data-plan-card') === state.plan);
-        });
-        var out = qs('[data-plan-summary]', root);
-        var price = btn.getAttribute('data-plan-price');
-        if (out) out.textContent = state.plan + '-day plan · ' + IH.config.currency + price;
-        saveDraft();
-        IH.toast.info('Noted — your invitation page is already created either way. Plans only cover hosting it at a permanent link.', { title: 'Nothing to pay' });
-      });
-      if (btn.getAttribute('data-plan-pick') === state.plan) {
-        var card = btn.closest('[data-plan-card]');
-        if (card) card.classList.add('is-selected');
-      }
+  var HOSTING_PRODUCT = 'online-invitation-hosting';
+  var HOSTING_AMOUNT = 9900;   // paise — decided on the server, never trusted from here
+
+  /* Paint the hosting status on the payment step. Before payment the
+     invitation is "Not hosted yet"; after a successful ₹99 payment and
+     publish it becomes "Your invitation is live". */
+  function paintHostingStatus() {
+    var status = qs('[data-host-status]', root);
+    var note = qs('[data-host-status-note]', root);
+    var hosted = !!state.hostingPaid && !!state.hosted;
+
+    if (status) {
+      status.textContent = hosted ? 'Your invitation is live' : 'Not hosted yet';
+    }
+    if (note) {
+      note.textContent = hosted
+        ? 'Your invitation has been successfully published.'
+        : 'Your invitation is saved in this browser and ready to download. Hosting is optional and costs ₹99.';
+    }
+
+    /* The success panel on the payment step: live link, copy, open, share,
+       QR, WhatsApp and a downloadable copy of the page. */
+    var result = qs('[data-hosted-result]', root);
+    if (result) {
+      var urlOut = qs('[data-hosted-url]', result);
+      var open = qs('[data-hosted-open]', result);
+      var url = state.hostedUrl || '';
+      if (urlOut) urlOut.textContent = url;
+      if (open) open.href = url;
+      result.hidden = !(hosted && url);
+    }
+  }
+
+  function setPaymentStatus(title, msg, warn) {
+    var box = qs('[data-payment-status]', root);
+    if (!box) return;
+    if (!title) { box.hidden = true; return; }
+    box.hidden = false;
+    box.className = 'notice ' + (warn ? 'notice--warn' : 'notice--info');
+    var t = qs('[data-payment-status-title]', box);
+    var m = qs('[data-payment-status-msg]', box);
+    if (t) t.textContent = title;
+    if (m) m.textContent = msg || '';
+  }
+
+  function setHostBtnBusy(busy, label) {
+    var btn = qs('[data-host-now]', root);
+    if (!btn) return;
+    btn.disabled = busy;
+    var span = qs('span', btn);
+    if (span && label) span.textContent = label;
+  }
+
+  /* Load the Razorpay Checkout script lazily, the first time a host asks
+     to pay. The key id is public — only the secret stays on the server. */
+  function loadRazorpay() {
+    return new Promise(function (resolve, reject) {
+      if (window.Razorpay) { resolve(window.Razorpay); return; }
+      var s = document.createElement('script');
+      s.src = 'https://checkout.razorpay.com/v1/checkout.js';
+      s.async = true;
+      s.onload = function () { resolve(window.Razorpay); };
+      s.onerror = function () { reject(new Error('The payment gateway could not be loaded. Check your connection and try again.')); };
+      document.head.appendChild(s);
     });
+  }
+
+  /* POST /api/order — the server decides the price. The client only says
+     which product it wants; the amount (₹99 = 9900 paise) is fixed on the
+     server so a price can never be edited from this page. */
+  function createOrder() {
+    return fetch('api/order', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ product: HOSTING_PRODUCT })
+    }).then(function (res) {
+      return res.json().catch(function () {
+        throw new Error('The server sent back something unreadable.');
+      }).then(function (body) {
+        if (!res.ok) throw new Error(body.error || 'Could not start the payment.');
+        return body;
+      });
+    });
+  }
+
+  /* POST /api/verify — the server re-signs the order and payment ids with
+     its secret and compares, so only a genuine Razorpay payment passes. */
+  function verifyPayment(details) {
+    return fetch('api/verify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(details)
+    }).then(function (res) {
+      return res.json().catch(function () {
+        throw new Error('Payment could not be verified.');
+      }).then(function (body) {
+        if (!res.ok || !body.ok) throw new Error(body.error || 'Payment could not be verified.');
+        return body;
+      });
+    });
+  }
+
+  var hostingInFlight = false;
+
+  /* The hosting flow, in one place:
+     pay → verify → publish → hosted URL → success panel.
+     The button is disabled for the whole run so a double click cannot
+     create two orders or open two checkouts. */
+  function startHosting() {
+    if (hostingInFlight) return;
+    hostingInFlight = true;
+    setHostBtnBusy(true, 'Processing payment…');
+    setPaymentStatus(null);
+
+    /* Paid but not yet hosted (a publish that failed after payment, or a
+       reload before the link was saved): skip straight to publishing so a
+       paying host is never asked to pay twice. */
+    var paid = state.hostingPaid;
+
+    (paid ? Promise.resolve({}) : createOrder().then(function (order) {
+      return loadRazorpay().then(function (Razorpay) {
+        return new Promise(function (resolve, reject) {
+          var rzp = new Razorpay({
+            key: order.keyId,
+            amount: order.amount,
+            currency: order.currency,
+            name: 'InviteHub',
+            description: 'Online Invitation Hosting — ₹99',
+            order_id: order.orderId,
+            prefill: {
+              name: state.title || state.hostName || '',
+              email: state.email || '',
+              contact: state.phone || ''
+            },
+            handler: function (payment) {
+              resolve(payment);
+            },
+            modal: {
+              ondismiss: function () { reject(new Error('cancelled')); }
+            }
+          });
+          rzp.on('payment.failed', function () {
+            reject(new Error('failed'));
+          });
+          rzp.open();
+        });
+      });
+    }).then(function (payment) {
+      setHostBtnBusy(true, 'Verifying payment…');
+      return verifyPayment({
+        razorpay_order_id: payment.razorpay_order_id,
+        razorpay_payment_id: payment.razorpay_payment_id,
+        razorpay_signature: payment.razorpay_signature
+      }).then(function () {
+        state.hostingPaid = true;
+        /* Keep the receipt in the draft so a publish that fails (or a
+           reload before the link was saved) can re-publish without a
+           second payment — the server re-checks the signature itself. */
+        state.hostingPayment = {
+          razorpay_order_id: payment.razorpay_order_id,
+          razorpay_payment_id: payment.razorpay_payment_id,
+          razorpay_signature: payment.razorpay_signature
+        };
+        state.hostingPaymentId = payment.razorpay_payment_id;
+        saveDraft();
+        return {};
+      });
+    }))
+      .then(function () {
+        setPaymentStatus('Payment successful!', 'Your invitation is being published…');
+        setHostBtnBusy(true, 'Publishing invitation…');
+        return runPublish(qs('[data-publish-box]', root));
+      })
+      .then(function (result) {
+        if (!result) return;
+        state.hosted = true;
+        state.hostedUrl = result.publicUrl || result.url || '';
+        state.invitationId = result.invitationId || '';
+        state.filename = result.filename || '';
+        state.hostedAt = result.hostedAt || new Date().toISOString();
+        state.hostingStatus = 'active';
+        state.published = true;
+        saveDraft();
+        setPaymentStatus('Payment successful!', 'Your invitation is live!');
+        paintHostingStatus();
+        paintShareLink();
+        IH.confetti(36);
+        IH.toast.success('Your invitation is live!', { title: 'Hosted' });
+      })
+      .catch(function (err) {
+        var cancelled = err && err.message === 'cancelled';
+
+        if (state.hostingPaid) {
+          /* Payment went through, but publishing did not finish — the
+             invitation is still saved and the payment is not wasted. */
+          setPaymentStatus(
+            'Payment successful, but publishing did not finish.',
+            'Your invitation is still saved. Try hosting again, or download it and publish later.',
+            true
+          );
+          IH.toast.error('Your payment went through, but the publish did not complete. Try again.', { title: 'Still saved' });
+        } else {
+          setPaymentStatus(
+            'Payment was not completed.',
+            'Your invitation is still saved. You can try hosting it again whenever you’re ready.',
+            true
+          );
+          if (cancelled) {
+            IH.toast.info('Your invitation is still saved — nothing was published.', { title: 'Payment cancelled' });
+          } else {
+            IH.toast.error(err.message || 'The payment could not be completed.', { title: 'Still saved' });
+          }
+        }
+      })
+      .then(function () {
+        hostingInFlight = false;
+        setHostBtnBusy(false, 'Host My Invitation — ₹99');
+      });
+  }
+
+  function initHosting() {
+    on(qs('[data-host-now]', root), 'click', startHosting);
+
+    /* After a successful hosting payment: copy, open, share, WhatsApp,
+       QR and download straight from the success panel. Every button uses
+       the exact publicUrl the server returned. */
+    on(qs('[data-hosted-copy]', root), 'click', function () {
+      var url = state.hostedUrl || '';
+      IH.share.copy(url).then(function () {
+        IH.toast.success('Invitation link copied to your clipboard.', { title: 'Copied' });
+      }).catch(function () {
+        IH.toast.info('Copy this link: ' + url);
+      });
+    });
+
+    on(qs('[data-hosted-open]', root), 'click', function (evt) {
+      evt.preventDefault();
+      var url = state.hostedUrl || '';
+      if (url) window.open(url, '_blank', 'noopener,noreferrer');
+    });
+
+    on(qs('[data-hosted-share]', root), 'click', function () {
+      var url = state.hostedUrl || '';
+      IH.share.native(url, 'You\'re invited!\n\nView the invitation here:\n\n' + url, 'My Invitation').catch(function () {
+        IH.share.copy(url).then(function () {
+          IH.toast.success('Link copied — paste it anywhere.', { title: 'Copied' });
+        });
+      });
+    });
+
+    on(qs('[data-hosted-whatsapp]', root), 'click', function () {
+      var url = state.hostedUrl || '';
+      IH.share.open('whatsapp', url, 'You\'re invited!\n\nView the invitation here:');
+    });
+
+    on(qs('[data-hosted-qr]', root), 'click', function () {
+      IH.qrModal.open(state.hostedUrl || '');
+    });
+
+    on(qs('[data-hosted-download]', root), 'click', function () {
+      var res = IH.exportPage.download(previewData());
+      IH.toast.success(res.file + ' saved to your downloads folder.', { title: 'Downloaded' });
+    });
+
+    paintHostingStatus();
   }
 
   /* ------------------------------------------------------------------
@@ -1332,7 +1972,7 @@
     if (params.get('event') && IH.invitation.EVENT_TYPES[params.get('event')]) {
       state.eventType = params.get('event');
     }
-    if (params.get('plan')) state.plan = params.get('plan');
+    state.plan = '99';
 
     var hadDraft = !!IH.store.get(DRAFT_KEY, null);
     furthest = hadDraft ? Math.max(1, state.step || 1) : 1;
@@ -1355,7 +1995,7 @@
       initMedia();
       initWizard();
       initPreviewColumn();
-      initPlans();
+      initHosting();
       initExport();
       initPublish();
 

@@ -21,7 +21,6 @@
   IH.config = {
     brand: 'InviteHub',
     storagePrefix: 'invitehub:',
-    demoBaseUrl: 'https://invitehub.example.com/i/',
     currency: '₹'
   };
 
@@ -704,7 +703,13 @@
       var label = input.getAttribute('data-label') || (qs('.field__label', input.closest('.field') || document) || {}).textContent || 'This field';
       label = String(label).replace('*', '').trim();
 
-      if (required && !value) { this.setError(input, label + ' is required.'); return false; }
+      if (required && !value) {
+        /* A field may carry its own wording for the empty case (e.g.
+           "Please enter the parents' names."); otherwise the label +
+           "is required." reads fine. */
+        var reqMsg = input.getAttribute('data-required-message');
+        this.setError(input, reqMsg || (label + ' is required.')); return false;
+      }
       if (!value) { this.clearError(input); return true; }
 
       if (input.type === 'email' && !this.email(value)) { this.setError(input, 'Enter a valid email address.'); return false; }

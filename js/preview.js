@@ -25,17 +25,17 @@
     birthday:          { label: 'Birthday',         icon: 'cake',            kicker: 'You are invited to',           motif: 'balloons', defaultTemplate: 'kids-birthday' },
     'baby-shower':     { label: 'Baby Shower',      icon: 'baby',            kicker: 'Baby Shower',                  motif: 'cloud',    defaultTemplate: 'baby-dreams' },
     'naming-ceremony': { label: 'Naming Ceremony',  icon: 'praying-hands',   kicker: 'Namakarana Ceremony',          motif: 'lotus',    defaultTemplate: 'naming-ceremony' },
-    'house-warming':   { label: 'House Warming',    icon: 'home',            kicker: 'Griha Pravesh',                motif: 'lotus',    defaultTemplate: 'new-beginnings' },
+    'house-warming':   { label: 'Housewarming',     icon: 'home',            kicker: 'Griha Pravesh',                motif: 'lotus',    defaultTemplate: 'new-beginnings' },
     anniversary:       { label: 'Anniversary',      icon: 'gift',            kicker: 'Wedding Anniversary',          motif: 'laurel',   defaultTemplate: 'floral-anniversary' },
     graduation:        { label: 'Graduation',       icon: 'graduation-cap',  kicker: 'Graduation Day',               motif: 'laurel',   defaultTemplate: 'graduation-day' },
     retirement:        { label: 'Retirement',       icon: 'leaf',            kicker: 'Retirement Felicitation',      motif: 'laurel',   defaultTemplate: 'retirement-honour' },
     farewell:          { label: 'Farewell',         icon: 'users',           kicker: 'Farewell',                     motif: 'sparkles', defaultTemplate: 'farewell-evening' },
     corporate:         { label: 'Corporate',        icon: 'briefcase',       kicker: 'You are invited',              motif: 'chevron',  defaultTemplate: 'corporate-event' },
     festival:          { label: 'Festival',         icon: 'flame',           kicker: 'Festival Greetings',           motif: 'lotus',    defaultTemplate: 'festival-celebration' },
-    'school-events':   { label: 'School Event',     icon: 'book-open',       kicker: 'School Event',                 motif: 'chevron',  defaultTemplate: 'annual-day' },
+    'school-events':   { label: 'School Event',     icon: 'book-open',       kicker: 'School Event',                 motif: 'chevron',  defaultTemplate: 'school-annual-day' },
     'college-events':  { label: 'College Event',    icon: 'music',           kicker: 'College Event',                motif: 'chevron',  defaultTemplate: 'college-fest' },
     party:             { label: 'Party',            icon: 'party-popper',    kicker: 'Come celebrate',               motif: 'sparkles', defaultTemplate: 'house-party' },
-    'community-events':{ label: 'Community Event',  icon: 'flag',            kicker: 'Community Gathering',          motif: 'chevron',  defaultTemplate: 'community-meet' },
+    'community-events':{ label: 'Community Event',  icon: 'flag',            kicker: 'Community Gathering',          motif: 'chevron',  defaultTemplate: 'community-gathering' },
     other:             { label: 'Other',            icon: 'sparkles',        kicker: 'You are invited',              motif: 'floral',   defaultTemplate: 'minimal-wedding' }
   };
 
@@ -131,6 +131,51 @@
     greatvibes: { display: "'Great Vibes', 'Playfair Display', cursive", body: "'DM Sans', system-ui, sans-serif" }
   };
 
+  /* ------------------------------------------------------------------
+     Gender-aware wording for naming ceremonies.
+     A naming ceremony announces the baby by relation, so any gender
+     wording in the message ("we name our daughter", "bless our son",
+     "welcome our little girl" …) has to follow the Baby's relation
+     field the host picked — never a word frozen into the copy when the
+     card was written. Only genuinely gendered words are swapped and
+     only for this event type, so neutral phrasing is left untouched.
+     ------------------------------------------------------------------ */
+
+  /* female -> male, applied when Baby's relation is Son */
+  var FEMALE_TO_MALE = [
+    ['daughter', 'son'], ['daughters', 'sons'],
+    ['girl', 'boy'], ['girls', 'boys'],
+    ['princess', 'prince'], ['princesses', 'princes'],
+    ['she', 'he'], ['her', 'his'], ['herself', 'himself']
+  ];
+
+  /* male -> female, applied when Baby's relation is Daughter */
+  var MALE_TO_FEMALE = [
+    ['son', 'daughter'], ['sons', 'daughters'],
+    ['boy', 'girl'], ['boys', 'girls'],
+    ['prince', 'princess'], ['princes', 'princesses'],
+    ['he', 'she'], ['him', 'her'], ['his', 'her'], ['himself', 'herself']
+  ];
+
+  function genderizeText(text, relation) {
+    if (!text) return text;
+    var isDaughter = /daughter/i.test(String(relation || ''));
+    var pairs = isDaughter ? MALE_TO_FEMALE : FEMALE_TO_MALE;
+    var map = {};
+    var words = pairs.map(function (p) { map[p[0]] = p[1]; return p[0]; });
+    var re = new RegExp('\\b(' + words.join('|') + ')\\b', 'gi');
+    return String(text).replace(re, function (match) {
+      var replacement = map[match.toLowerCase()];
+      if (!replacement) return match;
+      /* Mirror the capitalisation of the original word. */
+      if (match === match.toUpperCase() && replacement.length > 1) return replacement.toUpperCase();
+      if (match.charAt(0) === match.charAt(0).toUpperCase()) {
+        return replacement.charAt(0).toUpperCase() + replacement.slice(1);
+      }
+      return replacement;
+    });
+  }
+
   /* Default demo content, used by the sample invitation and as editor seed. */
   var SAMPLE = {
     eventType: 'wedding',
@@ -149,33 +194,45 @@
     email: 'hello@example.com',
     message: 'Request the pleasure of your company as we begin our life together. Your presence would make our day complete.',
     photo: '',
-    gallery: [],
     music: 'none',
     musicFile: '',
     font: 'playfair',
     showCountdown: true,
     showRsvp: true,
-    showMaps: true,
-    showGallery: true
+    showMaps: true
   };
 
   function headlineFor(data) {
     var type = data.eventType || 'other';
-    if (type === 'wedding' || type === 'engagement' || type === 'reception') {
+    if (type === 'wedding' || type === 'engagement') {
       if (data.groomName && data.brideName) {
         return escapeHtml(data.groomName) + '<span class="amp">&amp;</span>' + escapeHtml(data.brideName);
       }
       return escapeHtml(data.groomName || data.brideName || data.title || 'Our Special Day');
     }
-    if (type === 'birthday' || type === 'naming-ceremony' || type === 'graduation' ||
-        type === 'retirement' || type === 'farewell') {
-      return escapeHtml(data.personName || data.title || EVENT_TYPES[type].label);
-    }
-    if (type === 'anniversary') {
+    /* A reception or anniversary names the couple in one field — but a
+       saved draft may still carry the older Groom/Bride pair. */
+    if (type === 'reception' || type === 'anniversary') {
+      if (data.personName) return escapeHtml(data.personName);
       if (data.groomName && data.brideName) {
         return escapeHtml(data.groomName) + '<span class="amp">&amp;</span>' + escapeHtml(data.brideName);
       }
-      return escapeHtml(data.title || 'Our Anniversary');
+      return escapeHtml(data.groomName || data.brideName || data.title || EVENT_TYPES[type].label);
+    }
+    if (type === 'birthday' || type === 'naming-ceremony' || type === 'graduation' ||
+        type === 'retirement' || type === 'farewell' || type === 'house-warming') {
+      /* A naming ceremony names the baby, so the baby name leads the
+         headline. personName is the fallback for older drafts that kept
+         the name in the shared one-person field. */
+      if (type === 'naming-ceremony') {
+        return escapeHtml(data.babyName || data.personName || data.title || EVENT_TYPES[type].label);
+      }
+      return escapeHtml(data.personName || data.title || EVENT_TYPES[type].label);
+    }
+    /* A baby shower is about the baby, though the form also asks for the
+       parents. Whichever the host filled in leads. */
+    if (type === 'baby-shower') {
+      return escapeHtml(data.babyName || data.personName || data.title || EVENT_TYPES[type].label);
     }
     return escapeHtml(data.title || EVENT_TYPES[type].label);
   }
@@ -205,6 +262,16 @@
       return data.title ? escapeHtml(data.title) : '';
     }
     if (type === 'wedding' && data.title) return escapeHtml(data.title);
+    /* A baby shower leads with the baby's name in the main title; the
+       occasion title the host typed belongs in the subtitle, in the same
+       slot a wedding title uses. Kept separate from the name above so the
+       one never swallows the other. */
+    if (type === 'baby-shower' && data.title) return escapeHtml(data.title);
+    if (type === 'house-warming' && data.title && data.personName) return escapeHtml(data.title);
+    /* A naming ceremony announces the baby by name; the occasion title the
+       host typed sits in the same ceremony-title slot underneath, so the
+       Event title is never dropped. */
+    if (type === 'naming-ceremony' && data.title) return escapeHtml(data.title);
     return '';
   }
 
@@ -215,9 +282,11 @@
     /* The wording that suits one occasion suits no other, so the sample
        copy is kept per event type. The editor borrows the message from
        here rather than keeping a second list that would drift from it. */
-    messageFor: function (eventType) {
+    messageFor: function (eventType, relation) {
       var sample = sampleForCategory(eventType);
-      return (sample && sample.message) || SAMPLE.message;
+      var message = (sample && sample.message) || SAMPLE.message;
+      if (eventType === 'naming-ceremony') return genderizeText(message, relation);
+      return message;
     },
     formatDate: formatDate,
     formatTime: formatTime,
@@ -278,11 +347,12 @@
 
       html.push('<div class="invitation__ornament">' + ornament + '</div>');
 
-      if (data.hostName && type !== 'corporate') {
-        html.push('<p class="invitation__kicker">' + escapeHtml(data.hostName) + '</p>');
-      } else {
-        html.push('<p class="invitation__kicker">' + escapeHtml(meta.kicker) + '</p>');
-      }
+      /* The top line names who is hosting. The Hosted by field leads for
+         every occasion now, with the organisation behind an institutional
+         event as the fallback, so corporate cards no longer lose it. */
+      var orgName = data.organization;
+      var hostLine = data.hostName || orgName;
+      html.push('<p class="invitation__kicker">' + escapeHtml(hostLine || meta.kicker) + '</p>');
 
       if (data.photo) {
         html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
@@ -293,10 +363,71 @@
       var sub = subheadFor(data);
       if (sub) html.push('<p class="invitation__kicker invitation__subhead">' + sub + '</p>');
 
+      /* A naming ceremony introduces the baby by relationship as well as by
+         name: "OUR DAUGHTER" above the name, then "Daughter of <parents>"
+         underneath it. Each value stays in its own field — the relation is
+         never copied from anywhere, and the parents' names never fall back
+         to the host's. */
+      if (type === 'naming-ceremony') {
+        var relation = /daughter/i.test(String(data.babyRelation || '')) ? 'Daughter' : 'Son';
+        if (data.babyName || data.personName) {
+          html.push('<p class="invitation__relation-kicker">OUR ' + relation.toUpperCase() + '</p>');
+          if (data.parentsName) {
+            html.push('<p class="invitation__relation"><span>' + relation + ' of</span>' +
+              '<strong>' + escapeHtml(data.parentsName) + '</strong></p>');
+          }
+        }
+      }
+
       html.push('<div class="invitation__rule" aria-hidden="true">' + IH.icon('sparkles', 16) + '</div>');
 
+      /* A naming ceremony announces the baby by relation, so its message
+         is genderised to match the selected Baby's relation — Son or
+         Daughter — wherever a gendered word appears. Other occasions keep
+         the copy exactly as typed. */
       if (data.message) {
-        html.push('<p class="invitation__message">' + escapeHtml(data.message) + '</p>');
+        var message = type === 'naming-ceremony'
+          ? genderizeText(data.message, data.babyRelation)
+          : data.message;
+        html.push('<p class="invitation__message">' + escapeHtml(message) + '</p>');
+      }
+
+      /* Optional category extras — the institution behind the event, the
+         degree or class, the role, the theme and so on. Kept out of the
+         way until the host actually fills one in, so a default card looks
+         exactly as it always did. When the organisation is already the
+         top line, it is not repeated here. */
+      var details = [];
+      function detail(label, value) {
+        if (value) details.push('<p><strong>' + escapeHtml(label) + ':</strong> ' + escapeHtml(value) + '</p>');
+      }
+      if (data.hostName) detail('Organization', data.organization);
+      detail('Department', data.department);
+      detail('Course / Class', data.classCourse);
+      detail('Role', data.role);
+      detail('Years of service', data.yearsOfService);
+      detail('Event type', data.eventKind);
+      detail('Theme', data.theme);
+      /* Baby shower: the baby's name leads as the main title, so it is
+         not repeated here; the "Parent / Parents' name" field (personName)
+         fills the Parents line instead. */
+      if (type === 'baby-shower') {
+        detail('Parents', data.personName);
+      } else if (type !== 'naming-ceremony') {
+        detail('Baby name', data.babyName);
+      }
+      /* A naming ceremony announces the baby and its parents in the
+         dedicated relationship block above, so a second "Parents: …"
+         line here would only repeat it. */
+      if (type !== 'naming-ceremony') {
+        detail('Parents', data.parentsName);
+      }
+      if (data.years) {
+        if (type === 'birthday') detail('Age', data.years);
+        if (type === 'anniversary') detail('Years together', data.years);
+      }
+      if (details.length) {
+        html.push('<div class="invitation__extra"><small>Details</small>' + details.join('') + '</div>');
       }
 
       if (d.full || time) {
@@ -319,12 +450,9 @@
         html.push(IH.countdown.markup(toDateTime(data.date, data.time)));
       }
 
-      if (data.showGallery !== false && data.gallery && data.gallery.length) {
-        html.push('<div class="invitation__gallery">' +
-          data.gallery.slice(0, 6).map(function (src, i) {
-            return '<img src="' + escapeHtml(src) + '" alt="Event photo ' + (i + 1) + '" loading="lazy">';
-          }).join('') +
-        '</div>');
+      if (data.additionalInformation) {
+        html.push('<div class="invitation__extra"><small>Additional information</small>' +
+          '<p>' + escapeHtml(data.additionalInformation) + '</p></div>');
       }
 
       var actions = [];
@@ -574,7 +702,7 @@
           venue: 'Rose Garden Banquet', address: 'Adyar, Chennai 600020',
           message: 'Join us for a morning of blessings as we welcome our little one.' };
       case 'naming-ceremony':
-        return { title: 'Namakarana', personName: 'Our Baby Girl', hostName: 'The Parents', date: '2026-08-30', time: '09:30',
+        return { title: 'Namakarana', babyName: 'Our Baby Girl', babyRelation: 'Daughter', parentsName: 'The Family', hostName: 'The Parents', date: '2026-08-30', time: '09:30',
           venue: 'Sri Krishna Kalyana Mandapam', address: 'Mylapore, Chennai 600004',
           message: 'With the blessings of our elders, we name our daughter. Please join us.' };
       case 'house-warming':
@@ -590,9 +718,10 @@
           date: '2026-09-24', time: '10:00', venue: 'ITC Grand Chola, Ballroom 2', address: 'Guindy, Chennai 600032',
           message: 'A full day of product keynotes, partner sessions and networking. Seats are limited.' };
       case 'festival':
-        return { title: 'Deepavali Celebrations', hostName: 'The Family', personName: '',
+        return { title: 'Diwali Celebration', hostName: 'Lovely [Name] Family', personName: '',
           date: '2026-11-07', time: '18:00', venue: 'Our Home', address: 'T. Nagar, Chennai 600017',
-          message: 'Lamps, sweets and good company. Wishing you a bright and joyful festival.' };
+          message: 'Lamps, sweets and good company. Wishing you a bright and joyful festival.',
+          additionalInformation: 'Please bring a small dish to share.' };
       case 'graduation':
         return { title: 'Class of 2026', personName: 'The Graduate', hostName: 'Proudly hosted by the family',
           date: '2026-06-20', time: '17:00', venue: 'College Auditorium', address: 'Guindy, Chennai 600025',
@@ -606,7 +735,7 @@
           date: '2026-04-30', time: '19:30', venue: 'The Terrace Cafe', address: 'Nungambakkam, Chennai 600034',
           message: 'One last evening together before the next chapter begins.' };
       case 'school-events':
-        return { title: 'Annual Day 2026', hostName: 'Greenfield Matriculation School', personName: '',
+        return { title: 'School Annual Day 2026', hostName: 'Greenfield Matriculation School', personName: '',
           date: '2026-12-12', time: '17:00', venue: 'School Grounds', address: 'Porur, Chennai 600116',
           message: 'Music, dance and prize distribution. Parents and guardians are warmly invited.' };
       case 'college-events':
@@ -742,17 +871,6 @@
           });
           IH.invitation.applyTemplate(data, slug);
         }
-      }
-
-      /* data-sample-gallery="a.webp|b.webp" fills the photo grid. The demo
-         card is otherwise the one place a visitor never sees the gallery,
-         because the sample carries no photos — and a feature nobody can
-         see on the page selling it may as well not exist. Opt-in by
-         attribute, so template previews elsewhere stay unphotographed. */
-      var shots = host.getAttribute('data-sample-gallery');
-      if (shots) {
-        data.gallery = shots.split('|').map(function (s) { return s.trim(); }).filter(Boolean);
-        data.showGallery = true;
       }
 
       IH.invitation.mount(host, data);

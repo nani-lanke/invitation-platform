@@ -25,8 +25,12 @@
 
    Exports:
      clean(body) -> { ok: true, state } | { ok: false, error }
-     baseName(IH, state) -> 'Groom_Bride_2026-08-10_1830'
-     fileName(IH, state) -> 'Groom_Bride_2026-08-10_1830.html'
+     baseName(IH, state) -> 'Rahul_Priya_15-08-2026_1830'
+     fileName(IH, state) -> 'Rahul_Priya_15-08-2026_1830.html'
+
+   The stem returned by baseName is the shared name for the page's media.
+   The hosted page's own filename is built in api/publish.js from that
+   name plus a random id ('rahul-priya-a8f42c.html').
    ==================================================================== */
 
 'use strict';
@@ -44,12 +48,23 @@ const TEXT = {
   brideName:  80,
   groomName:  80,
   personName: 80,
+  babyName:   80,
+  babyRelation: 12,
+  parentsName:120,
+  organization: 120,
+  department: 80,
+  classCourse: 80,
+  role:       80,
+  yearsOfService: 4,
+  eventKind:  80,
+  theme:      80,
   years:       4,
   venue:     160,
   address:   400,
   phone:      40,
   email:     160,
   message:  1200,
+  additionalInformation: 1200,
   font:       40,
   animation:  30
 };
@@ -136,7 +151,7 @@ function clean(body) {
   /* A card with no name and no title has nothing to say, and would give
      every such attempt the same filename. */
   if (!state.title && !state.brideName && !state.groomName &&
-      !state.personName && !state.hostName) {
+      !state.personName && !state.babyName && !state.hostName) {
     return { ok: false, error: 'Give the invitation a title or a name first.' };
   }
 
@@ -194,33 +209,19 @@ function clean(body) {
   return { ok: true, state: state };
 }
 
-/* The stem the page and all its assets share, matching baseName() in
-   js/publish.js so the .zip and the server produce the same layout:
+/* The canonical stem the page and all its assets share. The generator
+   itself lives in js/export.js (buildInvitationFilename), which both the
+   editor and this server load, so the .zip and the server commit produce
+   exactly the same filename as Download .html:
 
-       Groom_Bride_2026-08-10_1830
-
-   safeBase comes from js/export.js, so both sides agree on what a
-   filesystem-safe name looks like. */
+       Rahul_Priya_15-08-2026_1830
+       Rahul_Priya_15-08-2026_1830.html */
 function baseName(IH, state) {
-  const part = function (v) { return IH.exportPage.safeBase(String(v || '').trim()); };
-  const groom = state.groomName ? part(state.groomName) : '';
-  const bride = state.brideName ? part(state.brideName) : '';
-
-  const who = (groom && bride) ? groom + '_' + bride
-            : groom || bride
-            || (state.personName && part(state.personName))
-            || (state.hostName && part(state.hostName))
-            || (state.title && part(state.title))
-            || 'Invitation';
-
-  const parts = [who, /^\d{4}-\d{2}-\d{2}$/.test(state.date || '') ? state.date : 'undated'];
-  if (/^\d{2}:\d{2}$/.test(state.time || '')) parts.push(state.time.replace(':', ''));
-
-  return parts.join('_');
+  return IH.exportPage.baseName(state);
 }
 
 function fileName(IH, state) {
-  return baseName(IH, state) + '.html';
+  return IH.exportPage.fileName(state);
 }
 
 module.exports = { clean: clean, baseName: baseName, fileName: fileName };

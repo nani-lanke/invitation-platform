@@ -204,7 +204,12 @@ body {
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* `clip` prevents a horizontal scrollbar without turning <body> into a
+     scroll container the way `hidden` would — a scroll container would
+     break `position: sticky` on the gallery toolbar and could clip native
+     <select> popups on some engines. The page still scrolls vertically. */
+  overflow-x: hidden; /* fallback for engines without `clip` support */
+  overflow-x: clip;
   transition: background-color var(--t-slow) var(--ease), color var(--t-slow) var(--ease);
 }
 
@@ -855,7 +860,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   top: var(--header-h);
   z-index: 40;
   display: grid;
-  grid-template-columns: minmax(220px, 1.6fr) repeat(3, minmax(140px, 1fr));
+  grid-template-columns: minmax(220px, 1.6fr) repeat(2, minmax(150px, 0.8fr));
   gap: var(--space-3);
   padding: var(--space-4);
   margin-bottom: var(--space-5);
@@ -865,7 +870,14 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
   box-shadow: var(--shadow-sm);
+  /* A sticky bar must never clip its own dropdowns — native <select> popups
+     (and any future custom dropdown) are allowed to escape the panel. */
+  overflow: visible;
 }
+
+.toolbar > * { min-width: 0; }
+.toolbar .search-field,
+.toolbar .field { max-width: 100%; }
 
 .search-field { position: relative; display: flex; align-items: center; }
 .search-field svg { position: absolute; left: 14px; width: 18px; height: 18px; color: var(--fg-faint); pointer-events: none; }
@@ -883,8 +895,20 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
 .search-field__clear:hover { background: var(--surface-2); color: var(--fg); }
 .search-field.has-value .search-field__clear { display: grid; }
 
-.filter-bar { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-bottom: var(--space-5); }
+/* Quick category chips: wrap to as many rows as needed so every category
+   stays on screen at any width. Nothing is hidden or horizontally scrolled
+   away on desktop/tablet; each chip keeps its count. */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  overflow: visible;
+}
+.filter-bar .chip { flex: 0 0 auto; }
 
+/* Results summary + actions */
 .results-bar {
   display: flex;
   flex-wrap: wrap;
@@ -896,6 +920,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   font-size: var(--step--1);
 }
 .results-bar strong { color: var(--fg-strong); }
+.results-bar .flex-row { flex-wrap: wrap; gap: var(--space-2); }
 
 .template-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); gap: var(--space-5); }
 
@@ -1133,6 +1158,24 @@ input[type="range"]::-moz-range-thumb {
 
 /* Radio / checkbox tiles */
 .option-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: var(--space-3); }
+
+/* Invitation template cards (create.html) — flow down three rows per
+   column, then continue into the next column, which scrolls sideways.
+   Scoped to the two template pickers only, so the event tiles and the
+   "Sections to include" checkboxes keep their wrapping layout.
+   A fixed column width (not max-content) keeps the cards their current
+   size: the tile images use width:100%, so max-content would resolve to
+   the image's intrinsic 600px width. */
+[data-event-templates] .option-grid,
+[data-template-picker] .option-grid {
+  grid-template-columns: none;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  grid-auto-columns: 170px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+}
 
 .option-tile { position: relative; }
 .option-tile input { position: absolute; opacity: 0; width: 1px; height: 1px; }
@@ -1544,38 +1587,6 @@ input[type="range"]::-moz-range-thumb {
 .picked-file > span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .picked-file svg { flex-shrink: 0; color: var(--fg-muted); }
 
-/* Photo gallery — two columns. Three of them inside a card this narrow
-   left each photo about 110px wide: too small to make out a face, which
-   is the only reason the photos are there. Two gives them room. */
-.invitation__gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin-bottom: var(--space-5);
-}
-.invitation__gallery img {
-  aspect-ratio: 2 / 3;   /* 1 : 1.5 — upright, the way phones hold people */
-  width: 100%;
-  /* The whole photo, centred in its frame. `cover` filled the frame but
-     paid for it by cropping: a landscape group shot in an upright tile
-     loses everyone at the edges. Whatever the frame does not use becomes
-     a soft mat in the card's own ink, so it reads as a mount rather than
-     a gap. */
-  object-fit: contain;
-  object-position: center;
-  background: color-mix(in srgb, var(--inv-ink) 8%, transparent);
-  border-radius: var(--r-md);
-  border: 1px solid color-mix(in srgb, var(--inv-secondary) 45%, transparent);
-  box-shadow: 0 6px 16px -10px rgba(0, 0, 0, .5);
-}
-/* An odd number of photos would leave the last one stranded beside a gap,
-   so it takes the full width instead — and turns landscape, because 1:1.5
-   at double width would stand three times taller than the row above it. */
-.invitation__gallery img:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
-  aspect-ratio: 3 / 2;
-}
-
 .invitation__countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: var(--space-5); }
 .invitation__countdown .cd-unit {
   padding: 10px 4px;
@@ -1594,6 +1605,13 @@ input[type="range"]::-moz-range-thumb {
 }
 .invitation__countdown .cd-label { font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; opacity: .72; }
 
+/* Additional information — the shared festival catch-all. Rendered like
+   the message block so it reads as part of the same invitation rather
+   than a postcard stuck on the back. */
+.invitation__extra { margin-bottom: var(--space-5); padding: var(--space-3); border: 1px solid color-mix(in srgb, var(--inv-primary) 22%, transparent); border-radius: var(--r-md); background: color-mix(in srgb, var(--inv-primary) 6%, transparent); }
+.invitation__extra small { display: block; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; opacity: .7; margin-bottom: 4px; }
+.invitation__extra p { margin: 0; font-size: .88rem; line-height: 1.7; color: color-mix(in srgb, var(--inv-ink) 82%, transparent); }
+
 .invitation__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .invitation__actions .inv-btn {
   display: inline-flex;
@@ -1611,8 +1629,9 @@ input[type="range"]::-moz-range-thumb {
   transition: all var(--t-base) var(--ease);
 }
 .invitation__actions .inv-btn svg { width: 15px; height: 15px; }
-.invitation__actions .inv-btn:hover { background: var(--inv-primary); color: #fff; transform: translateY(-2px); }
-.invitation__actions .inv-btn--solid { background: var(--inv-primary); color: #fff; border-color: transparent; }
+/* Not #fff: on dark templates --inv-primary is itself a pale cream. */
+.invitation__actions .inv-btn:hover { background: var(--inv-primary); color: var(--inv-bg1); transform: translateY(-2px); }
+.invitation__actions .inv-btn--solid { background: var(--inv-primary); color: var(--inv-bg1); border-color: transparent; }
 .invitation__actions .inv-btn--solid:hover { filter: brightness(1.12); }
 
 .invitation__footer { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid color-mix(in srgb, var(--inv-primary) 18%, transparent); font-size: .75rem; opacity: .72; }
@@ -1643,6 +1662,33 @@ input[type="range"]::-moz-range-thumb {
 }
 .invitation--house-warming .invitation__kicker,
 .invitation--naming-ceremony .invitation__kicker { letter-spacing: .32em; }
+
+/* Naming ceremony: the baby is introduced by relationship as well as by
+   name. "OUR DAUGHTER" sits directly under the ceremony title, with
+   "Daughter of <parents>" beneath it, both inheriting the card's palette. */
+.invitation--naming-ceremony .invitation__relation-kicker {
+  font-size: clamp(.6rem, 3.1cqi, .74rem);
+  font-weight: 600;
+  letter-spacing: clamp(.14em, .8cqi, .28em);
+  text-indent: clamp(.14em, .8cqi, .28em);
+  text-transform: uppercase;
+  color: var(--inv-secondary);
+  margin-bottom: 4px;
+}
+.invitation--naming-ceremony .invitation__relation {
+  font-family: var(--inv-font-display);
+  font-size: clamp(1rem, 4.2cqi, 1.3rem);
+  font-weight: 600;
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--inv-ink) 80%, transparent);
+  margin-bottom: var(--space-3);
+}
+.invitation--naming-ceremony .invitation__relation span { display: block; }
+.invitation--naming-ceremony .invitation__relation strong {
+  display: block;
+  color: var(--inv-primary);
+  font-weight: 700;
+}
 
 /* Corporate: sharp, left-aligned, structured */
 .invitation--corporate {
@@ -1871,6 +1917,49 @@ input[type="range"]::-moz-range-thumb {
 .rail::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: var(--r-pill); }
 
 .rail:focus-visible { outline: 2px solid var(--ring); outline-offset: 4px; border-radius: var(--r-md); }
+
+/* A rail two cards deep. Items fill the pair of rows downwards and then
+   step across, so the first two rows are the whole visible view and
+   everything after them is reached by scrolling sideways. Grid rather than
+   flex, because flex-wrap would break the column order. */
+.rail--rows2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-columns: clamp(var(--rail-min, 244px), 72vw, var(--rail-max, 300px));
+  align-content: start;
+}
+/* Two classes, so this beats the per-breakpoint `.template-grid` column
+   rules in responsive.css — which loads after this file and would
+   otherwise lay explicit columns for the cards to flow into. */
+.template-grid.rail--rows2 { grid-template-columns: none; }
+.category-grid.rail--rows2 { grid-template-columns: none; }
+/* "No results" is one wide message, not a card: drop the rail for it. */
+.template-grid.rail--rows2:has(> .empty-state) {
+  display: block;
+  -webkit-mask-image: none;
+          mask-image: none;
+}
+
+/* Row-first 2-row strip for the "Top Designs" section: cards fill the top
+   row left-to-right (1–50) before the second row (51–100). Fifty explicit
+   columns stop the grid from wrapping into a vertical list on narrow
+   screens — the container grows wider than the viewport, so the pair of
+   rows scrolls horizontally. Grid, not flex, so nothing can wrap into a
+   third row, and the fixed column track keeps the section exactly two cards
+   tall. */
+.template-grid.rail--rows2-across {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(50, clamp(var(--rail-min, 240px), 72vw, var(--rail-max, 292px)));
+  align-content: start;
+}
+.template-grid.rail--rows2-across:has(> .empty-state) {
+  display: block;
+  -webkit-mask-image: none;
+          mask-image: none;
+}
 
 /* Per-section widths */
 .feature-grid.rail  { --rail-min: 230px; --rail-max: 288px; }
