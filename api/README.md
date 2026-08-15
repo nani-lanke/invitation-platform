@@ -33,6 +33,9 @@ Environment Variables:
 | `GITHUB_TOKEN` | `github_pat_…` | yes |
 | `GITHUB_REPO` | `yourname/invitation-platform` | yes |
 | `GITHUB_BRANCH` | `main` | no, defaults to `main` |
+| `SITE_URL` | `https://invites.example.com/` | no — defaults to the request's own host |
+| `RAZORPAY_KEY_ID` | `rzp_live_…` | yes, for payments |
+| `RAZORPAY_KEY_SECRET` | `…` | yes, for payments |
 | `PUBLISH_LIMIT_IP` | `5` per hour per address | no |
 | `PUBLISH_LIMIT_DAY` | `200` per day for everyone | no |
 | `ALLOW_CHECK` | `1` to turn on `/api/check` while setting up | no |
@@ -109,14 +112,64 @@ npm i -g vercel
 vercel dev
 ```
 
-`vercel dev` reads `.env.local`, so put `GITHUB_TOKEN` and `GITHUB_REPO` there —
-and keep that file out of git. Publishing from a local run commits to the real
-repository, so use a scratch repo or a branch while you are trying it.
+`vercel dev` reads `.env.local`, so put `GITHUB_TOKEN`, `GITHUB_REPO`, `RAZORPAY_KEY_ID`
+and `RAZORPAY_KEY_SECRET` there — and keep that file out of git. Publishing from a
+local run commits to the real repository, so use a scratch repo or a branch while
+you are trying it.
+
+## Payments
+
+Hosting an invitation online costs a fixed ₹99, charged through Razorpay:
+
+- `POST api/order` — creates a Razorpay order for ₹99 (9900 paise). The price is
+  decided here, never on the client. Returns `{ orderId, keyId, amount, currency }`.
+- `POST api/verify` — re-signs `order_id|payment_id` with the secret and compares,
+  so only a genuine Razorpay payment passes. Returns `{ ok: true }`.
+
+The client never sees `RAZORPAY_KEY_SECRET`; only the public `keyId` reaches it.
+When `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET` are missing, `api/order` returns 503
+so the payment step degrades gracefully instead of charging against nothing.
+
+**`api/publish` checks the payment itself too.** The browser sends the Razorpay
+order id, payment id and signature along with the invitation fields, and the
+server re-signs `order_id|payment_id` with the secret and compares before it
+commits anything. When the secret is set, an invitation is never hosted without
+a verified ₹99 payment — the client's `hostingPaid` flag alone is not trusted.
+
+## Where hosted invitations live
+
+Every published invitation is committed to the repository under `invitations/`
+and served from there by `api/invite` (via the `vercel.json` rewrites):
+
+```
+invitations/
+├── index.json                  the hosted-invitation registry
+├── rahul-priya-a8f42c.html     the page — <slug>-<unique-id>.html
+├── main_image/…_image.jpg      media sits beside the page
+├── background_image/…_background.jpg
+├── sample_images/…
+└── background_music/…_music.mp3
+```
+
+The public URL is generated once, in `api/publish.js`, and returned to the
+browser as `publicUrl`:
+
+```
+https://<domain>/invitations/rahul-priya-a8f42c.html
+```
+
+The domain is the request's own host on Vercel (a custom domain if one is
+attached); set `SITE_URL` to pin it explicitly. The page's commit is verified
+by reading it straight back from GitHub before the address is returned, and the
+browser confirms the address serves HTTP 200 before it shows "Your invitation
+is live!". `index.json` is the registry written in the same commit as the page —
+it is never served to guests, and is the one place the site's own storage (the
+repository) records hosted invitations.
 
 ## The three ways to share, side by side
 
 | | Where it lives | Works on | Photos | Link preview |
 |---|---|---|---|---|
 | Link (`i.html#…`) | the URL itself | anywhere | no | no |
-| **Publish it now** | `invitation_card/Title_Date_Time.html` | Vercel only | no | yes |
-| Download page folder | `invitation_card/Names/Date/` | anywhere, after you push | yes | yes |
+| **Publish it now** | `invitations/<name>-<id>.html` | Vercel only | yes | yes |
+| Download page folder | `invitations/<Names>/<Date>/` | anywhere, after you push | yes | yes |

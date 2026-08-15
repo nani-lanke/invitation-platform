@@ -145,7 +145,7 @@ InviteHub/
 │   ├── link.js             Packs an invitation into a URL fragment / reads it back
 │   └── share.js            Share targets + QR encoder
 │
-├── invitation_card/        Optional: pages you commit to publish at their own URL
+├── invitations/               Hosted pages at their own URL + index.json registry
 │
 ├── images/
 │   ├── logo/               Mark, wordmarks, favicon
@@ -221,7 +221,7 @@ would make the URL far too long to send. A link therefore carries the text,
 dates, venue, template and colours. For an invitation with photos, use
 **Download .html** in the last step — that single file has the photos inside it
 and can be sent as an attachment, or committed to
-[invitation_card/](invitation_card/) to publish it at its own URL.
+[invitations/](invitations/) to publish it at its own URL.
 
 ## Architecture notes
 

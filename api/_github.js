@@ -72,6 +72,26 @@ async function getFile(repoPath) {
   };
 }
 
+/* Like getFile, but returns the raw decoded bytes. Media — photos, audio —
+   is not text, so decoding to a UTF-8 string would corrupt it. */
+async function getRaw(repoPath) {
+  const cfg = config();
+  const url = API + '/repos/' + cfg.repo + '/contents/' + safePath(repoPath) +
+              '?ref=' + encodeURIComponent(cfg.branch);
+
+  const res = await fetch(url, { headers: headers(cfg.token) });
+  if (res.status === 404) return null;
+  if (!res.ok) {
+    throw new Error('GitHub refused to read ' + repoPath + ' (' + res.status + ')');
+  }
+
+  const body = await res.json();
+  return {
+    sha: body.sha,
+    buffer: Buffer.from(body.content || '', 'base64')
+  };
+}
+
 /* Creating and updating are the same call; an update just has to name the
    blob it replaces, so an existing file is looked up first. */
 async function putFile(repoPath, text, message) {
@@ -163,4 +183,4 @@ async function putFiles(files, message) {
   return { commit: commit.sha, count: files.length };
 }
 
-module.exports = { config: config, getFile: getFile, putFile: putFile, putFiles: putFiles };
+module.exports = { config: config, getFile: getFile, getRaw: getRaw, putFile: putFile, putFiles: putFiles };

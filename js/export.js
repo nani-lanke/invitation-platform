@@ -7,18 +7,24 @@
 
    This module covers the other route — building one self-contained .html
    the host can download and send as an attachment, or commit into
-   invitation_card/ to publish it at its own URL. Photos stay embedded as
+   invitations/ to publish it at its own URL. Photos stay embedded as
    data URLs so the file works anywhere on its own.
 
    Public surface:
      IH.exportPage.personName(state)  -> 'John Doe'
-     IH.exportPage.fileName(state)    -> 'John_Doe.html'
+     IH.exportPage.fileName(state)    -> 'Rahul_Priya_15-08-2026_1830.html'
+     IH.exportPage.baseName(state)    -> 'Rahul_Priya_15-08-2026_1830'
+     IH.exportPage.buildInvitationFilename(state) -> 'Rahul_Priya_15-08-2026_1830.html'
      IH.exportPage.buildHtml(state, opts) -> full document as a string
      IH.exportPage.download(state)    -> triggers a browser download
 
+   fileName() is the one canonical filename generator. js/publish.js and
+   api/_validate.js both ask for the same name here, so Download .html,
+   the .zip and the GitHub commit all use the exact same filename.
+
    opts.up is how far the page sits below the site root, as a path prefix
-   ('../' for invitation_card/Name.html, '../../../' for a page nested in
-   invitation_card/Names/Date/). js/publish.js uses it for the second form.
+   ('../' for invitations/Name.html, '../../../' for a page nested in
+   invitations/Names/Date/). js/publish.js uses it for the second form.
    ==================================================================== */
 
 (function () {
@@ -27,8 +33,9 @@
   var IH = window.IH || (window.IH = {});
   var dom = IH.dom;
 
-  var FOLDER = 'invitation_card';
+  var FOLDER = 'invitations';
   var MAX_BASE = 60;
+  var s = function (v) { return String(v == null ? '' : v).trim(); };
 
   /* ------------------------------------------------------------------
      1. Naming
@@ -40,6 +47,10 @@
     var s = function (v) { return String(v == null ? '' : v).trim(); };
 
     if (s(state.personName)) return s(state.personName);
+
+    /* A naming ceremony names the baby, so the file follows the baby when
+       personName is empty (or already moved aside for the baby). */
+    if (s(state.babyName)) return s(state.babyName);
 
     /* Groom first, matching the order the card itself prints the names. */
     var bride = s(state.brideName), groom = s(state.groomName);
@@ -58,7 +69,7 @@
 
     var base = raw
       .replace(/[\u0300-\u036f]/g, '')  // drop accents left behind by NFKD
-      .replace(/&/g, ' and ')
+      .replace(/&/g, ' ')
       .trim()
       .replace(/\s+/g, '_')
       .replace(/[^A-Za-z0-9_-]/g, '')
@@ -69,8 +80,92 @@
     return base || 'Invitation';
   }
 
+  /* ------------------------------------------------------------------
+     The one canonical filename generator.
+
+     Every route out of the editor — Download .html, the .zip, and the
+     server commit — asks these functions for the name, so an invitation
+     has exactly one name everywhere it goes. The occasion's eventType
+     picks the field the name comes from (a wedding names the couple, a
+     birthday the birthday person, a school event the school, a festival
+     its title); the date always reads DD-MM-YYYY and the time, when
+     present, HHMM in 24-hour form. No other file in the site builds a
+     filename of its own.
+     ------------------------------------------------------------------ */
+
+  function categoryName(state) {
+    var type = String((state && state.eventType) || '').toLowerCase();
+    var couple = [s(state.groomName), s(state.brideName)].filter(Boolean).join(' ');
+
+    switch (type) {
+      case 'wedding':
+      case 'engagement':
+        return couple;
+      case 'reception':
+      case 'birthday':
+      case 'baby-shower':
+      case 'house-warming':
+      case 'anniversary':
+      case 'graduation':
+      case 'retirement':
+      case 'farewell':
+      case 'party':
+        return s(state.personName);
+      case 'naming-ceremony':
+        return s(state.parentsName);
+      case 'corporate':
+      case 'school-events':
+      case 'college-events':
+      case 'community-events':
+        return s(state.organization);
+      default:                // festival, other, or a category not listed
+        return s(state.title);
+    }
+  }
+
+  /* Required fields are checked before a host reaches Done, so a category
+     component is normally always present. If one is missing anyway (an old
+     draft, a direct API call), fall back through the other name fields in
+     the same order the card prints them, then to 'Invitation'. */
+  function fallbackName(state) {
+    return s(state.personName) || s(state.babyName) || s(state.parentsName) ||
+      [s(state.groomName), s(state.brideName)].filter(Boolean).join(' ') ||
+      s(state.organization) || s(state.hostName) || s(state.title);
+  }
+
+  /* 'YYYY-MM-DD' -> 'DD-MM-YYYY'. The form stores an ISO date; filenames
+     read the day first. */
+  function datePart(state) {
+    var d = String((state && state.date) || '');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(d)) return '';
+    return d.slice(8, 10) + '-' + d.slice(5, 7) + '-' + d.slice(0, 4);
+  }
+
+  /* '18:30' -> '1830'. The form stores 24-hour HH:MM, so 6:30 PM comes
+     out as 1830, and an all-day invitation simply leaves the time off. */
+  function timePart(state) {
+    var t = String((state && state.time) || '');
+    return /^\d{2}:\d{2}$/.test(t) ? t.replace(':', '') : '';
+  }
+
+  /* The stem the page and every one of its assets share, e.g.
+     'Rahul_Priya_15-08-2026_1830'. */
+  function baseName(state) {
+    var parts = [safeBase(categoryName(state) || fallbackName(state) || 'Invitation')];
+    var date = datePart(state);
+    if (date) parts.push(date);
+    var time = timePart(state);
+    if (time) parts.push(time);
+    return parts.join('_');
+  }
+
+  /* The complete canonical filename, extension included. */
+  function buildInvitationFilename(state) {
+    return baseName(state) + '.html';
+  }
+
   function fileName(state) {
-    return safeBase(personName(state)) + '.html';
+    return buildInvitationFilename(state);
   }
 
   /* ------------------------------------------------------------------
@@ -118,7 +213,7 @@
   }
 
   /* ------------------------------------------------------------------
-     2b. Photos → real files in invitation_card/images/
+     2b. Photos → real files in invitations/images/
      ------------------------------------------------------------------ */
 
   /* One folder per kind of asset, beside the page rather than under it,
@@ -147,8 +242,8 @@
      the list of files that belong beside the page. Every name is built from
      the same stem as the page, so an invitation's assets stay recognisably
      its own however many share the folder. */
-  function extractAssets(state, baseName) {
-    var base = baseName === undefined ? safeBase(personName(state)) : String(baseName);
+  function extractAssets(state, stem) {
+    var base = stem === undefined ? baseName(state) : String(stem);
     var assets = [];
     var out = {};
     Object.keys(state).forEach(function (k) { out[k] = state[k]; });
@@ -171,7 +266,7 @@
 
   /* An image the host picked out of the repository is written as a path
      from the site root ('images/hero/card-baby.svg'), which is wrong once
-     the page is sitting inside invitation_card/. Everything else already
+     the page is sitting inside invitations/. Everything else already
      resolves: data: URLs and absolute URLs carry no context, and the
      asset folders are deliberately relative — they sit beside the page. */
   function resolvePaths(state, up) {
@@ -395,6 +490,8 @@
     ASSET_DIRS: ASSET_DIRS,
     personName: personName,
     safeBase: safeBase,
+    baseName: baseName,
+    buildInvitationFilename: buildInvitationFilename,
     fileName: fileName,
     extractAssets: extractAssets,
     buildHtml: buildHtml,

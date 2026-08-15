@@ -10,8 +10,12 @@
 
   "rewrites": [
     {
+      "source": "/invitations/:file(.*)",
+      "destination": "/api/invite?dir=invitations&file=:file"
+    },
+    {
       "source": "/invitation_card/:file(.+\\.html)",
-      "destination": "/api/invite?file=:file"
+      "destination": "/api/invite?dir=invitation_card&file=:file"
     }
   ],
 

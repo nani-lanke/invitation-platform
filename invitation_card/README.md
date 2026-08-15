@@ -20,7 +20,7 @@ fragment never reaches their scrapers. See [`js/link.js`](../js/link.js).
 read aloud, and a real HTTP 200 that WhatsApp and Facebook will preview:
 
 ```
-https://USERNAME.github.io/REPO/invitation_card/Nani-Lovely/2026-08-10/
+https://USERNAME.github.io/REPO/invitation_card/Rahul_Priya_15-08-2026_1830.html
 ```
 
 The cost is a `git push` per invitation. See [`js/publish.js`](../js/publish.js).
@@ -33,16 +33,16 @@ press **Download page folder (.zip)**. Unpack it at the root of the repository
 
 ```
 invitation_card/
-├── Groom_Bride_2026-08-10_1830.html
+├── Rahul_Priya_15-08-2026_1830.html
 ├── main_image/
-│   └── Groom_Bride_2026-08-10_1830_image.jpg
+│   └── Rahul_Priya_15-08-2026_1830_image.jpg
 ├── background_image/
-│   └── Groom_Bride_2026-08-10_1830_background.jpg
+│   └── Rahul_Priya_15-08-2026_1830_background.jpg
 ├── sample_images/
-│   ├── Groom_Bride_2026-08-10_1830_image1.jpg
-│   └── Groom_Bride_2026-08-10_1830_image2.jpg
+│   ├── Rahul_Priya_15-08-2026_1830_image1.jpg
+│   └── Rahul_Priya_15-08-2026_1830_image2.jpg
 └── background_music/
-    └── Groom_Bride_2026-08-10_1830_music.mp3
+    └── Rahul_Priya_15-08-2026_1830_music.mp3
 ```
 
 Then commit and push. GitHub Pages serves it within a minute.
@@ -53,16 +53,28 @@ A browser is not allowed to create folders in your downloads — it can only sav
 single files. The .zip is how the folder structure survives the trip, and it is
 built by hand in `js/publish.js`, so the site still needs nothing installed.
 
-## How the folder name is chosen
+## How the filename is chosen
 
-`<Groom>-<Bride>/<YYYY-MM-DD>`, falling back to the person's name, the host's
-name, then the title. Accents, apostrophes and anything else a URL would have
-to escape are removed, so `José O'Brien` becomes `Jose-OBrien`. An invitation
-saved before its date is filled in lands under `undated/`.
+Every invitation has one canonical filename, generated in one place
+(`buildInvitationFilename` in [`js/export.js`](../js/export.js)) and used by
+Download .html, the .zip and the server commit alike:
 
-Two invitations for the same names on the same date resolve to the same folder
-and the second will overwrite the first. Rename one before committing if that
-is not what you want.
+    <who>_<DD-MM-YYYY>_<HHMM>.html
+
+The `<who>` component follows the occasion — the couple for a wedding or
+engagement, the birthday person for a birthday, the parents for a naming
+ceremony, the company for a corporate event, the school for a school event,
+and so on; a festival or a generic event falls back to its title. The date is
+always day-first (`15-08-2026`), and the time is 24-hour (`1830` for 6:30 PM).
+All-day invitations leave the time off, so a Diwali card ends at the date:
+`Diwali_Celebration_15-08-2026.html`.
+
+Spaces and unsafe characters (`/ \ : * ? " < > |`, `&`, stray punctuation) are
+removed and `José O'Brien` becomes `Jose_OBrien`. Two invitations for the same
+names on the same date and time resolve to the same filename, so re-publishing
+an edited invitation updates the same page; the second of two *different*
+invitations that collide will overwrite the first, so rename one before
+committing if that is not what you want.
 
 ## Older, flat pages
 

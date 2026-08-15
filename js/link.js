@@ -31,8 +31,10 @@
   var FIELDS = {
     eventType: 'e', template: 't', title: 'ti', hostName: 'h',
     brideName: 'b', groomName: 'g', personName: 'p', years: 'y',
+    babyName: 'bn', babyRelation: 'brl', parentsName: 'pr', organization: 'og', department: 'dp',
+    classCourse: 'cs', role: 'rl', yearsOfService: 'ys', eventKind: 'ek', theme: 'th',
     date: 'd', time: 'tm', venue: 'v', address: 'a', mapsUrl: 'm',
-    phone: 'ph', email: 'em', message: 'ms',
+    phone: 'ph', email: 'em', message: 'ms', additionalInformation: 'ai',
     font: 'f', colors: 'c', customColors: 'cc', animation: 'an',
     showCountdown: 'sc', showRsvp: 'sr', showMaps: 'sm', showGallery: 'sg',
     photo: 'pt', background: 'bg', gallery: 'gl', musicFile: 'mf'
