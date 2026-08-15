@@ -523,14 +523,16 @@
     if (!box || !IH.publish) return;
 
     var paid = !!state.hostingPaid;
+
     /* Hosting is the paid part. Until a ₹99 payment has gone through, the
-      publish controls stay out of the way and a short notice points back
-      to the payment step instead. After payment, publishing works exactly
-      as before. */
+       publish controls stay out of the way and a short notice points back
+       to the payment step instead. After payment, publishing works exactly
+       as before. */
     var gate = qs('[data-publish-gate]', box);
     var controls = qs('[data-publish-controls]', box);
     if (gate) gate.hidden = paid;
     if (controls) controls.hidden = !paid;
+
     /* Once this invitation has been committed to GitHub, the manual
        button must not fire a second publish for the same invitation. */
     var nowBtn = qs('[data-publish-now]', box);
@@ -578,54 +580,15 @@
 
   var publishInFlight = false;
 
-<<<<<<< HEAD
-  /* The one path to the server, used by both the automatic publish at
-     Done and the manual "Publish it now" button below — so there is
-     exactly one call to IH.publish.toServer and exactly one place that
-     paints its result. */
-=======
   /* The one path to the server, used by both the ₹99 hosting flow at
      Payment and the manual "Publish it now" button below — so there is
      exactly one call to IH.publish.toServer and exactly one place that
      paints its result. The server decides the filename and the public
      URL; this module only ever displays what it returns. */
->>>>>>> 3f46217 (Update invitation website)
   function runPublish(box) {
     if (publishInFlight) return Promise.resolve(null);
     publishInFlight = true;
 
-<<<<<<< HEAD
-    return IH.publish.toServer(previewData()).then(function (result) {
-      state.published = true;
-      state.publishedAt = new Date().toISOString();
-      saveDraft();
-
-      var publishBox = box || qs('[data-publish-box]', root);
-      if (publishBox) {
-        var holder = qs('[data-publish-result]', publishBox);
-        var out = qs('[data-publish-live]', publishBox);
-        var open = qs('[data-publish-open]', publishBox);
-
-        if (out) out.textContent = result.url;
-        if (open) open.href = result.url;
-        if (holder) holder.hidden = false;
-
-        /* Disable immediately, without waiting for the next paint,
-           so a fast second click can never queue a second commit. */
-        var nowBtn = qs('[data-publish-now]', publishBox);
-        if (nowBtn) nowBtn.disabled = true;
-      }
-
-      IH.toast.success(result.count > 1
-        ? 'Published — ' + result.count + ' files committed, page and media together.'
-        : 'Published. The address is live now.', { title: result.file });
-      IH.confetti(24);
-      return result;
-    }).catch(function (err) {
-      IH.toast.error(err.message, { title: 'Not published' });
-      throw err;
-    }).then(function (result) {
-=======
     return IH.publish.toServer(previewData(), state.hostingPayment)
       .then(function (result) {
         /* The page is committed; confirm the public address actually
@@ -690,7 +653,6 @@
         }
         throw err;
       }).then(function (result) {
->>>>>>> 3f46217 (Update invitation website)
       publishInFlight = false;
       return result;
     }, function (err) {
@@ -712,14 +674,11 @@
 
     on(qs('[data-publish-now]', box), 'click', function (evt) {
       if (state.published) return; // already published — no second commit
-<<<<<<< HEAD
-=======
       if (!state.hostingPaid) {
         goToStep(PAY_STEP);
         IH.toast.info('Hosting costs ₹99. Pay once to publish your invitation online.');
         return;
       }
->>>>>>> 3f46217 (Update invitation website)
       var btn = evt.currentTarget;
       var label = qs('span', btn);
       var was = label ? label.textContent : '';
@@ -1602,16 +1561,6 @@
       paintPublish(previewData());
       paintHostingStatus();
       IH.confetti(36);
-
-      /* The invitation is complete the moment it reaches this step, so it
-         publishes itself through the exact same IH.publish.toServer() call
-         "Publish it now" uses below — no second publishing system.
-         state.published rides along with the saved draft, so reloading or
-         stepping back to Done never fires a second commit for the same
-         invitation; only the button, on request, publishes again. */
-      if (!state.published && IH.publish) {
-        runPublish(qs('[data-publish-box]', root));
-      }
     }
     saveDraft();
   }
