@@ -358,6 +358,29 @@
         html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
       }
 
+      if (
+        data.showGallery !== false &&
+        Array.isArray(data.gallery) &&
+        data.gallery.length
+      ) {
+              html.push(
+          '<section class="invitation__gallery" aria-label="Photo gallery">' +
+            '<h3 class="invitation__gallery-title">Our Moments</h3>' +
+            '<div class="invitation__gallery-grid">' +
+              data.gallery.map(function (src, i) {
+                return (
+                  '<figure class="invitation__gallery-item">' +
+                    '<img src="' + escapeHtml(src) + '"' +
+                    ' alt="Gallery photo ' + (i + 1) + '"' +
+                    ' loading="lazy">' +
+                  '</figure>'
+                );
+              }).join('') +
+            '</div>' +
+          '</section>'
+        );
+      }
+
       html.push('<h2 class="invitation__names">' + headlineFor(data) + '</h2>');
 
       var sub = subheadFor(data);
