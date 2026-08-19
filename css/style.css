@@ -2278,6 +2278,7 @@ input[type="range"]::-moz-range-thumb {
 }
 .notice svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 1px; }
 .notice strong { display: block; margin-bottom: 2px; color: var(--fg-strong); }
+.notice > div { min-width: 0; }
 .notice--info { border-left-color: var(--secondary); background: var(--secondary-soft); }
 .notice--info svg { color: var(--secondary-ink); }
 .notice--warn { border-left-color: var(--warning); background: var(--warning-soft); }
