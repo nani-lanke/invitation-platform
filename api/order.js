@@ -51,20 +51,37 @@ module.exports = async function handler(req, res) {
 
   try {
     const auth = 'Basic ' + Buffer.from(KEY_ID + ':' + KEY_SECRET).toString('base64');
-    const response = await fetch('https://api.razorpay.com/v1/orders', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Authorization: auth },
-      body: JSON.stringify({
-        amount: product.amount,
-        currency: product.currency,
-        receipt: 'invitehub-host-' + Date.now(),
-        notes: { product: body.product || 'online-invitation-hosting' }
-      })
-    });
 
-    const order = await response.json();
-    if (!response.ok || !order.id) {
-      return json(res, 502, { error: 'The payment gateway could not start the order.' });
+    let response;
+    try {
+      response = await fetch('https://api.razorpay.com/v1/orders', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: auth },
+        body: JSON.stringify({
+          amount: product.amount,
+          currency: product.currency,
+          receipt: 'invitehub-host-' + Date.now(),
+          notes: { product: body.product || 'online-invitation-hosting' }
+        })
+      });
+    } catch (err) {
+      console.error('Razorpay order request failed:', err.message);
+      return json(res, 502, { error: 'The payment gateway could not be reached. Please try again.' });
+    }
+
+    const text = await response.text();
+    let order = null;
+    try { order = JSON.parse(text); } catch (err) { order = null; }
+
+    if (!response.ok || !order || !order.id) {
+      const errInfo = order && order.error;
+      const code = errInfo && errInfo.code;
+      const description = errInfo && errInfo.description;
+      console.error('Razorpay order failed:', response.status, code, description);
+      return json(res, 502, {
+        error: 'The payment gateway could not start the order.' +
+          (description ? ' Razorpay: ' + description : '')
+      });
     }
 
     return json(res, 201, {

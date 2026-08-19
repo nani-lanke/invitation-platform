@@ -80,7 +80,7 @@ function json(res, status, body) {
    secret is absent, the whole payment step degrades gracefully and the
    check is skipped rather than refusing every publish. */
 function paymentGate(body) {
-  const secret = process.env.wNnajcD7LQY46lzb2dXe6PB9;
+  const secret = process.env.RAZORPAY_KEY_SECRET;
   if (!secret) return { ok: true, paymentId: '' };
 
   const oid = String((body && body.razorpay_order_id) || '');
