@@ -6,7 +6,7 @@
    deployment, so a request for it would 404 until the next build — and
    building once per invitation is not something a public site can do.
 
-   vercel.json rewrites /invitations/<name>.html here instead. This reads
+   vercel.json rewrites /invitation_card/<name>.html here instead. This reads
    the file back out of the repository and returns it, so the address
    works the moment the commit lands. The same route also serves the
    photos and music committed beside the page (main_image/…, etc.).
@@ -16,7 +16,7 @@
    changes after it is published, and the s-maxage below is what keeps
    the 5,000-per-hour API budget irrelevant.
 
-   The legacy /invitation_card/… rewrite still lands here too, so pages
+   The legacy /invitations/… rewrite still lands here too, so pages
    published before this folder existed keep working.
    ==================================================================== */
 
@@ -24,8 +24,8 @@
 
 const github = require('./_github');
 
-const DEFAULT_DIR = 'invitations';
-const LEGACY_DIR = 'invitation_card';
+const DEFAULT_DIR = 'invitation_card';
+const LEGACY_DIR = 'invitations';
 
 /* Only a flat filename, and only .html. No slashes means no traversal,
    and no directory listing to stumble into. */
