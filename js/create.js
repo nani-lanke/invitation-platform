@@ -1,6 +1,6 @@
 /* ==========================================================================
    InviteHub — create.js
-   The five-step invitation builder on create.html.
+   The six-step invitation builder on create.html.
 
    Nothing here talks to a server. The draft lives in localStorage and
    uploaded photos are read with FileReader and kept as data URLs in the
@@ -403,11 +403,11 @@
     if (openLink) openLink.href = url;
   }
 
-  var PAY_STEP = 5;    // hosting choice — free to skip, ₹99 to publish online
-  var DONE_STEP = 6;   // the finished link, sharing and QR
+  var INVITE_STEP = 5;   // the finished invitation — free download & share
+  var PAY_STEP = 6;      // hosting — the optional ₹99 online publish
 
   /* ------------------------------------------------------------------
-     3c. Step 6 — everything that ended up on the card
+     3c. Step 5 — everything that ended up on the card
      ------------------------------------------------------------------ */
 
   function summaryRows(data) {
@@ -525,9 +525,9 @@
     var paid = !!state.hostingPaid;
 
     /* Hosting is the paid part. Until a ₹99 payment has gone through, the
-       publish controls stay out of the way and a short notice points back
-       to the payment step instead. After payment, publishing works exactly
-       as before. */
+       publish controls stay out of the way and a short notice offers the
+       payment right here. After payment, publishing works exactly as
+       before. */
     var gate = qs('[data-publish-gate]', box);
     var controls = qs('[data-publish-controls]', box);
     if (gate) gate.hidden = paid;
@@ -580,17 +580,24 @@
 
   var publishInFlight = false;
 
-  /* The one path to the server, used by both the ₹99 hosting flow at
-     Payment and the manual "Publish it now" button below — so there is
+  /* The one path to the server, used by both the ₹99 hosting flow on the
+     Hosting step and the manual "Publish it now" button below — so there is
      exactly one call to IH.publish.toServer and exactly one place that
      paints its result. The server decides the filename and the public
      URL; this module only ever displays what it returns. */
   function runPublish(box) {
     if (publishInFlight) return Promise.resolve(null);
+    /* The same invitation is never committed twice, even if a second
+       request somehow reaches here while a publish is already done. */
+    if (state.published) {
+      IH.toast.info('This invitation is already published — it was not published twice.', { title: 'Already live' });
+      return Promise.resolve(null);
+    }
     publishInFlight = true;
 
     return IH.publish.toServer(previewData(), state.hostingPayment)
       .then(function (result) {
+        console.log('[hosting] publish request succeeded', { filename: result.filename, url: result.publicUrl });
         /* The page is committed; confirm the public address actually
            serves it before anyone is told it is live. The rewrite reads
            from GitHub, and GitHub is strongly consistent, so a couple of
@@ -613,6 +620,7 @@
         return probe();
       })
       .then(function (result) {
+        state.hosted = true;
         state.published = true;
         state.publishedAt = new Date().toISOString();
         state.hostedUrl = result.publicUrl || result.url || state.hostedUrl;
@@ -621,6 +629,7 @@
         state.hostedAt = result.hostedAt || state.hostedAt || new Date().toISOString();
         state.hostingStatus = 'active';
         saveDraft();
+        paintStepperDone();
 
         var publishBox = box || qs('[data-publish-box]', root);
         if (publishBox) {
@@ -665,17 +674,17 @@
     var box = qs('[data-publish-box]', root);
     if (!box || !IH.publish) return;
 
-    /* The gate notice's button sends the host back to the payment step
-       to pay ₹99 before publishing. */
+    /* The gate notice's button sits on the hosting step itself now, so
+       paying is one click away — same payment flow, no navigation. */
     on(qs('[data-publish-pay]', box), 'click', function () {
-      goToStep(PAY_STEP);
+      startHosting();
       IH.toast.info('Hosting costs ₹99. Pay once to publish your invitation online.');
     });
 
     on(qs('[data-publish-now]', box), 'click', function (evt) {
       if (state.published) return; // already published — no second commit
       if (!state.hostingPaid) {
-        goToStep(PAY_STEP);
+        startHosting();
         IH.toast.info('Hosting costs ₹99. Pay once to publish your invitation online.');
         return;
       }
@@ -1466,6 +1475,14 @@
 
   function panelFor(n) { return qs('[data-step-panel="' + n + '"]', root); }
 
+  /* After a successful hosting payment the last step reads as done too,
+     so a finished wizard shows a complete row of checkmarks. Painted on
+     every showStep and again the moment a publish succeeds. */
+  function paintStepperDone() {
+    var last = qs('[data-step-btn="' + TOTAL_STEPS + '"]', root);
+    if (last) last.classList.toggle('is-done', state.published);
+  }
+
   function validateStep(n) {
     if (n === 1) {
       if (!state.eventType) { IH.toast.error('Choose the kind of event you are hosting.'); return false; }
@@ -1550,18 +1567,23 @@
 
     if (n === 1) paintEventTemplates();
     if (n === 4) buildTemplatePicker();
-    if (n === PAY_STEP) paintHostingStatus();
-    if (n === DONE_STEP) {
-      /* Reaching the last step is free — the invitation is complete, and
-         it can be downloaded or shared as it is. Online hosting stays a
-         separate, paid choice: only a successful ₹99 payment calls
-         runPublish, never this step on its own. */
+    if (n === INVITE_STEP) {
+      /* Reaching the Invitation step is free — the invitation is complete,
+         and it can be downloaded or shared as it is. Online hosting stays a
+         separate, paid choice on the next step: only a successful ₹99
+         payment calls runPublish, never this step on its own. */
       paintShareLink();
       paintCardSummary(previewData());
-      paintPublish(previewData());
-      paintHostingStatus();
       IH.confetti(36);
     }
+    if (n === PAY_STEP) {
+      paintHostingStatus();
+      paintPublish(previewData());
+    }
+
+    /* After a successful hosting payment the last step reads as done too,
+       so a finished wizard shows a complete row of checkmarks. */
+    paintStepperDone();
     saveDraft();
   }
 
@@ -1631,16 +1653,16 @@
   var HOSTING_PRODUCT = 'online-invitation-hosting';
   var HOSTING_AMOUNT = 9900;   // paise — decided on the server, never trusted from here
 
-  /* Paint the hosting status on the payment step. Before payment the
+  /* Paint the hosting status on the hosting step. Before payment the
      invitation is "Not hosted yet"; after a successful ₹99 payment and
-     publish it becomes "Your invitation is live". */
+     publish it becomes "Your invitation is online". */
   function paintHostingStatus() {
     var status = qs('[data-host-status]', root);
     var note = qs('[data-host-status-note]', root);
     var hosted = !!state.hostingPaid && !!state.hosted;
 
     if (status) {
-      status.textContent = hosted ? 'Your invitation is live' : 'Not hosted yet';
+      status.textContent = hosted ? 'Your invitation is online' : 'Not hosted yet';
     }
     if (note) {
       note.textContent = hosted
@@ -1648,8 +1670,10 @@
         : 'Your invitation is saved in this browser and ready to download. Hosting is optional and costs ₹99.';
     }
 
-    /* The success panel on the payment step: live link, copy, open, share,
-       QR, WhatsApp and a downloadable copy of the page. */
+    /* The success panel on the hosting step: live link, copy, open, share,
+       QR, WhatsApp and a downloadable copy of the page. Once published it
+       replaces the ₹99 offer and payment summary — the payment area gives
+       way to the result. */
     var result = qs('[data-hosted-result]', root);
     if (result) {
       var urlOut = qs('[data-hosted-url]', result);
@@ -1659,6 +1683,11 @@
       if (open) open.href = url;
       result.hidden = !(hosted && url);
     }
+
+    var offer = qs('[data-host-offer]', root);
+    var summary = qs('[data-payment-summary]', root);
+    if (offer) offer.hidden = hosted;
+    if (summary) summary.hidden = hosted;
   }
 
   function setPaymentStatus(title, msg, warn) {
@@ -1738,6 +1767,13 @@
      create two orders or open two checkouts. */
   function startHosting() {
     if (hostingInFlight) return;
+    /* Duplicate protection: an invitation that is already published must
+       never be published again, even though payment already went through. */
+    if (state.published) {
+      setPaymentStatus('Already published', 'This invitation already has a live link. Open it from the Hosting step.', true);
+      IH.toast.info('This invitation is already published — it was not published twice.', { title: 'Already live' });
+      return;
+    }
     hostingInFlight = true;
     setHostBtnBusy(true, 'Processing payment…');
     setPaymentStatus(null);
@@ -1782,6 +1818,12 @@
         razorpay_payment_id: payment.razorpay_payment_id,
         razorpay_signature: payment.razorpay_signature
       }).then(function () {
+        /* Safe identifiers only — the signature never leaves the server
+           /api/verify check. */
+        console.log('[hosting] payment verified', {
+          orderId: payment.razorpay_order_id,
+          paymentId: payment.razorpay_payment_id
+        });
         state.hostingPaid = true;
         /* Keep the receipt in the draft so a publish that fails (or a
            reload before the link was saved) can re-publish without a
@@ -1797,6 +1839,7 @@
       });
     }))
       .then(function () {
+        console.log('[hosting] verification done, starting publish');
         setPaymentStatus('Payment successful!', 'Your invitation is being published…');
         setHostBtnBusy(true, 'Publishing invitation…');
         return runPublish(qs('[data-publish-box]', root));
@@ -1811,11 +1854,12 @@
         state.hostingStatus = 'active';
         state.published = true;
         saveDraft();
-        setPaymentStatus('Payment successful!', 'Your invitation is live!');
+        setPaymentStatus('Payment successful!', 'Your invitation is online!');
         paintHostingStatus();
         paintShareLink();
+        paintStepperDone();
         IH.confetti(36);
-        IH.toast.success('Your invitation is live!', { title: 'Hosted' });
+        IH.toast.success('Your invitation is online!', { title: 'Hosted' });
       })
       .catch(function (err) {
         var cancelled = err && err.message === 'cancelled';
