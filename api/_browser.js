@@ -28,8 +28,9 @@ const vm = require('vm');
 
 /* Order matters: main.js defines IH.dom, which the rest close over. */
 const SCRIPTS = [
-  'js/main.js',      // IH.dom, IH.icon, IH.store
+  'js/main.js',      // IH.dom, IH.icon, IH.store, IH.toast
   'js/templates.js', // IH.data — templates and their palettes
+  'js/countdown.js', // IH.countdown — markup() is needed by the page builder
   'js/preview.js',   // IH.invitation.render
   'js/export.js'     // IH.exportPage.buildHtml
 ];

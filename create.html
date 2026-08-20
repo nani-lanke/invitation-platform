@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Create Your Invitation — Live Editor | InviteHub</title>
-<meta name="description" content="Build a digital invitation in five steps: choose the event, add your details, upload photos, pick colours and fonts, then preview it live. Everything stays in your browser — nothing is uploaded.">
+<meta name="description" content="Build a digital invitation in six steps: choose the event, add your details, upload photos, pick colours and fonts, then create it free and publish online for ₹99. Everything stays in your browser — nothing is uploaded.">
 <meta name="keywords" content="create invitation online, invitation maker, custom wedding invite, birthday invitation editor, digital invite builder, free invitation creator">
 <meta name="theme-color" content="#FDFAFB">
 <link rel="canonical" href="https://invitehub.example.com/create.html">
@@ -13,12 +13,12 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="InviteHub">
 <meta property="og:title" content="Create Your Invitation — Live Editor | InviteHub">
-<meta property="og:description" content="Five steps from blank card to shareable invitation, with a live preview beside every field.">
+<meta property="og:description" content="Six steps from blank card to shareable invitation — create and download free, publish online for ₹99 — with a live preview beside every field.">
 <meta property="og:url" content="https://invitehub.example.com/create.html">
 <meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Create Your Invitation — Live Editor | InviteHub">
-<meta name="twitter:description" content="Five steps from blank card to shareable invitation.">
+<meta name="twitter:description" content="Six steps from blank card to shareable invitation — download free, publish online for ₹99.">
 <meta name="twitter:image" content="https://invitehub.example.com/images/hero/og-image.svg">
 
 <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
@@ -121,11 +121,11 @@
         </button>
         <button class="step" type="button" data-step-btn="5" disabled>
           <span class="step__num"><span class="num">5</span><i data-icon="check" data-icon-size="17"></i></span>
-          <span class="step__text"><b>Hosting</b><small>Optional · ₹99</small></span>
+          <span class="step__text"><b>Invitation</b><small>Create &amp; download for free</small></span>
         </button>
         <button class="step" type="button" data-step-btn="6" disabled>
           <span class="step__num"><span class="num">6</span><i data-icon="check" data-icon-size="17"></i></span>
-          <span class="step__text"><b>Done</b><small>Link &amp; files</small></span>
+          <span class="step__text"><b>Hosting</b><small>₹99 · Publish online</small></span>
         </button>
       </nav>
 
@@ -460,15 +460,58 @@
             </div>
           </section>
 
-          <!-- STEP 5 — Hosting: optional, one ₹99 plan -->
+          <!-- STEP 5 — Invitation: create, preview and download for free -->
           <section class="wizard-panel" data-step-panel="5" aria-labelledby="step5-title" hidden>
-            <h2 id="step5-title" style="font-size:var(--step-2)">Payment</h2>
+            <h2 id="step5-title" style="font-size:var(--step-2)">Invitation</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Your invitation is ready — create, preview and download it here, free. Share the link and QR code, or save the file. Publishing it online is optional and comes next.</p>
 
-            <h3 style="font-size:var(--step-1);margin:var(--space-5) 0 var(--space-2)">Host your invitation online</h3>
-            <p class="muted" style="margin-bottom:var(--space-5)">
-              Your invitation is ready. Create and preview your invitation for free. Pay ₹99 only when you
-              want to publish it online and share it with your guests.
-            </p>
+            <div class="link-box">
+              <code data-share-link>Creating your invitation link…</code>
+              <button class="btn btn--primary btn--sm" type="button" data-share="copy"><i data-icon="copy" data-icon-size="16"></i><span>Copy Link</span></button>
+            </div>
+
+            <div class="share-buttons" style="margin-bottom:var(--space-6)">
+              <button class="share-btn share-btn--whatsapp" type="button" data-share="whatsapp"><i data-icon="whatsapp" data-icon-size="18"></i><span>WhatsApp</span></button>
+              <button class="share-btn share-btn--facebook" type="button" data-share="facebook"><i data-icon="facebook" data-icon-size="18"></i><span>Facebook</span></button>
+              <button class="share-btn share-btn--telegram" type="button" data-share="telegram"><i data-icon="telegram" data-icon-size="18"></i><span>Telegram</span></button>
+              <button class="share-btn share-btn--email" type="button" data-share="email"><i data-icon="mail" data-icon-size="18"></i><span>Email</span></button>
+              <button class="share-btn share-btn--qr" type="button" data-share="qr"><i data-icon="qr-code" data-icon-size="18"></i><span>QR Code</span></button>
+              <button class="share-btn" type="button" data-share="native"><i data-icon="share" data-icon-size="18"></i><span>More…</span></button>
+            </div>
+
+            <div class="qr-holder" data-create-qr style="width:max-content;margin-bottom:var(--space-6)" aria-label="QR code for your invitation link"></div>
+
+            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Your invitation page</h3>
+            <div class="notice" data-export-box style="margin-bottom:var(--space-6)">
+              <i data-icon="file-text" data-icon-size="20"></i>
+              <div>
+                <strong data-export-title>How this link works</strong>
+                <ul class="preview-specs" data-card-files style="margin:var(--space-3) 0 0"></ul>
+                <div class="btn-group" style="margin-top:var(--space-4)">
+                  <a class="btn btn--primary" data-invite-open href="#" target="_blank" rel="noopener"><i data-icon="external-link" data-icon-size="18"></i><span>Open it as a guest sees it</span></a>
+                  <button class="btn btn--ghost btn--sm" type="button" data-export-download><i data-icon="download" data-icon-size="16"></i><span>Download .html</span></button>
+                </div>
+              </div>
+            </div>
+
+            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Everything on your card</h3>
+            <table class="spec-table">
+              <tbody data-card-summary></tbody>
+            </table>
+
+            <div class="notice notice--info" style="margin-top:var(--space-6)">
+              <i data-icon="globe" data-icon-size="20"></i>
+              <div>
+                <strong>Want to publish it online?</strong>
+                <p style="margin:var(--space-2) 0 0">The next step hosts your invitation at its own public address for ₹99 — with a shareable link, QR code and a guest-accessible page. Completely optional.</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- STEP 6 — Hosting: optional, one ₹99 plan -->
+          <section class="wizard-panel" data-step-panel="6" aria-labelledby="step6-title" hidden>
+            <h2 id="step6-title" style="font-size:var(--step-2)">Hosting</h2>
+            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Publish your invitation online at its own permanent address for ₹99. Your payment is verified first — only then is the invitation published.</p>
 
             <div class="notice notice--info" style="margin-bottom:var(--space-5)">
               <i data-icon="info" data-icon-size="20"></i>
@@ -478,7 +521,7 @@
               </div>
             </div>
 
-            <div class="pricing-grid">
+            <div class="pricing-grid" data-host-offer>
               <article class="plan is-featured">
                 <span class="plan__ribbon">Online Invitation Hosting</span>
                 <div class="plan__price"><span class="cur">₹</span><span class="amt">99</span></div>
@@ -496,7 +539,7 @@
               </article>
             </div>
 
-            <div class="notice notice--info" style="margin-top:var(--space-5)">
+            <div class="notice notice--info" data-payment-summary style="margin-top:var(--space-5)">
               <i data-icon="credit-card" data-icon-size="20"></i>
               <div>
                 <strong>Payment summary</strong>
@@ -519,7 +562,7 @@
               <div class="notice notice--info">
                 <i data-icon="check-circle" data-icon-size="20"></i>
                 <div>
-                  <strong>Your invitation is live!</strong>
+                  <strong>Your invitation is online!</strong>
                   <p style="margin:var(--space-2) 0 0">Your invitation has been successfully published.</p>
                   <p style="margin:var(--space-2) 0 0">Invitation link:</p>
                 </div>
@@ -567,54 +610,19 @@
                 </ul>
               </article>
             </div>
-          </section>
 
-          <!-- STEP 6 — saved, with the link, sharing and the file itself -->
-          <section class="wizard-panel" data-step-panel="6" aria-labelledby="step6-title" hidden>
-            <h2 id="step6-title" style="font-size:var(--step-2)">Done — your invitation is ready.</h2>
-            <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Your invitation is ready to open, print, download or share — free. Below are the link your guests would see, the QR code for a printed card, and the file itself. Hosting it online at its own permanent address is optional and costs ₹99.</p>
-
-            <div class="link-box">
-              <code data-share-link>Creating your invitation link…</code>
-              <button class="btn btn--primary btn--sm" type="button" data-share="copy"><i data-icon="copy" data-icon-size="16"></i><span>Copy Link</span></button>
-            </div>
-
-            <div class="share-buttons" style="margin-bottom:var(--space-6)">
-              <button class="share-btn share-btn--whatsapp" type="button" data-share="whatsapp"><i data-icon="whatsapp" data-icon-size="18"></i><span>WhatsApp</span></button>
-              <button class="share-btn share-btn--facebook" type="button" data-share="facebook"><i data-icon="facebook" data-icon-size="18"></i><span>Facebook</span></button>
-              <button class="share-btn share-btn--telegram" type="button" data-share="telegram"><i data-icon="telegram" data-icon-size="18"></i><span>Telegram</span></button>
-              <button class="share-btn share-btn--email" type="button" data-share="email"><i data-icon="mail" data-icon-size="18"></i><span>Email</span></button>
-              <button class="share-btn share-btn--qr" type="button" data-share="qr"><i data-icon="qr-code" data-icon-size="18"></i><span>QR Code</span></button>
-              <button class="share-btn" type="button" data-share="native"><i data-icon="share" data-icon-size="18"></i><span>More…</span></button>
-            </div>
-
-            <div class="qr-holder" data-create-qr style="width:max-content;margin-bottom:var(--space-6)" aria-label="QR code for your invitation link"></div>
-
-            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Your invitation page</h3>
-            <div class="notice" data-export-box style="margin-bottom:var(--space-6)">
-              <i data-icon="file-text" data-icon-size="20"></i>
-              <div>
-                <strong data-export-title>How this link works</strong>
-                <ul class="preview-specs" data-card-files style="margin:var(--space-3) 0 0"></ul>
-                <div class="btn-group" style="margin-top:var(--space-4)">
-                  <a class="btn btn--primary" data-invite-open href="#" target="_blank" rel="noopener"><i data-icon="external-link" data-icon-size="18"></i><span>Open it as a guest sees it</span></a>
-                  <button class="btn btn--ghost btn--sm" type="button" data-export-download><i data-icon="download" data-icon-size="16"></i><span>Download .html</span></button>
-                </div>
-              </div>
-            </div>
-
-            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Or give it a short address of its own</h3>
+            <h3 style="font-size:var(--step-1);margin:var(--space-6) 0 var(--space-3)">Manage your published page</h3>
             <div class="notice" data-publish-box style="margin-bottom:var(--space-6)">
               <i data-icon="globe" data-icon-size="20"></i>
               <div>
                 <strong>A page in your repository</strong>
-                <p style="margin:var(--space-2) 0 0">Publish the invitation as a real page and the long link above becomes a short one your guests can read:</p>
+                <p style="margin:var(--space-2) 0 0">Publish the invitation as a real page and the long link becomes a short one your guests can read:</p>
 
                 <div class="notice notice--warn" data-publish-gate style="margin:var(--space-4) 0 0">
                   <i data-icon="lock" data-icon-size="20"></i>
                   <div>
                     <strong>Hosting is ₹99</strong>
-                    <p style="margin:var(--space-2) 0 0">Your invitation is free to download and share. To publish it online at its own permanent link, complete the ₹99 hosting payment on the previous step.</p>
+                    <p style="margin:var(--space-2) 0 0">Your invitation is free to download and share. To publish it online at its own permanent link, complete the ₹99 hosting payment on this step.</p>
                     <button class="btn btn--primary btn--sm" type="button" data-publish-pay style="margin-top:var(--space-3)"><i data-icon="credit-card" data-icon-size="16"></i><span>Host My Invitation — ₹99</span></button>
                   </div>
                 </div>
@@ -641,11 +649,6 @@
                 </div>
               </div>
             </div>
-
-            <h3 style="font-size:var(--step-1);margin-bottom:var(--space-3)">Everything on your card</h3>
-            <table class="spec-table">
-              <tbody data-card-summary></tbody>
-            </table>
           </section>
 
           <!-- Wizard navigation -->

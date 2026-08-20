@@ -291,6 +291,10 @@
     formatDate: formatDate,
     formatTime: formatTime,
     toDateTime: toDateTime,
+    headline: headlineFor,
+    subhead: subheadFor,
+    genderize: genderizeText,
+    GOOGLE_FONTS: GOOGLE_FONTS,
 
     /* Merge a template's palette into an invitation data object. */
     applyTemplate: function (data, templateSlug) {
@@ -357,8 +361,6 @@
       if (data.photo) {
         html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
       }
-
-
 
       html.push('<h2 class="invitation__names">' + headlineFor(data) + '</h2>');
 
@@ -456,29 +458,6 @@
         html.push('<div class="invitation__extra"><small>Additional information</small>' +
           '<p>' + escapeHtml(data.additionalInformation) + '</p></div>');
       }
-
-       if (
-           data.showGallery !== false &&
-           Array.isArray(data.gallery) &&
-           data.gallery.length
-         ) {
-           html.push(
-             '<section class="invitation__gallery" aria-label="Photo gallery">' +
-               '<h3 class="invitation__gallery-title">Our Moments</h3>' +
-               '<div class="invitation__gallery-grid">' +
-                 data.gallery.map(function (src, i) {
-                   return (
-                     '<figure class="invitation__gallery-item">' +
-                       '<img src="' + escapeHtml(src) + '"' +
-                       ' alt="Gallery photo ' + (i + 1) + '"' +
-                       ' loading="lazy">' +
-                     '</figure>'
-                   );
-                 }).join('') +
-               '</div>' +
-             '</section>'
-           );
-         }
 
       var actions = [];
       if (data.showMaps !== false && (data.mapsUrl || data.address)) {

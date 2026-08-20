@@ -15,7 +15,7 @@ const KEY_SECRET = process.env.RAZORPAY_KEY_SECRET;
 const PRODUCTS = {
   'online-invitation-hosting': {
     name: 'Online Invitation Hosting',
-    amount: 9900,
+    amount: 100,
     currency: 'INR'
   }
 };
