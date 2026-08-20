@@ -1,14 +1,14 @@
 /* ====================================================================
    api/publish.js — POST an invitation, get back its public address
 
-   Publishes an invitation page and its assets into invitations/ through
+   Publishes an invitation page and its assets into invitation_card/ through
    the GitHub API, then verifies the committed file reads back before a
    URL is ever returned.
 
    The public URL is generated once, here, and returned to the browser as
    publicUrl. Nothing in the browser builds it for the hosted route:
 
-       https://<domain>/invitations/<slug>-<id>.html
+       https://<domain>/invitation_card/<slug>-<id>.html
 
    A ₹99 Razorpay payment must be verified before anything is hosted. The
    browser already verifies it against api/verify and sends the Razorpay
@@ -24,7 +24,7 @@ const validate = require('./_validate');
 const limit = require('./_limit');
 const github = require('./_github');
 
-const FOLDER = 'invitations';
+const FOLDER = 'invitation_card';
 const INDEX = FOLDER + '/index.json';
 const MAIN_DIR = 'main_image';
 const MUSIC_DIR = 'background_music';
@@ -172,6 +172,12 @@ module.exports = async function handler(req, res) {
     if (!payment.ok) {
       return json(res, 402, { error: payment.error });
     }
+
+    /* Safe identifiers only — never the signature or any secret. */
+    console.log('[publish] payment gate passed', {
+      orderId: body && body.razorpay_order_id,
+      paymentId: body && body.razorpay_payment_id
+    });
 
     const root = siteRoot(req);
 
@@ -344,6 +350,11 @@ module.exports = async function handler(req, res) {
         files,
         'Publish invitation: ' + file
       );
+
+    console.log('[publish] GitHub write succeeded', {
+      filename: file,
+      files: written.count
+    });
 
     /* The address is only called live after the page actually reads back
        from the repository. A commit that "succeeded" but is not there is
