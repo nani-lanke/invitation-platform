@@ -138,11 +138,11 @@ a verified ₹99 payment — the client's `hostingPaid` flag alone is not truste
 
 ## Where hosted invitations live
 
-Every published invitation is committed to the repository under `invitations/`
+Every published invitation is committed to the repository under `invitation_card/`
 and served from there by `api/invite` (via the `vercel.json` rewrites):
 
 ```
-invitations/
+invitation_card/
 ├── index.json                  the hosted-invitation registry
 ├── rahul-priya-a8f42c.html     the page — <slug>-<unique-id>.html
 ├── main_image/…_image.jpg      media sits beside the page
@@ -155,7 +155,7 @@ The public URL is generated once, in `api/publish.js`, and returned to the
 browser as `publicUrl`:
 
 ```
-https://<domain>/invitations/rahul-priya-a8f42c.html
+https://<domain>/invitation_card/rahul-priya-a8f42c.html
 ```
 
 The domain is the request's own host on Vercel (a custom domain if one is
@@ -171,5 +171,5 @@ repository) records hosted invitations.
 | | Where it lives | Works on | Photos | Link preview |
 |---|---|---|---|---|
 | Link (`i.html#…`) | the URL itself | anywhere | no | no |
-| **Publish it now** | `invitations/<name>-<id>.html` | Vercel only | yes | yes |
-| Download page folder | `invitations/<Names>/<Date>/` | anywhere, after you push | yes | yes |
+| **Publish it now** | `invitation_card/<name>-<id>.html` | Vercel only | yes | yes |
+| Download page folder | `invitation_card/<Names>/<Date>/` | anywhere, after you push | yes | yes |
