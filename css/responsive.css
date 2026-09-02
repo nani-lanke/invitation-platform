@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — Responsive layer
+   InviteAura — Responsive layer
    Mobile-first base lives in style.css; this file adapts it downward.
    Tested breakpoints: 1920, 1440, 1280, 1024, 768, 600, 480, 425, 375, 320
    ========================================================================== */
@@ -314,7 +314,7 @@
   .plan { padding: var(--space-5) var(--space-4); }
 
   .nav__brand-tag { display: none; }
-  .nav__brand img { width: 34px; height: 34px; }
+  .nav__brand-logo { height: 34px; width: auto; }
   .nav__brand-name { font-size: 1.15rem; }
 
   .btn { padding: 10px 18px; }

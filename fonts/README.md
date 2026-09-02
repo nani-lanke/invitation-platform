@@ -1,6 +1,6 @@
 # fonts/
 
-This folder is empty by default. InviteHub loads its typefaces from Google Fonts:
+This folder is empty by default. InviteAura loads its typefaces from Google Fonts:
 
 | Family | Used for | Weights |
 | --- | --- | --- |

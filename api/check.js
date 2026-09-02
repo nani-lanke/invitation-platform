@@ -77,7 +77,7 @@ module.exports = async function handler(req, res) {
         headers: {
           Authorization: 'Bearer ' + cfg.token,
           Accept: 'application/vnd.github+json',
-          'User-Agent': 'InviteHub'
+          'User-Agent': 'InviteAura'
         }
       });
 

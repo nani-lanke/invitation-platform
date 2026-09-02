@@ -67,7 +67,7 @@
 
   /* The deployed site's root, worked out from the page asking. Locally
      that is http://localhost:8000/; on Pages it keeps the repository
-     subpath (…/InviteHub/), so the URL shown is the URL that will work. */
+     subpath (…/InviteAura/), so the URL shown is the URL that will work. */
   function siteRoot() {
     return window.location.href.replace(/[^/]*(\?.*)?(#.*)?$/, '');
   }
@@ -324,7 +324,7 @@
     'classCourse', 'role', 'yearsOfService', 'eventKind', 'theme',
     'date', 'time', 'venue', 'address', 'mapsUrl', 'phone',
     'email', 'message', 'additionalInformation', 'font', 'colors', 'customColors', 'animation',
-    'showCountdown', 'showRsvp', 'showMaps', 'showGallery',
+    'showCountdown', 'showMaps', 'showGallery',
     /* The uploads travel too. The server checks each one's type and size
        and commits them beside the page — see api/_validate.js for the
        ceilings, which exist because Vercel refuses a request body over

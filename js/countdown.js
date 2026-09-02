@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — countdown.js
+   InviteAura — countdown.js
    A single shared ticker drives every countdown on the page, so ten
    invitations on screen still cost one interval.
 

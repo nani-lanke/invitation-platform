@@ -31,6 +31,26 @@ const MUSIC_DIR = 'background_music';
 
 const MAX_BODY = 5 * 1024 * 1024;
 
+/* Send the invitation email via internal HTTP call to /api/send-email.
+   This is fire-and-forget: email failure must not undo a successful publish. */
+async function sendInvitationEmail(invitationUrl, customerEmail) {
+  try {
+    const res = await fetch(process.env.SITE_URL ? process.env.SITE_URL + 'api/send-email' : '/api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: customerEmail, invitationUrl: invitationUrl })
+    });
+    const result = await res.json();
+    if (result.success) {
+      console.log('[publish] Invitation email sent successfully', { email: customerEmail });
+    } else {
+      console.error('[publish] Failed to send invitation email', { email: customerEmail, message: result.message });
+    }
+  } catch (err) {
+    console.error('[publish] Email send error (non-fatal):', { email: customerEmail, error: err.message });
+  }
+}
+
 /* The site's real origin. On Vercel x-forwarded-host is the public host
    (a custom domain if one is attached), so the URL always matches where
    the site is actually served. SITE_URL, when set, wins so a deployment
@@ -366,6 +386,14 @@ module.exports = async function handler(req, res) {
       throw new Error(
         'The commit reported success, but the page could not be read back.'
       );
+    }
+
+    /* Send invitation email to the customer (fire-and-forget).
+       Email failure must not undo the successful publication. */
+    if (state.email) {
+      sendInvitationEmail(publicUrl, state.email).catch(function (err) {
+        console.error('[publish] Email promise rejection (non-fatal):', err.message);
+      });
     }
 
     return json(res, 201, {

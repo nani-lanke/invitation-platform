@@ -400,6 +400,10 @@
       '.site-btn--ghost{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4)}',
       '.site-btn--solid{background:var(--site-p);color:#fff}',
       '.site-btn--soft{background:color-mix(in srgb,var(--site-p) 11%,transparent);color:var(--site-p)}',
+      '.site-btn--outline{background:transparent;border:1px solid color-mix(in srgb,var(--site-ink) 18%,transparent);color:var(--site-p)}',
+      '.site-btn--outline:hover{background:color-mix(in srgb,var(--site-p) 12%,transparent);border-color:var(--site-p)}',
+      '.site-btn--sm{padding:8px 16px;font-size:.85rem}',
+      '.site-btn--sm svg{width:14px;height:14px}',
       '',
       '/* Sections */',
       '.site-section{padding:88px 0}',
@@ -441,15 +445,14 @@
       '.site-count .cd-label{text-transform:uppercase;letter-spacing:.16em;font-size:.66rem;opacity:.9}',
       '',
       '/* Venue */',
-      '.site-venue{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch}',
-      '.site-venue__card{background:rgba(255,255,255,.75);border:1px solid color-mix(in srgb,var(--site-ink) 10%,transparent);border-radius:24px;padding:42px;display:flex;flex-direction:column;gap:14px;justify-content:center}',
-      '.site-venue__card h3{font-family:var(--site-fd);font-size:2rem}',
-      '.site-venue__card p{margin:0;color:color-mix(in srgb,var(--site-ink) 78%,transparent);line-height:1.8}',
+      '.site-venue{display:flex;flex-direction:column;gap:24px;align-items:stretch}',
+      '.site-venue__card{background:rgba(255,255,255,.75);border:1px solid color-mix(in srgb,var(--site-ink) 10%,transparent);border-radius:24px;padding:42px;display:flex;flex-direction:column;gap:14px;align-items:stretch}',
+      '.site-venue__name{font-family:var(--site-fd);font-size:2rem;margin:0}',
       '.site-venue__when{margin-top:6px}',
-      '.site-venue__media{min-height:360px;border-radius:24px;background-size:cover;background-position:center;position:relative;display:grid;place-items:center;overflow:hidden;background:linear-gradient(160deg,var(--site-p),var(--site-b2))}',
-      '.site-venue__media::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,25,.2),rgba(20,10,25,.55))}',
-      '.site-venue__media-link{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;background:#fff;color:var(--site-p);font-weight:700}',
-      '.site-venue__media-link svg{width:17px;height:17px}',
+      '.site-venue__address{margin:0;color:color-mix(in srgb,var(--site-ink) 78%,transparent);line-height:1.8}',
+      '.site-venue__maps-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid color-mix(in srgb,var(--site-ink) 18%,transparent);background:transparent;color:var(--site-p);font-weight:700;font-size:.9rem}',
+      '.site-venue__maps-btn svg{width:16px;height:16px}',
+      '.site-venue__maps-btn:hover{background:color-mix(in srgb,var(--site-p) 12%,transparent);color:var(--site-p)}',
       '',
       '/* Actions */',
       '.site-actions{text-align:center}',
@@ -502,7 +505,6 @@
       '  .site-gallery{grid-template-columns:repeat(2,1fr);gap:12px}',
       '  .site-count .invitation__countdown{grid-template-columns:repeat(2,1fr);gap:12px}',
       '  .site-venue{grid-template-columns:1fr;gap:24px}',
-      '  .site-venue__media{min-height:260px}',
       '}',
       '@media(max-width:560px){',
       '  .site-container{width:min(100% - 32px,1200px)}',
@@ -520,9 +522,12 @@
   }
 
   /* Everything the page needs to run once it is in a real browser. Static
-     on purpose: no data is interpolated, so it needs no escaping. */
+     on purpose: no data is interpolated, so it needs no escaping.
+     This script runs at the end of <body>, so the DOM is already ready.
+     No DOMContentLoaded wrapper needed — this also works in srcdoc iframes
+     where DOMContentLoaded fires before this script executes. */
   var INLINE_SITE_JS = [
-    'document.addEventListener("DOMContentLoaded", function () {',
+    '  // --- Mobile menu ---',
     '  var burger = document.querySelector(".site-nav__burger");',
     '  var menu = document.querySelector(".site-nav__menu");',
     '  if (burger && menu) {',
@@ -533,11 +538,32 @@
     '    });',
     '    menu.addEventListener("click", function (e) { if (e.target.closest("a")) closeMenu(); });',
     '  }',
+    '  // --- Nav scroll state ---',
     '  var nav = document.querySelector(".site-nav");',
     '  var onScroll = function () { if (nav) nav.classList.toggle("is-scrolled", window.scrollY > 8); };',
     '  window.addEventListener("scroll", onScroll, { passive: true });',
     '  onScroll();',
     '',
+    '  // --- Anchor link navigation (works with href and data-href) ---',
+    '  // Must register immediately so it works in srcdoc iframes where',
+    '  // DOMContentLoaded fires before this inline script runs.',
+    '  document.addEventListener("click", function (e) {',
+    '    var link = e.target.closest(\'.site-nav__link, .site-btn[href^=\\\\#], .site-btn[data-href^=\\\\#], .site-nav__brand[href^=\\\\#], .site-nav__brand[data-href^=\\\\#]\');',
+    '    if (link) {',
+    '      var href = link.getAttribute("href") || link.getAttribute("data-href");',
+    '      if (href && href.startsWith("#")) {',
+    '        e.preventDefault();',
+    '        var target = document.querySelector(href);',
+    '        if (target) {',
+    '          target.scrollIntoView({ behavior: "smooth", block: "start" });',
+    '          // Update URL hash without scrolling (only if using real href)',
+    '          if (link.hasAttribute("href")) history.pushState(null, "", href);',
+    '        }',
+    '      }',
+    '    }',
+    '  });',
+    '',
+    '  // --- Gallery lightbox ---',
     '  var box = null;',
     '  var current = 0;',
     '  var srcs = [];',
@@ -592,6 +618,7 @@
     '    if (fig) { e.preventDefault(); openFig(fig); }',
     '  });',
     '',
+    '  // --- Music toggle ---',
     '  var audio = document.getElementById("site-music");',
     '  var mbtn = document.getElementById("site-music-btn");',
     '  if (audio && mbtn) {',
@@ -610,8 +637,8 @@
     '    });',
     '  }',
     '',
-    '  if (window.IH && IH.countdown) IH.countdown.mount(document.body);',
-    '});'
+    '  // --- Countdown ---',
+    '  if (window.IH && IH.countdown) IH.countdown.mount(document.body);'
   ].join('\n');
 
   /* The whole invitation as a full-screen website. The markup is built
@@ -659,16 +686,10 @@
     if (data.showGallery !== false && data.gallery && data.gallery.length) navLinks.push({ id: 'gallery', label: 'Gallery' });
     if (data.showCountdown !== false && data.date && IH.countdown && IH.countdown.markup) navLinks.push({ id: 'countdown', label: 'Countdown' });
     if (data.venue || data.address) navLinks.push({ id: 'venue', label: 'Venue' });
-    if (data.showRsvp !== false || data.phone) navLinks.push({ id: 'rsvp', label: 'RSVP' });
-
-    var hasRsvp = data.showRsvp !== false || !!data.phone;
     var heroSecondary = navLinks.length ? navLinks[0] : null;
-    var heroPrimary = hasRsvp ? { id: 'rsvp', label: 'RSVP' } : heroSecondary;
-    var heroExtra = hasRsvp ? heroSecondary : null;
+    var heroPrimary = heroSecondary;
+    var heroExtra = null;
     if (heroExtra && heroPrimary && heroExtra.id === heroPrimary.id) heroExtra = null;
-
-    var mapHref = data.mapsUrl ||
-      (data.address ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(data.address) : '');
 
     var heroStyle = 'background-image:linear-gradient(160deg,' + rgba(p.primary, 0.92) + ',' +
       rgba(p.b2, 0.85) + ')' +
@@ -683,7 +704,7 @@
       '<meta name="viewport" content="width=device-width, initial-scale=1">',
       '<title>' + esc(title) + '</title>',
       '<meta name="description" content="' + esc(metaDescription(state)) + '">',
-      '<meta name="generator" content="InviteHub">',
+      '<meta name="generator" content="InviteAura">',
       /* An invitation carries names, an address and a phone number. It is
          meant for the people sent the link, not for search results — but
          noindex only stops indexing, so the link-preview scrapers below
@@ -699,7 +720,7 @@
       opts && opts.image ? '<meta property="og:image" content="' + esc(opts.image) + '">' : '',
       opts && opts.image ? '<meta name="twitter:card" content="summary_large_image">' : '',
       '',
-      '<link rel="icon" href="' + up + 'images/logo/favicon.svg" type="image/svg+xml">',
+      '<link rel="icon" href="' + up + 'images/logo/favicon.png" type="image/svg+xml">',
       '<link rel="preconnect" href="https://fonts.googleapis.com">',
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap">',
@@ -716,11 +737,13 @@
     /* Nav */
     body.push('<nav class="site-nav" aria-label="Invitation">');
     body.push('<div class="site-nav__inner">');
-    body.push('<a class="site-nav__brand" href="#top">' + esc(brandText(data) || 'Invitation') + '</a>');
+    // Use data-href for iframe previews to prevent navigation, href for real pages
+    var navHrefAttr = (opts && opts.forIframePreview) ? 'data-href' : 'href';
+    body.push('<a class="site-nav__brand" ' + navHrefAttr + '="#top">' + esc(brandText(data) || 'Invitation') + '</a>');
     body.push('<button class="site-nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">' + IH.icon('menu', 22) + '</button>');
     body.push('<div class="site-nav__menu" id="site-menu">');
     navLinks.forEach(function (l) {
-      body.push('<a class="site-nav__link" href="#' + l.id + '">' + esc(l.label) + '</a>');
+      body.push('<a class="site-nav__link" ' + navHrefAttr + '="#' + l.id + '">' + esc(l.label) + '</a>');
     });
     body.push('</div>');
     body.push('</div>');
@@ -813,22 +836,19 @@
     }
 
     /* Venue */
+    var mapsUrl = data.mapsUrl ||
+      (data.address ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(data.address) : '');
     if (data.venue || data.address) {
       body.push('<section class="site-section site-section--alt" id="venue">');
       body.push('<div class="site-container">');
       body.push(sectionTitle('Join Us', 'Venue &amp; Details', ''));
       body.push('<div class="site-venue">');
       body.push('<div class="site-venue__card">');
-      if (data.venue) body.push('<h3>' + esc(data.venue) + '</h3>');
-      if (data.address) body.push('<p>' + esc(data.address) + '</p>');
+      if (data.venue) body.push('<h3 class="site-venue__name">' + esc(data.venue) + '</h3>');
       if (dateLine) body.push('<p class="site-venue__when"><strong>' + esc(dateLine) + '</strong></p>');
-      if (data.showMaps !== false && mapHref) {
-        body.push('<a class="site-btn site-btn--solid" style="align-self:flex-start" href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer">' + IH.icon('map-pin', 18) + '<span>Get Directions</span></a>');
-      }
-      body.push('</div>');
-      body.push('<div class="site-venue__media"' + (data.background ? ' style="background-image:url(' + esc(data.background) + ')"' : '') + '>');
-      if (data.showMaps !== false && mapHref) {
-        body.push('<a class="site-venue__media-link" href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer">' + IH.icon('map-pin', 17) + '<span>Open in Maps</span></a>');
+      if (data.address) body.push('<p class="site-venue__address">' + esc(data.address) + '</p>');
+      if (data.showMaps !== false && mapsUrl) {
+        body.push('<a class="site-btn site-btn--outline site-btn--sm site-venue__maps-btn" href="' + esc(mapsUrl) + '" target="_blank" rel="noopener noreferrer">' + IH.icon('map-pin', 16) + '<span>View Location</span></a>');
       }
       body.push('</div>');
       body.push('</div>');
@@ -838,24 +858,23 @@
 
     /* Actions */
     var act = [];
-    if (data.showRsvp !== false) {
-      act.push('<button class="site-btn site-btn--soft" type="button" data-soon="RSVP collection arrives with the full version of InviteHub.">' + IH.icon('user-check', 18) + '<span>RSVP</span></button>');
-    }
     if (data.phone) {
       act.push('<a class="site-btn site-btn--solid" href="tel:' + esc(String(data.phone).replace(/\s/g, '')) + '">' + IH.icon('phone', 18) + '<span>Call Host</span></a>');
     }
     act.push('<button class="site-btn site-btn--soft" type="button" data-share-invitation>' + IH.icon('share', 18) + '<span>Share</span></button>');
-    body.push('<section class="site-section site-actions" id="rsvp">');
-    body.push('<div class="site-container">');
-    body.push(sectionTitle('Stay Connected', 'We Would Love to See You', 'Thank you for being part of our ' + meta.label.toLowerCase() + '.'));
-    body.push('<div class="site-actions__row">' + act.join('') + '</div>');
-    body.push('</div>');
-    body.push('</section>');
+    if (act.length) {
+      body.push('<section class="site-section site-actions" id="actions">');
+      body.push('<div class="site-container">');
+      body.push(sectionTitle('Stay Connected', 'We Would Love to See You', 'Thank you for being part of our ' + meta.label.toLowerCase() + '.'));
+      body.push('<div class="site-actions__row">' + act.join('') + '</div>');
+      body.push('</div>');
+      body.push('</section>');
+    }
 
     /* Footer */
     body.push('<footer class="site-footer">');
     body.push('<div class="site-footer__names">' + esc(brandText(data) || 'Invitation') + '</div>');
-    body.push('<p>Created with <a href="' + up + 'index.html">InviteHub</a></p>');
+    body.push('<p>Created with <a href="' + up + 'index.html">InviteAura</a></p>');
     body.push('</footer>');
 
     /* Music */
@@ -870,7 +889,7 @@
       escScript(JSON.stringify(leanState(state))),
       '<\/script>',
       '',
-      '<script src="' + up + 'js/main.js" defer><\/script>',
+      (opts && opts.skipMainJs ? '' : '<script src="' + up + 'js/main.js" defer><\/script>'),
       '<script src="' + up + 'js/countdown.js" defer><\/script>',
       '<script src="' + up + 'js/share.js" defer><\/script>',
       '<script>',

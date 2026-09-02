@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — Animations
+   InviteAura — Animations
    Keyframes, scroll-reveal utilities, decorative motion.
    Every effect here degrades to "no motion" under prefers-reduced-motion.
    ========================================================================== */
@@ -56,6 +56,9 @@
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* JPG Download button loading spinner */
+@keyframes jpg-download-spin { to { transform: rotate(360deg); } }
 
 @keyframes pulse-ring {
   0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 45%, transparent); }
@@ -141,6 +144,37 @@
 .animate-fade-in { animation: fade-in var(--t-slow) var(--ease) both; }
 .animate-pop { animation: pop-in 420ms var(--ease-out) both; }
 .animate-spin { animation: spin 1s linear infinite; }
+
+/* JPG Download button loading state */
+.jpg-download-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: none;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+[data-draft-download-jpg].is-loading {
+    cursor: wait;
+    pointer-events: none;
+}
+
+[data-draft-download-jpg].is-loading .btn-text {
+    display: none;
+}
+
+[data-draft-download-jpg].is-loading .jpg-download-spinner {
+    display: inline-block;
+    animation: jpg-download-spin 0.7s linear infinite;
+}
+
+[data-draft-download-jpg].is-loading [data-icon],
+[data-draft-download-jpg].is-loading .icon {
+    display: none;
+}
 
 /* Gradient text/background that slowly pans */
 .animate-gradient {

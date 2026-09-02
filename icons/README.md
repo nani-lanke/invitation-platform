@@ -1,6 +1,6 @@
 # icons/
 
-InviteHub does **not** use an icon font or an external icon library. Every icon is an
+InviteAura does **not** use an icon font or an external icon library. Every icon is an
 inline `<svg>` generated at runtime, which means:
 
 - zero extra network requests,

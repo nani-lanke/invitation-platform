@@ -87,7 +87,7 @@ function decodedSize(dataUrl) {
   return Math.floor(b64.length * 3 / 4) - pad;
 }
 
-const FLAGS = ['customColors', 'showCountdown', 'showRsvp', 'showMaps', 'showGallery'];
+const FLAGS = ['customColors', 'showCountdown', 'showMaps', 'showGallery'];
 const COLOR_KEYS = ['primary', 'secondary', 'bg1', 'bg2', 'ink'];
 
 /* Control characters would survive escaping and land in the markup, and

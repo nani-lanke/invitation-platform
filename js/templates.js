@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — templates.js
+   InviteAura — templates.js
    Catalogue data (categories + templates) and the gallery controller
    (search, filter, sort, favourites, "load more").
 
@@ -228,7 +228,7 @@
     ['House Party', 'house-party', 'party', 'free', '#170F26', '#43196B', '#FFD6F0', '#FFFFFF', '#F472B6', 'confetti', 79, '2026-03-26', 'Confetti on midnight violet for get-togethers and reunions.', 'house party get together reunion friends celebration'],
     /* --- Community Events collection -------------------------------------
        Association meets, drives, festivals and local gatherings. No
-       wedding-specific fields — event title, host, date, venue, RSVP.
+       wedding-specific fields — event title, host, date, venue.
        ------------------------------------------------------------------ */
     ['Community Gathering', 'community-gathering', 'community-events', 'premium', '#FBF1E7', '#EFD9BE', '#4A2E1E', '#C05A2E', '#D9B45E', 'gathering', 88, '2026-08-14', 'Warm terracotta rings that draw every neighbour into the circle.', 'community community gathering meet neighbors together welcome circle association'],
     ['Neighborhood Celebration', 'neighborhood-celebration', 'community-events', 'premium', '#0E1B3E', '#1E3A6E', '#F2E6C8', '#8FB4E8', '#E8C05E', 'houses', 86, '2026-08-15', 'A royal blue skyline of rooftops for a whole block coming out to celebrate.', 'neighborhood neighbourhood celebration residents houses block party streets welcome'],
@@ -847,7 +847,7 @@
   var FEATURES_ALL = [
     'Live countdown timer', 'Google Maps directions', 'Mobile & desktop ready',
     'One-tap WhatsApp share', 'Photo gallery', 'Background music',
-    'RSVP collection', 'QR code for print', 'Custom fonts & colours'
+    'QR code for print', 'Custom fonts & colours'
   ];
 
   var CATEGORY_INDEX = {};

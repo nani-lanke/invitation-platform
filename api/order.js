@@ -60,7 +60,7 @@ module.exports = async function handler(req, res) {
         body: JSON.stringify({
           amount: product.amount,
           currency: product.currency,
-          receipt: 'invitehub-host-' + Date.now(),
+          receipt: 'inviteaura-host-' + Date.now(),
           notes: { product: body.product || 'online-invitation-hosting' }
         })
       });

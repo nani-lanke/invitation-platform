@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — share.js
+   InviteAura — share.js
    Copy-link, social share targets, the Web Share API, and a dependency-free
    QR code encoder (byte mode, EC level M, versions 1–10).
 
@@ -529,7 +529,7 @@
     if (explicit) return explicit;
     var holder = qs('[data-share-text-source]');
     if (holder) return holder.textContent.trim();
-    return 'You are invited! Open my invitation on InviteHub.';
+    return 'You are invited! Open my invitation on InviteAura.';
   }
   /* ==================================================================
      PART 3 — QR modal
@@ -571,7 +571,7 @@
       try {
         var canvas = QR.toCanvas(url, { scale: 12 });
         var link = document.createElement('a');
-        link.download = (dom.slugify(url.split('/').pop()) || 'invitehub-qr') + '.png';
+        link.download = (dom.slugify(url.split('/').pop()) || 'inviteaura-qr') + '.png';
         link.href = canvas.toDataURL('image/png');
         link.click();
         IH.toast.success('QR code saved to your downloads.');

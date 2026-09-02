@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — Core stylesheet
+   InviteAura — Core stylesheet
    Design system: rose + violet + gold, glass surfaces over aurora gradients.
    Load order: style.css -> animations.css -> responsive.css
    ========================================================================== */
@@ -545,7 +545,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0
   flex-shrink: 0;
 }
 .nav__brand:hover { text-decoration: none; }
-.nav__brand img { width: 38px; height: 38px; border-radius: 12px; }
+.nav__brand-logo { height: 38px; width: auto; }
 .nav__brand-text { display: flex; flex-direction: column; line-height: 1.05; }
 .nav__brand-name { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; letter-spacing: -.02em; }
 .nav__brand-name span { color: var(--primary-ink); }
@@ -1344,8 +1344,53 @@ input[type="range"]::-moz-range-thumb {
   border-top: 1px solid var(--border);
 }
 
-.create-layout { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: var(--space-6); align-items: start; }
-.create-preview { position: sticky; top: calc(var(--header-h) + 24px); }
+.create-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  gap: var(--space-6);
+  align-items: stretch;
+}
+
+.create-layout > :first-child {
+  /* Allow editor content to scroll when grid is constrained */
+  overflow: auto;
+}
+
+.create-preview {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* 15% reduction from editor natural height (1437px → 1221px) on desktop only */
+@media (min-width: 1101px) {
+  .create-layout > :first-child,
+  .create-preview {
+    max-height: 1221px;
+  }
+}
+
+.create-preview {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-stage {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 0;
+  justify-content: center;
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: 0 0 var(--r-lg) var(--r-lg);
+  background:
+    radial-gradient(60% 50% at 50% 0%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 70%),
+    var(--surface-2);
+  overflow: auto;
+}
 
 /* On the event step there is nothing to preview yet — the card would show
    placeholder names to someone who has not typed one. The column steps
@@ -1378,19 +1423,9 @@ input[type="range"]::-moz-range-thumb {
 .device-switch button svg { width: 17px; height: 17px; }
 .device-switch button[aria-pressed="true"] { background: var(--grad-brand); color: var(--on-primary); }
 
-.preview-stage {
-  display: flex;
-  justify-content: center;
-  padding: var(--space-5);
-  border: 1px solid var(--border);
-  border-radius: 0 0 var(--r-lg) var(--r-lg);
-  background:
-    radial-gradient(60% 50% at 50% 0%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 70%),
-    var(--surface-2);
-  overflow: auto;
-}
 .preview-stage[data-device="mobile"] .invitation { max-width: 340px; }
 .preview-stage[data-device="desktop"] .invitation { max-width: 100%; }
+.preview-stage[data-device="hosted"] > iframe { width: 100%; height: 100%; border: none; background: transparent; }
 
 /* Mount points for a rendered invitation.
    .invitation is a size container (container-type: inline-size), and
@@ -1535,9 +1570,12 @@ input[type="range"]::-moz-range-thumb {
 .invitation__when-sep { width: 1px; height: 44px; background: color-mix(in srgb, var(--inv-primary) 30%, transparent); }
 .invitation__when small { display: block; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; opacity: .7; }
 
-.invitation__venue { margin-bottom: var(--space-5); }
-.invitation__venue strong { display: block; font-family: var(--inv-font-display); font-size: 1.15rem; color: var(--inv-primary); }
-.invitation__venue span { font-size: .85rem; opacity: .8; }
+.invitation__venue { margin-bottom: var(--space-5); display: flex; flex-direction: column; gap: var(--space-3); }
+.invitation__venue-name { font-family: var(--inv-font-display); font-size: 1.15rem; color: var(--inv-primary); }
+.invitation__venue-address { font-size: .85rem; opacity: .8; }
+.invitation__maps-btn { display: inline-flex; align-items: center; gap: var(--space-2); padding: var(--space-2) var(--space-3); border-radius: var(--r-pill); border: 1px solid color-mix(in srgb, var(--inv-ink) 20%, transparent); background: transparent; color: var(--inv-primary); font-weight: 600; font-size: .85rem; transition: all var(--t-fast) var(--ease); }
+.invitation__maps-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
+.invitation__maps-btn:hover { background: color-mix(in srgb, var(--inv-primary) 12%, transparent); color: var(--inv-primary); border-color: var(--inv-primary); }
 
 .invitation__photo {
   width: 128px; height: 128px;
@@ -1546,6 +1584,39 @@ input[type="range"]::-moz-range-thumb {
   object-fit: cover;
   border: 3px solid color-mix(in srgb, var(--inv-secondary) 60%, transparent);
   box-shadow: 0 12px 28px -12px rgba(0,0,0,.4);
+}
+
+/* Photo gallery — responsive grid of up to 6 host-uploaded photos.
+   The card preview is narrower, so it caps at 3 columns and the rest
+   are reachable by scrolling. Only the host's uploads appear. */
+.invitation__gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  padding: 0 var(--space-2);
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--inv-primary) transparent;
+}
+.invitation__gallery::-webkit-scrollbar { height: 6px; }
+.invitation__gallery::-webkit-scrollbar-track { background: transparent; }
+.invitation__gallery::-webkit-scrollbar-thumb { background: var(--inv-primary); border-radius: var(--r-pill); }
+.invitation__gallery li { list-style: none; }
+.invitation__gallery img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+  border: 2px solid color-mix(in srgb, var(--inv-secondary) 40%, transparent);
+  transition: transform var(--t-base) var(--ease), box-shadow var(--t-base) var(--ease);
+}
+.invitation__gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px -8px rgba(0,0,0,.3);
+  z-index: 1;
 }
 
 /* Background music. The player is the browser's own — a custom one would
@@ -1612,8 +1683,8 @@ input[type="range"]::-moz-range-thumb {
 .invitation__extra small { display: block; font-size: .72rem; letter-spacing: .16em; text-transform: uppercase; opacity: .7; margin-bottom: 4px; }
 .invitation__extra p { margin: 0; font-size: .88rem; line-height: 1.7; color: color-mix(in srgb, var(--inv-ink) 82%, transparent); }
 
-.invitation__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
-.invitation__actions .inv-btn {
+/* Base button styles for invitation - can be used outside actions too */
+.inv-btn {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -1628,11 +1699,24 @@ input[type="range"]::-moz-range-thumb {
   text-decoration: none;
   transition: all var(--t-base) var(--ease);
 }
-.invitation__actions .inv-btn svg { width: 15px; height: 15px; }
+.inv-btn svg { width: 15px; height: 15px; }
 /* Not #fff: on dark templates --inv-primary is itself a pale cream. */
-.invitation__actions .inv-btn:hover { background: var(--inv-primary); color: var(--inv-bg1); transform: translateY(-2px); }
-.invitation__actions .inv-btn--solid { background: var(--inv-primary); color: var(--inv-bg1); border-color: transparent; }
-.invitation__actions .inv-btn--solid:hover { filter: brightness(1.12); }
+.inv-btn:hover { background: var(--inv-primary); color: var(--inv-bg1); transform: translateY(-2px); }
+.inv-btn--solid { background: var(--inv-primary); color: var(--inv-bg1); border-color: transparent; }
+.inv-btn--solid:hover { filter: brightness(1.12); }
+
+/* Outline variant for secondary actions like View Location */
+.inv-btn--outline { border-color: color-mix(in srgb, var(--inv-ink) 20%, transparent); }
+.inv-btn--outline:hover { background: color-mix(in srgb, var(--inv-primary) 12%, transparent); border-color: var(--inv-primary); }
+
+/* Small variant */
+.inv-btn--sm { min-height: 32px; padding: 6px 12px; font-size: .8rem; }
+.inv-btn--sm svg { width: 14px; height: 14px; }
+
+.invitation__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.invitation__actions .inv-btn {
+  /* Uses base .inv-btn styles */
+}
 
 .invitation__footer { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid color-mix(in srgb, var(--inv-primary) 18%, transparent); font-size: .75rem; opacity: .72; }
 
@@ -2319,9 +2403,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .footer-brand__logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: var(--space-4); text-decoration: none; color: var(--fg-strong); }
-.footer-brand__logo img { width: 40px; height: 40px; border-radius: 12px; }
-.footer-brand__logo span { font-family: var(--font-display); font-size: 1.32rem; font-weight: 700; }
-.footer-brand__logo span em { font-style: normal; color: var(--primary-ink); }
+.footer-brand__logo-img { height: 40px; width: auto; }
 .footer-brand p { color: var(--fg-muted); font-size: var(--step--1); max-width: 34ch; margin-bottom: var(--space-5); }
 
 .footer-col h3 { font-family: var(--font-sans); font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--fg-faint); margin-bottom: var(--space-4); }

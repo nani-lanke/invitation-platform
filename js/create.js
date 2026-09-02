@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — create.js
+   InviteAura — create.js
    The six-step invitation builder on create.html.
 
    Nothing here talks to a server. The draft lives in localStorage and
@@ -74,24 +74,24 @@
 
   /* Fields that must be filled in before the wizard lets the host move on. */
   var REQUIRED_BY_CATEGORY = {
-    wedding: ['title', 'groomName', 'brideName', 'date'],
-    engagement: ['title', 'groomName', 'brideName', 'date'],
-    reception: ['title', 'personName', 'date'],
-    festival: ['title', 'date'],
-    birthday: ['title', 'personName', 'date'],
-    'baby-shower': ['title', 'personName', 'date'],
-    'naming-ceremony': ['title', 'babyName', 'babyRelation', 'parentsName', 'date'],
-    'house-warming': ['title', 'personName', 'date'],
-    anniversary: ['title', 'personName', 'date'],
-    graduation: ['title', 'personName', 'date'],
-    retirement: ['title', 'personName', 'date'],
-    farewell: ['title', 'personName', 'date'],
-    corporate: ['title', 'organization', 'date'],
-    'school-events': ['title', 'organization', 'date'],
-    'college-events': ['title', 'organization', 'date'],
-    party: ['title', 'personName', 'date'],
-    'community-events': ['title', 'organization', 'date'],
-    other: ['title', 'date']
+    wedding: ['title', 'groomName', 'brideName', 'date', 'email'],
+    engagement: ['title', 'groomName', 'brideName', 'date', 'email'],
+    reception: ['title', 'personName', 'date', 'email'],
+    festival: ['title', 'date', 'email'],
+    birthday: ['title', 'personName', 'date', 'email'],
+    'baby-shower': ['title', 'personName', 'date', 'email'],
+    'naming-ceremony': ['title', 'babyName', 'babyRelation', 'parentsName', 'date', 'email'],
+    'house-warming': ['title', 'personName', 'date', 'email'],
+    anniversary: ['title', 'personName', 'date', 'email'],
+    graduation: ['title', 'personName', 'date', 'email'],
+    retirement: ['title', 'personName', 'date', 'email'],
+    farewell: ['title', 'personName', 'date', 'email'],
+    corporate: ['title', 'organization', 'date', 'email'],
+    'school-events': ['title', 'organization', 'date', 'email'],
+    'college-events': ['title', 'organization', 'date', 'email'],
+    party: ['title', 'personName', 'date', 'email'],
+    'community-events': ['title', 'organization', 'date', 'email'],
+    other: ['title', 'date', 'email']
   };
 
   var BASE_LABELS = {
@@ -279,7 +279,6 @@
       customColors: false,
       animation: 'fade',
       showCountdown: true,
-      showRsvp: true,
       showMaps: true,
       showGallery: true,
       plan: '99',
@@ -373,7 +372,16 @@
     var data = previewData();
 
     var stage = qs('[data-create-preview]', root);
-    if (stage) IH.invitation.mount(stage, data);
+    var previewStage = qs('.preview-stage', root);
+    var device = previewStage ? previewStage.getAttribute('data-device') : 'mobile';
+
+    if (device === 'hosted') {
+      // In hosted mode, update the iframe preview
+      renderHostedPreviewDebounced();
+    } else if (stage) {
+      // Mobile/Desktop mode - use regular card preview
+      IH.invitation.mount(stage, data);
+    }
   }, 140);
 
   /* The guest-facing link and its QR code, shown on the final step.
@@ -418,8 +426,7 @@
     var sections = [];
     if (data.showCountdown !== false) sections.push('Countdown');
     if (data.showGallery !== false && data.gallery && data.gallery.length) sections.push('Gallery');
-    if (data.showMaps !== false && (data.mapsUrl || data.address)) sections.push('Directions');
-    if (data.showRsvp !== false) sections.push('RSVP');
+    if (data.showMaps !== false && (data.mapsUrl || data.address)) sections.push('View Location');
 
     return [
       ['Occasion', IH.invitation.EVENT_TYPES[data.eventType] ? IH.invitation.EVENT_TYPES[data.eventType].label : 'Event'],
@@ -861,6 +868,10 @@
         if (hostHintNode) hostHintNode.textContent = hostHint;
       }
 
+      if (name === 'email' && on) {
+        input.setAttribute('data-required-message', 'Please enter your email address so we can send the payment confirmation.');
+      }
+
       if (name === 'years' && on) {
         var yearsHint = type === 'birthday'
           ? 'The age the birthday is celebrating — leave blank if you would rather not share it.'
@@ -1148,7 +1159,7 @@
       });
     });
 
-    ['showCountdown', 'showRsvp', 'showMaps', 'showGallery'].forEach(function (name) {
+    ['showCountdown', 'showMaps', 'showGallery'].forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       on(input, 'change', function () {
         state[name] = input.checked;
@@ -1456,7 +1467,7 @@
       var input = qs('[name="' + name + '"]', root);
       if (input) input.value = state[name];
     });
-    ['showCountdown', 'showRsvp', 'showMaps', 'showGallery'].forEach(function (name) {
+    ['showCountdown', 'showMaps', 'showGallery'].forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       if (input) input.checked = !!state[name];
     });
@@ -1615,6 +1626,358 @@
      9. Device switch on the preview column + reset/finish actions
      ------------------------------------------------------------------ */
 
+  var hostedPreviewBound = false;
+  var hostedPreviewIframe = null;
+
+  /* ------------------------------------------------------------------
+     JPG Download button loading state helpers
+     ------------------------------------------------------------------ */
+  function setJpgDownloadLoading(isLoading) {
+    var btn = qs('[data-draft-download-jpg]', root);
+    if (!btn) return;
+
+    if (isLoading) {
+      btn.classList.add('is-loading');
+      btn.setAttribute('aria-busy', 'true');
+      btn.setAttribute('aria-disabled', 'true');
+      btn.disabled = true;
+      // Change button text to "Downloading JPG..."
+      var btnText = btn.querySelector('.btn-text');
+      if (btnText) btnText.textContent = 'Downloading JPG...';
+    } else {
+      btn.classList.remove('is-loading');
+      btn.removeAttribute('aria-busy');
+      btn.removeAttribute('aria-disabled');
+      btn.disabled = false;
+      // Restore original button text
+      var btnText = btn.querySelector('.btn-text');
+      if (btnText) btnText.textContent = 'Download JPG';
+    }
+  }
+
+  /* ------------------------------------------------------------------
+     Download JPG — captures the Mobile invitation as a high-quality JPG.
+     Always uses the Mobile Preview dimensions (340px) regardless of which device tab is selected.
+     If the mobile invitation is already rendered in the Live Preview, clones it.
+     Otherwise, renders the mobile invitation off-screen temporarily.
+     ------------------------------------------------------------------ */
+  function downloadInvitationAsJPG() {
+    var btn = qs('[data-draft-download-jpg]', root);
+    // Prevent multiple clicks
+    if (!btn || btn.disabled || btn.classList.contains('is-loading')) return;
+
+    setJpgDownloadLoading(true);
+
+    var data = previewData();
+    var previewStage = qs('.preview-stage[data-device="mobile"]', root);
+    var source = null;
+    var tempContainer = null;
+    var tempStage = null;
+    var tempMountPoint = null;
+    var captureRoot = null;
+
+    try {
+      // Check if mobile invitation is already rendered in the Live Preview
+      if (previewStage) {
+        source = previewStage.querySelector('.invitation');
+      }
+
+      // If not rendered (e.g., user is on Desktop/Hosted tab), render it off-screen temporarily
+      if (!source) {
+        tempContainer = document.createElement('div');
+        tempContainer.style.position = 'fixed';
+        tempContainer.style.left = '-100000px';
+        tempContainer.style.top = '0';
+        tempContainer.style.width = '340px';
+        tempContainer.style.zIndex = '-1';
+        tempContainer.style.pointerEvents = 'none';
+        tempContainer.style.opacity = '0';
+
+        tempStage = document.createElement('div');
+        tempStage.className = 'preview-stage';
+        tempStage.setAttribute('data-device', 'mobile');
+        tempStage.style.width = '340px';
+        tempStage.style.minHeight = 'auto';
+        tempStage.style.padding = '0';
+        tempStage.style.border = 'none';
+        tempStage.style.background = 'transparent';
+        tempStage.style.overflow = 'visible';
+        tempStage.style.boxShadow = 'none';
+
+        tempMountPoint = document.createElement('div');
+        tempMountPoint.setAttribute('data-create-preview', '');
+        tempMountPoint.style.width = '100%';
+
+        tempStage.appendChild(tempMountPoint);
+        tempContainer.appendChild(tempStage);
+        document.body.appendChild(tempContainer);
+
+        // Render the mobile invitation
+        IH.invitation.mount(tempMountPoint, data);
+        source = tempMountPoint.querySelector('.invitation');
+
+        if (!source) {
+          throw new Error('Failed to render invitation for download.');
+        }
+      }
+
+      // Get source dimensions for the capture
+      var rect = source.getBoundingClientRect();
+      var width = Math.ceil(source.scrollWidth || rect.width);
+      var height = Math.ceil(source.scrollHeight || rect.height);
+
+      // Create an invisible off-screen capture container
+      captureRoot = document.createElement('div');
+      captureRoot.style.position = 'fixed';
+      captureRoot.style.left = '-100000px';
+      captureRoot.style.top = '0';
+      captureRoot.style.width = width + 'px';
+      captureRoot.style.height = height + 'px';
+      captureRoot.style.background = 'transparent';
+      captureRoot.style.pointerEvents = 'none';
+      captureRoot.style.zIndex = '-1';
+      captureRoot.style.overflow = 'visible';
+
+      // Clone the invitation
+      var clone = source.cloneNode(true);
+      captureRoot.appendChild(clone);
+      document.body.appendChild(captureRoot);
+
+      // Clean up temporary rendering container if we created one
+      if (tempContainer && tempContainer.parentNode) {
+        tempContainer.remove();
+        tempContainer = null;
+      }
+
+      // Helper to copy all computed styles from source to clone recursively
+      function copyComputedStyles(sourceNode, cloneNode) {
+        var computed = window.getComputedStyle(sourceNode);
+        for (var i = 0; i < computed.length; i++) {
+          var property = computed[i];
+          var value = computed.getPropertyValue(property);
+          var priority = computed.getPropertyPriority(property);
+          if (value) {
+            cloneNode.style.setProperty(property, value, priority);
+          }
+        }
+        // Recursively copy styles for all children
+        var sourceChildren = sourceNode.children;
+        var cloneChildren = cloneNode.children;
+        for (var j = 0; j < sourceChildren.length; j++) {
+          if (cloneChildren[j]) {
+            copyComputedStyles(sourceChildren[j], cloneChildren[j]);
+          }
+        }
+      }
+
+      // Apply computed styles to the clone so html2canvas captures resolved values
+      copyComputedStyles(source, clone);
+
+      // Wait for fonts
+      function waitForFonts() {
+        return document.fonts ? document.fonts.ready : Promise.resolve();
+      }
+
+      // Wait for all images in the clone to load
+      function waitForImages(root) {
+        var images = root.querySelectorAll('img');
+        var promises = [];
+        for (var k = 0; k < images.length; k++) {
+          var img = images[k];
+          if (!img.complete || img.naturalWidth === 0) {
+            promises.push(new Promise(function (resolve) {
+              img.addEventListener('load', resolve, { once: true });
+              img.addEventListener('error', resolve, { once: true });
+            }));
+          }
+          if (img.decode) {
+            promises.push(img.decode().catch(function () {}));
+          }
+        }
+        return Promise.all(promises);
+      }
+
+      // Ensure html2canvas is loaded
+      function ensureHtml2Canvas() {
+        if (typeof html2canvas !== 'undefined') {
+          return Promise.resolve();
+        }
+        return loadHtml2Canvas();
+      }
+
+      // Do the capture
+      function doCapture() {
+        return html2canvas(clone, {
+          backgroundColor: null,
+          useCORS: true,
+          allowTaint: false,
+          logging: false,
+          scale: 2,
+          width: width,
+          height: height,
+          windowWidth: width,
+          windowHeight: height,
+          scrollX: 0,
+          scrollY: 0,
+          imageTimeout: 15000
+        });
+      }
+
+      // Generate filename
+      var data2 = previewData();
+      var fileName = IH.exportPage.buildInvitationFilename(data2).replace(/\.html$/, '.jpg');
+
+      // Execute capture pipeline
+      var promise = Promise.all([waitForFonts(), waitForImages(clone), ensureHtml2Canvas()])
+        .then(function () {
+          // Wait for browser paint
+          return new Promise(function (resolve) { requestAnimationFrame(resolve); })
+            .then(function () { return new Promise(function (resolve) { requestAnimationFrame(resolve); }); })
+            .then(function () { return new Promise(function (resolve) { setTimeout(resolve, 100); }); });
+        })
+        .then(doCapture)
+        .then(function (canvas) {
+          var blobPromise = new Promise(function (resolve) {
+            canvas.toBlob(resolve, 'image/jpeg', 0.95);
+          });
+          return blobPromise.then(function (blob) {
+            if (!blob) throw new Error('Could not create JPG');
+            return blob;
+          });
+        })
+        .then(function (blob) {
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = fileName;
+          a.style.display = 'none';
+          a.rel = 'noopener';
+          document.body.appendChild(a);
+          // Use setTimeout to ensure the anchor is in the DOM before clicking
+          setTimeout(function () {
+            a.click();
+            a.remove();
+            setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+            IH.toast.success('Invitation downloaded as JPG.');
+          }, 0);
+        })
+        .catch(function (err) {
+          console.error('[create] Invitation JPG capture failed:', err);
+          IH.toast.error('Unable to download the invitation image. Please try again.');
+        })
+        .finally(function () {
+          // Always clean up - this runs AFTER the entire Promise chain completes
+          if (captureRoot && captureRoot.parentNode) {
+            captureRoot.remove();
+          }
+          if (tempContainer && tempContainer.parentNode) {
+            tempContainer.remove();
+          }
+          // Always restore button state
+          setJpgDownloadLoading(false);
+        });
+
+      return promise;
+    } catch (err) {
+      // Synchronous errors (e.g., failed to render invitation)
+      console.error('[create] Invitation JPG capture failed:', err);
+      IH.toast.error('Unable to download the invitation image. Please try again.');
+      // Clean up on synchronous error
+      if (captureRoot && captureRoot.parentNode) {
+        captureRoot.remove();
+      }
+      if (tempContainer && tempContainer.parentNode) {
+        tempContainer.remove();
+      }
+      setJpgDownloadLoading(false);
+    }
+  }
+
+  // html2canvas is loaded via <script defer> in create.html.
+  // This function waits for it to be available (handles case where user clicks before defer script executes).
+  function loadHtml2Canvas() {
+    return new Promise(function (resolve, reject) {
+      if (typeof html2canvas !== 'undefined') {
+        resolve();
+        return;
+      }
+      // Wait for the defer script to load
+      var checkReady = setInterval(function () {
+        if (typeof html2canvas !== 'undefined') {
+          clearInterval(checkReady);
+          resolve();
+        }
+      }, 50);
+      // Timeout fallback
+      setTimeout(function () {
+        clearInterval(checkReady);
+        if (typeof html2canvas === 'undefined') {
+          reject(new Error('html2canvas failed to load'));
+        }
+      }, 5000);
+    });
+  }
+
+  function renderHostedPreview() {
+    var stage = qs('.preview-stage', root);
+    var container = qs('[data-create-preview]', root);
+    if (!stage || !container) return;
+
+    // Only render hosted preview when hosted mode is active
+    if (stage.getAttribute('data-device') !== 'hosted') return;
+
+    // Generate the hosted page HTML using the same logic as publishing
+    var data = previewData();
+    if (!data) return;
+
+    var html = '';
+    try {
+      html = IH.exportPage.buildHtml(data, {
+        up: '../',  // Path to site root for fonts, images, js
+        skipMainJs: true,  // Skip loading main.js to avoid navigation conflicts in iframe
+        forIframePreview: true,  // Use data-href instead of href to prevent iframe navigation
+        // No canonical or image needed for preview
+      });
+    } catch (err) {
+      console.error('[create] Failed to build hosted preview HTML:', err);
+      container.innerHTML = '<div class="preview-error" style="padding:2rem;text-align:center;color:var(--ink-muted)">' +
+        IH.icon('alert-circle', 48) +
+        '<p style="margin-top:1rem">Unable to generate hosted preview.</p>' +
+        '<p style="font-size:.85rem;margin-top:.5rem">' + escapeHtml(err.message) + '</p></div>';
+      return;
+    }
+
+    // Use srcdoc for the iframe content - it's isolated and doesn't trigger navigation
+    // Create or reuse iframe
+    if (!hostedPreviewIframe || !container.contains(hostedPreviewIframe)) {
+      hostedPreviewIframe = document.createElement('iframe');
+      hostedPreviewIframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-popups allow-presentation');
+      hostedPreviewIframe.setAttribute('allow', 'clipboard-read; clipboard-write');
+      hostedPreviewIframe.style.width = '100%';
+      hostedPreviewIframe.style.height = '100%';
+      hostedPreviewIframe.style.border = 'none';
+      hostedPreviewIframe.style.background = 'transparent';
+      hostedPreviewIframe.setAttribute('title', 'Hosted invitation preview');
+      container.innerHTML = '';
+      container.appendChild(hostedPreviewIframe);
+    }
+
+    // Write the HTML to the iframe
+    try {
+      hostedPreviewIframe.srcdoc = html;
+    } catch (err) {
+      // Fallback for browsers that might have issues with srcdoc
+      console.warn('[create] srcdoc failed, trying blob URL:', err);
+      var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+      var blobUrl = URL.createObjectURL(blob);
+      hostedPreviewIframe.src = blobUrl;
+      // Revoke after a delay to ensure it loads
+      setTimeout(function () { URL.revokeObjectURL(blobUrl); }, 5000);
+    }
+  }
+
+  var renderHostedPreviewDebounced = dom.debounce(renderHostedPreview, 200);
+
   function initPreviewColumn() {
     var stage = qs('.preview-stage', root);
     qsa('[data-preview-device]', root).forEach(function (btn) {
@@ -1624,6 +1987,25 @@
         qsa('[data-preview-device]', root).forEach(function (other) {
           other.setAttribute('aria-pressed', other === btn ? 'true' : 'false');
         });
+
+        // Handle hosted preview mode
+        if (mode === 'hosted') {
+          // Hide the regular card preview, show iframe
+          var container = qs('[data-create-preview]', root);
+          if (container) {
+            // Clear any existing card preview content
+            container.innerHTML = '';
+          }
+          renderHostedPreviewDebounced();
+        } else {
+          // Mobile/Desktop mode - use regular card preview
+          var container = qs('[data-create-preview]', root);
+          if (container) {
+            container.innerHTML = '';
+            // Re-render the card preview
+            renderPreview();
+          }
+        }
       });
     });
 
@@ -1643,15 +2025,17 @@
       IH.toast.info('Draft cleared. Starting fresh.');
     });
 
-    on(qs('[data-draft-print]', root), 'click', function () { window.print(); });
-  }
+    on(qs('[data-draft-download-jpg]', root), 'click', function () {
+      downloadInvitationAsJPG();
+    });
+  } // close initPreviewColumn
 
   /* ------------------------------------------------------------------
      10. Hosting — the single ₹99 plan
      ------------------------------------------------------------------ */
 
   var HOSTING_PRODUCT = 'online-invitation-hosting';
-  var HOSTING_AMOUNT = 9900;   // paise — decided on the server, never trusted from here
+  var HOSTING_AMOUNT = 100;   // paise — decided on the server, never trusted from here
 
   /* Paint the hosting status on the hosting step. Before payment the
      invitation is "Not hosted yet"; after a successful ₹99 payment and
@@ -1790,7 +2174,7 @@
             key: order.keyId,
             amount: order.amount,
             currency: order.currency,
-            name: 'InviteHub',
+            name: 'InviteAura',
             description: 'Online Invitation Hosting — ₹99',
             order_id: order.orderId,
             prefill: {
@@ -1995,7 +2379,7 @@
       applyFieldRules();
       syncInputs();
     } catch (err) {
-      if (window.console) console.error('InviteHub: the editor did not fully start —', err);
+      if (window.console) console.error('InviteAura: the editor did not fully start —', err);
       if (IH.toast) {
         IH.toast.error('Part of the editor did not load. A hard refresh (Ctrl+F5) usually fixes it.',
           { title: 'Something went wrong' });
