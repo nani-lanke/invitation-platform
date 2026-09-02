@@ -1,0 +1,84 @@
+[
+  {
+    "sha": "6020386bbeed60ad68e675fdcaa6220e292fd35a",
+    "node_id": "C_kwDOAB9geNoAKDYwMjAzODZiYmVlZDYwYWQ2OGU2NzVmZGNhYTYyMjBlMjkyZmQzNWE",
+    "commit": {
+      "author": {
+        "name": "Niklas von Hertzen",
+        "email": "niklasvh@gmail.com",
+        "date": "2022-01-22T16:27:44Z"
+      },
+      "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "date": "2022-01-22T16:27:44Z"
+      },
+      "message": "examples: fix duplication (#2813)",
+      "tree": {
+        "sha": "087c29f405703df8bb69614de0c05f4174e877d6",
+        "url": "https://api.github.com/repos/niklasvh/html2canvas/git/trees/087c29f405703df8bb69614de0c05f4174e877d6"
+      },
+      "url": "https://api.github.com/repos/niklasvh/html2canvas/git/commits/6020386bbeed60ad68e675fdcaa6220e292fd35a",
+      "comment_count": 0,
+      "verification": {
+        "verified": true,
+        "reason": "valid",
+        "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh7DCACRBK7hj4Ov3rIwAA8hUIAJmE61LRSaW0AX2obBZhYqjo\nG3QyMu+qhOLe/zy6aoVOmRIH+7ywcYbHxV0R5RS4Wapz+Hoc37qOh3W3KBhe2lt2\nVioxEsRi2ezNkDSKZWZUUNeXhKcbDoRqnoKix3ljiUhd1O1wy6DnSueuMNBZVbvL\n2TPMa5Do39CMOn3yVmUJubnxst5TCDWFbXIQWk/kd9VGtwxWbcaNOs0ndElXBk5h\nDoOIHK75ZoZccJgwtlhv2C6Gy7UjJ1YVJUkeuqMaug2RITPxwSc5JmtQjWaEQatD\n1uJA0xqTV9iQSbR2VgG3hhxIg4GBIBJ4mFBLDkwg/5lLFk9kuWhqiYFeTAKhrdU=\n=e924\n-----END PGP SIGNATURE-----\n",
+        "payload": "tree 087c29f405703df8bb69614de0c05f4174e877d6\nparent f7c2289db1eb66097ad3278c1e9ee8a5be95ea14\nauthor Niklas von Hertzen <niklasvh@gmail.com> 1642868864 +0800\ncommitter GitHub <noreply@github.com> 1642868864 +0800\n\nexamples: fix duplication (#2813)\n\n",
+        "verified_at": "2024-01-16T19:59:59Z"
+      }
+    },
+    "url": "https://api.github.com/repos/niklasvh/html2canvas/commits/6020386bbeed60ad68e675fdcaa6220e292fd35a",
+    "html_url": "https://github.com/niklasvh/html2canvas/commit/6020386bbeed60ad68e675fdcaa6220e292fd35a",
+    "comments_url": "https://api.github.com/repos/niklasvh/html2canvas/commits/6020386bbeed60ad68e675fdcaa6220e292fd35a/comments",
+    "author": {
+      "login": "niklasvh",
+      "id": 551347,
+      "node_id": "MDQ6VXNlcjU1MTM0Nw==",
+      "avatar_url": "https://avatars.githubusercontent.com/u/551347?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/niklasvh",
+      "html_url": "https://github.com/niklasvh",
+      "followers_url": "https://api.github.com/users/niklasvh/followers",
+      "following_url": "https://api.github.com/users/niklasvh/following{/other_user}",
+      "gists_url": "https://api.github.com/users/niklasvh/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/niklasvh/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/niklasvh/subscriptions",
+      "organizations_url": "https://api.github.com/users/niklasvh/orgs",
+      "repos_url": "https://api.github.com/users/niklasvh/repos",
+      "events_url": "https://api.github.com/users/niklasvh/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/niklasvh/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "web-flow",
+      "id": 19864447,
+      "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/web-flow",
+      "html_url": "https://github.com/web-flow",
+      "followers_url": "https://api.github.com/users/web-flow/followers",
+      "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+      "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+      "organizations_url": "https://api.github.com/users/web-flow/orgs",
+      "repos_url": "https://api.github.com/users/web-flow/repos",
+      "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/web-flow/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "f7c2289db1eb66097ad3278c1e9ee8a5be95ea14",
+        "url": "https://api.github.com/repos/niklasvh/html2canvas/commits/f7c2289db1eb66097ad3278c1e9ee8a5be95ea14",
+        "html_url": "https://github.com/niklasvh/html2canvas/commit/f7c2289db1eb66097ad3278c1e9ee8a5be95ea14"
+      }
+    ]
+  }
+]

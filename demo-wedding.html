@@ -12,7 +12,7 @@
 <meta property="og:description" content="With the blessings of our families, we invite you to share in our joy.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Marcellus&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap">
 
 <style>
@@ -333,35 +333,6 @@ button{cursor:pointer}
 .lb__next{right:1rem;top:50%;translate:0 -50%}
 
 /* ══════════════════════════════════════════════════════════════════
-   8 · RSVP FORM
-   ══════════════════════════════════════════════════════════════════ */
-.rsvp__card{
-  max-width:560px;margin-inline:auto;background:var(--ivory);
-  border:1px solid var(--line);padding:clamp(1.6rem,5vw,2.6rem);
-  box-shadow:0 18px 46px rgba(122,18,48,.07);
-}
-.field{margin-bottom:1.15rem}
-.field label{
-  display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--muted);margin-bottom:.45rem;
-}
-.field input,.field select,.field textarea{
-  width:100%;padding:.72rem .85rem;background:var(--parchment);
-  border:1px solid var(--line);border-radius:0;font-family:var(--serif);font-size:1.02rem;
-  transition:border-color .3s,background .3s;
-}
-.field input:focus,.field select:focus,.field textarea:focus{
-  background:var(--ivory);border-color:var(--gold);outline:none;
-}
-.field textarea{resize:vertical;min-height:88px}
-.field--split{display:grid;gap:1.15rem;grid-template-columns:1fr 1fr}
-@media (max-width:520px){.field--split{grid-template-columns:1fr}}
-.field__err{display:block;color:var(--maroon-soft);font-size:.76rem;letter-spacing:.04em;margin-top:.35rem;min-height:1.1em}
-.rsvp__submit{width:100%;margin-top:.4rem}
-.rsvp__alt{text-align:center;font-family:var(--serif);color:var(--muted);margin:1.5rem 0 0;font-size:.99rem}
-.rsvp__alt a{color:var(--maroon)}
-
-/* ══════════════════════════════════════════════════════════════════
    9 · FOOTER
    ══════════════════════════════════════════════════════════════════ */
 .foot{background:var(--maroon);color:var(--ivory);text-align:center;padding:3.4rem 1.25rem 2.4rem}
@@ -418,7 +389,7 @@ button{cursor:pointer}
 }
 
 @media print{
-  .nav,.fab,.hero__scroll,.petals,.lb,.btn,.rsvp__card form{display:none!important}
+  .nav,.fab,.hero__scroll,.petals,.lb,.btn{display:none!important}
   body{background:#fff}
   .hero{min-height:auto;background:#fff}
   .hero__frame{box-shadow:none;border-color:#999}
@@ -438,7 +409,6 @@ button{cursor:pointer}
       <li><a href="#events">Events</a></li>
       <li><a href="#countdown">Countdown</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#rsvp">RSVP</a></li>
     </ul>
     <button class="nav__burger" type="button" id="burger" aria-expanded="false" aria-controls="navList" aria-label="Open menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
@@ -502,7 +472,6 @@ button{cursor:pointer}
 
       <div class="hero__cta">
         <a class="btn btn--solid" href="#events"><span>View Invitation</span></a>
-        <a class="btn" href="#rsvp"><span>RSVP</span></a>
       </div>
     </div>
 
@@ -576,57 +545,6 @@ button{cursor:pointer}
     </div>
   </section>
 
-  <!-- ═════════ RSVP ═════════ -->
-  <section class="section dotted" id="rsvp">
-    <div class="wrap">
-      <p class="eyebrow reveal">Kindly respond</p>
-      <h2 class="s-title reveal">Will You Join Us?</h2>
-      <svg class="divider reveal" viewBox="0 0 130 18" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
-        <path d="M0 9h44M86 9h44"/>
-        <path d="M65 2c5 4 7 5 7 7s-2 3-7 7c-5-4-7-5-7-7s2-3 7-7z"/>
-        <circle cx="52" cy="9" r="1.7" fill="currentColor" stroke="none"/>
-        <circle cx="78" cy="9" r="1.7" fill="currentColor" stroke="none"/>
-      </svg>
-      <p class="lede reveal">Your presence is the blessing we are looking forward to the most.</p>
-
-      <div class="rsvp__card reveal">
-        <form id="rsvpForm" novalidate>
-          <div class="field">
-            <label for="rName">Your name</label>
-            <input id="rName" name="name" type="text" autocomplete="name" required aria-describedby="rNameErr">
-            <span class="field__err" id="rNameErr" role="alert"></span>
-          </div>
-
-          <div class="field--split">
-            <div class="field">
-              <label for="rAttend">Will you attend?</label>
-              <select id="rAttend" name="attending">
-                <option value="Joyfully accepts">Joyfully accepts</option>
-                <option value="Regretfully declines">Regretfully declines</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="rGuests">Number of guests</label>
-              <input id="rGuests" name="guests" type="number" min="1" max="20" value="1" inputmode="numeric">
-            </div>
-          </div>
-
-          <div class="field">
-            <label for="rMsg">A message for the couple <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
-            <textarea id="rMsg" name="message" rows="3"></textarea>
-          </div>
-
-          <button class="btn btn--solid rsvp__submit" type="submit">
-            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20zm4.4-5.8c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.7.7-.9 1.6-.6 2.6.4 1.3 1.3 2.5 1.5 2.7 2 2.9 4 3.3 5.2 3.3.6 0 1.2-.2 1.6-.5.4-.3.7-.9.8-1.3 0-.2 0-.4-.2-.5z"/></svg>
-            <span>Send RSVP on WhatsApp</span>
-          </button>
-        </form>
-
-        <p class="rsvp__alt">Prefer to call? <a href="#" id="callLink" data-f="phoneText">0000000000</a></p>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <!-- ═════════ FOOTER ═════════ -->
@@ -636,7 +554,7 @@ button{cursor:pointer}
   </svg>
   <p class="foot__names"><span data-f="name1">Groom</span> &amp; <span data-f="name2">Bride</span></p>
   <p class="foot__thanks">Thank you for your love and blessings</p>
-  <p class="foot__made">Made on <a href="index.html">InviteHub</a></p>
+  <p class="foot__made">Made on <a href="index.html">InviteAura</a></p>
 </footer>
 
 <!-- ═════════ LIGHTBOX ═════════ -->
@@ -710,11 +628,6 @@ var CONFIG = {
       mapUrl:'https://maps.google.com/?q=Madurai' }
   ],
 
-  /* RSVP — international format, digits only, no + and no spaces */
-  whatsapp: '0000000000',
-  phone: '0000000000',
-  phoneText: '0000000000',
-
   /* Optional background music: put an mp3 in audio/ and name it here */
   music: ''
 };
@@ -743,7 +656,6 @@ var CONFIG = {
     name2: CONFIG.name2,
     blessing: CONFIG.blessing,
     place: CONFIG.place,
-    phoneText: CONFIG.phoneText,
     dateShort: valid ? when.getDate() + ' ' + MONTHS[when.getMonth()] : '',
     year: valid ? String(when.getFullYear()) : ''
   };
@@ -835,9 +747,9 @@ var CONFIG = {
     if (!valid) { return; }
     var end = new Date(when.getTime() + (CONFIG.durationHours || 2) * 3600000);
     var ics = [
-      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//InviteHub//Wedding//EN',
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//InviteAura//Wedding//EN',
       'BEGIN:VEVENT',
-      'UID:' + Date.now() + '@invitehub',
+      'UID:' + Date.now() + '@inviteaura',
       'DTSTAMP:' + icsStamp(new Date()),
       'DTSTART:' + icsStamp(when),
       'DTEND:' + icsStamp(end),
@@ -871,40 +783,6 @@ var CONFIG = {
     } else {
       window.prompt('Copy this invitation link:', line);
     }
-  });
-
-  /* ── RSVP → WhatsApp ───────────────────────────────────────────── */
-  qs('#callLink').href = 'tel:' + CONFIG.phone;
-
-  var form = qs('#rsvpForm'), nameInput = qs('#rName'), nameErr = qs('#rNameErr');
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var who = nameInput.value.trim();
-    if (!who) {
-      nameErr.textContent = 'Please tell us your name.';
-      nameInput.focus();
-      return;
-    }
-    nameErr.textContent = '';
-
-    var attending = qs('#rAttend').value;
-    var guests = qs('#rGuests').value || '1';
-    var note = qs('#rMsg').value.trim();
-
-    var lines = [
-      'RSVP for ' + pair + '\'s wedding',
-      'Name: ' + who,
-      'Response: ' + attending
-    ];
-    if (attending.indexOf('accept') > -1) { lines.push('Guests: ' + guests); }
-    if (note) { lines.push('Message: ' + note); }
-
-    window.open('https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
-  });
-
-  nameInput.addEventListener('input', function () {
-    if (nameInput.value.trim()) { nameErr.textContent = ''; }
   });
 
   /* ── Nav: stuck state, scroll-spy, mobile drawer ───────────────── */

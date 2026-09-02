@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Create Your Invitation — Live Editor | InviteHub</title>
+<title>Create Your Invitation — Live Editor | InviteAura</title>
 <meta name="description" content="Build a digital invitation in six steps: choose the event, add your details, upload photos, pick colours and fonts, then create it free and publish online for ₹99. Everything stays in your browser — nothing is uploaded.">
 <meta name="keywords" content="create invitation online, invitation maker, custom wedding invite, birthday invitation editor, digital invite builder, free invitation creator">
 <meta name="theme-color" content="#FDFAFB">
-<link rel="canonical" href="https://invitehub.example.com/create.html">
+<link rel="canonical" href="https://inviteaura.example.com/create.html">
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="InviteHub">
-<meta property="og:title" content="Create Your Invitation — Live Editor | InviteHub">
+<meta property="og:site_name" content="InviteAura">
+<meta property="og:title" content="Create Your Invitation — Live Editor | InviteAura">
 <meta property="og:description" content="Six steps from blank card to shareable invitation — create and download free, publish online for ₹99 — with a live preview beside every field.">
-<meta property="og:url" content="https://invitehub.example.com/create.html">
-<meta property="og:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+<meta property="og:url" content="https://inviteaura.example.com/create.html">
+<meta property="og:image" content="https://inviteaura.example.com/images/hero/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Create Your Invitation — Live Editor | InviteHub">
+<meta name="twitter:title" content="Create Your Invitation — Live Editor | InviteAura">
 <meta name="twitter:description" content="Six steps from blank card to shareable invitation — download free, publish online for ₹99.">
-<meta name="twitter:image" content="https://invitehub.example.com/images/hero/og-image.svg">
+<meta name="twitter:image" content="https://inviteaura.example.com/images/hero/og-image.svg">
 
-<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="images/logo/invitehub-mark.svg">
+<link rel="icon" href="images/logo/favicon.png" type="image/svg+xml">
+<link rel="apple-touch-icon" href="images/logo/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
 <link rel="stylesheet" href="css/animations.css">
 <link rel="stylesheet" href="css/responsive.css">
 
-<script>(function(){try{var s=JSON.parse(localStorage.getItem('invitehub:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
+<script>(function(){try{var s=JSON.parse(localStorage.getItem('inviteaura:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
 
 <script src="js/main.js" defer></script>
 <script src="js/templates.js" defer></script>
@@ -44,6 +44,7 @@
 <script src="js/export.js" defer></script>
 <script src="js/publish.js" defer></script>
 <script src="js/create.js" defer></script>
+<script src="js/html2canvas.min.js" defer></script>
 </head>
 <body>
 
@@ -52,12 +53,8 @@
 
 <header class="site-header">
   <nav class="nav container container--wide" aria-label="Main navigation">
-    <a class="nav__brand" href="index.html" aria-label="InviteHub home">
-      <img src="images/logo/invitehub-mark.svg" alt="" width="38" height="38" data-eager>
-      <span class="nav__brand-text">
-        <span class="nav__brand-name">Invite<span>Hub</span></span>
-        <span class="nav__brand-tag">Digital Invitations</span>
-      </span>
+    <a class="nav__brand" href="index.html" aria-label="InviteAura home">
+      <img src="images/logo/inviteaura-light.png" alt="InviteAura" class="nav__brand-logo" data-eager>
     </a>
     <ul class="nav__list" id="primary-nav">
       <li class="nav__drawer-close">
@@ -317,8 +314,8 @@
               </div>
 
               <div class="field">
-                <label class="field__label" for="f-email">Contact email</label>
-                <input class="input" id="f-email" name="email" type="email" data-label="Contact email" placeholder="you@example.com" autocomplete="email">
+                <label class="field__label" for="f-email">Email Address <span class="req" data-req aria-hidden="true">*</span></label>
+                <input class="input" id="f-email" name="email" type="email" data-label="Email Address" placeholder="Enter your email address" autocomplete="email" required>
                 <p class="field__error" role="alert"></p>
               </div>
 
@@ -455,7 +452,6 @@
             <div class="option-grid">
               <label class="option-tile"><input type="checkbox" name="showCountdown" checked><span class="option-tile__box"><i data-icon="clock" data-icon-size="28"></i><span>Countdown</span><small>Live timer</small></span></label>
               <label class="option-tile"><input type="checkbox" name="showMaps" checked><span class="option-tile__box"><i data-icon="map-pin" data-icon-size="28"></i><span>Directions</span><small>Google Maps</small></span></label>
-              <label class="option-tile"><input type="checkbox" name="showRsvp" checked><span class="option-tile__box"><i data-icon="user-check" data-icon-size="28"></i><span>RSVP</span><small>Guest replies</small></span></label>
               <label class="option-tile"><input type="checkbox" name="showGallery" checked><span class="option-tile__box"><i data-icon="image" data-icon-size="28"></i><span>Gallery</span><small>Your photos</small></span></label>
             </div>
           </section>
@@ -665,6 +661,7 @@
             <div class="device-switch" role="group" aria-label="Preview device">
               <button type="button" data-preview-device="mobile" aria-pressed="true" aria-label="Preview on mobile" title="Mobile"><i data-icon="smartphone" data-icon-size="17"></i></button>
               <button type="button" data-preview-device="desktop" aria-pressed="false" aria-label="Preview on desktop" title="Desktop"><i data-icon="monitor" data-icon-size="17"></i></button>
+              <button type="button" data-preview-device="hosted" aria-pressed="false" aria-label="Preview hosted page" title="Hosted Page"><i data-icon="external-link" data-icon-size="17"></i></button>
             </div>
           </div>
 
@@ -675,7 +672,7 @@
           <p class="muted center" style="font-size:.76rem;margin-top:var(--space-3)" data-draft-stamp>Draft saves automatically in this browser</p>
 
           <div class="btn-group" style="margin-top:var(--space-4);justify-content:center">
-            <button class="btn btn--ghost btn--sm" type="button" data-draft-print><i data-icon="download" data-icon-size="16"></i><span>Print / Save PDF</span></button>
+            <button class="btn btn--ghost btn--sm" type="button" data-draft-download-jpg><i data-icon="image" data-icon-size="16"></i><span class="btn-text">Download JPG</span><span class="jpg-download-spinner" aria-hidden="true"></span></button>
             <button class="btn btn--ghost btn--sm" type="button" data-draft-reset><i data-icon="trash" data-icon-size="16"></i><span>Start over</span></button>
           </div>
         </aside>
@@ -700,16 +697,15 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="footer-brand__logo" href="index.html">
-          <img src="images/logo/invitehub-mark.svg" alt="" width="40" height="40" loading="lazy">
-          <span>Invite<em>Hub</em></span>
+          <img src="images/logo/inviteaura-light.png" alt="InviteAura" class="footer-brand__logo-img" loading="lazy">
         </a>
         <p>Beautiful digital invitations for every special moment.</p>
         <div class="social-row">
-          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteHub on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
-          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteHub on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
-          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteHub on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
-          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteHub on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
-          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteHub on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
+          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteAura on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
+          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteAura on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
+          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteAura on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
+          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteAura on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
+          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteAura on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
         </div>
       </div>
       <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
@@ -717,7 +713,7 @@
       <div class="footer-col"><h3>Company</h3><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span data-year>2026</span> InviteHub. All rights reserved.</p>
+      <p>&copy; <span data-year>2026</span> InviteAura. All rights reserved.</p>
       <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
     </div>
   </div>

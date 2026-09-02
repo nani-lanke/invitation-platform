@@ -36,7 +36,7 @@
     date: 'd', time: 'tm', venue: 'v', address: 'a', mapsUrl: 'm',
     phone: 'ph', email: 'em', message: 'ms', additionalInformation: 'ai',
     font: 'f', colors: 'c', customColors: 'cc', animation: 'an',
-    showCountdown: 'sc', showRsvp: 'sr', showMaps: 'sm', showGallery: 'sg',
+    showCountdown: 'sc', showMaps: 'sm', showGallery: 'sg',
     photo: 'pt', background: 'bg', gallery: 'gl', musicFile: 'mf'
   };
 
@@ -111,7 +111,7 @@
 
   function build(state) {
     // Resolved against the current page, so it is correct both locally and
-    // under a GitHub Pages subpath (…/InviteHub/i.html).
+    // under a GitHub Pages subpath (…/InviteAura/i.html).
     var base = location.href.replace(/[^/]*(\?.*)?(#.*)?$/, '') + PAGE;
     return base + '#' + encode(state);
   }

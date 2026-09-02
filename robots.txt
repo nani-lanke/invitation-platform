@@ -1,6 +1,6 @@
-# InviteHub — robots.txt
+# InviteAura — robots.txt
 # Replace the Sitemap host below with your own GitHub Pages URL, e.g.
-# https://username.github.io/InviteHub/sitemap.xml
+# https://username.github.io/InviteAura/sitemap.xml
 
 User-agent: *
 Allow: /
@@ -9,4 +9,4 @@ Allow: /
 Disallow: /css/
 Disallow: /js/
 
-Sitemap: https://invitehub.example.com/sitemap.xml
+Sitemap: https://inviteaura.example.com/sitemap.xml

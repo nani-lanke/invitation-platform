@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — preview.js
+   InviteAura — preview.js
    Two things live here:
      1. IH.invitation — the invitation renderer shared by the preview page,
         the preview modal and the live editor on create.html.
@@ -176,6 +176,21 @@
     });
   }
 
+  /**
+   * Generate Google Maps URL with priority: mapsUrl > address
+   * @param {Object} data - Invitation data containing mapsUrl, address
+   * @returns {string} Google Maps URL
+   */
+  function getMapsUrl(data) {
+    if (data.mapsUrl) {
+      return data.mapsUrl;
+    }
+    if (data.address) {
+      return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(data.address);
+    }
+    return '';
+  }
+
   /* Default demo content, used by the sample invitation and as editor seed. */
   var SAMPLE = {
     eventType: 'wedding',
@@ -198,7 +213,6 @@
     musicFile: '',
     font: 'playfair',
     showCountdown: true,
-    showRsvp: true,
     showMaps: true
   };
 
@@ -444,9 +458,12 @@
       }
 
       if (data.venue || data.address) {
+        var mapsUrl = getMapsUrl(data);
         html.push('<div class="invitation__venue">' +
-          (data.venue ? '<strong>' + escapeHtml(data.venue) + '</strong>' : '') +
-          (data.address ? '<span>' + escapeHtml(data.address) + '</span>' : '') +
+          (data.venue ? '<div class="invitation__venue-name"><strong>' + escapeHtml(data.venue) + '</strong></div>' : '') +
+          (data.address ? '<div class="invitation__venue-address">' + escapeHtml(data.address) + '</div>' : '') +
+          (mapsUrl ? '<a class="inv-btn inv-btn--outline inv-btn--sm invitation__maps-btn" href="' + escapeHtml(mapsUrl) + '" target="_blank" rel="noopener noreferrer">' +
+            IH.icon('map-pin', 14) + '<span>View Location</span></a>' : '') +
         '</div>');
       }
 
@@ -459,16 +476,17 @@
           '<p>' + escapeHtml(data.additionalInformation) + '</p></div>');
       }
 
+      /* Photo gallery — the invitation card shows up to six photos in a responsive
+         grid. The card preview is narrower, so it caps at three and the rest
+         are reachable by scrolling. Only the host's uploads appear. */
+      if (data.showGallery !== false && data.gallery && data.gallery.length) {
+        var items = data.gallery.slice(0, 6).map(function (src) {
+          return '<li><img src="' + escapeHtml(src) + '" alt="Gallery photo" loading="lazy"></li>';
+        }).join('');
+        html.push('<ul class="invitation__gallery">' + items + '</ul>');
+      }
+
       var actions = [];
-      if (data.showMaps !== false && (data.mapsUrl || data.address)) {
-        var mapHref = data.mapsUrl || ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(data.address));
-        actions.push('<a class="inv-btn inv-btn--solid" href="' + escapeHtml(mapHref) + '" target="_blank" rel="noopener noreferrer">' +
-          IH.icon('map-pin', 15) + '<span>Directions</span></a>');
-      }
-      if (data.showRsvp !== false) {
-        actions.push('<button class="inv-btn" type="button" data-soon="RSVP collection arrives with the full version of InviteHub.">' +
-          IH.icon('user-check', 15) + '<span>RSVP</span></button>');
-      }
       if (data.phone) {
         actions.push('<a class="inv-btn" href="tel:' + escapeHtml(String(data.phone).replace(/\s/g, '')) + '">' +
           IH.icon('phone', 15) + '<span>Call Host</span></a>');
@@ -493,7 +511,7 @@
         '</div>');
       }
 
-      html.push('<p class="invitation__footer">Created with InviteHub</p>');
+      html.push('<p class="invitation__footer">Created with InviteAura</p>');
 
       html.push('</article>');
       return html.join('');
@@ -813,9 +831,9 @@
       return;
     }
 
-    document.title = tpl.name + ' — Invitation Template Preview | InviteHub';
+    document.title = tpl.name + ' — Invitation Template Preview | InviteAura';
     var metaDesc = qs('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute('content', tpl.name + ' — ' + tpl.blurb + ' Preview and personalise it free on InviteHub.');
+    if (metaDesc) metaDesc.setAttribute('content', tpl.name + ' — ' + tpl.blurb + ' Preview and personalise it free on InviteAura.');
 
     wirePreviewControls(page);
     fillPreview(page, tpl);

@@ -1,4 +1,4 @@
-# InviteHub
+# InviteAura
 
 > Beautiful digital invitations for every special moment.
 
@@ -29,7 +29,7 @@ folder into a GitHub repository, switch on Pages, and it is live.
 
 ## What this is
 
-InviteHub replaces the printed invitation card with a living web page. A host picks a
+InviteAura replaces the printed invitation card with a living web page. A host picks a
 template, fills in the event details, adds photos, and gets a single link to send on
 WhatsApp. Guests open it in any browser — no app, no account, no download.
 
@@ -80,7 +80,7 @@ pieces can be added without redesigning the UI (see
   baby showers use an arch, corporate invites are left-aligned and structured,
   festivals get a radial glow. A birthday never looks like a wedding.
 - Ornamental SVG headers drawn per motif (floral, rings, cloud, lotus, laurel, …)
-- Live countdown, photo gallery, Google Maps directions, RSVP, call and share actions
+- Live countdown, photo gallery, Google Maps directions, call and share actions
 
 ### Sharing
 - Copy link, WhatsApp, Facebook, Telegram, Email, SMS and the native Web Share API
@@ -117,7 +117,7 @@ pieces can be added without redesigning the UI (see
 ## Folder structure
 
 ```
-InviteHub/
+InviteAura/
 ├── index.html              Landing page
 ├── templates.html          Searchable gallery of all 47 templates
 ├── categories.html         The 18 occasion categories
@@ -125,7 +125,7 @@ InviteHub/
 ├── i.html                  Guest-facing page: renders an invitation from its link
 ├── pricing.html            All seven duration plans
 ├── preview.html            Full-page template preview
-├── about.html              What InviteHub is and why
+├── about.html              What InviteAura is and why
 ├── faq.html                16 questions, searchable
 ├── privacy.html            Privacy Policy
 ├── terms.html              Terms & Conditions
@@ -201,7 +201,7 @@ files and never runs code. So a finished invitation is not written as a file
 anywhere — it becomes **a link that carries its own contents**:
 
 `
-https://USERNAME.github.io/InviteHub/i.html#eyJlIjoid2VkZGluZyIsImIiOiJTYW5k...
+https://USERNAME.github.io/InviteAura/i.html#eyJlIjoid2VkZGluZyIsImIiOiJTYW5k...
 `
 
 Everything the card needs is packed into the fragment after the #.
@@ -304,15 +304,6 @@ create table invitations (
   created_at timestamptz default now()
 );
 
-create table rsvps (
-  id uuid primary key default gen_random_uuid(),
-  invitation_id uuid references invitations(id) on delete cascade,
-  guest_name text not null,
-  attending boolean,
-  guests_count int default 1,
-  message text,
-  created_at timestamptz default now()
-);
 ```
 
 Because the editor already serialises its whole state to one object, `content jsonb`
@@ -327,7 +318,6 @@ can store it verbatim — no field-by-field mapping required.
 | Image storage | Supabase Storage; replace the `FileReader` result with an upload URL |
 | Automatic expiry | A scheduled function deleting rows and objects past `expires_at` |
 | Payments | Razorpay Checkout plus a webhook that sets `published_at` and `expires_at` |
-| RSVP | Insert into `rsvps`; the button already exists in the rendered card |
 | Admin dashboard | A new page listing the current user's `invitations` rows |
 
 **Nothing in `css/`, and nothing in the rendering code, needs to change.**
@@ -350,7 +340,7 @@ untinted colour.
 ## Licence
 
 Code is provided for you to use and adapt for your own project. The template artwork
-and the InviteHub name are part of this project — if you ship something publicly,
+and the InviteAura name are part of this project — if you ship something publicly,
 please use your own brand name and generate your own card designs.
 
 ---

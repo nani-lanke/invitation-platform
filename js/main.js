@@ -1,5 +1,5 @@
 /* ==========================================================================
-   InviteHub — main.js
+   InviteAura — main.js
    Shared runtime: theme, navigation, icons, toasts, modals, accordion,
    scroll reveal, back-to-top, generic form validation, storage helpers.
 
@@ -19,8 +19,8 @@
   window.IH = IH;
 
   IH.config = {
-    brand: 'InviteHub',
-    storagePrefix: 'invitehub:',
+    brand: 'InviteAura',
+    storagePrefix: 'inviteaura:',
     currency: '₹'
   };
 
@@ -259,6 +259,10 @@
         btn.setAttribute('title', value === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
       });
       if (persist !== false) IH.store.set(this.KEY, value);
+      // Update logo for dark/light mode
+      qsa('.nav__brand-logo, .footer-brand__logo-img').forEach(function (img) {
+        img.src = value === 'dark' ? 'images/logo/inviteaura-dark.png' : 'images/logo/inviteaura-light.png';
+      });
       document.dispatchEvent(new CustomEvent('ih:themechange', { detail: { theme: value } }));
     },
     toggle: function () { this.apply(this.get() === 'dark' ? 'light' : 'dark'); },
