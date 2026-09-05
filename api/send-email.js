@@ -72,7 +72,7 @@ function getSmtpConfig() {
   };
 }
 
-function buildEmailHtml(invitationUrl) {
+function buildEmailHtml(invitationUrl, invitationName) {
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -97,7 +97,7 @@ function buildEmailHtml(invitationUrl) {
           <tr>
             <td style="padding:40px 30px;">
               <p style="margin:0 0 16px;font-size:16px;color:#333;">Hello!</p>
-              <p style="margin:0 0 24px;font-size:16px;color:#333;">Congratulations! Your beautiful invitation has been successfully created with InviteAura.</p>
+              <p style="margin:0 0 24px;font-size:16px;color:#333;">Congratulations! Your beautiful invitation <strong>"${invitationName}"</strong> has been successfully created with InviteAura.</p>
               <p style="margin:0 0 24px;font-size:16px;color:#333;">Your invitation is now ready to share with your family and friends.</p>
 
               <!-- CTA Button -->
@@ -144,12 +144,12 @@ function buildEmailHtml(invitationUrl) {
 </html>`;
 }
 
-function buildEmailText(invitationUrl) {
+function buildEmailText(invitationUrl, invitationName) {
   return `Hello!
 
 Congratulations! 🎉
 
-Your beautiful invitation has been successfully created with InviteAura.
+Your beautiful invitation "${invitationName}" has been successfully created with InviteAura.
 
 Your invitation is now ready to share with your family and friends.
 
@@ -188,6 +188,7 @@ module.exports = async function handler(req, res) {
 
   const email = String(body && body.email || '').trim().toLowerCase();
   const invitationUrl = String(body && body.invitationUrl || '').trim();
+  const invitationName = String(body && body.invitationName || 'Your Invitation').trim();
 
   // Validate inputs
   if (!email || !validateEmail(email)) {
@@ -217,8 +218,8 @@ module.exports = async function handler(req, res) {
       from: smtp.from,
       to: email,
       subject: 'Your InviteAura Invitation is Ready! 🎉',
-      text: buildEmailText(invitationUrl),
-      html: buildEmailHtml(invitationUrl)
+      text: buildEmailText(invitationUrl, invitationName),
+      html: buildEmailHtml(invitationUrl, invitationName)
     });
 
     console.log('[send-email] Email sent successfully', {

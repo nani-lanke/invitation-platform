@@ -33,12 +33,12 @@ const MAX_BODY = 5 * 1024 * 1024;
 
 /* Send the invitation email via internal HTTP call to /api/send-email.
    This is fire-and-forget: email failure must not undo a successful publish. */
-async function sendInvitationEmail(invitationUrl, customerEmail) {
+async function sendInvitationEmail(invitationUrl, customerEmail, invitationName) {
   try {
     const res = await fetch(process.env.SITE_URL ? process.env.SITE_URL + 'api/send-email' : '/api/send-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: customerEmail, invitationUrl: invitationUrl })
+      body: JSON.stringify({ email: customerEmail, invitationUrl: invitationUrl, invitationName: invitationName })
     });
     const result = await res.json();
     if (result.success) {
@@ -48,6 +48,57 @@ async function sendInvitationEmail(invitationUrl, customerEmail) {
     }
   } catch (err) {
     console.error('[publish] Email send error (non-fatal):', { email: customerEmail, error: err.message });
+  }
+}
+
+/* Check if an email has already been sent for this payment to prevent duplicates.
+   Uses a simple in-memory set + GitHub registry check for durability across restarts. */
+const sentEmails = new Set();
+
+async function hasEmailBeenSent(paymentId) {
+  if (!paymentId) return false;
+
+  // Quick in-memory check
+  if (sentEmails.has(paymentId)) return true;
+
+  // Check GitHub registry for durability across restarts
+  try {
+    const index = await readIndex();
+    if (index.ok) {
+      const entry = index.entries.find(e => e.paymentId === paymentId);
+      if (entry && entry.emailSent === true) {
+        sentEmails.add(paymentId);
+        return true;
+      }
+    }
+  } catch (err) {
+    console.error('[publish] Error checking email sent status:', err.message);
+  }
+
+  return false;
+}
+
+async function markEmailSent(paymentId) {
+  if (!paymentId) return;
+
+  // Add to in-memory set
+  sentEmails.add(paymentId);
+
+  // Update GitHub registry for durability
+  try {
+    const index = await readIndex();
+    if (index.ok) {
+      const entry = index.entries.find(e => e.paymentId === paymentId);
+      if (entry) {
+        entry.emailSent = true;
+        await github.putFiles([{
+          path: INDEX,
+          content: Buffer.from(JSON.stringify(index.entries, null, 2), 'utf8').toString('base64')
+        }], 'Mark email sent for payment: ' + paymentId);
+      }
+    }
+  } catch (err) {
+    console.error('[publish] Error marking email as sent:', err.message);
   }
 }
 
@@ -389,11 +440,22 @@ module.exports = async function handler(req, res) {
     }
 
     /* Send invitation email to the customer (fire-and-forget).
-       Email failure must not undo the successful publication. */
-    if (state.email) {
-      sendInvitationEmail(publicUrl, state.email).catch(function (err) {
-        console.error('[publish] Email promise rejection (non-fatal):', err.message);
-      });
+       Email failure must not undo the successful publication.
+       Duplicate protection: only send once per payment. */
+    if (state.email && payment.paymentId) {
+      const alreadySent = await hasEmailBeenSent(payment.paymentId);
+      if (!alreadySent) {
+        const invitationName = IH.exportPage.personName(state) || state.title || 'Your Invitation';
+        sendInvitationEmail(publicUrl, state.email, invitationName).catch(function (err) {
+          console.error('[publish] Email promise rejection (non-fatal):', err.message);
+        });
+        // Mark as sent immediately to prevent race conditions
+        markEmailSent(payment.paymentId).catch(function (err) {
+          console.error('[publish] Mark email sent rejection (non-fatal):', err.message);
+        });
+      } else {
+        console.log('[publish] Email already sent for this payment, skipping', { paymentId: payment.paymentId });
+      }
     }
 
     return json(res, 201, {

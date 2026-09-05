@@ -1626,9 +1626,6 @@
      9. Device switch on the preview column + reset/finish actions
      ------------------------------------------------------------------ */
 
-  var hostedPreviewBound = false;
-  var hostedPreviewIframe = null;
-
   /* ------------------------------------------------------------------
      JPG Download button loading state helpers
      ------------------------------------------------------------------ */
@@ -1926,53 +1923,31 @@
     // Only render hosted preview when hosted mode is active
     if (stage.getAttribute('data-device') !== 'hosted') return;
 
-    // Generate the hosted page HTML using the same logic as publishing
+    // Generate the invitation data
     var data = previewData();
     if (!data) return;
 
-    var html = '';
+    // Render the FULL Host Page using exportPage.buildHtml (not the card renderer)
+    // The result is a complete HTML document, so we render it into an iframe
     try {
-      html = IH.exportPage.buildHtml(data, {
-        up: '../',  // Path to site root for fonts, images, js
-        skipMainJs: true,  // Skip loading main.js to avoid navigation conflicts in iframe
-        forIframePreview: true,  // Use data-href instead of href to prevent iframe navigation
-        // No canonical or image needed for preview
-      });
+      var html = IH.exportPage.buildHtml(data, { skipMainJs: true, up: '../' });
+      container.innerHTML = '';
+      var iframe = document.createElement('iframe');
+      iframe.style.width = '100%';
+      iframe.style.height = '100%';
+      iframe.style.border = 'none';
+      iframe.style.background = 'transparent';
+      iframe.sandbox = 'allow-scripts allow-same-origin allow-forms allow-popups';
+      container.appendChild(iframe);
+      iframe.contentDocument.open();
+      iframe.contentDocument.write(html);
+      iframe.contentDocument.close();
     } catch (err) {
-      console.error('[create] Failed to build hosted preview HTML:', err);
+      console.error('[create] Failed to render hosted preview:', err);
       container.innerHTML = '<div class="preview-error" style="padding:2rem;text-align:center;color:var(--ink-muted)">' +
         IH.icon('alert-circle', 48) +
         '<p style="margin-top:1rem">Unable to generate hosted preview.</p>' +
         '<p style="font-size:.85rem;margin-top:.5rem">' + escapeHtml(err.message) + '</p></div>';
-      return;
-    }
-
-    // Use srcdoc for the iframe content - it's isolated and doesn't trigger navigation
-    // Create or reuse iframe
-    if (!hostedPreviewIframe || !container.contains(hostedPreviewIframe)) {
-      hostedPreviewIframe = document.createElement('iframe');
-      hostedPreviewIframe.setAttribute('sandbox', 'allow-scripts allow-same-origin allow-forms allow-popups allow-presentation');
-      hostedPreviewIframe.setAttribute('allow', 'clipboard-read; clipboard-write');
-      hostedPreviewIframe.style.width = '100%';
-      hostedPreviewIframe.style.height = '100%';
-      hostedPreviewIframe.style.border = 'none';
-      hostedPreviewIframe.style.background = 'transparent';
-      hostedPreviewIframe.setAttribute('title', 'Hosted invitation preview');
-      container.innerHTML = '';
-      container.appendChild(hostedPreviewIframe);
-    }
-
-    // Write the HTML to the iframe
-    try {
-      hostedPreviewIframe.srcdoc = html;
-    } catch (err) {
-      // Fallback for browsers that might have issues with srcdoc
-      console.warn('[create] srcdoc failed, trying blob URL:', err);
-      var blob = new Blob([html], { type: 'text/html;charset=utf-8' });
-      var blobUrl = URL.createObjectURL(blob);
-      hostedPreviewIframe.src = blobUrl;
-      // Revoke after a delay to ensure it loads
-      setTimeout(function () { URL.revokeObjectURL(blobUrl); }, 5000);
     }
   }
 
@@ -1990,10 +1965,10 @@
 
         // Handle hosted preview mode
         if (mode === 'hosted') {
-          // Hide the regular card preview, show iframe
+          // Render full Host Page via exportPage.buildHtml into iframe
           var container = qs('[data-create-preview]', root);
           if (container) {
-            // Clear any existing card preview content
+            // Clear any existing content
             container.innerHTML = '';
           }
           renderHostedPreviewDebounced();

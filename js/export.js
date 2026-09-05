@@ -68,7 +68,7 @@
     if (raw.normalize) raw = raw.normalize('NFKD');
 
     var base = raw
-      .replace(/[\u0300-\u036f]/g, '')  // drop accents left behind by NFKD
+      .replace(/[̀-ͯ]/g, '')  // drop accents left behind by NFKD
       .replace(/&/g, ' ')
       .trim()
       .replace(/\s+/g, '_')
@@ -290,8 +290,7 @@
   }
 
   /* ------------------------------------------------------------------
-     2c. Website palette and copy — every value follows the invitation
-     data, never a hardcoded couple or date.
+     2c. Palette resolution — same as the card renderer uses
      ------------------------------------------------------------------ */
 
   /* '#RRGGBB' (or '#RGB') -> 'rgba(r,g,b,a)' so gradients can be built
@@ -327,7 +326,6 @@
       { label: 'Event', kicker: 'You are invited' };
   }
 
-  /* Short plain-text brand for the nav bar and footer. */
   function brandText(state) {
     var type = String(state.eventType || '');
     if (type === 'wedding' || type === 'engagement' || type === 'reception' || type === 'anniversary') {
@@ -338,20 +336,229 @@
     return String(state.personName || state.babyName || state.title || state.hostName || '').trim();
   }
 
-  function sectionTitle(eyebrow, heading, sub) {
-    var out = [
-      '<div class="site-title">',
-      '<p class="site-title__eyebrow">' + esc(eyebrow) + '</p>',
-      '<h2>' + esc(heading) + '</h2>'
-    ];
-    if (sub) out.push('<p>' + esc(sub) + '</p>');
-    out.push('</div>');
-    return out.join('');
+  /* ------------------------------------------------------------------
+     2d. The invitation card stylesheet (reused from css/style.css lines 1444-1804)
+     This mirrors the .invitation component exactly so the hosted page
+     matches the editor preview 1:1.
+     ------------------------------------------------------------------ */
+
+  function invitationCss(p) {
+    return [
+      ':root{',
+      '  --inv-p:' + p.primary + ';',
+      '  --inv-s:' + p.secondary + ';',
+      '  --inv-b1:' + p.bg1 + ';',
+      '  --inv-b2:' + p.bg2 + ';',
+      '  --inv-ink:' + p.ink + ';',
+      '  --inv-fd:' + p.display + ';',
+      '  --inv-fb:' + p.body + ';',
+      '}',
+      'html{scroll-behavior:smooth}',
+      'body{margin:0;font-family:var(--inv-fb);color:var(--inv-ink);background:linear-gradient(160deg,var(--inv-b1),var(--inv-b2));min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px;box-sizing:border-box}',
+      'img{max-width:100%;display:block}',
+      'a{text-decoration:none;color:inherit}',
+      'button{font:inherit;cursor:pointer}',
+      'h1,h2,h3{margin:0}',
+      '.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}',
+      '',
+      '/* Invitation card — identical to css/style.css .invitation component */',
+      '.invitation{',
+      '  --inv-primary:var(--inv-p);',
+      '  --inv-secondary:var(--inv-s);',
+      '  --inv-bg1:var(--inv-b1);',
+      '  --inv-bg2:var(--inv-b2);',
+      '  --inv-ink:var(--inv-ink);',
+      '  --inv-font-display:var(--inv-fd);',
+      '  --inv-font-body:var(--inv-fb);',
+      '',
+      '  position:relative;',
+      '  width:100%;',
+      '  max-width:420px;',
+      '  margin-inline:auto;',
+      '  padding:clamp(1.4rem,6%,2.5rem) clamp(1rem,4.5%,1.75rem) clamp(1.25rem,5%,2rem);',
+      '  border-radius:var(--r-xl,1rem);',
+      '  background:linear-gradient(160deg,var(--inv-bg1),var(--inv-bg2));',
+      '  color:var(--inv-ink);',
+      '  font-family:var(--inv-font-body);',
+      '  text-align:center;',
+      '  overflow:hidden;',
+      '  overflow-wrap:break-word;',
+      '  box-shadow:0 24px 48px -12px rgba(20,10,25,.25),0 0 0 1px rgba(139,47,88,.08);',
+      '  isolation:isolate;',
+      '  container-type:inline-size;',
+      '  container-name:invite;',
+      '}',
+      '',
+      '@supports not (container-type:inline-size){',
+      '  .invitation__ornament svg{width:clamp(46px,14vw,70px);height:clamp(46px,14vw,70px)}',
+      '  .invitation__kicker{font-size:clamp(.62rem,.56rem+.4vw,.74rem);letter-spacing:.2em;text-indent:.2em}',
+      '  .invitation__names{font-size:clamp(1.5rem,1rem+4.2vw,2.9rem)}',
+      '}',
+      '',
+      '.invitation::before{',
+      '  content:"";',
+      '  position:absolute;',
+      '  inset:clamp(9px,3.2cqi,14px);',
+      '  border:1px solid color-mix(in srgb,var(--inv-primary) 30%,transparent);',
+      '  border-radius:var(--r-lg,.75rem);',
+      '  pointer-events:none;',
+      '  z-index:0;',
+      '}',
+      '',
+      '.invitation>*{position:relative;z-index:1}',
+      '',
+      '.invitation__ornament{',
+      '  display:flex;',
+      '  justify-content:center;',
+      '  margin-bottom:clamp(.6rem,3.5cqi,1rem);',
+      '  color:var(--inv-secondary);',
+      '}',
+      '.invitation__ornament svg{',
+      '  width:clamp(46px,17cqi,70px);',
+      '  height:clamp(46px,17cqi,70px);',
+      '}',
+      '',
+      '.invitation__kicker{',
+      '  font-size:clamp(.6rem,3.1cqi,.74rem);',
+      '  font-weight:600;',
+      '  letter-spacing:clamp(.14em,.8cqi,.28em);',
+      '  text-indent:clamp(.14em,.8cqi,.28em);',
+      '  text-transform:uppercase;',
+      '  color:color-mix(in srgb,var(--inv-ink) 68%,transparent);',
+      '  margin-bottom:var(--space-3,1rem);',
+      '  max-width:100%;',
+      '  text-wrap:balance;',
+      '}',
+      '',
+      '.invitation__names{',
+      '  font-family:var(--inv-font-display);',
+      '  font-size:clamp(1.45rem,11cqi,2.9rem);',
+      '  font-weight:700;',
+      '  line-height:1.1;',
+      '  color:var(--inv-primary);',
+      '  margin-bottom:var(--space-3,1rem);',
+      '  max-width:100%;',
+      '  overflow-wrap:break-word;',
+      '  hyphens:auto;',
+      '  text-wrap:balance;',
+      '}',
+      '',
+      '.invitation__names .amp{display:block;font-family:var(--font-script,"Great Vibes",cursive);font-size:.62em;font-weight:400;color:var(--inv-secondary);line-height:1.4}',
+      '',
+      '.invitation__subhead{',
+      '  letter-spacing:clamp(.05em,.3cqi,.1em);',
+      '  text-indent:clamp(.05em,.3cqi,.1em);',
+      '}',
+      '',
+      '.invitation__rule{display:flex;align-items:center;justify-content:center;gap:10px;margin:var(--space-4,1.5rem) 0;color:var(--inv-secondary)}',
+      '.invitation__rule::before,.invitation__rule::after{content:"";height:1px;width:52px;background:currentColor;opacity:.55}',
+      '.invitation__rule svg{width:16px;height:16px}',
+      '',
+      '.invitation__message{font-size:.92rem;line-height:1.75;color:color-mix(in srgb,var(--inv-ink) 82%,transparent);margin-bottom:var(--space-5,2rem)}',
+      '',
+      '.invitation__when{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:var(--space-3,1rem);margin-bottom:var(--space-5,2rem)}',
+      '.invitation__when-date{font-family:var(--inv-font-display);font-size:1.55rem;font-weight:700;line-height:1.15;color:var(--inv-primary)}',
+      '.invitation__when-sep{width:1px;height:44px;background:color-mix(in srgb,var(--inv-primary) 30%,transparent)}',
+      '.invitation__when small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;opacity:.7}',
+      '',
+      '.invitation__venue{margin-bottom:var(--space-5,2rem);display:flex;flex-direction:column;gap:var(--space-3,1rem)}',
+      '.invitation__venue-name{font-family:var(--inv-font-display);font-size:1.15rem;color:var(--inv-primary)}',
+      '.invitation__venue-address{font-size:.85rem;opacity:.8}',
+      '.invitation__maps-btn{display:inline-flex;align-items:center;gap:var(--space-2,.5rem);padding:var(--space-2,.5rem) var(--space-3,.75rem);border-radius:var(--r-pill,999px);border:1px solid color-mix(in srgb,var(--inv-ink) 20%,transparent);background:transparent;color:var(--inv-primary);font-weight:600;font-size:.85rem;transition:all var(--t-fast,.15s) var(--ease,.25s)}',
+      '.invitation__maps-btn svg{width:14px;height:14px;flex-shrink:0}',
+      '.invitation__maps-btn:hover{background:color-mix(in srgb,var(--inv-primary) 12%,transparent);color:var(--inv-primary);border-color:var(--inv-primary)}',
+      '',
+      '.invitation__photo{width:128px;height:128px;margin:0 auto var(--space-4,1.5rem);border-radius:50%;object-fit:cover;border:3px solid color-mix(in srgb,var(--inv-secondary) 60%,transparent);box-shadow:0 12px 28px -12px rgba(0,0,0,.4)}',
+      '',
+      '.invitation__gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:var(--space-2,.5rem);margin-bottom:var(--space-5,2rem);padding:0 var(--space-2,.5rem);max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--inv-primary) transparent}',
+      '.invitation__gallery::-webkit-scrollbar{height:6px}',
+      '.invitation__gallery::-webkit-scrollbar-track{background:transparent}',
+      '.invitation__gallery::-webkit-scrollbar-thumb{background:var(--inv-primary);border-radius:var(--r-pill,999px)}',
+      '.invitation__gallery li{list-style:none}',
+      '.invitation__gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:var(--r-sm,.25rem);border:2px solid color-mix(in srgb,var(--inv-secondary) 40%,transparent);transition:transform var(--t-base,.2s) var(--ease,.25s),box-shadow var(--t-base,.2s) var(--ease,.25s)}',
+      '.invitation__gallery img:hover{transform:scale(1.05);box-shadow:0 8px 20px -8px rgba(0,0,0,.3);z-index:1}',
+      '',
+      '.invitation__music{display:grid;justify-items:center;gap:6px;margin-bottom:var(--space-5,2rem)}',
+      '.invitation__music audio{width:100%;max-width:320px;height:38px}',
+      '.invitation__music-name{font-size:.72rem;letter-spacing:.04em;opacity:.75;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}',
+      '',
+      '.inv-btn{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:9px 16px;border-radius:var(--r-pill,999px);border:1px solid color-mix(in srgb,var(--inv-primary) 40%,transparent);background:transparent;color:var(--inv-primary);font-size:.82rem;font-weight:600;text-decoration:none;transition:all var(--t-base,.2s) var(--ease,.25s)}',
+      '.inv-btn svg{width:15px;height:15px}',
+      '.inv-btn:hover{background:var(--inv-primary);color:var(--inv-bg1);transform:translateY(-2px)}',
+      '.inv-btn--solid{background:var(--inv-primary);color:var(--inv-bg1);border-color:transparent}',
+      '.inv-btn--solid:hover{filter:brightness(1.12)}',
+      '.inv-btn--outline{border-color:color-mix(in srgb,var(--inv-ink) 20%,transparent)}',
+      '.inv-btn--outline:hover{background:color-mix(in srgb,var(--inv-primary) 12%,transparent);border-color:var(--inv-primary)}',
+      '.inv-btn--sm{min-height:32px;padding:6px 12px;font-size:.8rem}',
+      '.inv-btn--sm svg{width:14px;height:14px}',
+      '',
+      '.invitation__actions{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}',
+      '.invitation__actions .inv-btn{/* Uses base .inv-btn styles */}',
+      '',
+      '.invitation__footer{margin-top:var(--space-5,2rem);padding-top:var(--space-4,1.5rem);border-top:1px solid color-mix(in srgb,var(--inv-primary) 18%,transparent);font-size:.75rem;opacity:.72}',
+      '',
+      '/* Per-event design variants */',
+      '.invitation--birthday{--inv-font-display:var(--inv-fb);border-radius:var(--r-2xl,1.5rem)}',
+      '.invitation--birthday::before{border-style:dashed;border-width:2px;border-radius:var(--r-xl,1rem)}',
+      '.invitation--birthday .invitation__names{letter-spacing:-.02em;text-transform:uppercase;font-weight:700}',
+      '.invitation--birthday .invitation__names .amp{text-transform:none}',
+      '.invitation--birthday .invitation__kicker{letter-spacing:.18em}',
+      '.invitation--birthday .invitation__when{border-radius:var(--r-lg,.75rem);background:color-mix(in srgb,var(--inv-primary) 8%,transparent);padding:var(--space-3,1rem)}',
+      '.invitation--birthday .invitation__countdown .cd-unit{border-radius:var(--r-lg,.75rem)}',
+      '',
+      '.invitation--baby-shower{border-radius:200px 200px var(--r-xl,1rem) var(--r-xl,1rem);padding-top:var(--space-8,4rem)}',
+      '.invitation--baby-shower::before{border-radius:190px 190px var(--r-lg,.75rem) var(--r-lg,.75rem)}',
+      '.invitation--baby-shower .invitation__names{font-style:italic}',
+      '',
+      '.invitation--house-warming,.invitation--naming-ceremony{border-radius:var(--r-xl,1rem)}',
+      '.invitation--house-warming::before,.invitation--naming-ceremony::before{border-radius:180px 180px var(--r-lg,.75rem) var(--r-lg,.75rem);inset:14px 14px 14px}',
+      '.invitation--house-warming .invitation__kicker,.invitation--naming-ceremony .invitation__kicker{letter-spacing:.32em}',
+      '',
+      '.invitation--naming-ceremony .invitation__relation-kicker{font-size:clamp(.6rem,3.1cqi,.74rem);font-weight:600;letter-spacing:clamp(.14em,.8cqi,.28em);text-indent:clamp(.14em,.8cqi,.28em);text-transform:uppercase;color:var(--inv-secondary);margin-bottom:4px}',
+      '.invitation--naming-ceremony .invitation__relation{font-family:var(--inv-font-display);font-size:clamp(1rem,4.2cqi,1.3rem);font-weight:600;line-height:1.3;color:color-mix(in srgb,var(--inv-ink) 80%,transparent);margin-bottom:var(--space-3,1rem)}',
+      '.invitation--naming-ceremony .invitation__relation span{display:block}',
+      '.invitation--naming-ceremony .invitation__relation strong{display:block;color:var(--inv-primary);font-weight:700}',
+      '',
+      '.invitation--corporate{--inv-font-display:var(--inv-fb);border-radius:var(--r-md,.5rem);text-align:left;padding-inline:var(--space-6,2.5rem)}',
+      '.invitation--corporate::before{border-radius:var(--r-sm,.25rem);border-width:0 0 0 3px;inset:0 0 0 0;border-left-color:var(--inv-secondary)}',
+      '.invitation--corporate .invitation__ornament{justify-content:flex-start}',
+      '.invitation--corporate .invitation__ornament svg{width:44px;height:44px}',
+      '.invitation--corporate .invitation__names{font-size:clamp(1.5rem,1rem+2.4vw,2.1rem);letter-spacing:-.02em}',
+      '.invitation--corporate .invitation__rule{justify-content:flex-start}',
+      '.invitation--corporate .invitation__rule::before{display:none}',
+      '.invitation--corporate .invitation__when{grid-template-columns:auto auto 1fr;justify-items:start;text-align:left}',
+      '.invitation--corporate .invitation__actions{justify-content:flex-start}',
+      '.invitation--corporate .invitation__photo{margin-inline:0;border-radius:var(--r-lg,.75rem)}',
+      '',
+      '.invitation--anniversary::before{inset:12px;border-width:3px;border-style:double}',
+      '',
+      '.invitation--festival{background:radial-gradient(120% 90% at 50% 0%,var(--inv-bg2),var(--inv-bg1))}',
+      '.invitation--festival::before{border-radius:50%/6%;border-width:2px;inset:10px}',
+      '.invitation--festival .invitation__names{font-style:italic}',
+      '',
+      '.invitation--engagement::before{inset:12px;border-width:2px}',
+      '',
+      '.invitation__countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:var(--space-5,2rem)}',
+      '.invitation__countdown .cd-unit{padding:10px 4px;border-radius:var(--r-md,.5rem);background:color-mix(in srgb,var(--inv-primary) 10%,transparent);border:1px solid color-mix(in srgb,var(--inv-primary) 18%,transparent)}',
+      '.invitation__countdown .cd-value{display:block;font-family:var(--inv-font-display);font-size:1.5rem;font-weight:700;line-height:1.1;color:var(--inv-primary);font-variant-numeric:tabular-nums}',
+      '.invitation__countdown .cd-label{font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;opacity:.72}',
+      '',
+      '.invitation__extra{margin-bottom:var(--space-5,2rem);padding:var(--space-3,1rem);border:1px solid color-mix(in srgb,var(--inv-primary) 22%,transparent);border-radius:var(--r-md,.5rem);background:color-mix(in srgb,var(--inv-primary) 6%,transparent)}',
+      '.invitation__extra small{display:block;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;opacity:.7;margin-bottom:4px}',
+      '.invitation__extra p{margin:0;font-size:.88rem;line-height:1.7;color:color-mix(in srgb,var(--inv-ink) 82%,transparent)}',
+      '',
+      '@media(prefers-reduced-motion:reduce){',
+      '  html{scroll-behavior:auto}',
+      '  *,*::before,*::after{transition:none!important;animation:none!important}',
+      '}'
+    ].join('\n');
   }
 
-  /* The page's own stylesheet, embedded so the file works on its own and
-     never depends on the site's css/ files changing underneath it. */
-  function websiteCss(p) {
+  /* ------------------------------------------------------------------
+     Complete Host Page stylesheet (matches lovely-and-nani reference)
+     ------------------------------------------------------------------ */
+
+  function siteHostPageCss(p) {
     return [
       ':root{',
       '  --site-p:' + p.primary + ';',
@@ -400,10 +607,6 @@
       '.site-btn--ghost{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.4)}',
       '.site-btn--solid{background:var(--site-p);color:#fff}',
       '.site-btn--soft{background:color-mix(in srgb,var(--site-p) 11%,transparent);color:var(--site-p)}',
-      '.site-btn--outline{background:transparent;border:1px solid color-mix(in srgb,var(--site-ink) 18%,transparent);color:var(--site-p)}',
-      '.site-btn--outline:hover{background:color-mix(in srgb,var(--site-p) 12%,transparent);border-color:var(--site-p)}',
-      '.site-btn--sm{padding:8px 16px;font-size:.85rem}',
-      '.site-btn--sm svg{width:14px;height:14px}',
       '',
       '/* Sections */',
       '.site-section{padding:88px 0}',
@@ -445,14 +648,15 @@
       '.site-count .cd-label{text-transform:uppercase;letter-spacing:.16em;font-size:.66rem;opacity:.9}',
       '',
       '/* Venue */',
-      '.site-venue{display:flex;flex-direction:column;gap:24px;align-items:stretch}',
-      '.site-venue__card{background:rgba(255,255,255,.75);border:1px solid color-mix(in srgb,var(--site-ink) 10%,transparent);border-radius:24px;padding:42px;display:flex;flex-direction:column;gap:14px;align-items:stretch}',
-      '.site-venue__name{font-family:var(--site-fd);font-size:2rem;margin:0}',
+      '.site-venue{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch}',
+      '.site-venue__card{background:rgba(255,255,255,.75);border:1px solid color-mix(in srgb,var(--site-ink) 10%,transparent);border-radius:24px;padding:42px;display:flex;flex-direction:column;gap:14px;justify-content:center}',
+      '.site-venue__card h3{font-family:var(--site-fd);font-size:2rem}',
+      '.site-venue__card p{margin:0;color:color-mix(in srgb,var(--site-ink) 78%,transparent);line-height:1.8}',
       '.site-venue__when{margin-top:6px}',
-      '.site-venue__address{margin:0;color:color-mix(in srgb,var(--site-ink) 78%,transparent);line-height:1.8}',
-      '.site-venue__maps-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid color-mix(in srgb,var(--site-ink) 18%,transparent);background:transparent;color:var(--site-p);font-weight:700;font-size:.9rem}',
-      '.site-venue__maps-btn svg{width:16px;height:16px}',
-      '.site-venue__maps-btn:hover{background:color-mix(in srgb,var(--site-p) 12%,transparent);color:var(--site-p)}',
+      '.site-venue__media{min-height:360px;border-radius:24px;background-size:cover;background-position:center;position:relative;display:grid;place-items:center;overflow:hidden;background:linear-gradient(160deg,var(--site-p),var(--site-b2))}',
+      '.site-venue__media::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,25,.2),rgba(20,10,25,.55))}',
+      '.site-venue__media-link{position:relative;z-index:1;display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;background:#fff;color:var(--site-p);font-weight:700}',
+      '.site-venue__media-link svg{width:17px;height:17px}',
       '',
       '/* Actions */',
       '.site-actions{text-align:center}',
@@ -505,6 +709,7 @@
       '  .site-gallery{grid-template-columns:repeat(2,1fr);gap:12px}',
       '  .site-count .invitation__countdown{grid-template-columns:repeat(2,1fr);gap:12px}',
       '  .site-venue{grid-template-columns:1fr;gap:24px}',
+      '  .site-venue__media{min-height:260px}',
       '}',
       '@media(max-width:560px){',
       '  .site-container{width:min(100% - 32px,1200px)}',
@@ -516,112 +721,129 @@
       '@media(prefers-reduced-motion:reduce){',
       '  html{scroll-behavior:auto}',
       '  *,*::before,*::after{transition:none!important;animation:none!important}',
-      '}',
-      ''
+      '}'
     ].join('\n');
   }
 
-  /* Everything the page needs to run once it is in a real browser. Static
-     on purpose: no data is interpolated, so it needs no escaping.
-     This script runs at the end of <body>, so the DOM is already ready.
-     No DOMContentLoaded wrapper needed — this also works in srcdoc iframes
-     where DOMContentLoaded fires before this script executes. */
-  var INLINE_SITE_JS = [
-    '  // --- Mobile menu ---',
-    '  var burger = document.querySelector(".site-nav__burger");',
-    '  var menu = document.querySelector(".site-nav__menu");',
-    '  if (burger && menu) {',
-    '    var closeMenu = function () { menu.classList.remove("is-open"); burger.setAttribute("aria-expanded", "false"); };',
+  /* Inline JS for countdown, share, music, lightbox, nav on the hosted page */
+  var INLINE_JS = [
+    '  // --- Countdown ---',
+    '  if (window.IH && IH.countdown) IH.countdown.mount(document.body);',
+    '',
+    '  // --- Share ---',
+    '  (function () {',
+    '    var btn = document.querySelector("[data-share-invitation]");',
+    '    if (!btn) return;',
+    '    var shareData = { title: document.title, url: window.location.href };',
+    '    btn.addEventListener("click", function () {',
+    '      if (navigator.share) {',
+    '        navigator.share(shareData).catch(function () {});',
+    '      } else {',
+    '        navigator.clipboard.writeText(window.location.href).then(function () {',
+    '          var original = btn.innerHTML;',
+    '          btn.innerHTML = \'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Copied!</span>\';',
+    '          setTimeout(function () { btn.innerHTML = original; }, 1500);',
+    '        }).catch(function () {});',
+    '      }',
+    '    });',
+    '  })();',
+    '',
+    '  // --- Mobile Navigation ---',
+    '  (function () {',
+    '    var burger = document.querySelector(".site-nav__burger");',
+    '    var menu = document.querySelector(".site-nav__menu");',
+    '    if (!burger || !menu) return;',
+    '    var closeMenu = function () {',
+    '      menu.classList.remove("is-open");',
+    '      burger.setAttribute("aria-expanded", "false");',
+    '    };',
     '    burger.addEventListener("click", function () {',
     '      var open = menu.classList.toggle("is-open");',
     '      burger.setAttribute("aria-expanded", open ? "true" : "false");',
     '    });',
-    '    menu.addEventListener("click", function (e) { if (e.target.closest("a")) closeMenu(); });',
-    '  }',
-    '  // --- Nav scroll state ---',
-    '  var nav = document.querySelector(".site-nav");',
-    '  var onScroll = function () { if (nav) nav.classList.toggle("is-scrolled", window.scrollY > 8); };',
-    '  window.addEventListener("scroll", onScroll, { passive: true });',
-    '  onScroll();',
-    '',
-    '  // --- Anchor link navigation (works with href and data-href) ---',
-    '  // Must register immediately so it works in srcdoc iframes where',
-    '  // DOMContentLoaded fires before this inline script runs.',
-    '  document.addEventListener("click", function (e) {',
-    '    var link = e.target.closest(\'.site-nav__link, .site-btn[href^=\\\\#], .site-btn[data-href^=\\\\#], .site-nav__brand[href^=\\\\#], .site-nav__brand[data-href^=\\\\#]\');',
-    '    if (link) {',
-    '      var href = link.getAttribute("href") || link.getAttribute("data-href");',
-    '      if (href && href.startsWith("#")) {',
-    '        e.preventDefault();',
-    '        var target = document.querySelector(href);',
-    '        if (target) {',
-    '          target.scrollIntoView({ behavior: "smooth", block: "start" });',
-    '          // Update URL hash without scrolling (only if using real href)',
-    '          if (link.hasAttribute("href")) history.pushState(null, "", href);',
-    '        }',
-    '      }',
-    '    }',
-    '  });',
-    '',
-    '  // --- Gallery lightbox ---',
-    '  var box = null;',
-    '  var current = 0;',
-    '  var srcs = [];',
-    '  function syncSrcs() { srcs = Array.prototype.slice.call(document.querySelectorAll("[data-site-lightbox]")).map(function (it) { var img = it.querySelector("img"); return img ? img.src : ""; }); }',
-    '  function show() {',
-    '    var img = box.querySelector(".site-lightbox__img");',
-    '    img.src = srcs[current];',
-    '    box.querySelector(".site-lightbox__count").textContent = (current + 1) + " / " + srcs.length;',
-    '  }',
-    '  function step(d) { syncSrcs(); current = (current + d + srcs.length) % srcs.length; show(); }',
-    '  function closeBox() { if (box) { box.classList.remove("is-open"); document.body.style.overflow = ""; } }',
-    '  function buildBox() {',
-    '    box = document.createElement("div");',
-    '    box.className = "site-lightbox";',
-    '    box.setAttribute("role", "dialog");',
-    '    box.setAttribute("aria-modal", "true");',
-    '    box.innerHTML = \'<button class="site-lightbox__btn site-lightbox__close" type="button" aria-label="Close">\u00D7</button>\' +',
-    '      \'<button class="site-lightbox__btn site-lightbox__prev" type="button" aria-label="Previous">\u2039</button>\' +',
-    '      \'<button class="site-lightbox__btn site-lightbox__next" type="button" aria-label="Next">\u203A</button>\' +',
-    '      \'<img class="site-lightbox__img" alt="" />\' +',
-    '      \'<span class="site-lightbox__count"></span>\';',
-    '    box.addEventListener("click", function (e) { if (e.target === box) closeBox(); });',
-    '    box.querySelector(".site-lightbox__close").addEventListener("click", closeBox);',
-    '    box.querySelector(".site-lightbox__prev").addEventListener("click", function (e) { e.stopPropagation(); step(-1); });',
-    '    box.querySelector(".site-lightbox__next").addEventListener("click", function (e) { e.stopPropagation(); step(1); });',
-    '    document.body.appendChild(box);',
-    '    document.addEventListener("keydown", function (e) {',
-    '      if (!box.classList.contains("is-open")) return;',
-    '      if (e.key === "Escape") closeBox();',
-    '      if (e.key === "ArrowLeft") step(-1);',
-    '      if (e.key === "ArrowRight") step(1);',
+    '    menu.addEventListener("click", function (e) {',
+    '      if (e.target.closest("a")) closeMenu();',
     '    });',
-    '  }',
-    '  function openFig(fig) {',
-    '    if (!fig) return;',
-    '    syncSrcs();',
-    '    var i = Array.prototype.indexOf.call(document.querySelectorAll("[data-site-lightbox]"), fig);',
-    '    if (i < 0 || !srcs[i]) return;',
-    '    current = i;',
-    '    if (!box) buildBox();',
-    '    show();',
-    '    box.classList.add("is-open");',
-    '    document.body.style.overflow = "hidden";',
-    '  }',
-    '  document.addEventListener("click", function (e) {',
-    '    var fig = e.target.closest ? e.target.closest("[data-site-lightbox]") : null;',
-    '    if (fig) { e.preventDefault(); openFig(fig); }',
-    '  });',
-    '  document.addEventListener("keydown", function (e) {',
-    '    if (e.key !== "Enter" && e.key !== " ") return;',
-    '    var t = e.target, fig = (t && t.closest) ? t.closest("[data-site-lightbox]") : null;',
-    '    if (fig) { e.preventDefault(); openFig(fig); }',
-    '  });',
+    '  })();',
     '',
-    '  // --- Music toggle ---',
-    '  var audio = document.getElementById("site-music");',
-    '  var mbtn = document.getElementById("site-music-btn");',
-    '  if (audio && mbtn) {',
+    '  // --- Nav scroll shadow ---',
+    '  (function () {',
+    '    var nav = document.querySelector(".site-nav");',
+    '    if (!nav) return;',
+    '    var onScroll = function () {',
+    '      nav.classList.toggle("is-scrolled", window.scrollY > 8);',
+    '    };',
+    '    window.addEventListener("scroll", onScroll, { passive: true });',
+    '    onScroll();',
+    '  })();',
+    '',
+    '  // --- Gallery Lightbox ---',
+    '  (function () {',
+    '    var box = null;',
+    '    var current = 0;',
+    '    var srcs = [];',
+    '    function syncSrcs() {',
+    '      srcs = Array.prototype.slice.call(document.querySelectorAll("[data-site-lightbox]")).map(function (it) {',
+    '        var img = it.querySelector("img");',
+    '        return img ? img.src : "";',
+    '      });',
+    '    }',
+    '    function show() {',
+    '      var img = box.querySelector(".site-lightbox__img");',
+    '      img.src = srcs[current];',
+    '      box.querySelector(".site-lightbox__count").textContent = (current + 1) + " / " + srcs.length;',
+    '    }',
+    '    function step(d) { syncSrcs(); current = (current + d + srcs.length) % srcs.length; show(); }',
+    '    function closeBox() { if (box) { box.classList.remove("is-open"); document.body.style.overflow = ""; } }',
+    '    function buildBox() {',
+    '      box = document.createElement("div");',
+    '      box.className = "site-lightbox";',
+    '      box.setAttribute("role", "dialog");',
+    '      box.setAttribute("aria-modal", "true");',
+    '      box.innerHTML = \'<button class="site-lightbox__btn site-lightbox__close" type="button" aria-label="Close">×</button>\' +',
+    '        \'<button class="site-lightbox__btn site-lightbox__prev" type="button" aria-label="Previous">‹</button>\' +',
+    '        \'<button class="site-lightbox__btn site-lightbox__next" type="button" aria-label="Next">›</button>\' +',
+    '        \'<img class="site-lightbox__img" alt="" />\' +',
+    '        \'<span class="site-lightbox__count"></span>\';',
+    '      box.addEventListener("click", function (e) { if (e.target === box) closeBox(); });',
+    '      box.querySelector(".site-lightbox__close").addEventListener("click", closeBox);',
+    '      box.querySelector(".site-lightbox__prev").addEventListener("click", function (e) { e.stopPropagation(); step(-1); });',
+    '      box.querySelector(".site-lightbox__next").addEventListener("click", function (e) { e.stopPropagation(); step(1); });',
+    '      document.body.appendChild(box);',
+    '      document.addEventListener("keydown", function (e) {',
+    '        if (!box.classList.contains("is-open")) return;',
+    '        if (e.key === "Escape") closeBox();',
+    '        if (e.key === "ArrowLeft") step(-1);',
+    '        if (e.key === "ArrowRight") step(1);',
+    '      });',
+    '    }',
+    '    function openFig(fig) {',
+    '      if (!fig) return;',
+    '      syncSrcs();',
+    '      var i = Array.prototype.indexOf.call(document.querySelectorAll("[data-site-lightbox]"), fig);',
+    '      if (i < 0 || !srcs[i]) return;',
+    '      current = i;',
+    '      if (!box) buildBox();',
+    '      show();',
+    '      box.classList.add("is-open");',
+    '      document.body.style.overflow = "hidden";',
+    '    }',
+    '    document.addEventListener("click", function (e) {',
+    '      var fig = e.target.closest ? e.target.closest("[data-site-lightbox]") : null;',
+    '      if (fig) { e.preventDefault(); openFig(fig); }',
+    '    });',
+    '    document.addEventListener("keydown", function (e) {',
+    '      if (e.key !== "Enter" && e.key !== " ") return;',
+    '      var t = e.target, fig = (t && t.closest) ? t.closest("[data-site-lightbox]") : null;',
+    '      if (fig) { e.preventDefault(); openFig(fig); }',
+    '    });',
+    '  })();',
+    '',
+    '  // --- Music Toggle ---',
+    '  (function () {',
+    '    var audio = document.getElementById("site-music");',
+    '    var mbtn = document.getElementById("site-music-btn");',
+    '    if (!audio || !mbtn) return;',
     '    mbtn.addEventListener("click", function () {',
     '      if (audio.paused) {',
     '        audio.play().catch(function () {});',
@@ -635,15 +857,13 @@
     '        mbtn.setAttribute("aria-label", "Play music");',
     '      }',
     '    });',
-    '  }',
-    '',
-    '  // --- Countdown ---',
-    '  if (window.IH && IH.countdown) IH.countdown.mount(document.body);'
+    '  })();'
   ].join('\n');
 
-  /* The whole invitation as a full-screen website. The markup is built
-     from the invitation's own fields — names, date, venue, gallery,
-     palette — so every future invitation comes out as a real page. */
+  /* ------------------------------------------------------------------
+     2e. Build the hosted page — complete Host Page matching lovely-and-nani reference
+     ------------------------------------------------------------------ */
+
   function buildHtml(state, opts) {
     /* How many folders up the shared js/ and images/ live. One level by
        default; a page that owns a folder of its own passes more. */
@@ -656,66 +876,45 @@
 
     var inv = IH.invitation;
     var p = paletteFor(data);
+
+    /* Format date and time for display */
     var d = inv.formatDate(data.date);
     var time = inv.formatTime(data.time);
-    var headline = inv.headline(data);
-    var subhead = inv.subhead(data);
+    var weekday = d.weekday || '';
+    var dateFull = d.full || 'Date to be announced';
+    var heroWhen = [weekday, dateFull, time].filter(Boolean).join(' · ');
 
-    var type = String(data.eventType || 'other');
-    var host = String(data.hostName || data.organization || '').trim();
-    var kicker = host || meta.kicker;
-    if (type === 'naming-ceremony' && (data.babyName || data.personName)) {
-      kicker = 'OUR ' + (/daughter/i.test(String(data.babyRelation || '')) ? 'Daughter' : 'Son').toUpperCase();
+    /* Hero subtitle: event type + title (e.g., "Wedding · Wedding") - always shows both if title exists */
+    var heroSub = meta.label;
+    if (data.title) {
+      heroSub = meta.label + ' · ' + data.title;
     }
 
-    var subParts = [meta.label];
-    if (subhead) subParts.push(subhead);
-    else if (type === 'wedding' || type === 'engagement') subParts.push('Invitation');
-    var subText = subParts.join(' · ');
+    /* Maps URL */
+    var mapsUrl = inv.getMapsUrl ? inv.getMapsUrl(data) : (data.mapsUrl || (data.address ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(data.address) : ''));
 
-    var dateLine = [d.weekday, d.full, time].filter(Boolean).join(' · ');
-
-    var message = (type === 'naming-ceremony' && inv.genderize)
-      ? inv.genderize(data.message, data.babyRelation)
-      : data.message;
-
-    /* Only link to sections that will actually exist. */
-    var navLinks = [];
-    if (message) navLinks.push({ id: 'story', label: 'Our Story' });
-    if (d.full || time || data.venue || data.address) navLinks.push({ id: 'details', label: 'Details' });
-    if (data.showGallery !== false && data.gallery && data.gallery.length) navLinks.push({ id: 'gallery', label: 'Gallery' });
-    if (data.showCountdown !== false && data.date && IH.countdown && IH.countdown.markup) navLinks.push({ id: 'countdown', label: 'Countdown' });
-    if (data.venue || data.address) navLinks.push({ id: 'venue', label: 'Venue' });
-    var heroSecondary = navLinks.length ? navLinks[0] : null;
-    var heroPrimary = heroSecondary;
-    var heroExtra = null;
-    if (heroExtra && heroPrimary && heroExtra.id === heroPrimary.id) heroExtra = null;
-
-    var heroStyle = 'background-image:linear-gradient(160deg,' + rgba(p.primary, 0.92) + ',' +
-      rgba(p.b2, 0.85) + ')' +
-      (data.background ? ',url(' + data.background + ')' : '') +
-      ';background-size:cover;background-position:center;';
+    /* Build navigation links (no RSVP) */
+    var navLinks = [
+      { href: '#story', label: 'Our Story' },
+      { href: '#details', label: 'Details' },
+      { href: '#gallery', label: 'Gallery' },
+      { href: '#countdown', label: 'Countdown' },
+      { href: '#venue', label: 'Venue' }
+    ];
 
     var head = [
       '<!DOCTYPE html>',
       '<html lang="en">',
       '<head>',
       '<meta charset="utf-8">',
-      '<meta name="viewport" content="width=device-width, initial-scale=1">',
+      '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">',
       '<title>' + esc(title) + '</title>',
       '<meta name="description" content="' + esc(metaDescription(state)) + '">',
       '<meta name="generator" content="InviteAura">',
-      /* An invitation carries names, an address and a phone number. It is
-         meant for the people sent the link, not for search results — but
-         noindex only stops indexing, so the link-preview scrapers below
-         still read the page and show the site in WhatsApp. */
       '<meta name="robots" content="noindex">',
       '<meta property="og:type" content="website">',
       '<meta property="og:title" content="' + esc(title) + '">',
       '<meta property="og:description" content="' + esc(metaDescription(state)) + '">',
-      /* A scraper has no page to resolve a relative URL against, so these
-         two are only worth writing when the caller knows the deployed
-         address. js/publish.js does; a plain download does not. */
       opts && opts.canonical ? '<meta property="og:url" content="' + esc(opts.canonical) + '">' : '',
       opts && opts.image ? '<meta property="og:image" content="' + esc(opts.image) + '">' : '',
       opts && opts.image ? '<meta name="twitter:card" content="summary_large_image">' : '',
@@ -726,7 +925,7 @@
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap">',
       '',
       '<style>',
-      websiteCss(p),
+      siteHostPageCss(p),
       '</style>',
       '</head>',
       '<body>'
@@ -734,169 +933,205 @@
 
     var body = [];
 
-    /* Nav */
+    /* Navigation */
     body.push('<nav class="site-nav" aria-label="Invitation">');
     body.push('<div class="site-nav__inner">');
-    // Use data-href for iframe previews to prevent navigation, href for real pages
-    var navHrefAttr = (opts && opts.forIframePreview) ? 'data-href' : 'href';
-    body.push('<a class="site-nav__brand" ' + navHrefAttr + '="#top">' + esc(brandText(data) || 'Invitation') + '</a>');
-    body.push('<button class="site-nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">' + IH.icon('menu', 22) + '</button>');
+    body.push('<a class="site-nav__brand" href="#top">' + esc(brandText(state)) + '</a>');
+    body.push('<button class="site-nav__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">');
+    body.push('<svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18"/></svg>');
+    body.push('</button>');
     body.push('<div class="site-nav__menu" id="site-menu">');
-    navLinks.forEach(function (l) {
-      body.push('<a class="site-nav__link" ' + navHrefAttr + '="#' + l.id + '">' + esc(l.label) + '</a>');
+    navLinks.forEach(function (link) {
+      body.push('<a class="site-nav__link" href="' + link.href + '">' + esc(link.label) + '</a>');
     });
     body.push('</div>');
     body.push('</div>');
     body.push('</nav>');
 
-    /* Hero */
-    body.push('<section class="site-hero" id="top" style="' + esc(heroStyle) + '">');
+    /* Hero section */
+    var heroBgStyle = '';
+    if (data.background) {
+      /* Use palette primary for top gradient, dark bg for bottom */
+      var primaryRgba = rgba(p.primary, 0.92);
+      var darkRgba = rgba(p.bg1, 0.85);
+      heroBgStyle = 'background-image:linear-gradient(160deg,' + primaryRgba + ',' + darkRgba + '),url(' + esc(data.background) + ');background-size:cover;background-position:center;';
+    } else {
+      heroBgStyle = 'background:linear-gradient(160deg,var(--site-b1),var(--site-b2));';
+    }
+
+    body.push('<section class="site-hero" id="top" style="' + heroBgStyle + '">');
     body.push('<div class="site-hero__shade" aria-hidden="true"></div>');
     body.push('<div class="site-hero__inner">');
+
+    /* Hero photo */
     if (data.photo) {
-      body.push('<img class="site-hero__photo" src="' + esc(data.photo) + '" alt="' + esc(who) + '" width="132" height="132">');
+      body.push('<img class="site-hero__photo" src="' + esc(data.photo) + '" alt="' + esc(brandText(state)) + '" width="132" height="132">');
     }
+
+    /* Kicker */
+    var kicker = data.hostName || meta.kicker;
     body.push('<p class="site-hero__kicker">' + esc(kicker) + '</p>');
+
+    /* Names */
+    var headline = inv.headline(data);
     body.push('<h1 class="site-hero__names">' + headline + '</h1>');
-    body.push('<p class="site-hero__sub">' + esc(subText) + '</p>');
-    if (dateLine) body.push('<p class="site-hero__when">' + esc(dateLine) + '</p>');
+
+    /* Subtitle */
+    body.push('<p class="site-hero__sub">' + esc(heroSub) + '</p>');
+
+    /* Date/time */
+    body.push('<p class="site-hero__when">' + esc(heroWhen) + '</p>');
+
+    /* CTA buttons (no RSVP) */
     body.push('<div class="site-hero__cta">');
-    if (heroPrimary) {
-      body.push('<a class="site-btn site-btn--light" href="#' + heroPrimary.id + '">' + IH.icon('user-check', 18) + '<span>' + esc(heroPrimary.label) + '</span></a>');
+    body.push('<a class="site-btn site-btn--ghost" href="#story"><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg><span>Our Story</span></a>');
+    body.push('<button class="site-btn site-btn--soft" type="button" data-share-invitation><svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span>Share</span></button>');
+    body.push('</div>');
+
+    body.push('</div>');
+    body.push('</section>');
+
+    /* Story section */
+    body.push('<section class="site-section" id="story">');
+    body.push('<div class="site-container">');
+    body.push('<div class="site-title"><p class="site-title__eyebrow">You are invited</p><h2>The Invitation</h2></div>');
+    body.push('<div class="site-story">');
+    var message = data.message || '';
+    if (data.eventType === 'naming-ceremony') {
+      message = inv.genderize(message, data.babyRelation);
     }
-    if (heroExtra) {
-      body.push('<a class="site-btn site-btn--ghost" href="#' + heroExtra.id + '">' + IH.icon('chevron-down', 18) + '<span>' + esc(heroExtra.label) + '</span></a>');
-    }
+    body.push('<p>' + esc(message) + '</p>');
     body.push('</div>');
     body.push('</div>');
     body.push('</section>');
 
-    /* Story */
-    if (message) {
-      body.push('<section class="site-section" id="story">');
-      body.push('<div class="site-container">');
-      body.push(sectionTitle('You are invited', 'The Invitation', ''));
-      body.push('<div class="site-story"><p>' + esc(message) + '</p></div>');
-      body.push('</div>');
-      body.push('</section>');
-    }
+    /* Details section */
+    body.push('<section class="site-section site-section--alt" id="details">');
+    body.push('<div class="site-container">');
+    body.push('<div class="site-title"><p class="site-title__eyebrow">When & Where</p><h2>Event Details</h2></div>');
+    body.push('<div class="site-details">');
+    body.push('<div class="site-detail">');
+    body.push('<svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>');
+    body.push('<small>Date</small>');
+    body.push('<strong>' + esc(dateFull) + (weekday ? '<br>' + esc(weekday) : '') + '</strong>');
+    body.push('</div>');
+    body.push('<div class="site-detail">');
+    body.push('<svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>');
+    body.push('<small>Time</small>');
+    body.push('<strong>' + esc(time || '—') + '</strong>');
+    body.push('</div>');
+    body.push('<div class="site-detail">');
+    body.push('<svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>');
+    body.push('<small>Venue</small>');
+    body.push('<strong>' + esc(data.venue || '—') + '</strong>');
+    body.push('</div>');
+    body.push('</div>');
+    body.push('</div>');
+    body.push('</section>');
 
-    /* Details */
-    var cards = [];
-    if (d.full) {
-      cards.push('<div class="site-detail">' + IH.icon('calendar', 24) +
-        '<small>Date</small><strong>' + esc(d.full) + (d.weekday ? '<br>' + esc(d.weekday) : '') + '</strong></div>');
-    }
-    if (time) {
-      cards.push('<div class="site-detail">' + IH.icon('clock', 24) +
-        '<small>Time</small><strong>' + esc(time) + '</strong></div>');
-    }
-    if (data.venue || data.address) {
-      var vParts = [];
-      if (data.venue) vParts.push(esc(data.venue));
-      if (data.address) vParts.push(esc(data.address));
-      cards.push('<div class="site-detail">' + IH.icon('map-pin', 24) +
-        '<small>Venue</small><strong>' + vParts.join('<br>') + '</strong></div>');
-    }
-    if (cards.length) {
-      body.push('<section class="site-section site-section--alt" id="details">');
-      body.push('<div class="site-container">');
-      body.push(sectionTitle('When &amp; Where', 'Event Details', ''));
-      body.push('<div class="site-details">' + cards.join('') + '</div>');
-      body.push('</div>');
-      body.push('</section>');
-    }
-
-    /* Gallery */
+    /* Gallery section */
     if (data.showGallery !== false && data.gallery && data.gallery.length) {
       body.push('<section class="site-section" id="gallery">');
       body.push('<div class="site-container">');
-      body.push(sectionTitle('Memories', 'Our Moments', 'A few special moments we would love to share with you.'));
+      body.push('<div class="site-title"><p class="site-title__eyebrow">Memories</p><h2>Our Moments</h2><p>A few special moments we would love to share with you.</p></div>');
       body.push('<div class="site-gallery">');
-      data.gallery.forEach(function (src, i) {
-        var wide = i === 0 && data.gallery.length > 1 ? ' site-gallery__item--wide' : '';
-        body.push('<figure class="site-gallery__item' + wide + '" data-site-lightbox tabindex="0" role="button" aria-label="View photo ' + (i + 1) + ' enlarged">' +
-          '<img src="' + esc(src) + '" alt="Event photo ' + (i + 1) + '" loading="lazy">' +
-          '<span class="site-gallery__zoom"><span>+</span></span>' +
-          '</figure>');
+      var galleryItems = data.gallery.slice(0, 6);
+      galleryItems.forEach(function (src, i) {
+        var isWide = (i === 0);
+        body.push('<figure class="site-gallery__item' + (isWide ? ' site-gallery__item--wide' : '') + '" data-site-lightbox tabindex="0" role="button" aria-label="View photo ' + (i + 1) + ' enlarged">');
+        body.push('<img src="' + esc(src) + '" alt="Event photo ' + (i + 1) + '" loading="lazy">');
+        body.push('<span class="site-gallery__zoom"><span>+</span></span>');
+        body.push('</figure>');
       });
       body.push('</div>');
       body.push('</div>');
       body.push('</section>');
     }
 
-    /* Countdown */
-    if (data.showCountdown !== false && data.date && IH.countdown && IH.countdown.markup) {
+    /* Countdown section */
+    if (data.showCountdown !== false && data.date) {
+      var countdownTarget = inv.toDateTime(data.date, data.time);
       body.push('<section class="site-section site-count-section" id="countdown">');
       body.push('<div class="site-container">');
-      body.push(sectionTitle('The Big Day', 'Counting Down', 'We cannot wait to celebrate this beautiful moment with you.'));
-      body.push('<div class="site-count">' + IH.countdown.markup(inv.toDateTime(data.date, data.time)) + '</div>');
+      body.push('<div class="site-title"><p class="site-title__eyebrow">The Big Day</p><h2>Counting Down</h2><p>We cannot wait to celebrate this beautiful moment with you.</p></div>');
+      body.push('<div class="site-count"><div class="invitation__countdown" data-countdown="' + esc(countdownTarget) + '" role="timer" aria-label="Time remaining until the event">');
+      body.push('<div class="cd-unit"><span class="cd-value" data-cd="days">0</span><span class="cd-label">Days</span></div>');
+      body.push('<div class="cd-unit"><span class="cd-value" data-cd="hours">00</span><span class="cd-label">Hours</span></div>');
+      body.push('<div class="cd-unit"><span class="cd-value" data-cd="minutes">00</span><span class="cd-label">Minutes</span></div>');
+      body.push('<div class="cd-unit"><span class="cd-value" data-cd="seconds">00</span><span class="cd-label">Seconds</span></div>');
+      body.push('<span class="sr-only" data-cd-live aria-live="polite"></span>');
+      body.push('</div></div>');
       body.push('</div>');
       body.push('</section>');
     }
 
-    /* Venue */
-    var mapsUrl = data.mapsUrl ||
-      (data.address ? 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(data.address) : '');
+    /* Venue section */
     if (data.venue || data.address) {
       body.push('<section class="site-section site-section--alt" id="venue">');
       body.push('<div class="site-container">');
-      body.push(sectionTitle('Join Us', 'Venue &amp; Details', ''));
+      body.push('<div class="site-title"><p class="site-title__eyebrow">Join Us</p><h2>Venue & Details</h2></div>');
       body.push('<div class="site-venue">');
       body.push('<div class="site-venue__card">');
-      if (data.venue) body.push('<h3 class="site-venue__name">' + esc(data.venue) + '</h3>');
-      if (dateLine) body.push('<p class="site-venue__when"><strong>' + esc(dateLine) + '</strong></p>');
-      if (data.address) body.push('<p class="site-venue__address">' + esc(data.address) + '</p>');
-      if (data.showMaps !== false && mapsUrl) {
-        body.push('<a class="site-btn site-btn--outline site-btn--sm site-venue__maps-btn" href="' + esc(mapsUrl) + '" target="_blank" rel="noopener noreferrer">' + IH.icon('map-pin', 16) + '<span>View Location</span></a>');
+      body.push('<h3>' + esc(data.venue || 'Venue') + '</h3>');
+      body.push('<p class="site-venue__when"><strong>' + esc(heroWhen) + '</strong></p>');
+      if (data.address) {
+        body.push('<p>' + esc(data.address) + '</p>');
+      }
+      if (mapsUrl) {
+        body.push('<a class="site-venue__media-link" href="' + esc(mapsUrl) + '" target="_blank" rel="noopener noreferrer">');
+        body.push('<svg class="icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>');
+        body.push('<span>View Location</span>');
+        body.push('</a>');
       }
       body.push('</div>');
+      if (data.background) {
+        body.push('<div class="site-venue__media" style="background-image:url(' + esc(data.background) + ')"></div>');
+      } else {
+        body.push('<div class="site-venue__media"></div>');
+      }
       body.push('</div>');
       body.push('</div>');
       body.push('</section>');
     }
 
-    /* Actions */
-    var act = [];
-    if (data.phone) {
-      act.push('<a class="site-btn site-btn--solid" href="tel:' + esc(String(data.phone).replace(/\s/g, '')) + '">' + IH.icon('phone', 18) + '<span>Call Host</span></a>');
-    }
-    act.push('<button class="site-btn site-btn--soft" type="button" data-share-invitation>' + IH.icon('share', 18) + '<span>Share</span></button>');
-    if (act.length) {
-      body.push('<section class="site-section site-actions" id="actions">');
-      body.push('<div class="site-container">');
-      body.push(sectionTitle('Stay Connected', 'We Would Love to See You', 'Thank you for being part of our ' + meta.label.toLowerCase() + '.'));
-      body.push('<div class="site-actions__row">' + act.join('') + '</div>');
-      body.push('</div>');
-      body.push('</section>');
+    /* Actions section (Share only, no RSVP) */
+    body.push('<section class="site-section site-actions">');
+    body.push('<div class="site-container">');
+    body.push('<div class="site-title"><p class="site-title__eyebrow">Stay Connected</p><h2>We Would Love to See You</h2><p>Thank you for being part of our celebration.</p></div>');
+    body.push('<div class="site-actions__row">');
+    body.push('<button class="site-btn site-btn--soft" type="button" data-share-invitation>');
+    body.push('<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg><span>Share</span></button>');
+    body.push('</div>');
+    body.push('</div>');
+    body.push('</section>');
+
+    /* Music player (hidden audio element + toggle button) */
+    if (data.musicFile) {
+      body.push('<audio id="site-music" preload="none" src="' + esc(data.musicFile) + '">Your browser cannot play this audio.</audio>');
+      body.push('<button id="site-music-btn" class="site-music-btn" type="button" aria-label="Play music" aria-pressed="false">');
+      body.push('<svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>');
+      body.push('</button>');
     }
 
     /* Footer */
     body.push('<footer class="site-footer">');
-    body.push('<div class="site-footer__names">' + esc(brandText(data) || 'Invitation') + '</div>');
+    body.push('<div class="site-footer__names">' + esc(brandText(state)) + '</div>');
     body.push('<p>Created with <a href="' + up + 'index.html">InviteAura</a></p>');
     body.push('</footer>');
 
-    /* Music */
-    if (data.musicFile) {
-      body.push('<audio id="site-music" src="' + esc(data.musicFile) + '" preload="none" loop></audio>');
-      body.push('<button class="site-music-btn" id="site-music-btn" type="button" aria-pressed="false" aria-label="Play music">' + IH.icon('music', 22) + '</button>');
-    }
+    /* Invitation data JSON */
+    body.push('<script id="invitation-data" type="application/json">');
+    body.push(escScript(JSON.stringify(leanState(state))));
+    body.push('<\/script>');
 
     var tail = [
-      '',
-      '<script id="invitation-data" type="application/json">',
-      escScript(JSON.stringify(leanState(state))),
-      '<\/script>',
       '',
       (opts && opts.skipMainJs ? '' : '<script src="' + up + 'js/main.js" defer><\/script>'),
       '<script src="' + up + 'js/countdown.js" defer><\/script>',
       '<script src="' + up + 'js/share.js" defer><\/script>',
       '<script>',
-      '  /* The page above is already fully rendered, so it reads fine with',
-      '     JavaScript off. This starts the live countdown, the mobile menu,',
-      '     the gallery lightbox and the music toggle. */',
-      escScript(INLINE_SITE_JS),
+      '  /* Starts the live countdown, share, mobile nav, lightbox, music toggle. */',
+      escScript(INLINE_JS),
       '<\/script>',
       '</body>',
       '</html>',
