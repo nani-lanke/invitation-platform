@@ -2015,6 +2015,34 @@
   /* Paint the hosting status on the hosting step. Before payment the
      invitation is "Not hosted yet"; after a successful ₹99 payment and
      publish it becomes "Your invitation is online". */
+  function paintHostedEmailStatus(emailStatus) {
+    var box = qs('[data-hosted-email-status]', root);
+    if (!box) return;
+    if (!emailStatus) {
+      box.hidden = true;
+      return;
+    }
+    var titleEl = qs('[data-hosted-email-title]', box);
+    var msgEl = qs('[data-hosted-email-msg]', box);
+    var retryBtn = qs('[data-hosted-email-retry]', box);
+
+    if (emailStatus.sent) {
+      box.hidden = false;
+      box.className = 'notice notice--success';
+      if (titleEl) titleEl.textContent = '✅ Confirmation Email Sent';
+      if (msgEl) msgEl.textContent = 'An invitation confirmation email was sent to ' + (state.email || 'your email') + '.';
+      if (retryBtn) retryBtn.hidden = false;
+    } else if (emailStatus.skipped) {
+      box.hidden = true;
+    } else {
+      box.hidden = false;
+      box.className = 'notice notice--warn';
+      if (titleEl) titleEl.textContent = '❌ Email Delivery Issue';
+      if (msgEl) msgEl.textContent = 'The invitation is online, but the email could not be sent' + (emailStatus.reason ? ' (' + emailStatus.reason + ')' : '') + '. You can retry sending it.';
+      if (retryBtn) retryBtn.hidden = false;
+    }
+  }
+
   function paintHostingStatus() {
     var status = qs('[data-host-status]', root);
     var note = qs('[data-host-status-note]', root);
@@ -2047,14 +2075,32 @@
     var summary = qs('[data-payment-summary]', root);
     if (offer) offer.hidden = hosted;
     if (summary) summary.hidden = hosted;
+
+    if (hosted && state.emailStatus) {
+      paintHostedEmailStatus(state.emailStatus);
+    }
   }
 
-  function setPaymentStatus(title, msg, warn) {
+  function setPaymentStatus(title, msg, type) {
     var box = qs('[data-payment-status]', root);
     if (!box) return;
     if (!title) { box.hidden = true; return; }
     box.hidden = false;
-    box.className = 'notice ' + (warn ? 'notice--warn' : 'notice--info');
+    var kind = 'info';
+    if (type === 'warn' || type === 'warning' || type === true) {
+      kind = 'warn';
+    } else if (type === 'error') {
+      kind = 'error';
+    } else if (type === 'success') {
+      kind = 'success';
+    } else if (type === 'info') {
+      kind = 'info';
+    } else if (typeof title === 'string') {
+      if (title.indexOf('❌') !== -1) kind = 'error';
+      else if (title.indexOf('✅') !== -1 || title.indexOf('🎉') !== -1) kind = 'success';
+      else kind = 'info';
+    }
+    box.className = 'notice notice--' + kind;
     var t = qs('[data-payment-status-title]', box);
     var m = qs('[data-payment-status-msg]', box);
     if (t) t.textContent = title;
@@ -2129,13 +2175,16 @@
     /* Duplicate protection: an invitation that is already published must
        never be published again, even though payment already went through. */
     if (state.published) {
-      setPaymentStatus('Already published', 'This invitation already has a live link. Open it from the Hosting step.', true);
+      setPaymentStatus('Already published', 'This invitation already has a live link. Open it from the Hosting step.', 'warn');
       IH.toast.info('This invitation is already published — it was not published twice.', { title: 'Already live' });
       return;
     }
     hostingInFlight = true;
-    setHostBtnBusy(true, 'Processing payment…');
-    setPaymentStatus(null);
+
+    /* 1. 💳 Starting payment... */
+    setPaymentStatus('💳 Starting payment...', 'Opening payment gateway...');
+    setHostBtnBusy(true, '💳 Starting payment...');
+    IH.toast.info('Opening payment gateway...', { title: '💳 Starting payment...' });
 
     /* Paid but not yet hosted (a publish that failed after payment, or a
        reload before the link was saved): skip straight to publishing so a
@@ -2164,14 +2213,23 @@
               ondismiss: function () { reject(new Error('cancelled')); }
             }
           });
-          rzp.on('payment.failed', function () {
-            reject(new Error('failed'));
+          rzp.on('payment.failed', function (resp) {
+            var desc = (resp && resp.error && resp.error.description) || 'Payment failed';
+            reject(new Error(desc));
           });
           rzp.open();
         });
       });
     }).then(function (payment) {
-      setHostBtnBusy(true, 'Verifying payment…');
+      /* 2. ✅ Payment successful */
+      setPaymentStatus('✅ Payment successful', 'Payment received. Preparing verification...');
+      setHostBtnBusy(true, '✅ Payment successful');
+      IH.toast.success('Payment received successfully.', { title: '✅ Payment successful' });
+
+      /* 3. 🔐 Verifying payment... */
+      setPaymentStatus('🔐 Verifying payment...', 'Verifying payment signature with server...');
+      setHostBtnBusy(true, '🔐 Verifying payment...');
+
       return verifyPayment({
         razorpay_order_id: payment.razorpay_order_id,
         razorpay_payment_id: payment.razorpay_payment_id,
@@ -2194,13 +2252,24 @@
         };
         state.hostingPaymentId = payment.razorpay_payment_id;
         saveDraft();
+
+        /* 4. ✅ Payment verified successfully */
+        setPaymentStatus('✅ Payment verified successfully', 'Payment confirmed. Starting publishing...');
+        setHostBtnBusy(true, '✅ Payment verified successfully');
+        IH.toast.success('Payment verified successfully.', { title: '✅ Payment verified successfully' });
         return {};
+      }).catch(function (verifyErr) {
+        setPaymentStatus('❌ Payment verification failed', verifyErr.message || 'Signature verification failed.', 'error');
+        IH.toast.error(verifyErr.message || 'Payment verification failed.', { title: '❌ Payment verification failed' });
+        throw verifyErr;
       });
     }))
       .then(function () {
         console.log('[hosting] verification done, starting publish');
-        setPaymentStatus('Payment successful!', 'Your invitation is being published…');
-        setHostBtnBusy(true, 'Publishing invitation…');
+        /* 5. 📄 Creating your invitation... */
+        setPaymentStatus('📄 Creating your invitation...', 'Building invitation page and publishing to server...');
+        setHostBtnBusy(true, '📄 Creating your invitation...');
+        IH.toast.info('Publishing your invitation online...', { title: '📄 Creating your invitation...' });
         return runPublish(qs('[data-publish-box]', root));
       })
       .then(function (result) {
@@ -2212,22 +2281,41 @@
         state.hostedAt = result.hostedAt || new Date().toISOString();
         state.hostingStatus = 'active';
         state.published = true;
+        state.emailStatus = result.email || null;
         saveDraft();
-        setPaymentStatus('Payment successful!', 'Your invitation is online!');
+
+        /* 6. ✅ Invitation created successfully */
+        setPaymentStatus('✅ Invitation created successfully', 'Invitation published and verified.');
+        IH.toast.success('Invitation created successfully.', { title: '✅ Invitation created successfully' });
+
+        /* 7. 🔗 Invitation link generated */
+        setPaymentStatus('🔗 Invitation link generated', state.hostedUrl);
+        IH.toast.info(state.hostedUrl, { title: '🔗 Invitation link generated' });
+
+        /* 8. 📧 Sending invitation email... */
+        if (state.email) {
+          setPaymentStatus('📧 Sending invitation email...', 'Delivering confirmation email to ' + state.email + '...');
+        }
+
+        /* 9. ✅ Invitation email sent successfully / ❌ Invitation email could not be sent */
+        if (result.email && result.email.sent) {
+          setPaymentStatus('✅ Invitation email sent successfully', 'Sent to ' + (state.email || 'your email'));
+          IH.toast.success('Confirmation email sent to ' + (state.email || 'your email') + '.', { title: '✅ Invitation email sent successfully' });
+        } else if (result.email && result.email.sent === false && !result.email.skipped) {
+          setPaymentStatus('❌ Invitation email could not be sent', result.email.reason || 'Email delivery failed (invitation remains live online).', 'warn');
+          IH.toast.warn('Confirmation email could not be delivered: ' + (result.email.reason || '') + '. Your invitation is still live online.', { title: '❌ Invitation email could not be sent' });
+        }
+
+        /* 10. 🎉 Your invitation is ready! */
+        setTimeout(function () {
+          setPaymentStatus('🎉 Your invitation is ready!', 'Your invitation is live at ' + state.hostedUrl);
+        }, 1200);
+
         paintHostingStatus();
         paintShareLink();
         paintStepperDone();
         IH.confetti(36);
-        /* The server sends the confirmation email after a verified publish.
-           Its result arrives with the publish response — reported, never
-           fatal: the invitation stays online even if the email failed. */
-        if (result.email && result.email.sent === false && !result.email.skipped) {
-          IH.toast.info('Your invitation is online, but the confirmation email could not be sent. ' +
-                        'Your link is still available here.', { title: 'Email failed' });
-        } else if (result.email && result.email.sent) {
-          IH.toast.success('Confirmation email sent to ' + (state.email || 'your email') + '.', { title: 'Email sent' });
-        }
-        IH.toast.success('Your invitation is online!', { title: 'Hosted' });
+        IH.toast.success('Your invitation is live and ready to share!', { title: '🎉 Your invitation is ready!' });
       })
       .catch(function (err) {
         var cancelled = err && err.message === 'cancelled';
@@ -2236,22 +2324,17 @@
           /* Payment went through, but publishing did not finish — the
              invitation is still saved and the payment is not wasted. */
           setPaymentStatus(
-            'Payment successful, but publishing did not finish.',
-            'Your invitation is still saved. Try hosting again, or download it and publish later.',
-            true
+            '❌ Invitation publishing failed',
+            (err.message || 'Publishing could not complete.') + ' Your payment is safe. Click Host My Invitation to retry.',
+            'error'
           );
-          IH.toast.error('Your payment went through, but the publish did not complete. Try again.', { title: 'Still saved' });
+          IH.toast.error(err.message || 'Publishing could not complete.', { title: '❌ Invitation publishing failed' });
+        } else if (cancelled) {
+          setPaymentStatus('Payment cancelled', 'You can host your invitation anytime.', 'info');
+          IH.toast.info('Your invitation is still saved — nothing was charged.', { title: 'Payment cancelled' });
         } else {
-          setPaymentStatus(
-            'Payment was not completed.',
-            'Your invitation is still saved. You can try hosting it again whenever you’re ready.',
-            true
-          );
-          if (cancelled) {
-            IH.toast.info('Your invitation is still saved — nothing was published.', { title: 'Payment cancelled' });
-          } else {
-            IH.toast.error(err.message || 'The payment could not be completed.', { title: 'Still saved' });
-          }
+          setPaymentStatus('❌ Payment failed', err.message || 'The payment could not be completed.', 'error');
+          IH.toast.error(err.message || 'The payment could not be completed.', { title: '❌ Payment failed' });
         }
       })
       .then(function () {
@@ -2262,6 +2345,59 @@
 
   function initHosting() {
     on(qs('[data-host-now]', root), 'click', startHosting);
+
+    /* Retry sending email confirmation without re-publishing or re-paying */
+    on(qs('[data-hosted-email-retry]', root), 'click', function () {
+      if (!state.hostedUrl || !state.email) {
+        IH.toast.error('Invitation URL or customer email is missing.');
+        return;
+      }
+      var btn = qs('[data-hosted-email-retry]', root);
+      if (btn) btn.disabled = true;
+      setPaymentStatus('📧 Sending invitation email...', 'Retrying confirmation email to ' + state.email + '...');
+      IH.toast.info('Sending confirmation email to ' + state.email + '...', { title: '📧 Sending invitation email...' });
+
+      var customerName = IH.exportPage.personName(state) || state.hostName || state.title || 'there';
+      var invitationName = IH.exportPage.personName(state) || state.title || 'Your Invitation';
+
+      fetch('api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: state.email,
+          invitationUrl: state.hostedUrl,
+          invitationName: invitationName,
+          customerName: customerName
+        })
+      })
+      .then(function (res) {
+        return res.json().catch(function () {
+          throw new Error('The server sent an unreadable response.');
+        }).then(function (body) {
+          if (!res.ok || !body.success) {
+            throw new Error(body.error || 'Failed to send confirmation email.');
+          }
+          return body;
+        });
+      })
+      .then(function () {
+        state.emailStatus = { sent: true, skipped: false };
+        saveDraft();
+        setPaymentStatus('✅ Invitation email sent successfully', 'Sent to ' + state.email);
+        IH.toast.success('Confirmation email sent to ' + state.email + '!', { title: '✅ Invitation email sent successfully' });
+        paintHostedEmailStatus(state.emailStatus);
+      })
+      .catch(function (err) {
+        state.emailStatus = { sent: false, skipped: false, reason: err.message };
+        saveDraft();
+        setPaymentStatus('❌ Invitation email could not be sent', err.message || 'Failed to send email.', 'warn');
+        IH.toast.warn('Could not send confirmation email: ' + (err.message || ''), { title: '❌ Invitation email could not be sent' });
+        paintHostedEmailStatus(state.emailStatus);
+      })
+      .then(function () {
+        if (btn) btn.disabled = false;
+      });
+    });
 
     /* After a successful hosting payment: copy, open, share, WhatsApp,
        QR and download straight from the success panel. Every button uses

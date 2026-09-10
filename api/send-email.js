@@ -56,7 +56,7 @@ function getSmtpConfig() {
   const port = Number(process.env.SMTP_PORT || 465);
   const user = process.env.SMTP_USER;
   const pass = process.env.SMTP_PASS;
-  const from = process.env.SMTP_FROM || process.env.SMTP_USER;
+  const from = process.env.SMTP_FROM || (user ? `InviteAura <${user}>` : 'InviteAura <support@inviteaura.in>');
 
   const missing = [];
   if (!host) missing.push('SMTP_HOST');
@@ -97,7 +97,7 @@ function buildEmailHtml(opts) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your InviteAura Invitation is Ready!</title>
+  <title>Your InviteAura Invitation Is Ready!</title>
 </head>
 <body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background-color:#f5f5f5;line-height:1.6;color:#333;">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;padding:40px 20px;">
@@ -107,33 +107,34 @@ function buildEmailHtml(opts) {
           <!-- Header -->
           <tr>
             <td style="background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);padding:40px 30px;text-align:center;">
-              <img src="https://inviteaura.in/images/logo/inviteaura-light.png" alt="InviteAura" width="160" style="display:block;margin:0 auto 16px;max-width:100%;height:auto;">
-              <h1 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:600;color:#ffffff;line-height:1.3;">🎉 Congratulations!</h1>
+              <h1 style="margin:0 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:600;color:#ffffff;line-height:1.3;">InviteAura</h1>
+              <p style="margin:0;font-size:18px;color:rgba(255,255,255,0.95);font-weight:500;">🎉 Congratulations!</p>
             </td>
           </tr>
 
           <!-- Body -->
           <tr>
             <td style="padding:40px 30px;">
-              <p style="margin:0 0 16px;font-size:16px;color:#333;">Hello ${customer},</p>
-              <p style="margin:0 0 24px;font-size:16px;color:#333;">Congratulations! Your invitation <strong>"${name}"</strong> has been successfully created and is now ready to share.</p>
+              <p style="margin:0 0 16px;font-size:16px;color:#333;">Hi ${customer},</p>
+              <p style="margin:0 0 16px;font-size:16px;color:#333;">Congratulations! 🎉</p>
+              <p style="margin:0 0 24px;font-size:16px;color:#333;">Your invitation has been successfully created and is ready to share.</p>
 
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;background-color:#faf7f2;border-radius:8px;border:1px solid #eee;">
                 <tr>
-                  <td style="padding:14px 18px;font-size:15px;color:#333;"><strong>Invitation Name:</strong> ${name}</td>
-                </tr>
-                <tr>
-                  <td style="padding:0 18px 14px;font-size:15px;color:#333;"><strong>Customer Name:</strong> ${customer}</td>
+                  <td style="padding:16px 18px;font-size:15px;color:#333;">
+                    <strong style="color:#8B2F58;">Invitation:</strong><br>
+                    <span style="font-size:16px;font-weight:600;display:inline-block;margin-top:4px;">${name}</span>
+                  </td>
                 </tr>
               </table>
 
-              <p style="margin:0 0 8px;font-size:16px;color:#333;"><strong>Your Invitation:</strong></p>
+              <p style="margin:0 0 8px;font-size:16px;color:#333;"><strong>Your Invitation Link:</strong></p>
 
               <!-- CTA Button -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 12px;">
                 <tr>
                   <td align="center">
-                    <a href="${url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);color:#ffffff;text-decoration:none;padding:16px 32px;border-radius:8px;font-size:16px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;box-shadow:0 4px 14px rgba(139,47,88,0.3);">
+                    <a href="${url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);color:#ffffff;text-decoration:none;padding:16px 36px;border-radius:8px;font-size:16px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;box-shadow:0 4px 14px rgba(139,47,88,0.3);">
                       Open Your Invitation
                     </a>
                   </td>
@@ -144,20 +145,25 @@ function buildEmailHtml(opts) {
                 ${url}
               </p>
 
-              <p style="margin:0 0 24px;font-size:16px;color:#333;">You can open the invitation, check everything, and share the link with your family and friends.</p>
+              <p style="margin:0 0 20px;font-size:16px;color:#333;">You can open your invitation using the link above and share it with your family and friends.</p>
 
-              <hr style="border:none;border-top:1px solid #eee;margin:32px 0;">
+              <p style="margin:0 0 12px;font-size:15px;color:#333;">Thank you for choosing InviteAura. ❤️</p>
+              <p style="margin:0 0 12px;font-size:15px;color:#333;">We hope your celebration is beautiful, memorable, and filled with happiness.</p>
+              <p style="margin:0 0 24px;font-size:15px;color:#666;font-style:italic;">Create. Celebrate. Share.</p>
 
-              <p style="margin:0 0 8px;font-size:15px;color:#333;">Thank you for choosing InviteAura.</p>
-              <p style="margin:0;font-size:15px;color:#333;">Create. Celebrate. Share.</p>
-              <p style="margin:16px 0 0;font-size:15px;color:#333;"><strong>Team InviteAura</strong></p>
+              <hr style="border:none;border-top:1px solid #eee;margin:28px 0;">
+
+              <p style="margin:0;font-size:15px;color:#333;">Warm regards,</p>
+              <p style="margin:4px 0 0;font-size:15px;font-weight:600;color:#8B2F58;">Team InviteAura</p>
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
             <td style="background-color:#fafafa;padding:24px 30px;text-align:center;border-top:1px solid #eee;">
-              <p style="margin:0 0 8px;font-size:13px;color:#888;">support@inviteaura.in</p>
+              <p style="margin:0 0 8px;font-size:13px;color:#888;">
+                <a href="mailto:support@inviteaura.in" style="color:#8B2F58;text-decoration:none;">support@inviteaura.in</a>
+              </p>
               <p style="margin:0;font-size:13px;color:#888;">
                 <span style="font-family:'Playfair Display',Georgia,serif;font-weight:600;color:#8B2F58;">InviteAura</span> — Create beautiful memories. Share beautiful moments.
               </p>
@@ -174,26 +180,30 @@ function buildEmailHtml(opts) {
 }
 
 function buildEmailText(opts) {
-  return `Hello ${opts.customerName},
+  return `Hi ${opts.customerName},
 
 Congratulations! 🎉
 
-Your invitation has been successfully created and is now ready to share.
+Your invitation has been successfully created and is ready to share.
 
-Invitation Name: ${opts.invitationName}
+Invitation:
+${opts.invitationName}
 
-Customer Name: ${opts.customerName}
-
-Your Invitation:
+Your Invitation Link:
 ${opts.invitationUrl}
 
-You can open the invitation, check everything, and share the link with your family and friends.
+You can open your invitation using the link above and share it with your family and friends.
 
-Thank you for choosing InviteAura.
+Thank you for choosing InviteAura. ❤️
+
+We hope your celebration is beautiful, memorable, and filled with happiness.
 
 Create. Celebrate. Share.
 
-Team InviteAura`;
+Warm regards,
+Team InviteAura
+
+support@inviteaura.in`;
 }
 
 /* Sends one email. Can be called directly from api/publish.js or via HTTP */
@@ -214,10 +224,14 @@ async function sendInvitationEmail(opts) {
   if (!smtp.ok) {
     const err = new Error(smtp.error);
     err.code = 'SMTP_NOT_CONFIGURED';
+    console.error('[EMAIL] sending failed', {
+      error: err.message,
+      to: maskEmail(email)
+    });
     throw err;
   }
 
-  console.log('[send-email] sending started', {
+  console.log('[EMAIL] sending started', {
     to: maskEmail(email),
     invitationUrl: invitationUrl
   });
@@ -227,7 +241,7 @@ async function sendInvitationEmail(opts) {
   const info = await transporter.sendMail({
     from: smtp.from,
     to: email,
-    subject: '🎉 Congratulations! Your InviteAura Invitation Is Ready',
+    subject: '🎉 Your InviteAura Invitation Is Ready!',
     text: buildEmailText({
       invitationUrl: invitationUrl,
       invitationName: invitationName,
@@ -240,7 +254,7 @@ async function sendInvitationEmail(opts) {
     })
   });
 
-  console.log('[send-email] email sent successfully', {
+  console.log('[EMAIL] sending successful', {
     messageId: info.messageId,
     to: maskEmail(email)
   });
@@ -274,7 +288,7 @@ async function httpHandler(req, res) {
     });
     return json(res, 200, { success: true, message: 'Invitation email sent successfully', messageId: result.messageId });
   } catch (err) {
-    console.error('[send-email] email failed:', {
+    console.error('[EMAIL] sending failed:', {
       error: err.message,
       code: err.code,
       to: maskEmail(body.email)

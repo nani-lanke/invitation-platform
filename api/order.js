@@ -77,12 +77,18 @@ module.exports = async function handler(req, res) {
       const errInfo = order && order.error;
       const code = errInfo && errInfo.code;
       const description = errInfo && errInfo.description;
-      console.error('Razorpay order failed:', response.status, code, description);
+      console.error('[PAYMENT] checkout failed:', response.status, code, description);
       return json(res, 502, {
         error: 'The payment gateway could not start the order.' +
           (description ? ' Razorpay: ' + description : '')
       });
     }
+
+    console.log('[PAYMENT] checkout started', {
+      product: product.name,
+      orderId: order.id,
+      amount: order.amount
+    });
 
     return json(res, 201, {
       orderId: order.id,

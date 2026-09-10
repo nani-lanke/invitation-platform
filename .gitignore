@@ -10,3 +10,4 @@
 # OS and editor noise
 .DS_Store
 Thumbs.db
+.claude/settings.json
