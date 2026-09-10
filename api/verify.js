@@ -44,14 +44,28 @@ module.exports = async function handler(req, res) {
     return json(res, 400, { error: 'Missing payment details.' });
   }
 
+  console.log('[PAYMENT] verification started', {
+    orderId: orderId,
+    paymentId: paymentId
+  });
+
   const expected = crypto
     .createHmac('sha256', KEY_SECRET)
     .update(orderId + '|' + paymentId)
     .digest('hex');
 
   if (expected !== signature) {
+    console.error('[PAYMENT] verification failed', {
+      orderId: orderId,
+      paymentId: paymentId
+    });
     return json(res, 400, { error: 'Payment signature did not match.' });
   }
+
+  console.log('[PAYMENT] verification successful', {
+    orderId: orderId,
+    paymentId: paymentId
+  });
 
   return json(res, 200, { ok: true });
 };

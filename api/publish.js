@@ -242,7 +242,7 @@ module.exports = async function handler(req, res) {
     }
 
     /* Safe identifiers only — never the signature or any secret. */
-    console.log('[publish] payment gate passed', {
+    console.log('[PUBLISH] payment gate passed', {
       orderId: body && body.razorpay_order_id,
       paymentId: body && body.razorpay_payment_id
     });
@@ -252,6 +252,7 @@ module.exports = async function handler(req, res) {
     const IH = browser.load(root);
 
     const state = checked.state;
+    console.log('[PUBLISH] started', { title: state.title });
 
     if (!state.customColors) {
       IH.invitation.applyTemplate(
@@ -419,7 +420,7 @@ module.exports = async function handler(req, res) {
         'Publish invitation: ' + file
       );
 
-    console.log('[publish] GitHub write succeeded', {
+    console.log('[PUBLISH] successful', {
       filename: file,
       files: written.count
     });
@@ -435,6 +436,10 @@ module.exports = async function handler(req, res) {
         'The commit reported success, but the page could not be read back.'
       );
     }
+
+    console.log('[PUBLISH] final URL generated', {
+      publicUrl: publicUrl
+    });
 
     /* The invitation email, sent to the customer's own address. It runs
        only here — after payment verification AND a verified publish —
@@ -452,7 +457,7 @@ module.exports = async function handler(req, res) {
 
       if (alreadySent) {
         emailStatus = { sent: true, skipped: false, alreadySent: true, reason: '' };
-        console.log('[publish] Email already sent for this payment, skipping', {
+        console.log('[EMAIL] already sent for this payment, skipping', {
           paymentId: payment.paymentId
         });
       } else {
@@ -468,11 +473,11 @@ module.exports = async function handler(req, res) {
           });
 
           emailStatus = { sent: true, skipped: false, reason: '' };
-          console.log('[publish] Invitation email sent successfully', {
+          console.log('[EMAIL] sending successful', {
             email: maskEmail(state.email)
           });
           markEmailSent(payment.paymentId).catch(function (err) {
-            console.error('[publish] Mark email sent rejection (non-fatal):', err.message);
+            console.error('[EMAIL] Mark email sent rejection (non-fatal):', err.message);
           });
         } catch (emailErr) {
           emailStatus = {
@@ -480,7 +485,7 @@ module.exports = async function handler(req, res) {
             skipped: false,
             reason: emailErr.message
           };
-          console.error('[publish] Email failed (invitation stays live):', {
+          console.error('[EMAIL] sending failed (invitation stays live):', {
             error: emailErr.message,
             code: emailErr.code,
             email: maskEmail(state.email)

@@ -2389,8 +2389,12 @@ input[type="range"]::-moz-range-thumb {
 .notice > div { min-width: 0; }
 .notice--info { border-left-color: var(--secondary); background: var(--secondary-soft); }
 .notice--info svg { color: var(--secondary-ink); }
+.notice--success { border-left-color: var(--success); background: var(--success-soft); }
+.notice--success svg { color: var(--success); }
 .notice--warn { border-left-color: var(--warning); background: var(--warning-soft); }
 .notice--warn svg { color: var(--warning); }
+.notice--error { border-left-color: var(--danger); background: var(--danger-soft); }
+.notice--error svg { color: var(--danger); }
 
 .prose { max-width: 76ch; }
 .prose h2 { font-size: var(--step-3); margin-top: var(--space-7); margin-bottom: var(--space-4); }
