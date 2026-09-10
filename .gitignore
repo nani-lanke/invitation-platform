@@ -10,4 +10,7 @@
 # OS and editor noise
 .DS_Store
 Thumbs.db
+
+# Claude local configuration and temporary files
 .claude/settings.json
+.claude/scheduled_tasks.lock

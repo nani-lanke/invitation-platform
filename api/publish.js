@@ -448,6 +448,8 @@ module.exports = async function handler(req, res) {
        live and the response says exactly what happened to the email. */
     let emailStatus = {
       sent: false,
+      accepted: false,
+      rejected: false,
       skipped: true,
       reason: state.email ? '' : 'no customer email in the invitation data'
     };
@@ -456,38 +458,68 @@ module.exports = async function handler(req, res) {
       const alreadySent = await hasEmailBeenSent(payment.paymentId);
 
       if (alreadySent) {
-        emailStatus = { sent: true, skipped: false, alreadySent: true, reason: '' };
+        emailStatus = { sent: true, accepted: true, rejected: false, skipped: false, alreadySent: true, reason: '' };
         console.log('[EMAIL] already sent for this payment, skipping', {
           paymentId: payment.paymentId
         });
       } else {
         const customerName = IH.exportPage.personName(state) || state.hostName || state.title || 'there';
         const invitationName = IH.exportPage.personName(state) || state.title || 'Your Invitation';
+        const attemptId = 'EMAIL-' + Date.now() + '-' + crypto.randomBytes(3).toString('hex');
 
         try {
-          await sendInvitationEmail({
+          const emailRes = await sendInvitationEmail({
             email: state.email,
             invitationUrl: publicUrl,
             invitationName: invitationName,
-            customerName: customerName
+            customerName: customerName,
+            attemptId: attemptId
           });
 
-          emailStatus = { sent: true, skipped: false, reason: '' };
-          console.log('[EMAIL] sending successful', {
-            email: maskEmail(state.email)
-          });
-          markEmailSent(payment.paymentId).catch(function (err) {
-            console.error('[EMAIL] Mark email sent rejection (non-fatal):', err.message);
-          });
+          if (emailRes && emailRes.success && emailRes.accepted) {
+            emailStatus = {
+              sent: true,
+              accepted: true,
+              rejected: false,
+              skipped: false,
+              attemptId: emailRes.attemptId || attemptId,
+              messageId: emailRes.messageId || '',
+              providerResponse: emailRes.providerResponse || '',
+              message: 'Email accepted by the mail server. Please check Inbox and Spam/Junk.',
+              reason: ''
+            };
+            console.log('[EMAIL] sending successful', {
+              attemptId: attemptId,
+              email: maskEmail(state.email)
+            });
+            markEmailSent(payment.paymentId).catch(function (err) {
+              console.error('[EMAIL] Mark email sent rejection (non-fatal):', err.message);
+            });
+          } else {
+            emailStatus = {
+              sent: false,
+              accepted: false,
+              rejected: !!(emailRes && emailRes.rejected),
+              skipped: false,
+              attemptId: (emailRes && emailRes.attemptId) || attemptId,
+              reason: (emailRes && emailRes.error) || 'The email provider rejected the message.',
+              error: (emailRes && emailRes.error) || 'The email provider rejected the message.'
+            };
+          }
         } catch (emailErr) {
           emailStatus = {
             sent: false,
+            accepted: false,
+            rejected: false,
             skipped: false,
-            reason: emailErr.message
+            attemptId: emailErr.attemptId || attemptId,
+            reason: emailErr.message || 'Unable to send confirmation email',
+            error: emailErr.message || 'Unable to send confirmation email'
           };
           console.error('[EMAIL] sending failed (invitation stays live):', {
             error: emailErr.message,
             code: emailErr.code,
+            attemptId: emailErr.attemptId || attemptId,
             email: maskEmail(state.email)
           });
         }

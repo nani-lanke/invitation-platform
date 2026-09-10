@@ -2026,19 +2026,20 @@
     var msgEl = qs('[data-hosted-email-msg]', box);
     var retryBtn = qs('[data-hosted-email-retry]', box);
 
-    if (emailStatus.sent) {
+    if (emailStatus.accepted || emailStatus.sent) {
       box.hidden = false;
       box.className = 'notice notice--success';
-      if (titleEl) titleEl.textContent = '✅ Confirmation Email Sent';
-      if (msgEl) msgEl.textContent = 'An invitation confirmation email was sent to ' + (state.email || 'your email') + '.';
+      if (titleEl) titleEl.textContent = '✅ Email Accepted by Mail Server';
+      if (msgEl) msgEl.textContent = 'Email accepted by the mail server for ' + (state.email || 'your email') + '. Please check your Inbox and Spam/Junk folder.';
       if (retryBtn) retryBtn.hidden = false;
     } else if (emailStatus.skipped) {
       box.hidden = true;
     } else {
+      var reason = emailStatus.reason || emailStatus.error || 'The email could not be delivered by the server';
       box.hidden = false;
       box.className = 'notice notice--warn';
-      if (titleEl) titleEl.textContent = '❌ Email Delivery Issue';
-      if (msgEl) msgEl.textContent = 'The invitation is online, but the email could not be sent' + (emailStatus.reason ? ' (' + emailStatus.reason + ')' : '') + '. You can retry sending it.';
+      if (titleEl) titleEl.textContent = '❌ Email Sending Failed';
+      if (msgEl) msgEl.textContent = 'Reason: ' + reason + '. The invitation is live online — you can retry sending the email.';
       if (retryBtn) retryBtn.hidden = false;
     }
   }
@@ -2221,10 +2222,10 @@
         });
       });
     }).then(function (payment) {
-      /* 2. ✅ Payment successful */
-      setPaymentStatus('✅ Payment successful', 'Payment received. Preparing verification...');
-      setHostBtnBusy(true, '✅ Payment successful');
-      IH.toast.success('Payment received successfully.', { title: '✅ Payment successful' });
+      /* 2. 💳 Payment successful */
+      setPaymentStatus('💳 Payment successful', 'Payment received. Preparing verification...');
+      setHostBtnBusy(true, '💳 Payment successful');
+      IH.toast.success('Payment received successfully.', { title: '💳 Payment successful' });
 
       /* 3. 🔐 Verifying payment... */
       setPaymentStatus('🔐 Verifying payment...', 'Verifying payment signature with server...');
@@ -2254,7 +2255,7 @@
         saveDraft();
 
         /* 4. ✅ Payment verified successfully */
-        setPaymentStatus('✅ Payment verified successfully', 'Payment confirmed. Starting publishing...');
+        setPaymentStatus('✅ Payment verified successfully', 'Payment confirmed.');
         setHostBtnBusy(true, '✅ Payment verified successfully');
         IH.toast.success('Payment verified successfully.', { title: '✅ Payment verified successfully' });
         return {};
@@ -2266,10 +2267,16 @@
     }))
       .then(function () {
         console.log('[hosting] verification done, starting publish');
-        /* 5. 📄 Creating your invitation... */
-        setPaymentStatus('📄 Creating your invitation...', 'Building invitation page and publishing to server...');
-        setHostBtnBusy(true, '📄 Creating your invitation...');
-        IH.toast.info('Publishing your invitation online...', { title: '📄 Creating your invitation...' });
+        /* 5. 📄 Creating invitation */
+        setPaymentStatus('📄 Creating invitation', 'Building invitation page and assets...');
+        setHostBtnBusy(true, '📄 Creating invitation');
+        IH.toast.info('Building invitation page...', { title: '📄 Creating invitation' });
+
+        /* 6. 🌐 Publishing invitation */
+        setPaymentStatus('🌐 Publishing invitation', 'Publishing invitation online and verifying public address...');
+        setHostBtnBusy(true, '🌐 Publishing invitation');
+        IH.toast.info('Publishing invitation online...', { title: '🌐 Publishing invitation' });
+
         return runPublish(qs('[data-publish-box]', root));
       })
       .then(function (result) {
@@ -2284,32 +2291,29 @@
         state.emailStatus = result.email || null;
         saveDraft();
 
-        /* 6. ✅ Invitation created successfully */
-        setPaymentStatus('✅ Invitation created successfully', 'Invitation published and verified.');
-        IH.toast.success('Invitation created successfully.', { title: '✅ Invitation created successfully' });
-
         /* 7. 🔗 Invitation link generated */
         setPaymentStatus('🔗 Invitation link generated', state.hostedUrl);
-        IH.toast.info(state.hostedUrl, { title: '🔗 Invitation link generated' });
 
-        /* 8. 📧 Sending invitation email... */
+        /* 8. 📧 Preparing email & 📤 Sending email */
         if (state.email) {
-          setPaymentStatus('📧 Sending invitation email...', 'Delivering confirmation email to ' + state.email + '...');
+          setPaymentStatus('📧 Preparing email', 'Preparing invitation confirmation email...');
+          setPaymentStatus('📤 Sending email', 'Sending email via mail server to ' + state.email + '...');
         }
 
-        /* 9. ✅ Invitation email sent successfully / ❌ Invitation email could not be sent */
-        if (result.email && result.email.sent) {
-          setPaymentStatus('✅ Invitation email sent successfully', 'Sent to ' + (state.email || 'your email'));
-          IH.toast.success('Confirmation email sent to ' + (state.email || 'your email') + '.', { title: '✅ Invitation email sent successfully' });
-        } else if (result.email && result.email.sent === false && !result.email.skipped) {
-          setPaymentStatus('❌ Invitation email could not be sent', result.email.reason || 'Email delivery failed (invitation remains live online).', 'warn');
-          IH.toast.warn('Confirmation email could not be delivered: ' + (result.email.reason || '') + '. Your invitation is still live online.', { title: '❌ Invitation email could not be sent' });
+        /* 9. ✅ Email accepted by mail server / ❌ Email sending failed */
+        if (result.email && (result.email.accepted || result.email.sent)) {
+          setPaymentStatus('✅ Email accepted by mail server', 'Email accepted by the mail server. Please check Inbox and Spam/Junk.');
+          IH.toast.success('Email accepted by the mail server. Please check Inbox and Spam/Junk.', { title: '✅ Email accepted by mail server' });
+        } else if (result.email && (result.email.sent === false || result.email.rejected) && !result.email.skipped) {
+          var reason = result.email.reason || result.email.error || 'Mail server error';
+          setPaymentStatus('❌ Email sending failed', 'Reason: ' + reason, 'warn');
+          IH.toast.warn('Email sending failed. Reason: ' + reason, { title: '❌ Email sending failed' });
         }
 
         /* 10. 🎉 Your invitation is ready! */
         setTimeout(function () {
           setPaymentStatus('🎉 Your invitation is ready!', 'Your invitation is live at ' + state.hostedUrl);
-        }, 1200);
+        }, 1800);
 
         paintHostingStatus();
         paintShareLink();
@@ -2354,8 +2358,12 @@
       }
       var btn = qs('[data-hosted-email-retry]', root);
       if (btn) btn.disabled = true;
-      setPaymentStatus('📧 Sending invitation email...', 'Retrying confirmation email to ' + state.email + '...');
-      IH.toast.info('Sending confirmation email to ' + state.email + '...', { title: '📧 Sending invitation email...' });
+
+      setPaymentStatus('📧 Preparing email', 'Preparing confirmation email to ' + state.email + '...');
+      setTimeout(function () {
+        setPaymentStatus('📤 Sending email', 'Sending email via mail server to ' + state.email + '...');
+      }, 300);
+      IH.toast.info('Sending confirmation email to ' + state.email + '...', { title: '📤 Sending email' });
 
       var customerName = IH.exportPage.personName(state) || state.hostName || state.title || 'there';
       var invitationName = IH.exportPage.personName(state) || state.title || 'Your Invitation';
@@ -2374,24 +2382,38 @@
         return res.json().catch(function () {
           throw new Error('The server sent an unreadable response.');
         }).then(function (body) {
-          if (!res.ok || !body.success) {
+          if (!res.ok || !body.success || !body.accepted) {
             throw new Error(body.error || 'Failed to send confirmation email.');
           }
           return body;
         });
       })
-      .then(function () {
-        state.emailStatus = { sent: true, skipped: false };
+      .then(function (body) {
+        state.emailStatus = {
+          sent: true,
+          accepted: true,
+          rejected: false,
+          skipped: false,
+          attemptId: body.attemptId,
+          messageId: body.messageId
+        };
         saveDraft();
-        setPaymentStatus('✅ Invitation email sent successfully', 'Sent to ' + state.email);
-        IH.toast.success('Confirmation email sent to ' + state.email + '!', { title: '✅ Invitation email sent successfully' });
+        setPaymentStatus('✅ Email accepted by mail server', 'Email accepted by the mail server. Please check Inbox and Spam/Junk.');
+        IH.toast.success('Email accepted by the mail server. Please check Inbox and Spam/Junk.', { title: '✅ Email accepted by mail server' });
         paintHostedEmailStatus(state.emailStatus);
       })
       .catch(function (err) {
-        state.emailStatus = { sent: false, skipped: false, reason: err.message };
+        state.emailStatus = {
+          sent: false,
+          accepted: false,
+          rejected: false,
+          skipped: false,
+          reason: err.message,
+          error: err.message
+        };
         saveDraft();
-        setPaymentStatus('❌ Invitation email could not be sent', err.message || 'Failed to send email.', 'warn');
-        IH.toast.warn('Could not send confirmation email: ' + (err.message || ''), { title: '❌ Invitation email could not be sent' });
+        setPaymentStatus('❌ Email sending failed', 'Reason: ' + (err.message || 'Unknown error'), 'warn');
+        IH.toast.warn('Email sending failed. Reason: ' + (err.message || ''), { title: '❌ Email sending failed' });
         paintHostedEmailStatus(state.emailStatus);
       })
       .then(function () {
