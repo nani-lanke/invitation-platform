@@ -111,6 +111,27 @@ module.exports = async function handler(req, res) {
     }
   }
 
+  /* 4. SMTP Email Service --------------------------------------------- */
+  const hasSmtpHost = Boolean(process.env.SMTP_HOST);
+  const hasSmtpUser = Boolean(process.env.SMTP_USER);
+  const hasSmtpPass = Boolean(process.env.SMTP_PASS);
+  const smtpPort = process.env.SMTP_PORT || '465';
+  const smtpFrom = process.env.SMTP_FROM || process.env.SMTP_USER || '';
+
+  const smtpMissing = [];
+  if (!hasSmtpHost) smtpMissing.push('SMTP_HOST');
+  if (!hasSmtpUser) smtpMissing.push('SMTP_USER');
+  if (!hasSmtpPass) smtpMissing.push('SMTP_PASS');
+
+  const smtpOk = smtpMissing.length === 0;
+  checks.push(step(
+    'SMTP Email',
+    smtpOk
+      ? `configured (Host: ${process.env.SMTP_HOST}, Port: ${smtpPort}, User: ${process.env.SMTP_USER}, From: ${smtpFrom})`
+      : `MISSING variables: ${smtpMissing.join(', ')} (emails will not be sent after publishing)`,
+    smtpOk
+  ));
+
   res.status(fatal ? 500 : 200);
   res.setHeader('Content-Type', 'application/json; charset=utf-8');
   res.setHeader('Cache-Control', 'no-store');
