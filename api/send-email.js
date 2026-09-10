@@ -1,21 +1,24 @@
 /* ====================================================================
    api/send-email.js — POST: send the published invitation email
 
-   Sends a professional invitation email via Spacemail SMTP to the
-   customer's email address after successful payment AND publishing.
+   Sends the congratulations email via SMTP (nodemailer) to the
+   customer's email address. Called directly by api/publish.js after
+   successful payment AND successful publishing — never for a failed
+   publish, and never to an admin address.
 
-   Environment variables (set in Vercel):
+   Environment variables (set in Vercel, all environments):
      SMTP_HOST         e.g., mail.spacemail.com
-     SMTP_PORT         e.g., 465
+     SMTP_PORT         e.g., 465 (secure) or 587
      SMTP_USER         e.g., support@inviteaura.in
-     SMTP_PASS         the Spacemail mailbox password
+     SMTP_PASS         the mailbox password
      SMTP_FROM         e.g., InviteAura <support@inviteaura.in>
 
-   Request body:
-     { email: "customer@example.com", invitationUrl: "https://inviteaura.in/invitation_card/..." }
+   Request body (from api/publish.js, or a manual retry):
+     { email, invitationUrl, invitationName, customerName }
 
    Response:
-     { success: true, message: "Invitation email sent successfully" }
+     200 { success: true,  message }
+     4xx/5xx { success: false, error }
    ==================================================================== */
 
 'use strict';
@@ -28,17 +31,24 @@ function json(res, status, body) {
 }
 
 function validateEmail(email) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
 
 function validateUrl(url) {
   try {
-    const parsed = new URL(url);
-    return parsed.protocol === 'https:';
+    return new URL(url).protocol === 'https:';
   } catch (err) {
     return false;
   }
+}
+
+/* Logs name the person, never the address. */
+function maskEmail(email) {
+  const at = String(email).indexOf('@');
+  if (at <= 0) return '***';
+  const local = String(email).slice(0, at);
+  const domain = String(email).slice(at);
+  return local.slice(0, 2) + '***' + domain;
 }
 
 function getSmtpConfig() {
@@ -62,17 +72,26 @@ function getSmtpConfig() {
     config: {
       host: host,
       port: port,
-      secure: true, // true for 465, false for other ports
-      auth: {
-        user: user,
-        pass: pass
-      }
+      secure: port === 465, // implicit TLS on 465, STARTTLS otherwise
+      auth: { user: user, pass: pass }
     },
     from: from
   };
 }
 
-function buildEmailHtml(invitationUrl, invitationName) {
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function buildEmailHtml(opts) {
+  const url = opts.invitationUrl;
+  const name = escapeHtml(opts.invitationName);
+  const customer = escapeHtml(opts.customerName);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -89,39 +108,49 @@ function buildEmailHtml(invitationUrl, invitationName) {
           <tr>
             <td style="background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);padding:40px 30px;text-align:center;">
               <img src="https://inviteaura.in/images/logo/inviteaura-light.png" alt="InviteAura" width="160" style="display:block;margin:0 auto 16px;max-width:100%;height:auto;">
-              <h1 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:600;color:#ffffff;line-height:1.3;">Your Invitation is Ready! 🎉</h1>
+              <h1 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:600;color:#ffffff;line-height:1.3;">🎉 Congratulations!</h1>
             </td>
           </tr>
 
           <!-- Body -->
           <tr>
             <td style="padding:40px 30px;">
-              <p style="margin:0 0 16px;font-size:16px;color:#333;">Hello!</p>
-              <p style="margin:0 0 24px;font-size:16px;color:#333;">Congratulations! Your beautiful invitation <strong>"${invitationName}"</strong> has been successfully created with InviteAura.</p>
-              <p style="margin:0 0 24px;font-size:16px;color:#333;">Your invitation is now ready to share with your family and friends.</p>
+              <p style="margin:0 0 16px;font-size:16px;color:#333;">Hello ${customer},</p>
+              <p style="margin:0 0 24px;font-size:16px;color:#333;">Congratulations! Your invitation <strong>"${name}"</strong> has been successfully created and is now ready to share.</p>
+
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;background-color:#faf7f2;border-radius:8px;border:1px solid #eee;">
+                <tr>
+                  <td style="padding:14px 18px;font-size:15px;color:#333;"><strong>Invitation Name:</strong> ${name}</td>
+                </tr>
+                <tr>
+                  <td style="padding:0 18px 14px;font-size:15px;color:#333;"><strong>Customer Name:</strong> ${customer}</td>
+                </tr>
+              </table>
+
+              <p style="margin:0 0 8px;font-size:16px;color:#333;"><strong>Your Invitation:</strong></p>
 
               <!-- CTA Button -->
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:32px 0;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 8px;">
                 <tr>
                   <td align="center">
-                    <a href="${invitationUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);color:#ffffff;text-decoration:none;padding:16px 32px;border-radius:8px;font-size:16px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;box-shadow:0 4px 14px rgba(139,47,88,0.3);">
-                      View Your Invitation
+                    <a href="${url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);color:#ffffff;text-decoration:none;padding:16px 32px;border-radius:8px;font-size:16px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;box-shadow:0 4px 14px rgba(139,47,88,0.3);">
+                      Open Your Invitation
                     </a>
                   </td>
                 </tr>
               </table>
 
-              <p style="margin:24px 0 8px;font-size:14px;color:#666;text-align:center;">Or copy this link:</p>
-              <p style="margin:0 0 24px;padding:12px 16px;background-color:#f8f8f8;border-radius:8px;word-break:break-all;font-size:13px;color:#8B2F58;text-align:center;font-family:monospace;">
-                ${invitationUrl}
+              <p style="margin:8px 0 24px;padding:12px 16px;background-color:#f8f8f8;border-radius:8px;word-break:break-all;font-size:13px;color:#8B2F58;text-align:center;font-family:monospace;">
+                ${url}
               </p>
+
+              <p style="margin:0 0 24px;font-size:16px;color:#333;">You can open the invitation, check everything, and share the link with your family and friends.</p>
 
               <hr style="border:none;border-top:1px solid #eee;margin:32px 0;">
 
               <p style="margin:0 0 8px;font-size:15px;color:#333;">Thank you for choosing InviteAura.</p>
-              <p style="margin:0 0 8px;font-size:15px;color:#333;">We wish you and your family beautiful memories, happiness, and a wonderful celebration. ❤️</p>
-
-              <p style="margin:24px 0 0;font-size:15px;color:#333;">Warm wishes,<br><strong>Team InviteAura</strong></p>
+              <p style="margin:0;font-size:15px;color:#333;">Create. Celebrate. Share.</p>
+              <p style="margin:16px 0 0;font-size:15px;color:#333;"><strong>Team InviteAura</strong></p>
             </td>
           </tr>
 
@@ -144,34 +173,83 @@ function buildEmailHtml(invitationUrl, invitationName) {
 </html>`;
 }
 
-function buildEmailText(invitationUrl, invitationName) {
-  return `Hello!
+function buildEmailText(opts) {
+  return `Hello ${opts.customerName},
 
 Congratulations! 🎉
 
-Your beautiful invitation "${invitationName}" has been successfully created with InviteAura.
+Your invitation has been successfully created and is now ready to share.
 
-Your invitation is now ready to share with your family and friends.
+Invitation Name: ${opts.invitationName}
 
-OPEN YOUR INVITATION:
-${invitationUrl}
+Customer Name: ${opts.customerName}
 
----
+Your Invitation:
+${opts.invitationUrl}
+
+You can open the invitation, check everything, and share the link with your family and friends.
 
 Thank you for choosing InviteAura.
 
-We wish you and your family beautiful memories, happiness, and a wonderful celebration. ❤️
+Create. Celebrate. Share.
 
-Warm wishes,
-Team InviteAura
-
-support@inviteaura.in
-
-InviteAura
-Create beautiful memories. Share beautiful moments.`;
+Team InviteAura`;
 }
 
-module.exports = async function handler(req, res) {
+/* Sends one email. Can be called directly from api/publish.js or via HTTP */
+async function sendInvitationEmail(opts) {
+  const email = String(opts && opts.email || '').trim().toLowerCase();
+  const invitationUrl = String(opts && opts.invitationUrl || '').trim();
+  const invitationName = String(opts && opts.invitationName || 'Your Invitation').trim();
+  const customerName = String(opts && opts.customerName || 'there').trim() || 'there';
+
+  if (!validateEmail(email)) {
+    throw new Error('A valid customer email address is required.');
+  }
+  if (!validateUrl(invitationUrl)) {
+    throw new Error('A valid invitation URL is required.');
+  }
+
+  const smtp = getSmtpConfig();
+  if (!smtp.ok) {
+    const err = new Error(smtp.error);
+    err.code = 'SMTP_NOT_CONFIGURED';
+    throw err;
+  }
+
+  console.log('[send-email] sending started', {
+    to: maskEmail(email),
+    invitationUrl: invitationUrl
+  });
+
+  const transporter = nodemailer.createTransport(smtp.config);
+
+  const info = await transporter.sendMail({
+    from: smtp.from,
+    to: email,
+    subject: '🎉 Congratulations! Your InviteAura Invitation Is Ready',
+    text: buildEmailText({
+      invitationUrl: invitationUrl,
+      invitationName: invitationName,
+      customerName: customerName
+    }),
+    html: buildEmailHtml({
+      invitationUrl: invitationUrl,
+      invitationName: invitationName,
+      customerName: customerName
+    })
+  });
+
+  console.log('[send-email] email sent successfully', {
+    messageId: info.messageId,
+    to: maskEmail(email)
+  });
+
+  return { messageId: info.messageId };
+}
+
+/* Direct HTTP entry point for Vercel /api/send-email */
+async function httpHandler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return json(res, 405, { error: 'Use POST.' });
@@ -185,66 +263,39 @@ module.exports = async function handler(req, res) {
       return json(res, 400, { error: 'The request body was not valid JSON.' });
     }
   }
-
-  const email = String(body && body.email || '').trim().toLowerCase();
-  const invitationUrl = String(body && body.invitationUrl || '').trim();
-  const invitationName = String(body && body.invitationName || 'Your Invitation').trim();
-
-  // Validate inputs
-  if (!email || !validateEmail(email)) {
-    return json(res, 400, { error: 'A valid email address is required.' });
-  }
-
-  if (!invitationUrl || !validateUrl(invitationUrl)) {
-    return json(res, 400, { error: 'A valid invitation URL is required.' });
-  }
-
-  // Get SMTP configuration
-  const smtp = getSmtpConfig();
-  if (!smtp.ok) {
-    console.error('[send-email] SMTP configuration error:', smtp.error);
-    return json(res, 503, { error: 'Email service is not configured.' });
-  }
+  body = body || {};
 
   try {
-    // Create transporter
-    const transporter = nodemailer.createTransport(smtp.config);
-
-    // Verify connection
-    await transporter.verify();
-
-    // Send email
-    const info = await transporter.sendMail({
-      from: smtp.from,
-      to: email,
-      subject: 'Your InviteAura Invitation is Ready! 🎉',
-      text: buildEmailText(invitationUrl, invitationName),
-      html: buildEmailHtml(invitationUrl, invitationName)
+    const result = await sendInvitationEmail({
+      email: body.email,
+      invitationUrl: body.invitationUrl,
+      invitationName: body.invitationName,
+      customerName: body.customerName
     });
-
-    console.log('[send-email] Email sent successfully', {
-      messageId: info.messageId,
-      to: email,
-      invitationUrl: invitationUrl
-    });
-
-    return json(res, 200, {
-      success: true,
-      message: 'Invitation email sent successfully'
-    });
-
+    return json(res, 200, { success: true, message: 'Invitation email sent successfully', messageId: result.messageId });
   } catch (err) {
-    // Log error without sensitive info
-    console.error('[send-email] Failed to send email:', {
+    console.error('[send-email] email failed:', {
       error: err.message,
       code: err.code,
-      to: email,
-      invitationUrl: invitationUrl
+      to: maskEmail(body.email)
     });
 
-    return json(res, 500, {
+    const status = err.code === 'SMTP_NOT_CONFIGURED' ? 503 : 500;
+    return json(res, status, {
       success: false,
-      message: 'Unable to send invitation email'
+      error: 'Unable to send the invitation email: ' + err.message
     });
   }
-};
+}
+
+/* Dual export: works as Vercel serverless HTTP handler (req, res) AND as a directly imported JS function(opts) */
+async function entry(reqOrOpts, maybeRes) {
+  if (maybeRes && typeof maybeRes.status === 'function') {
+    return httpHandler(reqOrOpts, maybeRes);
+  }
+  return sendInvitationEmail(reqOrOpts);
+}
+
+module.exports = entry;
+module.exports.sendInvitationEmail = sendInvitationEmail;
+module.exports.handler = httpHandler;

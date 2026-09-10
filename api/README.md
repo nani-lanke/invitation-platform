@@ -36,6 +36,11 @@ Environment Variables:
 | `SITE_URL` | `https://invites.example.com/` | no — defaults to the request's own host |
 | `RAZORPAY_KEY_ID` | `rzp_live_…` | yes, for payments |
 | `RAZORPAY_KEY_SECRET` | `…` | yes, for payments |
+| `SMTP_HOST` | `mail.spacemail.com` | yes, for customer confirmation emails |
+| `SMTP_PORT` | `465` (SSL) or `587` | no, defaults to `465` |
+| `SMTP_USER` | `support@inviteaura.in` | yes, for customer confirmation emails |
+| `SMTP_PASS` | `…` | yes, for customer confirmation emails |
+| `SMTP_FROM` | `InviteAura <support@inviteaura.in>` | no, defaults to `SMTP_USER` |
 | `PUBLISH_LIMIT_IP` | `5` per hour per address | no |
 | `PUBLISH_LIMIT_DAY` | `200` per day for everyone | no |
 | `ALLOW_CHECK` | `1` to turn on `/api/check` while setting up | no |

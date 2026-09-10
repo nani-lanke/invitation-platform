@@ -31,41 +31,35 @@ const MUSIC_DIR = 'background_music';
 
 const MAX_BODY = 5 * 1024 * 1024;
 
-/* Send the invitation email via internal HTTP call to /api/send-email.
-   This is fire-and-forget: email failure must not undo a successful publish. */
-async function sendInvitationEmail(invitationUrl, customerEmail, invitationName) {
-  try {
-    const res = await fetch(process.env.SITE_URL ? process.env.SITE_URL + 'api/send-email' : '/api/send-email', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: customerEmail, invitationUrl: invitationUrl, invitationName: invitationName })
-    });
-    const result = await res.json();
-    if (result.success) {
-      console.log('[publish] Invitation email sent successfully', { email: customerEmail });
-    } else {
-      console.error('[publish] Failed to send invitation email', { email: customerEmail, message: result.message });
-    }
-  } catch (err) {
-    console.error('[publish] Email send error (non-fatal):', { email: customerEmail, error: err.message });
-  }
+/* The invitation email. api/publish calls the mailer DIRECTLY — an
+   HTTP call from the function to itself never works: with no SITE_URL
+   the relative '/api/send-email' makes fetch throw "Failed to parse
+   URL", and with one it is a needless network hop. The send is awaited
+   so a Vercel function cannot be frozen before the mail leaves. */
+const sendInvitationEmail = require('./send-email');
+
+function maskEmail(email) {
+  const at = String(email || '').indexOf('@');
+  if (at <= 0) return '***';
+  return String(email).slice(0, 2) + '***' + String(email).slice(at);
 }
 
-/* Check if an email has already been sent for this payment to prevent duplicates.
-   Uses a simple in-memory set + GitHub registry check for durability across restarts. */
+/* Duplicate protection: the email is sent at most once per payment.
+   Sent and failed are different states — only a confirmed send is
+   marked, so a failed email can be retried. */
 const sentEmails = new Set();
 
 async function hasEmailBeenSent(paymentId) {
   if (!paymentId) return false;
 
-  // Quick in-memory check
   if (sentEmails.has(paymentId)) return true;
 
-  // Check GitHub registry for durability across restarts
   try {
     const index = await readIndex();
     if (index.ok) {
-      const entry = index.entries.find(e => e.paymentId === paymentId);
+      const entry = index.entries.find(function (e) {
+        return e.paymentId === paymentId;
+      });
       if (entry && entry.emailSent === true) {
         sentEmails.add(paymentId);
         return true;
@@ -78,17 +72,20 @@ async function hasEmailBeenSent(paymentId) {
   return false;
 }
 
+/* A durable record of a confirmed send, written after the mailer
+   reports success. A failure here only costs duplicate protection on
+   the next attempt — it never undoes the sent mail itself. */
 async function markEmailSent(paymentId) {
   if (!paymentId) return;
 
-  // Add to in-memory set
   sentEmails.add(paymentId);
 
-  // Update GitHub registry for durability
   try {
     const index = await readIndex();
     if (index.ok) {
-      const entry = index.entries.find(e => e.paymentId === paymentId);
+      const entry = index.entries.find(function (e) {
+        return e.paymentId === paymentId;
+      });
       if (entry) {
         entry.emailSent = true;
         await github.putFiles([{
@@ -439,22 +436,56 @@ module.exports = async function handler(req, res) {
       );
     }
 
-    /* Send invitation email to the customer (fire-and-forget).
-       Email failure must not undo the successful publication.
-       Duplicate protection: only send once per payment. */
-    if (state.email && payment.paymentId) {
+    /* The invitation email, sent to the customer's own address. It runs
+       only here — after payment verification AND a verified publish —
+       and is awaited so the mail cannot be frozen out of a serverless
+       function. Failure never undoes the publication: the URL stays
+       live and the response says exactly what happened to the email. */
+    let emailStatus = {
+      sent: false,
+      skipped: true,
+      reason: state.email ? '' : 'no customer email in the invitation data'
+    };
+
+    if (state.email) {
       const alreadySent = await hasEmailBeenSent(payment.paymentId);
-      if (!alreadySent) {
-        const invitationName = IH.exportPage.personName(state) || state.title || 'Your Invitation';
-        sendInvitationEmail(publicUrl, state.email, invitationName).catch(function (err) {
-          console.error('[publish] Email promise rejection (non-fatal):', err.message);
-        });
-        // Mark as sent immediately to prevent race conditions
-        markEmailSent(payment.paymentId).catch(function (err) {
-          console.error('[publish] Mark email sent rejection (non-fatal):', err.message);
+
+      if (alreadySent) {
+        emailStatus = { sent: true, skipped: false, alreadySent: true, reason: '' };
+        console.log('[publish] Email already sent for this payment, skipping', {
+          paymentId: payment.paymentId
         });
       } else {
-        console.log('[publish] Email already sent for this payment, skipping', { paymentId: payment.paymentId });
+        const customerName = IH.exportPage.personName(state) || state.hostName || state.title || 'there';
+        const invitationName = IH.exportPage.personName(state) || state.title || 'Your Invitation';
+
+        try {
+          await sendInvitationEmail({
+            email: state.email,
+            invitationUrl: publicUrl,
+            invitationName: invitationName,
+            customerName: customerName
+          });
+
+          emailStatus = { sent: true, skipped: false, reason: '' };
+          console.log('[publish] Invitation email sent successfully', {
+            email: maskEmail(state.email)
+          });
+          markEmailSent(payment.paymentId).catch(function (err) {
+            console.error('[publish] Mark email sent rejection (non-fatal):', err.message);
+          });
+        } catch (emailErr) {
+          emailStatus = {
+            sent: false,
+            skipped: false,
+            reason: emailErr.message
+          };
+          console.error('[publish] Email failed (invitation stays live):', {
+            error: emailErr.message,
+            code: emailErr.code,
+            email: maskEmail(state.email)
+          });
+        }
       }
     }
 
@@ -482,7 +513,9 @@ module.exports = async function handler(req, res) {
 
       verified: true,
 
-      hostedAt: now
+      hostedAt: now,
+
+      email: emailStatus
     });
 
   } catch (err) {

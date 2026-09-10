@@ -2218,6 +2218,15 @@
         paintShareLink();
         paintStepperDone();
         IH.confetti(36);
+        /* The server sends the confirmation email after a verified publish.
+           Its result arrives with the publish response — reported, never
+           fatal: the invitation stays online even if the email failed. */
+        if (result.email && result.email.sent === false && !result.email.skipped) {
+          IH.toast.info('Your invitation is online, but the confirmation email could not be sent. ' +
+                        'Your link is still available here.', { title: 'Email failed' });
+        } else if (result.email && result.email.sent) {
+          IH.toast.success('Confirmation email sent to ' + (state.email || 'your email') + '.', { title: 'Email sent' });
+        }
         IH.toast.success('Your invitation is online!', { title: 'Hosted' });
       })
       .catch(function (err) {
