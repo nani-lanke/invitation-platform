@@ -1,0 +1,2000 @@
+{
+ "garden-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8222635,
+  "prompt": "Wide photograph of an empty garden wedding reception lawn under open sky with long tables and greenery, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-reception__venue__8222635.png"
+ },
+ "garden-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2710344,
+  "prompt": "A tall slender vertical cascade of fresh white garden roses, ferns and trailing ivy hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-reception__vine__2710344.png",
+  "coverage": 0.278,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4167355,
+  "prompt": "Small premium ornament for the top of an reception invitation: a small brass garden lantern wrapped with green leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-reception__crest__4167355.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7197251,
+  "prompt": "A small horizontal sprig of white garden roses, ferns and trailing ivy, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-reception__sprig__7197251.png",
+  "coverage": 0.125,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-minimal-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2127704,
+  "prompt": "Wide photograph of an empty modern minimal reception venue with white tables, clean lines and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/modern-minimal-reception__venue__2127704.png"
+ },
+ "modern-minimal-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9118252,
+  "prompt": "A tall slender vertical cascade of fresh a single white calla lily with green leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/modern-minimal-reception__vine__9118252.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-minimal-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5944799,
+  "prompt": "Small premium ornament for the top of an reception invitation: two simple interlocked gold rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/modern-minimal-reception__crest__5944799.png",
+  "coverage": 0.035,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-minimal-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4713695,
+  "prompt": "A small horizontal sprig of a single white calla lily with green leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/modern-minimal-reception__sprig__4713695.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "rooftop-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6668972,
+  "prompt": "Wide photograph of an empty city rooftop wedding reception with string lights, lounge seating and skyline at dusk, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rooftop-reception__venue__6668972.png"
+ },
+ "rooftop-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7137490,
+  "prompt": "A tall slender vertical cascade of fresh white roses, olive branches and eucalyptus hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rooftop-reception__vine__7137490.png",
+  "coverage": 0.211,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "vines"
+ },
+ "rooftop-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4871269,
+  "prompt": "Small premium ornament for the top of an reception invitation: a glowing vintage Edison light bulb, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rooftop-reception__crest__4871269.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "rooftop-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9086397,
+  "prompt": "A small horizontal sprig of white roses, olive branches and eucalyptus, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rooftop-reception__sprig__9086397.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "beach-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2506383,
+  "prompt": "Wide photograph of an empty beach wedding reception with white tables on the sand by the sea at sunset, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/beach-reception__venue__2506383.png"
+ },
+ "beach-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1630596,
+  "prompt": "A tall slender vertical cascade of fresh white frangipani, blue hydrangeas and sea grass hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/beach-reception__vine__1630596.png",
+  "coverage": 0.246,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "beach-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6453735,
+  "prompt": "Small premium ornament for the top of an reception invitation: a silver seashell with a pearl, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/beach-reception__crest__6453735.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "beach-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6767127,
+  "prompt": "A small horizontal sprig of white frangipani, blue hydrangeas and sea grass, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/beach-reception__sprig__6767127.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "contemporary-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3782142,
+  "prompt": "Wide photograph of an empty contemporary wedding reception lounge in charcoal and gold, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/contemporary-reception__venue__3782142.png"
+ },
+ "contemporary-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4031022,
+  "prompt": "A tall slender vertical cascade of fresh white orchids, eucalyptus and gold leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/contemporary-reception__vine__4031022.png",
+  "coverage": 0.138,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "vines"
+ },
+ "contemporary-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5747265,
+  "prompt": "Small premium ornament for the top of an reception invitation: two interlocking gold rings on a charcoal stone block, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/contemporary-reception__crest__5747265.png",
+  "coverage": 0.238,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "contemporary-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8799073,
+  "prompt": "A small horizontal sprig of white orchids, eucalyptus and gold leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/contemporary-reception__sprig__8799073.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "boho-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2911764,
+  "prompt": "Wide photograph of an empty boho wedding reception with rattan chairs, pampas grass and terracotta decor, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/boho-reception__venue__2911764.png"
+ },
+ "boho-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5319559,
+  "prompt": "A tall slender vertical cascade of fresh terracotta roses, pampas grass and dried palm leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/boho-reception__vine__5319559.png",
+  "coverage": 0.242,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "vines"
+ },
+ "boho-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5547410,
+  "prompt": "Small premium ornament for the top of an reception invitation: a woven macrame dreamcatcher with dried flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/boho-reception__crest__5547410.png",
+  "coverage": 0.211,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "vines"
+ },
+ "boho-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5644314,
+  "prompt": "A small horizontal sprig of terracotta roses, pampas grass and dried palm leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/boho-reception__sprig__5644314.png",
+  "coverage": 0.103,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "wedding-brunch/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5756532,
+  "prompt": "Wide photograph of an empty sunlit wedding brunch table in a garden conservatory with linen, flowers and pastries, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/wedding-brunch__venue__5756532.png"
+ },
+ "wedding-brunch/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6272298,
+  "prompt": "A tall slender vertical cascade of fresh white ranunculus, sage leaves and small yellow blooms hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/wedding-brunch__vine__6272298.png",
+  "coverage": 0.19,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "wedding-brunch/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1731949,
+  "prompt": "Small premium ornament for the top of an reception invitation: a porcelain teacup on a saucer with a small sprig of flowers and a folded linen napkin, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/wedding-brunch__crest__1731949.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "wedding-brunch/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9226293,
+  "prompt": "A small horizontal sprig of white ranunculus, sage leaves and small yellow blooms, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/wedding-brunch__sprig__9226293.png",
+  "coverage": 0.099,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tropical-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2116320,
+  "prompt": "Wide photograph of an empty tropical island wedding reception with palms, lanterns and teal decor, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/tropical-reception__venue__2116320.png"
+ },
+ "tropical-reception/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5029545,
+  "prompt": "A tall slender vertical cascade of fresh red hibiscus, orange bird of paradise and monstera leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/tropical-reception__vine__5029545.png",
+  "coverage": 0.175,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "vines"
+ },
+ "tropical-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9413452,
+  "prompt": "Small premium ornament for the top of an reception invitation: a bright hibiscus flower with a gold pineapple ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/tropical-reception__crest__9413452.png",
+  "coverage": 0.118,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tropical-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5815196,
+  "prompt": "A small horizontal sprig of red hibiscus, orange bird of paradise and monstera leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/tropical-reception__sprig__5815196.png",
+  "coverage": 0.153,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "floral-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3946132,
+  "prompt": "Wide photograph of an empty floral wedding reception with a wall of dusty rose and burgundy flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/floral-reception__venue__3946132.png"
+ },
+ "floral-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2738447,
+  "prompt": "An elegant sweeping corner spray of fresh dusty rose garden roses, burgundy dahlias and green leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/floral-reception__bouquet__2738447.png",
+  "coverage": 0.233,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5439115,
+  "prompt": "A low wide compact floral arrangement of fresh dusty rose garden roses, burgundy dahlias and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/floral-reception__cluster__5439115.png",
+  "coverage": 0.323,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6228062,
+  "prompt": "Small premium ornament for the top of an reception invitation: a round posy of dusty rose garden roses tied with a ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/floral-reception__crest__6228062.png",
+  "coverage": 0.238,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9906382,
+  "prompt": "A small horizontal sprig of dusty rose garden roses, burgundy dahlias and green leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/floral-reception__sprig__9906382.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6195113,
+  "prompt": "Wide photograph of an empty rose gold wedding reception with a floral arch and soft lights, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-reception__venue__6195113.png"
+ },
+ "rose-gold-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1692580,
+  "prompt": "An elegant sweeping corner spray of fresh blush roses, rose gold leaves and white spray roses, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-reception__bouquet__1692580.png",
+  "coverage": 0.277,
+  "edgeTouch": 0.013,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3540567,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, rose gold leaves and white spray roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-reception__cluster__3540567.png",
+  "coverage": 0.343,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3841770,
+  "prompt": "Small premium ornament for the top of an reception invitation: a single rose gold rose inside a small arch frame, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-reception__crest__3841770.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2626658,
+  "prompt": "A small horizontal sprig of blush roses, rose gold leaves and white spray roses, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-reception__sprig__2626658.png",
+  "coverage": 0.168,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-evening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6742813,
+  "prompt": "Wide photograph of an empty rose gold and plum reception hall with floral centrepieces and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-evening__venue__6742813.png"
+ },
+ "rose-gold-evening/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3674246,
+  "prompt": "An elegant sweeping corner spray of fresh blush roses, rose gold leaves and plum dahlias, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-evening__bouquet__3674246.png",
+  "coverage": 0.317,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-evening/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6223160,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, rose gold leaves and plum dahlias, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-evening__cluster__6223160.png",
+  "coverage": 0.358,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-evening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4988153,
+  "prompt": "Small premium ornament for the top of an reception invitation: a rose gold mandala medallion with a small heart at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-evening__crest__4988153.png",
+  "coverage": 0.125,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-evening/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8306761,
+  "prompt": "A small horizontal sprig of blush roses, rose gold leaves and plum dahlias, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/rose-gold-evening__sprig__8306761.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-evening-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5078801,
+  "prompt": "Wide photograph of an empty romantic evening wedding reception with candles and dusty rose flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/romantic-evening-reception__venue__5078801.png"
+ },
+ "romantic-evening-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7300264,
+  "prompt": "An elegant sweeping corner spray of fresh dusty rose roses, blush peonies and soft greenery, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/romantic-evening-reception__bouquet__7300264.png",
+  "coverage": 0.27,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-evening-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4986227,
+  "prompt": "A low wide compact floral arrangement of fresh dusty rose roses, blush peonies and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/romantic-evening-reception__cluster__4986227.png",
+  "coverage": 0.459,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-evening-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5055190,
+  "prompt": "Small premium ornament for the top of an reception invitation: a heart shaped crystal pendant glowing softly, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/romantic-evening-reception__crest__5055190.png",
+  "coverage": 0.049,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-evening-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7617942,
+  "prompt": "A small horizontal sprig of dusty rose roses, blush peonies and soft greenery, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/romantic-evening-reception__sprig__7617942.png",
+  "coverage": 0.166,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "lavender-romance-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9715561,
+  "prompt": "Wide photograph of an empty lavender themed romantic wedding reception with candles, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lavender-romance-reception__venue__9715561.png"
+ },
+ "lavender-romance-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9800027,
+  "prompt": "An elegant sweeping corner spray of fresh lavender, lilac roses and white sweet peas, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lavender-romance-reception__bouquet__9800027.png",
+  "coverage": 0.275,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "lavender-romance-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3569284,
+  "prompt": "A low wide compact floral arrangement of fresh lavender, lilac roses and white sweet peas, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lavender-romance-reception__cluster__3569284.png",
+  "coverage": 0.313,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "lavender-romance-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7636949,
+  "prompt": "Small premium ornament for the top of an reception invitation: a small bundle of lavender tied with a satin ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lavender-romance-reception__crest__7636949.png",
+  "coverage": 0.198,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "lavender-romance-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7874669,
+  "prompt": "A small horizontal sprig of lavender, lilac roses and white sweet peas, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lavender-romance-reception__sprig__7874669.png",
+  "coverage": 0.185,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "vintage-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2365275,
+  "prompt": "Wide photograph of an empty vintage wedding reception with antique furniture, lace and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/vintage-reception__venue__2365275.png"
+ },
+ "vintage-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7792860,
+  "prompt": "An elegant sweeping corner spray of fresh sepia toned roses, dried flowers and lace, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/vintage-reception__bouquet__7792860.png",
+  "coverage": 0.276,
+  "edgeTouch": 0.016,
+  "free": true,
+  "style": "corners"
+ },
+ "vintage-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9653805,
+  "prompt": "A low wide compact floral arrangement of fresh sepia toned roses, dried flowers and lace, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/vintage-reception__cluster__9653805.png",
+  "coverage": 0.425,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "vintage-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3606832,
+  "prompt": "Small premium ornament for the top of an reception invitation: an antique feather quill in a sepia brass inkwell, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/vintage-reception__crest__3606832.png",
+  "coverage": 0.157,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "vintage-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6608744,
+  "prompt": "A small horizontal sprig of sepia toned roses, dried flowers and lace, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/vintage-reception__sprig__6608744.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "evening-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6676563,
+  "prompt": "Wide photograph of an empty elegant evening reception ballroom in navy and gold with candlelit tables, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/evening-reception__venue__6676563.png"
+ },
+ "evening-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7726484,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, navy thistle and gold leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/evening-reception__bouquet__7726484.png",
+  "coverage": 0.292,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "diagonal"
+ },
+ "evening-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6458183,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, navy thistle and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/evening-reception__cluster__6458183.png",
+  "coverage": 0.409,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "evening-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2982330,
+  "prompt": "Small premium ornament for the top of an reception invitation: a gold candelabra with three lit candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/evening-reception__crest__2982330.png",
+  "coverage": 0.092,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "evening-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3484466,
+  "prompt": "A small horizontal sprig of white roses, navy thistle and gold leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/evening-reception__sprig__3484466.png",
+  "coverage": 0.084,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-soiree/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8381267,
+  "prompt": "Wide photograph of an empty late night reception lounge in deep indigo with hanging lights and lounge seating, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/midnight-soiree__venue__8381267.png"
+ },
+ "midnight-soiree/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6170572,
+  "prompt": "An elegant sweeping corner spray of fresh white orchids, indigo delphinium and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/midnight-soiree__bouquet__6170572.png",
+  "coverage": 0.293,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-soiree/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4624863,
+  "prompt": "A low wide compact floral arrangement of fresh white orchids, indigo delphinium and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/midnight-soiree__cluster__4624863.png",
+  "coverage": 0.283,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-soiree/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5598818,
+  "prompt": "Small premium ornament for the top of an reception invitation: a vintage gold pocket watch showing midnight beside a champagne coupe, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/midnight-soiree__crest__5598818.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-soiree/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6617770,
+  "prompt": "A small horizontal sprig of white orchids, indigo delphinium and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/midnight-soiree__sprig__6617770.png",
+  "coverage": 0.103,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "reception-evening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9754252,
+  "prompt": "Wide photograph of an empty evening reception terrace with string lights, dining tables and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/reception-evening__venue__9754252.png"
+ },
+ "reception-evening/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3426967,
+  "prompt": "An elegant sweeping corner spray of fresh champagne roses, white spray roses and gold leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/reception-evening__bouquet__3426967.png",
+  "coverage": 0.247,
+  "edgeTouch": 0.012,
+  "free": true,
+  "style": "diagonal"
+ },
+ "reception-evening/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1105011,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, white spray roses and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/reception-evening__cluster__1105011.png",
+  "coverage": 0.324,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "reception-evening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9999237,
+  "prompt": "Small premium ornament for the top of an reception invitation: two clinking champagne coupes beneath a string of bulbs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/reception-evening__crest__9999237.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "reception-evening/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3554070,
+  "prompt": "A small horizontal sprig of champagne roses, white spray roses and gold leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/reception-evening__sprig__3554070.png",
+  "coverage": 0.154,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7564041,
+  "prompt": "Wide photograph of an empty moonlit outdoor wedding reception with midnight blue drapes and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/moonlight-reception__venue__7564041.png"
+ },
+ "moonlight-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9260445,
+  "prompt": "An elegant sweeping corner spray of fresh white moonflowers, white roses and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/moonlight-reception__bouquet__9260445.png",
+  "coverage": 0.305,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1298770,
+  "prompt": "A low wide compact floral arrangement of fresh white moonflowers, white roses and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/moonlight-reception__cluster__1298770.png",
+  "coverage": 0.401,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1188571,
+  "prompt": "Small premium ornament for the top of an reception invitation: a silver crescent moon ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/moonlight-reception__crest__1188571.png",
+  "coverage": 0.066,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3820963,
+  "prompt": "A small horizontal sprig of white moonflowers, white roses and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/moonlight-reception__sprig__3820963.png",
+  "coverage": 0.122,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-night-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8051679,
+  "prompt": "Wide photograph of an empty outdoor wedding reception under a starry night sky with fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/starry-night-reception__venue__8051679.png"
+ },
+ "starry-night-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7201380,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, baby breath and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/starry-night-reception__bouquet__7201380.png",
+  "coverage": 0.271,
+  "edgeTouch": 0.012,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-night-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9049367,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, baby breath and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/starry-night-reception__cluster__9049367.png",
+  "coverage": 0.468,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-night-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3512810,
+  "prompt": "Small premium ornament for the top of an reception invitation: a small gold star cluster ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/starry-night-reception__crest__3512810.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-night-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2297698,
+  "prompt": "A small horizontal sprig of white roses, baby breath and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/starry-night-reception__sprig__2297698.png",
+  "coverage": 0.138,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5357934,
+  "prompt": "Wide photograph of an empty celestial wedding reception under a starry ceiling in midnight blue and gold, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/celestial-reception__venue__5357934.png"
+ },
+ "celestial-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7721498,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, gold stars and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/celestial-reception__bouquet__7721498.png",
+  "coverage": 0.272,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3181457,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, gold stars and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/celestial-reception__cluster__3181457.png",
+  "coverage": 0.415,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9923954,
+  "prompt": "Small premium ornament for the top of an reception invitation: a gold crescent and star emblem, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/celestial-reception__crest__9923954.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9164052,
+  "prompt": "A small horizontal sprig of white roses, gold stars and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/celestial-reception__sprig__9164052.png",
+  "coverage": 0.113,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8711113,
+  "prompt": "Wide photograph of an empty wedding reception deck at sunset with terracotta decor, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sunset-reception__venue__8711113.png"
+ },
+ "sunset-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4206346,
+  "prompt": "An elegant sweeping corner spray of fresh terracotta roses, peach ranunculus and dried pampas, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sunset-reception__bouquet__4206346.png",
+  "coverage": 0.273,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4612095,
+  "prompt": "A low wide compact floral arrangement of fresh terracotta roses, peach ranunculus and dried pampas, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sunset-reception__cluster__4612095.png",
+  "coverage": 0.309,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6360514,
+  "prompt": "Small premium ornament for the top of an reception invitation: a gold low setting sun ornament over small waves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sunset-reception__crest__6360514.png",
+  "coverage": 0.053,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9242122,
+  "prompt": "A small horizontal sprig of terracotta roses, peach ranunculus and dried pampas, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sunset-reception__sprig__9242122.png",
+  "coverage": 0.191,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "terracotta-sunset-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9987811,
+  "prompt": "Wide photograph of an empty terracotta themed wedding reception at sunset with rattan chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/terracotta-sunset-reception__venue__9987811.png"
+ },
+ "terracotta-sunset-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4305379,
+  "prompt": "An elegant sweeping corner spray of fresh terracotta roses, dried palm and pampas grass, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/terracotta-sunset-reception__bouquet__4305379.png",
+  "coverage": 0.244,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "terracotta-sunset-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4275239,
+  "prompt": "A low wide compact floral arrangement of fresh terracotta roses, dried palm and pampas grass, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/terracotta-sunset-reception__cluster__4275239.png",
+  "coverage": 0.381,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "terracotta-sunset-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8216282,
+  "prompt": "Small premium ornament for the top of an reception invitation: a terracotta clay pot with dried flowers and a small sun ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/terracotta-sunset-reception__crest__8216282.png",
+  "coverage": 0.134,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "terracotta-sunset-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3945874,
+  "prompt": "A small horizontal sprig of terracotta roses, dried palm and pampas grass, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/terracotta-sunset-reception__sprig__3945874.png",
+  "coverage": 0.138,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8951659,
+  "prompt": "Wide photograph of an empty wedding cocktail reception lounge with a bar and navy and gold decor, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cocktail-reception__venue__8951659.png"
+ },
+ "cocktail-reception/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1862248,
+  "prompt": "An elegant sweeping corner spray of fresh white orchids, navy thistle and gold leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cocktail-reception__bouquet__1862248.png",
+  "coverage": 0.229,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1153331,
+  "prompt": "A low wide compact floral arrangement of fresh white orchids, navy thistle and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cocktail-reception__cluster__1153331.png",
+  "coverage": 0.325,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8536982,
+  "prompt": "Small premium ornament for the top of an reception invitation: a crystal cocktail coupe with a gold music note beside it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cocktail-reception__crest__8536982.png",
+  "coverage": 0.089,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4700118,
+  "prompt": "A small horizontal sprig of white orchids, navy thistle and gold leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cocktail-reception__sprig__4700118.png",
+  "coverage": 0.096,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "after-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3862358,
+  "prompt": "Wide photograph of an empty after party dance floor with a mirror ball, purple lights and a DJ booth, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/after-party__venue__3862358.png"
+ },
+ "after-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6244221,
+  "prompt": "An elegant sweeping corner spray of fresh purple orchids, white roses and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/after-party__bouquet__6244221.png",
+  "coverage": 0.284,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "after-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4609010,
+  "prompt": "A low wide compact floral arrangement of fresh purple orchids, white roses and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/after-party__cluster__4609010.png",
+  "coverage": 0.416,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "after-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4018171,
+  "prompt": "Small premium ornament for the top of an reception invitation: a sparkling silver disco mirror ball, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/after-party__crest__4018171.png",
+  "coverage": 0.143,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "after-party/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1156803,
+  "prompt": "A small horizontal sprig of purple orchids, white roses and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/after-party__sprig__1156803.png",
+  "coverage": 0.132,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "palace-courtyard-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5205296,
+  "prompt": "Wide photograph of an empty Indian palace courtyard wedding reception in maroon and gold with lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/palace-courtyard-reception__venue__5205296.png"
+ },
+ "palace-courtyard-reception/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4834886,
+  "prompt": "A long horizontal floral garland swag of fresh marigolds, deep red roses and jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/palace-courtyard-reception__garland__4834886.png",
+  "coverage": 0.345,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "palace-courtyard-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9984287,
+  "prompt": "A low wide compact floral arrangement of fresh marigolds, deep red roses and jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/palace-courtyard-reception__cluster__9984287.png",
+  "coverage": 0.452,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "palace-courtyard-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5504482,
+  "prompt": "Small premium ornament for the top of an reception invitation: a gold peacock mandala medallion, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/palace-courtyard-reception__crest__5504482.png",
+  "coverage": 0.114,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "palace-courtyard-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4556138,
+  "prompt": "A small horizontal sprig of marigolds, deep red roses and jasmine, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/palace-courtyard-reception__sprig__4556138.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-celebration-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7164883,
+  "prompt": "Wide photograph of an empty traditional Indian wedding reception stage with marigold garlands and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/traditional-celebration-reception__venue__7164883.png"
+ },
+ "traditional-celebration-reception/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2454598,
+  "prompt": "A long horizontal floral garland swag of fresh marigolds, jasmine strings and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/traditional-celebration-reception__garland__2454598.png",
+  "coverage": 0.335,
+  "edgeTouch": 0.01,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-celebration-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3341279,
+  "prompt": "A low wide compact floral arrangement of fresh marigolds, jasmine strings and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/traditional-celebration-reception__cluster__3341279.png",
+  "coverage": 0.428,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-celebration-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7186594,
+  "prompt": "Small premium ornament for the top of an reception invitation: a round rangoli medallion made of flower petals, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/traditional-celebration-reception__crest__7186594.png",
+  "coverage": 0.224,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-celebration-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6644906,
+  "prompt": "A small horizontal sprig of marigolds, jasmine strings and mango leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/traditional-celebration-reception__sprig__6644906.png",
+  "coverage": 0.19,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-heritage-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5717509,
+  "prompt": "Wide photograph of an empty cultural heritage wedding reception hall with gold mandala backdrop and festive bunting, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cultural-heritage-reception__venue__5717509.png"
+ },
+ "cultural-heritage-reception/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4145990,
+  "prompt": "A long horizontal floral garland swag of fresh marigolds, red roses and jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cultural-heritage-reception__garland__4145990.png",
+  "coverage": 0.353,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-heritage-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2262687,
+  "prompt": "A low wide compact floral arrangement of fresh marigolds, red roses and jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cultural-heritage-reception__cluster__2262687.png",
+  "coverage": 0.419,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-heritage-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3722338,
+  "prompt": "Small premium ornament for the top of an reception invitation: an ornate gold mandala medallion, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cultural-heritage-reception__crest__3722338.png",
+  "coverage": 0.245,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-heritage-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4741290,
+  "prompt": "A small horizontal sprig of marigolds, red roses and jasmine, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/cultural-heritage-reception__sprig__4741290.png",
+  "coverage": 0.145,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "lotus-garden-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6881120,
+  "prompt": "Wide photograph of an empty lotus garden wedding reception beside a lotus pond with lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lotus-garden-reception__venue__6881120.png"
+ },
+ "lotus-garden-reception/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3014677,
+  "prompt": "A long horizontal floral garland swag of fresh pink lotus flowers, lotus leaves and white jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lotus-garden-reception__garland__3014677.png",
+  "coverage": 0.262,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "lotus-garden-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7423820,
+  "prompt": "A low wide compact floral arrangement of fresh pink lotus flowers, lotus leaves and white jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lotus-garden-reception__cluster__7423820.png",
+  "coverage": 0.381,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "lotus-garden-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6329709,
+  "prompt": "Small premium ornament for the top of an reception invitation: a single pink lotus flower in a small brass bowl of water, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lotus-garden-reception__crest__6329709.png",
+  "coverage": 0.099,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "lotus-garden-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2856757,
+  "prompt": "A small horizontal sprig of pink lotus flowers, lotus leaves and white jasmine, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/lotus-garden-reception__sprig__2856757.png",
+  "coverage": 0.078,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "resort-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6374853,
+  "prompt": "Wide photograph of an empty tropical resort wedding reception by a pool with lanterns and palms, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/resort-reception__venue__6374853.png"
+ },
+ "resort-reception/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2018235,
+  "prompt": "A long horizontal floral garland swag of fresh red hibiscus, white orchids and palm leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/resort-reception__garland__2018235.png",
+  "coverage": 0.303,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "resort-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4409642,
+  "prompt": "A low wide compact floral arrangement of fresh red hibiscus, white orchids and palm leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/resort-reception__cluster__4409642.png",
+  "coverage": 0.291,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "resort-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6383491,
+  "prompt": "Small premium ornament for the top of an reception invitation: a hibiscus flower lei with a gold coconut cup, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/resort-reception__crest__6383491.png",
+  "coverage": 0.126,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "resort-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6254811,
+  "prompt": "A small horizontal sprig of red hibiscus, white orchids and palm leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/resort-reception__sprig__6254811.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "garden-evening-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9558376,
+  "prompt": "Wide photograph of an empty garden reception at dusk with lanterns, long tables and sage greenery, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-evening-reception__venue__9558376.png"
+ },
+ "garden-evening-reception/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6942582,
+  "prompt": "A round floral wreath of fresh white roses, sage eucalyptus and fairy lights among leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-evening-reception__wreath__6942582.png",
+  "coverage": 0.37,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-evening-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5461473,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, sage eucalyptus and fairy lights among leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-evening-reception__cluster__5461473.png",
+  "coverage": 0.317,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-evening-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8947844,
+  "prompt": "Small premium ornament for the top of an reception invitation: a round wreath of green leaves around a small lit lantern, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-evening-reception__crest__8947844.png",
+  "coverage": 0.084,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-evening-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1561924,
+  "prompt": "A small horizontal sprig of white roses, sage eucalyptus and fairy lights among leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/garden-evening-reception__sprig__1561924.png",
+  "coverage": 0.235,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-white-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6000126,
+  "prompt": "Wide photograph of an empty pearl white wedding reception with ivory drapes and white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/pearl-white-reception__venue__6000126.png"
+ },
+ "pearl-white-reception/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5625500,
+  "prompt": "A round floral wreath of fresh white roses, pearl strands and ivory peonies with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/pearl-white-reception__wreath__5625500.png",
+  "coverage": 0.386,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-white-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7886895,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, pearl strands and ivory peonies, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/pearl-white-reception__cluster__7886895.png",
+  "coverage": 0.401,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-white-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8496594,
+  "prompt": "Small premium ornament for the top of an reception invitation: a strand of pearls with a small white dove figurine, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/pearl-white-reception__crest__8496594.png",
+  "coverage": 0.032,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-white-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7857242,
+  "prompt": "A small horizontal sprig of white roses, pearl strands and ivory peonies, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/pearl-white-reception__sprig__7857242.png",
+  "coverage": 0.207,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "crystal-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1243098,
+  "prompt": "Wide photograph of an empty winter crystal wedding reception in sapphire and silver with crystal chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/crystal-reception__venue__1243098.png"
+ },
+ "crystal-reception/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2173630,
+  "prompt": "A round floral wreath of fresh white roses, silver leaves and crystal beads with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/crystal-reception__wreath__2173630.png",
+  "coverage": 0.453,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "crystal-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2360217,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, silver leaves and crystal beads, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/crystal-reception__cluster__2360217.png",
+  "coverage": 0.409,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "crystal-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5662988,
+  "prompt": "Small premium ornament for the top of an reception invitation: a glittering crystal snowflake ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/crystal-reception__crest__5662988.png",
+  "coverage": 0.111,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "crystal-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4326364,
+  "prompt": "A small horizontal sprig of white roses, silver leaves and crystal beads, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/crystal-reception__sprig__4326364.png",
+  "coverage": 0.1,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "winter-evening-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6506009,
+  "prompt": "Wide photograph of an empty cosy winter evening wedding reception with snowy windows and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/winter-evening-reception__venue__6506009.png"
+ },
+ "winter-evening-reception/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8323966,
+  "prompt": "A round floral wreath of fresh white roses, frosted pine and silver leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/winter-evening-reception__wreath__8323966.png",
+  "coverage": 0.42,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "winter-evening-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7851225,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, frosted pine and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/winter-evening-reception__cluster__7851225.png",
+  "coverage": 0.469,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "winter-evening-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1498572,
+  "prompt": "Small premium ornament for the top of an reception invitation: a silver snowflake ornament with frosted pine sprigs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/winter-evening-reception__crest__1498572.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "winter-evening-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7194652,
+  "prompt": "A small horizontal sprig of white roses, frosted pine and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/winter-evening-reception__sprig__7194652.png",
+  "coverage": 0.211,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "emerald-garden-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3948626,
+  "prompt": "Wide photograph of an empty emerald garden wedding reception with a green floral wall and gold accents, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/emerald-garden-reception__venue__3948626.png"
+ },
+ "emerald-garden-reception/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3512264,
+  "prompt": "A round floral wreath of fresh white roses, emerald monstera and gold leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/emerald-garden-reception__wreath__3512264.png",
+  "coverage": 0.429,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "emerald-garden-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4645739,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, emerald monstera and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/emerald-garden-reception__cluster__4645739.png",
+  "coverage": 0.511,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "wreath"
+ },
+ "emerald-garden-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5676862,
+  "prompt": "Small premium ornament for the top of an reception invitation: a round emerald leaf wreath with a small gold lantern, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/emerald-garden-reception__crest__5676862.png",
+  "coverage": 0.15,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "emerald-garden-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6033582,
+  "prompt": "A small horizontal sprig of white roses, emerald monstera and gold leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/emerald-garden-reception__sprig__6033582.png",
+  "coverage": 0.169,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3973700,
+  "prompt": "Wide photograph of an empty international wedding reception ballroom in sapphire and silver, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/international-reception__venue__3973700.png"
+ },
+ "international-reception/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6416960,
+  "prompt": "A round floral wreath of fresh white roses, blue hydrangeas and silver leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/international-reception__wreath__6416960.png",
+  "coverage": 0.394,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4922899,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, blue hydrangeas and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/international-reception__cluster__4922899.png",
+  "coverage": 0.499,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2183606,
+  "prompt": "Small premium ornament for the top of an reception invitation: an ornate silver globe on a stand, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/international-reception__crest__2183606.png",
+  "coverage": 0.188,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1219894,
+  "prompt": "A small horizontal sprig of white roses, blue hydrangeas and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/international-reception__sprig__1219894.png",
+  "coverage": 0.169,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "grand-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7386524,
+  "prompt": "Wide photograph of an empty grand wedding reception hall under strings of warm lights with round tables and a floral stage, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-reception__venue__7386524.png"
+ },
+ "grand-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3149877,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, ivory peonies and eucalyptus, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-reception__cluster__3149877.png",
+  "coverage": 0.435,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9562376,
+  "prompt": "Small premium ornament for the top of an reception invitation: a pair of crystal champagne coupes under a small string of glowing bulbs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-reception__crest__9562376.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9343504,
+  "prompt": "A small horizontal sprig of white roses, ivory peonies and eucalyptus, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-reception__sprig__9343504.png",
+  "coverage": 0.215,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-luxury-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4825837,
+  "prompt": "Wide photograph of an empty grand luxury reception ballroom in black and gold with a huge chandelier, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-luxury-reception__venue__4825837.png"
+ },
+ "grand-luxury-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4764809,
+  "prompt": "A low wide compact floral arrangement of fresh gold roses, white orchids and gilded leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-luxury-reception__cluster__4764809.png",
+  "coverage": 0.438,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-luxury-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3428444,
+  "prompt": "Small premium ornament for the top of an reception invitation: an ornate gold crown with jewels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-luxury-reception__crest__3428444.png",
+  "coverage": 0.068,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-luxury-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5715948,
+  "prompt": "A small horizontal sprig of gold roses, white orchids and gilded leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/grand-luxury-reception__sprig__5715948.png",
+  "coverage": 0.11,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-palace-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7069673,
+  "prompt": "Wide photograph of an empty royal palace ballroom decorated for a wedding reception with gilded columns, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/royal-palace-reception__venue__7069673.png"
+ },
+ "royal-palace-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6380375,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, navy delphinium and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/royal-palace-reception__cluster__6380375.png",
+  "coverage": 0.359,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-palace-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6090794,
+  "prompt": "Small premium ornament for the top of an reception invitation: an ornate gold palace gate with a fleur-de-lis on top, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/royal-palace-reception__crest__6090794.png",
+  "coverage": 0.162,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-palace-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4875682,
+  "prompt": "A small horizontal sprig of white roses, navy delphinium and gold leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/royal-palace-reception__sprig__4875682.png",
+  "coverage": 0.156,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-elegant-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2697718,
+  "prompt": "Wide photograph of an empty classic elegant reception hall in burgundy and gold with candelabras, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/classic-elegant-reception__venue__2697718.png"
+ },
+ "classic-elegant-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1625566,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy peonies and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/classic-elegant-reception__cluster__1625566.png",
+  "coverage": 0.443,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-elegant-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5221399,
+  "prompt": "Small premium ornament for the top of an reception invitation: a single deep red rose under a small gold arch, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/classic-elegant-reception__crest__5221399.png",
+  "coverage": 0.033,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-elegant-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8578375,
+  "prompt": "A small horizontal sprig of deep red roses, burgundy peonies and gold leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/classic-elegant-reception__sprig__8578375.png",
+  "coverage": 0.195,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-ballroom-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3465369,
+  "prompt": "Wide photograph of an empty luxury ballroom with crystal chandeliers and rose gold decor, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-ballroom-reception__venue__3465369.png"
+ },
+ "luxury-ballroom-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7079361,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, white orchids and crystal beads, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-ballroom-reception__cluster__7079361.png",
+  "coverage": 0.403,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-ballroom-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5985508,
+  "prompt": "Small premium ornament for the top of an reception invitation: a small crystal chandelier pendant, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-ballroom-reception__crest__5985508.png",
+  "coverage": 0.035,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-ballroom-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9055588,
+  "prompt": "A small horizontal sprig of blush roses, white orchids and crystal beads, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-ballroom-reception__sprig__9055588.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "hotel-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5953413,
+  "prompt": "Wide photograph of an empty grand hotel ballroom set for a wedding reception with columns and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/hotel-reception__venue__5953413.png"
+ },
+ "hotel-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3928981,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/hotel-reception__cluster__3928981.png",
+  "coverage": 0.469,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "hotel-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8633576,
+  "prompt": "Small premium ornament for the top of an reception invitation: a champagne coupe between two small classical columns, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/hotel-reception__crest__8633576.png",
+  "coverage": 0.121,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "hotel-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8311536,
+  "prompt": "A small horizontal sprig of white roses, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/hotel-reception__sprig__8311536.png",
+  "coverage": 0.15,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5757249,
+  "prompt": "Wide photograph of an empty candlelit wedding reception hall with rows of glowing candles and burgundy roses, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/candlelight-reception__venue__5757249.png"
+ },
+ "candlelight-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4007274,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy peonies and dark leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/candlelight-reception__cluster__4007274.png",
+  "coverage": 0.41,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7263555,
+  "prompt": "Small premium ornament for the top of an reception invitation: three lit ivory pillar candles in a gold holder, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/candlelight-reception__crest__7263555.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7134875,
+  "prompt": "A small horizontal sprig of deep red roses, burgundy peonies and dark leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/candlelight-reception__sprig__7134875.png",
+  "coverage": 0.188,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-gold-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3988649,
+  "prompt": "Wide photograph of an empty black and gold wedding reception hall with gold rays and dark drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/black-gold-reception__venue__3988649.png"
+ },
+ "black-gold-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8598761,
+  "prompt": "A low wide compact floral arrangement of fresh black calla lilies, gold roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/black-gold-reception__cluster__8598761.png",
+  "coverage": 0.293,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-gold-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9178428,
+  "prompt": "Small premium ornament for the top of an reception invitation: a gold sunburst medallion with a sparkle at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/black-gold-reception__crest__9178428.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-gold-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6693388,
+  "prompt": "A small horizontal sprig of black calla lilies, gold roses and gold leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/black-gold-reception__sprig__6693388.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2935644,
+  "prompt": "Wide photograph of an empty champagne coloured wedding reception with a champagne tower and gold decor, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/champagne-reception__venue__2935644.png"
+ },
+ "champagne-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2796249,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, ivory peonies and pampas grass, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/champagne-reception__cluster__2796249.png",
+  "coverage": 0.349,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7005132,
+  "prompt": "Small premium ornament for the top of an reception invitation: two raised crystal champagne coupes catching golden light, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/champagne-reception__crest__7005132.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5668508,
+  "prompt": "A small horizontal sprig of champagne roses, ivory peonies and pampas grass, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/champagne-reception__sprig__5668508.png",
+  "coverage": 0.235,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-dinner-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5601632,
+  "prompt": "Wide photograph of an empty luxury fine dining wedding reception table in emerald and champagne with candelabras, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-dinner-reception__venue__5601632.png"
+ },
+ "luxury-dinner-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5053315,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, emerald leaves and gold accents, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-dinner-reception__cluster__5053315.png",
+  "coverage": 0.402,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-dinner-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4684614,
+  "prompt": "Small premium ornament for the top of an reception invitation: an emerald and gold candelabra with lit candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-dinner-reception__crest__4684614.png",
+  "coverage": 0.055,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-dinner-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6290438,
+  "prompt": "A small horizontal sprig of white roses, emerald leaves and gold accents, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-dinner-reception__sprig__6290438.png",
+  "coverage": 0.131,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-maroon-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6833329,
+  "prompt": "Wide photograph of an empty luxury maroon and gold wedding reception hall with chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-maroon-reception__venue__6833329.png"
+ },
+ "luxury-maroon-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6351375,
+  "prompt": "A low wide compact floral arrangement of fresh maroon roses, burgundy peonies and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-maroon-reception__cluster__6351375.png",
+  "coverage": 0.469,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-maroon-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5991858,
+  "prompt": "Small premium ornament for the top of an reception invitation: a single maroon rose in a gilded frame, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-maroon-reception__crest__5991858.png",
+  "coverage": 0.056,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-maroon-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1929210,
+  "prompt": "A small horizontal sprig of maroon roses, burgundy peonies and gold leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/luxury-maroon-reception__sprig__1929210.png",
+  "coverage": 0.175,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-evening-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7452668,
+  "prompt": "Wide photograph of an empty sapphire blue evening wedding reception with crystal chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sapphire-evening-reception__venue__7452668.png"
+ },
+ "sapphire-evening-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6973344,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, blue delphinium and silver leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sapphire-evening-reception__cluster__6973344.png",
+  "coverage": 0.402,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-evening-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4451665,
+  "prompt": "Small premium ornament for the top of an reception invitation: a sapphire gemstone in an ornate silver setting, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sapphire-evening-reception__crest__4451665.png",
+  "coverage": 0.123,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-evening-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5994929,
+  "prompt": "A small horizontal sprig of white roses, blue delphinium and silver leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/sapphire-evening-reception__sprig__5994929.png",
+  "coverage": 0.213,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "heritage-gold-reception/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2305674,
+  "prompt": "Wide photograph of an empty heritage palace wedding reception hall in gold and brown with lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/heritage-gold-reception__venue__2305674.png"
+ },
+ "heritage-gold-reception/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5424125,
+  "prompt": "A low wide compact floral arrangement of fresh gold roses, marigolds and gilded leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/heritage-gold-reception__cluster__5424125.png",
+  "coverage": 0.48,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "heritage-gold-reception/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5773216,
+  "prompt": "Small premium ornament for the top of an reception invitation: a crowned gold heritage medallion, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/heritage-gold-reception__crest__5773216.png",
+  "coverage": 0.065,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "heritage-gold-reception/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5285144,
+  "prompt": "A small horizontal sprig of gold roses, marigolds and gilded leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RECEPTION/heritage-gold-reception__sprig__5285144.png",
+  "coverage": 0.081,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ }
+}

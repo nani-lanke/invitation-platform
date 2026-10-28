@@ -1,0 +1,27 @@
+/* Redesign layers for the 100 selected cards. Scoped to .rd-card (added by
+   redesign-hook.js), so the original cards render exactly as before. */
+.invitation.invitation--wd.rd-card { padding-bottom: 38%; }
+/* Florals in the top corners (replace the line-art corner SVGs). */
+.rd-card .wd-frame {
+  background:
+    var(--rd-tl, none) left -2% top -1% / 31% auto no-repeat,
+    var(--rd-tr, none) right -2% top -1% / 31% auto no-repeat;
+}
+.rd-card.rd-has-corner .wd-corner { display: none; }
+.rd-card .wd-frame::before { z-index: 1; }
+/* Regional landscape at the foot, faded into the card on all sides. */
+.rd-card .wd-frame::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; aspect-ratio: 1216 / 448;
+  background: var(--rd-footer, none) center bottom / cover no-repeat;
+  -webkit-mask-image: linear-gradient(to top, #000 42%, transparent 100%), linear-gradient(to right, transparent 0, #000 14%, #000 86%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to top, #000 42%, transparent 100%), linear-gradient(to right, transparent 0, #000 14%, #000 86%, transparent 100%);
+  mask-composite: intersect;
+}
+/* Photographic crest in place of the flat motif. */
+.rd-card .wd-crest .wd-motif { filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.28)); }
+.rd-card .wd-monogram .wd-motif { opacity: 0.32; }
+.rd-card .wd-spray { opacity: 0.94; width: 40%; }
+.rd-card.wd-dark .wd-spray { opacity: 0.9; }
+/* Venue photograph: framed, never stretched (aspect ratios match the art). */
+.rd-card .wd-venue__photo img { object-fit: cover; background: var(--wd-card); }

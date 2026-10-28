@@ -1,0 +1,47 @@
+{
+ "slug": "mehendi-ceremony",
+ "name": "Mehendi Ceremony",
+ "base": "cards/mehendi-ceremony/",
+ "spec": {
+  "layout": "monogram",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "personal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/mehendi-ceremony.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/mehendi-ceremony.svg",
+  "corners": "inline SVG corner set (beads)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of an afternoon mehendi ceremony setup in a garden with green and gold drapes, swing jhoola and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5126015,
+   "raw": "..\\work\\raw\\mehendi-ceremony__venue__5126015_2leec.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a henna cone beside a brass bowl of henna and a paisley leaf, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5432999,
+   "raw": "..\\work\\raw\\mehendi-ceremony__crest__5432999_5nl9n.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a garden courtyard with a carved pavilion in afternoon light, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7250351,
+   "raw": "..\\work\\raw\\mehendi-ceremony__footer__7250351_1wvjp.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of fresh henna leaves, roses and marigolds, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6475897,
+   "raw": "..\\work\\raw\\mehendi-ceremony__corner__6475897_348vj.png"
+  }
+ }
+}

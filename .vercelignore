@@ -1,0 +1,22 @@
+# Local-only work files: never upload these to Vercel.
+
+# Secrets
+.env
+.env.*
+
+# Raw AI generation output and working folders (several GB).
+# The site only serves the finished copies under images/.
+/ai-generated
+/redesign-100
+/lineart-work
+
+# Dev scripts, notes and editor/tool config
+/scripts
+/generate-default-venue.js
+/process_images.py
+/CLAUDE.md
+/opencode.json
+/.claude
+/.claude.zip
+/.vscode
+/.playwright-mcp

@@ -34,7 +34,7 @@ template, fills in the event details, adds photos, and gets a single link to sen
 WhatsApp. Guests open it in any browser — no app, no account, no download.
 
 **This build is the complete front end.** Every visual and interactive feature works:
-all 47 templates, search and filtering, the five-step editor with live preview, the
+all 963 templates (863 + 100 redesigned), search and filtering, the five-step editor with live preview, the
 countdown, the QR encoder, share targets, dark mode and the full responsive layout.
 
 **What is deliberately absent** is the server half — accounts, a database, image
@@ -48,7 +48,7 @@ pieces can be added without redesigning the UI (see
 ## Features
 
 ### Catalogue
-- **47 invitation templates** across **18 categories**, each generated as a scalable SVG
+- **963 invitation templates** (863 catalogue + 100 redesigned wedding cards) across **17 categories**, each generated as a scalable SVG
 - Live search, category filter and four sort orders — every template is free
 - Favourites saved to `localStorage`, with a favourites-only view
 - Filter state is written to the URL, so any filtered view is linkable and bookmarkable
@@ -119,7 +119,7 @@ pieces can be added without redesigning the UI (see
 ```
 InviteAura/
 ├── index.html              Landing page
-├── templates.html          Searchable gallery of all 47 templates
+├── templates.html          Searchable gallery of all 963 templates
 ├── categories.html         The 18 occasion categories
 ├── create.html             Six-step invitation editor
 ├── i.html                  Guest-facing page: renders an invitation from its link
@@ -150,8 +150,8 @@ InviteAura/
 ├── images/
 │   ├── logo/               Mark, wordmarks, favicon
 │   ├── hero/               Phone mockup, floating cards, OG image
-│   ├── templates/          47 template artworks
-│   ├── categories/         18 category banners
+│   ├── templates/          863 template artworks
+│   ├── categories/         17 category banners
 │   └── backgrounds/        Decorative patterns and aurora wash
 │
 ├── icons/                  Notes on the inline icon system
@@ -346,3 +346,28 @@ please use your own brand name and generate your own card designs.
 ---
 
 **Built with plain HTML, CSS and JavaScript. No frameworks were harmed.**
+
+
+## Local AI Background Generator
+
+The invitation editor can generate reusable image backgrounds locally through
+ComfyUI + FLUX.2 Klein 4B. The generator writes successful PNGs directly into
+`images/ai-backgrounds/`, so there is no manual download/upload step.
+
+Start ComfyUI on `127.0.0.1:8188`, then run:
+
+```bash
+npm run ai:bg-check
+npm run ai:bg-server
+```
+
+Open `create.html` with VS Code Live Server and use **Design → AI Background
+Studio → Generate AI Background**.
+
+For batch generation:
+
+```bash
+npm run ai:bg-generate -- --template telugu-pelli --count 20
+```
+
+See `tools/ai-background/README.md` for the complete local workflow.

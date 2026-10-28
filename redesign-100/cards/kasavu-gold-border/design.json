@@ -1,0 +1,47 @@
+{
+ "slug": "kasavu-gold-border",
+ "name": "Kasavu Gold Border",
+ "base": "cards/kasavu-gold-border/",
+ "spec": {
+  "layout": "royal",
+  "frame": "double",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/kasavu-gold-border.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/kasavu-gold-border.svg",
+  "corners": "inline SVG corner set (double)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Kerala heritage tharavad house decorated for a wedding with gold-bordered kasavu drapes, brass uruli of floating flowers and lamps, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3226417,
+   "raw": "..\\work\\raw\\kasavu-gold-border__venue__3226417_1st0x.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a neatly folded off-white cream handloom cotton kasavu cloth with a wide shining gold zari border, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain solid dark charcoal grey background",
+   "seed": 9474037,
+   "raw": "..\\work\\raw\\kasavu-gold-border__crest__9474037_4df96.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of misty green Kerala paddy fields with coconut palms, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2642837,
+   "raw": "..\\work\\raw\\kasavu-gold-border__footer__2642837_vueh.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white jasmine, green areca palm fronds and yellow chrysanthemums, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9051555,
+   "raw": "..\\work\\raw\\kasavu-gold-border__corner__9051555_2vaoy.png"
+  }
+ }
+}

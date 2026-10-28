@@ -1,0 +1,130 @@
+{
+ "haldi": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5036953,
+  "prompt": "A polished engraved brass bowl filled with smooth yellow turmeric paste on a small brass plate, with orange marigold flowers, fresh turmeric roots and green mango leaves, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/haldi__5036953.png",
+  "coverage": 0.223,
+  "edgeTouch": 0
+ },
+ "mehndi": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1197146,
+  "prompt": "A small brass bowl of fresh green henna paste with two henna cones beside it, a few green henna leaves and white jasmine flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/mehndi__1197146.png",
+  "coverage": 0.165,
+  "edgeTouch": 0
+ },
+ "wedding": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7391031,
+  "prompt": "A pair of shining gold wedding rings with a small diamond, resting together on a small round red velvet cushion with a few red rose petals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/wedding__7391031.png",
+  "coverage": 0.175,
+  "edgeTouch": 0
+ },
+ "reception": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1969822,
+  "prompt": "Two elegant crystal champagne flutes with gold rims filled with sparkling champagne, gently clinking together, a small white rose at their base, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/reception__1969822.png",
+  "coverage": 0.116,
+  "edgeTouch": 0
+ },
+ "games": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5180892,
+  "prompt": "A small cheerful pile of party games: a colourful wooden spinning top, two red dice and a bright toy gamepad, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/games__5180892.png",
+  "coverage": 0.131,
+  "edgeTouch": 0
+ },
+ "cake": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9626137,
+  "prompt": "A small two-tier celebration cake with smooth white frosting, pastel sugar flowers and a single lit candle on top, on a gold cake stand, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/cake__9626137.png",
+  "coverage": 0.22,
+  "edgeTouch": 0
+ },
+ "meal": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8914938,
+  "prompt": "An elegant gourmet dinner plate on fine white porcelain with a gold rim, beautifully plated food, a polished silver fork and knife beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/meal__8914938.png",
+  "coverage": 0.382,
+  "edgeTouch": 0
+ },
+ "music": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5821396,
+  "prompt": "A shiny polished golden brass saxophone standing upright, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/music__5821396.png",
+  "coverage": 0.128,
+  "edgeTouch": 0
+ },
+ "diya": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3057788,
+  "prompt": "A traditional lit brass oil diya lamp with a warm glowing flame, resting on a few orange marigold petals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/diya__3057788.png",
+  "coverage": 0.194,
+  "edgeTouch": 0
+ },
+ "gift": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1801903,
+  "prompt": "A luxury gift box wrapped in rich deep red paper tied with a large gold satin ribbon bow, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/gift__1801903.png",
+  "coverage": 0.315,
+  "edgeTouch": 0
+ },
+ "mic": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5500768,
+  "prompt": "A classic vintage chrome stage microphone on a short black desk stand, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/mic__5500768.png",
+  "coverage": 0.113,
+  "edgeTouch": 0
+ },
+ "award": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6629238,
+  "prompt": "A shiny polished gold trophy cup with two handles on a black marble base, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/award__6629238.png",
+  "coverage": 0.245,
+  "edgeTouch": 0
+ },
+ "camera": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9290958,
+  "prompt": "A vintage film camera with a silver body, black leather trim and a large glass lens, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/camera__9290958.png",
+  "coverage": 0.216,
+  "edgeTouch": 0
+ },
+ "home": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9372366,
+  "prompt": "A small charming miniature model house with a red tiled roof, white walls and warm glowing windows, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/home__9372366.png",
+  "coverage": 0.182,
+  "edgeTouch": 0
+ },
+ "badge": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5779448,
+  "prompt": "A conference lanyard with a navy blue strap and a plain blank white name badge card in a clear holder, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/badge__5779448.png",
+  "coverage": 0.051,
+  "edgeTouch": 0
+ },
+ "star": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1316913,
+  "prompt": "A glossy polished gold metallic star ornament with a soft sparkle, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/star__1316913.png",
+  "coverage": 0.15,
+  "edgeTouch": 0
+ }
+}

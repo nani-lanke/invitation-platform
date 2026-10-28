@@ -1,0 +1,3456 @@
+{
+ "generated": "2026-10-24T05:29:55.585Z",
+ "note": "Sample text only; the host replaces it in the editor (names, parents, venue, address, date, time, message are all editable fields). Nothing was changed.",
+ "summary": {
+  "placeholder family names": 100,
+  "placeholder venue name \"Grand Palace Hall\"": 100,
+  "gallery sample differs from the original card because the sample text is chosen per template id": 100,
+  "sample address in Chennai": 41,
+  "original sample names a real venue": 2
+ },
+ "cards": [
+  {
+   "slug": "rd-kalasam-blessing",
+   "base": "kalasam-blessing",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Ishaan",
+     "Mira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-gopuram-vows",
+   "base": "gopuram-vows",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Omar",
+     "Layla"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rehan",
+     "Aisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-talambralu-pearls",
+   "base": "talambralu-pearls",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Ishaan",
+     "Mira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Andhra Pradesh design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-kerala-mangalyam",
+   "base": "kerala-mangalyam",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Rehan",
+     "Aisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Kerala design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-kasavu-gold-border",
+   "base": "kasavu-gold-border",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rahul",
+     "Anjali"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Sharma",
+     "Daughter ofMr. & Mrs. Verma"
+    ],
+    "venue": "Le Meridien Convention Centre",
+    "address": "Maradu, Kochi, Kerala 682304"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Kerala design",
+    "original sample names a real venue (Le Meridien Convention Centre)",
+    "gallery sample differs from the original card (venue/address) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-mysore-madhuve",
+   "base": "mysore-madhuve",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Karnataka design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-punjabi-phulkari",
+   "base": "punjabi-phulkari",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Punjab design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-bengali-alpona",
+   "base": "bengali-alpona",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Vikram",
+     "Diya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Subhadip",
+     "Debolina"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Sharma",
+     "Daughter ofMr. & Mrs. Verma"
+    ],
+    "venue": "Swabhumi Heritage Plaza",
+    "address": "EM Bypass, Kolkata, West Bengal 700054"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a West Bengal design",
+    "original sample names a real venue (Swabhumi Heritage Plaza)",
+    "gallery sample differs from the original card (venue/address) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-shankha-pola",
+   "base": "shankha-pola",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Samuel",
+     "Grace"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a West Bengal design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-gujarati-toran",
+   "base": "gujarati-toran",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Ishaan",
+     "Mira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Gujarat design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-bandhani-bloom",
+   "base": "bandhani-bloom",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Pooja"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Sharma",
+     "Daughter ofMr. & Mrs. Verma"
+    ],
+    "venue": "Toran Banquet & Lawns",
+    "address": "SG Highway, Ahmedabad, Gujarat 380054"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Gujarat/Rajasthan design",
+    "gallery sample differs from the original card (venue/address) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-marathi-paithani",
+   "base": "marathi-paithani",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Ishaan",
+     "Mira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Maharashtra design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-mundavalya-pearls",
+   "base": "mundavalya-pearls",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Maharashtra design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-rajasthani-jharokha",
+   "base": "rajasthani-jharokha",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Leo",
+     "Emma"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Rajasthan design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-haveli-jaali",
+   "base": "haveli-jaali",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Samuel",
+     "Grace"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Rajasthan design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-assamese-biya",
+   "base": "assamese-biya",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Assam design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-gamosa-weave",
+   "base": "gamosa-weave",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Assam design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-odia-bahaghara",
+   "base": "odia-bahaghara",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Samuel",
+     "Grace"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Odisha design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-pattachitra-vows",
+   "base": "pattachitra-vows",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Ishaan",
+     "Mira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Odisha design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-sindhi-ajrak",
+   "base": "sindhi-ajrak",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Vikram",
+     "Diya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Sindh design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-goan-azulejo",
+   "base": "goan-azulejo",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Goa design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-konkan-coast",
+   "base": "konkan-coast",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Konkan coast design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-kashmiri-chinar",
+   "base": "kashmiri-chinar",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Kashmir design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-nepali-bihe",
+   "base": "nepali-bihe",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Nepal design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-mithila-vivah",
+   "base": "mithila-vivah",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Rahul",
+     "Priya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Leo",
+     "Emma"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Mithila (Bihar) design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-lucknawi-chikankari",
+   "base": "lucknawi-chikankari",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Lucknow design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-kanchipuram-silk",
+   "base": "kanchipuram-silk",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Rahul",
+     "Priya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-tanjore-grandeur",
+   "base": "tanjore-grandeur",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-chettinad-heritage",
+   "base": "chettinad-heritage",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-andhra-kalamkari",
+   "base": "andhra-kalamkari",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Andhra Pradesh design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-telangana-bathukamma",
+   "base": "telangana-bathukamma",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rehan",
+     "Aisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Telangana design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-coorg-kodava",
+   "base": "coorg-kodava",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Coorg (Karnataka) design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-kutch-mirrorwork",
+   "base": "kutch-mirrorwork",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Kutch (Gujarat) design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-banarasi-royale",
+   "base": "banarasi-royale",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Dev",
+     "Aarohi"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Omar",
+     "Layla"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Varanasi design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-awadhi-nawab",
+   "base": "awadhi-nawab",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Lucknow design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-kashmir-garden",
+   "base": "kashmir-garden",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Kashmir design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-royal-shehnai",
+   "base": "royal-shehnai",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-jewel-of-jaipur",
+   "base": "jewel-of-jaipur",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Omar",
+     "Layla"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Jaipur design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-udaipur-romance",
+   "base": "udaipur-romance",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Udaipur design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-traditional-wedding",
+   "base": "traditional-wedding",
+   "group": "regional",
+   "sample": {
+    "names": [
+     "Vikram",
+     "Diya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Yash",
+     "Pari"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-royal-wedding",
+   "base": "royal-wedding",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Vikram",
+     "Diya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Yash",
+     "Pari"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-golden-celebration",
+   "base": "golden-celebration",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Rehan",
+     "Aisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-sangeet-night",
+   "base": "sangeet-night",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-mehendi-morning",
+   "base": "mehendi-morning",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-haldi-sunshine",
+   "base": "haldi-sunshine",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Omar",
+     "Layla"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-mehendi-ceremony",
+   "base": "mehendi-ceremony",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Dev",
+     "Aarohi"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-haldi-ceremony",
+   "base": "haldi-ceremony",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-sangeet-evening",
+   "base": "sangeet-evening",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-hindu-vivah",
+   "base": "hindu-vivah",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Leo",
+     "Emma"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-anand-karaj",
+   "base": "anand-karaj",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Punjab / Sikh design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-nikah-ceremony",
+   "base": "nikah-ceremony",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Vikram",
+     "Diya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-christian-wedding",
+   "base": "christian-wedding",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-jain-vivah",
+   "base": "jain-vivah",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-buddhist-union",
+   "base": "buddhist-union",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Samuel",
+     "Grace"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-parsi-lagan",
+   "base": "parsi-lagan",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-interfaith-union",
+   "base": "interfaith-union",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Leo",
+     "Emma"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-baraat-procession",
+   "base": "baraat-procession",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-jaimala-exchange",
+   "base": "jaimala-exchange",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Rahul",
+     "Priya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-saat-phere",
+   "base": "saat-phere",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-nikah-nama",
+   "base": "nikah-nama",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-anand-karaj-ardas",
+   "base": "anand-karaj-ardas",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Punjab / Sikh design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-wedding-day-mandap",
+   "base": "wedding-day-mandap",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Yash",
+     "Pari"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Vikram",
+     "Diya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-vidaai-farewell",
+   "base": "vidaai-farewell",
+   "group": "rituals",
+   "sample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rehan",
+     "Aisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-cinematic-love-story",
+   "base": "cinematic-love-story",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-royal-durbar",
+   "base": "royal-durbar",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Ishaan",
+     "Mira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rahul",
+     "Priya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-luxe-noir",
+   "base": "luxe-noir",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-velvet-rouge",
+   "base": "velvet-rouge",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-palace-colonnade",
+   "base": "palace-colonnade",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-deco-gatsby",
+   "base": "deco-gatsby",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-maharaja-palace",
+   "base": "maharaja-palace",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Rajasthan design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-regal-maroon",
+   "base": "regal-maroon",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-imperial-gold",
+   "base": "imperial-gold",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-champagne-palace",
+   "base": "champagne-palace",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Omar",
+     "Layla"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-royal-garden-court",
+   "base": "royal-garden-court",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-pearl-and-champagne",
+   "base": "pearl-and-champagne",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-midnight-elegance",
+   "base": "midnight-elegance",
+   "group": "royal",
+   "sample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-pakistani-truck-art",
+   "base": "pakistani-truck-art",
+   "group": "south-asian",
+   "sample": {
+    "names": [
+     "Dev",
+     "Aarohi"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Omar",
+     "Layla"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Pakistan design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-bangladeshi-jamdani",
+   "base": "bangladeshi-jamdani",
+   "group": "south-asian",
+   "sample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Samuel",
+     "Grace"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Bangladesh design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-sri-lankan-poruwa",
+   "base": "sri-lankan-poruwa",
+   "group": "south-asian",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Karan",
+     "Nisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Sri Lanka design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-elegant-floral",
+   "base": "elegant-floral",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Leo",
+     "Emma"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-romance-in-blush",
+   "base": "romance-in-blush",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-peony-bloom-card",
+   "base": "peony-bloom-card",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kabir",
+     "Isha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-botanical-press",
+   "base": "botanical-press",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-garden-party",
+   "base": "garden-party",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Rehan",
+     "Aisha"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Yash",
+     "Pari"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-rosewater-romance",
+   "base": "rosewater-romance",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-lotus-garden",
+   "base": "lotus-garden",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Nikhil",
+     "Tara"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Leo",
+     "Emma"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-wildflower-vows",
+   "base": "wildflower-vows",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Aman",
+     "Zoya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-watercolor-romance",
+   "base": "watercolor-romance",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Yash",
+     "Pari"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-pastel-garden",
+   "base": "pastel-garden",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Dev",
+     "Aarohi"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-cherry-blossom-love",
+   "base": "cherry-blossom-love",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Neil",
+     "Avni"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-coastal-vows",
+   "base": "coastal-vows",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Aditya",
+     "Kavya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-mountain-vows",
+   "base": "mountain-vows",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-destination-voyage",
+   "base": "destination-voyage",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Dev",
+     "Aarohi"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Mateo",
+     "Lucia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-moonlit-florals",
+   "base": "moonlit-florals",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arjun",
+     "Meera"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-beachside-bliss",
+   "base": "beachside-bliss",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Rohan",
+     "Ananya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-goa-sunset-vows",
+   "base": "goa-sunset-vows",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Kenji",
+     "Aiko"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rahul",
+     "Priya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Goa design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-tropical-paradise",
+   "base": "tropical-paradise",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Rahul",
+     "Priya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-desert-romance",
+   "base": "desert-romance",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Daniel",
+     "Sophia"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Arnav",
+     "Ira"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "sample address in Chennai on a Thar desert design",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-lakefront-love",
+   "base": "lakefront-love",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Kunal",
+     "Myra"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Siddharth",
+     "Riya"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  },
+  {
+   "slug": "rd-european-escape",
+   "base": "european-escape",
+   "group": "botanical",
+   "sample": {
+    "names": [
+     "Varun",
+     "Sana"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "originalSample": {
+    "names": [
+     "Samuel",
+     "Grace"
+    ],
+    "parents": [
+     "Son ofMr. & Mrs. Suresh Sharma",
+     "Daughter ofMr. & Mrs. Ramesh Kumar"
+    ],
+    "venue": "Grand Palace Hall",
+    "address": "Anna Salai, Chennai, Tamil Nadu 600002"
+   },
+   "flags": [
+    "placeholder family names",
+    "placeholder venue name \"Grand Palace Hall\"",
+    "gallery sample differs from the original card (couple names) because the sample text is chosen per template id"
+   ]
+  }
+ ]
+}

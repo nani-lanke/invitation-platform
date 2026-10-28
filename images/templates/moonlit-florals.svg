@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Moonlit Florals — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-moonlit-florals" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="55%" stop-color="#1C2541"/>
+      <stop offset="100%" stop-color="#0B132B"/>
+    </linearGradient>
+    <radialGradient id="gl-moonlit-florals" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-moonlit-florals" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-moonlit-florals)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-moonlit-florals)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-moonlit-florals)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Midnight Celestial Frame &amp; Constellations -->
+      <g stroke="#48CAE4" stroke-width="1.2" fill="none" opacity="0.7">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#C0D6DF" stroke-width="0.8" stroke-dasharray="4 4" rx="6"/>
+      </g>
+      <!-- Crescent Moon &amp; Night-Blooming Jasmine -->
+      <g transform="translate(300, 260)">
+        <!-- Moon Halo -->
+        <circle cx="0" cy="0" r="95" fill="none" stroke="#48CAE4" stroke-width="1" opacity="0.4"/>
+        <!-- Glowing Crescent Moon -->
+        <path d="M 0 -50 C 35 -50, 60 -20, 60 20 C 60 60, 35 90, 0 90 C 30 70, 45 45, 45 20 C 45 -5, 30 -30, 0 -50 Z" fill="#EAF0FA" opacity="0.9"/>
+        <!-- Celestial Star Cluster -->
+        
+          <g transform="translate(-60, -40)">
+            <line x1="-5" y1="0" x2="5" y2="0" stroke="#48CAE4" stroke-width="1"/>
+            <line x1="0" y1="-5" x2="0" y2="5" stroke="#48CAE4" stroke-width="1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+          </g>
+        
+          <g transform="translate(-40, -70)">
+            <line x1="-5" y1="0" x2="5" y2="0" stroke="#48CAE4" stroke-width="1"/>
+            <line x1="0" y1="-5" x2="0" y2="5" stroke="#48CAE4" stroke-width="1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+          </g>
+        
+          <g transform="translate(-70, 20)">
+            <line x1="-5" y1="0" x2="5" y2="0" stroke="#48CAE4" stroke-width="1"/>
+            <line x1="0" y1="-5" x2="0" y2="5" stroke="#48CAE4" stroke-width="1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+          </g>
+        
+          <g transform="translate(-45, 60)">
+            <line x1="-5" y1="0" x2="5" y2="0" stroke="#48CAE4" stroke-width="1"/>
+            <line x1="0" y1="-5" x2="0" y2="5" stroke="#48CAE4" stroke-width="1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+          </g>
+        
+          <g transform="translate(40, -60)">
+            <line x1="-5" y1="0" x2="5" y2="0" stroke="#48CAE4" stroke-width="1"/>
+            <line x1="0" y1="-5" x2="0" y2="5" stroke="#48CAE4" stroke-width="1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+          </g>
+        
+          <g transform="translate(70, 50)">
+            <line x1="-5" y1="0" x2="5" y2="0" stroke="#48CAE4" stroke-width="1"/>
+            <line x1="0" y1="-5" x2="0" y2="5" stroke="#48CAE4" stroke-width="1"/>
+            <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+          </g>
+        
+        <!-- Night Blooming Jasmine Spray -->
+        <circle cx="-25" cy="0" r="10" fill="#FFFFFF" opacity="0.85"/>
+        <circle cx="-15" cy="-25" r="8" fill="#FFFFFF" opacity="0.85"/>
+        <circle cx="-35" cy="25" r="8" fill="#FFFFFF" opacity="0.85"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#C0D6DF" opacity="0.85">UNDER A CANOPY OF STARS</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#C0D6DF" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#C0D6DF" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#C0D6DF" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#EAF0FA">Moonlit Florals</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#EAF0FA" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#C0D6DF" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#EAF0FA" opacity="0.6">MIDNIGHT CELEBRATION</text>
+</svg>

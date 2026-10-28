@@ -1,0 +1,47 @@
+{
+ "slug": "midnight-elegance",
+ "name": "Midnight Elegance",
+ "base": "cards/midnight-elegance/",
+ "spec": {
+  "layout": "monogram",
+  "frame": "arch",
+  "venue": "split",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/midnight-elegance.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/midnight-elegance.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a midnight blue wedding reception under a starlit canopy with candles and silver decor, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3472341,
+   "raw": "..\\work\\raw\\midnight-elegance__venue__3472341_5u7qv.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a silver star medallion with sapphires, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1752337,
+   "raw": "..\\work\\raw\\midnight-elegance__crest__1752337_5oym5.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a palace garden under a starry midnight sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4693969,
+   "raw": "..\\work\\raw\\midnight-elegance__footer__4693969_1ejw4.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, silver leaves and white orchids, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5018735,
+   "raw": "..\\work\\raw\\midnight-elegance__corner__5018735_208vz.png"
+  }
+ }
+}

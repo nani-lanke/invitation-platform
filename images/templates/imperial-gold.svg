@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Imperial Gold — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-imperial-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF8F2"/>
+      <stop offset="55%" stop-color="#EFE7D2"/>
+      <stop offset="100%" stop-color="#FAF8F2"/>
+    </linearGradient>
+    <radialGradient id="gl-imperial-gold" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-imperial-gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-imperial-gold)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-imperial-gold)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-imperial-gold)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Beveled Geometric Gold Foil Borders -->
+      <g stroke="#D6A845" fill="none">
+        <rect x="36" y="36" width="528" height="728" stroke-width="2" opacity="0.8"/>
+        <rect x="44" y="44" width="512" height="712" stroke-width="0.8" opacity="0.5"/>
+        <rect x="52" y="52" width="496" height="696" stroke-width="1.5" stroke="#A67D28" opacity="0.7"/>
+        <!-- Corner Diamond Insets -->
+        <polygon points="52,40 64,52 52,64 40,52" fill="#D6A845" opacity="0.85"/>
+        <polygon points="548,40 560,52 548,64 536,52" fill="#D6A845" opacity="0.85"/>
+        <polygon points="52,736 64,748 52,760 40,748" fill="#D6A845" opacity="0.85"/>
+        <polygon points="548,736 560,748 548,760 536,748" fill="#D6A845" opacity="0.85"/>
+      </g>
+      <!-- Haute-Couture Embossed 24k Gold Sunburst Crest -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="105" fill="none" stroke="#D6A845" stroke-width="1.5" opacity="0.5"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#A67D28" stroke-width="1" stroke-dasharray="2 4"/>
+        
+          <line x1="0" y1="0" x2="80" y2="0" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="77.27406610312546" y2="20.70552360820166" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="69.2820323027551" y2="39.99999999999999" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="56.568542494923804" y2="56.5685424949238" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="40.00000000000001" y2="69.28203230275508" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="20.70552360820166" y2="77.27406610312546" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="4.898587196589413e-15" y2="80" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-20.705523608201652" y2="77.27406610312546" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-39.999999999999986" y2="69.2820323027551" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-56.5685424949238" y2="56.568542494923804" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-69.2820323027551" y2="39.99999999999999" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-77.27406610312545" y2="20.70552360820168" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-80" y2="9.797174393178826e-15" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-77.27406610312546" y2="-20.705523608201663" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-69.28203230275511" y2="-39.99999999999998" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-56.56854249492383" y2="-56.56854249492377" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-40.000000000000036" y2="-69.28203230275508" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-20.705523608201652" y2="-77.27406610312546" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="-1.4695761589768237e-14" y2="-80" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="20.705523608201624" y2="-77.27406610312548" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="40.00000000000001" y2="-69.28203230275508" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="56.56854249492379" y2="-56.56854249492382" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="69.28203230275507" y2="-40.000000000000036" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+          <line x1="0" y1="0" x2="77.27406610312545" y2="-20.705523608201727" stroke="#D6A845" stroke-width="1.2" opacity="0.6"/>
+        
+        <circle cx="0" cy="0" r="45" fill="#FAF8F2" stroke="#D6A845" stroke-width="2.5"/>
+        <circle cx="0" cy="0" r="35" fill="none" stroke="#A67D28" stroke-width="1.2"/>
+        <polygon points="0,-20 18,-6 12,16 -12,16 -18,-6" fill="#D6A845" opacity="0.9"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#D6A845" opacity="0.85">TOGETHER WITH THEIR FAMILIES</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#D6A845" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#D6A845" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#D6A845" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#332B1A">Imperial Gold</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#332B1A" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#D6A845" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#332B1A" opacity="0.6">SAVE THE DATE</text>
+</svg>

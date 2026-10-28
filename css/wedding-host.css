@@ -1,0 +1,156 @@
+/* Wedding design engine — hosted page (copied into js/export.js by scripts/sync-wedding-host-css.js).
+   Colours are the template's own palette with text chosen for contrast (--wd-*), fonts and frame from its design spec. */
+body.site-host--wd{--site-p:var(--wd-title);--site-s:var(--wd-accent);--site-b1:var(--wd-bg1);--site-b2:var(--wd-bg2);--site-ink:var(--wd-ink);--site-fd:var(--wd-display,'Playfair Display',Georgia,serif);--site-fb:var(--wd-body,'DM Sans',system-ui,sans-serif);background:var(--wd-bg1);color:var(--wd-ink);font-family:var(--site-fb)}
+body.site-host--wd .site-nav{background:color-mix(in srgb,var(--wd-bg1) 92%,transparent);border-bottom:1px solid var(--wd-line);box-shadow:none}
+body.site-host--wd .site-nav__brand{font-family:var(--wd-caps,var(--site-fd));color:var(--wd-title)}
+body.site-host--wd .site-nav__link{color:var(--wd-ink)}
+body.site-host--wd .site-nav__link:hover{color:var(--wd-title);background:var(--wd-soft)}
+body.site-host--wd .site-nav__burger{color:var(--wd-title);border-color:var(--wd-line)}
+body.site-host--wd .site-hero{position:relative;color:var(--wd-ink);background:radial-gradient(900px 600px at 50% 0,color-mix(in srgb,var(--wd-bg1) 80%,#fff 20%) 0%,transparent 100%),linear-gradient(170deg,var(--wd-bg1),var(--wd-bg2))!important;overflow:hidden}
+body.site-host--wd .site-wd-frame{position:absolute;inset:0;pointer-events:none;z-index:1;color:var(--wd-accent)}
+body.site-host--wd .site-wd-frame::before{content:"";position:absolute;inset:clamp(10px,1.6vw,22px);border:1px solid var(--wd-line);border-radius:18px}
+body.site-wd-fr-double .site-wd-frame::before{border-width:1.5px;box-shadow:inset 0 0 0 5px transparent,inset 0 0 0 6px var(--wd-line)}
+body.site-wd-fr-band .site-wd-frame::before{inset:0;border:clamp(8px,1vw,14px) solid var(--wd-soft);border-radius:0;box-shadow:inset 0 0 0 10px transparent,inset 0 0 0 11px var(--wd-line)}
+body.site-wd-fr-hairline .site-wd-frame::before{border-radius:0}
+body.site-wd-fr-arch .site-wd-frame::before{border-radius:46% 46% 18px 18px / 22% 22% 18px 18px;border-width:1.5px}
+body.site-wd-fr-beads .site-wd-frame::before{border:0;padding:6px;background:radial-gradient(circle,var(--wd-accent) 1.6px,transparent 2.1px) 0 0/11px 11px;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0)}
+body.site-wd-fr-kolam .site-wd-frame::before{border-style:dashed}
+body.site-wd-fr-deco .site-wd-frame::before{border-radius:4px;box-shadow:inset 0 0 0 4px transparent,inset 0 0 0 5px var(--wd-line)}
+body.site-host--wd .site-wd-frame .wd-corner{position:absolute;width:clamp(70px,11vw,170px);height:auto;opacity:.85}
+body.site-wd-fr-hairline .site-wd-frame .wd-corner{width:clamp(34px,4vw,56px)}
+body.site-host--wd .wd-corner--tl{top:clamp(4px,1vw,14px);left:clamp(4px,1vw,14px)}
+body.site-host--wd .wd-corner--tr{top:clamp(4px,1vw,14px);right:clamp(4px,1vw,14px);transform:scaleX(-1)}
+body.site-host--wd .wd-corner--bl{bottom:clamp(4px,1vw,14px);left:clamp(4px,1vw,14px);transform:scaleY(-1)}
+body.site-host--wd .wd-corner--br{bottom:clamp(4px,1vw,14px);right:clamp(4px,1vw,14px);transform:scale(-1,-1)}
+body.site-host--wd .site-hero__inner{position:relative;z-index:2;padding:clamp(80px,10vw,130px) clamp(28px,8vw,120px) clamp(56px,7vw,90px)}
+body.site-host--wd .site-wd-crest{display:flex;justify-content:center;margin-bottom:10px}
+body.site-host--wd .site-wd-crest img{width:clamp(72px,9vw,120px);height:clamp(72px,9vw,120px);object-fit:contain}
+body.site-host--wd .site-hero__photo{border:2px solid var(--wd-accent)}
+body.site-host--wd .site-hero__additional-title{font-family:var(--wd-caps,var(--site-fb));letter-spacing:.24em;text-transform:uppercase;font-size:clamp(.72rem,1.2vw,.92rem);color:var(--wd-accent);white-space:pre-line}
+body.site-host--wd .site-hero__additional-subtitle{font-family:var(--site-fb);color:var(--wd-ink);font-size:clamp(1rem,1.7vw,1.3rem);white-space:pre-line;font-style:normal}
+body.site-host--wd .site-hero__person-name{font-family:var(--site-fd);color:var(--wd-title);font-weight:400;font-size:calc(clamp(2.4rem,6vw,5rem) * var(--wd-name-size,1));text-shadow:none}
+body.wd-italic .site-hero__person-name{font-style:italic}
+body.site-host--wd .site-hero__couple-sep,body.site-host--wd .site-hero__couple-sep .amp{color:var(--wd-accent);font-family:var(--site-fd);text-shadow:none}
+body.site-host--wd .site-hero__person-parents{color:var(--wd-ink)}
+body.site-host--wd .site-hero__person-parents span{color:var(--wd-accent);opacity:1}
+body.site-host--wd .site-hero__person-parents strong{color:var(--wd-ink)}
+body.site-wd-l-editorial .site-hero__inner{text-align:left;justify-items:start}
+body.site-wd-l-editorial .site-wd-crest{justify-content:flex-start}
+/* Date block (same styles as the card's) */
+body.site-host--wd .wd-date{margin:18px auto 22px;color:var(--wd-ink);font-family:var(--wd-caps,var(--site-fb))}
+body.site-host--wd .wd-date small{display:block;font-size:clamp(.62rem,1vw,.8rem);letter-spacing:.2em;color:var(--wd-accent)}
+body.site-host--wd .wd-date b{color:var(--wd-title);font-weight:600}
+body.site-host--wd .wd-date--pill{display:flex;border:1px solid var(--wd-line);border-radius:999px;padding:12px 10px;background:var(--wd-card);width:min(520px,100%)}
+body.site-host--wd .wd-cell{flex:1;text-align:center;padding:0 10px}
+body.site-host--wd .wd-cell+.wd-cell{border-left:1px solid var(--wd-line)}
+body.site-host--wd .wd-cell b{display:block;font-size:clamp(1.4rem,3vw,2.2rem);line-height:1.15}
+body.site-host--wd .wd-cell b.wd-cell__time{font-size:clamp(1.1rem,2vw,1.5rem)}
+body.site-host--wd .wd-date--medallion{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:22px}
+body.site-host--wd .wd-medal{width:clamp(84px,9vw,120px);height:clamp(84px,9vw,120px);display:grid;place-items:center;border:1.5px solid var(--wd-accent);border-radius:50%;box-shadow:0 0 0 5px var(--wd-soft)}
+body.site-host--wd .wd-medal b{font-size:clamp(2rem,4vw,3rem)}
+body.site-host--wd .wd-date__meta{flex-basis:100%;margin:6px 0 0;letter-spacing:.2em;font-size:clamp(.72rem,1.1vw,.9rem);color:var(--wd-ink)}
+body.site-host--wd .wd-date__big{display:block;font-family:var(--site-fd);font-size:clamp(3.4rem,8vw,6rem);line-height:1}
+body.site-host--wd .wd-date__month{margin:4px 0;letter-spacing:.28em;color:var(--wd-title)}
+body.site-host--wd .wd-date--ribbon{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px;padding:12px 28px;background:var(--wd-soft);border-top:1px solid var(--wd-line);border-bottom:1px solid var(--wd-line);letter-spacing:.18em;text-transform:uppercase;font-size:clamp(.72rem,1.2vw,.95rem)}
+body.site-host--wd .wd-date--ribbon i{width:5px;height:5px;background:var(--wd-accent);transform:rotate(45deg)}
+body.site-host--wd .wd-date__row{display:flex;align-items:center;justify-content:center}
+body.site-host--wd .wd-date__row span{font-size:clamp(1rem,2vw,1.5rem);letter-spacing:.16em;padding:0 clamp(14px,2.4vw,30px)}
+body.site-host--wd .wd-date__row b{font-size:clamp(2.4rem,5vw,3.8rem);padding:0 clamp(14px,2.4vw,30px);border-left:1px solid var(--wd-line);border-right:1px solid var(--wd-line)}
+body.site-host--wd .site-btn--ghost{background:transparent;color:var(--wd-title);border:1px solid var(--wd-line);box-shadow:none}
+body.site-host--wd .site-btn--soft,body.site-host--wd .site-venue__media-link{background:var(--wd-accent);color:var(--wd-bg1);border:1px solid var(--wd-accent);box-shadow:none}
+/* Sections */
+body.site-host--wd .site-section{background:var(--wd-bg1);color:var(--wd-ink)}
+body.site-host--wd .site-section--alt,body.site-host--wd .site-count-section{background:linear-gradient(180deg,color-mix(in srgb,var(--wd-bg1) 55%,var(--wd-bg2)),var(--wd-bg2));color:var(--wd-ink)}
+body.site-host--wd .site-title__eyebrow{color:var(--wd-accent);font-family:var(--wd-caps,var(--site-fb));letter-spacing:.24em}
+body.site-host--wd .site-title h2,body.site-host--wd .site-count-section .site-title h2{color:var(--wd-title);font-family:var(--site-fd);font-weight:400}
+body.site-host--wd .site-title p,body.site-host--wd .site-count-section .site-title p{color:var(--wd-ink);opacity:.9}
+body.site-host--wd .site-title h2::after{content:"";display:block;width:clamp(120px,14vw,200px);height:1px;margin:14px auto 0;background:linear-gradient(90deg,transparent,var(--wd-accent),transparent)}
+body.site-host--wd .site-story,body.site-host--wd .site-celebration-card,body.site-host--wd .site-detail,body.site-host--wd .site-count .cd-unit,body.site-host--wd .site-venue__card,body.site-host--wd .site-blessings-card{background:var(--wd-card);border:1px solid var(--wd-card-line);box-shadow:none;color:var(--wd-ink)}
+body.site-host--wd .site-story p,body.site-host--wd .site-detail strong,body.site-host--wd .site-venue__card p,body.site-host--wd .site-blessings-side p,body.site-host--wd .site-blessings-msg,body.site-host--wd .site-celebration-card__weekday,body.site-host--wd .site-celebration-card__time{color:var(--wd-ink)}
+body.site-host--wd .site-celebration-card__title,body.site-host--wd .site-celebration-card__date,body.site-host--wd .site-venue__card h3,body.site-host--wd .site-blessings-side strong,body.site-host--wd .site-blessings-subheading,body.site-host--wd .site-count .cd-value{color:var(--wd-title)}
+body.site-host--wd .site-detail small,body.site-host--wd .site-count .cd-label,body.site-host--wd .site-detail svg,body.site-host--wd .site-blessings-ornament{color:var(--wd-accent)}
+body.site-host--wd .site-blessings-divider{background:var(--wd-line)}
+body.site-host--wd .site-venue__media{border:1px solid var(--wd-card-line)}
+body.site-wd-l-arch .site-venue__media{border-radius:50% 50% 18px 18px / 26% 26% 18px 18px}
+body.site-host--wd .site-footer{background:var(--wd-bg2);border-top:1px solid var(--wd-line);color:var(--wd-ink)}
+body.site-host--wd .site-footer__names{font-family:var(--site-fd);color:var(--wd-title)}
+body.site-host--wd .site-footer p{color:var(--wd-ink);opacity:.75}
+body.site-host--wd .site-footer a{color:var(--wd-accent)}
+@media(max-width:640px){
+  body.site-host--wd .site-hero__inner{padding:96px 30px 48px}
+  body.site-host--wd .site-wd-frame .wd-corner{width:64px}
+  body.site-host--wd .wd-cell{padding:0 6px}
+}
+/* Floral line art (images/wedding-lineart/) in the hero, in place of the thin corner lines. */
+body.site-host--wd .site-wd-frame .wd-la{position:absolute;height:auto;pointer-events:none;opacity:.95}
+body.site-host--wd .site-wd-frame .wd-la--tl,body.site-host--wd .site-wd-frame .wd-la--tr{top:clamp(6px,1vw,16px);width:clamp(120px,22vw,320px)}
+body.site-host--wd .site-wd-frame .wd-la--tl{left:clamp(6px,1vw,16px)}
+body.site-host--wd .site-wd-frame .wd-la--tr{right:clamp(6px,1vw,16px);transform:scaleX(-1)}
+body.site-host--wd .site-wd-frame .wd-la--bl,body.site-host--wd .site-wd-frame .wd-la--br{bottom:clamp(6px,1vw,16px);width:clamp(120px,20vw,300px)}
+body.site-host--wd .site-wd-frame .wd-la--bl{left:clamp(6px,1vw,16px)}
+body.site-host--wd .site-wd-frame .wd-la--br{right:clamp(6px,1vw,16px);transform:scaleX(-1)}
+body.site-host--wd .site-wd-frame .wd-la--l,body.site-host--wd .site-wd-frame .wd-la--r{display:none}
+
+/* "The Invitation" panel (wedding hosted pages: regional + engine). Colours come from each page's --site-* variables. */
+.site-invite{position:relative;max-width:760px;margin:0 auto;text-align:center;padding:clamp(36px,6vw,64px) clamp(24px,6vw,72px)!important;overflow:hidden}
+.site-invite__corners{position:absolute;inset:0;pointer-events:none;color:var(--site-s)}
+.site-invite__corners .wd-corner{position:absolute;width:clamp(54px,9vw,96px);height:auto;opacity:.8}
+.site-invite__corners .wd-corner--tl{top:8px;left:8px}
+.site-invite__corners .wd-corner--tr{top:8px;right:8px;transform:scaleX(-1)}
+.site-invite__corners .wd-corner--bl{bottom:8px;left:8px;transform:scaleY(-1)}
+.site-invite__corners .wd-corner--br{bottom:8px;right:8px;transform:scale(-1,-1)}
+.site-invite__crest{display:block;width:clamp(58px,8vw,92px);height:clamp(58px,8vw,92px);object-fit:contain;margin:0 auto 10px}
+.site-invite__blessing{display:flex;justify-content:center;gap:clamp(12px,3vw,32px);margin:0 0 12px;font-family:'Noto Serif Telugu','Noto Serif Tamil',serif;font-weight:600;color:var(--site-p);font-size:clamp(.95rem,1.6vw,1.2rem)}
+.site-invite__lead{margin:0 0 6px!important;font-family:var(--wd-caps,var(--site-fb))!important;font-size:clamp(.72rem,1.2vw,.9rem)!important;letter-spacing:.24em;text-transform:uppercase;color:var(--site-s)!important;font-weight:600!important;line-height:1.6!important}
+.site-invite__names{margin:4px 0 18px!important;font-family:var(--site-fd)!important;color:var(--site-p)!important;font-size:clamp(2rem,5vw,3.4rem)!important;line-height:1.1!important;font-weight:400!important;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.3em}
+.site-invite__names i{font-style:normal;color:var(--site-s);font-size:.7em}
+.site-invite__msg{margin:0 auto!important;max-width:560px;font-family:var(--wd-body,var(--site-fb))!important;font-size:clamp(1.08rem,2vw,1.35rem)!important;line-height:1.75!important;color:var(--site-ink)!important;font-style:italic}
+.site-invite__rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px auto 16px;width:min(320px,70%)}
+.site-invite__rule::before,.site-invite__rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--site-s))}
+.site-invite__rule::after{background:linear-gradient(90deg,var(--site-s),transparent)}
+.site-invite__rule i{width:7px;height:7px;background:var(--site-s);transform:rotate(45deg)}
+.site-invite__when{margin:0 0 4px!important;font-family:var(--wd-caps,var(--site-fb))!important;letter-spacing:.18em;text-transform:uppercase;font-size:clamp(.74rem,1.3vw,.95rem)!important;color:var(--site-p)!important;font-weight:700!important;line-height:1.6!important}
+.site-invite__where{margin:0!important;font-family:var(--wd-body,var(--site-fb))!important;font-size:clamp(.9rem,1.5vw,1.05rem)!important;color:var(--site-ink)!important;opacity:.9;line-height:1.5!important}
+body.site-host--regional .site-invite__names{font-family:'Great Vibes',cursive!important}
+body.site-host--regional-tamil-thirumanam .site-invite__names{font-family:'Cinzel',Georgia,serif!important;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(1.6rem,4vw,2.6rem)!important}
+/* The event title above the wording follows the card colours (was fixed white). */
+body.site-host--wd .site-hero__kicker{color:var(--wd-accent);text-shadow:none}
+/* Main photo in the invitation panel (in place of the crest). */
+body.site-host--wd .site-invite__photo{display:block;width:clamp(120px,18vw,170px);height:clamp(120px,18vw,170px);object-fit:cover;border-radius:50%;margin:0 auto 16px;border:3px solid var(--wd-card,#fff);box-shadow:0 0 0 1.5px var(--wd-accent),0 8px 22px rgba(0,0,0,.16)}
+body.site-host--wd .site-invite__crest{width:clamp(80px,11vw,130px);height:clamp(80px,11vw,130px)}
+/* Engagement decoration styles in the hero (same pieces as the card). */
+body.site-host--wd .site-wd-frame .wd-la--garland{top:0;left:50%;width:min(1180px,98%);transform:translateX(-50%)}
+body.site-host--wd .site-wd-frame .wd-la--cluster{top:auto;bottom:0;left:50%;width:clamp(260px,38vw,560px);transform:translateX(-50%)}
+body.site-host--wd .site-wd-frame .wd-la--vl,body.site-host--wd .site-wd-frame .wd-la--vr{display:block;top:4%;width:clamp(90px,11vw,180px)}
+body.site-host--wd .site-wd-frame .wd-la--vl{left:0}
+body.site-host--wd .site-wd-frame .wd-la--vr{right:0;transform:scaleX(-1)}
+body.site-host--wd .site-wd-frame .wd-la--br.wd-la--flip{transform:rotate(180deg)}
+body.site-host--wd .site-wd-frame .wd-la--cl-sm{width:clamp(140px,20vw,300px)}
+/* Birthday cards: theme word, "Turning N" badge and party title under the name. */
+body.site-host--wd .wd-bday-title{display:flex;flex-direction:column;align-items:center;margin:.2rem auto 1rem;line-height:1}
+body.site-host--wd .wd-bday-title .wd-eng-title__script{font-family:var(--wd-display,inherit);color:var(--wd-accent);font-size:clamp(1.8rem,5vw,3rem)}
+body.site-host--wd .wd-bday-title .wd-eng-title__caps{margin-top:.5rem;padding:.4rem 1.2rem;font-family:var(--wd-caps,inherit);font-size:clamp(.62rem,1.4vw,.85rem);letter-spacing:.32em;text-transform:uppercase;color:var(--wd-title);border-top:1px solid var(--wd-line);border-bottom:1px solid var(--wd-line)}
+body.site-host--wd .wd-bday-age{display:flex;flex-direction:column;align-items:center;justify-content:center;width:110px;height:110px;margin:.7rem auto .2rem;border-radius:50%;border:1.5px solid var(--wd-line);box-shadow:inset 0 0 0 5px var(--wd-soft);background:var(--wd-card)}
+body.site-host--wd .wd-bday-age small{font-family:var(--wd-caps,inherit);font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;color:var(--wd-ink)}
+body.site-host--wd .wd-bday-age b{font-family:var(--wd-display,inherit);font-size:2.8rem;line-height:1;color:var(--wd-title);font-weight:600}
+body.site-host--wd.wd-script .wd-bday-age b{font-family:var(--wd-caps,inherit)}
+body.site-host--wd .wd-bday-tagline{font-style:italic}
+body.site-host--wd .wd-occ-title .wd-bday-age small{margin-top:.2rem}
+body.site-host--wd .site-hero__names .amp{color:var(--wd-accent)}
+/* Baby shower / naming ceremony: label over the name, parents under it, room before the title. */
+body.site-host--wd .site-hero__occ-label{margin:14px 0 -6px;font-family:var(--wd-caps,inherit);font-size:clamp(.7rem,1.3vw,.85rem);letter-spacing:.28em;text-transform:uppercase;color:var(--wd-accent)}
+body.site-host--wd .site-hero__names .wd-occ-n{display:inline-block;white-space:nowrap}
+body.site-host--wd .site-hero__names .wd-occ-amp{display:inline-block;margin:0 .2em;font-size:.6em;color:var(--wd-accent);vertical-align:.12em}
+body.site-host--wd .wd-occ-parents{margin:.2rem auto .4rem;text-align:center;color:var(--wd-ink)}
+body.site-host--wd .wd-occ-parents>span{display:block;font-style:italic;font-size:clamp(.85rem,1.5vw,1rem);letter-spacing:.06em;color:var(--wd-accent)}
+body.site-host--wd .wd-occ-parents b{display:block;font-family:var(--wd-display,inherit);font-weight:600;font-size:clamp(1.3rem,3vw,2rem);color:var(--wd-title);line-height:1.25}
+body.site-host--wd .wd-occ-parents .wd-occ-n{display:inline-block;white-space:nowrap}
+body.site-host--wd .wd-occ-parents .wd-occ-amp{display:inline-block;margin:0 .2em;color:var(--wd-accent);font-size:.85em}
+body.site-host--wd .wd-occ-awaiting{font-style:italic}
+body.site-host--wd.wd-fam-baby-shower .wd-occ-title,body.site-host--wd.wd-fam-naming-ceremony .wd-occ-title{margin-top:1.4rem}
+/* Room for the art: the bottom cluster (width clamp(260px,38vw,560px)) and the top garland (min(1180px,98%)) scale with the window, so the hero text keeps clear of both. */
+body.site-host--wd .site-hero:has(.wd-la--cluster) .site-hero__inner{padding-bottom:calc(clamp(260px,38vw,560px)*.78)}
+body.site-host--wd .site-hero:has(.wd-la--garland) .site-hero__inner{padding-top:max(96px,calc(min(1180px,98vw)*.2))}
+/* Backdrop cards: the painted FLUX paper behind the hero; the garland, vines and cluster are separate cut-outs. */
+body.site-host--wd .site-wd-frame .wd-bd{position:absolute;inset:0;background-size:cover;background-position:center;pointer-events:none}
+body.site-host--wd .site-wd-frame .wd-la--foot{display:none}

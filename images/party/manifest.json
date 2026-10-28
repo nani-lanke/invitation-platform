@@ -1,0 +1,1374 @@
+{
+ "house-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8628314,
+  "prompt": "Wide photograph of an empty cosy living room decorated for a house party with fairy lights and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/house-party__venue__8628314.png"
+ },
+ "house-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6104519,
+  "prompt": "A small compact arrangement of violet balloons, confetti and paper streamers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/house-party__bouquet__6104519.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "house-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4562472,
+  "prompt": "A low wide compact arrangement of violet balloons, confetti and paper streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/house-party__cluster__4562472.png",
+  "coverage": 0.323,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "house-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8881161,
+  "prompt": "Small premium ornament for the top of a party invitation: a small bunch of violet balloons with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/house-party__crest__8881161.png",
+  "coverage": 0.141,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rooftop-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4579066,
+  "prompt": "Wide photograph of an empty city rooftop terrace at night with string lights and lounge seating, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/rooftop-night__venue__4579066.png"
+ },
+ "rooftop-night/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3774090,
+  "prompt": "A long horizontal garland of warm string lights, green leaves and small lanterns draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/rooftop-night__garland__3774090.png",
+  "coverage": 0.082,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "garland"
+ },
+ "rooftop-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8979501,
+  "prompt": "A low wide compact arrangement of warm string lights, green leaves and small lanterns, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/rooftop-night__cluster__8979501.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "rooftop-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5802992,
+  "prompt": "Small premium ornament for the top of a party invitation: a string of warm glowing light bulbs looped in a circle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/rooftop-night__crest__5802992.png",
+  "coverage": 0.137,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "dinner-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7675455,
+  "prompt": "Wide photograph of an empty intimate claret dining room with candles, flowers and a set table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/dinner-party__venue__7675455.png"
+ },
+ "dinner-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5712046,
+  "prompt": "A low wide compact arrangement of claret roses, candles and dark green leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dinner-party__cluster__5712046.png",
+  "coverage": 0.332,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "dinner-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6159815,
+  "prompt": "Small premium ornament for the top of a party invitation: a lit taper candle in a brass holder beside a wine glass, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dinner-party__crest__6159815.png",
+  "coverage": 0.064,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "pool-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1432274,
+  "prompt": "Wide photograph of an empty bright swimming pool deck with floats, umbrellas and lounge chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/pool-party__venue__1432274.png"
+ },
+ "pool-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4620367,
+  "prompt": "A small compact arrangement of bright beach balls, palm leaves and confetti, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/pool-party__bouquet__4620367.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "pool-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1631440,
+  "prompt": "A low wide compact arrangement of bright beach balls, palm leaves and confetti, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/pool-party__cluster__1631440.png",
+  "coverage": 0.358,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "pool-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6516961,
+  "prompt": "Small premium ornament for the top of a party invitation: a striped inflatable pool ring with water splashes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/pool-party__crest__6516961.png",
+  "coverage": 0.174,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "birthday-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7799241,
+  "prompt": "Wide photograph of an empty party room with coral balloons, a cake table and bunting, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/birthday-party__venue__7799241.png"
+ },
+ "birthday-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6104878,
+  "prompt": "A small compact arrangement of coral and peach balloons, confetti and streamers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/birthday-party__bouquet__6104878.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "birthday-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5719069,
+  "prompt": "A low wide compact arrangement of coral and peach balloons, confetti and streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/birthday-party__cluster__5719069.png",
+  "coverage": 0.449,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "birthday-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6255872,
+  "prompt": "Small premium ornament for the top of a party invitation: a small coral birthday cake with lit candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/birthday-party__crest__6255872.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "surprise-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6205867,
+  "prompt": "Wide photograph of an empty living room set up for a surprise party with plum balloons and streamers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/surprise-party__venue__6205867.png"
+ },
+ "surprise-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7452686,
+  "prompt": "A long horizontal garland of plum and lavender balloons, gift boxes and stars draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/surprise-party__garland__7452686.png",
+  "coverage": 0.287,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "garland"
+ },
+ "surprise-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1757719,
+  "prompt": "A low wide compact arrangement of plum and lavender balloons, gift boxes and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/surprise-party__cluster__1757719.png",
+  "coverage": 0.395,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "surprise-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1434730,
+  "prompt": "Small premium ornament for the top of a party invitation: a wrapped plum gift box with a lavender bow and stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/surprise-party__crest__1434730.png",
+  "coverage": 0.13,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cocktail-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2064479,
+  "prompt": "Wide photograph of an empty chic black and gold cocktail bar with glasses and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/cocktail-party__venue__2064479.png"
+ },
+ "cocktail-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7374768,
+  "prompt": "A low wide compact arrangement of gold leaves, black ribbons and white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/cocktail-party__cluster__7374768.png",
+  "coverage": 0.375,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "cocktail-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7055361,
+  "prompt": "Small premium ornament for the top of a party invitation: two crystal coupe glasses with gold sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/cocktail-party__crest__7055361.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "garden-fete/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8607295,
+  "prompt": "Wide photograph of an empty sunny garden with bunting, white chairs and a flower table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/garden-fete__venue__8607295.png"
+ },
+ "garden-fete/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9506574,
+  "prompt": "A round wreath of emerald leaves, white daisies and wild flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/garden-fete__wreath__9506574.png",
+  "coverage": 0.351,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-fete/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5075369,
+  "prompt": "A low wide compact arrangement of emerald leaves, white daisies and wild flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/garden-fete__cluster__5075369.png",
+  "coverage": 0.35,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-fete/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3259644,
+  "prompt": "Small premium ornament for the top of a party invitation: a small straw sun hat with daisies, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/garden-fete__crest__3259644.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "beach-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8745814,
+  "prompt": "Wide photograph of an empty sunny beach party setup with cabanas, lanterns and palm trees, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/beach-party__venue__8745814.png"
+ },
+ "beach-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1970906,
+  "prompt": "A small compact arrangement of palm fronds, hibiscus flowers and seashells, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/beach-party__bouquet__1970906.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "beach-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5516625,
+  "prompt": "A low wide compact arrangement of palm fronds, hibiscus flowers and seashells, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/beach-party__cluster__5516625.png",
+  "coverage": 0.365,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "beach-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5807764,
+  "prompt": "Small premium ornament for the top of a party invitation: a small palm tree with a bright sun behind it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/beach-party__crest__5807764.png",
+  "coverage": 0.067,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "family-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9228769,
+  "prompt": "Wide photograph of an empty warm family dining room with a long table, flowers and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/family-party__venue__9228769.png"
+ },
+ "family-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4555123,
+  "prompt": "A long horizontal garland of terracotta flowers, cream blossoms and green leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/family-party__garland__4555123.png",
+  "coverage": 0.232,
+  "edgeTouch": 0.009,
+  "free": true,
+  "style": "garland"
+ },
+ "family-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3742546,
+  "prompt": "A low wide compact arrangement of terracotta flowers, cream blossoms and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/family-party__cluster__3742546.png",
+  "coverage": 0.355,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6480411,
+  "prompt": "Small premium ornament for the top of a party invitation: a small terracotta model house with two hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/family-party__crest__6480411.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "friends-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7053855,
+  "prompt": "Wide photograph of an empty cosy café lounge decorated with dusty rose balloons and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/friends-party__venue__7053855.png"
+ },
+ "friends-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8170852,
+  "prompt": "A small compact arrangement of dusty rose balloons, small hearts and confetti, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/friends-party__bouquet__8170852.png",
+  "coverage": 0.077,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "friends-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8051543,
+  "prompt": "A low wide compact arrangement of dusty rose balloons, small hearts and confetti, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/friends-party__cluster__8051543.png",
+  "coverage": 0.463,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "friends-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9525226,
+  "prompt": "Small premium ornament for the top of a party invitation: a small bunch of dusty rose balloons with hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/friends-party__crest__9525226.png",
+  "coverage": 0.141,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "dance-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5419218,
+  "prompt": "Wide photograph of an empty dance floor with a disco ball, purple and pink lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/dance-party__venue__5419218.png"
+ },
+ "dance-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3930238,
+  "prompt": "A small compact arrangement of purple and pink balloons, sparkles and streamers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dance-party__bouquet__3930238.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "dance-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1269357,
+  "prompt": "A low wide compact arrangement of purple and pink balloons, sparkles and streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dance-party__cluster__1269357.png",
+  "coverage": 0.297,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "dance-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5210544,
+  "prompt": "Small premium ornament for the top of a party invitation: a shiny mirrored disco ball with purple light beams, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dance-party__crest__5210544.png",
+  "coverage": 0.148,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "music-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9621406,
+  "prompt": "Wide photograph of an empty music lounge with a small stage, speakers and blue lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/music-party__venue__9621406.png"
+ },
+ "music-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8024357,
+  "prompt": "A low wide compact arrangement of silver music notes, royal blue ribbons and stars, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/music-party__cluster__8024357.png",
+  "coverage": 0.286,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "music-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5471960,
+  "prompt": "Small premium ornament for the top of a party invitation: a pair of headphones with small silver music notes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/music-party__crest__5471960.png",
+  "coverage": 0.08,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "karaoke-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7849984,
+  "prompt": "Wide photograph of an empty karaoke lounge with a small stage, microphone stand and magenta lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/karaoke-party__venue__7849984.png"
+ },
+ "karaoke-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2443455,
+  "prompt": "A long horizontal garland of magenta balloons, stars and music notes draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/karaoke-party__garland__2443455.png",
+  "coverage": 0.212,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "garland"
+ },
+ "karaoke-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4629006,
+  "prompt": "A low wide compact arrangement of magenta balloons, stars and music notes, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/karaoke-party__cluster__4629006.png",
+  "coverage": 0.427,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "karaoke-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4480807,
+  "prompt": "Small premium ornament for the top of a party invitation: a sparkling magenta microphone with small stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/karaoke-party__crest__4480807.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "game-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7422389,
+  "prompt": "Wide photograph of an empty cosy games room with a board game table, sofas and warm lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/game-night__venue__7422389.png"
+ },
+ "game-night/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6973549,
+  "prompt": "A small compact arrangement of playing cards, dice and gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/game-night__bouquet__6973549.png",
+  "coverage": 0.035,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "game-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4336994,
+  "prompt": "A low wide compact arrangement of playing cards, dice and gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/game-night__cluster__4336994.png",
+  "coverage": 0.187,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "game-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6374411,
+  "prompt": "Small premium ornament for the top of a party invitation: a charcoal game controller next to dice and a chess piece, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/game-night__crest__6374411.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "movie-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7699621,
+  "prompt": "Wide photograph of an empty home cinema room with a projector screen, cushions and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/movie-night__venue__7699621.png"
+ },
+ "movie-night/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4123157,
+  "prompt": "A small compact arrangement of popcorn, film reels and gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/movie-night__bouquet__4123157.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "movie-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4192138,
+  "prompt": "A low wide compact arrangement of popcorn, film reels and gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/movie-night__cluster__4192138.png",
+  "coverage": 0.406,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "movie-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2097251,
+  "prompt": "Small premium ornament for the top of a party invitation: a red and white popcorn box beside a film reel, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/movie-night__crest__2097251.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "pajama-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2483601,
+  "prompt": "Wide photograph of an empty pastel bedroom set for a sleepover with tents, pillows and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/pajama-party__venue__2483601.png"
+ },
+ "pajama-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7364597,
+  "prompt": "A small compact arrangement of pastel stars, small moons and soft pillows, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/pajama-party__bouquet__7364597.png",
+  "coverage": 0.066,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pajama-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7433578,
+  "prompt": "A low wide compact arrangement of pastel stars, small moons and soft pillows, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/pajama-party__cluster__7433578.png",
+  "coverage": 0.285,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pajama-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7587779,
+  "prompt": "Small premium ornament for the top of a party invitation: a fluffy pillow with a small crescent moon and stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/pajama-party__crest__7587779.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bbq-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8002967,
+  "prompt": "Wide photograph of an empty backyard with a barbecue grill, picnic table and string lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/bbq-party__venue__8002967.png"
+ },
+ "bbq-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7799515,
+  "prompt": "A long horizontal garland of corn cobs, rosemary sprigs and red chillies draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/bbq-party__garland__7799515.png",
+  "coverage": 0.226,
+  "edgeTouch": 0.008,
+  "free": true,
+  "style": "garland"
+ },
+ "bbq-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1442477,
+  "prompt": "A low wide compact arrangement of corn cobs, rosemary sprigs and red chillies, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/bbq-party__cluster__1442477.png",
+  "coverage": 0.373,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "bbq-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1822448,
+  "prompt": "Small premium ornament for the top of a party invitation: a small charcoal grill with glowing flames, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/bbq-party__crest__1822448.png",
+  "coverage": 0.049,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "picnic-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4496566,
+  "prompt": "Wide photograph of an empty sunny park lawn with a picnic blanket, basket and cushions, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/picnic-party__venue__4496566.png"
+ },
+ "picnic-party/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6017350,
+  "prompt": "A tall slender vertical hanging strand of wild flowers, strawberries and green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/picnic-party__vine__6017350.png",
+  "coverage": 0.136,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "picnic-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5083753,
+  "prompt": "Small premium ornament for the top of a party invitation: a wicker picnic basket with a checked cloth, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/picnic-party__crest__5083753.png",
+  "coverage": 0.155,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "brunch-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1745581,
+  "prompt": "Wide photograph of an empty sunny brunch table with pastries, flowers and teacups, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/brunch-party__venue__1745581.png"
+ },
+ "brunch-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8968333,
+  "prompt": "A small compact arrangement of champagne roses, ivory blooms and green sprigs, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/brunch-party__bouquet__8968333.png",
+  "coverage": 0.083,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "brunch-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8439234,
+  "prompt": "A low wide compact arrangement of champagne roses, ivory blooms and green sprigs, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/brunch-party__cluster__8439234.png",
+  "coverage": 0.426,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "brunch-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5720875,
+  "prompt": "Small premium ornament for the top of a party invitation: a champagne coloured teacup with a sprig of flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/brunch-party__crest__5720875.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "tea-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2883133,
+  "prompt": "Wide photograph of an empty elegant tea room with a cake stand, teacups and roses, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/tea-party__venue__2883133.png"
+ },
+ "tea-party/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3131015,
+  "prompt": "A round wreath of pink roses, champagne flowers and green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/tea-party__wreath__3131015.png",
+  "coverage": 0.404,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "tea-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8574098,
+  "prompt": "A low wide compact arrangement of pink roses, champagne flowers and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/tea-party__cluster__8574098.png",
+  "coverage": 0.411,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "tea-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6924251,
+  "prompt": "Small premium ornament for the top of a party invitation: a rose patterned porcelain teacup and saucer with flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/tea-party__crest__6924251.png",
+  "coverage": 0.169,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "lunch-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5333230,
+  "prompt": "Wide photograph of an empty sunny lunch table with cream linen, flowers and place settings, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/lunch-party__venue__5333230.png"
+ },
+ "lunch-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1374939,
+  "prompt": "A small compact arrangement of cream flowers, olive branches and brown leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/lunch-party__bouquet__1374939.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "lunch-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2743940,
+  "prompt": "A low wide compact arrangement of cream flowers, olive branches and brown leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/lunch-party__cluster__2743940.png",
+  "coverage": 0.385,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "lunch-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8131349,
+  "prompt": "Small premium ornament for the top of a party invitation: an elegant cream dinner plate with cutlery and a napkin, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/lunch-party__crest__8131349.png",
+  "coverage": 0.297,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "dinner-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8003521,
+  "prompt": "Wide photograph of an empty formal burgundy and gold dining hall with candles and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/dinner-celebration__venue__8003521.png"
+ },
+ "dinner-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8070230,
+  "prompt": "A low wide compact arrangement of burgundy roses, gold leaves and candles, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dinner-celebration__cluster__8070230.png",
+  "coverage": 0.387,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "dinner-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4954239,
+  "prompt": "Small premium ornament for the top of a party invitation: two lit candles in gold holders, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/dinner-celebration__crest__4954239.png",
+  "coverage": 0.049,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "anniversary-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3773371,
+  "prompt": "Wide photograph of an empty romantic rose and champagne party lounge with candles and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/anniversary-party__venue__3773371.png"
+ },
+ "anniversary-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4842386,
+  "prompt": "A low wide compact arrangement of rose petals, champagne roses and hearts, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/anniversary-party__cluster__4842386.png",
+  "coverage": 0.463,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "anniversary-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5641627,
+  "prompt": "Small premium ornament for the top of a party invitation: two champagne coupes with a small rose heart, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/anniversary-party__crest__5641627.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "engagement-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2695693,
+  "prompt": "Wide photograph of an empty elegant navy and gold party hall with fairy lights and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/engagement-party__venue__2695693.png"
+ },
+ "engagement-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8353369,
+  "prompt": "A long horizontal garland of navy ribbons, gold stars and white roses draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/engagement-party__garland__8353369.png",
+  "coverage": 0.175,
+  "edgeTouch": 0.017,
+  "free": true,
+  "style": "garland"
+ },
+ "engagement-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1168611,
+  "prompt": "A low wide compact arrangement of navy ribbons, gold stars and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/engagement-party__cluster__1168611.png",
+  "coverage": 0.336,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "engagement-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7574374,
+  "prompt": "Small premium ornament for the top of a party invitation: a gold diamond ring with small stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/engagement-party__crest__7574374.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "graduation-bash/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3720273,
+  "prompt": "Wide photograph of an empty party room decorated for a graduation with navy and gold balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/graduation-bash__venue__3720273.png"
+ },
+ "graduation-bash/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9155963,
+  "prompt": "A small compact arrangement of navy and gold balloons, confetti and stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/graduation-bash__bouquet__9155963.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "graduation-bash/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6998500,
+  "prompt": "A low wide compact arrangement of navy and gold balloons, confetti and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/graduation-bash__cluster__6998500.png",
+  "coverage": 0.384,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "graduation-bash/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5181877,
+  "prompt": "Small premium ornament for the top of a party invitation: a navy graduation cap with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/graduation-bash__crest__5181877.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "welcome-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4905378,
+  "prompt": "Wide photograph of an empty bright teal and ivory lounge with balloons and a welcome table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-party__venue__4905378.png"
+ },
+ "welcome-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4106856,
+  "prompt": "A long horizontal garland of teal balloons, ivory flowers and green leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-party__garland__4106856.png",
+  "coverage": 0.306,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "welcome-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4204320,
+  "prompt": "A low wide compact arrangement of teal balloons, ivory flowers and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-party__cluster__4204320.png",
+  "coverage": 0.417,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "welcome-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9607057,
+  "prompt": "Small premium ornament for the top of a party invitation: a small teal model house with a smiling sun, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-party__crest__9607057.png",
+  "coverage": 0.084,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "farewell-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7657017,
+  "prompt": "Wide photograph of an empty dark gold lounge with a champagne bar and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/farewell-party__venue__7657017.png"
+ },
+ "farewell-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6560550,
+  "prompt": "A low wide compact arrangement of dark gold stars, champagne ribbons and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/farewell-party__cluster__6560550.png",
+  "coverage": 0.332,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "farewell-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3518831,
+  "prompt": "Small premium ornament for the top of a party invitation: two dark gold coupe glasses with small stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/farewell-party__crest__3518831.png",
+  "coverage": 0.069,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "welcome-home-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7681547,
+  "prompt": "Wide photograph of an empty warm home entrance with balloons, flowers and a welcome banner without letters, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-home-party__venue__7681547.png"
+ },
+ "welcome-home-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2605561,
+  "prompt": "A small compact arrangement of warm flowers, small hearts and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-home-party__bouquet__2605561.png",
+  "coverage": 0.063,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "welcome-home-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6493142,
+  "prompt": "A low wide compact arrangement of warm flowers, small hearts and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-home-party__cluster__6493142.png",
+  "coverage": 0.341,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "welcome-home-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1707903,
+  "prompt": "Small premium ornament for the top of a party invitation: an open wooden front door with two small hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/welcome-home-party__crest__1707903.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "holiday-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9405432,
+  "prompt": "Wide photograph of an empty festive living room with a fireplace, fairy lights and pine garlands, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/holiday-party__venue__9405432.png"
+ },
+ "holiday-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3545223,
+  "prompt": "A small compact arrangement of pine sprigs, fairy lights and gold baubles, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/holiday-party__bouquet__3545223.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "holiday-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6826728,
+  "prompt": "A low wide compact arrangement of pine sprigs, fairy lights and gold baubles, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/holiday-party__cluster__6826728.png",
+  "coverage": 0.26,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "holiday-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9135433,
+  "prompt": "Small premium ornament for the top of a party invitation: a golden star with warm fairy lights, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/holiday-party__crest__9135433.png",
+  "coverage": 0.096,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "christmas-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8778008,
+  "prompt": "Wide photograph of an empty cosy Christmas party room with a decorated tree, fireplace and gifts, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/christmas-party__venue__8778008.png"
+ },
+ "christmas-party/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3465094,
+  "prompt": "A tall slender vertical hanging strand of pine sprigs, red berries and gold baubles from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/christmas-party__vine__3465094.png",
+  "coverage": 0.172,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "christmas-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6133993,
+  "prompt": "Small premium ornament for the top of a party invitation: a small decorated pine tree with a golden star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/christmas-party__crest__6133993.png",
+  "coverage": 0.126,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "new-year-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1514452,
+  "prompt": "Wide photograph of an empty midnight blue party hall with silver balloons and sparkling lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/new-year-party__venue__1514452.png"
+ },
+ "new-year-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5882230,
+  "prompt": "A low wide compact arrangement of silver stars, fireworks sparkles and midnight blue ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/new-year-party__cluster__5882230.png",
+  "coverage": 0.337,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "new-year-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4900575,
+  "prompt": "Small premium ornament for the top of a party invitation: a silver coupe glass with a burst of fireworks, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/new-year-party__crest__4900575.png",
+  "coverage": 0.147,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "halloween-bash/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6612769,
+  "prompt": "Wide photograph of an empty spooky Halloween party room with carved pumpkins and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/halloween-bash__venue__6612769.png"
+ },
+ "halloween-bash/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3273154,
+  "prompt": "A small compact arrangement of orange pumpkins, autumn leaves and plum ribbons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/halloween-bash__bouquet__3273154.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "halloween-bash/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7984601,
+  "prompt": "A low wide compact arrangement of orange pumpkins, autumn leaves and plum ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/halloween-bash__cluster__7984601.png",
+  "coverage": 0.41,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "halloween-bash/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3921996,
+  "prompt": "Small premium ornament for the top of a party invitation: a carved glowing orange pumpkin with small stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/halloween-bash__crest__3921996.png",
+  "coverage": 0.2,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "masquerade-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3028200,
+  "prompt": "Wide photograph of an empty opulent masquerade ballroom with chandeliers and plum drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/masquerade-party__venue__3028200.png"
+ },
+ "masquerade-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6890980,
+  "prompt": "A low wide compact arrangement of plum feathers, gold leaves and sparkles, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/masquerade-party__cluster__6890980.png",
+  "coverage": 0.43,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "masquerade-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9700277,
+  "prompt": "Small premium ornament for the top of a party invitation: an ornate plum and gold masquerade mask with feathers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/masquerade-party__crest__9700277.png",
+  "coverage": 0.161,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "disco-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9897928,
+  "prompt": "Wide photograph of an empty retro disco dance floor with a mirror ball and neon lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/disco-party__venue__9897928.png"
+ },
+ "disco-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5246562,
+  "prompt": "A low wide compact arrangement of neon pink and green sparkles, stars and streamers, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/disco-party__cluster__5246562.png",
+  "coverage": 0.396,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "disco-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5178793,
+  "prompt": "Small premium ornament for the top of a party invitation: a mirrored disco ball with neon light beams, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/disco-party__crest__5178793.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "retro-bash/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8173566,
+  "prompt": "Wide photograph of an empty seventies style lounge with mustard sofas, a record player and lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/retro-bash__venue__8173566.png"
+ },
+ "retro-bash/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8886825,
+  "prompt": "A small compact arrangement of mustard and teal flowers, vinyl records and starbursts, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/retro-bash__bouquet__8886825.png",
+  "coverage": 0.081,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "retro-bash/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3974662,
+  "prompt": "A low wide compact arrangement of mustard and teal flowers, vinyl records and starbursts, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/retro-bash__cluster__3974662.png",
+  "coverage": 0.434,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "retro-bash/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4900431,
+  "prompt": "Small premium ornament for the top of a party invitation: a vintage vinyl record with a mustard starburst, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/retro-bash__crest__4900431.png",
+  "coverage": 0.152,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-bash/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7758075,
+  "prompt": "Wide photograph of an empty dark party room glowing with neon violet and green lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/neon-bash__venue__7758075.png"
+ },
+ "neon-bash/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1968192,
+  "prompt": "A low wide compact arrangement of neon violet and green glow sticks and sparkles, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/neon-bash__cluster__1968192.png",
+  "coverage": 0.325,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "neon-bash/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2334449,
+  "prompt": "Small premium ornament for the top of a party invitation: glowing neon green and violet geometric shapes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/neon-bash__crest__2334449.png",
+  "coverage": 0.06,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "luxury"
+ },
+ "elegant-black-tie-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7615045,
+  "prompt": "Wide photograph of an empty elegant black and gold ballroom with chandeliers and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/elegant-black-tie-party__venue__7615045.png"
+ },
+ "elegant-black-tie-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8562501,
+  "prompt": "A low wide compact arrangement of black feathers, gold leaves and white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/elegant-black-tie-party__cluster__8562501.png",
+  "coverage": 0.446,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "elegant-black-tie-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4305144,
+  "prompt": "Small premium ornament for the top of a party invitation: a black silk bow tie beside a gold coupe glass, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/elegant-black-tie-party__crest__4305144.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5882001,
+  "prompt": "Wide photograph of an empty luxurious burgundy and gold lounge with velvet sofas and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/luxury-celebration__venue__5882001.png"
+ },
+ "luxury-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5406673,
+  "prompt": "A low wide compact arrangement of burgundy roses, gold leaves and sparkles, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/luxury-celebration__cluster__5406673.png",
+  "coverage": 0.406,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4558420,
+  "prompt": "Small premium ornament for the top of a party invitation: two burgundy and gold coupe glasses with sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/luxury-celebration__crest__4558420.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "kids-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5331034,
+  "prompt": "Wide photograph of an empty bright kids play room decorated with colourful balloons and bunting, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/kids-party__venue__5331034.png"
+ },
+ "kids-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5966779,
+  "prompt": "A long horizontal garland of bright multicoloured balloons, confetti and paper stars draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/kids-party__garland__5966779.png",
+  "coverage": 0.234,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "kids-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1973069,
+  "prompt": "A low wide compact arrangement of bright multicoloured balloons, confetti and paper stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/kids-party__cluster__1973069.png",
+  "coverage": 0.396,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "kids-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8735312,
+  "prompt": "Small premium ornament for the top of a party invitation: a bunch of bright multicoloured balloons with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/kids-party__crest__8735312.png",
+  "coverage": 0.164,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "teen-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6115395,
+  "prompt": "Wide photograph of an empty teen hangout room with neon lights, bean bags and a speaker, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/teen-party__venue__6115395.png"
+ },
+ "teen-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2313365,
+  "prompt": "A small compact arrangement of neon purple and pink balloons, stars and sparkles, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/teen-party__bouquet__2313365.png",
+  "coverage": 0.101,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "teen-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8016970,
+  "prompt": "A low wide compact arrangement of neon purple and pink balloons, stars and sparkles, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/teen-party__cluster__8016970.png",
+  "coverage": 0.351,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "teen-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3120483,
+  "prompt": "Small premium ornament for the top of a party invitation: neon purple and pink geometric shapes with sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/teen-party__crest__3120483.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "celebration-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5480862,
+  "prompt": "Wide photograph of an empty festive red and gold party hall with balloons and sparkling lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/PARTY/celebration-party__venue__5480862.png"
+ },
+ "celebration-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8193629,
+  "prompt": "A long horizontal garland of red and gold confetti, stars and streamers draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/celebration-party__garland__8193629.png",
+  "coverage": 0.167,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "garland"
+ },
+ "celebration-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6683780,
+  "prompt": "A low wide compact arrangement of red and gold confetti, stars and streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/celebration-party__cluster__6683780.png",
+  "coverage": 0.27,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "celebration-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7248469,
+  "prompt": "Small premium ornament for the top of a party invitation: a red and gold firework burst with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/PARTY/celebration-party__crest__7248469.png",
+  "coverage": 0.161,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ }
+}

@@ -280,13 +280,19 @@
       return a.path.indexOf(MAIN_DIR + '/') === 0;
     })[0] || split.assets[0];
 
+    /* Publishing happens only after the ₹99 payment, so both the host page
+       and its card page (invitation_card/invitations/) get the download button. */
     var out = [{
       path: where.file,
       bytes: utf8(IH.exportPage.buildHtml(split.state, {
         up: '../',
+        download: true,
         canonical: isDeployed() ? where.url : '',
         image: photo && isDeployed() ? siteRoot() + FOLDER + '/' + photo.path : ''
       }))
+    }, {
+      path: FOLDER + '/' + IH.exportPage.CARD_DIR + '/' + where.file.split('/').pop(),
+      bytes: utf8(IH.exportPage.buildCardHtml(IH.exportPage.cardAssetState(split.state), { up: '../../', download: true }))
     }];
 
     split.assets.forEach(function (asset) {

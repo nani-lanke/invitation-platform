@@ -1,0 +1,47 @@
+{
+ "slug": "awadhi-nawab",
+ "name": "Awadhi Nawab",
+ "base": "cards/awadhi-nawab/",
+ "spec": {
+  "layout": "classic",
+  "frame": "arch",
+  "venue": "framed",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/awadhi-nawab.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/awadhi-nawab.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Nawabi palace hall in Lucknow with cusped arches, chandeliers and white chikankari drapes, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9529042,
+   "raw": "..\\work\\raw\\awadhi-nawab__venue__9529042_4790a.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: an ornate silver Awadhi attardan perfume holder, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2210298,
+   "raw": "..\\work\\raw\\awadhi-nawab__crest__2210298_1rjdj.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Rumi Darwaza of Lucknow at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4205460,
+   "raw": "..\\work\\raw\\awadhi-nawab__footer__4205460_1n71d.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, jasmine and green leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6620014,
+   "raw": "..\\work\\raw\\awadhi-nawab__corner__6620014_4j9ev.png"
+  }
+ }
+}

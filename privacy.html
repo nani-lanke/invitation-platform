@@ -4,40 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy | InviteAura</title>
-<meta name="description" content="How InviteAura handles your information. This is currently a static demonstration website: it does not process real payments, does not use tracking cookies, and does not permanently store anything you type or upload.">
+<meta name="description" content="How InviteAura handles your information: drafts stay in your browser, nothing is tracked, and only invitations you pay to host online are sent to and stored by us.">
 <meta name="keywords" content="inviteaura privacy policy, digital invitation privacy, data protection, no tracking">
 <meta name="theme-color" content="#FDFAFB">
-<link rel="canonical" href="https://inviteaura.example.com/privacy.html">
+<link rel="canonical" href="https://www.inviteaura.in/privacy.html">
 <meta name="robots" content="index, follow">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="InviteAura">
 <meta property="og:title" content="Privacy Policy | InviteAura">
 <meta property="og:description" content="What InviteAura does and does not do with your information.">
-<meta property="og:url" content="https://inviteaura.example.com/privacy.html">
-<meta property="og:image" content="https://inviteaura.example.com/images/hero/og-image.svg">
+<meta property="og:url" content="https://www.inviteaura.in/privacy.html">
+<meta property="og:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Privacy Policy | InviteAura">
 <meta name="twitter:description" content="What InviteAura does and does not do with your information.">
-<meta name="twitter:image" content="https://inviteaura.example.com/images/hero/og-image.svg">
+<meta name="twitter:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
 
-<link rel="icon" href="images/logo/favicon.png" type="image/svg+xml">
-<link rel="apple-touch-icon" href="images/logo/favicon.png">
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/logo/favicon-180.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"></noscript>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css?v=2.8">
+<link rel="stylesheet" href="css/animations.css?v=1.2">
+<link rel="stylesheet" href="css/responsive.css?v=1.6">
 
 <script>(function(){try{var s=JSON.parse(localStorage.getItem('inviteaura:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
 
-<script src="js/main.js" defer></script>
-<script src="js/templates.js" defer></script>
-<script src="js/share.js" defer></script>
+<script src="js/main.js?v=1.2" defer></script>
+<script src="js/templates.js?v=2.5" defer></script>
+<script src="js/share.js?v=1.2" defer></script>
 </head>
 <body>
 
@@ -83,7 +84,7 @@
 
   <section class="page-hero">
     <div class="container">
-      <p class="eyebrow"><i data-icon="shield" data-icon-size="15"></i> Last updated 8 August 2026</p>
+      <p class="eyebrow"><i data-icon="shield" data-icon-size="15"></i> Last updated 27 October 2026</p>
       <h1>Privacy Policy</h1>
       <p>Written to be read, not to be scrolled past. If anything here is unclear, we will fix the wording.</p>
     </div>
@@ -95,74 +96,74 @@
       <div class="notice notice--info" style="margin-bottom:var(--space-7)">
         <i data-icon="info" data-icon-size="20"></i>
         <div>
-          <strong>This website is currently a static demonstration</strong>
-          It runs entirely in your browser on GitHub Pages. It does <strong>not</strong> process real payments, does <strong>not</strong> run a database, and does <strong>not</strong> permanently store any information you type or upload. Everything below describes both what happens today and what will change when the hosted version launches.
+          <strong>The short version</strong>
+          Creating and downloading an invitation happens entirely in your browser — nothing is sent to us. Only if you choose to <strong>host it online for ₹99</strong> do we receive the invitation, publish it at its own link and email you that link.
         </div>
       </div>
 
       <div class="prose">
 
         <h2>1. Who this policy covers</h2>
-        <p>This policy applies to the InviteAura website and, in future, to invitations created and hosted through it. It covers two kinds of people: <strong>hosts</strong>, who create invitations, and <strong>guests</strong>, who open a link somebody sent them.</p>
+        <p>This policy applies to the InviteAura website and to the invitations hosted through it. It covers two kinds of people: <strong>hosts</strong>, who create invitations, and <strong>guests</strong>, who open a link somebody sent them. There are no accounts and no sign-in.</p>
 
-        <h2>2. What happens today (static demonstration)</h2>
-        <p>In the current build there is no server that belongs to InviteAura. Nothing you enter is transmitted to us, because there is nowhere for it to go.</p>
+        <h2>2. Creating and downloading (free)</h2>
+        <p>While you build an invitation, everything stays in your own browser. Nothing you type or upload is sent to us until you choose to host it.</p>
 
         <h3>Information kept in your own browser</h3>
         <ul>
-          <li><strong>Your invitation draft</strong> — names, dates, venue, message and settings, saved in <code>localStorage</code> under the key <code>inviteaura:draft</code>.</li>
+          <li><strong>Your invitation draft</strong> — the details, photos, music and settings, saved in <code>localStorage</code> under the key <code>inviteaura:draft</code>.</li>
           <li><strong>Your favourites</strong> — the list of templates you have hearted, under <code>inviteaura:favorites</code>.</li>
           <li><strong>Your theme choice</strong> — light or dark, under <code>inviteaura:theme</code>.</li>
         </ul>
-        <p>This data never leaves your device. It is visible only to you, in this browser, on this computer or phone. Clearing your browser storage — or pressing <strong>Start over</strong> in the editor — deletes it permanently and immediately.</p>
+        <p>Clearing your browser storage — or pressing <strong>Start over</strong> in the editor — deletes this permanently and immediately. A card picture (JPG) or page (.html) you download is made on your device and saved straight to it.</p>
 
-        <h3>Photographs you select</h3>
-        <p>When you choose a photo in the editor it is read locally with the browser's <code>FileReader</code>, resized on your own device to keep it manageable, and shown in the preview. It is not uploaded, not copied and not sent anywhere. Closing the tab without saving discards it.</p>
+        <h3>Photographs and music you select</h3>
+        <p>Photos are read with the browser's <code>FileReader</code> and resized on your own device; music is read the same way. They stay in your browser unless you host the invitation.</p>
 
-        <h3>Cookies and tracking</h3>
-        <p>This site sets <strong>no cookies at all</strong>. There is no analytics script, no advertising pixel, no session tracker and no third-party tag manager. We do not know who you are, how many of you there are, or which pages you looked at.</p>
+        <h2>3. Hosting your invitation online (₹99)</h2>
+        <p>When you pay to host an invitation, the following is sent to our server and kept:</p>
+        <ul>
+          <li><strong>The invitation itself</strong> — the details you entered (names, date, time, venue, address, message, contact number if you added one) and the photos and music you uploaded. It is published as a web page at its own address.</li>
+          <li><strong>Your email address</strong> — used only to send you the confirmation email with your invitation link. It is not shown on the invitation and not placed in the published page.</li>
+          <li><strong>A hosting record</strong> — the invitation's id and address, its event type and title, when it was published, and the Razorpay payment reference.</li>
+        </ul>
+        <p><strong>Anyone who has the link can open a hosted invitation</strong>, and they can see everything on it — that is what makes it shareable. Only add details, such as a phone number or an address, that you are happy for your guests to see.</p>
+
+        <h3>Payments</h3>
+        <p>Payments are handled by <strong>Razorpay</strong>, a PCI-DSS compliant payment provider. Your card number, CVV and UPI PIN go directly to them and are never seen, transmitted or stored by InviteAura. We receive the payment reference and a signed confirmation that the payment succeeded.</p>
+
+        <h3>Where hosted invitations are kept</h3>
+        <p>The website and its server functions run on <strong>Vercel</strong>. Hosted invitation pages, their media and the hosting records are stored in a <strong>GitHub</strong> repository that the site reads from when a guest opens a link. Confirmation emails are sent through our email provider's mail server.</p>
+
+        <h3>Information about guests</h3>
+        <p>Guests do not give us any information. Opening an invitation needs no account, and we do not collect guest lists. <strong>We do not sell, rent or share data about hosts or guests.</strong></p>
+
+        <h2>4. Cookies and tracking</h2>
+        <p>This site sets <strong>no cookies</strong>. There is no analytics script, no advertising pixel, no session tracker and no third-party tag manager.</p>
 
         <h3>Third-party requests</h3>
-        <p>Two external requests happen when you load a page, and it is only fair to name them:</p>
         <ul>
-          <li><strong>Google Fonts</strong> serves the DM Sans, Playfair Display and Great Vibes typefaces. Loading a font sends your IP address and browser details to Google, as any request to any server does. If you would rather avoid this entirely, the fonts can be self-hosted in the <code>fonts/</code> folder — see the project README.</li>
-          <li><strong>GitHub Pages</strong> hosts the site and keeps standard web server logs.</li>
+          <li><strong>Google Fonts</strong> serves the typefaces used by the site and the invitations. Loading a font sends your IP address and browser details to Google, as any request to any server does.</li>
+          <li><strong>Vercel</strong> hosts the site and keeps standard web server logs.</li>
+          <li><strong>Razorpay</strong> loads its checkout only when you choose to pay for hosting.</li>
+          <li>A public script CDN (jsDelivr) serves the image library used to save the card as a picture.</li>
         </ul>
         <p>Share buttons do not silently contact WhatsApp, Facebook or Telegram. They only build a link, and nothing is sent until you click one and the platform's own page opens.</p>
 
-        <h2>3. What will change in the hosted version</h2>
-        <p>When accounts, storage and payments arrive, the following will apply. We are stating it now so there are no surprises later.</p>
+        <h2>5. Children</h2>
+        <p>InviteAura is intended for adults organising events. Invitations frequently feature children — a first birthday, a naming ceremony — and the adult host is responsible for having the right to share those photographs.</p>
 
-        <h3>Information hosts will provide</h3>
-        <ul>
-          <li>Account details: name and email address, used to sign in and to recover your invitations.</li>
-          <li>Invitation content: everything you type into the editor plus the images you upload.</li>
-          <li>Payment records: the hosting plan purchased (₹99), the amount and the transaction reference.</li>
-        </ul>
+        <h2>6. Your rights and deletion</h2>
+        <p>Under Indian data protection law and comparable regulations elsewhere, you may request access to your data, correction of anything inaccurate, deletion of a hosted invitation and its media, and a copy of what you submitted. Because there are no accounts, write to us from the email address you used when hosting and include the invitation's link, so we can confirm it is yours. Data that only ever lived in your browser can be deleted by you at any time, as described above.</p>
 
-        <h3>Information about guests</h3>
-        <p>Guest lists belong to the host who collected them. <strong>We will not sell, rent, share or mine them.</strong></p>
+        <h2>7. Security</h2>
+        <p>The site and every hosted invitation are served over HTTPS. Payments are verified on our server before anything is published, and the credentials that write to storage never reach the browser. No system is perfectly secure, and we would rather say so than imply otherwise.</p>
 
-        <h3>Payments</h3>
-        <p>Payments will be handled by <strong>Razorpay</strong>, a PCI-DSS compliant payment provider. Your card number, CVV and UPI PIN go directly to them and are never seen, transmitted or stored by InviteAura. We only receive a confirmation that a payment succeeded.</p>
+        <h2>8. Changes to this policy</h2>
+        <p>Material changes will be reflected here with a new date at the top of the page. Continuing to use the service after a change means you accept the revised policy.</p>
 
-        <h3>Storage and deletion</h3>
-        <p>Invitation data and images will be held by <strong>Supabase</strong>. When you remove an invitation, the invitation is retired and the uploaded images are deleted. You can also delete an invitation yourself at any time, and deleting your account removes everything associated with it.</p>
-
-        <h2>4. Children</h2>
-        <p>InviteAura is intended for adults organising events. Accounts are not offered to children under thirteen. Invitations frequently feature children — a first birthday, a naming ceremony — and the adult host is responsible for having the right to share those photographs.</p>
-
-        <h2>5. Your rights</h2>
-        <p>Under Indian data protection law and comparable regulations elsewhere, you may request access to your data, correction of anything inaccurate, deletion of your account and content, and a copy of what you have submitted. In this build every one of these is already satisfied by clearing your own browser storage, because that is the only place your data exists.</p>
-
-        <h2>6. Security</h2>
-        <p>The site is served over HTTPS. The hosted version will use encrypted storage, hashed credentials and access controls that restrict every invitation to its own owner. No system is perfectly secure, and we would rather say so than imply otherwise.</p>
-
-        <h2>7. Changes to this policy</h2>
-        <p>Material changes — particularly the shift from this static build to the hosted version — will be reflected here with a new date at the top of the page. Continuing to use the service after a change means you accept the revised policy.</p>
-
-        <h2>8. Contact</h2>
-        <p>Questions about privacy can go to <a href="mailto:privacy@inviteaura.example.com">privacy@inviteaura.example.com</a>. These are placeholder details for the demonstration build.</p>
+        <h2>9. Contact</h2>
+        <p>Questions about privacy, and deletion requests, can go to <a href="mailto:privacy@inviteaura.in">privacy@inviteaura.in</a>.</p>
 
       </div>
 

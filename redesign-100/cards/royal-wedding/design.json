@@ -1,0 +1,47 @@
+{
+ "slug": "royal-wedding",
+ "name": "Royal Wedding",
+ "base": "cards/royal-wedding/",
+ "spec": {
+  "layout": "royal",
+  "frame": "vine",
+  "venue": "split",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/royal-wedding.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/royal-wedding.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a grand Indian palace wedding hall with a gold mandap, plum velvet drapes and chandeliers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6219856,
+   "raw": "..\\work\\raw\\royal-wedding__venue__6219856_132zt.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: an ornate gold mandala medallion with gemstones, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5653852,
+   "raw": "..\\work\\raw\\royal-wedding__crest__5653852_2eiu9.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of an Indian palace with domes and chhatris at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2214574,
+   "raw": "..\\work\\raw\\royal-wedding__footer__2214574_2jlqk.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of deep red roses, orchids and jasmine, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4419596,
+   "raw": "..\\work\\raw\\royal-wedding__corner__4419596_5f2a0.png"
+  }
+ }
+}

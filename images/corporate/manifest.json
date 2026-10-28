@@ -1,0 +1,972 @@
+{
+ "corporate-event/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2574269,
+  "prompt": "Wide photograph of an empty modern conference ballroom with a stage, screens and neat rows of chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-event__venue__2574269.png"
+ },
+ "corporate-event/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3438249,
+  "prompt": "A tall slender vertical hanging strand of white orchids, eucalyptus and slate grey leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-event__vine__3438249.png",
+  "coverage": 0.15,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "corporate-event/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7783372,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a sleek dark leather briefcase with brass clasps, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-event__crest__7783372.png",
+  "coverage": 0.217,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "product-launch/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6716859,
+  "prompt": "Wide photograph of an empty dramatic product launch stage with blue spotlights and a large screen, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/product-launch__venue__6716859.png"
+ },
+ "product-launch/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5948217,
+  "prompt": "A small compact arrangement of midnight blue geometric shapes, white orchids and silver leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/product-launch__bouquet__5948217.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "product-launch/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7111766,
+  "prompt": "A low wide compact arrangement of midnight blue geometric shapes, white orchids and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/product-launch__cluster__7111766.png",
+  "coverage": 0.272,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "product-launch/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3958143,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a glowing geometric crystal prism on a small plinth, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/product-launch__crest__3958143.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "annual-summit/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9377527,
+  "prompt": "Wide photograph of an empty large summit auditorium with forest green lighting and tiered seats, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-summit__venue__9377527.png"
+ },
+ "annual-summit/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7306193,
+  "prompt": "A round wreath of forest green leaves, white flowers and gold accents with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-summit__wreath__7306193.png",
+  "coverage": 0.384,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "annual-summit/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6100516,
+  "prompt": "A low wide compact arrangement of forest green leaves, white flowers and gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-summit__cluster__6100516.png",
+  "coverage": 0.443,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "annual-summit/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7441845,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a forest green leather portfolio with a gold pen, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-summit__crest__7441845.png",
+  "coverage": 0.254,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "team-offsite/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2683575,
+  "prompt": "Wide photograph of an empty outdoor resort lawn set up for a team offsite with bean bags and a screen, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-offsite__venue__2683575.png"
+ },
+ "team-offsite/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5988312,
+  "prompt": "A small compact arrangement of green leaves, small pennant flags and wild flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-offsite__bouquet__5988312.png",
+  "coverage": 0.069,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "team-offsite/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2569059,
+  "prompt": "A low wide compact arrangement of green leaves, small pennant flags and wild flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-offsite__cluster__2569059.png",
+  "coverage": 0.249,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "team-offsite/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5183334,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a small orange pennant flag on a wooden stand, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-offsite__crest__5183334.png",
+  "coverage": 0.077,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "corporate-gala/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6767138,
+  "prompt": "Wide photograph of an empty black tie gala ballroom with crystal chandeliers and gold lit tables, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-gala__venue__6767138.png"
+ },
+ "corporate-gala/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1895066,
+  "prompt": "A low wide compact arrangement of white roses, black feathers and brass leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-gala__cluster__1895066.png",
+  "coverage": 0.431,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "corporate-gala/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8456723,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: two crystal coupe glasses under a small brass star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-gala__crest__8456723.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "business-conference/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3078260,
+  "prompt": "Wide photograph of an empty conference hall with a lit stage, podium and blue lighting, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-conference__venue__3078260.png"
+ },
+ "business-conference/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6050961,
+  "prompt": "A small compact arrangement of midnight blue ribbons, white orchids and silver leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-conference__bouquet__6050961.png",
+  "coverage": 0.089,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "business-conference/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2710350,
+  "prompt": "A low wide compact arrangement of midnight blue ribbons, white orchids and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-conference__cluster__2710350.png",
+  "coverage": 0.235,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "business-conference/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4721767,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a silver podium microphone on a stand, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-conference__crest__4721767.png",
+  "coverage": 0.055,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "annual-general-meeting/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6914005,
+  "prompt": "Wide photograph of an empty boardroom with a long polished table, leather chairs and green accents, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-general-meeting__venue__6914005.png"
+ },
+ "annual-general-meeting/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5515551,
+  "prompt": "A tall slender vertical hanging strand of deep green leaves, white flowers and brass accents from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-general-meeting__vine__5515551.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "annual-general-meeting/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4954458,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a polished wooden gavel on a round sound block, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/annual-general-meeting__crest__4954458.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "company-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9023024,
+  "prompt": "Wide photograph of an empty grand anniversary banquet hall with burgundy drapes and gold lights, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-anniversary__venue__9023024.png"
+ },
+ "company-anniversary/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3722592,
+  "prompt": "A small compact arrangement of burgundy roses, gold laurel leaves and champagne ribbons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-anniversary__bouquet__3722592.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "company-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7491147,
+  "prompt": "A low wide compact arrangement of burgundy roses, gold laurel leaves and champagne ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-anniversary__cluster__7491147.png",
+  "coverage": 0.313,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "company-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2321310,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a burgundy and gold laurel wreath around a small gold star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-anniversary__crest__2321310.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "corporate-dinner/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9346424,
+  "prompt": "Wide photograph of an empty fine dining hall with navy linen, candles and crystal glasses, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-dinner__venue__9346424.png"
+ },
+ "corporate-dinner/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7682959,
+  "prompt": "A low wide compact arrangement of navy ribbons, white roses and silver leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-dinner__cluster__7682959.png",
+  "coverage": 0.277,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "corporate-dinner/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2610354,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a lit taper candle in a silver holder, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-dinner__crest__2610354.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "executive-dinner/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8080916,
+  "prompt": "Wide photograph of an empty intimate wine red private dining room with a candelabra and long table, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/executive-dinner__venue__8080916.png"
+ },
+ "executive-dinner/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3037490,
+  "prompt": "A low wide compact arrangement of wine red roses, gold leaves and dark ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/executive-dinner__cluster__3037490.png",
+  "coverage": 0.417,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "executive-dinner/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8214203,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: an ornate brass candelabra with lit candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/executive-dinner__crest__8214203.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "business-networking/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7278294,
+  "prompt": "Wide photograph of an empty modern networking lounge with high tables, blue lights and a bar, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-networking__venue__7278294.png"
+ },
+ "business-networking/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1527024,
+  "prompt": "A tall slender vertical hanging strand of navy ribbons, silver geometric shapes and white orchids from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-networking__vine__1527024.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "business-networking/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8890387,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a glowing network of connected silver nodes in a sphere, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-networking__crest__8890387.png",
+  "coverage": 0.195,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "leadership-summit/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2448205,
+  "prompt": "Wide photograph of an empty leadership summit hall with a mountain view and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/leadership-summit__venue__2448205.png"
+ },
+ "leadership-summit/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9857056,
+  "prompt": "A low wide compact arrangement of forest green leaves, gold sun rays and white flowers, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/leadership-summit__cluster__9857056.png",
+  "coverage": 0.399,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "leadership-summit/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8660177,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: layered mountain peaks over a small rising gold sun, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/leadership-summit__crest__8660177.png",
+  "coverage": 0.095,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "industry-summit/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2113821,
+  "prompt": "Wide photograph of an empty industrial style conference venue with exposed brick and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/industry-summit__venue__2113821.png"
+ },
+ "industry-summit/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4949594,
+  "prompt": "A small compact arrangement of slate grey metal gears, white orchids and steel leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/industry-summit__bouquet__4949594.png",
+  "coverage": 0.041,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "industry-summit/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8495313,
+  "prompt": "A low wide compact arrangement of slate grey metal gears, white orchids and steel leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/industry-summit__cluster__8495313.png",
+  "coverage": 0.203,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "industry-summit/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2166100,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: interlocking slate grey metal gears, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/industry-summit__crest__2166100.png",
+  "coverage": 0.082,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "corporate-awards-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1508397,
+  "prompt": "Wide photograph of an empty awards ceremony stage with gold lights, black drapes and round tables, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-awards-night__venue__1508397.png"
+ },
+ "corporate-awards-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7866036,
+  "prompt": "A low wide compact arrangement of gold stars, black ribbons and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-awards-night__cluster__7866036.png",
+  "coverage": 0.23,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "corporate-awards-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5675429,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a shining gold trophy cup, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-awards-night__crest__5675429.png",
+  "coverage": 0.136,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "employee-appreciation/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4592558,
+  "prompt": "Wide photograph of an empty bright office atrium decorated with green balloons and a buffet table, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/employee-appreciation__venue__4592558.png"
+ },
+ "employee-appreciation/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5271760,
+  "prompt": "A round wreath of soft green leaves, white flowers and small hearts with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/employee-appreciation__wreath__5271760.png",
+  "coverage": 0.407,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "employee-appreciation/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8601379,
+  "prompt": "A low wide compact arrangement of soft green leaves, white flowers and small hearts, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/employee-appreciation__cluster__8601379.png",
+  "coverage": 0.285,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "employee-appreciation/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6011494,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a soft green ceramic heart on a small stand, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/employee-appreciation__crest__6011494.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "team-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9848563,
+  "prompt": "Wide photograph of an empty office event hall decorated with teal balloons, lights and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-celebration__venue__9848563.png"
+ },
+ "team-celebration/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3537430,
+  "prompt": "A small compact arrangement of teal balloons, confetti and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-celebration__bouquet__3537430.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "team-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4545925,
+  "prompt": "A low wide compact arrangement of teal balloons, confetti and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-celebration__cluster__4545925.png",
+  "coverage": 0.338,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "team-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4926648,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a ring of small teal figures linked hand in hand, abstract and stylised, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/team-celebration__crest__4926648.png",
+  "coverage": 0.084,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "office-opening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8928962,
+  "prompt": "Wide photograph of an empty bright modern office lobby with plants, a red ribbon and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/office-opening__venue__8928962.png"
+ },
+ "office-opening/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9841603,
+  "prompt": "A round wreath of white orchids, green plants and silver ribbons with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/office-opening__wreath__9841603.png",
+  "coverage": 0.336,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "office-opening/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7390622,
+  "prompt": "A low wide compact arrangement of white orchids, green plants and silver ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/office-opening__cluster__7390622.png",
+  "coverage": 0.32,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "office-opening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1927703,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a small white architectural model of a modern office building, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/office-opening__crest__1927703.png",
+  "coverage": 0.034,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "new-branch-opening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3461359,
+  "prompt": "Wide photograph of an empty new store front decorated with blue balloons, flowers and a ribbon, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/new-branch-opening__venue__3461359.png"
+ },
+ "new-branch-opening/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7061106,
+  "prompt": "A small compact arrangement of blue ribbons, white flowers and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/new-branch-opening__bouquet__7061106.png",
+  "coverage": 0.07,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-branch-opening/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9956105,
+  "prompt": "A low wide compact arrangement of blue ribbons, white flowers and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/new-branch-opening__cluster__9956105.png",
+  "coverage": 0.24,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-branch-opening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3498652,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a glossy blue map pin with radiating rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/new-branch-opening__crest__3498652.png",
+  "coverage": 0.171,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "grand-opening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2695367,
+  "prompt": "Wide photograph of an empty shop entrance with a red ribbon across the door, flowers and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/grand-opening__venue__2695367.png"
+ },
+ "grand-opening/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3844904,
+  "prompt": "A tall slender vertical hanging strand of red ribbons, gold leaves and white roses from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/grand-opening__vine__3844904.png",
+  "coverage": 0.127,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "grand-opening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5178459,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a red satin ribbon with a bow and golden scissors, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/grand-opening__crest__5178459.png",
+  "coverage": 0.13,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "business-workshop/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6232429,
+  "prompt": "Wide photograph of an empty bright workshop room with round tables, whiteboards and plants, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-workshop__venue__6232429.png"
+ },
+ "business-workshop/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8563568,
+  "prompt": "A round wreath of green leaves, small notebooks and colourful pens with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-workshop__wreath__8563568.png",
+  "coverage": 0.388,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "business-workshop/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5509507,
+  "prompt": "A low wide compact arrangement of green leaves, small notebooks and colourful pens, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-workshop__cluster__5509507.png",
+  "coverage": 0.379,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "business-workshop/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3657158,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a small whiteboard on an easel with green rising bars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-workshop__crest__3657158.png",
+  "coverage": 0.066,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "professional-seminar/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9926275,
+  "prompt": "Wide photograph of an empty seminar room with a lectern, screen and neat rows of chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/professional-seminar__venue__9926275.png"
+ },
+ "professional-seminar/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6124245,
+  "prompt": "A small compact arrangement of white orchids, blue ribbons and grey leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/professional-seminar__bouquet__6124245.png",
+  "coverage": 0.068,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "professional-seminar/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2827850,
+  "prompt": "A low wide compact arrangement of white orchids, blue ribbons and grey leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/professional-seminar__cluster__2827850.png",
+  "coverage": 0.282,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "professional-seminar/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1189859,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a wooden lectern with a slim microphone, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/professional-seminar__crest__1189859.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "corporate-retreat/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8191288,
+  "prompt": "Wide photograph of an empty mountain resort deck with wooden chairs, pine trees and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-retreat__venue__8191288.png"
+ },
+ "corporate-retreat/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6283825,
+  "prompt": "A round wreath of pine sprigs, pine cones and green ferns with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-retreat__wreath__6283825.png",
+  "coverage": 0.416,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "corporate-retreat/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7381828,
+  "prompt": "A low wide compact arrangement of pine sprigs, pine cones and green ferns, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-retreat__cluster__7381828.png",
+  "coverage": 0.413,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "corporate-retreat/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4068757,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: small pine trees in front of a mountain peak, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-retreat__crest__4068757.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "company-family-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6200079,
+  "prompt": "Wide photograph of an empty sunny park set up for a family fun day with tents, balloons and games, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-family-day__venue__6200079.png"
+ },
+ "company-family-day/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9419147,
+  "prompt": "A long horizontal garland of colourful balloons, paper pinwheels and green leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-family-day__garland__9419147.png",
+  "coverage": 0.221,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "company-family-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9105626,
+  "prompt": "A low wide compact arrangement of colourful balloons, paper pinwheels and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-family-day__cluster__9105626.png",
+  "coverage": 0.465,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "company-family-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3652819,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a small model house with a smiling sun above it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/company-family-day__crest__3652819.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "client-appreciation/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3032963,
+  "prompt": "Wide photograph of an empty elegant navy lounge set for a client evening with flowers and a bar, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/client-appreciation__venue__3032963.png"
+ },
+ "client-appreciation/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5099935,
+  "prompt": "A small compact arrangement of navy ribbons, gold laurel leaves and white roses, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/client-appreciation__bouquet__5099935.png",
+  "coverage": 0.059,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "client-appreciation/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7886496,
+  "prompt": "A low wide compact arrangement of navy ribbons, gold laurel leaves and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/client-appreciation__cluster__7886496.png",
+  "coverage": 0.356,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "client-appreciation/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7789009,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a handshake made of two gold hands inside a laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/client-appreciation__crest__7789009.png",
+  "coverage": 0.142,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "partner-meet/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8583696,
+  "prompt": "Wide photograph of an empty modern meeting venue with lounge seating, indigo lights and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/partner-meet__venue__8583696.png"
+ },
+ "partner-meet/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9919936,
+  "prompt": "A small compact arrangement of indigo ribbons, silver accents and white orchids, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/partner-meet__bouquet__9919936.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "partner-meet/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6704619,
+  "prompt": "A low wide compact arrangement of indigo ribbons, silver accents and white orchids, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/partner-meet__cluster__6704619.png",
+  "coverage": 0.223,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "partner-meet/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6523646,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: two interlocked silver chain links, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/partner-meet__crest__6523646.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "investor-meet/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5753050,
+  "prompt": "Wide photograph of an empty sleek black and gold boardroom with a large screen and leather chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/investor-meet__venue__5753050.png"
+ },
+ "investor-meet/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4110143,
+  "prompt": "A low wide compact arrangement of black ribbons, gold leaves and white orchids, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/investor-meet__cluster__4110143.png",
+  "coverage": 0.265,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "investor-meet/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6988674,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a small glossy gold ascending bar chart sculpture, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/investor-meet__crest__6988674.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "press-conference/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5178830,
+  "prompt": "Wide photograph of an empty press conference room with a podium, microphones and a backdrop, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/press-conference__venue__5178830.png"
+ },
+ "press-conference/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8348190,
+  "prompt": "A small compact arrangement of charcoal ribbons, silver accents and white flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/press-conference__bouquet__8348190.png",
+  "coverage": 0.089,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "press-conference/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5931341,
+  "prompt": "A low wide compact arrangement of charcoal ribbons, silver accents and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/press-conference__cluster__5931341.png",
+  "coverage": 0.279,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "press-conference/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6792272,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a vintage silver microphone beside a camera, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/press-conference__crest__6792272.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "business-breakfast/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2528898,
+  "prompt": "Wide photograph of an empty bright hotel breakfast room with white linen, coffee and pastries, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-breakfast__venue__2528898.png"
+ },
+ "business-breakfast/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9232128,
+  "prompt": "A small compact arrangement of coffee beans, white flowers and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-breakfast__bouquet__9232128.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "business-breakfast/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7984107,
+  "prompt": "A low wide compact arrangement of coffee beans, white flowers and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-breakfast__cluster__7984107.png",
+  "coverage": 0.387,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "business-breakfast/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1575358,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a steaming white coffee cup on a saucer, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/business-breakfast__crest__1575358.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "corporate-cocktail-evening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8097145,
+  "prompt": "Wide photograph of an empty upscale twilight cocktail lounge with violet lighting and a bar, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-cocktail-evening__venue__8097145.png"
+ },
+ "corporate-cocktail-evening/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5235370,
+  "prompt": "A low wide compact arrangement of violet orchids, silver leaves and dark ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-cocktail-evening__cluster__5235370.png",
+  "coverage": 0.356,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "corporate-cocktail-evening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4640515,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a martini glass with an olive and small sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/corporate-cocktail-evening__crest__4640515.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "year-end-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1692173,
+  "prompt": "Wide photograph of an empty festive office party hall with gold lights, deep green decor and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/year-end-celebration__venue__1692173.png"
+ },
+ "year-end-celebration/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8515730,
+  "prompt": "A small compact arrangement of gold sparkles, deep green ribbons and stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/year-end-celebration__bouquet__8515730.png",
+  "coverage": 0.043,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "year-end-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1003561,
+  "prompt": "A low wide compact arrangement of gold sparkles, deep green ribbons and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/year-end-celebration__cluster__1003561.png",
+  "coverage": 0.297,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "year-end-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2204028,
+  "prompt": "Small premium ornament for the top of a corporate event invitation: a vintage gold clock with sparkles around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium corporate event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/CORPORATE/year-end-celebration__crest__2204028.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ }
+}

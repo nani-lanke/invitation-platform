@@ -1,0 +1,816 @@
+{
+ "school-annual-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8602758,
+  "prompt": "Wide photograph of an empty school auditorium stage with red curtains, stage lights and rows of seats, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-day__venue__8602758.png"
+ },
+ "school-annual-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8842565,
+  "prompt": "A small compact arrangement of gold stars, red ribbons and small spotlights, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-day__bouquet__8842565.png",
+  "coverage": 0.046,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-annual-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4193338,
+  "prompt": "A low wide compact arrangement of gold stars, red ribbons and small spotlights, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-day__cluster__4193338.png",
+  "coverage": 0.25,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-annual-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6430387,
+  "prompt": "Small premium ornament for the top of a school event invitation: red velvet stage curtains drawn open with a small spotlight, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-day__crest__6430387.png",
+  "coverage": 0.516,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-sports-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4127514,
+  "prompt": "Wide photograph of an empty school sports ground with a running track, pennants and a podium, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-sports-day__venue__4127514.png"
+ },
+ "school-sports-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3953913,
+  "prompt": "A small compact arrangement of colourful pennant flags, gold medals and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-sports-day__bouquet__3953913.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-sports-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9808790,
+  "prompt": "A low wide compact arrangement of colourful pennant flags, gold medals and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-sports-day__cluster__9808790.png",
+  "coverage": 0.326,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-sports-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3401983,
+  "prompt": "Small premium ornament for the top of a school event invitation: a shining gold trophy with small pennant flags, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-sports-day__crest__3401983.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-cultural-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5297047,
+  "prompt": "Wide photograph of an empty school courtyard decorated with marigold garlands, bunting and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-cultural-day__venue__5297047.png"
+ },
+ "school-cultural-day/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1629756,
+  "prompt": "A long horizontal garland of orange marigolds, colourful bunting and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-cultural-day__garland__1629756.png",
+  "coverage": 0.223,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-cultural-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5506205,
+  "prompt": "A low wide compact arrangement of orange marigolds, colourful bunting and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-cultural-day__cluster__5506205.png",
+  "coverage": 0.415,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-cultural-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2271040,
+  "prompt": "Small premium ornament for the top of a school event invitation: a small brass oil lamp with marigold flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-cultural-day__crest__2271040.png",
+  "coverage": 0.091,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-annual-function/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5918852,
+  "prompt": "Wide photograph of an empty school hall stage with star lights, green curtains and seats, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-function__venue__5918852.png"
+ },
+ "school-annual-function/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5809847,
+  "prompt": "A small compact arrangement of gold stars, deep green ribbons and sparkles, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-function__bouquet__5809847.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-annual-function/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2582936,
+  "prompt": "A low wide compact arrangement of gold stars, deep green ribbons and sparkles, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-function__cluster__2582936.png",
+  "coverage": 0.255,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-annual-function/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9890457,
+  "prompt": "Small premium ornament for the top of a school event invitation: a glowing gold star with small sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-annual-function__crest__9890457.png",
+  "coverage": 0.044,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-graduation-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1832629,
+  "prompt": "Wide photograph of an empty school hall decorated for graduation with navy and gold drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-ceremony__venue__1832629.png"
+ },
+ "school-graduation-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3939931,
+  "prompt": "A low wide compact arrangement of gold laurel leaves, navy ribbons and gold stars, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-ceremony__cluster__3939931.png",
+  "coverage": 0.245,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "school-graduation-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8266382,
+  "prompt": "Small premium ornament for the top of a school event invitation: a navy graduation cap inside a gold laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-ceremony__crest__8266382.png",
+  "coverage": 0.126,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "school-farewell/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1698507,
+  "prompt": "Wide photograph of an empty warmly lit school hall with candles, flowers and a farewell stage, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-farewell__venue__1698507.png"
+ },
+ "school-farewell/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4909293,
+  "prompt": "A small compact arrangement of honey coloured flowers, candles and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-farewell__bouquet__4909293.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-farewell/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9305442,
+  "prompt": "A low wide compact arrangement of honey coloured flowers, candles and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-farewell__cluster__9305442.png",
+  "coverage": 0.364,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-farewell/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2698955,
+  "prompt": "Small premium ornament for the top of a school event invitation: a lit honey coloured candle in a small brass holder, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-farewell__crest__2698955.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-foundation-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5199903,
+  "prompt": "Wide photograph of an empty school front lawn decorated with green and gold bunting and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-foundation-day__venue__5199903.png"
+ },
+ "school-foundation-day/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7369577,
+  "prompt": "A round wreath of deep green ribbons, gold laurel leaves and flags with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-foundation-day__wreath__7369577.png",
+  "coverage": 0.409,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-foundation-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1973996,
+  "prompt": "A low wide compact arrangement of deep green ribbons, gold laurel leaves and flags, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-foundation-day__cluster__1973996.png",
+  "coverage": 0.287,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-foundation-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4106061,
+  "prompt": "Small premium ornament for the top of a school event invitation: a small model school building with a flaming torch, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-foundation-day__crest__4106061.png",
+  "coverage": 0.092,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-founders-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5181521,
+  "prompt": "Wide photograph of an empty heritage school hall with wooden panels, portraits and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-founders-day__venue__5181521.png"
+ },
+ "school-founders-day/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4228231,
+  "prompt": "A tall slender vertical hanging strand of olive branches, cream roses and gold ribbons from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-founders-day__vine__4228231.png",
+  "coverage": 0.145,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "school-founders-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3913874,
+  "prompt": "Small premium ornament for the top of a school event invitation: a gold wax seal with olive branches around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-founders-day__crest__3913874.png",
+  "coverage": 0.115,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "school-open-house/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6370396,
+  "prompt": "Wide photograph of an empty bright modern classroom with desks, artwork on the walls and sunlight, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-open-house__venue__6370396.png"
+ },
+ "school-open-house/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5063674,
+  "prompt": "A round wreath of colourful pencils, paper planes and green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-open-house__wreath__5063674.png",
+  "coverage": 0.299,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-open-house/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6398837,
+  "prompt": "A low wide compact arrangement of colourful pencils, paper planes and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-open-house__cluster__6398837.png",
+  "coverage": 0.319,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-open-house/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9708360,
+  "prompt": "Small premium ornament for the top of a school event invitation: a small bright blue open door with sunlight, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-open-house__crest__9708360.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "parent-teacher-meeting/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2636741,
+  "prompt": "Wide photograph of an empty tidy classroom with desks arranged for a meeting and a chalkboard, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/parent-teacher-meeting__venue__2636741.png"
+ },
+ "parent-teacher-meeting/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7826799,
+  "prompt": "A small compact arrangement of red apples, colourful pencils and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/parent-teacher-meeting__bouquet__7826799.png",
+  "coverage": 0.068,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "parent-teacher-meeting/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4837872,
+  "prompt": "A low wide compact arrangement of red apples, colourful pencils and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/parent-teacher-meeting__cluster__4837872.png",
+  "coverage": 0.372,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "parent-teacher-meeting/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9286657,
+  "prompt": "Small premium ornament for the top of a school event invitation: a shiny red apple beside a yellow pencil, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/parent-teacher-meeting__crest__9286657.png",
+  "coverage": 0.096,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-science-exhibition/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1446003,
+  "prompt": "Wide photograph of an empty school exhibition hall with science project tables and posters without letters, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-science-exhibition__venue__1446003.png"
+ },
+ "school-science-exhibition/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5860321,
+  "prompt": "A small compact arrangement of glass flasks, atom models and blue sparkles, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-science-exhibition__bouquet__5860321.png",
+  "coverage": 0.036,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-science-exhibition/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9360990,
+  "prompt": "A low wide compact arrangement of glass flasks, atom models and blue sparkles, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-science-exhibition__cluster__9360990.png",
+  "coverage": 0.226,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-science-exhibition/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5633687,
+  "prompt": "Small premium ornament for the top of a school event invitation: a glowing blue atom model with a glass flask, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-science-exhibition__crest__5633687.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-art-exhibition/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9879863,
+  "prompt": "Wide photograph of an empty bright school art gallery with children’s paintings on white walls, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-art-exhibition__venue__9879863.png"
+ },
+ "school-art-exhibition/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1270874,
+  "prompt": "A small compact arrangement of paint brushes, colourful paint splashes and pencils, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-art-exhibition__bouquet__1270874.png",
+  "coverage": 0.058,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-art-exhibition/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4816593,
+  "prompt": "A low wide compact arrangement of paint brushes, colourful paint splashes and pencils, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-art-exhibition__cluster__4816593.png",
+  "coverage": 0.199,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-art-exhibition/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3196052,
+  "prompt": "Small premium ornament for the top of a school event invitation: a wooden painter’s palette with colourful paint and brushes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-art-exhibition__crest__3196052.png",
+  "coverage": 0.092,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-talent-show/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2938942,
+  "prompt": "Wide photograph of an empty school stage with a microphone stand, spotlight and colourful lights, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-talent-show__venue__2938942.png"
+ },
+ "school-talent-show/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9841147,
+  "prompt": "A round wreath of colourful stars, spotlights and music notes with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-talent-show__wreath__9841147.png",
+  "coverage": 0.332,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-talent-show/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7740038,
+  "prompt": "A low wide compact arrangement of colourful stars, spotlights and music notes, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-talent-show__cluster__7740038.png",
+  "coverage": 0.253,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-talent-show/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3464719,
+  "prompt": "Small premium ornament for the top of a school event invitation: a vintage microphone under a small spotlight, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-talent-show__crest__3464719.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "school-music-concert/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2963585,
+  "prompt": "Wide photograph of an empty concert hall stage with music stands, a piano and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-music-concert__venue__2963585.png"
+ },
+ "school-music-concert/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3834041,
+  "prompt": "A small compact arrangement of golden music notes, violins and dark ribbons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-music-concert__bouquet__3834041.png",
+  "coverage": 0.036,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-music-concert/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4997590,
+  "prompt": "A low wide compact arrangement of golden music notes, violins and dark ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-music-concert__cluster__4997590.png",
+  "coverage": 0.208,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-music-concert/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9315455,
+  "prompt": "Small premium ornament for the top of a school event invitation: a golden treble clef with small music notes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-music-concert__crest__9315455.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-dance-performance/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1781167,
+  "prompt": "Wide photograph of an empty dance stage with pink lights, curtains and a polished floor, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-dance-performance__venue__1781167.png"
+ },
+ "school-dance-performance/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5774809,
+  "prompt": "A small compact arrangement of pink ribbons, ballet slippers and soft flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-dance-performance__bouquet__5774809.png",
+  "coverage": 0.058,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-dance-performance/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2218678,
+  "prompt": "A low wide compact arrangement of pink ribbons, ballet slippers and soft flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-dance-performance__cluster__2218678.png",
+  "coverage": 0.345,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-dance-performance/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8870175,
+  "prompt": "Small premium ornament for the top of a school event invitation: a pink ballet slipper pair with a ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-dance-performance__crest__8870175.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-prize-distribution/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7592527,
+  "prompt": "Wide photograph of an empty school hall stage set with a table of trophies, navy drapes and chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-prize-distribution__venue__7592527.png"
+ },
+ "school-prize-distribution/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8946517,
+  "prompt": "A low wide compact arrangement of gold medals, navy ribbons and small trophies, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-prize-distribution__cluster__8946517.png",
+  "coverage": 0.367,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "school-prize-distribution/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1017960,
+  "prompt": "Small premium ornament for the top of a school event invitation: gold trophies with a gold ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-prize-distribution__crest__1017960.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "school-awards-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3667805,
+  "prompt": "Wide photograph of an empty awards stage with burgundy curtains and a podium, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-awards-ceremony__venue__3667805.png"
+ },
+ "school-awards-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7035833,
+  "prompt": "A low wide compact arrangement of gold laurel leaves, burgundy ribbons and medals, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-awards-ceremony__cluster__7035833.png",
+  "coverage": 0.256,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "school-awards-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6957548,
+  "prompt": "Small premium ornament for the top of a school event invitation: a gold medal on a ribbon inside a laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-awards-ceremony__crest__6957548.png",
+  "coverage": 0.078,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "school-independence-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8891183,
+  "prompt": "Wide photograph of an empty school ground decorated with tricolour balloons, flags and a flag pole, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-independence-day__venue__8891183.png"
+ },
+ "school-independence-day/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3944356,
+  "prompt": "A long horizontal garland of saffron, white and green flowers and small flags draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-independence-day__garland__3944356.png",
+  "coverage": 0.161,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-independence-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1923061,
+  "prompt": "A low wide compact arrangement of saffron, white and green flowers and small flags, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-independence-day__cluster__1923061.png",
+  "coverage": 0.404,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-independence-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9209352,
+  "prompt": "Small premium ornament for the top of a school event invitation: a small Indian tricolour flag on a pole with a torch, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-independence-day__crest__9209352.png",
+  "coverage": 0.039,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-republic-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5069377,
+  "prompt": "Wide photograph of an empty school courtyard decorated with saffron, white and green drapes and a flag pole, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-republic-day__venue__5069377.png"
+ },
+ "school-republic-day/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6029530,
+  "prompt": "A long horizontal garland of saffron and green marigolds, white flowers and small flags draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-republic-day__garland__6029530.png",
+  "coverage": 0.243,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "garland"
+ },
+ "school-republic-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9302515,
+  "prompt": "A low wide compact arrangement of saffron and green marigolds, white flowers and small flags, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-republic-day__cluster__9302515.png",
+  "coverage": 0.298,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-republic-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8708374,
+  "prompt": "Small premium ornament for the top of a school event invitation: a navy blue Ashoka chakra wheel with saffron light, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-republic-day__crest__8708374.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-teachers-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4144554,
+  "prompt": "Wide photograph of an empty classroom decorated with flowers and paper garlands for teachers day, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-teachers-day__venue__4144554.png"
+ },
+ "school-teachers-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2499949,
+  "prompt": "A small compact arrangement of red apples, books and yellow flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-teachers-day__bouquet__2499949.png",
+  "coverage": 0.055,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-teachers-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8863394,
+  "prompt": "A low wide compact arrangement of red apples, books and yellow flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-teachers-day__cluster__8863394.png",
+  "coverage": 0.311,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-teachers-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8513035,
+  "prompt": "Small premium ornament for the top of a school event invitation: a red apple on a stack of books beside a small chalkboard, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-teachers-day__crest__8513035.png",
+  "coverage": 0.113,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "school-childrens-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7615761,
+  "prompt": "Wide photograph of an empty bright school playground decorated with colourful balloons and bunting, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-childrens-day__venue__7615761.png"
+ },
+ "school-childrens-day/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4250202,
+  "prompt": "A long horizontal garland of colourful balloons, paper stars and pinwheels draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-childrens-day__garland__4250202.png",
+  "coverage": 0.178,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-childrens-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7523187,
+  "prompt": "A low wide compact arrangement of colourful balloons, paper stars and pinwheels, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-childrens-day__cluster__7523187.png",
+  "coverage": 0.452,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-childrens-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6770518,
+  "prompt": "Small premium ornament for the top of a school event invitation: a bunch of colourful balloons with a smiling sun, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-childrens-day__crest__6770518.png",
+  "coverage": 0.164,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-orientation-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9102207,
+  "prompt": "Wide photograph of an empty welcoming school hall with green decor, chairs and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-orientation-day__venue__9102207.png"
+ },
+ "school-orientation-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9811154,
+  "prompt": "A small compact arrangement of green leaves, small compasses and colourful pencils, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-orientation-day__bouquet__9811154.png",
+  "coverage": 0.049,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-orientation-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3602985,
+  "prompt": "A low wide compact arrangement of green leaves, small compasses and colourful pencils, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-orientation-day__cluster__3602985.png",
+  "coverage": 0.293,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-orientation-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5847292,
+  "prompt": "Small premium ornament for the top of a school event invitation: a brass compass on an open book, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-orientation-day__crest__5847292.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "school-welcome-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5377925,
+  "prompt": "Wide photograph of an empty school entrance decorated with a sage floral arch and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-welcome-ceremony__venue__5377925.png"
+ },
+ "school-welcome-ceremony/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3911731,
+  "prompt": "A tall slender vertical hanging strand of sage green leaves, white flowers and small bells from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-welcome-ceremony__vine__3911731.png",
+  "coverage": 0.151,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "school-welcome-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8565310,
+  "prompt": "Small premium ornament for the top of a school event invitation: a sage green wreath with a small school bell, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-welcome-ceremony__crest__8565310.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "school-graduation-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4307460,
+  "prompt": "Wide photograph of an empty school hall decorated for a graduation party with gold balloons and lights, celebration venue decor, no people, warm inviting light, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-party__venue__4307460.png"
+ },
+ "school-graduation-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1703872,
+  "prompt": "A long horizontal garland of gold confetti, black and gold balloons and stars draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-party__garland__1703872.png",
+  "coverage": 0.204,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-graduation-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5673185,
+  "prompt": "A low wide compact arrangement of gold confetti, black and gold balloons and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-party__cluster__5673185.png",
+  "coverage": 0.392,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "school-graduation-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4046916,
+  "prompt": "Small premium ornament for the top of a school event invitation: a graduation cap tossed in the air with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium school event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/SCHOOL-EVENTS/school-graduation-party__crest__4046916.png",
+  "coverage": 0.053,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ }
+}

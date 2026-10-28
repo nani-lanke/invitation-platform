@@ -1,0 +1,986 @@
+{
+ "baby-dreams/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1572655,
+  "prompt": "Wide photograph of an empty pastel blue baby shower setup with cloud decor, white balloons and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-dreams__venue__1572655.png"
+ },
+ "baby-dreams/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3243593,
+  "prompt": "A small compact bunch of pale blue and white balloons with small fluffy white clouds, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-dreams__bouquet__3243593.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "baby-dreams/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9297254,
+  "prompt": "A low wide compact arrangement of pale blue and white balloons with small fluffy white clouds, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-dreams__cluster__9297254.png",
+  "coverage": 0.454,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "baby-dreams/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2138270,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small fluffy white cloud with a tiny pale blue crescent moon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-dreams__crest__2138270.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "little-prince/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5998926,
+  "prompt": "Wide photograph of an empty powder blue and gold royal baby shower hall with drapes, a throne chair and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-prince__venue__5998926.png"
+ },
+ "little-prince/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9528834,
+  "prompt": "A round wreath of powder blue roses, white hydrangeas and small gold crowns with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-prince__wreath__9528834.png",
+  "coverage": 0.437,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-prince/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1199949,
+  "prompt": "A low wide compact arrangement of powder blue roses, white hydrangeas and small gold crowns, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-prince__cluster__1199949.png",
+  "coverage": 0.31,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-prince/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3664400,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small gold prince crown with pale blue velvet and pearls, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-prince__crest__3664400.png",
+  "coverage": 0.056,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-princess/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4169417,
+  "prompt": "Wide photograph of an empty blush pink princess baby shower setup with tulle drapes, roses and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-princess__venue__4169417.png"
+ },
+ "little-princess/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3925328,
+  "prompt": "A small compact bunch of blush pink roses, pink peonies and small gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-princess__bouquet__3925328.png",
+  "coverage": 0.154,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "little-princess/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7598267,
+  "prompt": "A low wide compact arrangement of blush pink roses, pink peonies and small gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-princess__cluster__7598267.png",
+  "coverage": 0.392,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "little-princess/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3749614,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small sparkling rose gold princess tiara with pink jewels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-princess__crest__3749614.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cloud-nine/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5893630,
+  "prompt": "Wide photograph of an empty lavender baby shower lounge with cloud decor, lilac balloons and soft lights, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/cloud-nine__venue__5893630.png"
+ },
+ "cloud-nine/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9949920,
+  "prompt": "A long horizontal garland of lavender and lilac balloons with small fluffy clouds draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/cloud-nine__garland__9949920.png",
+  "coverage": 0.29,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cloud-nine/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3569985,
+  "prompt": "A low wide compact arrangement of lavender and lilac balloons with small fluffy clouds, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/cloud-nine__cluster__3569985.png",
+  "coverage": 0.475,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cloud-nine/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8287652,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a fluffy lavender cloud with three small silver stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/cloud-nine__crest__8287652.png",
+  "coverage": 0.207,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "little-miracle/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1596237,
+  "prompt": "Wide photograph of an empty celestial baby shower setup with lilac drapes, a moon backdrop and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-miracle__venue__1596237.png"
+ },
+ "little-miracle/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3002140,
+  "prompt": "A small compact bunch of lilac roses, soft white flowers and tiny gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-miracle__bouquet__3002140.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "little-miracle/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2953327,
+  "prompt": "A low wide compact arrangement of lilac roses, soft white flowers and tiny gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-miracle__cluster__2953327.png",
+  "coverage": 0.367,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "little-miracle/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6687890,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a glowing pale gold crescent moon with tiny golden stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-miracle__crest__6687890.png",
+  "coverage": 0.063,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "bundle-of-joy/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3277324,
+  "prompt": "Wide photograph of an empty warm cream and blush baby shower setup with a floral arch and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bundle-of-joy__venue__3277324.png"
+ },
+ "bundle-of-joy/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9632915,
+  "prompt": "A small compact bunch of cream and blush roses with soft baby breath flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bundle-of-joy__bouquet__9632915.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bundle-of-joy/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8221212,
+  "prompt": "A low wide compact arrangement of cream and blush roses with soft baby breath flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bundle-of-joy__cluster__8221212.png",
+  "coverage": 0.374,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bundle-of-joy/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1938397,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a soft cream knitted baby blanket bundle tied with a blush bow, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bundle-of-joy__crest__1938397.png",
+  "coverage": 0.162,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "twinkle-twinkle-little-one/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8624668,
+  "prompt": "Wide photograph of an empty storybook baby shower setup with hanging yellow stars, sky blue drapes and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twinkle-twinkle-little-one__venue__8624668.png"
+ },
+ "twinkle-twinkle-little-one/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4514029,
+  "prompt": "A small compact bunch of honey yellow and sky blue star shaped balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twinkle-twinkle-little-one__bouquet__4514029.png",
+  "coverage": 0.077,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "twinkle-twinkle-little-one/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8910178,
+  "prompt": "A low wide compact arrangement of honey yellow and sky blue star shaped balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twinkle-twinkle-little-one__cluster__8910178.png",
+  "coverage": 0.429,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "twinkle-twinkle-little-one/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1128331,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a cluster of three plush honey yellow stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twinkle-twinkle-little-one__crest__1128331.png",
+  "coverage": 0.147,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "welcome-baby/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8393785,
+  "prompt": "Wide photograph of an empty elegant lilac baby shower hall with a floral arch and a welcome table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/welcome-baby__venue__8393785.png"
+ },
+ "welcome-baby/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7870633,
+  "prompt": "A long horizontal garland of lilac and purple hydrangeas with white roses draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/welcome-baby__garland__7870633.png",
+  "coverage": 0.281,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "welcome-baby/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5705392,
+  "prompt": "A low wide compact arrangement of lilac and purple hydrangeas with white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/welcome-baby__cluster__5705392.png",
+  "coverage": 0.343,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "welcome-baby/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2443393,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a white porcelain stork carrying a small lilac bundle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/welcome-baby__crest__2443393.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "tiny-toes-big-dreams/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7497360,
+  "prompt": "Wide photograph of an empty sage green baby shower garden setup with eucalyptus garlands and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/tiny-toes-big-dreams__venue__7497360.png"
+ },
+ "tiny-toes-big-dreams/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5112679,
+  "prompt": "A tall slender vertical hanging strand of sage green eucalyptus, white roses and small white flowers from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/tiny-toes-big-dreams__vine__5112679.png",
+  "coverage": 0.145,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tiny-toes-big-dreams/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7344818,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a pair of tiny knitted sage green baby booties, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/tiny-toes-big-dreams__crest__7344818.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "our-little-sunshine/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6965712,
+  "prompt": "Wide photograph of an empty sunny yellow baby shower garden party with sunflowers and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/our-little-sunshine__venue__6965712.png"
+ },
+ "our-little-sunshine/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7432643,
+  "prompt": "A small compact bunch of sunflowers, yellow roses and small orange blooms, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/our-little-sunshine__bouquet__7432643.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "our-little-sunshine/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2834124,
+  "prompt": "A low wide compact arrangement of sunflowers, yellow roses and small orange blooms, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/our-little-sunshine__cluster__2834124.png",
+  "coverage": 0.408,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "our-little-sunshine/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5686317,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a smiling plush sun toy with golden rays, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/our-little-sunshine__crest__5686317.png",
+  "coverage": 0.115,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "baby-bliss/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5844411,
+  "prompt": "Wide photograph of an empty dreamy pale blue baby shower setup with balloons, clouds and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-bliss__venue__5844411.png"
+ },
+ "baby-bliss/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8831228,
+  "prompt": "A small compact bunch of pale blue and blush balloons with small fluffy clouds, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-bliss__bouquet__8831228.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "baby-bliss/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4576911,
+  "prompt": "A low wide compact arrangement of pale blue and blush balloons with small fluffy clouds, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-bliss__cluster__4576911.png",
+  "coverage": 0.269,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "baby-bliss/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3810866,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small pale blue hot air balloon toy with a white basket, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/baby-bliss__crest__3810866.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "once-upon-a-baby/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1682813,
+  "prompt": "Wide photograph of an empty fairytale baby shower setup with a castle backdrop, rose drapes and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/once-upon-a-baby__venue__1682813.png"
+ },
+ "once-upon-a-baby/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6106371,
+  "prompt": "A round wreath of dusty rose roses, wisteria and tiny gold stars with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/once-upon-a-baby__wreath__6106371.png",
+  "coverage": 0.404,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "once-upon-a-baby/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8711134,
+  "prompt": "A low wide compact arrangement of dusty rose roses, wisteria and tiny gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/once-upon-a-baby__cluster__8711134.png",
+  "coverage": 0.366,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "once-upon-a-baby/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9082135,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small rose pink storybook castle with turrets, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/once-upon-a-baby__crest__9082135.png",
+  "coverage": 0.179,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-star/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8361733,
+  "prompt": "Wide photograph of an empty starry indigo baby shower setup with hanging gold stars and soft lights, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-star__venue__8361733.png"
+ },
+ "little-star/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5407849,
+  "prompt": "A small compact bunch of indigo and gold star shaped balloons with tiny sparkles, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-star__bouquet__5407849.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "little-star/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9495686,
+  "prompt": "A low wide compact arrangement of indigo and gold star shaped balloons with tiny sparkles, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-star__cluster__9495686.png",
+  "coverage": 0.3,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "little-star/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2445199,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a glowing indigo and gold plush star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-star__crest__2445199.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sweetest-arrival/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2582260,
+  "prompt": "Wide photograph of an empty peach and cream baby shower setup with a vintage pram, flowers and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/sweetest-arrival__venue__2582260.png"
+ },
+ "sweetest-arrival/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7366978,
+  "prompt": "A small compact bunch of peach roses, cream ranunculus and soft greenery, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/sweetest-arrival__bouquet__7366978.png",
+  "coverage": 0.113,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "sweetest-arrival/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8816217,
+  "prompt": "A low wide compact arrangement of peach roses, cream ranunculus and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/sweetest-arrival__cluster__8816217.png",
+  "coverage": 0.42,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "sweetest-arrival/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6492620,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small vintage cream baby pram with a peach canopy, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/sweetest-arrival__crest__6492620.png",
+  "coverage": 0.102,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "hello-little-one/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2246648,
+  "prompt": "Wide photograph of an empty minimal modern baby shower setup with white flowers, a clean table and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/hello-little-one__venue__2246648.png"
+ },
+ "hello-little-one/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6757427,
+  "prompt": "A tall slender vertical hanging strand of white tulips, soft greenery and small white flowers from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/hello-little-one__vine__6757427.png",
+  "coverage": 0.161,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "hello-little-one/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2687021,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a single small white heart shaped ceramic ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/hello-little-one__crest__2687021.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "teddys-welcome/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9031298,
+  "prompt": "Wide photograph of an empty teddy bear baby shower setup with plush bears, beige balloons and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/teddys-welcome__venue__9031298.png"
+ },
+ "teddys-welcome/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2571165,
+  "prompt": "A long horizontal garland of beige and blush balloons with small plush teddy bears draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/teddys-welcome__garland__2571165.png",
+  "coverage": 0.256,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "garland"
+ },
+ "teddys-welcome/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2396151,
+  "prompt": "A low wide compact arrangement of beige and blush balloons with small plush teddy bears, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/teddys-welcome__cluster__2396151.png",
+  "coverage": 0.388,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "teddys-welcome/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1118922,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a soft honey brown teddy bear holding a small blush heart, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/teddys-welcome__crest__1118922.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "elephant-parade/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5366455,
+  "prompt": "Wide photograph of an empty baby elephant themed baby shower with pale blue balloons and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/elephant-parade__venue__5366455.png"
+ },
+ "elephant-parade/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7685005,
+  "prompt": "A long horizontal garland of pale blue and white balloons with small plush elephants draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/elephant-parade__garland__7685005.png",
+  "coverage": 0.213,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "garland"
+ },
+ "elephant-parade/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9045268,
+  "prompt": "A low wide compact arrangement of pale blue and white balloons with small plush elephants, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/elephant-parade__cluster__9045268.png",
+  "coverage": 0.43,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "elephant-parade/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1959813,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a cute pale blue baby elephant toy with a small gold star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/elephant-parade__crest__1959813.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "little-lamb/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5587599,
+  "prompt": "Wide photograph of an empty soft white and sage little lamb baby shower setup with cotton flowers and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-lamb__venue__5587599.png"
+ },
+ "little-lamb/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2489015,
+  "prompt": "A round wreath of white cotton flowers, soft greenery and small white blooms with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-lamb__wreath__2489015.png",
+  "coverage": 0.309,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-lamb/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7198658,
+  "prompt": "A low wide compact arrangement of white cotton flowers, soft greenery and small white blooms, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-lamb__cluster__7198658.png",
+  "coverage": 0.29,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-lamb/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5954731,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a fluffy white plush baby lamb, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/little-lamb__crest__5954731.png",
+  "coverage": 0.16,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "bumble-baby/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1707640,
+  "prompt": "Wide photograph of an empty honey yellow bumble bee baby shower setup with daisies and a honey dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bumble-baby__venue__1707640.png"
+ },
+ "bumble-baby/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3135284,
+  "prompt": "A small compact bunch of yellow daisies, honeycomb pieces and small plush bees, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bumble-baby__bouquet__3135284.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bumble-baby/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8449319,
+  "prompt": "A low wide compact arrangement of yellow daisies, honeycomb pieces and small plush bees, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bumble-baby__cluster__8449319.png",
+  "coverage": 0.363,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bumble-baby/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3270938,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a cute plush bumble bee with tiny wings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/bumble-baby__crest__3270938.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "butterfly-kisses/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4814418,
+  "prompt": "Wide photograph of an empty butterfly garden baby shower with pink flowers, butterflies and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/butterfly-kisses__venue__4814418.png"
+ },
+ "butterfly-kisses/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1024314,
+  "prompt": "A round wreath of pink butterflies, blush roses and small lilac flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/butterfly-kisses__wreath__1024314.png",
+  "coverage": 0.368,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "butterfly-kisses/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8497141,
+  "prompt": "A low wide compact arrangement of pink butterflies, blush roses and small lilac flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/butterfly-kisses__cluster__8497141.png",
+  "coverage": 0.351,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "butterfly-kisses/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5587272,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a pair of pink and lilac butterflies on a small flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/butterfly-kisses__crest__5587272.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-of-wishes/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2707165,
+  "prompt": "Wide photograph of an empty garden baby shower with wildflowers, a white pergola and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/garden-of-wishes__venue__2707165.png"
+ },
+ "garden-of-wishes/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2442370,
+  "prompt": "A tall slender vertical hanging strand of white daisies, wildflowers and soft green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/garden-of-wishes__vine__2442370.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-of-wishes/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1881013,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small glass jar of dandelion wishes with green leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/garden-of-wishes__crest__1881013.png",
+  "coverage": 0.118,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "rainbow-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5345609,
+  "prompt": "Wide photograph of an empty pastel rainbow baby shower setup with a balloon arch and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/rainbow-blessing__venue__5345609.png"
+ },
+ "rainbow-blessing/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2138142,
+  "prompt": "A small compact bunch of pastel rainbow coloured balloons in a gentle arc, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/rainbow-blessing__bouquet__2138142.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rainbow-blessing/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3757581,
+  "prompt": "A low wide compact arrangement of pastel rainbow coloured balloons in a gentle arc, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/rainbow-blessing__cluster__3757581.png",
+  "coverage": 0.347,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rainbow-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7290128,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a soft pastel felt rainbow on two small clouds, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/rainbow-blessing__crest__7290128.png",
+  "coverage": 0.064,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pink-petals/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7699915,
+  "prompt": "Wide photograph of an empty pink floral baby shower setup with a rose wall and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/pink-petals__venue__7699915.png"
+ },
+ "pink-petals/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7375278,
+  "prompt": "A small compact bunch of pink roses, pink peonies and scattered rose petals, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/pink-petals__bouquet__7375278.png",
+  "coverage": 0.152,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pink-petals/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3019549,
+  "prompt": "A low wide compact arrangement of pink roses, pink peonies and scattered rose petals, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/pink-petals__cluster__3019549.png",
+  "coverage": 0.416,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pink-petals/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1844032,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small round posy of pink roses and pink peonies, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/pink-petals__crest__1844032.png",
+  "coverage": 0.157,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blue-dream/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9956837,
+  "prompt": "Wide photograph of an empty nautical pale blue baby shower with a sailboat theme, white drapes and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/blue-dream__venue__9956837.png"
+ },
+ "blue-dream/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7128888,
+  "prompt": "A small compact bunch of pale blue hydrangeas, white roses and small sea shells, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/blue-dream__bouquet__7128888.png",
+  "coverage": 0.144,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "blue-dream/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9344259,
+  "prompt": "A low wide compact arrangement of pale blue hydrangeas, white roses and small sea shells, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/blue-dream__cluster__9344259.png",
+  "coverage": 0.435,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "blue-dream/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6732486,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small white and pale blue toy sailboat, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/blue-dream__crest__6732486.png",
+  "coverage": 0.045,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "royal-heir/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9213341,
+  "prompt": "Wide photograph of an empty royal purple and gold baby shower hall with velvet drapes, chandeliers and a throne, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/royal-heir__venue__9213341.png"
+ },
+ "royal-heir/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7259403,
+  "prompt": "A low wide compact arrangement of deep purple roses, plum dahlias and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/royal-heir__cluster__7259403.png",
+  "coverage": 0.382,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-heir/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4759710,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small ornate gold and purple velvet royal crown, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/royal-heir__crest__4759710.png",
+  "coverage": 0.078,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxe-gold/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7235667,
+  "prompt": "Wide photograph of an empty luxury black and gold baby shower lounge with gold balloons and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/luxe-gold__venue__7235667.png"
+ },
+ "luxe-gold/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7290084,
+  "prompt": "A low wide compact arrangement of ivory roses, white orchids and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/luxe-gold__cluster__7290084.png",
+  "coverage": 0.405,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxe-gold/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5065555,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small gold rattle with a pearl handle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/luxe-gold__crest__5065555.png",
+  "coverage": 0.042,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "boho-bloom/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1239088,
+  "prompt": "Wide photograph of an empty boho baby shower setup with pampas grass, rattan chairs and a macrame backdrop, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/boho-bloom__venue__1239088.png"
+ },
+ "boho-bloom/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2970216,
+  "prompt": "A long horizontal garland of dried pampas grass, terracotta roses and bunny tails draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/boho-bloom__garland__2970216.png",
+  "coverage": 0.259,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-bloom/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3996729,
+  "prompt": "A low wide compact arrangement of dried pampas grass, terracotta roses and bunny tails, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/boho-bloom__cluster__3996729.png",
+  "coverage": 0.352,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-bloom/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9523500,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small woven macrame dreamcatcher with dried flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/boho-bloom__crest__9523500.png",
+  "coverage": 0.16,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "minimal-moon/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8537988,
+  "prompt": "Wide photograph of an empty minimal white baby shower with a crescent moon backdrop and white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/minimal-moon__venue__8537988.png"
+ },
+ "minimal-moon/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4923094,
+  "prompt": "A tall slender vertical hanging strand of white cosmos flowers and soft grey eucalyptus from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/minimal-moon__vine__4923094.png",
+  "coverage": 0.138,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "minimal-moon/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3422041,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a small smooth white ceramic crescent moon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/minimal-moon__crest__3422041.png",
+  "coverage": 0.046,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "twin-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8837267,
+  "prompt": "Wide photograph of an empty twin baby shower setup with two cribs, blush flowers and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twin-blessing__venue__8837267.png"
+ },
+ "twin-blessing/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5161628,
+  "prompt": "A round wreath of white and blush roses with soft baby breath flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twin-blessing__wreath__5161628.png",
+  "coverage": 0.423,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "twin-blessing/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6755311,
+  "prompt": "A low wide compact arrangement of white and blush roses with soft baby breath flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twin-blessing__cluster__6755311.png",
+  "coverage": 0.462,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "twin-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8521234,
+  "prompt": "Small premium ornament for the top of a baby shower invitation: a pair of tiny white knitted baby booties side by side, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium baby shower decor photography, soft pastel true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BABY-SHOWER/twin-blessing__crest__8521234.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ }
+}

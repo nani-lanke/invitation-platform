@@ -1,0 +1,47 @@
+{
+ "slug": "maharaja-palace",
+ "name": "Maharaja Palace",
+ "base": "cards/maharaja-palace/",
+ "spec": {
+  "layout": "royal",
+  "frame": "vine",
+  "venue": "split",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/maharaja-palace.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/maharaja-palace.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Rajput durbar palace hall with fluted sandstone pillars, gold canopies, chandeliers and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1405382,
+   "raw": "..\\work\\raw\\maharaja-palace__venue__1405382_2ib5h.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a gold Rajput royal emblem with sun and crown, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6546550,
+   "raw": "..\\work\\raw\\maharaja-palace__crest__6546550_3fyxt.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Rajput palace fort on a hill above a lake at sunset, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7904208,
+   "raw": "..\\work\\raw\\maharaja-palace__footer__7904208_3bhww.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of marigolds, red roses and jasmine, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4811866,
+   "raw": "..\\work\\raw\\maharaja-palace__corner__4811866_2qbwf.png"
+  }
+ }
+}

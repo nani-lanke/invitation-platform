@@ -1,0 +1,40 @@
+{
+ "slug": "punjabi-phulkari",
+ "name": "Punjabi Phulkari",
+ "base": "cards/punjabi-phulkari/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/punjabi-phulkari.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/punjabi-phulkari.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Punjabi haveli courtyard wedding venue draped with colourful phulkari dupattas, marigold garlands and brass lamps, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5378634,
+   "raw": "..\\work\\raw\\punjabi-phulkari__venue__5378634_2k47a.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of orange marigolds, magenta roses and mustard flowers, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5097826,
+   "raw": "..\\work\\raw\\punjabi-phulkari__crest__5097826_1aw23.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of golden mustard fields of Punjab with a village haveli, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3559084,
+   "raw": "..\\work\\raw\\punjabi-phulkari__footer__3559084_3a304.png"
+  }
+ }
+}

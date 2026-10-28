@@ -1,0 +1,47 @@
+{
+ "slug": "coastal-vows",
+ "name": "Coastal Vows",
+ "base": "cards/coastal-vows/",
+ "spec": {
+  "layout": "arch",
+  "frame": "arch",
+  "venue": "split",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/coastal-vows.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/coastal-vows.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a seaside wedding on a cliff with white chairs, driftwood arch and the sea behind, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6929997,
+   "raw": "..\\work\\raw\\coastal-vows__venue__6929997_4cw0n.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a scallop shell with pearls, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4931897,
+   "raw": "..\\work\\raw\\coastal-vows__crest__4931897_2btux.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a coastline with waves and a lighthouse, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3303849,
+   "raw": "..\\work\\raw\\coastal-vows__footer__3303849_5jgpa.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of white roses, sea grass and dried palm, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4409287,
+   "raw": "..\\work\\raw\\coastal-vows__corner__4409287_3a453.png"
+  }
+ }
+}

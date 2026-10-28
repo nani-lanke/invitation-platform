@@ -1,0 +1,47 @@
+{
+ "slug": "bangladeshi-jamdani",
+ "name": "Bangladeshi Jamdani",
+ "base": "cards/bangladeshi-jamdani/",
+ "spec": {
+  "layout": "classic",
+  "frame": "arch",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/bangladeshi-jamdani.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/bangladeshi-jamdani.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Bangladeshi wedding stage with jamdani muslin drapes, water lilies, lamps and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5556379,
+   "raw": "..\\work\\raw\\bangladeshi-jamdani__venue__5556379_5k269.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a folded white and green jamdani muslin with woven butis, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8005787,
+   "raw": "..\\work\\raw\\bangladeshi-jamdani__crest__8005787_4llwt.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Bengal river delta with boats and water lilies, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7778371,
+   "raw": "..\\work\\raw\\bangladeshi-jamdani__footer__7778371_5e3xm.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white water lilies shapla, marigolds and green leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5341661,
+   "raw": "..\\work\\raw\\bangladeshi-jamdani__corner__5341661_2t7eg.png"
+  }
+ }
+}

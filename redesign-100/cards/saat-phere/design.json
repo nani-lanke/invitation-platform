@@ -1,0 +1,40 @@
+{
+ "slug": "saat-phere",
+ "name": "Saat Phere",
+ "base": "cards/saat-phere/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "arch",
+  "venue": "stack",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/saat-phere.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/saat-phere.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a mandap with a sacred agni fire, seven brass lamps marking the steps, marigold canopy and banana plants, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7974498,
+   "raw": "..\\work\\raw\\saat-phere__venue__7974498_1bg35.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of marigolds, lotus flowers and mango leaves, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7438122,
+   "raw": "..\\work\\raw\\saat-phere__crest__7438122_3twm5.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a riverside temple at dawn with lamps on the water, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9881092,
+   "raw": "..\\work\\raw\\saat-phere__footer__9881092_4h5e7.png"
+  }
+ }
+}

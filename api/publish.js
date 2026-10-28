@@ -338,6 +338,9 @@ module.exports = async function handler(req, res) {
         {
           up: '../',
 
+          // Paid (the gate above passed): the page gets the download button.
+          download: true,
+
           canonical: publicUrl,
 
           image:
@@ -359,6 +362,24 @@ module.exports = async function handler(req, res) {
         content:
           Buffer
             .from(html, 'utf8')
+            .toString('base64')
+      },
+
+      /* The card page, with its own download button, under
+         invitation_card/invitations/ beside the host page. */
+      {
+        path:
+          FOLDER + '/' + IH.exportPage.CARD_DIR + '/' + file,
+
+        content:
+          Buffer
+            .from(
+              IH.exportPage.buildCardHtml(
+                IH.exportPage.cardAssetState(split.state),
+                { up: '../../', download: true }
+              ),
+              'utf8'
+            )
             .toString('base64')
       }
     ];

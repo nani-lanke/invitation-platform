@@ -1,0 +1,47 @@
+{
+ "slug": "lotus-garden",
+ "name": "Lotus Garden",
+ "base": "cards/lotus-garden/",
+ "spec": {
+  "layout": "monogram",
+  "frame": "band",
+  "venue": "framed",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/lotus-garden.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/lotus-garden.svg",
+  "corners": "inline SVG corner set (band)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a wedding pavilion beside a lotus pond with jade water, lanterns and white flowers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3638197,
+   "raw": "..\\work\\raw\\lotus-garden__venue__3638197_2wdws.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a single pink lotus flower with a lotus leaf, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6248817,
+   "raw": "..\\work\\raw\\lotus-garden__crest__6248817_17vdy.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a jade green lotus pond with a pavilion at dawn, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6314865,
+   "raw": "..\\work\\raw\\lotus-garden__footer__6314865_11g0f.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of pink lotus flowers, lotus buds and lotus leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7103503,
+   "raw": "..\\work\\raw\\lotus-garden__corner__7103503_2j1f3.png"
+  }
+ }
+}

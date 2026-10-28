@@ -1,0 +1,47 @@
+{
+ "slug": "interfaith-union",
+ "name": "Interfaith Union",
+ "base": "cards/interfaith-union/",
+ "spec": {
+  "layout": "arch",
+  "frame": "vine",
+  "venue": "stack",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/interfaith-union.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/interfaith-union.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a garden wedding venue with two floral arches joined into one doorway, candles and white flowers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9433712,
+   "raw": "..\\work\\raw\\interfaith-union__venue__9433712_14h8z.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: two intertwined gold rings resting on a botanical sprig, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7410236,
+   "raw": "..\\work\\raw\\interfaith-union__crest__7410236_1ogcf.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a peaceful garden with a stone arch at golden hour, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7156174,
+   "raw": "..\\work\\raw\\interfaith-union__footer__7156174_2e0so.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, olive sprigs and eucalyptus leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6149292,
+   "raw": "..\\work\\raw\\interfaith-union__corner__6149292_2s3yx.png"
+  }
+ }
+}

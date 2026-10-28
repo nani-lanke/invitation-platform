@@ -1,0 +1,47 @@
+{
+ "slug": "cherry-blossom-love",
+ "name": "Cherry Blossom Love",
+ "base": "cards/cherry-blossom-love/",
+ "spec": {
+  "layout": "royal",
+  "frame": "beads",
+  "venue": "split",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/cherry-blossom-love.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/cherry-blossom-love.svg",
+  "corners": "inline SVG corner set (beads)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a cherry blossom garden wedding with pink sakura trees and lanterns, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7592950,
+   "raw": "..\\work\\raw\\cherry-blossom-love__venue__7592950_2o0aa.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a single cherry blossom branch, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8776070,
+   "raw": "..\\work\\raw\\cherry-blossom-love__crest__8776070_n3c4.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a cherry blossom lined river at dawn, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1129120,
+   "raw": "..\\work\\raw\\cherry-blossom-love__footer__1129120_333vx.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of pink cherry blossom sakura branches, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4230826,
+   "raw": "..\\work\\raw\\cherry-blossom-love__corner__4230826_2b51o.png"
+  }
+ }
+}

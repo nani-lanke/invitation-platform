@@ -1,0 +1,47 @@
+{
+ "slug": "jaimala-exchange",
+ "name": "Jaimala Exchange",
+ "base": "cards/jaimala-exchange/",
+ "spec": {
+  "layout": "classic",
+  "frame": "band",
+  "venue": "split",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/jaimala-exchange.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/jaimala-exchange.svg",
+  "corners": "inline SVG corner set (band)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a jaimala stage with a floral backdrop and two marigold and rose varmala garlands on brass plates, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3641751,
+   "raw": "..\\work\\raw\\jaimala-exchange__venue__3641751_3zk1a.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: two fresh varmala garlands of roses and marigolds, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5960783,
+   "raw": "..\\work\\raw\\jaimala-exchange__crest__5960783_177f3.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a palace garden lit for a wedding night, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7213799,
+   "raw": "..\\work\\raw\\jaimala-exchange__footer__7213799_245no.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of red roses, marigolds and jasmine strings with a few flower strings hanging straight down, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1905457,
+   "raw": "..\\work\\raw\\jaimala-exchange__corner__1905457_1q2z8.png"
+  }
+ }
+}

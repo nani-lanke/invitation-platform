@@ -1,0 +1,926 @@
+{
+ "new-beginnings/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2719782,
+  "prompt": "Wide photograph of an empty bright new home living room with plants, white walls and morning sunlight, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-beginnings__venue__2719782.png"
+ },
+ "new-beginnings/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5717296,
+  "prompt": "A tall slender vertical hanging strand of green leaves, white daisies and small potted herbs from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-beginnings__vine__5717296.png",
+  "coverage": 0.167,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "new-beginnings/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3493971,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small white ceramic model house with a green door and a tiny plant, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-beginnings__crest__3493971.png",
+  "coverage": 0.039,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "golden-threshold/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7322217,
+  "prompt": "Wide photograph of an empty Indian home entrance at dusk with a marigold toran, brass lamps and a rangoli on the threshold, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/golden-threshold__venue__7322217.png"
+ },
+ "golden-threshold/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2852896,
+  "prompt": "A low wide compact arrangement of orange marigolds, mango leaf torans and brass diyas, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/golden-threshold__cluster__2852896.png",
+  "coverage": 0.504,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-threshold/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5900049,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small brass diya on a decorated doorstep with kumkum dots, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/golden-threshold__crest__5900049.png",
+  "coverage": 0.078,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "modern-nest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3251038,
+  "prompt": "Wide photograph of an empty modern minimal apartment living room with grey sofas, plants and large windows, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/modern-nest__venue__3251038.png"
+ },
+ "modern-nest/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8098731,
+  "prompt": "A tall slender vertical hanging strand of white tulips, eucalyptus and small succulents from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/modern-nest__vine__8098731.png",
+  "coverage": 0.157,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-nest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8067142,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small matte grey ceramic model house with a round window, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/modern-nest__crest__8067142.png",
+  "coverage": 0.121,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "open-doors/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1278368,
+  "prompt": "Wide photograph of an empty elegant home entrance with open double wooden doors, potted plants and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/open-doors__venue__1278368.png"
+ },
+ "open-doors/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5965186,
+  "prompt": "A round wreath of deep green leaves, white roses and ivy with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/open-doors__wreath__5965186.png",
+  "coverage": 0.411,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "open-doors/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9697485,
+  "prompt": "A low wide compact arrangement of deep green leaves, white roses and ivy, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/open-doors__cluster__9697485.png",
+  "coverage": 0.34,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "open-doors/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6096720,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small arched wooden front door ornament with a brass knocker, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/open-doors__crest__6096720.png",
+  "coverage": 0.135,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "keys-to-happiness/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2894006,
+  "prompt": "Wide photograph of an empty luxury new home foyer with a gold chandelier, marble floor and fresh flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/keys-to-happiness__venue__2894006.png"
+ },
+ "keys-to-happiness/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9309849,
+  "prompt": "A low wide compact arrangement of ivory roses, gold leaves and small gold keys, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/keys-to-happiness__cluster__9309849.png",
+  "coverage": 0.455,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "keys-to-happiness/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4845196,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a pair of crossed vintage gold house keys tied with a ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/keys-to-happiness__crest__4845196.png",
+  "coverage": 0.127,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "our-new-nest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7220856,
+  "prompt": "Wide photograph of an empty cosy Scandinavian living room with a sofa, plants and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-new-nest__venue__7220856.png"
+ },
+ "our-new-nest/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7248763,
+  "prompt": "A tall slender vertical hanging strand of white blossoms, olive twigs and small green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-new-nest__vine__7248763.png",
+  "coverage": 0.147,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "our-new-nest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6099766,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small woven bird nest with tiny eggs on a twig, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-new-nest__crest__6099766.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "botanical-welcome/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9935922,
+  "prompt": "Wide photograph of an empty plant filled new home veranda with ferns, monstera and wooden furniture, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/botanical-welcome__venue__9935922.png"
+ },
+ "botanical-welcome/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8619482,
+  "prompt": "A small compact arrangement of monstera leaves, ferns and white flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/botanical-welcome__bouquet__8619482.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "botanical-welcome/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4079441,
+  "prompt": "A low wide compact arrangement of monstera leaves, ferns and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/botanical-welcome__cluster__4079441.png",
+  "coverage": 0.376,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "botanical-welcome/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5261972,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small green front door ornament wrapped in leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/botanical-welcome__crest__5261972.png",
+  "coverage": 0.131,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "shubh-griha-pravesh/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4163215,
+  "prompt": "Wide photograph of an empty traditional Indian home entrance decorated with marigold torans, a kalash and a petal rangoli, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/shubh-griha-pravesh__venue__4163215.png"
+ },
+ "shubh-griha-pravesh/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8816798,
+  "prompt": "A long horizontal garland of orange and yellow marigolds, mango leaves and red roses draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/shubh-griha-pravesh__garland__8816798.png",
+  "coverage": 0.33,
+  "edgeTouch": 0.011,
+  "free": true,
+  "style": "garland"
+ },
+ "shubh-griha-pravesh/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8425159,
+  "prompt": "A low wide compact arrangement of orange and yellow marigolds, mango leaves and red roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/shubh-griha-pravesh__cluster__8425159.png",
+  "coverage": 0.382,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "shubh-griha-pravesh/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1992058,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small brass kalash with mango leaves and a coconut beside a decorated doorway, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/shubh-griha-pravesh__crest__1992058.png",
+  "coverage": 0.127,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "new-home-new-blessings/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6796379,
+  "prompt": "Wide photograph of an empty festive Indian living room decorated for a griha pravesh with flowers and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-new-blessings__venue__6796379.png"
+ },
+ "new-home-new-blessings/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1966770,
+  "prompt": "A long horizontal garland of yellow marigolds, white jasmine and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-new-blessings__garland__1966770.png",
+  "coverage": 0.274,
+  "edgeTouch": 0.013,
+  "free": true,
+  "style": "garland"
+ },
+ "new-home-new-blessings/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2346395,
+  "prompt": "A low wide compact arrangement of yellow marigolds, white jasmine and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-new-blessings__cluster__2346395.png",
+  "coverage": 0.436,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "new-home-new-blessings/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4044238,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small teal and gold paisley shaped home ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-new-blessings__crest__4044238.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "vastu-harmony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4048313,
+  "prompt": "Wide photograph of an empty bright Indian pooja room with brass lamps, flowers and a decorated altar, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/vastu-harmony__venue__4048313.png"
+ },
+ "vastu-harmony/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4035595,
+  "prompt": "A long horizontal garland of orange marigolds, tulsi leaves and brass bells draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/vastu-harmony__garland__4035595.png",
+  "coverage": 0.236,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "vastu-harmony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2720573,
+  "prompt": "A low wide compact arrangement of orange marigolds, tulsi leaves and brass bells, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/vastu-harmony__cluster__2720573.png",
+  "coverage": 0.48,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "vastu-harmony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9066656,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small round engraved brass plate with a lit diya and flower petals, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/vastu-harmony__crest__9066656.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "fresh-beginning/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8060727,
+  "prompt": "Wide photograph of an empty fresh pale blue and white home entrance with a wreath on the door and potted plants, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/fresh-beginning__venue__8060727.png"
+ },
+ "fresh-beginning/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2510674,
+  "prompt": "A small compact arrangement of pale blue hydrangeas, white roses and soft greenery, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/fresh-beginning__bouquet__2510674.png",
+  "coverage": 0.15,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "fresh-beginning/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5302505,
+  "prompt": "A low wide compact arrangement of pale blue hydrangeas, white roses and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/fresh-beginning__cluster__5302505.png",
+  "coverage": 0.446,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "fresh-beginning/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2323772,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small pale blue front door ornament with a white wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/fresh-beginning__crest__2323772.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rustic-farmhouse/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2916757,
+  "prompt": "Wide photograph of an empty rustic farmhouse porch with wooden rocking chairs, lanterns and sunflowers, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/rustic-farmhouse__venue__2916757.png"
+ },
+ "rustic-farmhouse/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5397193,
+  "prompt": "A long horizontal garland of golden wheat, sunflowers and cotton stems draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/rustic-farmhouse__garland__5397193.png",
+  "coverage": 0.176,
+  "edgeTouch": 0.014,
+  "free": true,
+  "style": "garland"
+ },
+ "rustic-farmhouse/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3128784,
+  "prompt": "A low wide compact arrangement of golden wheat, sunflowers and cotton stems, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/rustic-farmhouse__cluster__3128784.png",
+  "coverage": 0.424,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "rustic-farmhouse/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4350881,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small wooden farmhouse model with a red roof and wheat, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/rustic-farmhouse__crest__4350881.png",
+  "coverage": 0.104,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "city-nest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8902725,
+  "prompt": "Wide photograph of an empty city apartment balcony at dusk with plants, fairy lights and a skyline view, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/city-nest__venue__8902725.png"
+ },
+ "city-nest/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6404691,
+  "prompt": "A tall slender vertical hanging strand of white roses, eucalyptus and small succulents from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/city-nest__vine__6404691.png",
+  "coverage": 0.162,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "city-nest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4592158,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small brass house key on a tiny city skyline keyring, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/city-nest__crest__4592158.png",
+  "coverage": 0.042,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "villa-dreams/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9406897,
+  "prompt": "Wide photograph of an empty luxury villa poolside terrace with arches, lounge chairs and bougainvillea, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/villa-dreams__venue__9406897.png"
+ },
+ "villa-dreams/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2959137,
+  "prompt": "A round wreath of bougainvillea, white roses and olive leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/villa-dreams__wreath__2959137.png",
+  "coverage": 0.335,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "villa-dreams/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6549300,
+  "prompt": "A low wide compact arrangement of bougainvillea, white roses and olive leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/villa-dreams__cluster__6549300.png",
+  "coverage": 0.425,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "villa-dreams/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7437524,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small white villa model with a blue arched door, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/villa-dreams__crest__7437524.png",
+  "coverage": 0.036,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-housewarming/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3361979,
+  "prompt": "Wide photograph of an empty home garden party with a rose arch, fairy lights and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/garden-housewarming__venue__3361979.png"
+ },
+ "garden-housewarming/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9575367,
+  "prompt": "A round wreath of climbing roses, ivy and small white flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/garden-housewarming__wreath__9575367.png",
+  "coverage": 0.398,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-housewarming/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4430994,
+  "prompt": "A low wide compact arrangement of climbing roses, ivy and small white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/garden-housewarming__cluster__4430994.png",
+  "coverage": 0.419,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "garden-housewarming/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1893019,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small garden arch ornament covered in climbing roses, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/garden-housewarming__crest__1893019.png",
+  "coverage": 0.183,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "blooms-and-bricks/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7136194,
+  "prompt": "Wide photograph of an empty charming brick cottage entrance with climbing pink roses and potted flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/blooms-and-bricks__venue__7136194.png"
+ },
+ "blooms-and-bricks/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9114767,
+  "prompt": "A small compact arrangement of pink roses, peonies and soft green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/blooms-and-bricks__bouquet__9114767.png",
+  "coverage": 0.104,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blooms-and-bricks/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6125840,
+  "prompt": "A low wide compact arrangement of pink roses, peonies and soft green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/blooms-and-bricks__cluster__6125840.png",
+  "coverage": 0.503,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blooms-and-bricks/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1622177,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small red brick house model with pink roses climbing, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/blooms-and-bricks__crest__1622177.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "boho-home/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4937393,
+  "prompt": "Wide photograph of an empty boho living room with rattan chairs, macrame, pampas grass and floor cushions, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/boho-home__venue__4937393.png"
+ },
+ "boho-home/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9782592,
+  "prompt": "A long horizontal garland of dried pampas grass, terracotta flowers and palm leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/boho-home__garland__9782592.png",
+  "coverage": 0.319,
+  "edgeTouch": 0.016,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-home/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5717153,
+  "prompt": "A low wide compact arrangement of dried pampas grass, terracotta flowers and palm leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/boho-home__cluster__5717153.png",
+  "coverage": 0.413,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-home/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1789380,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small macrame wall hanging with a wooden ring and dried flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/boho-home__crest__1789380.png",
+  "coverage": 0.151,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "nordic-nest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6293038,
+  "prompt": "Wide photograph of an empty Nordic minimal living room with white wood, wool throws and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/nordic-nest__venue__6293038.png"
+ },
+ "nordic-nest/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7687473,
+  "prompt": "A tall slender vertical hanging strand of white flowers, pine sprigs and soft grey eucalyptus from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/nordic-nest__vine__7687473.png",
+  "coverage": 0.186,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "nordic-nest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3149634,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small white Scandinavian wooden house ornament with a pine sprig, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/nordic-nest__crest__3149634.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "mediterranean-home/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1355637,
+  "prompt": "Wide photograph of an empty Mediterranean whitewashed courtyard with blue doors, lemon trees and terracotta pots, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/mediterranean-home__venue__1355637.png"
+ },
+ "mediterranean-home/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6157528,
+  "prompt": "A tall slender vertical hanging strand of lemons, olive branches and white bougainvillea from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/mediterranean-home__vine__6157528.png",
+  "coverage": 0.194,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "mediterranean-home/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5683179,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small white arched window ornament with a blue shutter and lemons, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/mediterranean-home__crest__5683179.png",
+  "coverage": 0.055,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tropical-hideaway/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5119457,
+  "prompt": "Wide photograph of an empty tropical home veranda with palm plants, rattan furniture and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/tropical-hideaway__venue__5119457.png"
+ },
+ "tropical-hideaway/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2580599,
+  "prompt": "A small compact arrangement of monstera, palm fronds and pink hibiscus, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/tropical-hideaway__bouquet__2580599.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "tropical-hideaway/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8353688,
+  "prompt": "A low wide compact arrangement of monstera, palm fronds and pink hibiscus, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/tropical-hideaway__cluster__8353688.png",
+  "coverage": 0.281,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "tropical-hideaway/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5590425,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small wooden tropical hut ornament with palm leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/tropical-hideaway__crest__5590425.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "royal-residence/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1339053,
+  "prompt": "Wide photograph of an empty royal mansion grand hall with a chandelier, velvet sofas and gold mirrors, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/royal-residence__venue__1339053.png"
+ },
+ "royal-residence/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7715633,
+  "prompt": "A low wide compact arrangement of deep purple roses, gold leaves and orchids, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/royal-residence__cluster__7715633.png",
+  "coverage": 0.47,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-residence/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5366836,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small ornate gold royal crest ornament with purple jewels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/royal-residence__crest__5366836.png",
+  "coverage": 0.043,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "gold-and-ivory/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8718428,
+  "prompt": "Wide photograph of an empty elegant ivory and gold living room with a chandelier and fresh white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/gold-and-ivory__venue__8718428.png"
+ },
+ "gold-and-ivory/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8638519,
+  "prompt": "A low wide compact arrangement of ivory roses, white orchids and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/gold-and-ivory__cluster__8638519.png",
+  "coverage": 0.411,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "gold-and-ivory/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5642442,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small ornate gold door ornament with ivory panels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/gold-and-ivory__crest__5642442.png",
+  "coverage": 0.177,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-housewarming/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3270890,
+  "prompt": "Wide photograph of an empty chic new home lounge set up for a party with a champagne tower and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/champagne-housewarming__venue__3270890.png"
+ },
+ "champagne-housewarming/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9247683,
+  "prompt": "A low wide compact arrangement of white roses, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/champagne-housewarming__cluster__9247683.png",
+  "coverage": 0.452,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-housewarming/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8145030,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: two crystal champagne coupes clinking with sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/champagne-housewarming__crest__8145030.png",
+  "coverage": 0.058,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "watercolor-home/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6432771,
+  "prompt": "Wide photograph of an empty dreamy pastel lilac living room with flowers and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/watercolor-home__venue__6432771.png"
+ },
+ "watercolor-home/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1716762,
+  "prompt": "A small compact arrangement of lilac flowers, lavender and soft white blooms, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/watercolor-home__bouquet__1716762.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "watercolor-home/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6176721,
+  "prompt": "A low wide compact arrangement of lilac flowers, lavender and soft white blooms, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/watercolor-home__cluster__6176721.png",
+  "coverage": 0.495,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "watercolor-home/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6148628,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small soft lilac ceramic model house with a round window, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/watercolor-home__crest__6148628.png",
+  "coverage": 0.159,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "our-family-home/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9434768,
+  "prompt": "Wide photograph of an empty warm family dining room with a long wooden table, flowers and family photos, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-family-home__venue__9434768.png"
+ },
+ "our-family-home/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3842927,
+  "prompt": "A round wreath of peach roses, cream flowers and olive branches with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-family-home__wreath__3842927.png",
+  "coverage": 0.382,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "our-family-home/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1696330,
+  "prompt": "A low wide compact arrangement of peach roses, cream flowers and olive branches, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-family-home__cluster__1696330.png",
+  "coverage": 0.402,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "our-family-home/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2272163,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small wooden family home model with a tree beside it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/our-family-home__crest__2272163.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "home-and-heart/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3081623,
+  "prompt": "Wide photograph of an empty cosy warm living room decorated with roses, candles and cushions, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-and-heart__venue__3081623.png"
+ },
+ "home-and-heart/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9534536,
+  "prompt": "A small compact arrangement of red and pink roses with soft greenery, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-and-heart__bouquet__9534536.png",
+  "coverage": 0.064,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "home-and-heart/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5253203,
+  "prompt": "A low wide compact arrangement of red and pink roses with soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-and-heart__cluster__5253203.png",
+  "coverage": 0.426,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "home-and-heart/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7632118,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small red ceramic heart shaped house ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-and-heart__crest__7632118.png",
+  "coverage": 0.113,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "new-home-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1372982,
+  "prompt": "Wide photograph of an empty new home living room decorated for a party with balloons and streamers, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-party__venue__1372982.png"
+ },
+ "new-home-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8356543,
+  "prompt": "A small compact arrangement of colourful balloons, streamers and small confetti, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-party__bouquet__8356543.png",
+  "coverage": 0.065,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-home-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3099904,
+  "prompt": "A low wide compact arrangement of colourful balloons, streamers and small confetti, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-party__cluster__3099904.png",
+  "coverage": 0.339,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-home-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1127281,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small model house surrounded by colourful confetti and balloons, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/new-home-party__crest__1127281.png",
+  "coverage": 0.122,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "home-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9213324,
+  "prompt": "Wide photograph of an empty Indian home living room decorated for a griha pravesh puja with flowers, a kalash and lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-blessing__venue__9213324.png"
+ },
+ "home-blessing/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2463935,
+  "prompt": "A long horizontal garland of orange marigolds, white jasmine and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-blessing__garland__2463935.png",
+  "coverage": 0.284,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "home-blessing/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4649486,
+  "prompt": "A low wide compact arrangement of orange marigolds, white jasmine and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-blessing__cluster__4649486.png",
+  "coverage": 0.459,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "home-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4168359,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small brass kalash with mango leaves and flowers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/home-blessing__crest__4168359.png",
+  "coverage": 0.081,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "a-place-to-call-home/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4870002,
+  "prompt": "Wide photograph of an empty welcoming home living room with plants, a sofa and warm light, celebration venue decor, no people, warm inviting light, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/a-place-to-call-home__venue__4870002.png"
+ },
+ "a-place-to-call-home/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4178293,
+  "prompt": "A tall slender vertical hanging strand of white flowers, eucalyptus and small green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/a-place-to-call-home__vine__4178293.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "a-place-to-call-home/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1912568,
+  "prompt": "Small premium ornament for the top of a housewarming invitation: a small globe shaped ornament with a tiny house on top, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium home celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/HOUSE-WARMING/a-place-to-call-home__crest__1912568.png",
+  "coverage": 0.115,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ }
+}

@@ -85,7 +85,17 @@
     chevron: '<svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">' +
       '<path d="M14 46h52" stroke-linecap="round"/>' +
       '<path d="M26 34l14-14 14 14" stroke-linecap="round" stroke-linejoin="round"/>' +
-      '<path d="M18 56h20M42 56h20" stroke-linecap="round" opacity=".45"/></svg>'
+      '<path d="M18 56h20M42 56h20" stroke-linecap="round" opacity=".45"/></svg>',
+    'palace-arch': '<svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">' +
+      '<path d="M12 62h56M16 62V38c0-14 10-24 24-24s24 10 24 24v24" stroke-linecap="round"/>' +
+      '<path d="M22 62V40c0-10 8-18 18-18s18 8 18 18v22" stroke-linecap="round"/>' +
+      '<path d="M40 10v4M40 8c1.5 0 3 1.5 3 3 0 1.5-1.5 3-3 3s-3-1.5-3-3c0-1.5 1.5-3 3-3z" fill="currentColor" stroke="none"/>' +
+      '<circle cx="40" cy="38" r="4" fill="currentColor" opacity=".5"/>' +
+      '<path d="M28 62V46c0-6 5-11 12-11s12 5 12 11v16" stroke-linecap="round" opacity=".6"/></svg>',
+    kolam: '<svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">' +
+      '<circle cx="40" cy="40" r="14" stroke="currentColor" stroke-width="1.2"/>' +
+      '<path d="M40 12v56M12 40h56M20 20l40 40M20 60l40-40" stroke-linecap="round" opacity=".6"/>' +
+      '<circle cx="40" cy="40" r="4" fill="currentColor"/></svg>'
   };
 
   var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June',
@@ -126,6 +136,10 @@
      double quotes would close it early and drop both font variables. */
   var GOOGLE_FONTS = {
     playfair: { display: "'Playfair Display', Georgia, serif", body: "'DM Sans', system-ui, sans-serif" },
+    /* Regional defaults, used when no heading font is picked. */
+    telugu: { display: "'Playfair Display', 'Noto Serif Telugu', Georgia, serif", body: "'Cormorant Garamond', 'Noto Serif Telugu', 'DM Sans', serif" },
+    cinzel: { display: "'Cinzel', Georgia, serif", body: "'DM Sans', system-ui, sans-serif" },
+    tamil: { display: "'Cinzel', 'Noto Serif Tamil', Georgia, serif", body: "'Cormorant Garamond', 'Noto Serif Tamil', 'DM Sans', serif" },
     cormorant: { display: "'Cormorant Garamond', Georgia, serif", body: "'DM Sans', system-ui, sans-serif" },
     dmsans: { display: "'DM Sans', system-ui, sans-serif", body: "'DM Sans', system-ui, sans-serif" },
     greatvibes: { display: "'Great Vibes', 'Playfair Display', cursive", body: "'DM Sans', system-ui, sans-serif" }
@@ -196,9 +210,13 @@
     eventType: 'wedding',
     template: 'elegant-floral',
     title: 'The Wedding Celebration',
+    additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+    additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
     hostName: 'Both Families',
     brideName: 'Bride',
     groomName: 'Groom',
+    groomParents: 'Groom’s Parents',
+    brideParents: 'Bride’s Parents',
     personName: '',
     date: '2026-12-25',
     time: '18:30',
@@ -207,29 +225,219 @@
     mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Chennai',
     phone: '0000000000',
     email: 'hello@example.com',
-    message: 'Request the pleasure of your company as we begin our life together. Your presence would make our day complete.',
+    message: 'Request the pleasure of your company as we begin our life together.\nYour presence would make our day complete.',
     photo: '',
     music: 'none',
     musicFile: '',
-    font: 'playfair',
+    font: '',
     showCountdown: true,
     showMaps: true
   };
 
+  /* ------------------------------------------------------------------
+     Wedding wording per design. Each set fills Additional title,
+     Additional subtitle and Invitation message; a design gets the set
+     that matches its name and keywords (regional, religious, royal,
+     floral, modern), and designs with no clear theme spread over the
+     general sets so neighbouring cards read differently.
+     ------------------------------------------------------------------ */
+  var WEDDING_TEXT = {
+    blessed: { title: 'A BLESSED BEGINNING\nWith the blessings of our parents', subtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+      message: 'Request the pleasure of your company as we begin our life together.\nYour presence would make our day complete.' },
+    hindu: { title: 'SHUBH VIVAH\nWith the blessings of Lord Ganesha and our elders', subtitle: 'AN AUSPICIOUS UNION\nWe cordially invite you to the sacred wedding of',
+      message: 'Kindly grace the occasion and bless the couple as they take the seven sacred vows.\nYour blessings mean the world to us.' },
+    south: { title: 'SUBHA MUHURTHAM\nWith the divine blessings of our family deity', subtitle: 'A SACRED BEGINNING\nWe request your gracious presence at the marriage of',
+      message: 'Please join us with your family and bless the couple on this auspicious day.\nYour presence will make the celebration complete.' },
+    telugu: { title: 'SHUBHA LEKHA\nWith the blessings of Sri Venkateswara Swamy and our elders', subtitle: 'PELLI PILUPU\nWe warmly invite you to the wedding of',
+      message: 'We seek your blessings as two families come together in a sacred bond.\nKindly attend with your family and friends.' },
+    tamil: { title: 'THIRUMANA AZHAIPPU\nWith the blessings of the Almighty and our elders', subtitle: 'A SACRED UNION\nWe cordially invite you to the marriage of',
+      message: 'Kindly grace the wedding with your presence and shower your blessings on the couple.\nWe look forward to welcoming you.' },
+    bengali: { title: 'SHUBHO BIBAHO\nWith the blessings of Maa Durga and our elders', subtitle: 'A BOND FOR A LIFETIME\nWe request the honour of your presence at the wedding of',
+      message: 'Join us to celebrate love, tradition and togetherness.\nYour presence will make our joy complete.' },
+    kerala: { title: 'MANGALYAM\nWith the blessings of Guruvayurappan and our families', subtitle: 'A NEW JOURNEY BEGINS\nWe warmly invite you to the wedding of',
+      message: 'We would be honoured to have you with us on this beautiful day.\nPlease come and bless the couple.' },
+    north: { title: 'SHUBH LAGAN\nWith the blessings of our elders', subtitle: 'VIVAH SAMAROH\nWe cordially invite you to the wedding ceremony of',
+      message: 'Please join us for the rituals, the music and the feast as two families become one.\nYour presence is our greatest gift.' },
+    sikh: { title: 'ANAND KARAJ\nWith the grace of Waheguru and the blessings of our elders', subtitle: 'A BLISSFUL UNION\nWe request the pleasure of your company at the Anand Karaj of',
+      message: 'Kindly join us at the Gurdwara to witness the sacred Laavan and bless the couple.\nLangar will follow the ceremony.' },
+    muslim: { title: 'BISMILLAH IR-RAHMAN IR-RAHIM\nWith the blessings of Allah and our families', subtitle: 'NIKAH CEREMONY\nWe request the honour of your presence at the Nikah of',
+      message: 'Kindly join us and remember the couple in your duas as they begin their life together.\nYour presence will be our honour.' },
+    christian: { title: 'TWO HEARTS, ONE LOVE\nTogether with their families', subtitle: 'HOLY MATRIMONY\nWe request the honour of your presence at the marriage of',
+      message: 'Please join us as we exchange our vows before God, family and friends.\nA reception will follow the ceremony.' },
+    royal: { title: 'A ROYAL CELEBRATION\nWith the blessings of our honoured elders', subtitle: 'THE GRAND WEDDING\nWe graciously invite you to the royal wedding of',
+      message: 'Kindly grace the festivities with your gracious presence.\nAn evening of grandeur, music and celebration awaits.' },
+    floral: { title: 'LOVE IN FULL BLOOM\nWith the blessings of our parents', subtitle: 'A GARDEN OF JOY\nWe would love you to celebrate the wedding of',
+      message: 'Join us among the flowers as we say "I do" and begin our forever.\nYour presence will make our day bloom.' },
+    modern: { title: 'TOGETHER FOREVER\nWith love, our families invite you', subtitle: 'SAVE THE DATE\nPlease join us for the wedding of',
+      message: 'We can\'t wait to celebrate with the people we love most.\nCome for the vows, stay for the party.' },
+    romantic: { title: 'HAPPILY EVER AFTER\nWith the love and blessings of our families', subtitle: 'OUR FOREVER BEGINS\nYou are warmly invited to the wedding of',
+      message: 'Two hearts, one love and a lifetime of memories begin here.\nWe would be delighted to celebrate with you.' },
+    classic: { title: 'THE BEGINNING OF FOREVER\nTogether with their families', subtitle: 'WITH GREAT JOY\nWe request the pleasure of your company at the wedding of',
+      message: 'Please join us for a day of love, laughter and happily ever after.\nYour presence would mean so much to us.' }
+  };
+  /* First match wins, so specific traditions come before general styles. */
+  var WEDDING_THEMES = [
+    ['sikh', /anand|karaj|sikh|gurdwara|punjab/],
+    ['muslim', /nikah|muslim|islam|walima|urdu/],
+    ['christian', /christian|church|chapel|catholic|holy|cross/],
+    ['telugu', /telugu|pelli|andhra|talambralu|tirupati|kalasam/],
+    ['tamil', /tamil|thirumanam|gopuram|kanchipuram|madurai|chettinad/],
+    ['kerala', /kerala|kasavu|malayal|guruvayur|kodava|coorg/],
+    ['bengali', /bengal|alpona|shankha|pola|bibaho|gamosa|assam/],
+    ['north', /rajasthan|gujarat|bandhani|marwari|jaipur|udaipur|leheriya|lehariya|sindhi|ajrak|kashmir|phulkari/],
+    ['south', /south indian|kalyanam|kannada|karnataka|mysore|kolam|banana/],
+    ['royal', /royal|palace|regal|maharaj|king|queen|heritage|mughal|velvet|gold/],
+    ['hindu', /hindu|vivah|mandap|ganesh|kalash|shubh|mangal|sacred|saptapadi|temple|lotus|diya|jain|parsi/],
+    ['floral', /floral|flower|bloom|rose|blossom|garden|botanic|lavender|peony|wildflower|sakura|cherry|petal|lily|orchid|watercolor|watercolour/],
+    ['modern', /modern|minimal|geometric|deco|monochrome|contemporary|chic|neon|beach|boho|marble/]
+  ];
+  var WEDDING_GENERAL = ['blessed', 'romantic', 'classic'];
+
+  function weddingTextFor(slug) {
+    var tpl = IH.data && IH.data.getTemplate ? IH.data.getTemplate(slug) : null;
+    var base = String(slug || '').replace(/^rd-/, '');
+    var hay = (base + ' ' + (tpl ? tpl.name + ' ' + (tpl.keywords || '') : '')).toLowerCase().replace(/-/g, ' ');
+    var key = null;
+    for (var i = 0; i < WEDDING_THEMES.length && !key; i++) if (WEDDING_THEMES[i][1].test(hay)) key = WEDDING_THEMES[i][0];
+    if (!key) {
+      var h = 0;
+      for (var c = 0; c < base.length; c++) h = (h * 31 + base.charCodeAt(c)) >>> 0;
+      key = WEDDING_GENERAL[h % WEDDING_GENERAL.length];
+    }
+    var set = WEDDING_TEXT[key];
+    return { additionalTitle: set.title, additionalSubtitle: set.subtitle, message: set.message, theme: key };
+  }
+
+  /* Birthday header wording (Additional Details): the title's second line
+     follows the card's audience, so it comes from the per-design sample. */
+  var BIRTHDAY_SUBTITLE = 'A DAY TO REMEMBER\nPlease join us to celebrate the birthday of';
+  var BIRTHDAY_TEXT_FIELDS = ['additionalTitle', 'additionalSubtitle', 'message'];
+  function birthdayTextFor(slug) {
+    var s = sampleForCategoryBase('birthday', slug);
+    return { additionalTitle: s.additionalTitle, additionalSubtitle: s.additionalSubtitle, message: s.message };
+  }
+  /* True when a birthday field still holds any design's sample wording. */
+  function isBirthdaySampleText(field, value) {
+    var v = String(value == null ? '' : value).replace(/\s+/g, ' ').trim();
+    if (!v) return true;
+    var slugs = (IH.data && IH.data.templates ? IH.data.templates : []).filter(function (t) { return t.category === 'birthday'; }).map(function (t) { return t.slug; });
+    return slugs.concat(['']).some(function (slug) {
+      return String(birthdayTextFor(slug)[field] || '').replace(/\s+/g, ' ').trim() === v;
+    });
+  }
+
+  /* The other occasions follow the birthday pattern: no Hosted by, an
+     occasion-named venue, and Additional Details with header wording, the
+     invitation message and a four-item programme. The programme reuses the
+     four ceremony slots (haldi / mehndi / ceremony / reception), in order.
+     icon names are EVENT_ICONS in js/wedding-designs.js. */
+  var OCCASION_DETAILS = {
+    'baby-shower': { venue: 'Shower venue', title: 'A LITTLE ONE IS ON THE WAY', subtitle: 'BABY SHOWER\nPlease join us for a baby shower in honour of', message: 'With love and blessings',
+      programme: 'Shower programme', items: [['Welcome & Games', 'games'], ['Godh Bharai & Blessings', 'diya'], ['Lunch / Dinner', 'meal'], ['Gifts & Wishes', 'gift']] },
+    'naming-ceremony': { venue: 'Ceremony venue', title: 'WITH THE BLESSINGS OF GOD', subtitle: 'NAMING CEREMONY\nPlease join us for the naming ceremony of', message: 'Bless our little one',
+      programme: 'Ceremony programme', items: [['Puja & Rituals', 'diya'], ['Naming Ceremony', 'star'], ['Blessings & Photos', 'camera'], ['Lunch', 'meal']] },
+    'house-warming': { venue: 'New home / Venue', title: 'GRIHA PRAVESH', subtitle: 'A NEW BEGINNING\nPlease join us as we step into our new home', message: 'Bless our new home',
+      programme: 'Housewarming programme', items: [['Griha Pravesh Puja', 'diya'], ['Home Tour', 'home'], ['Lunch / Dinner', 'meal'], ['Get-together', 'music']] },
+    anniversary: { venue: 'Celebration venue', title: 'CELEBRATING LOVE', subtitle: 'YEARS OF TOGETHERNESS\nPlease join us to celebrate the anniversary of', message: 'A journey of love',
+      programme: 'Anniversary programme', items: [['Welcome Drinks', 'reception'], ['Cake Cutting', 'cake'], ['Dinner', 'meal'], ['Music & Dance', 'music']] },
+    graduation: { venue: 'Ceremony venue', title: 'A PROUD MILESTONE', subtitle: 'GRADUATION\nPlease join us to celebrate the graduation of', message: 'Hard work, rewarded',
+      programme: 'Graduation programme', items: [['Graduation Ceremony', 'award'], ['Photo Session', 'camera'], ['Lunch / Dinner', 'meal'], ['Celebration Party', 'music']] },
+    retirement: { venue: 'Party venue', title: 'A LIFE WELL SERVED', subtitle: 'HAPPY RETIREMENT\nPlease join us to honour the retirement of', message: 'With gratitude',
+      programme: 'Retirement programme', items: [['Welcome', 'reception'], ['Speeches & Tributes', 'mic'], ['Lunch / Dinner', 'meal'], ['Memories & Photos', 'camera']] },
+    farewell: { venue: 'Farewell venue', title: 'A FOND FAREWELL', subtitle: 'WITH BEST WISHES\nPlease join us to bid farewell to', message: 'Thank you for the memories',
+      programme: 'Farewell programme', items: [['Welcome', 'reception'], ['Speeches & Memories', 'mic'], ['Lunch / Dinner', 'meal'], ['Send-off & Gifts', 'gift']] },
+    corporate: { venue: 'Event venue', title: 'YOU ARE INVITED', subtitle: 'CORPORATE EVENT\nWe are pleased to invite you to', message: 'About the event',
+      programme: 'Event agenda', items: [['Registration', 'badge'], ['Keynote & Sessions', 'mic'], ['Networking', 'reception'], ['Lunch / Dinner', 'meal']] },
+    festival: { venue: 'Celebration venue', title: 'FESTIVE GREETINGS', subtitle: 'JOIN THE CELEBRATIONS\nPlease join us to celebrate', message: 'Festive wishes',
+      programme: 'Festival programme', items: [['Puja & Prayers', 'diya'], ['Cultural Programme', 'music'], ['Lunch / Dinner', 'meal'], ['Fireworks & Fun', 'star']] },
+    'school-events': { venue: 'School / Event venue', title: 'YOU ARE INVITED', subtitle: 'SCHOOL EVENT\nWe cordially invite you to', message: 'About the event',
+      programme: 'Event programme', items: [['Inauguration', 'diya'], ['Cultural Programme', 'music'], ['Prize Distribution', 'award'], ['Vote of Thanks', 'mic']] },
+    'college-events': { venue: 'College / Event venue', title: 'YOU ARE INVITED', subtitle: 'COLLEGE EVENT\nWe cordially invite you to', message: 'About the event',
+      programme: 'Event programme', items: [['Inauguration', 'diya'], ['Events & Competitions', 'star'], ['Prize Distribution', 'award'], ['DJ Night', 'music']] },
+    party: { venue: 'Party venue', title: 'LET’S PARTY', subtitle: 'GOOD TIMES AHEAD\nPlease join us for', message: 'Join the fun',
+      programme: 'Party programme', items: [['Welcome Drinks', 'reception'], ['Games & Fun', 'games'], ['Dinner', 'meal'], ['Music & Dance', 'music']] },
+    'community-events': { venue: 'Event venue', title: 'COMMUNITY GATHERING', subtitle: 'ALL ARE WELCOME\nWe warmly invite you to', message: 'About the event',
+      programme: 'Event programme', items: [['Welcome', 'reception'], ['Meeting & Discussion', 'mic'], ['Cultural Programme', 'music'], ['Lunch / Dinner', 'meal']] },
+    other: { venue: 'Event venue', title: 'YOU ARE INVITED', subtitle: 'JOIN US\nPlease join us for', message: 'About the event',
+      programme: 'Event programme', items: [['Welcome', 'reception'], ['Main Event', 'star'], ['Lunch / Dinner', 'meal'], ['Celebrations', 'music']] }
+  };
+  var PROGRAMME_SLOTS = ['haldi', 'mehndi', 'ceremony', 'reception'];
+
+  /* Sample header wording and message for an occasion; the title's second
+     line is the occasion's sample host line. */
+  function occasionTextFor(type, slug) {
+    if (type === 'birthday') return birthdayTextFor(slug);
+    var cfg = OCCASION_DETAILS[type];
+    if (!cfg) return null;
+    var s = sampleForCategoryBase(type, slug) || {};
+    /* Never the wedding sentence ("as we begin our life together") on another occasion. */
+    var message = s.message || 'We would be delighted to have you join us.';
+    return { additionalTitle: cfg.title + (s.hostName ? '\n' + s.hostName : ''), additionalSubtitle: cfg.subtitle, message: message };
+  }
+  /* True when a field still holds any occasion's sample wording. */
+  function isOccasionSampleText(field, value) {
+    var v = String(value == null ? '' : value).replace(/\s+/g, ' ').trim();
+    if (!v) return true;
+    if (isBirthdaySampleText(field, value)) return true;
+    // Each design's own sample wording counts too (per-card hosts on the design engine).
+    var tpls = IH.data && IH.data.templates ? IH.data.templates : [];
+    return Object.keys(OCCASION_DETAILS).some(function (type) {
+      var slugs = tpls.filter(function (t) { return t.category === type; }).map(function (t) { return t.slug; });
+      return slugs.concat([undefined]).some(function (slug) {
+        return String(occasionTextFor(type, slug)[field] || '').replace(/\s+/g, ' ').trim() === v;
+      });
+    });
+  }
+  /* The programme items the host switched on, in running order. */
+  function occasionEvents(data) {
+    var cfg = OCCASION_DETAILS[data.eventType];
+    if (!cfg) return [];
+    return PROGRAMME_SLOTS.map(function (slot, i) {
+      return data[slot + 'Enabled'] ? { title: cfg.items[i][0], icon: cfg.items[i][1], date: data[slot + 'Date'] || data.date, time: data[slot + 'Time'] } : null;
+    }).filter(Boolean);
+  }
+
+  /* "LINE ONE\nLine two" -> ['LINE ONE', 'Line two'], blank lines dropped. */
+  function splitText(text) {
+    return String(text || '').split('\n').map(function (s) { return s.trim(); }).filter(Boolean);
+  }
+
+  /* True when a field still holds sample wording (any set's, or empty), so
+     switching design may replace it; anything the host typed stays. */
+  function isWeddingSampleText(field, value) {
+    var v = String(value == null ? '' : value).replace(/\s+/g, ' ').trim();
+    if (!v) return true;
+    var prop = field === 'additionalTitle' ? 'title' : field === 'additionalSubtitle' ? 'subtitle' : 'message';
+    return Object.keys(WEDDING_TEXT).some(function (k) {
+      var s = WEDDING_TEXT[k][prop].replace(/\s+/g, ' ').trim();
+      return v === s || v === s.replace('celebrate the wedding of', 'celebrate the engagement of');
+    });
+  }
+
   function headlineFor(data) {
     var type = data.eventType || 'other';
-    if (type === 'wedding' || type === 'engagement') {
+    if (type === 'wedding' || type === 'engagement' || (type === 'reception' && (data.groomName || data.brideName))) {
       if (data.groomName && data.brideName) {
-        return escapeHtml(data.groomName) + '<span class="amp">&amp;</span>' + escapeHtml(data.brideName);
+        var g = data.groomName;
+        var b = data.brideName;
+        if (data.namesSwapped) {
+          return escapeHtml(b) + '<span class="amp">&amp;</span>' + escapeHtml(g);
+        }
+        return escapeHtml(g) + '<span class="amp">&amp;</span>' + escapeHtml(b);
       }
       return escapeHtml(data.groomName || data.brideName || data.title || 'Our Special Day');
     }
-    /* A reception or anniversary names the couple in one field — but a
-       saved draft may still carry the older Groom/Bride pair. */
+    /* An anniversary names the couple in one field (a reception did too,
+       before it took Groom/Bride like a wedding). */
     if (type === 'reception' || type === 'anniversary') {
       if (data.personName) return escapeHtml(data.personName);
       if (data.groomName && data.brideName) {
-        return escapeHtml(data.groomName) + '<span class="amp">&amp;</span>' + escapeHtml(data.brideName);
+        var g = data.groomName;
+        var b = data.brideName;
+        if (data.namesSwapped) {
+          return escapeHtml(b) + '<span class="amp">&amp;</span>' + escapeHtml(g);
+        }
+        return escapeHtml(g) + '<span class="amp">&amp;</span>' + escapeHtml(b);
       }
       return escapeHtml(data.groomName || data.brideName || data.title || EVENT_TYPES[type].label);
     }
@@ -289,9 +497,254 @@
     return '';
   }
 
+  /* Centralized Telugu Pelli Layer Configuration
+     Each entry defines an independent decorative PNG layer with its target file,
+     z-index layer stack position, opacity, and semantic role. */
+  /* Telugu pelli set (FLUX.2 Klein 4B, see
+     scripts/generate-telugu-reference-assets.js). Right-hand copies of the
+     corner florals, lotus clusters and pillars are mirrored by CSS. The
+     pillars are built from cap/shaft/base slices so they run the full card
+     height without stretching. The koneru temples, Ganesha crest, sprigs,
+     dividers and event icons sit in the content flow (teluguPelliContent). */
+  var TELUGU_PELLI_ASSETS = [
+    { id: 'tp-pillar-left', pillar: true, zIndex: 1, role: 'architecture' },
+    { id: 'tp-pillar-right', pillar: true, zIndex: 1, role: 'architecture' },
+    { id: 'tp-lake-temple', file: 'tp-lake-temple.png', zIndex: 1, role: 'landscape' },
+    { id: 'tp-banana-left', file: 'tp-banana-plant.png', zIndex: 2, role: 'pandiri' },
+    { id: 'tp-banana-right', file: 'tp-banana-plant.png', zIndex: 2, role: 'pandiri' },
+    { id: 'tp-toran', file: 'tp-toran.png', zIndex: 3, role: 'mamidi-thoranam' },
+    { id: 'tp-jasmine-left', file: 'tp-jasmine-string.png', zIndex: 4, role: 'malle-poolu' },
+    { id: 'tp-jasmine-right', file: 'tp-jasmine-string.png', zIndex: 4, role: 'malle-poolu' },
+    { id: 'tp-canopy-left', file: 'tp-canopy-corner.png', zIndex: 5, role: 'floral' },
+    { id: 'tp-canopy-right', file: 'tp-canopy-corner.png', zIndex: 5, role: 'floral' },
+    { id: 'tp-bells-left', file: 'bells-left.png', zIndex: 6, role: 'bells' },
+    { id: 'tp-bells-right', file: 'bells-right.png', zIndex: 6, role: 'bells' },
+    { id: 'tp-foliage-bottom', file: 'tp-foliage-bottom.png', zIndex: 5, role: 'foliage' },
+    { id: 'tp-elephant-left', file: 'tp-elephant.png', zIndex: 6, role: 'ceremonial' },
+    { id: 'tp-elephant-right', file: 'tp-elephant.png', zIndex: 6, role: 'ceremonial' }
+  ];
+
+  /* Faint chukkala muggu (dot rangoli) set behind the date block: a 5x5 dot
+     grid wound with petal loops inside a ring of dots. */
+  var TELUGU_MUGGU = (function () {
+    var s = '<svg class="tp-muggu" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">' +
+      '<g fill="none" stroke="#A9803A" stroke-width="1.6">';
+    for (var a = 0; a < 360; a += 45) {
+      s += '<ellipse cx="0" cy="-48" rx="15" ry="34" transform="rotate(' + a + ')"/>';
+    }
+    s += '<circle r="22"/><circle r="88" stroke-dasharray="2 7" stroke-linecap="round"/></g><g fill="#A9803A">';
+    for (var x = -2; x <= 2; x++) for (var y = -2; y <= 2; y++) {
+      if (Math.abs(x) + Math.abs(y) <= 3) s += '<circle cx="' + (x * 9) + '" cy="' + (y * 9) + '" r="1.8"/>';
+    }
+    for (var b = 22.5; b < 360; b += 45) {
+      var rad = b * Math.PI / 180;
+      s += '<circle cx="' + (Math.sin(rad) * 70).toFixed(1) + '" cy="' + (-Math.cos(rad) * 70).toFixed(1) + '" r="2.6"/>';
+    }
+    return s + '</g></svg>';
+  })();
+
+  /* Regional wedding designs that share this layered layout. Each keeps the
+     same file set in its own asset folder; only the regional blessing words
+     and the optional native-script name fields differ. */
+  var REGIONAL_DESIGNS = {
+    'telugu-pelli': { dir: 'telugu-pelli', lang: 'te',
+      greeting: ['శ్రీరస్తు', 'శుభమస్తు', 'అవిఘ్నమస్తు'] },
+    'tamil-thirumanam': { dir: 'tamil-thirumanam', lang: 'ta',
+      greeting: ['ஸ்ரீரஸ்து', 'சுபமஸ்து', 'அவிக்னமஸ்து'] }
+  };
+
+  /* Relative luminance below ~0.35 reads as a dark background. */
+  function isDarkColor(hex) {
+    var m = /^#?([0-9a-f]{6})$/i.exec(String(hex || '').trim());
+    if (!m) return false;
+    var n = parseInt(m[1], 16);
+    var lin = function (c) { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); };
+    var L = 0.2126 * lin((n >> 16) & 255) + 0.7152 * lin((n >> 8) & 255) + 0.0722 * lin(n & 255);
+    return L < 0.35;
+  }
+
+  function regionalOf(data) {
+    return REGIONAL_DESIGNS[data && data.template] || REGIONAL_DESIGNS['telugu-pelli'];
+  }
+
+  function teluguAsset(data, file) {
+    return ((data && data.assetPrefix) || '') + 'images/invitation-assets/' + regionalOf(data).dir + '/' + file;
+  }
+
+  function teluguImg(data, file, cls) {
+    return '<img src="' + escapeHtml(teluguAsset(data, file)) + '" class="' + cls + '" alt="" aria-hidden="true" ' +
+      'onerror="this.style.display=\'none\'">';
+  }
+
+  function teluguDivider(data) {
+    return '<div class="tp-divider" aria-hidden="true">' + teluguImg(data, 'tp-divider.png', 'tp-divider__img') + '</div>';
+  }
+
+  function teluguHeading(data, text) {
+    return '<h3 class="tp-heading"><span class="tp-heading__line" aria-hidden="true"></span>' +
+      '<span class="tp-heading__text">' + escapeHtml(text) + '</span>' +
+      '<span class="tp-heading__line" aria-hidden="true"></span></h3>';
+  }
+
+  /* Telugu Pelli wedding body: blessing line, script names, date block,
+     venue between two lake palaces and the ceremony columns. Same data and
+     features (photo, countdown, maps link) as the generic wedding body. */
+  function teluguPelliContent(data, d, time) {
+    var html = [];
+    var heart = '<span class="tp-heart" aria-hidden="true">&#9829;</span>';
+    var kicker = data.additionalTitle || 'With the blessings of our parents';
+    var intro = data.additionalSubtitle || 'Together with their families\nwe joyfully invite you to celebrate the wedding of';
+    if (data.eventType === 'engagement') intro = intro.replace(/celebrate the wedding of/i, 'celebrate the engagement of');
+
+    html.push('<div class="tp-crest">' + teluguImg(data, 'tp-ganesha.png', 'tp-crest__img') + '</div>');
+    var region = regionalOf(data);
+    html.push('<p class="tp-greeting" lang="' + region.lang + '">' +
+      region.greeting.map(function (w) { return '<span>' + w + '</span>'; }).join('') + '</p>');
+    html.push('<p class="invitation__additional-title tp-kicker">' + escapeHtml(kicker) + '</p>');
+    html.push('<p class="invitation__additional-subtitle tp-intro">' + escapeHtml(intro) + '</p>');
+
+    if (data.photo) {
+      html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
+    }
+
+    var first = escapeHtml(data.groomName || 'Groom');
+    var second = escapeHtml(data.brideName || 'Bride');
+    var nativeName = function (v) {
+      return v ? '<p class="tp-name-te" lang="' + region.lang + '">' + escapeHtml(v) + '</p>' : '';
+    };
+    var firstTe = '';
+    var secondTe = '';
+    if (data.namesSwapped) {
+      var t = first; first = second; second = t;
+      t = firstTe; firstTe = secondTe; secondTe = t;
+    }
+    /* Pasupu (turmeric) and kumkuma dots, as dabbed on Telugu invitation cards. */
+    var pasupuKumkuma = '<span class="tp-pk" aria-hidden="true"><i class="tp-pk__pasupu"></i><i class="tp-pk__kumkuma"></i></span>';
+    html.push('<div class="invitation__couple tp-couple">' +
+      '<p class="tp-aside tp-aside--left" aria-hidden="true">Good<br>people<br>beautiful<br>places<br>brighter<br>tomorrows<br>' + heart + '</p>' +
+      '<h2 class="invitation__person-name tp-name">' + first + '</h2>' + firstTe +
+      '<div class="tp-amp">' + teluguImg(data, 'tp-sprig.png', 'tp-sprig tp-sprig--left') +
+        '<span class="amp">&amp;</span>' + teluguImg(data, 'tp-sprig.png', 'tp-sprig tp-sprig--right') + '</div>' +
+      '<h2 class="invitation__person-name tp-name">' + second + '</h2>' + secondTe +
+      '<p class="tp-aside tp-aside--right" aria-hidden="true">A new<br>chapter<br>begins&hellip;<br><span class="tp-heart tp-heart--outline">&#9825;</span></p>' +
+    '</div>');
+    html.push('<p class="tp-tagline">Two souls ' + pasupuKumkuma + ' One beautiful journey</p>');
+
+    if (d.full || time) {
+      html.push('<div class="invitation__when-unified tp-date">' + TELUGU_MUGGU +
+        '<div class="tp-date__weekday"><span class="tp-date__rule"></span>' + escapeHtml((d.weekday || 'Day').toUpperCase()) + '<span class="tp-date__rule"></span></div>' +
+        '<div class="tp-date__row">' +
+          '<span class="tp-date__month">' + escapeHtml((d.month || 'Month').slice(0, 3).toUpperCase()) + '</span>' +
+          '<span class="tp-date__day">' + escapeHtml(d.day || '—') + '</span>' +
+          '<span class="tp-date__year">' + escapeHtml(d.year || '—') + '</span>' +
+        '</div>' +
+        (time ? '<div class="tp-date__time">' + escapeHtml(time) + ' onwards</div>' : '') +
+      '</div>');
+    }
+
+    if (data.showCountdown !== false && data.date && IH.countdown) {
+      html.push(IH.countdown.markup(toDateTime(data.date, data.time), '', data.eventType));
+    }
+
+    if (data.venue || data.address) {
+      var mapsUrl = getMapsUrl(data);
+      html.push(teluguDivider(data));
+      /* The host's venue photo, or a traditional kalyana mandapam when none
+         has been added. The venue image stays editable in the editor. */
+      var venuePhoto = data.venueImage || teluguAsset(data, 'tp-venue-default.jpg');
+      /* Side by side: venue photo left, details right, with the temple
+         vignette as a soft backdrop behind the details. */
+      html.push('<div class="tp-venue tp-venue--side">' +
+        '<figure class="tp-venue-photo"><img src="' + escapeHtml(venuePhoto) + '" alt="' +
+          escapeHtml(data.venue || 'Wedding venue') + '" loading="lazy" onerror="this.closest(\'figure\').style.display=\'none\'"></figure>' +
+        teluguImg(data, 'tp-temple-side.png', 'tp-palace tp-palace--left') +
+        teluguImg(data, 'tp-temple-side.png', 'tp-palace tp-palace--right') +
+        '<div class="tp-venue__body">' +
+          '<div class="tp-venue__title">' + IH.icon('map-pin', 16) + ' <span>' + (data.eventType === 'engagement' ? 'Engagement Ceremony' : 'Wedding Ceremony') + '</span></div>' +
+          (data.venue ? '<div class="invitation__venue-name tp-venue__name"><strong>' + escapeHtml(data.venue) + '</strong></div>' : '') +
+          (data.address ? '<div class="invitation__venue-address tp-venue__address">' + escapeHtml(data.address) + '</div>' : '') +
+          (mapsUrl ? '<a class="tp-venue__map invitation__maps-btn" href="' + escapeHtml(mapsUrl) + '" target="_blank" rel="noopener noreferrer">View location</a>' : '') +
+        '</div>' +
+      '</div>');
+      html.push(teluguDivider(data));
+    }
+
+    /* With the blessings block shown, the message closes the card there. */
+    if (data.message && data.showBlessings === false) {
+      html.push('<p class="invitation__message tp-message">' + escapeHtml(data.message) + '</p>');
+    }
+
+    var events = [
+      { enabled: data.haldiEnabled, title: 'Haldi', date: data.haldiDate, time: data.haldiTime, icon: 'tp-icon-haldi.png' },
+      { enabled: data.mehndiEnabled, title: 'Mehndi', date: data.mehndiDate, time: data.mehndiTime, icon: 'tp-icon-gorintaku.png' },
+      { enabled: data.ceremonyEnabled, title: 'Wedding Ceremony', date: data.ceremonyDate, time: data.ceremonyTime, icon: 'tp-icon-mangalsutra.png' },
+      { enabled: data.receptionEnabled, title: 'Reception', date: data.receptionDate, time: data.receptionTime, icon: 'tp-icon-kalasam.png' }
+    ].filter(function (e) { return e.enabled; });
+    var isEngagement = data.eventType === 'engagement';
+    if (isEngagement) {
+      events = events.filter(function (e) { return e.icon === 'tp-icon-mangalsutra.png' || e.icon === 'tp-icon-kalasam.png'; });
+      events.forEach(function (e) { e.title = e.icon === 'tp-icon-mangalsutra.png' ? 'Ring Ceremony' : (/^(0\d|1[0-5]):/.test(e.time || '') ? 'Engagement Lunch' : 'Engagement Dinner'); });
+    }
+
+    if (events.length) {
+      html.push(teluguHeading(data, isEngagement ? 'Engagement Celebrations' : 'Wedding Celebrations'));
+      html.push('<div class="tp-events tp-events--' + events.length + '">');
+      events.forEach(function (e) {
+        var ed = formatDate(e.date);
+        var when = ed.full ? (ed.weekday + ', ' + ed.day + ' ' + ed.month.slice(0, 3) + ' ' + ed.year) : '';
+        html.push('<div class="tp-event">' +
+          teluguImg(data, e.icon, 'tp-event__icon') +
+          '<strong class="tp-event__title">' + escapeHtml(e.title) + '</strong>' +
+          (when ? '<span class="tp-event__date">' + escapeHtml(when) + '</span>' : '') +
+          (e.time ? '<span class="tp-event__time">' + escapeHtml(formatTime(e.time)) + '</span>' : '') +
+        '</div>');
+      });
+      html.push('</div>');
+      html.push(teluguDivider(data));
+    }
+    return html.join('');
+  }
+
+  function teluguPelliBackdrop(data) {
+    var prefix = (data && data.assetPrefix) || '';
+    var arch = '<svg class="inv-layer inv-layer--tp-arch" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">' +
+      '<path d="M0 120 V44 H120 C134 44 140 36 150 26 C160 14 176 8 188 8 Q194 0 200 0 Q206 0 212 8 C224 8 240 14 250 26 C260 36 266 44 280 44 H400 V120" ' +
+      'fill="none" stroke="#E4D6BC" stroke-width="7"/>' +
+      '<path d="M0 120 V44 H120 C134 44 140 36 150 26 C160 14 176 8 188 8 Q194 0 200 0 Q206 0 212 8 C224 8 240 14 250 26 C260 36 266 44 280 44 H400 V120" ' +
+      'fill="none" stroke="#C9A961" stroke-width="1" transform="translate(0 7)"/></svg>';
+    var layers = TELUGU_PELLI_ASSETS.map(function (asset) {
+      if (asset.pillar) {
+        var url = function (f) { return 'url(\'' + escapeHtml(teluguAsset(data, f)) + '\')'; };
+        return '<div class="inv-layer inv-layer--tp-pillar inv-layer--' + escapeHtml(asset.id) + '" style="background-image:' +
+          url('tp-pillar-cap.png') + ',' + url('tp-pillar-base.png') + ',' + url('tp-pillar-shaft.png') + '"></div>';
+      }
+      return '<img src="' + escapeHtml(teluguAsset(data, asset.file)) + '" ' +
+        'class="inv-layer inv-layer--' + escapeHtml(asset.id) + '" alt="" ' +
+        'onerror="this.style.display=\'none\'">';
+    });
+    return '<div class="invitation__backdrop invitation__backdrop--regional invitation__backdrop--' +
+      escapeHtml(regionalOf(data).dir) + '" aria-hidden="true">' +
+      arch + layers.join('') +
+    '</div>';
+  }
+
+
   IH.invitation = {
     EVENT_TYPES: EVENT_TYPES,
     SAMPLE: SAMPLE,
+    TELUGU_PELLI_ASSETS: TELUGU_PELLI_ASSETS,
+    TELUGU_MUGGU: TELUGU_MUGGU,
+    REGIONAL_DESIGNS: REGIONAL_DESIGNS,
+    weddingTextFor: weddingTextFor,
+    isWeddingSampleText: isWeddingSampleText,
+    BIRTHDAY_TEXT_FIELDS: BIRTHDAY_TEXT_FIELDS,
+    birthdayTextFor: birthdayTextFor,
+    isBirthdaySampleText: isBirthdaySampleText,
+    OCCASION_DETAILS: OCCASION_DETAILS,
+    occasionTextFor: occasionTextFor,
+    isOccasionSampleText: isOccasionSampleText,
+    occasionEvents: occasionEvents,
+    isDarkColor: isDarkColor,
 
     /* The wording that suits one occasion suits no other, so the sample
        copy is kept per event type. The editor borrows the message from
@@ -330,7 +783,9 @@
       var c = data.colors || (tpl ? tpl.colors : null) || {
         primary: '#8B2F58', secondary: '#B98A2E', bg1: '#FDF0F4', bg2: '#F6D9E4', ink: '#4A2033'
       };
-      var fonts = GOOGLE_FONTS[data.font] || GOOGLE_FONTS.playfair;
+      /* No font picked = the design's own font; a pick always wins. */
+      var fontKey = data.font || (data.template === 'telugu-pelli' ? 'telugu' : (data.template === 'tamil-thirumanam' ? 'tamil' : 'playfair'));
+      var fonts = GOOGLE_FONTS[fontKey] || GOOGLE_FONTS.playfair;
       var parts = [
         '--inv-primary:' + c.primary,
         '--inv-secondary:' + c.secondary,
@@ -341,7 +796,10 @@
         '--inv-font-body:' + fonts.body
       ];
       if (data.background) {
-        parts.push('background-image:linear-gradient(160deg, ' + c.bg1 + 'D9, ' + c.bg2 + 'D9), url(' + data.background + ')');
+        /* Telugu Pelli carries its own layered artwork, so an uploaded
+           background sits under a heavier veil there to keep text clear. */
+        var veil = REGIONAL_DESIGNS[data.template] ? 'F5' : 'D9';
+        parts.push('background-image:linear-gradient(160deg, ' + c.bg1 + veil + ', ' + c.bg2 + veil + '), url(' + data.background + ')');
         parts.push('background-size:cover');
         parts.push('background-position:center');
       }
@@ -352,6 +810,10 @@
        into a modal, the editor stage or a standalone page alike. */
     render: function (input) {
       var data = Object.assign({}, SAMPLE, input || {});
+      /* The default subtitle names the occasion: an engagement never says "wedding". */
+      if (data.eventType === 'engagement' && typeof data.additionalSubtitle === 'string') {
+        data.additionalSubtitle = data.additionalSubtitle.replace(/celebrate the wedding of/i, 'celebrate the engagement of');
+      }
       var type = EVENT_TYPES[data.eventType] ? data.eventType : 'other';
       var meta = EVENT_TYPES[type];
       var d = formatDate(data.date);
@@ -359,116 +821,332 @@
       var ornament = ORNAMENTS[meta.motif] || ORNAMENTS.floral;
       var html = [];
 
-      html.push('<article class="invitation invitation--' + type + '" style="' + this.styleVars(data) + '" ' +
+      var tplSlug = data.template || '';
+      /* Regional designs share the "regional" layout classes. Tamil Thirumanam
+         drops its old tpl class, whose maroon premium-classic rules would
+         otherwise override the shared layout. */
+      var isRegional = !!REGIONAL_DESIGNS[tplSlug];
+      var tplClass = tplSlug && tplSlug !== 'tamil-thirumanam' ? ' invitation--tpl-' + escapeHtml(tplSlug) : '';
+      if (isRegional) {
+        tplClass += ' invitation--regional invitation--regional-' + escapeHtml(tplSlug);
+        /* Text colours follow the background: a dark palette (template default
+           or the host's own colours) switches to light gold/ivory text. */
+        var regTpl = IH.data && IH.data.getTemplate ? IH.data.getTemplate(tplSlug) : null;
+        var regBg = (data.colors && data.colors.bg1) || (regTpl && regTpl.colors && regTpl.colors.bg1);
+        if (isDarkColor(regBg)) tplClass += ' invitation--regional-dark';
+      }
+      /* Every other wedding template gets its own design from the wedding
+         design engine (js/wedding-designs.js): layout, frame, fonts, motif
+         and text colours that follow its background. */
+      var WD = IH.weddingDesigns;
+      // Baby shower, naming ceremony, housewarming and anniversary only on their own designs.
+      var wdOn = !isRegional && !!WD && WD.applies(tplSlug) && (type === 'wedding' || type === 'engagement' || type === 'reception' || type === 'birthday' ||
+        (WD.isOneName(WD.spec(tplSlug)) && WD.spec(tplSlug).occasion === type));
+      var wdStyle = '';
+      if (wdOn) {
+        var wdTpl = IH.data && IH.data.getTemplate ? IH.data.getTemplate(tplSlug) : null;
+        var wdAttrs = WD.articleAttrs(data, data.colors || (wdTpl && wdTpl.colors) || {});
+        tplClass += wdAttrs.cls;
+        wdStyle = ';' + wdAttrs.vars;
+      }
+      /* Entrance animation: plays once as the card appears. */
+      var enterClass = data.animation === 'none' ? '' : ' invitation--enter-' + (data.animation === 'pop' ? 'pop' : 'fade');
+      /* A picked heading font also replaces the regional designs' own name script. */
+      if (data.font) enterClass += ' invitation--font-picked';
+      html.push('<article class="invitation invitation--' + type + tplClass + enterClass + '" style="' + this.styleVars(data) + wdStyle + '" ' +
         'aria-label="' + escapeHtml(meta.label) + ' invitation preview">');
 
+      if (isRegional) {
+        html.push(teluguPelliBackdrop(data));
+      } else if (wdOn) {
+        html.push(WD.frame(data));
+      }
 
-      html.push('<div class="invitation__ornament">' + ornament + '</div>');
+      /* No generic category background layer: every template carries its own
+         design, which that image would cover (older drafts may still hold one). */
+
+      var tpl = IH.data && IH.data.getTemplate ? IH.data.getTemplate(tplSlug) : null;
+      var ornament = (tpl && tpl.motif && ORNAMENTS[tpl.motif]) || ORNAMENTS[data.motif] || ORNAMENTS[meta.motif] || ORNAMENTS.floral;
+      if (tplSlug !== 'telugu-pelli' && tplSlug !== 'tamil-thirumanam' && !wdOn) {
+        html.push('<div class="invitation__ornament">' + ornament + '</div>');
+      }
 
       /* The top line names who is hosting. The Hosted by field leads for
-         every occasion now, with the organisation behind an institutional
-         event as the fallback, so corporate cards no longer lose it. */
+      every occasion now, with the organisation behind an institutional
+      event as the fallback, so corporate cards no longer lose it. */
       var orgName = data.organization;
       var hostLine = data.hostName || orgName;
-      html.push('<p class="invitation__kicker">' + escapeHtml(hostLine || meta.kicker) + '</p>');
 
-      if (data.photo) {
-        html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
-      }
+      var wdCtx = { esc: escapeHtml, icon: IH.icon, toDateTime: toDateTime, mapsUrl: getMapsUrl, formatDate: formatDate, formatTime: formatTime,
+        occasion: OCCASION_DETAILS[type], occasionEvents: occasionEvents, genderize: genderizeText };
+      if ((type === 'wedding' || type === 'engagement') && isRegional) {
+        html.push(teluguPelliContent(data, d, time));
+      } else if (wdOn) {
+        html.push(WD.render(data, d, time, wdCtx));
+      } else if (type === 'wedding' || type === 'engagement') {
+        /* Wedding card strict 9-element order:
+           1. Additional title
+           2. Additional subtitle
+           3. Main photo
+           4. Groom's name and Bride's name
+           5. SON OF and DAUGHTER OF
+           6. Date and time
+           7. Invitation message
+           8. Countdown
+           9. Venue, Full address and Google Maps URL */
 
-      html.push('<h2 class="invitation__names">' + headlineFor(data) + '</h2>');
+        // 1. Additional title
+        if (data.additionalTitle) {
+          html.push('<p class="invitation__additional-title">' + escapeHtml(data.additionalTitle) + '</p>');
+        }
 
-      var sub = subheadFor(data);
-      if (sub) html.push('<p class="invitation__kicker invitation__subhead">' + sub + '</p>');
+        // 2. Additional subtitle
+        if (data.additionalSubtitle) {
+          html.push('<p class="invitation__additional-subtitle">' + escapeHtml(data.additionalSubtitle) + '</p>');
+        }
 
-      /* A naming ceremony introduces the baby by relationship as well as by
-         name: "OUR DAUGHTER" above the name, then "Daughter of <parents>"
-         underneath it. Each value stays in its own field — the relation is
-         never copied from anywhere, and the parents' names never fall back
-         to the host's. */
-      if (type === 'naming-ceremony') {
-        var relation = /daughter/i.test(String(data.babyRelation || '')) ? 'Daughter' : 'Son';
-        if (data.babyName || data.personName) {
-          html.push('<p class="invitation__relation-kicker">OUR ' + relation.toUpperCase() + '</p>');
-          if (data.parentsName) {
-            html.push('<p class="invitation__relation"><span>' + relation + ' of</span>' +
-              '<strong>' + escapeHtml(data.parentsName) + '</strong></p>');
+        // 3. Main photo
+        if (data.photo) {
+          html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
+        }
+
+        // 4 & 5. Groom’s name and Bride’s name + SON OF and DAUGHTER OF
+        var groom = escapeHtml(data.groomName || 'Groom');
+        var bride = escapeHtml(data.brideName || 'Bride');
+        var groomParents = data.groomParents || 'Groom’s Parents';
+        var brideParents = data.brideParents || 'Bride’s Parents';
+        var leftName = groom, leftParents = groomParents, leftRelation = 'Son', leftClass = 'groom';
+        var rightName = bride, rightParents = brideParents, rightRelation = 'Daughter', rightClass = 'bride';
+
+        if (data.namesSwapped) {
+          leftName = bride; leftParents = brideParents; leftRelation = 'Daughter'; leftClass = 'bride';
+          rightName = groom; rightParents = groomParents; rightRelation = 'Son'; rightClass = 'groom';
+        }
+
+        var swappedClass = data.namesSwapped ? ' invitation__couple--swapped' : '';
+        html.push('<div class="invitation__couple' + swappedClass + '">');
+        html.push('  <div class="invitation__person invitation__person--left invitation__person--' + leftClass + '">');
+        html.push('    <h2 class="invitation__person-name">' + leftName + '</h2>');
+        if (leftParents) {
+          html.push('    <p class="invitation__person-parents"><span>' + leftRelation + ' of</span><strong>' + escapeHtml(leftParents) + '</strong></p>');
+        }
+        html.push('  </div>');
+        html.push('  <div class="invitation__couple-sep"><span class="amp">&amp;</span></div>');
+        html.push('  <div class="invitation__person invitation__person--right invitation__person--' + rightClass + '">');
+        html.push('    <h2 class="invitation__person-name">' + rightName + '</h2>');
+        if (rightParents) {
+          html.push('    <p class="invitation__person-parents"><span>' + rightRelation + ' of</span><strong>' + escapeHtml(rightParents) + '</strong></p>');
+        }
+        html.push('  </div>');
+        html.push('</div>');
+
+        // 6. Date and time
+        if (d.full || time) {
+          html.push('<div class="invitation__save-date">' + IH.icon('calendar', 18) + ' <span>SAVE THE DATE</span></div>');
+          html.push('<div class="invitation__when-unified">' +
+            '<div class="invitation__when-unified-date">' + escapeHtml((d.weekday || 'Day').toUpperCase() + ', ' + (d.day || '—') + ' ' + (d.month || 'Month').toUpperCase() + ' ' + (d.year || '—')) + '</div>' +
+            '<div class="invitation__when-unified-time">' + escapeHtml(time || '—') + '</div>' +
+          '</div>');
+        }
+
+        // 7. Invitation message
+        if (data.message) {
+          html.push('<div class="invitation__rule" aria-hidden="true">' + IH.icon('sparkles', 16) + '</div>');
+          html.push('<div class="invitation__chapter-title">' + IH.icon('heart', 16) + ' <span>A NEW CHAPTER BEGINS</span></div>');
+          html.push('<p class="invitation__message">' + escapeHtml(data.message) + '</p>');
+        }
+
+        // 8. countdown
+        if (data.showCountdown !== false && data.date && IH.countdown) {
+          html.push(IH.countdown.markup(toDateTime(data.date, data.time), '', data.eventType));
+        }
+
+        // 9. Venue , Full address and Google Maps URL
+        if (data.venue || data.address) {
+          var mapsUrl = getMapsUrl(data);
+          html.push('<div class="invitation__venue-title">' + IH.icon('map-pin', 18) + ' <span>CELEBRATION VENUE</span></div>');
+
+          html.push('<div class="invitation__venue-section">');
+
+          var venueImgSrc = data.venueImage || 'images/templates/venue-default.jpg';
+          html.push('<img class="invitation__venue-img" src="' + escapeHtml(venueImgSrc) + '" onerror="this.onerror=null; this.src=\'images/templates/wedding-day-mandap.svg\';" alt="Venue">');
+
+          html.push('<div class="invitation__venue-info">' +
+            (data.venue ? '<div class="invitation__venue-name"><strong>' + escapeHtml(data.venue) + '</strong></div>' : '') +
+            (data.address ? '<div class="invitation__venue-address">' + escapeHtml(data.address) + '</div>' : '') +
+            (mapsUrl ? '<a class="inv-btn inv-btn--outline inv-btn--sm invitation__maps-btn" href="' + escapeHtml(mapsUrl) + '" target="_blank" rel="noopener noreferrer">' +
+              IH.icon('map-pin', 14) + '<span>View Location</span></a>' : '') +
+          '</div>');
+
+          html.push('</div>');
+        }
+
+        // Wedding celebrations
+        var events = [
+          { enabled: data.haldiEnabled, title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: 'images/ceremony-icons/haldi.png', fallback: 'images/templates/haldi-ceremony.svg' },
+          { enabled: data.mehndiEnabled, title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: 'images/ceremony-icons/mehndi.png', fallback: 'images/templates/mehendi-ceremony.svg' },
+          { enabled: data.ceremonyEnabled, title: 'WEDDING', date: data.ceremonyDate, time: data.ceremonyTime, image: 'images/ceremony-icons/wedding.png', fallback: 'images/templates/wedding-day-mandap.svg' },
+          { enabled: data.receptionEnabled, title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: 'images/ceremony-icons/reception.png', fallback: 'images/templates/reception-evening.svg' }
+        ].filter(function(e) { return e.enabled; });
+        /* An engagement has a ring ceremony and a meal, not wedding rituals. */
+        var isEngagement = type === 'engagement';
+        if (isEngagement) {
+          events = events.filter(function (e) { return e.title === 'WEDDING' || e.title === 'RECEPTION'; });
+          events.forEach(function (e) { e.title = e.title === 'WEDDING' ? 'RING CEREMONY' : (/^(0\d|1[0-5]):/.test(e.time || '') ? 'Engagement Lunch' : 'Engagement Dinner').toUpperCase(); });
+        }
+
+        if (events.length > 0) {
+          html.push('<div class="invitation__events-title">' + IH.icon('calendar', 18) + ' <span>' + (isEngagement ? 'ENGAGEMENT CELEBRATIONS' : 'WEDDING CELEBRATIONS') + '</span></div>');
+          html.push('<div class="invitation__events-grid">');
+          events.forEach(function(e) {
+            var ed = formatDate(e.date);
+            var et = formatTime(e.time);
+            var displayTitle = e.title;
+
+            html.push('<div class="invitation__event-card">' +
+              (e.image ? '<img class="invitation__event-img" src="' + escapeHtml(e.image) + '" onerror="this.onerror=null; this.src=\'' + escapeHtml(e.fallback) + '\';" alt="' + escapeHtml(displayTitle) + '">' : '') +
+              '<strong class="invitation__event-title">' + escapeHtml(displayTitle) + '</strong>' +
+              '<span class="invitation__event-weekday">' + escapeHtml(ed.weekday || '') + '</span>' +
+              '<span class="invitation__event-date">' + escapeHtml(ed.full || '') + '</span>' +
+              '<span class="invitation__event-time">' + escapeHtml(et || '') + '</span>' +
+              '</div>');
+          });
+          html.push('</div>');
+        }
+      } else {
+        /* Occasions with Additional Details: the header wording replaces the
+           host line (an older draft without it keeps the host line). */
+        var occ = OCCASION_DETAILS[type];
+        var occTitle = occ ? splitText(data.additionalTitle) : [];
+        var occSub = occ ? splitText(data.additionalSubtitle) : [];
+        if (occTitle.length) {
+          html.push('<p class="invitation__kicker">' + escapeHtml(occTitle[0]) + '</p>');
+          if (occTitle[1]) html.push('<p class="invitation__lead">' + escapeHtml(occTitle.slice(1).join(' ')) + '</p>');
+        } else {
+          html.push('<p class="invitation__kicker">' + escapeHtml(hostLine || meta.kicker) + '</p>');
+        }
+        if (occSub.length > 1) html.push('<div class="invitation__chapter-title">' + IH.icon('sparkles', 16) + ' <span>' + escapeHtml(occSub[0]) + '</span></div>');
+        if (occSub.length) html.push('<p class="invitation__lead">' + escapeHtml(occSub.length > 1 ? occSub.slice(1).join(' ') : occSub[0]) + '</p>');
+
+        if (data.photo) {
+          html.push('<img class="invitation__photo" src="' + escapeHtml(data.photo) + '" alt="Photo of the hosts" width="128" height="128">');
+        }
+
+        html.push('<h2 class="invitation__names">' + headlineFor(data) + '</h2>');
+
+        var sub = subheadFor(data);
+        if (sub) html.push('<p class="invitation__kicker invitation__subhead">' + sub + '</p>');
+
+        /* A naming ceremony introduces the baby by relationship as well as by
+           name: "OUR DAUGHTER" above the name, then "Daughter of <parents>"
+           underneath it. Each value stays in its own field — the relation is
+           never copied from anywhere, and the parents' names never fall back
+           to the host's. */
+        if (type === 'naming-ceremony') {
+          var relation = /daughter/i.test(String(data.babyRelation || '')) ? 'Daughter' : 'Son';
+          if (data.babyName || data.personName) {
+            html.push('<p class="invitation__relation-kicker">OUR ' + relation.toUpperCase() + '</p>');
+            if (data.parentsName) {
+              html.push('<p class="invitation__relation"><span>' + relation + ' of</span>' +
+                '<strong>' + escapeHtml(data.parentsName) + '</strong></p>');
+            }
           }
         }
-      }
 
-      html.push('<div class="invitation__rule" aria-hidden="true">' + IH.icon('sparkles', 16) + '</div>');
+        html.push('<div class="invitation__rule" aria-hidden="true">' + IH.icon('sparkles', 16) + '</div>');
 
-      /* A naming ceremony announces the baby by relation, so its message
-         is genderised to match the selected Baby's relation — Son or
-         Daughter — wherever a gendered word appears. Other occasions keep
-         the copy exactly as typed. */
-      if (data.message) {
-        var message = type === 'naming-ceremony'
-          ? genderizeText(data.message, data.babyRelation)
-          : data.message;
-        html.push('<p class="invitation__message">' + escapeHtml(message) + '</p>');
-      }
+        /* A naming ceremony announces the baby by relation, so its message
+           is genderised to match the selected Baby's relation — Son or
+           Daughter — wherever a gendered word appears. Other occasions keep
+           the copy exactly as typed. */
+        if (data.message) {
+          html.push('<div class="invitation__chapter-title">' + IH.icon('heart', 16) + ' <span>' + escapeHtml(occ ? occ.message.toUpperCase() : 'A NEW CHAPTER BEGINS') + '</span></div>');
+          var message = type === 'naming-ceremony'
+            ? genderizeText(data.message, data.babyRelation)
+            : data.message;
+          html.push('<p class="invitation__message">' + escapeHtml(message) + '</p>');
+        }
 
-      /* Optional category extras — the institution behind the event, the
-         degree or class, the role, the theme and so on. Kept out of the
-         way until the host actually fills one in, so a default card looks
-         exactly as it always did. When the organisation is already the
-         top line, it is not repeated here. */
-      var details = [];
-      function detail(label, value) {
-        if (value) details.push('<p><strong>' + escapeHtml(label) + ':</strong> ' + escapeHtml(value) + '</p>');
-      }
-      if (data.hostName) detail('Organization', data.organization);
-      detail('Department', data.department);
-      detail('Course / Class', data.classCourse);
-      detail('Role', data.role);
-      detail('Years of service', data.yearsOfService);
-      detail('Event type', data.eventKind);
-      detail('Theme', data.theme);
-      /* Baby shower: the baby's name leads as the main title, so it is
-         not repeated here; the "Parent / Parents' name" field (personName)
-         fills the Parents line instead. */
-      if (type === 'baby-shower') {
-        detail('Parents', data.personName);
-      } else if (type !== 'naming-ceremony') {
-        detail('Baby name', data.babyName);
-      }
-      /* A naming ceremony announces the baby and its parents in the
-         dedicated relationship block above, so a second "Parents: …"
-         line here would only repeat it. */
-      if (type !== 'naming-ceremony') {
-        detail('Parents', data.parentsName);
-      }
-      if (data.years) {
-        if (type === 'birthday') detail('Age', data.years);
-        if (type === 'anniversary') detail('Years together', data.years);
-      }
-      if (details.length) {
-        html.push('<div class="invitation__extra"><small>Details</small>' + details.join('') + '</div>');
-      }
+        /* Optional category extras — the institution behind the event, the
+           degree or class, the role, the theme and so on. Kept out of the
+           way until the host actually fills one in, so a default card looks
+           exactly as it always did. When the organisation is already the
+           top line, it is not repeated here. */
+        var details = [];
+        function detail(label, value) {
+          if (value) details.push('<p><strong>' + escapeHtml(label) + ':</strong> ' + escapeHtml(value) + '</p>');
+        }
+        // Shown here unless the organisation is already the top line.
+        if (data.hostName || occTitle.length) detail('Organization', data.organization);
+        detail('Department', data.department);
+        detail('Course / Class', data.classCourse);
+        detail('Role', data.role);
+        detail('Years of service', data.yearsOfService);
+        detail('Event type', data.eventKind);
+        detail('Theme', data.theme);
+        /* Baby shower: the baby's name leads as the main title, so it is
+           not repeated here; the "Parent / Parents' name" field (personName)
+           fills the Parents line instead. */
+        if (type === 'baby-shower') {
+          detail('Parents', data.personName);
+        } else if (type !== 'naming-ceremony') {
+          detail('Baby name', data.babyName);
+        }
+        /* A naming ceremony announces the baby and its parents in the
+           dedicated relationship block above, so a second "Parents: …"
+           line here would only repeat it. */
+        if (type !== 'naming-ceremony') {
+          detail('Parents', data.parentsName);
+        }
+        if (data.years) {
+          if (type === 'birthday') detail('Age', data.years);
+          if (type === 'anniversary') detail('Years together', data.years);
+        }
+        if (details.length) {
+          html.push('<div class="invitation__extra"><small>Details</small>' + details.join('') + '</div>');
+        }
 
-      if (d.full || time) {
-        html.push('<div class="invitation__when">' +
-          '<div><small>' + escapeHtml(d.weekday || 'Date') + '</small>' +
-            '<div class="invitation__when-date">' + escapeHtml(d.full || 'Date to be announced') + '</div></div>' +
-          '<div class="invitation__when-sep" aria-hidden="true"></div>' +
-          '<div><small>Time</small><div class="invitation__when-date">' + escapeHtml(time || '—') + '</div></div>' +
-        '</div>');
-      }
+        if (d.full || time) {
+          html.push('<div class="invitation__save-date">' + IH.icon('calendar', 18) + ' <span>SAVE THE DATE</span></div>');
+          html.push('<div class="invitation__when-unified">' +
+            '<div class="invitation__when-unified-date">' + escapeHtml((d.weekday || 'Day').toUpperCase() + ', ' + (d.day || '—') + ' ' + (d.month || 'Month').toUpperCase() + ' ' + (d.year || '—')) + '</div>' +
+            '<div class="invitation__when-unified-time">' + escapeHtml(time || '—') + '</div>' +
+          '</div>');
+        }
 
-      if (data.venue || data.address) {
-        var mapsUrl = getMapsUrl(data);
-        html.push('<div class="invitation__venue">' +
-          (data.venue ? '<div class="invitation__venue-name"><strong>' + escapeHtml(data.venue) + '</strong></div>' : '') +
-          (data.address ? '<div class="invitation__venue-address">' + escapeHtml(data.address) + '</div>' : '') +
-          (mapsUrl ? '<a class="inv-btn inv-btn--outline inv-btn--sm invitation__maps-btn" href="' + escapeHtml(mapsUrl) + '" target="_blank" rel="noopener noreferrer">' +
-            IH.icon('map-pin', 14) + '<span>View Location</span></a>' : '') +
-        '</div>');
-      }
+        if (data.venue || data.address) {
+          var mapsUrl = getMapsUrl(data);
+          html.push('<div class="invitation__venue-title">' + IH.icon('map-pin', 18) + ' <span>' + escapeHtml(occ ? occ.venue.toUpperCase() : 'CELEBRATION VENUE') + '</span></div>');
+          html.push('<div class="invitation__venue">' +
+            (data.venue ? '<div class="invitation__venue-name"><strong>' + escapeHtml(data.venue) + '</strong></div>' : '') +
+            (data.address ? '<div class="invitation__venue-address">' + escapeHtml(data.address) + '</div>' : '') +
+            (mapsUrl ? '<a class="inv-btn inv-btn--outline inv-btn--sm invitation__maps-btn" href="' + escapeHtml(mapsUrl) + '" target="_blank" rel="noopener noreferrer">' +
+              IH.icon('map-pin', 14) + '<span>View Location</span></a>' : '') +
+          '</div>');
+        }
 
-      if (data.showCountdown !== false && data.date && IH.countdown) {
-        html.push(IH.countdown.markup(toDateTime(data.date, data.time)));
+        if (data.showCountdown !== false && data.date && IH.countdown) {
+          html.push(IH.countdown.markup(toDateTime(data.date, data.time), '', data.eventType));
+        }
+
+        // The programme from Additional Details, drawn with the design engine's icons.
+        var occEvents = occasionEvents(data);
+        if (occEvents.length) {
+          var iconSrc = IH.weddingDesigns && IH.weddingDesigns.eventIconSrc;
+          html.push('<div class="invitation__events-title">' + IH.icon('calendar', 18) + ' <span>' + escapeHtml(occ.programme.toUpperCase()) + '</span></div>');
+          html.push('<div class="invitation__events-grid">');
+          occEvents.forEach(function (e) {
+            var ed = formatDate(e.date);
+            html.push('<div class="invitation__event-card">' +
+              (iconSrc ? '<img class="invitation__event-img" src="' + iconSrc(e.icon) + '" alt="" aria-hidden="true" loading="lazy">' : '') +
+              '<strong class="invitation__event-title">' + escapeHtml(e.title) + '</strong>' +
+              '<span class="invitation__event-weekday">' + escapeHtml(ed.weekday || '') + '</span>' +
+              '<span class="invitation__event-date">' + escapeHtml(ed.full || '') + '</span>' +
+              '<span class="invitation__event-time">' + escapeHtml(formatTime(e.time) || '') + '</span>' +
+              '</div>');
+          });
+          html.push('</div>');
+        }
       }
 
       if (data.additionalInformation) {
@@ -480,10 +1158,75 @@
          grid. The card preview is narrower, so it caps at three and the rest
          are reachable by scrolling. Only the host's uploads appear. */
       if (data.showGallery !== false && data.gallery && data.gallery.length) {
+        html.push('<div class="invitation__gallery-title">' + IH.icon('image', 18) + ' <span>PHOTO GALLERY</span></div>');
         var items = data.gallery.slice(0, 6).map(function (src) {
           return '<li><img src="' + escapeHtml(src) + '" alt="Gallery photo" loading="lazy"></li>';
         }).join('');
-        html.push('<ul class="invitation__gallery">' + items + '</ul>');
+        /* The grid pattern follows the number of photos (1-6). */
+        html.push('<ul class="invitation__gallery invitation__gallery--n' + Math.min(6, data.gallery.length) + '">' + items + '</ul>');
+      }
+
+      /* Blessings section */
+      var bGroomParents = data.groomParents || 'Groom’s Parents';
+      var bBrideParents = data.brideParents || 'Bride’s Parents';
+      var teluguWedding = isRegional && (type === 'wedding' || type === 'engagement');
+      if (wdOn && type === 'reception') { bGroomParents = data.groomParents; bBrideParents = data.brideParents; }
+      /* Birthday cards on the design engine have no families block, only a warm closing. */
+      if (wdOn && type === 'birthday') {
+        html.push('<div class="invitation__blessings wd-bday-closing"><div class="wd-closing"><span class="wd-closing__heart" aria-hidden="true">' + IH.icon('heart', 16) + '</span>' +
+          '<p class="invitation__blessings-subheading wd-closing__title">Your presence is the best gift</p>' +
+          '<p class="invitation__blessings-msg wd-closing__msg">We can&rsquo;t wait to celebrate with you.</p></div></div>');
+      } else if (wdOn && WD.isOneName(WD.spec(tplSlug))) {
+        // Baby shower, naming ceremony, housewarming, anniversary: the occasion's own closing words.
+        var wdClose = WD.OCCASIONS[type].closing;
+        html.push('<div class="invitation__blessings wd-bday-closing"><div class="wd-closing"><span class="wd-closing__heart" aria-hidden="true">' + IH.icon('heart', 16) + '</span>' +
+          '<p class="invitation__blessings-subheading wd-closing__title">' + escapeHtml(wdClose[0]) + '</p>' +
+          '<p class="invitation__blessings-msg wd-closing__msg">' + escapeHtml(wdClose[1]) + '</p></div></div>');
+      } else if ((type === 'wedding' || type === 'engagement' || type === 'reception') && data.showBlessings !== false && (bGroomParents || bBrideParents)) {
+        html.push('<div class="invitation__blessings">');
+        html.push(teluguWedding ? teluguHeading(data, 'With the blessings of')
+          : wdOn ? WD.heading(WD.spec(tplSlug), 'With the blessings of our families', 'users', wdCtx)
+          : '<h3 class="invitation__blessings-heading">WITH THE BLESSINGS OF</h3>');
+
+        html.push('<div class="invitation__blessings-grid">');
+
+        var leftBlessingTitle = data.namesSwapped ? "Bride's Family" : "Groom's Family";
+        var leftBlessingParents = data.namesSwapped ? bBrideParents : bGroomParents;
+        var rightBlessingTitle = data.namesSwapped ? "Groom's Family" : "Bride's Family";
+        var rightBlessingParents = data.namesSwapped ? bGroomParents : bBrideParents;
+
+        if (leftBlessingParents) {
+          html.push('<div class="invitation__blessings-side">');
+          html.push('<strong>' + leftBlessingTitle + '</strong>');
+          html.push('<p>' + escapeHtml(leftBlessingParents) + ' and Family</p>');
+          html.push('</div>');
+        }
+
+        if (leftBlessingParents && rightBlessingParents) {
+          html.push('<div class="invitation__blessings-divider"></div>');
+        }
+
+        if (rightBlessingParents) {
+          html.push('<div class="invitation__blessings-side">');
+          html.push('<strong>' + rightBlessingTitle + '</strong>');
+          html.push('<p>' + escapeHtml(rightBlessingParents) + ' and Family</p>');
+          html.push('</div>');
+        }
+        html.push('</div>');
+        if (teluguWedding) {
+          html.push(teluguDivider(data));
+          html.push('<p class="invitation__message invitation__blessings-msg tp-closing">' +
+            escapeHtml(data.message || 'Your presence and blessings will make our celebration even more special.') + '</p>');
+        } else if (wdOn) {
+          html.push('<div class="wd-closing"><span class="wd-closing__heart" aria-hidden="true">' + IH.icon('heart', 16) + '</span>' +
+            '<p class="invitation__blessings-subheading wd-closing__title">Your blessings mean the world</p>' +
+            '<p class="invitation__blessings-msg wd-closing__msg">We look forward to celebrating this special day with you.</p></div>');
+        } else {
+          html.push('<div class="invitation__blessings-ornament-bottom">' + IH.icon('heart', 16) + '</div>');
+          html.push('<p class="invitation__blessings-subheading" style="font-weight:700;margin-top:var(--space-2);letter-spacing:1px;font-size:1.15rem;">YOUR BLESSINGS MEAN THE WORLD</p>');
+          html.push('<p class="invitation__blessings-msg" style="margin-top:var(--space-1);font-size:0.9rem;opacity:0.9;">We look forward to celebrating this special day with you.</p>');
+        }
+        html.push('</div>');
       }
 
       var actions = [];
@@ -558,13 +1301,9 @@
                 '<span class="zoom-level" data-zoom-level aria-live="polite">100%</span>' +
                 '<button class="btn btn--ghost btn--sm" type="button" data-zoom="1" aria-label="Zoom in">' + IH.icon('zoom-in', 17) + '</button>' +
                 '<button class="btn btn--ghost btn--sm" type="button" data-zoom="0" aria-label="Reset zoom">' + IH.icon('rotate-ccw', 17) + '</button>' +
-                '<div class="device-switch" role="group" aria-label="Preview device">' +
-                  '<button type="button" data-device="mobile" aria-pressed="true" aria-label="Mobile preview">' + IH.icon('smartphone', 17) + '</button>' +
-                  '<button type="button" data-device="desktop" aria-pressed="false" aria-label="Desktop preview">' + IH.icon('monitor', 17) + '</button>' +
-                '</div>' +
                 '<button class="btn btn--ghost btn--sm" type="button" data-fullscreen aria-label="Toggle full screen">' + IH.icon('maximize', 17) + '</button>' +
               '</div>' +
-              '<div class="preview-frame" data-device="mobile" data-preview-frame></div>' +
+              '<div class="preview-frame" data-device="card" data-preview-frame></div>' +
             '</div>' +
             '<div>' +
               '<div class="preview-meta__title">' +
@@ -612,16 +1351,6 @@
         var dir = parseInt(btn.getAttribute('data-zoom'), 10);
         if (dir === 0) zoom = 1; else zoom += dir * STEP;
         applyZoom();
-      });
-    });
-
-    qsa('[data-device]', scope).forEach(function (btn) {
-      on(btn, 'click', function () {
-        var mode = btn.getAttribute('data-device');
-        frame.setAttribute('data-device', mode);
-        qsa('[data-device]', scope).forEach(function (other) {
-          other.setAttribute('aria-pressed', other === btn ? 'true' : 'false');
-        });
       });
     });
 
@@ -684,12 +1413,18 @@
 
     // Sample data rendered in this template's palette and event type.
     var eventType = EVENT_TYPES[tpl.category] ? tpl.category : 'other';
-    var sample = Object.assign({}, SAMPLE, sampleForCategory(tpl.category), {
+    var sample = Object.assign({}, SAMPLE, sampleForCategory(tpl.category, tpl.slug), {
       eventType: eventType,
       template: tpl.slug
     });
     IH.invitation.applyTemplate(sample, tpl.slug);
-    if (frame) IH.invitation.mount(frame, sample);
+
+    if (frame) {
+      frame.innerHTML = '';
+      var inner = document.createElement('div');
+      frame.appendChild(inner);
+      IH.invitation.mount(inner, sample);
+    }
 
     var useBtn = qs('[data-preview-use]', scope);
     if (useBtn) useBtn.setAttribute('href', 'create.html?template=' + encodeURIComponent(tpl.slug));
@@ -712,35 +1447,256 @@
     if (scope._resetZoom) scope._resetZoom();
   }
 
-  /* Realistic sample copy per category so previews never look like lorem ipsum. */
-  function sampleForCategory(category) {
+  /* Realistic sample copy per category so previews never look like lorem
+     ipsum. Wedding designs also carry their own header and message wording. */
+  function sampleForCategory(category, slug) {
+    var sample = sampleForCategoryBase(category, slug);
+    // The other occasions carry their own header wording (OCCASION_DETAILS).
+    if (OCCASION_DETAILS[category]) {
+      var occText = occasionTextFor(category, slug);
+      return Object.assign(sample, { additionalTitle: occText.additionalTitle, additionalSubtitle: occText.additionalSubtitle });
+    }
+    if (category !== 'wedding') return sample;
+    var text = weddingTextFor(slug);
+    return Object.assign(sample, { additionalTitle: text.additionalTitle, additionalSubtitle: text.additionalSubtitle, message: text.message });
+  }
+
+  /* Graduation ... community events on the design engine: the card's own
+     sample title, and a person or host that suits the category. */
+  var EVENT_SAMPLES = {
+    graduation: { people: ['Graduate Name'], hostName: 'Proudly hosted by the family',
+      organization: 'Anna University', classCourse: 'B.E. Computer Science', time: '17:00', venue: 'Grand Convention Hall', address: 'Guindy, Chennai 600025',
+      message: 'Years of hard work, one proud moment. Please join us to celebrate this milestone.' },
+    retirement: { people: ['Retiree Name'], hostName: 'With gratitude, your colleagues',
+      role: 'Senior Manager, Southern Railway', yearsOfService: '35', time: '18:30', venue: 'Officers Club', address: 'Egmore, Chennai 600008',
+      message: 'After years of dedicated service, it is time to celebrate. Join us to say thank you.' },
+    farewell: { people: ['Colleague Name'], hostName: 'From all of us at the team',
+      role: 'Team Lead', time: '19:00', venue: 'The Terrace Café', address: 'Nungambakkam, Chennai 600034',
+      message: 'One last evening together before the next chapter begins. Come share the memories.' },
+    corporate: { hostName: 'Northwind Technologies', organization: 'Northwind Technologies', time: '10:00', venue: 'ITC Grand Chola, Ballroom', address: 'Guindy, Chennai 600032',
+      message: 'An evening of insights, conversations and celebration. We look forward to your presence.' },
+    festival: { hostName: 'With love, the family', time: '18:30', venue: 'Our Home', address: 'T. Nagar, Chennai 600017',
+      message: 'Good food, warm wishes and the joy of the season. Please come and celebrate with us.' },
+    'school-events': { hostName: 'Greenfield Public School', organization: 'Greenfield Public School', time: '10:00', venue: 'School Auditorium', address: 'Porur, Chennai 600116',
+      message: 'Parents, guardians and well-wishers are warmly invited to share this special day with our students.' },
+    'college-events': { hostName: 'Students’ Union', organization: 'Madras Institute of Technology', time: '16:00', venue: 'Open Air Theatre', address: 'Chromepet, Chennai 600044',
+      message: 'Events, energy and the whole campus together. Be there and be part of it.' },
+    party: { hostName: 'Your Hosts', time: '20:00', venue: 'Sea Breeze, Apartment 12B', address: 'ECR, Chennai 600119',
+      message: 'Good music, great food and even better company. Come as you are.' },
+    'community-events': { hostName: 'Lakeview Residents Welfare Association', organization: 'Lakeview Residents Welfare Association', time: '10:00', venue: 'Community Hall', address: 'Pallikaranai, Chennai 600100',
+      message: 'Neighbours, families and friends are all welcome. Let us come together and make it special.' }
+  };
+  function eventSampleFor(category, slug) {
+    var cfg = EVENT_SAMPLES[category];
+    var spec = cfg && IH.weddingDesigns && IH.weddingDesigns.applies(slug) && IH.weddingDesigns.spec(slug);
+    if (!spec || spec.occasion !== category) return null;
+    var h = 0;
+    for (var i = 0; i < slug.length; i++) h = (h * 31 + slug.charCodeAt(i)) >>> 0;
+    // A tagline that only repeats the card's script title is left out.
+    var title = spec.sampleTitle || '';
+    if (cfg.people && title.toLowerCase() === String(spec.title || '').split('|')[0].toLowerCase()) title = '';
+    var s = { title: title, personName: cfg.people ? cfg.people[h % cfg.people.length] : '', date: '2027-03-13' };
+    ['hostName', 'organization', 'classCourse', 'role', 'yearsOfService', 'time', 'venue', 'address', 'message'].forEach(function (k) { if (cfg[k]) s[k] = cfg[k]; });
+    return s;
+  }
+
+  function sampleForCategoryBase(category, slug) {
+    var ev = eventSampleFor(category, slug);
+    if (ev) return ev;
     switch (category) {
+      case 'wedding':
+        if (slug === 'tamil-thirumanam') {
+          return {
+            additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+            additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+            brideName: 'Bride',
+            groomName: 'Groom',
+            brideParents: 'Bride’s Parents',
+            groomParents: 'Groom’s Parents',
+            haldiEnabled: true, haldiDate: '2026-11-14', haldiTime: '10:00',
+            mehndiEnabled: true, mehndiDate: '2026-11-14', mehndiTime: '17:00',
+            ceremonyEnabled: true, ceremonyDate: '2026-11-15', ceremonyTime: '09:00',
+            receptionEnabled: true, receptionDate: '2026-11-15', receptionTime: '19:00',
+            title: 'Thirumanam Invitation',
+            hostName: 'Together with their families',
+            date: '2026-11-15',
+            time: '09:00',
+            venue: 'Rani Meyyammai Hall',
+            address: 'Egmore, Chennai, Tamil Nadu 600008',
+            message: 'With the blessings of our elders and the almighty, we invite you to grace the auspicious occasion of our marriage.'
+          };
+        }
+        if (slug === 'telugu-pelli') {
+          return {
+            additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+            additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+            brideName: 'Bride',
+            groomName: 'Groom',
+            haldiEnabled: true, haldiDate: '2026-12-09', haldiTime: '09:00',
+            mehndiEnabled: true, mehndiDate: '2026-12-09', mehndiTime: '17:00',
+            ceremonyEnabled: true, ceremonyDate: '2026-12-10', ceremonyTime: '10:30',
+            receptionEnabled: true, receptionDate: '2026-12-10', receptionTime: '19:00',
+            brideParents: 'Bride’s Parents',
+            groomParents: 'Groom’s Parents',
+            title: 'Pachani Pelli Sambaram',
+            hostName: 'Together with their families',
+            date: '2026-12-10',
+            time: '10:30',
+            venue: 'Sri Venkateswara Kalyana Mandapam',
+            address: 'Banjara Hills, Hyderabad, Telangana 500034',
+            message: 'We seek your blessings and warm presence as two souls unite in holy matrimony.'
+          };
+        }
+        if (slug === 'kasavu-gold-border') {
+          return {
+            additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+            additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+            brideName: 'Bride',
+            groomName: 'Groom',
+            title: 'Wedding Ceremony',
+            hostName: 'Together with their families',
+            date: '2026-12-28',
+            time: '10:00',
+            venue: 'Le Meridien Convention Centre',
+            address: 'Maradu, Kochi, Kerala 682304',
+            message: 'We warmly invite you and your family to join us on our wedding day and shower your blessings on us.'
+          };
+        }
+        if (slug === 'bengali-alpona') {
+          return {
+            additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+            additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+            brideName: 'Bride',
+            groomName: 'Groom',
+            title: 'Subho Bibaho',
+            hostName: 'Together with their families',
+            date: '2026-11-20',
+            time: '19:00',
+            venue: 'Swabhumi Heritage Plaza',
+            address: 'EM Bypass, Kolkata, West Bengal 700054',
+            message: 'We request the honour of your presence at our wedding ceremony to celebrate love, tradition, and togetherness.'
+          };
+        }
+        if (slug === 'bandhani-bloom') {
+          return {
+            additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+            additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+            brideName: 'Bride',
+            groomName: 'Groom',
+            title: 'Vivah Utsav',
+            hostName: 'Together with their families',
+            date: '2026-12-05',
+            time: '18:30',
+            venue: 'Toran Banquet & Lawns',
+            address: 'SG Highway, Ahmedabad, Gujarat 380054',
+            message: 'Request the pleasure of your company as we tie the sacred knot and embark on our new journey together.'
+          };
+        }
+        /* Sample cards never show real-looking names: always Groom & Bride. */
+        var couple = ['Groom', 'Bride'];
+        return {
+          additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+          additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
+          brideName: couple[1],
+          groomName: couple[0],
+          groomParents: 'Groom’s Parents',
+          brideParents: 'Bride’s Parents',
+          haldiEnabled: true, haldiDate: '2026-12-24', haldiTime: '10:00',
+          mehndiEnabled: true, mehndiDate: '2026-12-24', mehndiTime: '17:00',
+          ceremonyEnabled: true, ceremonyDate: '2026-12-25', ceremonyTime: '10:30',
+          receptionEnabled: true, receptionDate: '2026-12-25', receptionTime: '18:30',
+          title: 'The Wedding Celebration',
+          hostName: 'Together with their families',
+          date: '2026-12-25',
+          time: '18:30',
+          venue: 'Grand Palace Hall',
+          address: 'Anna Salai, Chennai, Tamil Nadu 600002',
+          message: 'Request the pleasure of your company as we begin our life together.\nYour presence would make our day complete.'
+        };
       case 'birthday':
+        /* Birthday cards on the design engine: a person and an age that suit the card. */
+        var bSpec = IH.weddingDesigns && IH.weddingDesigns.applies(slug) && IH.weddingDesigns.spec(slug);
+        if (bSpec && bSpec.occasion === 'birthday') {
+          var B_PEOPLE = {
+            baby: { host: 'Proud parents invite you', venue: 'The Little Garden Hall', address: 'Adyar, Chennai 600020',
+              message: 'Our little one turns a year older! Join us for cake, smiles and a lot of love.' },
+            kid: { host: 'The parents invite you', venue: 'The Play Loft', address: 'Velachery, Chennai 600042',
+              message: 'Cake, games and a whole lot of fun. Come celebrate with us!' },
+            teen: { host: 'You are invited', venue: 'Skyline Lounge', address: 'Nungambakkam, Chennai 600034',
+              message: 'Music, food and the best people. Let us make it a night to remember!' },
+            adult: { host: 'You are invited', venue: 'The Grand Terrace', address: 'Anna Nagar, Chennai 600040',
+              message: 'Good food, great company and plenty of laughs. Join us for an evening to celebrate!' },
+            senior: { host: 'With love, the family', venue: 'Sri Krishna Kalyana Mandapam', address: 'Mylapore, Chennai 600004',
+              message: 'With gratitude for a life well lived, we invite you to share this joyous milestone with us.' }
+          };
+          var bp = B_PEOPLE[bSpec.audience] || B_PEOPLE.adult;
+          // Placeholder name only; the person types their own.
+          return { title: '', personName: 'Name', hostName: bp.host, years: bSpec.sampleAge, date: '2027-03-20',
+            time: bSpec.audience === 'kid' || bSpec.audience === 'baby' ? '16:00' : bSpec.audience === 'senior' ? '11:00' : '19:30',
+            venue: bp.venue, address: bp.address, message: bp.message,
+            additionalTitle: 'LET’S CELEBRATE\n' + bp.host, additionalSubtitle: BIRTHDAY_SUBTITLE };
+        }
         return { title: 'Turning Six!', personName: 'The Birthday Child', hostName: 'The parents invite you', date: '2026-09-12', time: '16:00',
           venue: 'The Play Loft', address: 'Velachery, Chennai 600042',
-          message: 'Cake, games and a whole lot of noise. Come celebrate with us!' };
+          message: 'Cake, games and a whole lot of noise. Come celebrate with us!',
+          additionalTitle: 'LET’S CELEBRATE\nThe parents invite you', additionalSubtitle: BIRTHDAY_SUBTITLE };
       case 'baby-shower':
+      case 'naming-ceremony':
+      case 'house-warming':
+      case 'anniversary':
+        /* Cards on the design engine: a name (couple, baby, family) that suits the card. */
+        var oSpec = IH.weddingDesigns && IH.weddingDesigns.applies(slug) && IH.weddingDesigns.spec(slug);
+        if (oSpec && oSpec.occasion === category) {
+          var ho = 0;
+          for (var oj = 0; oj < slug.length; oj++) ho = (ho * 31 + slug.charCodeAt(oj)) >>> 0;
+          // Placeholder roles, never real-looking names.
+          var oc = ['Mother', 'Father'];
+          if (category === 'baby-shower') {
+            return { title: '', personName: 'Mom-to-be & Dad-to-be', babyName: '', hostName: 'With love, the family', date: '2027-01-17', time: '11:00',
+              venue: 'Rose Garden Banquet', address: 'Adyar, Chennai 600020',
+              message: 'A little one is on the way! Join us for an afternoon of games, blessings and sweet treats.' };
+          }
+          if (category === 'naming-ceremony') {
+            var girl = /princess|crown|cherished|filled-with-love|petal/.test(slug) || (!/prince|heir/.test(slug) && ho % 2 === 0);
+            return { title: '', babyName: 'Baby Name', babyRelation: girl ? 'Daughter' : 'Son', parentsName: oc[0] + ' & ' + oc[1],
+              hostName: 'With love, the family', date: '2027-02-07', time: '10:00', venue: 'Sri Krishna Kalyana Mandapam', address: 'Mylapore, Chennai 600004',
+              message: girl ? 'With the blessings of our elders, we name our daughter. Please join us.' : 'With the blessings of our elders, we name our son. Please join us.' };
+          }
+          if (category === 'house-warming') {
+            return { title: '', personName: 'Family Name', hostName: 'With love and gratitude', date: '2027-01-24', time: '08:30',
+              venue: 'Plot 42, Lakeview Enclave', address: 'Sholinganallur, Chennai 600119',
+              message: 'We have built a home. Please come and bless it with your presence.' };
+          }
+          var yrs = oSpec.sampleYears || 25;
+          return { title: '', personName: 'Husband & Wife', years: String(yrs), hostName: 'With love, the family', date: '2027-02-20', time: '19:00',
+            venue: 'Ocean Pearl Hall', address: 'Besant Nagar, Chennai 600090',
+            message: yrs >= 40 ? 'A lifetime of love, laughter and togetherness. Please join us to celebrate this blessed milestone.'
+              : 'Years of love and laughter, and many more to come. Please join us for an evening of celebration.' };
+        }
+        if (category === 'naming-ceremony') {
+          return { title: 'Namakarana', babyName: 'Our Baby Girl', babyRelation: 'Daughter', parentsName: 'The Family', hostName: 'The Parents', date: '2026-08-30', time: '09:30',
+            venue: 'Sri Krishna Kalyana Mandapam', address: 'Mylapore, Chennai 600004',
+            message: 'With the blessings of our elders, we name our daughter. Please join us.' };
+        }
+        if (category === 'house-warming') {
+          return { title: 'Griha Pravesh', personName: '', hostName: 'The Family', date: '2026-07-18', time: '07:30',
+            venue: 'Plot 42, Lakeview Enclave', address: 'Sholinganallur, Chennai 600119',
+            message: 'We have built a home. Please come and bless it with your presence.' };
+        }
+        if (category === 'anniversary') {
+          return { brideName: 'Bride', groomName: 'Groom', years: '25', title: '25 Years Together', hostName: 'With love, the family',
+            date: '2026-11-08', time: '19:00', venue: 'Ocean Pearl Hall', address: 'Besant Nagar, Chennai 600090',
+            message: 'Twenty-five years ago we said yes. Celebrate the silver year with us.' };
+        }
         return { title: 'Baby Shower', personName: 'Our Little One', hostName: 'The Family', date: '2026-10-04', time: '11:00',
           venue: 'Rose Garden Banquet', address: 'Adyar, Chennai 600020',
           message: 'Join us for a morning of blessings as we welcome our little one.' };
-      case 'naming-ceremony':
-        return { title: 'Namakarana', babyName: 'Our Baby Girl', babyRelation: 'Daughter', parentsName: 'The Family', hostName: 'The Parents', date: '2026-08-30', time: '09:30',
-          venue: 'Sri Krishna Kalyana Mandapam', address: 'Mylapore, Chennai 600004',
-          message: 'With the blessings of our elders, we name our daughter. Please join us.' };
-      case 'house-warming':
-        return { title: 'Griha Pravesh', personName: '', hostName: 'The Family', date: '2026-07-18', time: '07:30',
-          venue: 'Plot 42, Lakeview Enclave', address: 'Sholinganallur, Chennai 600119',
-          message: 'We have built a home. Please come and bless it with your presence.' };
-      case 'anniversary':
-        return { brideName: 'Bride', groomName: 'Groom', years: '25', title: '25 Years Together', hostName: 'With love, the family',
-          date: '2026-11-08', time: '19:00', venue: 'Ocean Pearl Hall', address: 'Besant Nagar, Chennai 600090',
-          message: 'Twenty-five years ago we said yes. Celebrate the silver year with us.' };
       case 'corporate':
         return { title: 'Annual Partner Summit 2026', hostName: 'Northwind Technologies', personName: '',
           date: '2026-09-24', time: '10:00', venue: 'ITC Grand Chola, Ballroom 2', address: 'Guindy, Chennai 600032',
           message: 'A full day of product keynotes, partner sessions and networking. Seats are limited.' };
       case 'festival':
-        return { title: 'Diwali Celebration', hostName: 'Lovely [Name] Family', personName: '',
+        return { title: 'Diwali Celebration', hostName: 'With love, the family', personName: '',
           date: '2026-11-07', time: '18:00', venue: 'Our Home', address: 'T. Nagar, Chennai 600017',
           message: 'Lamps, sweets and good company. Wishing you a bright and joyful festival.',
           additionalInformation: 'Please bring a small dish to share.' };
@@ -773,10 +1729,42 @@
           date: '2026-05-10', time: '10:00', venue: 'Community Hall', address: 'Pallikaranai, Chennai 600100',
           message: 'Agenda: maintenance review, security update and the summer plan. All residents welcome.' };
       case 'engagement':
+        /* Engagement cards on the wedding design engine show family blessings
+           and the engagement ceremonies too, so their sample carries them. */
+        if (IH.weddingDesigns && IH.weddingDesigns.applies(slug)) {
+          /* Sample cards never show real-looking names: always Groom & Bride. */
+          var ec = ['Groom', 'Bride'];
+          return {
+            additionalTitle: 'TWO HEARTS, ONE PROMISE\nTogether with their families',
+            additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe request the pleasure of your company at the engagement of',
+            brideName: ec[1], groomName: ec[0],
+            groomParents: 'Groom’s Parents', brideParents: 'Bride’s Parents',
+            ceremonyEnabled: true, ceremonyDate: '2027-02-14', ceremonyTime: '11:00',
+            receptionEnabled: true, receptionDate: '2027-02-14', receptionTime: '13:00',
+            title: 'Engagement Ceremony', hostName: 'Together with their families',
+            date: '2027-02-14', time: '11:00', venue: 'Hotel Saravana Bhavan Hall', address: 'Anna Nagar, Chennai 600040',
+            message: 'Two families, one promise. Please join us as the couple exchange rings.'
+          };
+        }
         return { brideName: 'Bride', groomName: 'Groom', title: 'Engagement Ceremony', hostName: 'Together with their families',
           date: '2026-08-22', time: '11:00', venue: 'Hotel Saravana Bhavan Hall', address: 'Anna Nagar, Chennai 600040',
           message: 'Two families, one promise. Please join us as the couple exchange rings.' };
       case 'reception':
+        /* Reception cards on the wedding design engine: couple, hosts, programme. */
+        if (IH.weddingDesigns && IH.weddingDesigns.applies(slug)) {
+          var rc = ['Groom', 'Bride'];
+          return {
+            additionalTitle: 'JUST MARRIED\nTogether with their families',
+            additionalSubtitle: 'AN EVENING TO CELEBRATE\nWe joyfully invite you to celebrate the wedding of',
+            personName: rc[0] + ' & ' + rc[1], groomName: rc[0], brideName: rc[1],
+            groomParents: 'Groom’s Parents', brideParents: 'Bride’s Parents',
+            ceremonyEnabled: true, ceremonyDate: '2027-01-24', ceremonyTime: '18:30',
+            receptionEnabled: true, receptionDate: '2027-01-24', receptionTime: '20:00',
+            title: 'Wedding Reception', hostName: 'Together with their families',
+            date: '2027-01-24', time: '18:30', venue: 'Grand Palace Hall', address: 'Anna Salai, Chennai 600002',
+            message: 'Dinner, music and celebration. Join us for an evening in honour of the newlyweds.'
+          };
+        }
         return { brideName: 'Bride', groomName: 'Groom', title: 'Wedding Reception', hostName: 'Together with their families',
           date: '2026-12-26', time: '19:00', venue: 'Grand Palace Hall', address: 'Anna Salai, Chennai 600002',
           message: 'Dinner, music and celebration. Join us the evening after the wedding.' };
@@ -888,7 +1876,7 @@
       if (slug && slug !== 'true') {
         var tpl = IH.data.getTemplate(slug);
         if (tpl) {
-          data = Object.assign(data, sampleForCategory(tpl.category), {
+          data = Object.assign(data, sampleForCategory(tpl.category, tpl.slug), {
             eventType: EVENT_TYPES[tpl.category] ? tpl.category : 'other'
           });
           IH.invitation.applyTemplate(data, slug);

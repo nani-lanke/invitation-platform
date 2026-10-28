@@ -1,0 +1,47 @@
+{
+ "slug": "andhra-kalamkari",
+ "name": "Andhra Kalamkari",
+ "base": "cards/andhra-kalamkari/",
+ "spec": {
+  "layout": "classic",
+  "frame": "arch",
+  "venue": "split",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/andhra-kalamkari.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/andhra-kalamkari.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Telugu wedding hall decorated with hand painted Srikalahasti kalamkari cloth panels, brass lamps and jasmine, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8454668,
+   "raw": "..\\work\\raw\\andhra-kalamkari__venue__8454668_1ehi5.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a hand painted kalamkari cloth panel with a lotus tree, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5896256,
+   "raw": "..\\work\\raw\\andhra-kalamkari__crest__5896256_19n9h.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Srikalahasti temple on the Swarnamukhi river, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7188130,
+   "raw": "..\\work\\raw\\andhra-kalamkari__footer__7188130_3wlwh.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of pink lotus flowers, jasmine and mango leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5377920,
+   "raw": "..\\work\\raw\\andhra-kalamkari__corner__5377920_2evea.png"
+  }
+ }
+}

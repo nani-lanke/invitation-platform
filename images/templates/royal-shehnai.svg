@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Royal Shehnai — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-royal-shehnai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF9F2"/>
+      <stop offset="55%" stop-color="#F8E9D6"/>
+      <stop offset="100%" stop-color="#FFF9F2"/>
+    </linearGradient>
+    <radialGradient id="gl-royal-shehnai" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-royal-shehnai" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-royal-shehnai)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-royal-shehnai)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-royal-shehnai)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Festive Marigold Garland Toran Top -->
+      <g fill="#D99E32" stroke="#A82823" stroke-width="1" opacity="0.8">
+        <rect x="36" y="36" width="528" height="728" fill="none" stroke="#D99E32" stroke-width="1.8" rx="8"/>
+        <!-- Hanging marigold beads across top -->
+        
+          <g transform="translate(80, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(111.4, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(142.8, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(174.2, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(205.6, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(237, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(268.4, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(299.79999999999995, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(331.2, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(362.59999999999997, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(394, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(425.4, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(456.79999999999995, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(488.2, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+          <g transform="translate(519.5999999999999, 50)">
+            <circle cx="0" cy="0" r="5" fill="#D99E32"/>
+            <circle cx="0" cy="8" r="4.5" fill="#A82823"/>
+            <circle cx="0" cy="15" r="4" fill="#D99E32"/>
+            <circle cx="0" cy="21" r="3" fill="#A82823"/>
+          </g>
+        
+      </g>
+      <!-- Crossed Royal Shehnai Flutes &amp; Swarna Tassels -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="105" fill="none" stroke="#D99E32" stroke-width="1.5" opacity="0.45"/>
+        <!-- Shehnai 1 (Left to Right) -->
+        <g transform="rotate(-35)" fill="#D99E32" stroke="#A82823" stroke-width="1.2">
+          <path d="M -10 -80 L 10 -80 L 6 60 L -6 60 Z"/>
+          <path d="M -22 -80 C -22 -105, 22 -105, 22 -80 Z"/>
+          <circle cx="0" cy="-10" r="3" fill="#A82823"/>
+          <circle cx="0" cy="15" r="3" fill="#A82823"/>
+          <circle cx="0" cy="40" r="3" fill="#A82823"/>
+        </g>
+        <!-- Shehnai 2 (Right to Left) -->
+        <g transform="rotate(35)" fill="#D99E32" stroke="#A82823" stroke-width="1.2">
+          <path d="M -10 -80 L 10 -80 L 6 60 L -6 60 Z"/>
+          <path d="M -22 -80 C -22 -105, 22 -105, 22 -80 Z"/>
+          <circle cx="0" cy="-10" r="3" fill="#A82823"/>
+          <circle cx="0" cy="15" r="3" fill="#A82823"/>
+          <circle cx="0" cy="40" r="3" fill="#A82823"/>
+        </g>
+        <!-- Center Lotus Rosette -->
+        <circle cx="0" cy="0" r="18" fill="#A82823" stroke="#D99E32" stroke-width="2"/>
+        <circle cx="0" cy="0" r="7" fill="#D99E32"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#D99E32" opacity="0.85">AUSPICIOUS MELODIES OF LOVE</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#D99E32" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#D99E32" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#D99E32" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#421816">Royal Shehnai</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#421816" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#D99E32" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#421816" opacity="0.6">GRAND WEDDING CEREMONY</text>
+</svg>

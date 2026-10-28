@@ -1,0 +1,40 @@
+{
+ "slug": "european-escape",
+ "name": "European Escape",
+ "base": "cards/european-escape/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "arch",
+  "venue": "split",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/european-escape.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/european-escape.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Tuscan villa courtyard wedding with olive trees, stone walls and candles, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5274759,
+   "raw": "..\\work\\raw\\european-escape__venue__5274759_21yk9.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of olive branches, white roses and lavender, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9114271,
+   "raw": "..\\work\\raw\\european-escape__crest__9114271_3r6b1.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of Tuscan hills with cypress trees and a villa, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8845303,
+   "raw": "..\\work\\raw\\european-escape__footer__8845303_2hkzn.png"
+  }
+ }
+}

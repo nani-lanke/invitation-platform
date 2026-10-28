@@ -1,0 +1,47 @@
+{
+ "slug": "sri-lankan-poruwa",
+ "name": "Sri Lankan Poruwa",
+ "base": "cards/sri-lankan-poruwa/",
+ "spec": {
+  "layout": "classic",
+  "frame": "band",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/sri-lankan-poruwa.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/sri-lankan-poruwa.svg",
+  "corners": "inline SVG corner set (band)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Kandyan poruwa wedding platform with white flowers, coconut flowers and a brass punkalasa pot, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4175159,
+   "raw": "..\\work\\raw\\sri-lankan-poruwa__venue__4175159_1ilqk.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a brass Kandyan punkalasa pot of plenty with coconut flowers, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8563183,
+   "raw": "..\\work\\raw\\sri-lankan-poruwa__crest__8563183_5kzsi.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Kandy lake with the Temple of the Tooth at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3520263,
+   "raw": "..\\work\\raw\\sri-lankan-poruwa__footer__3520263_2ykao.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of white frangipani araliya, coconut flowers and lotus, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1681169,
+   "raw": "..\\work\\raw\\sri-lankan-poruwa__corner__1681169_3hxfi.png"
+  }
+ }
+}

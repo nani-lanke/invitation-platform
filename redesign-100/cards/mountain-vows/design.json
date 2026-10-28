@@ -1,0 +1,40 @@
+{
+ "slug": "mountain-vows",
+ "name": "Mountain Vows",
+ "base": "cards/mountain-vows/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/mountain-vows.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/mountain-vows.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a mountain wedding on a wooden deck facing pine forests and peaks, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8986935,
+   "raw": "..\\work\\raw\\mountain-vows__venue__8986935_4o5te.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of pine sprigs, wild roses and ferns, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9848495,
+   "raw": "..\\work\\raw\\mountain-vows__crest__9848495_ppl8.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a pine forested mountain ridge at sunrise, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5571015,
+   "raw": "..\\work\\raw\\mountain-vows__footer__5571015_teda.png"
+  }
+ }
+}

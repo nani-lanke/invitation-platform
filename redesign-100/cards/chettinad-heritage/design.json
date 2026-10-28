@@ -1,0 +1,40 @@
+{
+ "slug": "chettinad-heritage",
+ "name": "Chettinad Heritage",
+ "base": "cards/chettinad-heritage/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "band",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/chettinad-heritage.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/chettinad-heritage.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Chettinad mansion courtyard with teak pillars, Athangudi tiled floors and brass lamps decorated for a wedding, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3924598,
+   "raw": "..\\work\\raw\\chettinad-heritage__venue__3924598_2gd9h.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of white jasmine, mango leaves and banana flowers, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8820294,
+   "raw": "..\\work\\raw\\chettinad-heritage__crest__8820294_3t9p3.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Chettinad mansion streets of Karaikudi at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1607648,
+   "raw": "..\\work\\raw\\chettinad-heritage__footer__1607648_2yvtr.png"
+  }
+ }
+}

@@ -1,0 +1,40 @@
+{
+ "slug": "nikah-ceremony",
+ "name": "Nikah Ceremony",
+ "base": "cards/nikah-ceremony/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/nikah-ceremony.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/nikah-ceremony.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Mughal style nikah venue with white marble arches, geometric khatam screens, lanterns and white flowers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7638006,
+   "raw": "..\\work\\raw\\nikah-ceremony__venue__7638006_23o1j.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of white roses, jasmine and green leaves, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5500998,
+   "raw": "..\\work\\raw\\nikah-ceremony__crest__5500998_3dw0v.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of white marble Mughal domes and minarets at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2995424,
+   "raw": "..\\work\\raw\\nikah-ceremony__footer__2995424_pt2t.png"
+  }
+ }
+}

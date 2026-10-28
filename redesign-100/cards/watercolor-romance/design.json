@@ -1,0 +1,47 @@
+{
+ "slug": "watercolor-romance",
+ "name": "Watercolor Romance",
+ "base": "cards/watercolor-romance/",
+ "spec": {
+  "layout": "royal",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/watercolor-romance.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/watercolor-romance.svg",
+  "corners": "inline SVG corner set (beads)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a pastel lilac and blue wedding reception with soft florals and candles, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1952842,
+   "raw": "..\\work\\raw\\watercolor-romance__venue__1952842_2911v.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a soft bouquet of lilac and blush flowers, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1357474,
+   "raw": "..\\work\\raw\\watercolor-romance__crest__1357474_165ok.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of misty lilac hills at dawn, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8612204,
+   "raw": "..\\work\\raw\\watercolor-romance__footer__8612204_42go1.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of lilac sweet peas, blush roses and cornflower blue delphinium, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5620262,
+   "raw": "..\\work\\raw\\watercolor-romance__corner__5620262_1l148.png"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "slug": "haldi-sunshine",
+ "name": "Haldi Sunshine",
+ "base": "cards/haldi-sunshine/",
+ "spec": {
+  "layout": "arch",
+  "frame": "double",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/haldi-sunshine.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/haldi-sunshine.svg",
+  "corners": "inline SVG corner set (double)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a haldi ceremony courtyard with yellow drapes, brass urlis of turmeric, marigold curtains and low stools, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2559116,
+   "raw": "..\\work\\raw\\haldi-sunshine__venue__2559116_31g0y.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a brass bowl of yellow turmeric paste with fresh turmeric roots, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9000704,
+   "raw": "..\\work\\raw\\haldi-sunshine__crest__9000704_533xi.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of sunlit mustard fields with a village courtyard, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2339170,
+   "raw": "..\\work\\raw\\haldi-sunshine__footer__2339170_36ys7.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of yellow and orange marigolds, mango leaves and turmeric flowers, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9528960,
+   "raw": "..\\work\\raw\\haldi-sunshine__corner__9528960_1xnz7.png"
+  }
+ }
+}

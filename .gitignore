@@ -14,3 +14,20 @@ Thumbs.db
 # Claude local configuration and temporary files
 .claude/settings.json
 .claude/scheduled_tasks.lock
+
+.vercel
+.env*
+
+# Installed dependencies
+node_modules/
+
+# Temporary browser automation captures
+.playwright-mcp/
+
+# Large local AI source and working files
+/ai-generated/comfyui-raw/
+/lineart-work/raw/
+/redesign-100/output/
+/redesign-100/work/
+/node_modules/
+/.playwright-mcp/

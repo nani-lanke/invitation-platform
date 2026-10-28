@@ -2,15 +2,21 @@
   "name": "invitation-platform-main",
   "version": "1.0.0",
   "description": "> Beautiful digital invitations for every special moment.",
-  "main": "test-preview.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ai:bg-server": "node tools/ai-background/server.js",
+    "ai:bg-generate": "node tools/ai-background/generate.js",
+    "ai:bg-check": "node tools/ai-background/check.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemailer": "^9.1.0",
+    "dotenv": "^18.0.4",
+    "nodemailer": "^9.1.0"
+  },
+  "devDependencies": {
     "playwright": "^1.62.1"
   }
 }

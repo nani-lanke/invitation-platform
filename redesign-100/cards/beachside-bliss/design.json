@@ -1,0 +1,47 @@
+{
+ "slug": "beachside-bliss",
+ "name": "Beachside Bliss",
+ "base": "cards/beachside-bliss/",
+ "spec": {
+  "layout": "editorial",
+  "frame": "hairline",
+  "venue": "split",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/beachside-bliss.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/beachside-bliss.svg",
+  "corners": "inline SVG corner set (hairline)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a beach wedding with a white canopy, flowers and aquamarine waves, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7802140,
+   "raw": "..\\work\\raw\\beachside-bliss__venue__7802140_5wzsb.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a conch shell with starfish, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7040688,
+   "raw": "..\\work\\raw\\beachside-bliss__crest__7040688_49tbn.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a golden beach with aquamarine waves, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7330834,
+   "raw": "..\\work\\raw\\beachside-bliss__footer__7330834_1mgjm.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white orchids, frangipani and palm leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2137776,
+   "raw": "..\\work\\raw\\beachside-bliss__corner__2137776_1t3wa.png"
+  }
+ }
+}

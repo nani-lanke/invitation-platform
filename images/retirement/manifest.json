@@ -1,0 +1,616 @@
+{
+ "retirement-honour/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3206238,
+  "prompt": "Wide photograph of an empty dignified banquet hall with deep green drapes, white flowers and warm chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-honour__venue__3206238.png"
+ },
+ "retirement-honour/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9653264,
+  "prompt": "A tall slender vertical hanging strand of deep green laurel leaves, white roses and gold ribbons from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-honour__vine__9653264.png",
+  "coverage": 0.186,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "retirement-honour/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8797683,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a deep green laurel wreath with a small gold medal at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-honour__crest__8797683.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "golden-years/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5916616,
+  "prompt": "Wide photograph of an empty elegant club lounge with antique gold decor, leather chairs and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years__venue__5916616.png"
+ },
+ "golden-years/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8881620,
+  "prompt": "A small compact arrangement of antique gold leaves, ivory roses and laurel sprigs, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years__bouquet__8881620.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "golden-years/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7613319,
+  "prompt": "A low wide compact arrangement of antique gold leaves, ivory roses and laurel sprigs, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years__cluster__7613319.png",
+  "coverage": 0.27,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "golden-years/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3044346,
+  "prompt": "Small premium ornament for the top of a retirement invitation: an antique gold laurel wreath around a small pocket watch, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years__crest__3044346.png",
+  "coverage": 0.082,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "safe-harbour/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5160217,
+  "prompt": "Wide photograph of an empty seaside clubhouse terrace with blue and white decor overlooking a calm harbour, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/safe-harbour__venue__5160217.png"
+ },
+ "safe-harbour/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9040447,
+  "prompt": "A small compact arrangement of sea blue hydrangeas, white roses and small brass anchors, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/safe-harbour__bouquet__9040447.png",
+  "coverage": 0.139,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "safe-harbour/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3783808,
+  "prompt": "A low wide compact arrangement of sea blue hydrangeas, white roses and small brass anchors, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/safe-harbour__cluster__3783808.png",
+  "coverage": 0.414,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "safe-harbour/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1748273,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a small brass ship anchor wrapped with a sea blue rope, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/safe-harbour__crest__1748273.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "with-gratitude/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6847907,
+  "prompt": "Wide photograph of an empty warm restaurant hall with russet table linen, candles and autumn flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/with-gratitude__venue__6847907.png"
+ },
+ "with-gratitude/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5856812,
+  "prompt": "A round wreath of russet autumn leaves, cream roses and wheat stems with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/with-gratitude__wreath__5856812.png",
+  "coverage": 0.364,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "with-gratitude/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7314047,
+  "prompt": "A low wide compact arrangement of russet autumn leaves, cream roses and wheat stems, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/with-gratitude__cluster__7314047.png",
+  "coverage": 0.298,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "with-gratitude/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7909186,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a russet laurel wreath with a small autumn leaf in the middle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/with-gratitude__crest__7909186.png",
+  "coverage": 0.095,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "cheers-to-retirement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4509283,
+  "prompt": "Wide photograph of an empty luxurious dark lounge with a champagne tower, gold lights and leather sofas, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/cheers-to-retirement__venue__4509283.png"
+ },
+ "cheers-to-retirement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8964421,
+  "prompt": "A low wide compact arrangement of champagne roses, gold leaves and espresso ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/cheers-to-retirement__cluster__8964421.png",
+  "coverage": 0.374,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "cheers-to-retirement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3062264,
+  "prompt": "Small premium ornament for the top of a retirement invitation: two clinking crystal champagne coupes with gold sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/cheers-to-retirement__crest__3062264.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "new-chapter-retirement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5942779,
+  "prompt": "Wide photograph of an empty elegant navy and gold dining room with a long table, candles and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/new-chapter-retirement__venue__5942779.png"
+ },
+ "new-chapter-retirement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5885812,
+  "prompt": "A small compact arrangement of gold leaves, navy ribbons and small open books, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/new-chapter-retirement__bouquet__5885812.png",
+  "coverage": 0.058,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-chapter-retirement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2199847,
+  "prompt": "A low wide compact arrangement of gold leaves, navy ribbons and small open books, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/new-chapter-retirement__cluster__2199847.png",
+  "coverage": 0.32,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-chapter-retirement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3333850,
+  "prompt": "Small premium ornament for the top of a retirement invitation: an open book with a golden rising sun behind it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/new-chapter-retirement__crest__3333850.png",
+  "coverage": 0.121,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "happy-retirement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9389547,
+  "prompt": "Wide photograph of an empty warm beige party room with terracotta balloons, bunting and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/happy-retirement__venue__9389547.png"
+ },
+ "happy-retirement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9283108,
+  "prompt": "A small compact arrangement of terracotta and gold balloons, paper streamers and confetti, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/happy-retirement__bouquet__9283108.png",
+  "coverage": 0.114,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "happy-retirement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6908695,
+  "prompt": "A low wide compact arrangement of terracotta and gold balloons, paper streamers and confetti, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/happy-retirement__cluster__6908695.png",
+  "coverage": 0.435,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "happy-retirement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6187178,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a small bunch of terracotta and gold balloons tied with a ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/happy-retirement__crest__6187178.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "retirement-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5840773,
+  "prompt": "Wide photograph of an empty formal dinner hall with burgundy linen, gold candelabras and roses, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-celebration__venue__5840773.png"
+ },
+ "retirement-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8331483,
+  "prompt": "A low wide compact arrangement of burgundy roses, gold laurel leaves and champagne ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-celebration__cluster__8331483.png",
+  "coverage": 0.373,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "retirement-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2936206,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a burgundy and gold laurel wreath around a small star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-celebration__crest__2936206.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "farewell-to-work/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6321134,
+  "prompt": "Wide photograph of an empty modern office lounge decorated with slate blue balloons and a farewell table, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/farewell-to-work__venue__6321134.png"
+ },
+ "farewell-to-work/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8684698,
+  "prompt": "A small compact arrangement of slate blue ribbons, white roses and small brass clocks, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/farewell-to-work__bouquet__8684698.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "farewell-to-work/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4144657,
+  "prompt": "A low wide compact arrangement of slate blue ribbons, white roses and small brass clocks, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/farewell-to-work__cluster__4144657.png",
+  "coverage": 0.284,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "farewell-to-work/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5970452,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a slate blue vintage desk clock with gold hands, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/farewell-to-work__crest__5970452.png",
+  "coverage": 0.176,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "golden-years-2026/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3679157,
+  "prompt": "Wide photograph of an empty deep blue banquet hall with gold starry lights and round tables, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years-2026__venue__3679157.png"
+ },
+ "golden-years-2026/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4388286,
+  "prompt": "A low wide compact arrangement of gold stars, deep blue ribbons and gold sun rays, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years-2026__cluster__4388286.png",
+  "coverage": 0.333,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-years-2026/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6997943,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a golden sunburst with small gold stars around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/golden-years-2026__crest__6997943.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "time-to-relax/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3009743,
+  "prompt": "Wide photograph of an empty peaceful garden veranda with a hammock, sage cushions and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/time-to-relax__venue__3009743.png"
+ },
+ "time-to-relax/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4028430,
+  "prompt": "A round wreath of sage green leaves, white flowers and soft eucalyptus with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/time-to-relax__wreath__4028430.png",
+  "coverage": 0.452,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "time-to-relax/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8097321,
+  "prompt": "A low wide compact arrangement of sage green leaves, white flowers and soft eucalyptus, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/time-to-relax__cluster__8097321.png",
+  "coverage": 0.301,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "time-to-relax/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9426876,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a calm golden crescent moon above a small hammock, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/time-to-relax__crest__9426876.png",
+  "coverage": 0.044,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "freedom-begins/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3500984,
+  "prompt": "Wide photograph of an empty bright teal lounge with travel themed decor, globes and paper planes, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/freedom-begins__venue__3500984.png"
+ },
+ "freedom-begins/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7317191,
+  "prompt": "A small compact arrangement of teal ribbons, small paper planes and white clouds, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/freedom-begins__bouquet__7317191.png",
+  "coverage": 0.042,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "freedom-begins/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7742440,
+  "prompt": "A low wide compact arrangement of teal ribbons, small paper planes and white clouds, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/freedom-begins__cluster__7742440.png",
+  "coverage": 0.256,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "freedom-begins/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1525449,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a small teal paper plane flying over a golden horizon with birds, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/freedom-begins__crest__1525449.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "retirement-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7547238,
+  "prompt": "Wide photograph of an empty bright party room with coral and mustard balloons, bunting and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-party__venue__7547238.png"
+ },
+ "retirement-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5901088,
+  "prompt": "A small compact arrangement of coral and mustard balloons, confetti and paper fans, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-party__bouquet__5901088.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "retirement-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9669643,
+  "prompt": "A low wide compact arrangement of coral and mustard balloons, confetti and paper fans, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-party__cluster__9669643.png",
+  "coverage": 0.436,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "retirement-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9464734,
+  "prompt": "Small premium ornament for the top of a retirement invitation: two coupe glasses surrounded by coral and mustard confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-party__crest__9464734.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "the-next-adventure/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6211019,
+  "prompt": "Wide photograph of an empty travel themed lounge with vintage suitcases, a globe and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/the-next-adventure__venue__6211019.png"
+ },
+ "the-next-adventure/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2017595,
+  "prompt": "A tall slender vertical hanging strand of travel maps, small suitcases and green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/the-next-adventure__vine__2017595.png",
+  "coverage": 0.137,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "the-next-adventure/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5581174,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a vintage brown leather suitcase with a paper plane above it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/the-next-adventure__crest__5581174.png",
+  "coverage": 0.214,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "years-of-memories/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6484363,
+  "prompt": "Wide photograph of an empty ivory gallery room with framed photographs on the walls and white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/years-of-memories__venue__6484363.png"
+ },
+ "years-of-memories/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8006636,
+  "prompt": "A round wreath of white roses, small photo frames and grey eucalyptus with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/years-of-memories__wreath__8006636.png",
+  "coverage": 0.386,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "years-of-memories/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3403839,
+  "prompt": "A low wide compact arrangement of white roses, small photo frames and grey eucalyptus, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/years-of-memories__cluster__3403839.png",
+  "coverage": 0.296,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "years-of-memories/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8849218,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a small ornate charcoal photo frame with a tiny white flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/years-of-memories__crest__8849218.png",
+  "coverage": 0.082,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "goodbye-and-good-luck/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1502209,
+  "prompt": "Wide photograph of an empty warm terracotta party terrace with string lights and paper lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/goodbye-and-good-luck__venue__1502209.png"
+ },
+ "goodbye-and-good-luck/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6225911,
+  "prompt": "A long horizontal garland of terracotta balloons, gold stars and cream ribbons draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/goodbye-and-good-luck__garland__6225911.png",
+  "coverage": 0.204,
+  "edgeTouch": 0.006,
+  "free": true,
+  "style": "garland"
+ },
+ "goodbye-and-good-luck/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4647606,
+  "prompt": "A low wide compact arrangement of terracotta balloons, gold stars and cream ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/goodbye-and-good-luck__cluster__4647606.png",
+  "coverage": 0.43,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "goodbye-and-good-luck/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5597087,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a terracotta hot air balloon with small gold stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/goodbye-and-good-luck__crest__5597087.png",
+  "coverage": 0.167,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "work-ends-life-begins/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3050262,
+  "prompt": "Wide photograph of an empty garden terrace at sunset with deep green plants, lanterns and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/work-ends-life-begins__venue__3050262.png"
+ },
+ "work-ends-life-begins/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8290596,
+  "prompt": "A small compact arrangement of deep green leaves, golden sun rays and white flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/work-ends-life-begins__bouquet__8290596.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "work-ends-life-begins/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8171287,
+  "prompt": "A low wide compact arrangement of deep green leaves, golden sun rays and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/work-ends-life-begins__cluster__8171287.png",
+  "coverage": 0.345,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "work-ends-life-begins/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5640682,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a golden sun setting over a deep green horizon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/work-ends-life-begins__crest__5640682.png",
+  "coverage": 0.173,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "retirement-brunch/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3829047,
+  "prompt": "Wide photograph of an empty sunny brunch café table set with lavender flowers, coffee and pastries, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-brunch__venue__3829047.png"
+ },
+ "retirement-brunch/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4833901,
+  "prompt": "A tall slender vertical hanging strand of lavender flowers, white blooms and coffee beans from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-brunch__vine__4833901.png",
+  "coverage": 0.122,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "retirement-brunch/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2252000,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a steaming lavender coffee cup on a saucer with a small flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/retirement-brunch__crest__2252000.png",
+  "coverage": 0.111,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "a-lifetime-of-achievement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1049690,
+  "prompt": "Wide photograph of an empty grand awards hall with emerald drapes, gold lights and a small stage, celebration venue decor, no people, warm inviting light, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/a-lifetime-of-achievement__venue__1049690.png"
+ },
+ "a-lifetime-of-achievement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2610578,
+  "prompt": "A low wide compact arrangement of emerald laurel leaves, gold ribbons and white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/a-lifetime-of-achievement__cluster__2610578.png",
+  "coverage": 0.46,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "a-lifetime-of-achievement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7307355,
+  "prompt": "Small premium ornament for the top of a retirement invitation: a gold medal seal inside an emerald laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium retirement celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/RETIREMENT/a-lifetime-of-achievement__crest__7307355.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ }
+}

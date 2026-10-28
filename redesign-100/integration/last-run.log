@@ -1,0 +1,42 @@
+PASS gallery: original grid unchanged by the collection
+PASS gallery: collection shown below the original gallery, open with all 100 cards
+PASS gallery: no script errors
+PASS categories: original category cards unchanged
+PASS categories: Redesigned Collection card links to the collection
+PASS gallery: 100 redesigned cards, all distinct rd-* ids
+PASS gallery: thumbnails load and Preview/Use links target rd-* ids
+PASS gallery: names keep the original design name + "(Redesigned)"
+PASS gallery: preview modal renders the redesigned card
+PASS preview: regional (rd-kalasam-blessing) loads its artwork + name
+PASS preview: rituals (rd-hindu-vivah) loads its artwork + name
+PASS preview: royal (rd-maharaja-palace) loads its artwork + name
+PASS preview: south-asian (rd-sri-lankan-poruwa) loads its artwork + name
+PASS preview: botanical (rd-lotus-garden) loads its artwork + name
+PASS preview: botanicalLayout (rd-kerala-mangalyam) loads its artwork + name
+PASS original unchanged: telugu-pelli
+PASS original unchanged: tamil-thirumanam
+PASS original unchanged: kalasam-blessing
+PASS original unchanged: luxury-editorial
+PASS original unchanged: minimal-wedding
+PASS original unchanged: japanese-mizuhiki
+PASS editor: rd-kalasam-blessing opens with its artwork
+PASS editor: all 100 redesigned cards sit next to their originals in the wedding Template grid
+PASS editor: selecting another redesigned card loads its artwork
+PASS editor: original designs still listed in the picker
+PASS editor: venue and name edits render on the redesigned card
+PASS editor: desktop preview (kalasam-blessing)
+PASS editor: mobile 390px preview (kalasam-blessing)
+PASS editor: JPG export (kalasam-blessing)
+PASS host page: redesigned artwork (maharaja-palace)
+PASS editor: no script errors (kalasam-blessing)
+PASS editor: rd-kerala-mangalyam opens with its artwork
+PASS editor: all 100 redesigned cards sit next to their originals in the wedding Template grid
+PASS editor: desktop preview (kerala-mangalyam)
+PASS editor: mobile 390px preview (kerala-mangalyam)
+PASS editor: JPG export (kerala-mangalyam)
+PASS host page: redesigned artwork (kerala-mangalyam)
+PASS editor: no script errors (kerala-mangalyam)
+PASS editor: protected telugu-pelli unchanged
+PASS editor: protected tamil-thirumanam unchanged
+PASS rollback: collection hidden, rd-* link falls back to the original design
+passed 41 failed 0

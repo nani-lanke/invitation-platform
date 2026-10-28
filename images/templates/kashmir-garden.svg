@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Kashmir Garden — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-kashmir-garden" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6F8F6"/>
+      <stop offset="55%" stop-color="#E1ECE3"/>
+      <stop offset="100%" stop-color="#F6F8F6"/>
+    </linearGradient>
+    <radialGradient id="gl-kashmir-garden" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-kashmir-garden" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-kashmir-garden)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-kashmir-garden)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-kashmir-garden)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Kashmiri Chinar Leaves &amp; Persian Paisley Border -->
+      <g stroke="#3B6B55" stroke-width="1.6" fill="none" opacity="0.6">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#BA7032" stroke-width="1" stroke-dasharray="5 3"/>
+      </g>
+      <!-- Chinar Leaf Vignette in Center -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="105" fill="none" stroke="#3B6B55" stroke-width="1.5" opacity="0.4"/>
+        <!-- 5-Pointed Chinar Maple Leaf -->
+        <g fill="#BA7032" opacity="0.75">
+          <!-- Central Point -->
+          <path d="M 0 40 L 0 -70 L 15 -45 L 30 -55 L 20 -25 L 45 -25 L 15 0 L 25 25 L 0 15 Z"/>
+          <path d="M 0 40 L 0 -70 L -15 -45 L -30 -55 L -20 -25 L -45 -25 L -15 0 L -25 25 L 0 15 Z"/>
+        </g>
+        <!-- Shalimar Garden Vine Flankers -->
+        <g stroke="#3B6B55" stroke-width="1.5" fill="none" opacity="0.7">
+          <path d="M -50 0 C -90 -30, -80 -70, -40 -60"/>
+          <path d="M 50 0 C 90 -30, 80 -70, 40 -60"/>
+          <circle cx="-60" cy="-45" r="4" fill="#BA7032"/>
+          <circle cx="60" cy="-45" r="4" fill="#BA7032"/>
+        </g>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#BA7032" opacity="0.85">IN THE VALLEY OF LOVE</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#BA7032" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#BA7032" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#BA7032" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#1E2D24">Kashmir Garden</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1E2D24" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#BA7032" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#1E2D24" opacity="0.6">SHALIMAR BAGH VOWS</text>
+</svg>

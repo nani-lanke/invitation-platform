@@ -1,0 +1,40 @@
+{
+ "slug": "mehendi-morning",
+ "name": "Mehendi Morning",
+ "base": "cards/mehendi-morning/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/mehendi-morning.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/mehendi-morning.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a mehendi morning garden setup with low cushions, green drapes, brass bowls of henna and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9439447,
+   "raw": "..\\work\\raw\\mehendi-morning__venue__9439447_3ccqj.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of fresh henna leaves, marigolds and paisley shaped green leaves, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2758479,
+   "raw": "..\\work\\raw\\mehendi-morning__crest__2758479_4iim5.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a green garden courtyard with a pavilion in morning light, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8890279,
+   "raw": "..\\work\\raw\\mehendi-morning__footer__8890279_3d4qj.png"
+  }
+ }
+}

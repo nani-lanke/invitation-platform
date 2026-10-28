@@ -1,0 +1,946 @@
+{
+ "naming-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9300374,
+  "prompt": "Wide photograph of an empty traditional Indian naming ceremony hall with a decorated wooden cradle, marigold garlands and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/naming-ceremony__venue__9300374.png"
+ },
+ "naming-ceremony/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2643519,
+  "prompt": "A long horizontal garland of orange marigolds, white jasmine strings and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/naming-ceremony__garland__2643519.png",
+  "coverage": 0.281,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "garland"
+ },
+ "naming-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3574542,
+  "prompt": "A low wide compact arrangement of orange marigolds, white jasmine strings and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/naming-ceremony__cluster__3574542.png",
+  "coverage": 0.394,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "naming-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7349479,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small polished brass kalash with mango leaves and a coconut, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/naming-ceremony__crest__7349479.png",
+  "coverage": 0.081,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "blessed-beginning/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5301775,
+  "prompt": "Wide photograph of an empty rich brown and gold naming ceremony hall with a carved wooden cradle, brass lamps and marigold drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-beginning__venue__5301775.png"
+ },
+ "blessed-beginning/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4937659,
+  "prompt": "A low wide compact arrangement of deep orange marigolds, gold leaves and small brass bells, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-beginning__cluster__4937659.png",
+  "coverage": 0.397,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "blessed-beginning/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5966062,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small ornate gold oil lamp diya with a glowing flame, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-beginning__crest__5966062.png",
+  "coverage": 0.065,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "cradle-song/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2303234,
+  "prompt": "Wide photograph of an empty night blue naming ceremony nursery with a white cradle, soft star lights and white drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cradle-song__venue__2303234.png"
+ },
+ "cradle-song/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5387553,
+  "prompt": "A small compact arrangement of white roses, pale blue hydrangeas and tiny silver stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cradle-song__bouquet__5387553.png",
+  "coverage": 0.155,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cradle-song/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8888222,
+  "prompt": "A low wide compact arrangement of white roses, pale blue hydrangeas and tiny silver stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cradle-song__cluster__8888222.png",
+  "coverage": 0.419,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cradle-song/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8765591,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small white wooden baby cradle with a tiny crescent moon above, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cradle-song__crest__8765591.png",
+  "coverage": 0.067,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "first-name/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4065963,
+  "prompt": "Wide photograph of an empty plum and gold naming ceremony hall with a decorated cradle, chandeliers and floral drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-name__venue__4065963.png"
+ },
+ "first-name/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5530671,
+  "prompt": "A low wide compact arrangement of deep magenta roses, gold leaves and pink orchids, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-name__cluster__5530671.png",
+  "coverage": 0.369,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "first-name/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3501650,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small ornate gold mandala medallion with a ruby centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-name__crest__3501650.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "a-name-filled-with-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5055804,
+  "prompt": "Wide photograph of an empty blush pink naming ceremony setup with a floral cradle, heart decor and soft lights, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-filled-with-love__venue__5055804.png"
+ },
+ "a-name-filled-with-love/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7771098,
+  "prompt": "A small compact arrangement of blush roses, pink carnations and baby breath flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-filled-with-love__bouquet__7771098.png",
+  "coverage": 0.163,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "a-name-filled-with-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2316817,
+  "prompt": "A low wide compact arrangement of blush roses, pink carnations and baby breath flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-filled-with-love__cluster__2316817.png",
+  "coverage": 0.401,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "a-name-filled-with-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3083668,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small blush pink satin heart tied with a ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-filled-with-love__crest__3083668.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "our-little-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6447358,
+  "prompt": "Wide photograph of an empty cream and gold naming ceremony hall with a flower decked cradle and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-little-blessing__venue__6447358.png"
+ },
+ "our-little-blessing/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4974597,
+  "prompt": "A round wreath of cream roses, white jasmine and soft green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-little-blessing__wreath__4974597.png",
+  "coverage": 0.416,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "our-little-blessing/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8815800,
+  "prompt": "A low wide compact arrangement of cream roses, white jasmine and soft green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-little-blessing__cluster__8815800.png",
+  "coverage": 0.377,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "our-little-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1981113,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a pair of small golden cupped hands holding a tiny flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-little-blessing__crest__1981113.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-beautiful-beginning/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6267489,
+  "prompt": "Wide photograph of an empty sage green garden naming ceremony with a white cradle, floral arch and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-beautiful-beginning__venue__6267489.png"
+ },
+ "a-beautiful-beginning/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8584676,
+  "prompt": "A tall slender vertical hanging strand of white garden roses, eucalyptus and sage green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-beautiful-beginning__vine__8584676.png",
+  "coverage": 0.161,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "a-beautiful-beginning/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9679815,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small watercolour style posy of sage leaves and white blooms, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-beautiful-beginning__crest__9679815.png",
+  "coverage": 0.078,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "welcome-to-our-family/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2885512,
+  "prompt": "Wide photograph of an empty warm family naming ceremony living room with a decorated cradle, flowers and family photo frames, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/welcome-to-our-family__venue__2885512.png"
+ },
+ "welcome-to-our-family/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2206238,
+  "prompt": "A long horizontal garland of peach roses, cream flowers and olive branches draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/welcome-to-our-family__garland__2206238.png",
+  "coverage": 0.246,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "welcome-to-our-family/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1814599,
+  "prompt": "A low wide compact arrangement of peach roses, cream flowers and olive branches, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/welcome-to-our-family__cluster__1814599.png",
+  "coverage": 0.328,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "welcome-to-our-family/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7004154,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small golden family tree ornament with tiny leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/welcome-to-our-family__crest__7004154.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "a-name-to-cherish/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1420301,
+  "prompt": "Wide photograph of an empty royal purple naming ceremony hall with a velvet cradle, gold chandeliers and drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-to-cherish__venue__1420301.png"
+ },
+ "a-name-to-cherish/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4304603,
+  "prompt": "A low wide compact arrangement of deep purple orchids, plum roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-to-cherish__cluster__4304603.png",
+  "coverage": 0.335,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "a-name-to-cherish/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4665870,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small jewelled gold crown with purple amethysts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-name-to-cherish__crest__4665870.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "little-one-big-blessings/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3070242,
+  "prompt": "Wide photograph of an empty pale blue naming ceremony setup with a white cradle, moon and star decor and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-one-big-blessings__venue__3070242.png"
+ },
+ "little-one-big-blessings/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6432781,
+  "prompt": "A small compact arrangement of pale blue and white balloons with tiny gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-one-big-blessings__bouquet__6432781.png",
+  "coverage": 0.07,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "little-one-big-blessings/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5903682,
+  "prompt": "A low wide compact arrangement of pale blue and white balloons with tiny gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-one-big-blessings__cluster__5903682.png",
+  "coverage": 0.29,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "little-one-big-blessings/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6703595,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small plush pale blue crescent moon with a gold star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-one-big-blessings__crest__6703595.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "the-naming-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5175902,
+  "prompt": "Wide photograph of an empty deep red traditional naming ceremony hall with a carved cradle, marigold torans and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-naming-celebration__venue__5175902.png"
+ },
+ "the-naming-celebration/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2086385,
+  "prompt": "A long horizontal garland of red roses, orange marigolds and mango leaf torans draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-naming-celebration__garland__2086385.png",
+  "coverage": 0.233,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "the-naming-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2274344,
+  "prompt": "A low wide compact arrangement of red roses, orange marigolds and mango leaf torans, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-naming-celebration__cluster__2274344.png",
+  "coverage": 0.463,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "the-naming-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2854729,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small brass kalash decorated with red kumkum and mango leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-naming-celebration__crest__2854729.png",
+  "coverage": 0.083,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "blessed-with-a-beautiful-name/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7314272,
+  "prompt": "Wide photograph of an empty green botanical naming ceremony with a white cradle under a leafy arch, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-with-a-beautiful-name__venue__7314272.png"
+ },
+ "blessed-with-a-beautiful-name/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1502547,
+  "prompt": "A round wreath of white roses, olive leaves and soft green ferns with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-with-a-beautiful-name__wreath__1502547.png",
+  "coverage": 0.372,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "blessed-with-a-beautiful-name/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1206254,
+  "prompt": "A low wide compact arrangement of white roses, olive leaves and soft green ferns, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-with-a-beautiful-name__cluster__1206254.png",
+  "coverage": 0.385,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "blessed-with-a-beautiful-name/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2330759,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small round wreath of green leaves with a white flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessed-with-a-beautiful-name__crest__2330759.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-new-chapter-begins/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3005053,
+  "prompt": "Wide photograph of an empty minimal ivory naming ceremony setup with a white cradle, books and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-new-chapter-begins__venue__3005053.png"
+ },
+ "a-new-chapter-begins/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1034580,
+  "prompt": "A tall slender vertical hanging strand of white ranunculus, soft greenery and small white blooms from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-new-chapter-begins__vine__1034580.png",
+  "coverage": 0.163,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "a-new-chapter-begins/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7344791,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small open storybook with a pressed flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-new-chapter-begins__crest__7344791.png",
+  "coverage": 0.043,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "our-precious-little-star/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9695765,
+  "prompt": "Wide photograph of an empty periwinkle naming ceremony nursery with a cradle and hanging gold stars, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-precious-little-star__venue__9695765.png"
+ },
+ "our-precious-little-star/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9965497,
+  "prompt": "A small compact arrangement of periwinkle blue flowers, white roses and tiny gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-precious-little-star__bouquet__9965497.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "our-precious-little-star/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4853078,
+  "prompt": "A low wide compact arrangement of periwinkle blue flowers, white roses and tiny gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-precious-little-star__cluster__4853078.png",
+  "coverage": 0.35,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "our-precious-little-star/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7992383,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a glowing plush gold star with a soft halo, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/our-precious-little-star__crest__7992383.png",
+  "coverage": 0.151,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sacred-naming-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7122177,
+  "prompt": "Wide photograph of an empty traditional naming ceremony courtyard with a petal rangoli, a wooden cradle and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/sacred-naming-day__venue__7122177.png"
+ },
+ "sacred-naming-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1114975,
+  "prompt": "A low wide compact arrangement of orange marigolds, red rose petals and brass diyas, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/sacred-naming-day__cluster__1114975.png",
+  "coverage": 0.494,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sacred-naming-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6884578,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small brass diya on a colourful rangoli pattern of petals, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/sacred-naming-day__crest__6884578.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "moonlit-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7314224,
+  "prompt": "Wide photograph of an empty moonlit teal naming ceremony setup with a white cradle, lanterns and silver drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/moonlit-blessing__venue__7314224.png"
+ },
+ "moonlit-blessing/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2276686,
+  "prompt": "A small compact arrangement of white moonflowers, silver leaves and tiny stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/moonlit-blessing__bouquet__2276686.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlit-blessing/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3856701,
+  "prompt": "A low wide compact arrangement of white moonflowers, silver leaves and tiny stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/moonlit-blessing__cluster__3856701.png",
+  "coverage": 0.272,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cherished-beginning/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3452519,
+  "prompt": "Wide photograph of an empty blush rose naming ceremony setup with a floral cradle and pink drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cherished-beginning__venue__3452519.png"
+ },
+ "cherished-beginning/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3247869,
+  "prompt": "A small compact arrangement of blush pink roses, rose petals and soft greenery, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cherished-beginning__bouquet__3247869.png",
+  "coverage": 0.095,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cherished-beginning/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1612658,
+  "prompt": "A low wide compact arrangement of blush pink roses, rose petals and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cherished-beginning__cluster__1612658.png",
+  "coverage": 0.315,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cherished-beginning/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3115963,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small blush rose with scattered pink petals, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/cherished-beginning__crest__3115963.png",
+  "coverage": 0.07,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "a-grand-arrival/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2327373,
+  "prompt": "Wide photograph of an empty grand midnight blue naming ceremony hall with a golden arch, a decorated cradle and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-grand-arrival__venue__2327373.png"
+ },
+ "a-grand-arrival/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8242399,
+  "prompt": "A low wide compact arrangement of white orchids, gold leaves and small gold sparkles, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-grand-arrival__cluster__8242399.png",
+  "coverage": 0.247,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "a-grand-arrival/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8731426,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small gold arch ornament with tiny confetti sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-grand-arrival__crest__8731426.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "tiny-blessings/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1704842,
+  "prompt": "Wide photograph of an empty soft blue naming ceremony nursery with a white cradle, clouds and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/tiny-blessings__venue__1704842.png"
+ },
+ "tiny-blessings/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4283033,
+  "prompt": "A small compact arrangement of pale blue and white flowers with soft baby breath, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/tiny-blessings__bouquet__4283033.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "tiny-blessings/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7759606,
+  "prompt": "A low wide compact arrangement of pale blue and white flowers with soft baby breath, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/tiny-blessings__cluster__7759606.png",
+  "coverage": 0.454,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "tiny-blessings/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9694047,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a pair of tiny white baby footprints made of soft clay, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/tiny-blessings__crest__9694047.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "the-name-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5807811,
+  "prompt": "Wide photograph of an empty bright naming ceremony courtyard with a wooden cradle, marigolds and morning sunlight, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-name-day__venue__5807811.png"
+ },
+ "the-name-day/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4289720,
+  "prompt": "A long horizontal garland of yellow marigolds, mango leaves and white jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-name-day__garland__4289720.png",
+  "coverage": 0.315,
+  "edgeTouch": 0.011,
+  "free": true,
+  "style": "garland"
+ },
+ "the-name-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6988211,
+  "prompt": "A low wide compact arrangement of yellow marigolds, mango leaves and white jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-name-day__cluster__6988211.png",
+  "coverage": 0.397,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "the-name-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5287446,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small golden sun shaped brass ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/the-name-day__crest__5287446.png",
+  "coverage": 0.032,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "first-words-of-welcome/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5136313,
+  "prompt": "Wide photograph of an empty cosy naming ceremony room with a cradle, teddy bears and beige balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-words-of-welcome__venue__5136313.png"
+ },
+ "first-words-of-welcome/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9505997,
+  "prompt": "A small compact arrangement of beige balloons, cream roses and small plush teddy bears, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-words-of-welcome__bouquet__9505997.png",
+  "coverage": 0.097,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "first-words-of-welcome/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1944194,
+  "prompt": "A low wide compact arrangement of beige balloons, cream roses and small plush teddy bears, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-words-of-welcome__cluster__1944194.png",
+  "coverage": 0.342,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "first-words-of-welcome/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9697323,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a soft brown teddy bear holding a small cream balloon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/first-words-of-welcome__crest__9697323.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blessings-of-home/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1700501,
+  "prompt": "Wide photograph of an empty rustic home naming ceremony with a wooden cradle, olive branches and warm light, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessings-of-home__venue__1700501.png"
+ },
+ "blessings-of-home/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5541615,
+  "prompt": "A tall slender vertical hanging strand of olive branches, white blossoms and dried grasses from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessings-of-home__vine__5541615.png",
+  "coverage": 0.147,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "vines"
+ },
+ "blessings-of-home/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4288202,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small olive branch with tiny white blossoms, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/blessings-of-home__crest__4288202.png",
+  "coverage": 0.036,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "aurora-naming/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8541436,
+  "prompt": "Wide photograph of an empty dreamy lilac and aqua naming ceremony setup with a white cradle and soft drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/aurora-naming__venue__8541436.png"
+ },
+ "aurora-naming/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6444597,
+  "prompt": "A small compact arrangement of lilac and aqua flowers with soft white blooms, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/aurora-naming__bouquet__6444597.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "aurora-naming/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7234794,
+  "prompt": "A low wide compact arrangement of lilac and aqua flowers with soft white blooms, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/aurora-naming__cluster__7234794.png",
+  "coverage": 0.366,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "aurora-naming/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9676611,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small soft lilac and aqua watercolour swirl shaped glass ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/aurora-naming__crest__9676611.png",
+  "coverage": 0.127,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "golden-name/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7643672,
+  "prompt": "Wide photograph of an empty black and gold luxury naming ceremony lounge with a gold cradle and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/golden-name__venue__7643672.png"
+ },
+ "golden-name/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9417714,
+  "prompt": "A low wide compact arrangement of ivory roses, gold leaves and small gold sparkles, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/golden-name__cluster__9417714.png",
+  "coverage": 0.357,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-name/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1830011,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small gold sparkle star burst ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/golden-name__crest__1830011.png",
+  "coverage": 0.038,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "paisley-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8712456,
+  "prompt": "Wide photograph of an empty teal and gold naming ceremony hall with a decorated cradle and paisley drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/paisley-blessing__venue__8712456.png"
+ },
+ "paisley-blessing/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2415176,
+  "prompt": "A low wide compact arrangement of teal blue flowers, gold leaves and white jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/paisley-blessing__cluster__2415176.png",
+  "coverage": 0.421,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "paisley-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7409513,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small ornate teal and gold paisley shaped ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/paisley-blessing__crest__7409513.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "little-crown/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5440739,
+  "prompt": "Wide photograph of an empty pink princess naming ceremony setup with a white cradle and pink flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-crown__venue__5440739.png"
+ },
+ "little-crown/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4454828,
+  "prompt": "A round wreath of pink roses, peonies and small gold crowns with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-crown__wreath__4454828.png",
+  "coverage": 0.377,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-crown/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7874175,
+  "prompt": "A low wide compact arrangement of pink roses, peonies and small gold crowns, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-crown__cluster__7874175.png",
+  "coverage": 0.397,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "little-crown/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8652674,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small sparkling pink and gold baby tiara, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/little-crown__crest__8652674.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "heirloom-naming/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8724504,
+  "prompt": "Wide photograph of an empty vintage heirloom naming ceremony room with an antique wooden cradle and lace, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/heirloom-naming__venue__8724504.png"
+ },
+ "heirloom-naming/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4225808,
+  "prompt": "A round wreath of ivory roses, dried flowers and antique brass leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/heirloom-naming__wreath__4225808.png",
+  "coverage": 0.379,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "heirloom-naming/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6080611,
+  "prompt": "A low wide compact arrangement of ivory roses, dried flowers and antique brass leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/heirloom-naming__cluster__6080611.png",
+  "coverage": 0.304,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "heirloom-naming/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8255526,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a small antique gold medallion with paisley engraving, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/heirloom-naming__crest__8255526.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-quiet-blessing/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2152272,
+  "prompt": "Wide photograph of an empty serene minimal naming ceremony setup with a white cradle and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-quiet-blessing__venue__2152272.png"
+ },
+ "a-quiet-blessing/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6722613,
+  "prompt": "A tall slender vertical hanging strand of white jasmine, soft green leaves and tiny white flowers from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-quiet-blessing__vine__6722613.png",
+  "coverage": 0.174,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "vines"
+ },
+ "a-quiet-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6896662,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a single small sprig of white jasmine with two leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/a-quiet-blessing__crest__6896662.png",
+  "coverage": 0.033,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "starlight-naming/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7322500,
+  "prompt": "Wide photograph of an empty starry midnight blue naming ceremony setup with a cradle, fairy lights and star decor, celebration venue decor, no people, warm inviting light, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/starlight-naming__venue__7322500.png"
+ },
+ "starlight-naming/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4424691,
+  "prompt": "A small compact arrangement of white flowers, silver leaves and tiny glowing stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/starlight-naming__bouquet__4424691.png",
+  "coverage": 0.043,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starlight-naming/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2399996,
+  "prompt": "A low wide compact arrangement of white flowers, silver leaves and tiny glowing stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/starlight-naming__cluster__2399996.png",
+  "coverage": 0.376,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starlight-naming/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2673149,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a cluster of three small glowing silver and gold stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/starlight-naming__crest__2673149.png",
+  "coverage": 0.034,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlit-blessing/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6483164,
+  "prompt": "Small premium ornament for the top of a naming ceremony invitation: a thick polished silver crescent moon ornament with a small star, large in the frame, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/moonlit-blessing__crest__6483164.png",
+  "coverage": 0.132,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "paisley-blessing/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2274731,
+  "prompt": "A long horizontal garland of teal blue flowers, gold leaves and white jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium Indian ceremony decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/NAMING-CEREMONY/paisley-blessing__garland__2274731.png",
+  "coverage": 0.314,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ }
+}

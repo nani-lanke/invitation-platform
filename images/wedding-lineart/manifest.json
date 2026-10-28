@@ -1,0 +1,2441 @@
+{
+ "model": "flux-2-klein-4b.safetensors",
+ "assets": {
+  "lotus/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7184175,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of lotus flowers, lotus buds and lotus leaves with curling stems, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/lotus__corner-top__7184175.png",
+   "size": [
+    551,
+    728
+   ],
+   "coverage": 0.059
+  },
+  "lotus/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3755685,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of lotus flowers, lotus buds and lotus leaves with curling stems, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/lotus__corner-bottom__3755685.png",
+   "size": [
+    342,
+    484
+   ],
+   "coverage": 0.049
+  },
+  "lotus/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2076538,
+   "prompt": "Tall slender vertical vine border made of lotus flowers, lotus buds and lotus leaves with curling stems, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/lotus__side-vine__2076538.png",
+   "size": [
+    175,
+    940
+   ],
+   "coverage": 0.076
+  },
+  "lotus/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2599439,
+   "prompt": "A small curved leafy sprig made of lotus flowers, lotus buds and lotus leaves with curling stems, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/lotus__sprig__2599439.png",
+   "size": [
+    347,
+    253
+   ],
+   "coverage": 0.029
+  },
+  "crests/kalasam-blessing": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3391592,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Kalasam Blessing\": The purna kumbham — pot, mango leaves and coconut — set inside a sandalwood arch for an auspicious South Indian muhurtha, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__kalasam-blessing__3391592.png",
+   "size": [
+    281,
+    319
+   ],
+   "coverage": 0.03
+  },
+  "jasmine/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1097282,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of jasmine flowers, mango leaves and small temple bells on curling stems, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/jasmine__corner-top__1097282.png",
+   "size": [
+    699,
+    704
+   ],
+   "coverage": 0.118
+  },
+  "jasmine/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2871690,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of jasmine flowers, mango leaves and small temple bells on curling stems, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/jasmine__corner-bottom__2871690.png",
+   "size": [
+    457,
+    631
+   ],
+   "coverage": 0.102
+  },
+  "jasmine/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7385623,
+   "prompt": "Tall slender vertical vine border made of jasmine flowers, mango leaves and small temple bells on curling stems, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/jasmine__side-vine__7385623.png",
+   "size": [
+    170,
+    947
+   ],
+   "coverage": 0.091
+  },
+  "jasmine/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5827964,
+   "prompt": "A small curved leafy sprig made of jasmine flowers, mango leaves and small temple bells on curling stems, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/jasmine__sprig__5827964.png",
+   "size": [
+    495,
+    318
+   ],
+   "coverage": 0.071
+  },
+  "marigold/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1168022,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of marigold flowers, paisley motifs and mango leaves on curling stems, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/marigold__corner-top__1168022.png",
+   "size": [
+    668,
+    696
+   ],
+   "coverage": 0.129
+  },
+  "marigold/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8527987,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of marigold flowers, paisley motifs and mango leaves on curling stems, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/marigold__corner-bottom__8527987.png",
+   "size": [
+    494,
+    531
+   ],
+   "coverage": 0.137
+  },
+  "marigold/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1152450,
+   "prompt": "Tall slender vertical vine border made of marigold flowers, paisley motifs and mango leaves on curling stems, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/marigold__side-vine__1152450.png",
+   "size": [
+    175,
+    968
+   ],
+   "coverage": 0.078
+  },
+  "marigold/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8707511,
+   "prompt": "A small curved leafy sprig made of marigold flowers, paisley motifs and mango leaves on curling stems, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/marigold__sprig__8707511.png",
+   "size": [
+    374,
+    265
+   ],
+   "coverage": 0.054
+  },
+  "rose/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9193000,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of garden roses, rosebuds and leafy vines, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/rose__corner-top__9193000.png",
+   "size": [
+    488,
+    734
+   ],
+   "coverage": 0.064
+  },
+  "rose/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6952822,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of garden roses, rosebuds and leafy vines, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/rose__corner-bottom__6952822.png",
+   "size": [
+    662,
+    566
+   ],
+   "coverage": 0.084
+  },
+  "rose/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7112417,
+   "prompt": "Tall slender vertical vine border made of garden roses, rosebuds and leafy vines, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/rose__side-vine__7112417.png",
+   "size": [
+    165,
+    915
+   ],
+   "coverage": 0.092
+  },
+  "rose/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8976210,
+   "prompt": "A small curved leafy sprig made of garden roses, rosebuds and leafy vines, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/rose__sprig__8976210.png",
+   "size": [
+    409,
+    321
+   ],
+   "coverage": 0.042
+  },
+  "blossom/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3641141,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of peony flowers and cherry blossom branches, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/blossom__corner-top__3641141.png",
+   "size": [
+    614,
+    710
+   ],
+   "coverage": 0.063
+  },
+  "blossom/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1273643,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of peony flowers and cherry blossom branches, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/blossom__corner-bottom__1273643.png",
+   "size": [
+    536,
+    562
+   ],
+   "coverage": 0.086
+  },
+  "blossom/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1667248,
+   "prompt": "Tall slender vertical vine border made of peony flowers and cherry blossom branches, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/blossom__side-vine__1667248.png",
+   "size": [
+    200,
+    962
+   ],
+   "coverage": 0.096
+  },
+  "blossom/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5409469,
+   "prompt": "A small curved leafy sprig made of peony flowers and cherry blossom branches, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/blossom__sprig__5409469.png",
+   "size": [
+    481,
+    296
+   ],
+   "coverage": 0.047
+  },
+  "arabesque/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3072323,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of Mughal tulips, chinar leaves and arabesque scrolls, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/arabesque__corner-top__3072323.png",
+   "size": [
+    677,
+    697
+   ],
+   "coverage": 0.077
+  },
+  "arabesque/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9685715,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of Mughal tulips, chinar leaves and arabesque scrolls, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/arabesque__corner-bottom__9685715.png",
+   "size": [
+    412,
+    542
+   ],
+   "coverage": 0.09
+  },
+  "arabesque/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8930994,
+   "prompt": "Tall slender vertical vine border made of Mughal tulips, chinar leaves and arabesque scrolls, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/arabesque__side-vine__8930994.png",
+   "size": [
+    174,
+    902
+   ],
+   "coverage": 0.057
+  },
+  "arabesque/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6359395,
+   "prompt": "A small curved leafy sprig made of Mughal tulips, chinar leaves and arabesque scrolls, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/arabesque__sprig__6359395.png",
+   "size": [
+    276,
+    241
+   ],
+   "coverage": 0.039
+  },
+  "geometric/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5498306,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of stylised acacia leaves with woven geometric pattern lines, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/geometric__corner-top__5498306.png",
+   "size": [
+    656,
+    728
+   ],
+   "coverage": 0.098
+  },
+  "geometric/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6512219,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of stylised acacia leaves with woven geometric pattern lines, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/geometric__corner-bottom__6512219.png",
+   "size": [
+    545,
+    546
+   ],
+   "coverage": 0.117
+  },
+  "geometric/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6251472,
+   "prompt": "Tall slender vertical vine border made of stylised acacia leaves with woven geometric pattern lines, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/geometric__side-vine__6251472.png",
+   "size": [
+    132,
+    991
+   ],
+   "coverage": 0.077
+  },
+  "geometric/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3833653,
+   "prompt": "A small curved leafy sprig made of stylised acacia leaves with woven geometric pattern lines, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/geometric__sprig__3833653.png",
+   "size": [
+    372,
+    258
+   ],
+   "coverage": 0.054
+  },
+  "tropical/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7082482,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of frangipani flowers, hibiscus and palm fronds, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/tropical__corner-top__7082482.png",
+   "size": [
+    556,
+    657
+   ],
+   "coverage": 0.134
+  },
+  "tropical/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4897882,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of frangipani flowers, hibiscus and palm fronds, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/tropical__corner-bottom__4897882.png",
+   "size": [
+    433,
+    520
+   ],
+   "coverage": 0.114
+  },
+  "tropical/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3450953,
+   "prompt": "Tall slender vertical vine border made of frangipani flowers, hibiscus and palm fronds, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/tropical__side-vine__3450953.png",
+   "size": [
+    195,
+    959
+   ],
+   "coverage": 0.139
+  },
+  "tropical/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1785528,
+   "prompt": "A small curved leafy sprig made of frangipani flowers, hibiscus and palm fronds, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/tropical__sprig__1785528.png",
+   "size": [
+    335,
+    323
+   ],
+   "coverage": 0.052
+  },
+  "laurel/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6794315,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of olive branches, laurel leaves and small wild roses, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/laurel__corner-top__6794315.png",
+   "size": [
+    459,
+    711
+   ],
+   "coverage": 0.069
+  },
+  "laurel/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1273943,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of olive branches, laurel leaves and small wild roses, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/laurel__corner-bottom__1273943.png",
+   "size": [
+    459,
+    521
+   ],
+   "coverage": 0.075
+  },
+  "laurel/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3583118,
+   "prompt": "Tall slender vertical vine border made of olive branches, laurel leaves and small wild roses, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/laurel__side-vine__3583118.png",
+   "size": [
+    169,
+    958
+   ],
+   "coverage": 0.086
+  },
+  "laurel/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6131187,
+   "prompt": "A small curved leafy sprig made of olive branches, laurel leaves and small wild roses, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/laurel__sprig__6131187.png",
+   "size": [
+    334,
+    243
+   ],
+   "coverage": 0.03
+  },
+  "fern/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8838460,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of fern fronds, wildflowers and leafy branches, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/fern__corner-top__8838460.png",
+   "size": [
+    683,
+    712
+   ],
+   "coverage": 0.093
+  },
+  "fern/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9452692,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of fern fronds, wildflowers and leafy branches, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/fern__corner-bottom__9452692.png",
+   "size": [
+    480,
+    490
+   ],
+   "coverage": 0.088
+  },
+  "fern/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9888897,
+   "prompt": "Tall slender vertical vine border made of fern fronds, wildflowers and leafy branches, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/fern__side-vine__9888897.png",
+   "size": [
+    187,
+    940
+   ],
+   "coverage": 0.094
+  },
+  "fern/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8296126,
+   "prompt": "A small curved leafy sprig made of fern fronds, wildflowers and leafy branches, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/fern__sprig__8296126.png",
+   "size": [
+    371,
+    312
+   ],
+   "coverage": 0.054
+  },
+  "baroque/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2447507,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of royal acanthus scrolls, filigree flourishes and small lotus buds, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/baroque__corner-top__2447507.png",
+   "size": [
+    731,
+    710
+   ],
+   "coverage": 0.1
+  },
+  "baroque/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9373895,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of royal acanthus scrolls, filigree flourishes and small lotus buds, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/baroque__corner-bottom__9373895.png",
+   "size": [
+    481,
+    534
+   ],
+   "coverage": 0.069
+  },
+  "baroque/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1188910,
+   "prompt": "Tall slender vertical vine border made of royal acanthus scrolls, filigree flourishes and small lotus buds, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/baroque__side-vine__1188910.png",
+   "size": [
+    139,
+    955
+   ],
+   "coverage": 0.069
+  },
+  "baroque/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4275763,
+   "prompt": "A small curved leafy sprig made of royal acanthus scrolls, filigree flourishes and small lotus buds, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/baroque__sprig__4275763.png",
+   "size": [
+    505,
+    283
+   ],
+   "coverage": 0.065
+  },
+  "deco/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6543744,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of art deco fan motifs, geometric sunburst lines and stylised palm leaves, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/deco__corner-top__6543744.png",
+   "size": [
+    675,
+    756
+   ],
+   "coverage": 0.084
+  },
+  "deco/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8224722,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of art deco fan motifs, geometric sunburst lines and stylised palm leaves, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/deco__corner-bottom__8224722.png",
+   "size": [
+    464,
+    576
+   ],
+   "coverage": 0.08
+  },
+  "deco/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9883093,
+   "prompt": "Tall slender vertical vine border made of art deco fan motifs, geometric sunburst lines and stylised palm leaves, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/deco__side-vine__9883093.png",
+   "size": [
+    195,
+    947
+   ],
+   "coverage": 0.095
+  },
+  "deco/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9770666,
+   "prompt": "A small curved leafy sprig made of art deco fan motifs, geometric sunburst lines and stylised palm leaves, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/deco__sprig__9770666.png",
+   "size": [
+    361,
+    282
+   ],
+   "coverage": 0.049
+  },
+  "minimal/corner-top": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4135424,
+   "prompt": "Ornamental corner decoration for the top-left corner of a wedding invitation, made of a single delicate leafy stem with a few small leaves and one small bud, stems flowing along the top edge and down the left edge, empty space in the bottom right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/minimal__corner-top__4135424.png",
+   "size": [
+    421,
+    691
+   ],
+   "coverage": 0.017
+  },
+  "minimal/corner-bottom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7903142,
+   "prompt": "Lush ornamental cluster for the bottom-left corner of a wedding invitation, made of a single delicate leafy stem with a few small leaves and one small bud, growing upward from the bottom edge, empty space in the top right, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/minimal__corner-bottom__7903142.png",
+   "size": [
+    317,
+    393
+   ],
+   "coverage": 0.018
+  },
+  "minimal/side-vine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9218781,
+   "prompt": "Tall slender vertical vine border made of a single delicate leafy stem with a few small leaves and one small bud, one climbing stem from bottom to top, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/minimal__side-vine__9218781.png",
+   "size": [
+    167,
+    976
+   ],
+   "coverage": 0.033
+  },
+  "minimal/sprig": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7953434,
+   "prompt": "A small curved leafy sprig made of a single delicate leafy stem with a few small leaves and one small bud, curving gently like a crescent from left to right, horizontal, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/minimal__sprig__7953434.png",
+   "size": [
+    540,
+    198
+   ],
+   "coverage": 0.02
+  },
+  "crests/gopuram-vows": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6703267,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a tiered Dravidian temple gopuram tower, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__gopuram-vows__6703267.png",
+   "size": [
+    168,
+    187
+   ],
+   "coverage": 0.029
+  },
+  "crests/talambralu-pearls": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3723049,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a bowl of pearls and rice grains, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__talambralu-pearls__3723049.png",
+   "size": [
+    211,
+    188
+   ],
+   "coverage": 0.017
+  },
+  "crests/kerala-mangalyam": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7600589,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a tall nilavilakku brass oil lamp with a flame, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__kerala-mangalyam__7600589.png",
+   "size": [
+    143,
+    364
+   ],
+   "coverage": 0.015
+  },
+  "crests/kasavu-gold-border": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2209841,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a brass uruli bowl with floating flowers, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__kasavu-gold-border__2209841.png",
+   "size": [
+    224,
+    271
+   ],
+   "coverage": 0.03
+  },
+  "crests/mysore-madhuve": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8625027,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Mysore Madhuve\": A cusped Mysore arch under a ribbed dome, in sandalwood and kumkum for a Kannada madhuve., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__mysore-madhuve__8625027.png",
+   "size": [
+    235,
+    321
+   ],
+   "coverage": 0.038
+  },
+  "crests/punjabi-phulkari": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5749935,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Punjabi Phulkari\": Phulkari darn stitch worked across the whole card in magenta and marigold floss, with a clear plaque for the names., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__punjabi-phulkari__5749935.png",
+   "size": [
+    487,
+    487
+   ],
+   "coverage": 0.156
+  },
+  "crests/bengali-alpona": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1572024,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Bengali Alpona\": An alpona lotus with curling tendrils, drawn in rice paste on the courtyard floor of a Bengali biye., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__bengali-alpona__1572024.png",
+   "size": [
+    483,
+    365
+   ],
+   "coverage": 0.069
+  },
+  "crests/shankha-pola": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3390881,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Shankha Pola\": The conch and the red-and-white bangles of a Bengali bride, set on a crest in sindoor red., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__shankha-pola__3390881.png",
+   "size": [
+    265,
+    316
+   ],
+   "coverage": 0.062
+  },
+  "crests/gujarati-toran": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8833664,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Gujarati Toran\": A beaded toran with mirrorwork and bells hung below the names, in the green and gold of a Gujarati lagna., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__gujarati-toran__8833664.png",
+   "size": [
+    307,
+    435
+   ],
+   "coverage": 0.104
+  },
+  "crests/bandhani-bloom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3512092,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Bandhani Bloom\": Tie-dyed bandhani rosettes scattered edge to edge in rose and gold, the way a Gujarati odhani is dotted., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__bandhani-bloom__3512092.png",
+   "size": [
+    385,
+    392
+   ],
+   "coverage": 0.08
+  },
+  "crests/marathi-paithani": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8528525,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a peacock with flowing tail feathers, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__marathi-paithani__8528525.png",
+   "size": [
+    343,
+    383
+   ],
+   "coverage": 0.081
+  },
+  "crests/mundavalya-pearls": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7380654,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: strings of pearls hanging from a curved band, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__mundavalya-pearls__7380654.png",
+   "size": [
+    332,
+    207
+   ],
+   "coverage": 0.023
+  },
+  "crests/rajasthani-jharokha": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2131871,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Rajasthani Jharokha\": A carved haveli jharokha in royal blue and gold, the balcony a Rajasthani bride watches the baraat from., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__rajasthani-jharokha__2131871.png",
+   "size": [
+    368,
+    384
+   ],
+   "coverage": 0.179
+  },
+  "crests/haveli-jaali": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1618788,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Haveli Jaali\": Pierced sandstone jaali worked into a full border, in the pink-city tones of a Rajasthani haveli., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__haveli-jaali__1618788.png",
+   "size": [
+    323,
+    328
+   ],
+   "coverage": 0.078
+  },
+  "crests/assamese-biya": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2359216,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Assamese Biya\": The bamboo japi and gamosa weave on ivory, for an Assamese biya in the Brahmaputra valley., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__assamese-biya__2359216.png",
+   "size": [
+    267,
+    311
+   ],
+   "coverage": 0.033
+  },
+  "crests/gamosa-weave": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6439339,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a woven floral motif in a diamond, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__gamosa-weave__6439339.png",
+   "size": [
+    249,
+    240
+   ],
+   "coverage": 0.025
+  },
+  "crests/odia-bahaghara": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7984631,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Odia Bahaghara\": The Konark chariot wheel at full size on Jagannath yellow, for an Odia bahaghara., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__odia-bahaghara__7984631.png",
+   "size": [
+    291,
+    286
+   ],
+   "coverage": 0.043
+  },
+  "crests/pattachitra-vows": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4047176,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a fish and a lotus in folk painting style, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__pattachitra-vows__4047176.png",
+   "size": [
+    314,
+    243
+   ],
+   "coverage": 0.041
+  },
+  "crests/sindhi-ajrak": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2248838,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an eight-pointed star block-print motif, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__sindhi-ajrak__2248838.png",
+   "size": [
+    365,
+    372
+   ],
+   "coverage": 0.047
+  },
+  "crests/goan-azulejo": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8645382,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an ornate floral tile pattern drawn in outline, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__goan-azulejo__8645382.png",
+   "size": [
+    386,
+    391
+   ],
+   "coverage": 0.06
+  },
+  "crests/konkan-coast": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2341812,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Konkan Coast\": Coconut palms leaning over a Konkan shoreline, in sea teal and laterite orange., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__konkan-coast__2341812.png",
+   "size": [
+    303,
+    310
+   ],
+   "coverage": 0.09
+  },
+  "crests/kashmiri-chinar": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5786252,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Kashmiri Chinar\": Chinar leaves falling across walnut and saffron, painted the way Kashmiri papier-mache is., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__kashmiri-chinar__5786252.png",
+   "size": [
+    367,
+    357
+   ],
+   "coverage": 0.074
+  },
+  "crests/nepali-bihe": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6444442,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Nepali Bihe\": A tiered Newari pagoda with its hanging bells, in crimson and saffron for a Nepali bihe., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__nepali-bihe__6444442.png",
+   "size": [
+    203,
+    321
+   ],
+   "coverage": 0.059
+  },
+  "crests/mithila-vivah": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6859166,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Mithila Vivah\": Madhubani fish and lotus in hatched line work, the pairing painted on a Mithila kohbar wall., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__mithila-vivah__6859166.png",
+   "size": [
+    489,
+    320
+   ],
+   "coverage": 0.084
+  },
+  "crests/lucknawi-chikankari": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6171826,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Lucknawi Chikankari\": Chikankari shadow-work butis on mint white, as fine and as quiet as the Awadhi embroidery itself., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__lucknawi-chikankari__6171826.png",
+   "size": [
+    233,
+    259
+   ],
+   "coverage": 0.042
+  },
+  "crests/luxury-editorial": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5012677,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two crossed fountain pen nibs with a laurel sprig, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__luxury-editorial__5012677.png",
+   "size": [
+    303,
+    319
+   ],
+   "coverage": 0.034
+  },
+  "crests/kanchipuram-silk": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2914554,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Kanchipuram Silk\": South Indian luxury wedding inspired by pure Kanchipuram silk weaves with rich temple borders and zari gold luster., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__kanchipuram-silk__2914554.png",
+   "size": [
+    304,
+    396
+   ],
+   "coverage": 0.108
+  },
+  "crests/tanjore-grandeur": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5285849,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Tanjore Grandeur\": Classical Tanjore painting aesthetic with embossed 22-karat gold foil borders, precious gemstone accents, and divine arc, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__tanjore-grandeur__5285849.png",
+   "size": [
+    288,
+    323
+   ],
+   "coverage": 0.09
+  },
+  "crests/chettinad-heritage": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5522874,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Chettinad Heritage\": Rich Chettinad architectural heritage featuring antique teak pillars, Athangudi tile geometry, and glowing brass vilakku, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__chettinad-heritage__5522874.png",
+   "size": [
+    289,
+    379
+   ],
+   "coverage": 0.067
+  },
+  "crests/andhra-kalamkari": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9379342,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Andhra Kalamkari\": Hand-drawn Srikalahasti Kalamkari artistry depicting blossoming lotus vines, majestic dancing peacocks, and organic vege, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__andhra-kalamkari__9379342.png",
+   "size": [
+    425,
+    441
+   ],
+   "coverage": 0.13
+  },
+  "crests/telangana-bathukamma": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7979570,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a tiered bathukamma flower stack, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__telangana-bathukamma__7979570.png",
+   "size": [
+    276,
+    216
+   ],
+   "coverage": 0.032
+  },
+  "crests/coorg-kodava": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8897381,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a coffee branch with beans and leaves, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__coorg-kodava__8897381.png",
+   "size": [
+    222,
+    232
+   ],
+   "coverage": 0.019
+  },
+  "crests/kutch-mirrorwork": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2953454,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Kutch Mirrorwork\": Artisanal Kutchi Rabari embroidery featuring reflective abhala mirrorwork, geometric chevron borders, and jewel-toned si, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__kutch-mirrorwork__2953454.png",
+   "size": [
+    376,
+    402
+   ],
+   "coverage": 0.083
+  },
+  "crests/banarasi-royale": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3182400,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Banarasi Royale\": Opulent crimson Banarasi silk brocade woven with interlocking gold zari jaal patterns and imperial mughal floral bel bor, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__banarasi-royale__3182400.png",
+   "size": [
+    386,
+    446
+   ],
+   "coverage": 0.233
+  },
+  "crests/awadhi-nawab": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4319654,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Awadhi Nawab\": Lakhnawi Nawabi grace with delicate shadow-work Chikankari filigree, cusped Mughal arches, and soft champagne gold accen, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__awadhi-nawab__4319654.png",
+   "size": [
+    311,
+    390
+   ],
+   "coverage": 0.04
+  },
+  "crests/kashmir-garden": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9412439,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Kashmir Garden\": Romantic Shalimar Bagh gardens with autumnal Chinar leaf motifs, Persian paisley buta, and Dal Lake misty mountain vista, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__kashmir-garden__9412439.png",
+   "size": [
+    499,
+    418
+   ],
+   "coverage": 0.174
+  },
+  "crests/royal-shehnai": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4504108,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Royal Shehnai\": Auspicious classical royal shehnai and tabla melodies draped with sacred marigold torans and auspicious swarna tassels., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__royal-shehnai__4504108.png",
+   "size": [
+    356,
+    397
+   ],
+   "coverage": 0.077
+  },
+  "crests/jewel-of-jaipur": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3766871,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a carved jharokha window with a small dome, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__jewel-of-jaipur__3766871.png",
+   "size": [
+    192,
+    332
+   ],
+   "coverage": 0.025
+  },
+  "crests/udaipur-romance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2142115,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a lake palace pavilion with domes, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__udaipur-romance__2142115.png",
+   "size": [
+    277,
+    222
+   ],
+   "coverage": 0.038
+  },
+  "crests/traditional-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6617758,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Traditional Wedding\": Kumkum red with lamp motifs for a classic South Indian Shubh Vivah., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__traditional-wedding__6617758.png",
+   "size": [
+    143,
+    191
+   ],
+   "coverage": 0.028
+  },
+  "crests/royal-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6924905,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Royal Wedding\": A deep plum and gold mandala frame built for grand traditional weddings., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__royal-wedding__6924905.png",
+   "size": [
+    320,
+    332
+   ],
+   "coverage": 0.103
+  },
+  "crests/golden-celebration": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5359556,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an ornate round mandala medallion, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__golden-celebration__5359556.png",
+   "size": [
+    255,
+    255
+   ],
+   "coverage": 0.043
+  },
+  "crests/sangeet-night": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6858790,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a dholak drum with a marigold garland, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__sangeet-night__6858790.png",
+   "size": [
+    135,
+    143
+   ],
+   "coverage": 0.014
+  },
+  "crests/mehendi-morning": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9345656,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a henna cone with a paisley, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__mehendi-morning__9345656.png",
+   "size": [
+    161,
+    221
+   ],
+   "coverage": 0.02
+  },
+  "crests/haldi-sunshine": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5456605,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Haldi Sunshine\": Turmeric yellow and marigold for the haldi ritual., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__haldi-sunshine__5456605.png",
+   "size": [
+    220,
+    260
+   ],
+   "coverage": 0.042
+  },
+  "crests/mehendi-ceremony": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2346046,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Mehendi Ceremony\": A henna cone trailing paisley across deep leaf green, for the afternoon before everything begins., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__mehendi-ceremony__2346046.png",
+   "size": [
+    248,
+    348
+   ],
+   "coverage": 0.088
+  },
+  "crests/haldi-ceremony": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5257436,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Haldi Ceremony\": The turmeric bowl and its applicators between marigold heads, in the yellow the whole morning turns., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__haldi-ceremony__5257436.png",
+   "size": [
+    333,
+    329
+   ],
+   "coverage": 0.129
+  },
+  "crests/sangeet-evening": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4178820,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: ghungroo bells strung above a dholak drum, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__sangeet-evening__4178820.png",
+   "size": [
+    617,
+    501
+   ],
+   "coverage": 0.041
+  },
+  "crests/hindu-vivah": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2368873,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a havan kund with a sacred fire and a lotus, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__hindu-vivah__2368873.png",
+   "size": [
+    277,
+    303
+   ],
+   "coverage": 0.024
+  },
+  "crests/anand-karaj": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4076202,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: the Sikh Khanda emblem inside a gurdwara arch, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__anand-karaj__4076202.png",
+   "size": [
+    185,
+    256
+   ],
+   "coverage": 0.018
+  },
+  "crests/nikah-ceremony": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6894819,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Nikah Ceremony\": Khatam eight-point geometry worked into a full border, the way it is cut into a mosque screen., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__nikah-ceremony__6894819.png",
+   "size": [
+    564,
+    556
+   ],
+   "coverage": 0.108
+  },
+  "crests/christian-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8550000,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Christian Wedding\": A stained-glass rose window under a plain cross, with two doves on the sill., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__christian-wedding__8550000.png",
+   "size": [
+    244,
+    321
+   ],
+   "coverage": 0.045
+  },
+  "crests/jain-vivah": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1184234,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Jain Vivah\": The ahimsa hand with its wheel of restraint, in the ivory and gold of a Jain ceremony., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__jain-vivah__1184234.png",
+   "size": [
+    176,
+    211
+   ],
+   "coverage": 0.022
+  },
+  "crests/buddhist-union": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4620868,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Buddhist Union\": The dharma wheel resting on a lotus throne, flanked by endless knots, in monastic saffron., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__buddhist-union__4620868.png",
+   "size": [
+    476,
+    280
+   ],
+   "coverage": 0.072
+  },
+  "crests/parsi-lagan": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9080859,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a winged faravahar between two cypress trees, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__parsi-lagan__9080859.png",
+   "size": [
+    314,
+    219
+   ],
+   "coverage": 0.036
+  },
+  "crests/interfaith-union": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3540146,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Interfaith Union\": Two arches meeting as one doorway, with a botanical sprig where they overlap — no single tradition takes the lead., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__interfaith-union__3540146.png",
+   "size": [
+    218,
+    291
+   ],
+   "coverage": 0.029
+  },
+  "crests/civil-ceremony": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3047746,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Civil Ceremony\": Two plain rings and a reef knot on cool grey — a registry-office card with no religious mark on it at all., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__civil-ceremony__3047746.png",
+   "size": [
+    373,
+    196
+   ],
+   "coverage": 0.063
+  },
+  "crests/japanese-mizuhiki": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8998818,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a mizuhiki knot above a flying crane, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__japanese-mizuhiki__8998818.png",
+   "size": [
+    228,
+    243
+   ],
+   "coverage": 0.018
+  },
+  "crests/korean-dancheong": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5062975,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Korean Dancheong\": Dancheong eave banding above and below a pair of mandarin ducks — the Korean sign of a marriage that lasts., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__korean-dancheong__5062975.png",
+   "size": [
+    302,
+    367
+   ],
+   "coverage": 0.069
+  },
+  "crests/chinese-double-joy": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3141529,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a palace lantern between two peonies, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__chinese-double-joy__3141529.png",
+   "size": [
+    376,
+    223
+   ],
+   "coverage": 0.038
+  },
+  "crests/filipino-sampaguita": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3914130,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Filipino Sampaguita\": Sampaguita blooms strung above piña-weave banding, the way the garland is offered at a Filipino kasalan., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__filipino-sampaguita__3914130.png",
+   "size": [
+    426,
+    412
+   ],
+   "coverage": 0.129
+  },
+  "crests/thai-lai-kranok": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3250422,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a flame-like kranok scroll, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__thai-lai-kranok__3250422.png",
+   "size": [
+    142,
+    221
+   ],
+   "coverage": 0.011
+  },
+  "crests/indonesian-batik": {
+   "ok": true,
+   "seed": 2424839,
+   "model": "flux-2-klein-4b.safetensors",
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a diagonal parang batik motif inside a diamond, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__indonesian-batik__2424839.png",
+   "size": [
+    209,
+    211
+   ],
+   "coverage": 0.017
+  },
+  "crests/vietnamese-lotus": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1732889,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a lotus flower resting on still water, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__vietnamese-lotus__1732889.png",
+   "size": [
+    263,
+    176
+   ],
+   "coverage": 0.03
+  },
+  "crests/pakistani-truck-art": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7603838,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Pakistani Truck Art\": A truck-art panel — scalloped arch, painted rosette and hanging chains — in the colours that cover a Karachi lorry., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__pakistani-truck-art__7603838.png",
+   "size": [
+    338,
+    337
+   ],
+   "coverage": 0.059
+  },
+  "crests/bangladeshi-jamdani": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8671135,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Bangladeshi Jamdani\": Jamdani butis woven into a full border around a water-lily, in the green and red of a Dhaka wedding., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__bangladeshi-jamdani__8671135.png",
+   "size": [
+    381,
+    388
+   ],
+   "coverage": 0.108
+  },
+  "crests/sri-lankan-poruwa": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5543442,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Sri Lankan Poruwa\": The Kandyan punkalasa, pot of plenty, standing on the poruwa platform where the couple exchange their vows., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__sri-lankan-poruwa__5543442.png",
+   "size": [
+    285,
+    344
+   ],
+   "coverage": 0.041
+  },
+  "crests/italian-rinascimento": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9175168,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a Florentine rosette with acanthus scrolls, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__italian-rinascimento__9175168.png",
+   "size": [
+    284,
+    298
+   ],
+   "coverage": 0.03
+  },
+  "crests/french-fleur-de-lis": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4752538,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"French Fleur de Lis\": A fleur-de-lis held inside an art-nouveau iron scroll, in Parisian grey-blue and antique brass., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__french-fleur-de-lis__4752538.png",
+   "size": [
+    276,
+    374
+   ],
+   "coverage": 0.078
+  },
+  "crests/greek-meander": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1251034,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Greek Meander\": The meander key border framing an olive branch, in Aegean blue and whitewash., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__greek-meander__1251034.png",
+   "size": [
+    164,
+    276
+   ],
+   "coverage": 0.03
+  },
+  "crests/spanish-mudejar": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9192676,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Spanish Mudejar\": A mudéjar star tile above a folding fan, in Sevillian red and gold., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__spanish-mudejar__9192676.png",
+   "size": [
+    401,
+    435
+   ],
+   "coverage": 0.134
+  },
+  "crests/british-regency": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4020068,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a laurel wreath with a small crown, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__british-regency__4020068.png",
+   "size": [
+    317,
+    298
+   ],
+   "coverage": 0.037
+  },
+  "crests/nigerian-adire": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5938976,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Nigerian Adire\": Adire indigo resist — rings, combs and stitched squares — repeated the way the cloth is dyed in Abeokuta., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__nigerian-adire__5938976.png",
+   "size": [
+    319,
+    367
+   ],
+   "coverage": 0.242
+  },
+  "crests/ghanaian-kente": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1715916,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Ghanaian Kente\": Kente strip weave running down both sides with an adinkra knot at the centre, in Ashanti gold, green and red., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__ghanaian-kente__1715916.png",
+   "size": [
+    417,
+    370
+   ],
+   "coverage": 0.217
+  },
+  "crests/moroccan-zellige": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2595154,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Moroccan Zellige\": A zellige star with riad lanterns hung either side, in Marrakech teal and terracotta., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__moroccan-zellige__2595154.png",
+   "size": [
+    381,
+    289
+   ],
+   "coverage": 0.113
+  },
+  "crests/mexican-papel-picado": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8243280,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Mexican Papel Picado\": Papel picado banners strung over marigolds, in the cobalt and cempasúchil orange of a Mexican fiesta., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__mexican-papel-picado__8243280.png",
+   "size": [
+    628,
+    345
+   ],
+   "coverage": 0.145
+  },
+  "crests/brazilian-tropical": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7013464,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: monstera and palm leaves, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__brazilian-tropical__7013464.png",
+   "size": [
+    237,
+    258
+   ],
+   "coverage": 0.043
+  },
+  "crests/caribbean-hibiscus": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5598407,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two hibiscus flowers with leaves, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__caribbean-hibiscus__5598407.png",
+   "size": [
+    392,
+    264
+   ],
+   "coverage": 0.05
+  },
+  "crests/persian-boteh": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8039730,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Persian Boteh\": Boteh paisleys turning around a tile rosette, in the turquoise and saffron of an Iranian sofreh aghd., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__persian-boteh__8039730.png",
+   "size": [
+    309,
+    347
+   ],
+   "coverage": 0.077
+  },
+  "crests/ethiopian-habesha": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6669278,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Ethiopian Habesha\": A habesha cross above woven tibeb banding, on the natural white of a hand-spun kemis., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__ethiopian-habesha__6669278.png",
+   "size": [
+    206,
+    365
+   ],
+   "coverage": 0.054
+  },
+  "crests/baraat-procession": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8191118,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a decorated horse with a plumed headdress, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__baraat-procession__8191118.png",
+   "size": [
+    248,
+    276
+   ],
+   "coverage": 0.026
+  },
+  "crests/jaimala-exchange": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1240673,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Jaimala Exchange\": Two varmala held ready — the moment before the garlands are exchanged., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__jaimala-exchange__1240673.png",
+   "size": [
+    308,
+    270
+   ],
+   "coverage": 0.041
+  },
+  "crests/saat-phere": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8793479,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: seven small diya lamps in a circle around a sacred fire, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__saat-phere__8793479.png",
+   "size": [
+    339,
+    340
+   ],
+   "coverage": 0.026
+  },
+  "crests/nikah-nama": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7497910,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an inkpot with a reed pen, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__nikah-nama__7497910.png",
+   "size": [
+    187,
+    240
+   ],
+   "coverage": 0.017
+  },
+  "crests/anand-karaj-ardas": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5682945,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a decorated palki canopy with fringe, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__anand-karaj-ardas__5682945.png",
+   "size": [
+    335,
+    350
+   ],
+   "coverage": 0.037
+  },
+  "crests/wedding-day-mandap": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1401304,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Wedding Day\": A four-post mandap under a draped canopy, drawn for the ceremony itself rather than the parties around it., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__wedding-day-mandap__1401304.png",
+   "size": [
+    336,
+    278
+   ],
+   "coverage": 0.033
+  },
+  "crests/vidaai-farewell": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5746725,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a decorated doli palanquin, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__vidaai-farewell__5746725.png",
+   "size": [
+    243,
+    270
+   ],
+   "coverage": 0.033
+  },
+  "crests/bride-and-groom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9492890,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two wedding rings inside a laurel wreath, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__bride-and-groom__9492890.png",
+   "size": [
+    358,
+    287
+   ],
+   "coverage": 0.04
+  },
+  "crests/bride-and-bride": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8762538,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Bride & Bride\": Two blooms opening from one shared stem — a card written for two brides rather than adapted for them., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__bride-and-bride__8762538.png",
+   "size": [
+    267,
+    259
+   ],
+   "coverage": 0.025
+  },
+  "crests/groom-and-groom": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1094504,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two interlocking rings tied with a square knot, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__groom-and-groom__1094504.png",
+   "size": [
+    276,
+    243
+   ],
+   "coverage": 0.026
+  },
+  "crests/the-two-of-us": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2353077,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an infinity loop ribbon, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__the-two-of-us__2353077.png",
+   "size": [
+    289,
+    131
+   ],
+   "coverage": 0.014
+  },
+  "crests/our-sons-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3119123,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a family shield with a wheat sheaf, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__our-sons-wedding__3119123.png",
+   "size": [
+    227,
+    264
+   ],
+   "coverage": 0.019
+  },
+  "crests/our-daughters-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6420190,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Our Daughter’s Wedding\": A rose spray inside an oval cartouche, framed the way a family portrait is., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__our-daughters-wedding__6420190.png",
+   "size": [
+    294,
+    317
+   ],
+   "coverage": 0.04
+  },
+  "crests/my-brothers-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1920136,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"My Brother’s Wedding\": Two rope loops locked together, for the sibling doing the inviting., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__my-brothers-wedding__1920136.png",
+   "size": [
+    288,
+    165
+   ],
+   "coverage": 0.026
+  },
+  "crests/my-sisters-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6967392,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"My Sister’s Wedding\": Two mirrored fans opening from one point, in plum and orchid., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__my-sisters-wedding__6967392.png",
+   "size": [
+    517,
+    306
+   ],
+   "coverage": 0.062
+  },
+  "crests/a-friends-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8011158,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"A Friend’s Wedding\": An arc of confetti thrown across a poster-format card — informal, and meant to be forwarded., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__a-friends-wedding__8011158.png",
+   "size": [
+    458,
+    416
+   ],
+   "coverage": 0.045
+  },
+  "crests/a-family-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6652550,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a family tree with many branches, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__a-family-wedding__6652550.png",
+   "size": [
+    409,
+    445
+   ],
+   "coverage": 0.066
+  },
+  "crests/cinematic-love-story": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9175589,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a vintage film reel with a heart, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__cinematic-love-story__9175589.png",
+   "size": [
+    238,
+    238
+   ],
+   "coverage": 0.024
+  },
+  "crests/royal-durbar": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7706281,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Royal Durbar\": A crown over a damask cartouche, repeated into a full border in imperial purple and old gold., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__royal-durbar__7706281.png",
+   "size": [
+    345,
+    463
+   ],
+   "coverage": 0.205
+  },
+  "crests/luxe-noir": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2487536,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Luxe Noir\": A fine sunburst on near-black with a single gold bar — the most expensive-looking card in the set., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__luxe-noir__2487536.png",
+   "size": [
+    312,
+    315
+   ],
+   "coverage": 0.052
+  },
+  "crests/velvet-rouge": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3197250,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a baroque damask medallion, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__velvet-rouge__3197250.png",
+   "size": [
+    259,
+    267
+   ],
+   "coverage": 0.03
+  },
+  "crests/gilded-branch": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6157477,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a single leafy branch, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__gilded-branch__6157477.png",
+   "size": [
+    146,
+    211
+   ],
+   "coverage": 0.011
+  },
+  "crests/palace-colonnade": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3189110,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Palace Colonnade\": A ribbed dome above a colonnade, in the sandstone and gold of a heritage palace venue., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__palace-colonnade__3189110.png",
+   "size": [
+    513,
+    417
+   ],
+   "coverage": 0.121
+  },
+  "crests/deco-gatsby": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3705949,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Deco Gatsby\": A stepped deco fan over chevron banding, in the emerald and gold of a 1920s ballroom., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__deco-gatsby__3705949.png",
+   "size": [
+    393,
+    337
+   ],
+   "coverage": 0.137
+  },
+  "crests/maharaja-palace": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3072278,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Maharaja Palace\": Monumental royal Rajput durbar palace with towering fluted sandstone pillars, cascading crystal chandeliers, and imperia, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__maharaja-palace__3072278.png",
+   "size": [
+    573,
+    400
+   ],
+   "coverage": 0.138
+  },
+  "crests/regal-maroon": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4359974,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Regal Maroon\": Sumptuous deep burgundy velvet background encircled by antique royal gold filigree and ceremonial damask scrollwork., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__regal-maroon__4359974.png",
+   "size": [
+    350,
+    338
+   ],
+   "coverage": 0.112
+  },
+  "crests/imperial-gold": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3084408,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an ornate filigree crown medallion, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__imperial-gold__3084408.png",
+   "size": [
+    178,
+    128
+   ],
+   "coverage": 0.015
+  },
+  "crests/champagne-palace": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8567268,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two champagne coupes clinking, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__champagne-palace__8567268.png",
+   "size": [
+    335,
+    269
+   ],
+   "coverage": 0.021
+  },
+  "crests/royal-garden-court": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2702308,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Royal Garden Court\": Aristocratic French-Mughal formal garden estate framed by intricate wrought-iron gilded gates and climbing English roses, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__royal-garden-court__2702308.png",
+   "size": [
+    347,
+    296
+   ],
+   "coverage": 0.11
+  },
+  "crests/pearl-and-champagne": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3649900,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a pearl necklace looped around a champagne coupe, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__pearl-and-champagne__3649900.png",
+   "size": [
+    165,
+    319
+   ],
+   "coverage": 0.021
+  },
+  "crests/midnight-elegance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3839850,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Midnight Elegance\": Starlit midnight velvet sky enveloped in shimmering stardust and intricate filigree 24-karat gold constellation borders., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__midnight-elegance__3839850.png",
+   "size": [
+    418,
+    420
+   ],
+   "coverage": 0.089
+  },
+  "crests/black-tie-romance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5224536,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Black Tie Romance\": High-society Manhattan black tie gala featuring razor-sharp monochrome geometry, silver metallic hairline rules, and hau, centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__black-tie-romance__5224536.png",
+   "size": [
+    305,
+    343
+   ],
+   "coverage": 0.023
+  },
+  "crests/elegant-floral": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6558949,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Elegant Floral\": Hand-drawn rosettes on blush paper — the most-used free wedding card., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__elegant-floral__6558949.png",
+   "size": [
+    446,
+    471
+   ],
+   "coverage": 0.094
+  },
+  "crests/romance-in-blush": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9503253,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an open rose with two buds, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__romance-in-blush__9503253.png",
+   "size": [
+    191,
+    224
+   ],
+   "coverage": 0.016
+  },
+  "crests/peony-bloom-card": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5432246,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Peony Bloom\": One peony drawn fully open, four rings of petals deep, centred like a medallion., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__peony-bloom-card__5432246.png",
+   "size": [
+    370,
+    321
+   ],
+   "coverage": 0.076
+  },
+  "crests/botanical-press": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4819377,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two pressed fern fronds, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__botanical-press__4819377.png",
+   "size": [
+    315,
+    290
+   ],
+   "coverage": 0.044
+  },
+  "crests/garden-party": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6083373,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Garden Party\": A wrought-iron gate with roses climbing it, for a wedding held on the lawn., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__garden-party__6083373.png",
+   "size": [
+    327,
+    312
+   ],
+   "coverage": 0.098
+  },
+  "crests/rosewater-romance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4950072,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a rosewater bottle with roses, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__rosewater-romance__4950072.png",
+   "size": [
+    159,
+    345
+   ],
+   "coverage": 0.024
+  },
+  "crests/lotus-garden": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9532840,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Lotus Garden\": Sacred blooming pink lotuses rising above serene jade waters with gentle morning ripples and gilded lily pads., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__lotus-garden__9532840.png",
+   "size": [
+    439,
+    381
+   ],
+   "coverage": 0.123
+  },
+  "crests/wildflower-vows": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4204481,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Wildflower Vows\": Carefree meadow blooms of cornflowers, poppies, and chamomile pressed onto sun-drenched handmade cotton paper., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__wildflower-vows__4204481.png",
+   "size": [
+    446,
+    449
+   ],
+   "coverage": 0.144
+  },
+  "crests/watercolor-romance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9174953,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Watercolor Romance\": Artisan watercolour wash in misty lilac, blush, and cornflower blues cascading into a soft floral archway., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__watercolor-romance__9174953.png",
+   "size": [
+    388,
+    455
+   ],
+   "coverage": 0.12
+  },
+  "crests/pastel-garden": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3819891,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Pastel Garden\": Dreamy pastel garden symphony of French lavender, sweet peach ranunculus, and powdery sage foliage., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__pastel-garden__3819891.png",
+   "size": [
+    402,
+    392
+   ],
+   "coverage": 0.127
+  },
+  "crests/cherry-blossom-love": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5939666,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Cherry Blossom Love\": Graceful Japanese sakura boughs in springtime bloom with delicate drifting petals and minimalist aesthetic balance., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__cherry-blossom-love__5939666.png",
+   "size": [
+    433,
+    262
+   ],
+   "coverage": 0.042
+  },
+  "crests/coastal-vows": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9631265,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Coastal Vows\": A scallop shell above two lines of surf, in sea glass and driftwood tones., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__coastal-vows__9631265.png",
+   "size": [
+    298,
+    323
+   ],
+   "coverage": 0.067
+  },
+  "crests/mountain-vows": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8238394,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: mountain peaks with pine trees, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__mountain-vows__8238394.png",
+   "size": [
+    287,
+    188
+   ],
+   "coverage": 0.014
+  },
+  "crests/destination-voyage": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 1961340,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a compass rose star with eight points and no letters, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__destination-voyage__1961340.png",
+   "size": [
+    325,
+    315
+   ],
+   "coverage": 0.031
+  },
+  "crests/moonlit-florals": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6222715,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Moonlit Florals\": Nocturnal secret garden bathed in silver moonlight with glowing white night-blooming jasmine and celestial star dust., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__moonlit-florals__6222715.png",
+   "size": [
+    341,
+    319
+   ],
+   "coverage": 0.061
+  },
+  "crests/beachside-bliss": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7022047,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a seashell and a starfish, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__beachside-bliss__7022047.png",
+   "size": [
+    239,
+    210
+   ],
+   "coverage": 0.029
+  },
+  "crests/goa-sunset-vows": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3189938,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: coconut palms over a setting sun, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__goa-sunset-vows__3189938.png",
+   "size": [
+    220,
+    200
+   ],
+   "coverage": 0.028
+  },
+  "crests/tropical-paradise": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6930052,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Tropical Paradise\": Lush Hawaiian resort haven adorned with emerald monstera fronds, golden orchids, and exotic scarlet hibiscus., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__tropical-paradise__6930052.png",
+   "size": [
+    394,
+    343
+   ],
+   "coverage": 0.138
+  },
+  "crests/desert-romance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9993011,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Desert Romance\": Mystical Thar and Arabian sand dunes bathed in copper sunset glow with desert succulents and terracotta geometry., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__desert-romance__9993011.png",
+   "size": [
+    328,
+    309
+   ],
+   "coverage": 0.083
+  },
+  "crests/lakefront-love": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6405375,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a lake with mountains and a small rowing boat, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__lakefront-love__6405375.png",
+   "size": [
+    337,
+    193
+   ],
+   "coverage": 0.018
+  },
+  "crests/european-escape": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7274077,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"European Escape\": Old-world Tuscan villa romance with sun-bleached stone courtyards, olive branch wreaths, and antique deckled paper., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__european-escape__7274077.png",
+   "size": [
+    383,
+    326
+   ],
+   "coverage": 0.139
+  },
+  "crests/minimal-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4733835,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a single slender olive sprig, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__minimal-wedding__4733835.png",
+   "size": [
+    82,
+    192
+   ],
+   "coverage": 0.008
+  },
+  "crests/modern-love": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6116021,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a slender arch with a single rose, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__modern-love__6116021.png",
+   "size": [
+    171,
+    264
+   ],
+   "coverage": 0.016
+  },
+  "crests/editorial-ivory": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8649849,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a fine laurel wreath, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__editorial-ivory__8649849.png",
+   "size": [
+    412,
+    347
+   ],
+   "coverage": 0.051
+  },
+  "crests/quiet-minimal": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4480795,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a fine circle with one small leaf, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__quiet-minimal__4480795.png",
+   "size": [
+    221,
+    221
+   ],
+   "coverage": 0.012
+  },
+  "crests/contemporary-arch": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 6192517,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Contemporary Arch\": Nested arches in terracotta and clay — the shape every contemporary venue is building right now., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__contemporary-arch__6192517.png",
+   "size": [
+    245,
+    313
+   ],
+   "coverage": 0.055
+  },
+  "crests/vintage-letterpress": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8925616,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Vintage Letterpress\": A Victorian printer’s ornament inside a double rule, set the way a letterpress shop would have., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__vintage-letterpress__8925616.png",
+   "size": [
+    305,
+    181
+   ],
+   "coverage": 0.028
+  },
+  "crests/gen-z-bold": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 8352818,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a playful four point star with two small hearts, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__gen-z-bold__8352818.png",
+   "size": [
+    296,
+    281
+   ],
+   "coverage": 0.015
+  },
+  "crests/digital-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 9236926,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a vintage camera with a small heart, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__digital-wedding__9236926.png",
+   "size": [
+    256,
+    200
+   ],
+   "coverage": 0.023
+  },
+  "crests/story-card": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5117209,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Story Card\": A story ring with a heart inside it, built to be screenshot and reposted rather than printed., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__story-card__5117209.png",
+   "size": [
+    177,
+    184
+   ],
+   "coverage": 0.017
+  },
+  "crests/modern-romance": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 3068136,
+   "prompt": "Small symmetrical emblem for a wedding invitation representing \"Modern Romance\": A single unbroken line drawing a heart, with nothing else on the card to compete with it., centred, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border",
+   "raw": "lineart-work/raw/crests__modern-romance__3068136.png",
+   "size": [
+    237,
+    268
+   ],
+   "coverage": 0.012
+  },
+  "crests/type-only": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4732811,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: an elegant quill feather, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__type-only__4732811.png",
+   "size": [
+    100,
+    285
+   ],
+   "coverage": 0.012
+  },
+  "crests/monogram-seal": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 7093298,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a round wax seal inside a botanical wreath, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__monogram-seal__7093298.png",
+   "size": [
+    223,
+    218
+   ],
+   "coverage": 0.021
+  },
+  "crests/editorial-grid": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4153644,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: a small geometric diamond with fine leaves, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__editorial-grid__4153644.png",
+   "size": [
+    150,
+    159
+   ],
+   "coverage": 0.01
+  },
+  "crests/modern-monogram": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 4647090,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two interlaced rings inside a fine diamond, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__modern-monogram__4647090.png",
+   "size": [
+    162,
+    136
+   ],
+   "coverage": 0.008
+  },
+  "crests/blush-engagement": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 2933533,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: two interlocking engagement rings with a solitaire diamond, framed by a small garland of garden roses, a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__blush-engagement__2933533.png",
+   "size": [
+    321,
+    317
+   ],
+   "coverage": 0.075
+  },
+  "crests/saffron-sunrise-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5875251,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: A rising sun over a marigold mandap in deep saffron and warm gold, for a morning muhurtham., a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__saffron-sunrise-wedding__5875251.png",
+   "size": [
+    261,
+    369
+   ],
+   "coverage": 0.091
+  },
+  "crests/ivory-pearl-wedding": {
+   "ok": true,
+   "model": "flux-2-klein-4b.safetensors",
+   "seed": 5032916,
+   "prompt": "Small symmetrical line-art emblem for a wedding invitation: Strings of pearls around a lace medallion on soft ivory, quiet and timeless., a single centred object, compact, elegant fine line art illustration, thin delicate continuous engraved lines, luxury wedding stationery, outline drawing only, no fill, no shading, white lines on a solid pure black background, no text, no letters, no frame, no border, absolutely no text, no words, no lettering, no numbers, no labels, no banners, no ribbons with writing",
+   "raw": "lineart-work/raw/crests__ivory-pearl-wedding__5032916.png",
+   "size": [
+    253,
+    293
+   ],
+   "coverage": 0.045
+  }
+ }
+}

@@ -29,14 +29,17 @@
      which also stops editor-only fields (step, plan, updatedAt) leaking
      into a guest's URL. */
   var FIELDS = {
-    eventType: 'e', template: 't', title: 'ti', hostName: 'h',
-    brideName: 'b', groomName: 'g', personName: 'p', years: 'y',
+    eventType: 'e', template: 't', title: 'ti', additionalTitle: 'at', additionalSubtitle: 'as', hostName: 'h',
+    brideName: 'b', brideParents: 'bp', groomName: 'g', groomParents: 'gp', personName: 'p', years: 'y',
     babyName: 'bn', babyRelation: 'brl', parentsName: 'pr', organization: 'og', department: 'dp',
     classCourse: 'cs', role: 'rl', yearsOfService: 'ys', eventKind: 'ek', theme: 'th',
     date: 'd', time: 'tm', venue: 'v', address: 'a', mapsUrl: 'm',
     phone: 'ph', email: 'em', message: 'ms', additionalInformation: 'ai',
     font: 'f', colors: 'c', customColors: 'cc', animation: 'an',
-    showCountdown: 'sc', showMaps: 'sm', showGallery: 'sg',
+    showCountdown: 'sc', showMaps: 'sm', showGallery: 'sg', showBlessings: 'sb',
+    blessingsHeading: 'bh', blessingsLeftTitle: 'blt', blessingsLeftDetails: 'bld',
+    blessingsRightTitle: 'brt', blessingsRightDetails: 'brd', blessingsMessage: 'bm',
+    namesSwapped: 'ns',
     photo: 'pt', background: 'bg', gallery: 'gl', musicFile: 'mf'
   };
 

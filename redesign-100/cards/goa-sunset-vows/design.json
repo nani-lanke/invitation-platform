@@ -1,0 +1,47 @@
+{
+ "slug": "goa-sunset-vows",
+ "name": "Goa Sunset Vows",
+ "base": "cards/goa-sunset-vows/",
+ "spec": {
+  "layout": "classic",
+  "frame": "arch",
+  "venue": "stack",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/goa-sunset-vows.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/goa-sunset-vows.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Goa beach wedding at sunset with a floral arch and coconut palms, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2768102,
+   "raw": "..\\work\\raw\\goa-sunset-vows__venue__2768102_2d4pe.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a coconut with frangipani flowers, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7909270,
+   "raw": "..\\work\\raw\\goa-sunset-vows__crest__7909270_2vwyq.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Goan beach with coconut palms at sunset, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7248112,
+   "raw": "..\\work\\raw\\goa-sunset-vows__footer__7248112_1m5if.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of frangipani, bougainvillea and coconut palm leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5613242,
+   "raw": "..\\work\\raw\\goa-sunset-vows__corner__5613242_43ye0.png"
+  }
+ }
+}

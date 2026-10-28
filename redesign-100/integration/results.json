@@ -1,0 +1,491 @@
+{
+ "startedAt": "2026-10-24T22:30:35.983Z",
+ "tests": [
+  {
+   "name": "gallery: original grid unchanged by the collection",
+   "ok": true,
+   "details": {
+    "with": 500,
+    "without": 500
+   }
+  },
+  {
+   "name": "gallery: collection shown below the original gallery, open with all 100 cards",
+   "ok": true,
+   "details": {
+    "section": true,
+    "open": true,
+    "painted": 100
+   }
+  },
+  {
+   "name": "gallery: no script errors",
+   "ok": true,
+   "details": []
+  },
+  {
+   "name": "categories: original category cards unchanged",
+   "ok": true,
+   "details": {}
+  },
+  {
+   "name": "categories: Redesigned Collection card links to the collection",
+   "ok": true,
+   "details": {
+    "href": "templates.html?collection=redesign-100",
+    "img": true
+   }
+  },
+  {
+   "name": "gallery: 100 redesigned cards, all distinct rd-* ids",
+   "ok": true,
+   "details": {
+    "n": 100,
+    "groups": [
+     "Indian Regional & Heritage (40)",
+     "Rituals, Faith & Pre-wedding (23)",
+     "Royal Luxury (13)",
+     "South Asian (3)",
+     "Botanical & Destination (21)"
+    ]
+   }
+  },
+  {
+   "name": "gallery: thumbnails load and Preview/Use links target rd-* ids",
+   "ok": true,
+   "details": {
+    "thumbsOk": true,
+    "links": true
+   }
+  },
+  {
+   "name": "gallery: names keep the original design name + \"(Redesigned)\"",
+   "ok": true,
+   "details": [
+    "Kalasam Blessing (Redesigned)",
+    "Gopuram Vows (Redesigned)",
+    "Talambralu Pearls (Redesigned)"
+   ]
+  },
+  {
+   "name": "gallery: preview modal renders the redesigned card",
+   "ok": true,
+   "details": {
+    "rd": true,
+    "title": "Kalasam Blessing (Redesigned)"
+   }
+  },
+  {
+   "name": "preview: regional (rd-kalasam-blessing) loads its artwork + name",
+   "ok": true,
+   "details": {
+    "f": {
+     "cls": "invitation rd-card invitation--wedding invitation--tpl-kalasam-blessing invitation--wd wd-l-arch wd-fr-beads wd-fam-heritage wd-light wd-script invitation--enter-fade",
+     "rd": true,
+     "crest": {
+      "src": "images/redesign-100/kalasam-blessing/crest.webp",
+      "ok": true
+     },
+     "venue": {
+      "src": "images/redesign-100/kalasam-blessing/venue.webp",
+      "ok": true
+     },
+     "cornerTL": {
+      "src": "images/redesign-100/kalasam-blessing/corner-tl.webp",
+      "ok": true
+     },
+     "cornerTR": {
+      "src": "images/redesign-100/kalasam-blessing/corner-tr.webp",
+      "ok": true
+     },
+     "footer": {
+      "src": "images/redesign-100/kalasam-blessing/footer.webp",
+      "ok": true
+     },
+     "svgCorners": 0
+    },
+    "name": true
+   }
+  },
+  {
+   "name": "preview: rituals (rd-hindu-vivah) loads its artwork + name",
+   "ok": true,
+   "details": {
+    "f": {
+     "cls": "invitation rd-card invitation--wedding invitation--tpl-hindu-vivah invitation--wd wd-l-royal wd-fr-kolam wd-fam-heritage wd-dark wd-script invitation--enter-fade",
+     "rd": true,
+     "crest": {
+      "src": "images/redesign-100/hindu-vivah/crest.webp",
+      "ok": true
+     },
+     "venue": {
+      "src": "images/redesign-100/hindu-vivah/venue.webp",
+      "ok": true
+     },
+     "cornerTL": {
+      "src": "images/redesign-100/hindu-vivah/corner-tl.webp",
+      "ok": true
+     },
+     "cornerTR": {
+      "src": "images/redesign-100/hindu-vivah/corner-tr.webp",
+      "ok": true
+     },
+     "footer": {
+      "src": "images/redesign-100/hindu-vivah/footer.webp",
+      "ok": true
+     },
+     "svgCorners": 0
+    },
+    "name": true
+   }
+  },
+  {
+   "name": "preview: royal (rd-maharaja-palace) loads its artwork + name",
+   "ok": true,
+   "details": {
+    "f": {
+     "cls": "invitation rd-card invitation--wedding invitation--tpl-maharaja-palace invitation--wd wd-l-royal wd-fr-vine wd-fam-royal wd-dark invitation--enter-fade",
+     "rd": true,
+     "crest": {
+      "src": "images/redesign-100/maharaja-palace/crest.webp",
+      "ok": true
+     },
+     "venue": {
+      "src": "images/redesign-100/maharaja-palace/venue.webp",
+      "ok": true
+     },
+     "cornerTL": {
+      "src": "images/redesign-100/maharaja-palace/corner-tl.webp",
+      "ok": true
+     },
+     "cornerTR": {
+      "src": "images/redesign-100/maharaja-palace/corner-tr.webp",
+      "ok": true
+     },
+     "footer": {
+      "src": "images/redesign-100/maharaja-palace/footer.webp",
+      "ok": true
+     },
+     "svgCorners": 0
+    },
+    "name": true
+   }
+  },
+  {
+   "name": "preview: south-asian (rd-sri-lankan-poruwa) loads its artwork + name",
+   "ok": true,
+   "details": {
+    "f": {
+     "cls": "invitation rd-card invitation--wedding invitation--tpl-sri-lankan-poruwa invitation--wd wd-l-classic wd-fr-band wd-fam-heritage wd-light invitation--enter-fade",
+     "rd": true,
+     "crest": {
+      "src": "images/redesign-100/sri-lankan-poruwa/crest.webp",
+      "ok": true
+     },
+     "venue": {
+      "src": "images/redesign-100/sri-lankan-poruwa/venue.webp",
+      "ok": true
+     },
+     "cornerTL": {
+      "src": "images/redesign-100/sri-lankan-poruwa/corner-tl.webp",
+      "ok": true
+     },
+     "cornerTR": {
+      "src": "images/redesign-100/sri-lankan-poruwa/corner-tr.webp",
+      "ok": true
+     },
+     "footer": {
+      "src": "images/redesign-100/sri-lankan-poruwa/footer.webp",
+      "ok": true
+     },
+     "svgCorners": 0
+    },
+    "name": true
+   }
+  },
+  {
+   "name": "preview: botanical (rd-lotus-garden) loads its artwork + name",
+   "ok": true,
+   "details": {
+    "f": {
+     "cls": "invitation rd-card invitation--wedding invitation--tpl-lotus-garden invitation--wd wd-l-monogram wd-fr-band wd-fam-royal wd-light wd-script invitation--enter-fade",
+     "rd": true,
+     "crest": {
+      "src": "images/redesign-100/lotus-garden/crest.webp",
+      "ok": true
+     },
+     "venue": {
+      "src": "images/redesign-100/lotus-garden/venue.webp",
+      "ok": true
+     },
+     "cornerTL": {
+      "src": "images/redesign-100/lotus-garden/corner-tl.webp",
+      "ok": true
+     },
+     "cornerTR": {
+      "src": "images/redesign-100/lotus-garden/corner-tr.webp",
+      "ok": true
+     },
+     "footer": {
+      "src": "images/redesign-100/lotus-garden/footer.webp",
+      "ok": true
+     },
+     "svgCorners": 0
+    },
+    "name": true
+   }
+  },
+  {
+   "name": "preview: botanicalLayout (rd-kerala-mangalyam) loads its artwork + name",
+   "ok": true,
+   "details": {
+    "f": {
+     "cls": "invitation rd-card invitation--wedding invitation--tpl-kerala-mangalyam invitation--wd wd-l-botanical wd-fr-band wd-fam-heritage wd-light wd-script invitation--enter-fade",
+     "rd": true,
+     "crest": {
+      "src": "images/redesign-100/kerala-mangalyam/crest.webp",
+      "ok": true
+     },
+     "venue": {
+      "src": "images/redesign-100/kerala-mangalyam/venue.webp",
+      "ok": true
+     },
+     "cornerTL": null,
+     "cornerTR": null,
+     "footer": {
+      "src": "images/redesign-100/kerala-mangalyam/footer.webp",
+      "ok": true
+     },
+     "svgCorners": 0
+    },
+    "name": true
+   }
+  },
+  {
+   "name": "original unchanged: telugu-pelli",
+   "ok": true,
+   "details": {
+    "sameHtml": true,
+    "samePixels": true
+   }
+  },
+  {
+   "name": "original unchanged: tamil-thirumanam",
+   "ok": true,
+   "details": {
+    "sameHtml": true,
+    "samePixels": true
+   }
+  },
+  {
+   "name": "original unchanged: kalasam-blessing",
+   "ok": true,
+   "details": {
+    "sameHtml": true,
+    "samePixels": true
+   }
+  },
+  {
+   "name": "original unchanged: luxury-editorial",
+   "ok": true,
+   "details": {
+    "sameHtml": true,
+    "samePixels": true
+   }
+  },
+  {
+   "name": "original unchanged: minimal-wedding",
+   "ok": true,
+   "details": {
+    "sameHtml": true,
+    "samePixels": true
+   }
+  },
+  {
+   "name": "original unchanged: japanese-mizuhiki",
+   "ok": true,
+   "details": {
+    "sameHtml": true,
+    "samePixels": true
+   }
+  },
+  {
+   "name": "editor: rd-kalasam-blessing opens with its artwork",
+   "ok": true,
+   "details": {
+    "template": "rd-kalasam-blessing"
+   }
+  },
+  {
+   "name": "editor: all 100 redesigned cards sit next to their originals in the wedding Template grid",
+   "ok": true,
+   "details": {
+    "n": 100,
+    "pairs": 100,
+    "note": "250 designs made for wedding.",
+    "separate": false,
+    "checked": "rd-kalasam-blessing"
+   }
+  },
+  {
+   "name": "editor: selecting another redesigned card loads its artwork",
+   "ok": true,
+   "details": {
+    "template": "rd-maharaja-palace"
+   }
+  },
+  {
+   "name": "editor: original designs still listed in the picker",
+   "ok": true,
+   "details": {
+    "originalRadios": 796
+   }
+  },
+  {
+   "name": "editor: venue and name edits render on the redesigned card",
+   "ok": true,
+   "details": {
+    "rd": true
+   }
+  },
+  {
+   "name": "editor: desktop preview (kalasam-blessing)",
+   "ok": true,
+   "details": {
+    "ok": true,
+    "cardW": 627,
+    "vw": 1366,
+    "cornerClearsNote": true
+   }
+  },
+  {
+   "name": "editor: mobile 390px preview (kalasam-blessing)",
+   "ok": true,
+   "details": {
+    "ok": true,
+    "cardW": 336,
+    "vw": 390,
+    "cornerClearsNote": true,
+    "noHorizontalScroll": true
+   }
+  },
+  {
+   "name": "editor: JPG export (kalasam-blessing)",
+   "ok": true,
+   "details": {
+    "file": "export-kalasam-blessing.jpg",
+    "bytes": 642895
+   }
+  },
+  {
+   "name": "host page: redesigned artwork (maharaja-palace)",
+   "ok": true,
+   "details": {
+    "body": "site-host--wd site-wd-l-royal site-wd-fr-vine wd-fam-royal wd-dark",
+    "crest": "images/redesign-100/maharaja-palace/crest.webp",
+    "crestOk": true,
+    "land": true,
+    "venue": "url(\"images/redesign-100/maharaja-palace/venue.webp\")",
+    "corners": 2,
+    "cornersOk": true
+   }
+  },
+  {
+   "name": "editor: no script errors (kalasam-blessing)",
+   "ok": true,
+   "details": []
+  },
+  {
+   "name": "editor: rd-kerala-mangalyam opens with its artwork",
+   "ok": true,
+   "details": {
+    "template": "rd-kerala-mangalyam"
+   }
+  },
+  {
+   "name": "editor: all 100 redesigned cards sit next to their originals in the wedding Template grid",
+   "ok": true,
+   "details": {
+    "n": 100,
+    "pairs": 100,
+    "note": "250 designs made for wedding.",
+    "separate": false,
+    "checked": "rd-kerala-mangalyam"
+   }
+  },
+  {
+   "name": "editor: desktop preview (kerala-mangalyam)",
+   "ok": true,
+   "details": {
+    "ok": true,
+    "cardW": 627,
+    "vw": 1366,
+    "cornerClearsNote": true
+   }
+  },
+  {
+   "name": "editor: mobile 390px preview (kerala-mangalyam)",
+   "ok": true,
+   "details": {
+    "ok": true,
+    "cardW": 336,
+    "vw": 390,
+    "cornerClearsNote": true,
+    "noHorizontalScroll": true
+   }
+  },
+  {
+   "name": "editor: JPG export (kerala-mangalyam)",
+   "ok": true,
+   "details": {
+    "file": "export-kerala-mangalyam.jpg",
+    "bytes": 586738
+   }
+  },
+  {
+   "name": "host page: redesigned artwork (kerala-mangalyam)",
+   "ok": true,
+   "details": {
+    "body": "site-host--wd site-wd-l-botanical site-wd-fr-band wd-fam-heritage wd-light wd-script",
+    "crest": "images/redesign-100/kerala-mangalyam/crest.webp",
+    "crestOk": true,
+    "land": true,
+    "venue": null,
+    "corners": 0,
+    "cornersOk": true
+   }
+  },
+  {
+   "name": "editor: no script errors (kerala-mangalyam)",
+   "ok": true,
+   "details": []
+  },
+  {
+   "name": "editor: protected telugu-pelli unchanged",
+   "ok": true,
+   "details": {
+    "same": true
+   }
+  },
+  {
+   "name": "editor: protected tamil-thirumanam unchanged",
+   "ok": true,
+   "details": {
+    "same": true
+   }
+  },
+  {
+   "name": "rollback: collection hidden, rd-* link falls back to the original design",
+   "ok": true,
+   "details": {
+    "section": false,
+    "picker": false,
+    "template": "kalasam-blessing",
+    "rd": false
+   }
+  }
+ ],
+ "finishedAt": "2026-10-24T22:33:59.296Z",
+ "passed": 41,
+ "failed": 0
+}

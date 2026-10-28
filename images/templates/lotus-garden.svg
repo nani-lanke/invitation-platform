@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Lotus Garden — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-lotus-garden" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7FAF6"/>
+      <stop offset="55%" stop-color="#DEEAE0"/>
+      <stop offset="100%" stop-color="#F7FAF6"/>
+    </linearGradient>
+    <radialGradient id="gl-lotus-garden" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-lotus-garden" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-lotus-garden)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-lotus-garden)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-lotus-garden)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Zen Water Ripple &amp; Sacred Lotus Motif -->
+      <g stroke="#2E6B56" stroke-width="1.5" fill="none" opacity="0.65">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#D9829B" stroke-width="1" rx="6"/>
+      </g>
+      <!-- Blooming Pink Lotus Over Serene Water -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="110" fill="none" stroke="#2E6B56" stroke-width="1.5" opacity="0.4"/>
+        <!-- Water Ripples -->
+        <ellipse cx="0" cy="40" rx="90" ry="16" fill="none" stroke="#2E6B56" stroke-width="1.2" opacity="0.5"/>
+        <ellipse cx="0" cy="40" rx="60" ry="10" fill="none" stroke="#2E6B56" stroke-width="1" opacity="0.4"/>
+        <!-- Lily Pad -->
+        <path d="M -70 40 C -70 20, 0 20, 0 40 C 0 60, -70 60, -70 40 Z" fill="#2E6B56" opacity="0.5"/>
+        <!-- Sacred Lotus Petals -->
+        <g fill="#D9829B" opacity="0.85">
+          <!-- Central Petal -->
+          <path d="M 0 35 C -25 -10, -20 -60, 0 -80 C 20 -60, 25 -10, 0 35 Z"/>
+          <!-- Flanking Left -->
+          <path d="M -10 35 C -45 5, -55 -40, -25 -65 C -15 -35, -5 5, -10 35 Z"/>
+          <!-- Flanking Right -->
+          <path d="M 10 35 C 45 5, 55 -40, 25 -65 C 15 -35, 5 5, 10 35 Z"/>
+          <!-- Outer Left &amp; Right -->
+          <path d="M -15 35 C -65 20, -75 -15, -45 -40 C -30 -15, -10 15, -15 35 Z" opacity="0.7"/>
+          <path d="M 15 35 C 65 20, 75 -15, 45 -40 C 30 -15, 10 15, 15 35 Z" opacity="0.7"/>
+        </g>
+        <circle cx="0" cy="15" r="7" fill="#FFF8EE"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#D9829B" opacity="0.85">THE UNION OF TWO SOULS</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#D9829B" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#D9829B" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#D9829B" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#1B3026">Lotus Garden</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1B3026" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#D9829B" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#1B3026" opacity="0.6">AUSPICIOUS BLESSINGS</text>
+</svg>

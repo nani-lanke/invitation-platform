@@ -1,0 +1,906 @@
+{
+ "graduation-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8238634,
+  "prompt": "Wide photograph of an empty grand university hall decorated for graduation with navy and gold drapes and rows of chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-day__venue__8238634.png"
+ },
+ "graduation-day/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2917493,
+  "prompt": "A round wreath of gold laurel leaves, navy ribbons and small gold stars with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-day__wreath__2917493.png",
+  "coverage": 0.273,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1226600,
+  "prompt": "A low wide compact arrangement of gold laurel leaves, navy ribbons and small gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-day__cluster__1226600.png",
+  "coverage": 0.185,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7792905,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a navy blue graduation mortarboard cap with a gold tassel, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-day__crest__7792905.png",
+  "coverage": 0.096,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "honour-roll/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4013679,
+  "prompt": "Wide photograph of an empty classic university library hall with wooden shelves, warm lamps and purple banners, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honour-roll__venue__4013679.png"
+ },
+ "honour-roll/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3717321,
+  "prompt": "A small compact arrangement of purple ribbons, gold laurel leaves and small rolled diplomas, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honour-roll__bouquet__3717321.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "honour-roll/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9770982,
+  "prompt": "A low wide compact arrangement of purple ribbons, gold laurel leaves and small rolled diplomas, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honour-roll__cluster__9770982.png",
+  "coverage": 0.268,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "honour-roll/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6944495,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a stack of leather bound books with a purple ribbon bookmark, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honour-roll__crest__6944495.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cap-and-gown/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7838165,
+  "prompt": "Wide photograph of an empty stately convocation auditorium with green velvet curtains and gold lights, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown__venue__7838165.png"
+ },
+ "cap-and-gown/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9941289,
+  "prompt": "A tall slender vertical hanging strand of deep green ribbons, gold laurel leaves and gold tassels from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown__vine__9941289.png",
+  "coverage": 0.154,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "cap-and-gown/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2041868,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a dark green graduation cap resting on a folded green gown with a gold tassel, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown__crest__2041868.png",
+  "coverage": 0.251,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "bright-future/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9157515,
+  "prompt": "Wide photograph of an empty university lawn at dusk with fairy lights, a small stage and navy drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/bright-future__venue__9157515.png"
+ },
+ "bright-future/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6164036,
+  "prompt": "A small compact arrangement of small gold stars, navy ribbons and white blossoms, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/bright-future__bouquet__6164036.png",
+  "coverage": 0.055,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bright-future/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7399031,
+  "prompt": "A low wide compact arrangement of small gold stars, navy ribbons and white blossoms, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/bright-future__cluster__7399031.png",
+  "coverage": 0.277,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "bright-future/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9136458,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a navy graduation cap surrounded by small glowing gold stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/bright-future__crest__9136458.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "class-of-2026/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3305319,
+  "prompt": "Wide photograph of an empty university quadrangle with stone arches decorated for graduation with navy banners, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-of-2026__venue__3305319.png"
+ },
+ "class-of-2026/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5641617,
+  "prompt": "A small compact arrangement of gold laurel leaves, navy ribbons and gold tassels, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-of-2026__bouquet__5641617.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "class-of-2026/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2301006,
+  "prompt": "A low wide compact arrangement of gold laurel leaves, navy ribbons and gold tassels, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-of-2026__cluster__2301006.png",
+  "coverage": 0.279,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "class-of-2026/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6129831,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a classic black mortarboard cap with a golden tassel, front view, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-of-2026__crest__6129831.png",
+  "coverage": 0.147,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "proud-graduate/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6829296,
+  "prompt": "Wide photograph of an empty elegant celebration hall with purple and gold drapes and round tables, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/proud-graduate__venue__6829296.png"
+ },
+ "proud-graduate/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3473129,
+  "prompt": "A low wide compact arrangement of royal purple ribbons, gold laurel leaves and gold medals, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/proud-graduate__cluster__3473129.png",
+  "coverage": 0.323,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "proud-graduate/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7305468,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a round gold medallion seal on a royal purple ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/proud-graduate__crest__7305468.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "graduation-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3074693,
+  "prompt": "Wide photograph of an empty bright garden party set up for a graduation with coral balloons, bunting and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-celebration__venue__3074693.png"
+ },
+ "graduation-celebration/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9298549,
+  "prompt": "A small compact arrangement of coral and mustard balloons, confetti and small paper stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-celebration__bouquet__9298549.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "graduation-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2334826,
+  "prompt": "A low wide compact arrangement of coral and mustard balloons, confetti and small paper stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-celebration__cluster__2334826.png",
+  "coverage": 0.39,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "graduation-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5598595,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a mortarboard cap bursting with coral and mustard confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-celebration__crest__5598595.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "commencement-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5259355,
+  "prompt": "Wide photograph of an empty formal commencement stage with burgundy curtains, a lectern and gold lights, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/commencement-ceremony__venue__5259355.png"
+ },
+ "commencement-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6591613,
+  "prompt": "A low wide compact arrangement of burgundy ribbons, gold laurel leaves and cream roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/commencement-ceremony__cluster__6591613.png",
+  "coverage": 0.272,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "commencement-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4933647,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a burgundy and gold laurel wreath around a small scroll, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/commencement-ceremony__crest__4933647.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "the-next-chapter/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5347940,
+  "prompt": "Wide photograph of an empty dark wood library lounge with leather armchairs and warm brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/the-next-chapter__venue__5347940.png"
+ },
+ "the-next-chapter/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9428004,
+  "prompt": "A low wide compact arrangement of gold leaves, black ribbons and small open books, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/the-next-chapter__cluster__9428004.png",
+  "coverage": 0.338,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "the-next-chapter/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8968629,
+  "prompt": "Small premium ornament for the top of a graduation invitation: an open antique book with a gold tassel bookmark, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/the-next-chapter__crest__8968629.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "finally-graduated/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2361117,
+  "prompt": "Wide photograph of an empty minimal bright white celebration room with white flowers and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/finally-graduated__venue__2361117.png"
+ },
+ "finally-graduated/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5785782,
+  "prompt": "A tall slender vertical hanging strand of white flowers, eucalyptus and fine gold leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/finally-graduated__vine__5785782.png",
+  "coverage": 0.155,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "finally-graduated/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9078649,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a single small black graduation cap with a gold tassel, minimal, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/finally-graduated__crest__9078649.png",
+  "coverage": 0.038,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "degree-and-dreams/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7549614,
+  "prompt": "Wide photograph of an empty rooftop terrace at night with violet fairy lights and lanterns under a starry sky, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/degree-and-dreams__venue__7549614.png"
+ },
+ "degree-and-dreams/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7169039,
+  "prompt": "A round wreath of small gold stars, crescent moons and violet ribbons with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/degree-and-dreams__wreath__7169039.png",
+  "coverage": 0.231,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "degree-and-dreams/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3034986,
+  "prompt": "A low wide compact arrangement of small gold stars, crescent moons and violet ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/degree-and-dreams__cluster__3034986.png",
+  "coverage": 0.264,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "degree-and-dreams/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5323779,
+  "prompt": "Small premium ornament for the top of a graduation invitation: an open book with a glowing golden crescent moon above it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/degree-and-dreams__crest__5323779.png",
+  "coverage": 0.147,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "future-is-bright/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7971067,
+  "prompt": "Wide photograph of an empty sunlit university garden with emerald lawn, white chairs and gold balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/future-is-bright__venue__7971067.png"
+ },
+ "future-is-bright/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8005037,
+  "prompt": "A small compact arrangement of emerald ribbons, golden sun rays and gold laurel leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/future-is-bright__bouquet__8005037.png",
+  "coverage": 0.051,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "future-is-bright/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5368482,
+  "prompt": "A low wide compact arrangement of emerald ribbons, golden sun rays and gold laurel leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/future-is-bright__cluster__5368482.png",
+  "coverage": 0.209,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "future-is-bright/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7209675,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a golden sunburst behind a green graduation cap, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/future-is-bright__crest__7209675.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cap-and-gown-2026/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1487824,
+  "prompt": "Wide photograph of an empty heritage university hall with oxford blue banners and a wooden stage, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown-2026__venue__1487824.png"
+ },
+ "cap-and-gown-2026/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1265053,
+  "prompt": "A round wreath of oxford blue ribbons, gold laurel leaves and white roses with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown-2026__wreath__1265053.png",
+  "coverage": 0.374,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "cap-and-gown-2026/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1898240,
+  "prompt": "A low wide compact arrangement of oxford blue ribbons, gold laurel leaves and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown-2026__cluster__1898240.png",
+  "coverage": 0.222,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "cap-and-gown-2026/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5764593,
+  "prompt": "Small premium ornament for the top of a graduation invitation: an oxford blue mortarboard inside a gold laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cap-and-gown-2026__crest__5764593.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9197075,
+  "prompt": "Wide photograph of an empty backyard party set up with string lights, peach balloons and a snack table, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-party__venue__9197075.png"
+ },
+ "graduation-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3828491,
+  "prompt": "A long horizontal garland of peach and orange balloons, confetti and paper streamers draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-party__garland__3828491.png",
+  "coverage": 0.211,
+  "edgeTouch": 0.013,
+  "free": true,
+  "style": "garland"
+ },
+ "graduation-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1457818,
+  "prompt": "A low wide compact arrangement of peach and orange balloons, confetti and paper streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-party__cluster__1457818.png",
+  "coverage": 0.309,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "graduation-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9662227,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a graduation cap with a slice of pizza and a music note beside it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-party__crest__9662227.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "senior-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2798281,
+  "prompt": "Wide photograph of an empty school courtyard decorated with green and gold bunting and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/senior-celebration__venue__2798281.png"
+ },
+ "senior-celebration/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8447841,
+  "prompt": "A small compact arrangement of deep green ribbons, gold laurel leaves and gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/senior-celebration__bouquet__8447841.png",
+  "coverage": 0.08,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "senior-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2948510,
+  "prompt": "A low wide compact arrangement of deep green ribbons, gold laurel leaves and gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/senior-celebration__cluster__2948510.png",
+  "coverage": 0.313,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "senior-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2510807,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a deep green and gold laurel wreath with a small star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/senior-celebration__crest__2510807.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "academic-achievement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5844574,
+  "prompt": "Wide photograph of an empty elegant academic dinner hall with navy tablecloths and champagne flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/academic-achievement__venue__5844574.png"
+ },
+ "academic-achievement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8995146,
+  "prompt": "A low wide compact arrangement of champagne roses, navy ribbons and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/academic-achievement__cluster__8995146.png",
+  "coverage": 0.444,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "academic-achievement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7792355,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a gold seal medal on a navy and champagne ribbon with an open book, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/academic-achievement__crest__7792355.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "journey-complete/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7429758,
+  "prompt": "Wide photograph of an empty ivory and champagne celebration room with candles and white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/journey-complete__venue__7429758.png"
+ },
+ "journey-complete/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4153626,
+  "prompt": "A small compact arrangement of ivory roses, champagne ribbons and rolled scrolls, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/journey-complete__bouquet__4153626.png",
+  "coverage": 0.095,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "journey-complete/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7699345,
+  "prompt": "A low wide compact arrangement of ivory roses, champagne ribbons and rolled scrolls, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/journey-complete__cluster__7699345.png",
+  "coverage": 0.583,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "journey-complete/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9893972,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a rolled ivory diploma scroll tied with a champagne ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/journey-complete__crest__9893972.png",
+  "coverage": 0.179,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-beginnings-grad/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3176737,
+  "prompt": "Wide photograph of an empty garden terrace with a sage floral arch, white chairs and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/new-beginnings-grad__venue__3176737.png"
+ },
+ "new-beginnings-grad/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4106736,
+  "prompt": "A round wreath of sage green leaves, white flowers and small gold stars with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/new-beginnings-grad__wreath__4106736.png",
+  "coverage": 0.314,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "new-beginnings-grad/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9812099,
+  "prompt": "A low wide compact arrangement of sage green leaves, white flowers and small gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/new-beginnings-grad__cluster__9812099.png",
+  "coverage": 0.344,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "new-beginnings-grad/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4198790,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a small sage green arch with a gold star at the top, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/new-beginnings-grad__crest__4198790.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "cheers-to-the-graduate/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2357429,
+  "prompt": "Wide photograph of an empty chic black and gold lounge set for a toast with a champagne tower and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cheers-to-the-graduate__venue__2357429.png"
+ },
+ "cheers-to-the-graduate/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6883621,
+  "prompt": "A low wide compact arrangement of champagne roses, gold leaves and black ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cheers-to-the-graduate__cluster__6883621.png",
+  "coverage": 0.452,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "cheers-to-the-graduate/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3273304,
+  "prompt": "Small premium ornament for the top of a graduation invitation: two clinking crystal champagne coupes with a tiny graduation cap, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/cheers-to-the-graduate__crest__3273304.png",
+  "coverage": 0.082,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "diploma-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4825603,
+  "prompt": "Wide photograph of an empty formal ceremony hall with navy drapes, a podium and gold chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/diploma-day__venue__4825603.png"
+ },
+ "diploma-day/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9989946,
+  "prompt": "A tall slender vertical hanging strand of navy ribbons, gold leaves and rolled diplomas from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/diploma-day__vine__9989946.png",
+  "coverage": 0.106,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "vines"
+ },
+ "diploma-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4425181,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a rolled diploma tied with a navy ribbon and a gold seal, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/diploma-day__crest__4425181.png",
+  "coverage": 0.08,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "graduation-gala/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8226787,
+  "prompt": "Wide photograph of an empty black tie ballroom with crystal chandeliers, gold lights and round tables, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-gala__venue__8226787.png"
+ },
+ "graduation-gala/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6125175,
+  "prompt": "A low wide compact arrangement of gold sparkles, black feathers and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-gala__cluster__6125175.png",
+  "coverage": 0.398,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "graduation-gala/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6044170,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a gold wax seal with golden sparkles around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-gala__crest__6044170.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "honors-and-achievement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7585405,
+  "prompt": "Wide photograph of an empty grand honours hall with purple velvet drapes and gold candelabras, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honors-and-achievement__venue__7585405.png"
+ },
+ "honors-and-achievement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2596072,
+  "prompt": "A low wide compact arrangement of royal purple ribbons, gold laurel leaves and gold medals, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honors-and-achievement__cluster__2596072.png",
+  "coverage": 0.291,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "honors-and-achievement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3868233,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a royal purple laurel wreath around a gold medal, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/honors-and-achievement__crest__3868233.png",
+  "coverage": 0.128,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "class-valedictorian/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7910260,
+  "prompt": "Wide photograph of an empty elegant dinner hall with burgundy tablecloths, gold candles and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-valedictorian__venue__7910260.png"
+ },
+ "class-valedictorian/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2699755,
+  "prompt": "A low wide compact arrangement of burgundy ribbons, gold leaves and cream roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-valedictorian__cluster__2699755.png",
+  "coverage": 0.434,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "class-valedictorian/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2856254,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a burgundy wax seal medal with a gold ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/class-valedictorian__crest__2856254.png",
+  "coverage": 0.168,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-graduation/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5479242,
+  "prompt": "Wide photograph of an empty modern college atrium decorated with navy and mint balloons and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/college-graduation__venue__5479242.png"
+ },
+ "college-graduation/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7578825,
+  "prompt": "A tall slender vertical hanging strand of mint green ribbons, navy balloons and gold geometric shapes from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/college-graduation__vine__7578825.png",
+  "coverage": 0.116,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "vines"
+ },
+ "college-graduation/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2330732,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a modern geometric gold ring around a navy graduation cap, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/college-graduation__crest__2330732.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "high-school-graduation/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9239774,
+  "prompt": "Wide photograph of an empty school gymnasium decorated for graduation with navy balloons and streamers, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/high-school-graduation__venue__9239774.png"
+ },
+ "high-school-graduation/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2818860,
+  "prompt": "A small compact arrangement of colourful confetti, navy balloons and paper stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/high-school-graduation__bouquet__2818860.png",
+  "coverage": 0.059,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "high-school-graduation/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3240447,
+  "prompt": "A low wide compact arrangement of colourful confetti, navy balloons and paper stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/high-school-graduation__cluster__3240447.png",
+  "coverage": 0.353,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "high-school-graduation/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7699714,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a navy graduation cap with colourful confetti and a school bell, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/high-school-graduation__crest__7699714.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "university-graduation/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6827613,
+  "prompt": "Wide photograph of an empty university stone archway courtyard with gold lanterns at dusk, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/university-graduation__venue__6827613.png"
+ },
+ "university-graduation/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6772976,
+  "prompt": "A tall slender vertical hanging strand of charcoal ribbons, gold laurel leaves and white roses from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/university-graduation__vine__6772976.png",
+  "coverage": 0.135,
+  "edgeTouch": 0.018,
+  "free": true,
+  "style": "vines"
+ },
+ "university-graduation/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5412819,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a charcoal stone arch with a gold graduation cap, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/university-graduation__crest__5412819.png",
+  "coverage": 0.202,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "graduation-brunch/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3047647,
+  "prompt": "Wide photograph of an empty sunny brunch table set with lavender flowers, mimosas and pastries in a garden, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-brunch__venue__3047647.png"
+ },
+ "graduation-brunch/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3580863,
+  "prompt": "A round wreath of lavender flowers, white blooms and soft green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-brunch__wreath__3580863.png",
+  "coverage": 0.436,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-brunch/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7162714,
+  "prompt": "A low wide compact arrangement of lavender flowers, white blooms and soft green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-brunch__cluster__7162714.png",
+  "coverage": 0.302,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-brunch/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5889363,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a mimosa glass with lavender blooms beside a graduation cap, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-brunch__crest__5889363.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-open-house/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7242149,
+  "prompt": "Wide photograph of an empty home living room decorated for a graduation open house with banners and a snack table, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-open-house__venue__7242149.png"
+ },
+ "graduation-open-house/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7953886,
+  "prompt": "A small compact arrangement of tan and cream balloons, paper pennants and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-open-house__bouquet__7953886.png",
+  "coverage": 0.098,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "graduation-open-house/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7504333,
+  "prompt": "A low wide compact arrangement of tan and cream balloons, paper pennants and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-open-house__cluster__7504333.png",
+  "coverage": 0.459,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "graduation-open-house/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5716624,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a small tan model house with a graduation cap on the roof, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/graduation-open-house__crest__5716624.png",
+  "coverage": 0.128,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "walk-the-stage/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6940481,
+  "prompt": "Wide photograph of an empty grand stage under a golden spotlight with navy curtains and rows of seats, celebration venue decor, no people, warm inviting light, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/walk-the-stage__venue__6940481.png"
+ },
+ "walk-the-stage/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4827437,
+  "prompt": "A tall slender vertical hanging strand of small gold stars, navy ribbons and gold sparkles from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/walk-the-stage__vine__4827437.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "walk-the-stage/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9478688,
+  "prompt": "Small premium ornament for the top of a graduation invitation: a golden spotlight beam on a graduation cap with small stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium graduation celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/GRADUATION/walk-the-stage__crest__9478688.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ }
+}

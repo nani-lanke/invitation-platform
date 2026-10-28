@@ -1,0 +1,47 @@
+{
+ "slug": "elegant-floral",
+ "name": "Elegant Floral",
+ "base": "cards/elegant-floral/",
+ "spec": {
+  "layout": "arch",
+  "frame": "hairline",
+  "venue": "split",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/elegant-floral.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/elegant-floral.svg",
+  "corners": "inline SVG corner set (hairline)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of an elegant garden wedding with blush rose arches, white chairs and candles, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8498089,
+   "raw": "..\\work\\raw\\elegant-floral__venue__8498089_4y4ej.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a small blush rose posy tied with silk ribbon, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6354877,
+   "raw": "..\\work\\raw\\elegant-floral__crest__6354877_4y6ng.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a rose garden with a gazebo at golden hour, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3294221,
+   "raw": "..\\work\\raw\\elegant-floral__footer__3294221_4qfrd.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of blush roses, ranunculus and eucalyptus, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9052987,
+   "raw": "..\\work\\raw\\elegant-floral__corner__9052987_4wuk1.png"
+  }
+ }
+}

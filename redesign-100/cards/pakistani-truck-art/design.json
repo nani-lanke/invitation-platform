@@ -1,0 +1,40 @@
+{
+ "slug": "pakistani-truck-art",
+ "name": "Pakistani Truck Art",
+ "base": "cards/pakistani-truck-art/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "kolam",
+  "venue": "split",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/pakistani-truck-art.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/pakistani-truck-art.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Pakistani mehndi courtyard decorated with colourful truck-art panels, hanging chains, marigolds and lanterns, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6204046,
+   "raw": "..\\work\\raw\\pakistani-truck-art__venue__6204046_5czjj.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of marigolds, red roses and jasmine, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 3915150,
+   "raw": "..\\work\\raw\\pakistani-truck-art__crest__3915150_5odl0.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of Badshahi mosque and Lahore fort at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8513048,
+   "raw": "..\\work\\raw\\pakistani-truck-art__footer__8513048_4ilu8.png"
+  }
+ }
+}

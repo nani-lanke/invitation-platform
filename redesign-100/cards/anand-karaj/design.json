@@ -1,0 +1,40 @@
+{
+ "slug": "anand-karaj",
+ "name": "Anand Karaj",
+ "base": "cards/anand-karaj/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "beads",
+  "venue": "stack",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/anand-karaj.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/anand-karaj.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of the inside of a Sikh gurdwara hall decorated for an Anand Karaj with marigold garlands, white flowers and a draped canopy over a platform, no portraits, no pictures of people, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2154934,
+   "raw": "..\\work\\raw\\anand-karaj__venue__2154934_57h1d.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of white roses, marigolds and jasmine, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9017926,
+   "raw": "..\\work\\raw\\anand-karaj__crest__9017926_1dy4s.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Golden Temple of Amritsar reflected in its sarovar, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5799200,
+   "raw": "..\\work\\raw\\anand-karaj__footer__5799200_3mb9p.png"
+  }
+ }
+}

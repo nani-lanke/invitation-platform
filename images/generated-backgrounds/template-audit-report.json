@@ -1,0 +1,1512 @@
+[
+  {
+    "index": 1,
+    "name": "Tamil Thirumanam",
+    "slug": "tamil-thirumanam",
+    "tier": "free",
+    "motif": "kolam",
+    "backdrop": "tamil-thirumanam-12-layer",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 2,
+    "name": "Kalasam Blessing",
+    "slug": "kalasam-blessing",
+    "tier": "free",
+    "motif": "kalasam",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 3,
+    "name": "Gopuram Vows",
+    "slug": "gopuram-vows",
+    "tier": "free",
+    "motif": "gopuram",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 4,
+    "name": "Telugu Pelli",
+    "slug": "telugu-pelli",
+    "tier": "free",
+    "motif": "jasmine",
+    "backdrop": "telugu-pelli-14-layer",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 5,
+    "name": "Talambralu Pearls",
+    "slug": "talambralu-pearls",
+    "tier": "free",
+    "motif": "talambralu",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 6,
+    "name": "Kerala Mangalyam",
+    "slug": "kerala-mangalyam",
+    "tier": "free",
+    "motif": "nilavilakku",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 7,
+    "name": "Kasavu Gold Border",
+    "slug": "kasavu-gold-border",
+    "tier": "free",
+    "motif": "kasavu",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 8,
+    "name": "Mysore Madhuve",
+    "slug": "mysore-madhuve",
+    "tier": "free",
+    "motif": "mysore-arch",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 9,
+    "name": "Punjabi Phulkari",
+    "slug": "punjabi-phulkari",
+    "tier": "free",
+    "motif": "phulkari",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 10,
+    "name": "Bengali Alpona",
+    "slug": "bengali-alpona",
+    "tier": "free",
+    "motif": "alpona",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 11,
+    "name": "Shankha Pola",
+    "slug": "shankha-pola",
+    "tier": "free",
+    "motif": "shankha",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 12,
+    "name": "Gujarati Toran",
+    "slug": "gujarati-toran",
+    "tier": "free",
+    "motif": "toran",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 13,
+    "name": "Bandhani Bloom",
+    "slug": "bandhani-bloom",
+    "tier": "free",
+    "motif": "bandhani",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 14,
+    "name": "Marathi Paithani",
+    "slug": "marathi-paithani",
+    "tier": "free",
+    "motif": "paithani",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 15,
+    "name": "Mundavalya Pearls",
+    "slug": "mundavalya-pearls",
+    "tier": "free",
+    "motif": "mundavalya",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 16,
+    "name": "Rajasthani Jharokha",
+    "slug": "rajasthani-jharokha",
+    "tier": "free",
+    "motif": "jharokha",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 17,
+    "name": "Haveli Jaali",
+    "slug": "haveli-jaali",
+    "tier": "free",
+    "motif": "jaali",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 18,
+    "name": "Assamese Biya",
+    "slug": "assamese-biya",
+    "tier": "free",
+    "motif": "japi",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 19,
+    "name": "Gamosa Weave",
+    "slug": "gamosa-weave",
+    "tier": "free",
+    "motif": "gamosa",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 20,
+    "name": "Odia Bahaghara",
+    "slug": "odia-bahaghara",
+    "tier": "free",
+    "motif": "konark",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 21,
+    "name": "Pattachitra Vows",
+    "slug": "pattachitra-vows",
+    "tier": "free",
+    "motif": "pattachitra",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 22,
+    "name": "Sindhi Ajrak",
+    "slug": "sindhi-ajrak",
+    "tier": "free",
+    "motif": "ajrak",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 23,
+    "name": "Goan Azulejo",
+    "slug": "goan-azulejo",
+    "tier": "free",
+    "motif": "azulejo",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 24,
+    "name": "Konkan Coast",
+    "slug": "konkan-coast",
+    "tier": "free",
+    "motif": "coconut-palm",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 25,
+    "name": "Kashmiri Chinar",
+    "slug": "kashmiri-chinar",
+    "tier": "free",
+    "motif": "chinar",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 26,
+    "name": "Nepali Bihe",
+    "slug": "nepali-bihe",
+    "tier": "free",
+    "motif": "pagoda",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 27,
+    "name": "Mithila Vivah",
+    "slug": "mithila-vivah",
+    "tier": "free",
+    "motif": "madhubani",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 28,
+    "name": "Lucknawi Chikankari",
+    "slug": "lucknawi-chikankari",
+    "tier": "free",
+    "motif": "chikankari",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 29,
+    "name": "Luxury Editorial",
+    "slug": "luxury-editorial",
+    "tier": "premium",
+    "motif": "editorial-frame",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 30,
+    "name": "Kanchipuram Silk",
+    "slug": "kanchipuram-silk",
+    "tier": "free",
+    "motif": "kanchipuram-sari",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 31,
+    "name": "Tanjore Grandeur",
+    "slug": "tanjore-grandeur",
+    "tier": "premium",
+    "motif": "tanjore-frame",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 32,
+    "name": "Chettinad Heritage",
+    "slug": "chettinad-heritage",
+    "tier": "premium",
+    "motif": "chettinad-tile",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 33,
+    "name": "Andhra Kalamkari",
+    "slug": "andhra-kalamkari",
+    "tier": "premium",
+    "motif": "kalamkari-vine",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 34,
+    "name": "Telangana Bathukamma",
+    "slug": "telangana-bathukamma",
+    "tier": "premium",
+    "motif": "bathukamma-floral",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 35,
+    "name": "Coorg Kodava",
+    "slug": "coorg-kodava",
+    "tier": "premium",
+    "motif": "coorg-foliage",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 36,
+    "name": "Kutch Mirrorwork",
+    "slug": "kutch-mirrorwork",
+    "tier": "premium",
+    "motif": "kutch-mirror",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 37,
+    "name": "Banarasi Royale",
+    "slug": "banarasi-royale",
+    "tier": "premium",
+    "motif": "banarasi-brocade",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 38,
+    "name": "Awadhi Nawab",
+    "slug": "awadhi-nawab",
+    "tier": "premium",
+    "motif": "awadhi-arch",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 39,
+    "name": "Kashmir Garden",
+    "slug": "kashmir-garden",
+    "tier": "premium",
+    "motif": "kashmir-chinar",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 40,
+    "name": "Royal Shehnai",
+    "slug": "royal-shehnai",
+    "tier": "premium",
+    "motif": "shehnai-duet",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 41,
+    "name": "Jewel of Jaipur",
+    "slug": "jewel-of-jaipur",
+    "tier": "premium",
+    "motif": "jaipur-jharokha",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 42,
+    "name": "Udaipur Romance",
+    "slug": "udaipur-romance",
+    "tier": "premium",
+    "motif": "udaipur-lake",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 43,
+    "name": "Traditional Wedding",
+    "slug": "traditional-wedding",
+    "tier": "premium",
+    "motif": "diya",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 44,
+    "name": "Royal Wedding",
+    "slug": "royal-wedding",
+    "tier": "premium",
+    "motif": "mandala",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 45,
+    "name": "Golden Celebration",
+    "slug": "golden-celebration",
+    "tier": "premium",
+    "motif": "mandala",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 46,
+    "name": "Sangeet Night",
+    "slug": "sangeet-night",
+    "tier": "free",
+    "motif": "music",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 47,
+    "name": "Mehendi Morning",
+    "slug": "mehendi-morning",
+    "tier": "free",
+    "motif": "floral",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 48,
+    "name": "Haldi Sunshine",
+    "slug": "haldi-sunshine",
+    "tier": "free",
+    "motif": "mandala",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 49,
+    "name": "Mehendi Ceremony",
+    "slug": "mehendi-ceremony",
+    "tier": "free",
+    "motif": "mehndi-cone",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 50,
+    "name": "Haldi Ceremony",
+    "slug": "haldi-ceremony",
+    "tier": "free",
+    "motif": "haldi-pot",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 51,
+    "name": "Sangeet Evening",
+    "slug": "sangeet-evening",
+    "tier": "free",
+    "motif": "ghungroo",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 52,
+    "name": "Hindu Vivah",
+    "slug": "hindu-vivah",
+    "tier": "free",
+    "motif": "havan",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 53,
+    "name": "Anand Karaj",
+    "slug": "anand-karaj",
+    "tier": "free",
+    "motif": "khanda",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 54,
+    "name": "Nikah Ceremony",
+    "slug": "nikah-ceremony",
+    "tier": "free",
+    "motif": "khatam",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 55,
+    "name": "Christian Wedding",
+    "slug": "christian-wedding",
+    "tier": "free",
+    "motif": "rose-window",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 56,
+    "name": "Jain Vivah",
+    "slug": "jain-vivah",
+    "tier": "free",
+    "motif": "ahimsa",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 57,
+    "name": "Buddhist Union",
+    "slug": "buddhist-union",
+    "tier": "free",
+    "motif": "dharmachakra",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 58,
+    "name": "Parsi Lagan",
+    "slug": "parsi-lagan",
+    "tier": "free",
+    "motif": "faravahar",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 59,
+    "name": "Interfaith Union",
+    "slug": "interfaith-union",
+    "tier": "free",
+    "motif": "two-arches",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 60,
+    "name": "Civil Ceremony",
+    "slug": "civil-ceremony",
+    "tier": "free",
+    "motif": "civil-knot",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 61,
+    "name": "Japanese Mizuhiki",
+    "slug": "japanese-mizuhiki",
+    "tier": "free",
+    "motif": "mizuhiki",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 62,
+    "name": "Korean Dancheong",
+    "slug": "korean-dancheong",
+    "tier": "free",
+    "motif": "dancheong",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 63,
+    "name": "Chinese Double Joy",
+    "slug": "chinese-double-joy",
+    "tier": "free",
+    "motif": "peony-lantern",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 64,
+    "name": "Filipino Sampaguita",
+    "slug": "filipino-sampaguita",
+    "tier": "free",
+    "motif": "sampaguita",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 65,
+    "name": "Thai Lai Kranok",
+    "slug": "thai-lai-kranok",
+    "tier": "free",
+    "motif": "kranok",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 66,
+    "name": "Indonesian Batik",
+    "slug": "indonesian-batik",
+    "tier": "free",
+    "motif": "batik",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 67,
+    "name": "Vietnamese Lotus",
+    "slug": "vietnamese-lotus",
+    "tier": "free",
+    "motif": "vn-lotus",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 68,
+    "name": "Pakistani Truck Art",
+    "slug": "pakistani-truck-art",
+    "tier": "free",
+    "motif": "truck-art",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 69,
+    "name": "Bangladeshi Jamdani",
+    "slug": "bangladeshi-jamdani",
+    "tier": "free",
+    "motif": "jamdani",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 70,
+    "name": "Sri Lankan Poruwa",
+    "slug": "sri-lankan-poruwa",
+    "tier": "free",
+    "motif": "punkalasa",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 71,
+    "name": "Italian Rinascimento",
+    "slug": "italian-rinascimento",
+    "tier": "free",
+    "motif": "renaissance",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 72,
+    "name": "French Fleur de Lis",
+    "slug": "french-fleur-de-lis",
+    "tier": "free",
+    "motif": "fleur",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 73,
+    "name": "Greek Meander",
+    "slug": "greek-meander",
+    "tier": "free",
+    "motif": "meander",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 74,
+    "name": "Spanish Mudejar",
+    "slug": "spanish-mudejar",
+    "tier": "free",
+    "motif": "mudejar",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 75,
+    "name": "British Regency",
+    "slug": "british-regency",
+    "tier": "free",
+    "motif": "heraldic",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 76,
+    "name": "Nigerian Adire",
+    "slug": "nigerian-adire",
+    "tier": "free",
+    "motif": "adire",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 77,
+    "name": "Ghanaian Kente",
+    "slug": "ghanaian-kente",
+    "tier": "free",
+    "motif": "kente",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 78,
+    "name": "Moroccan Zellige",
+    "slug": "moroccan-zellige",
+    "tier": "free",
+    "motif": "zellige",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 79,
+    "name": "Mexican Papel Picado",
+    "slug": "mexican-papel-picado",
+    "tier": "free",
+    "motif": "papel-picado",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 80,
+    "name": "Brazilian Tropical",
+    "slug": "brazilian-tropical",
+    "tier": "free",
+    "motif": "tropical",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 81,
+    "name": "Caribbean Hibiscus",
+    "slug": "caribbean-hibiscus",
+    "tier": "free",
+    "motif": "hibiscus",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 82,
+    "name": "Persian Boteh",
+    "slug": "persian-boteh",
+    "tier": "free",
+    "motif": "boteh",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 83,
+    "name": "Ethiopian Habesha",
+    "slug": "ethiopian-habesha",
+    "tier": "free",
+    "motif": "habesha",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 84,
+    "name": "Baraat Procession",
+    "slug": "baraat-procession",
+    "tier": "free",
+    "motif": "baraat",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 85,
+    "name": "Jaimala Exchange",
+    "slug": "jaimala-exchange",
+    "tier": "free",
+    "motif": "varmala",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 86,
+    "name": "Saat Phere",
+    "slug": "saat-phere",
+    "tier": "free",
+    "motif": "saptapadi",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 87,
+    "name": "Nikah Nama",
+    "slug": "nikah-nama",
+    "tier": "free",
+    "motif": "nikahnama",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 88,
+    "name": "Anand Karaj Ardas",
+    "slug": "anand-karaj-ardas",
+    "tier": "free",
+    "motif": "palki",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 89,
+    "name": "Wedding Day",
+    "slug": "wedding-day-mandap",
+    "tier": "free",
+    "motif": "mandap",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 90,
+    "name": "Vidaai Farewell",
+    "slug": "vidaai-farewell",
+    "tier": "free",
+    "motif": "doli",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 91,
+    "name": "Bride & Groom",
+    "slug": "bride-and-groom",
+    "tier": "free",
+    "motif": "rings-classic",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 92,
+    "name": "Bride & Bride",
+    "slug": "bride-and-bride",
+    "tier": "free",
+    "motif": "twin-blooms",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 93,
+    "name": "Groom & Groom",
+    "slug": "groom-and-groom",
+    "tier": "free",
+    "motif": "twin-bands",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 94,
+    "name": "The Two Of Us",
+    "slug": "the-two-of-us",
+    "tier": "free",
+    "motif": "infinity",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 95,
+    "name": "Our Son’s Wedding",
+    "slug": "our-sons-wedding",
+    "tier": "free",
+    "motif": "wheat-crest",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 96,
+    "name": "Our Daughter’s Wedding",
+    "slug": "our-daughters-wedding",
+    "tier": "free",
+    "motif": "rose-cartouche",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 97,
+    "name": "My Brother’s Wedding",
+    "slug": "my-brothers-wedding",
+    "tier": "free",
+    "motif": "rope-knot",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 98,
+    "name": "My Sister’s Wedding",
+    "slug": "my-sisters-wedding",
+    "tier": "free",
+    "motif": "mirror-fans",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 99,
+    "name": "A Friend’s Wedding",
+    "slug": "a-friends-wedding",
+    "tier": "free",
+    "motif": "confetti-arc",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 100,
+    "name": "A Family Wedding",
+    "slug": "a-family-wedding",
+    "tier": "free",
+    "motif": "family-tree",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 101,
+    "name": "Cinematic Love Story",
+    "slug": "cinematic-love-story",
+    "tier": "premium",
+    "motif": "cinema-spotlight",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 102,
+    "name": "Royal Durbar",
+    "slug": "royal-durbar",
+    "tier": "free",
+    "motif": "damask-crown",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 103,
+    "name": "Luxe Noir",
+    "slug": "luxe-noir",
+    "tier": "free",
+    "motif": "luxe-rays",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 104,
+    "name": "Velvet Rouge",
+    "slug": "velvet-rouge",
+    "tier": "free",
+    "motif": "velvet-damask",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 105,
+    "name": "Gilded Branch",
+    "slug": "gilded-branch",
+    "tier": "free",
+    "motif": "gilded-leaf",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 106,
+    "name": "Palace Colonnade",
+    "slug": "palace-colonnade",
+    "tier": "free",
+    "motif": "palace-dome",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 107,
+    "name": "Deco Gatsby",
+    "slug": "deco-gatsby",
+    "tier": "free",
+    "motif": "deco-fan",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 108,
+    "name": "Maharaja Palace",
+    "slug": "maharaja-palace",
+    "tier": "premium",
+    "motif": "maharaja-arch",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 109,
+    "name": "Regal Maroon",
+    "slug": "regal-maroon",
+    "tier": "premium",
+    "motif": "regal-crest",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 110,
+    "name": "Imperial Gold",
+    "slug": "imperial-gold",
+    "tier": "premium",
+    "motif": "imperial-filigree",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 111,
+    "name": "Champagne Palace",
+    "slug": "champagne-palace",
+    "tier": "premium",
+    "motif": "champagne-arch",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 112,
+    "name": "Royal Garden Court",
+    "slug": "royal-garden-court",
+    "tier": "premium",
+    "motif": "garden-palace-gate",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 113,
+    "name": "Pearl & Champagne",
+    "slug": "pearl-and-champagne",
+    "tier": "premium",
+    "motif": "pearl-garland",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 114,
+    "name": "Midnight Elegance",
+    "slug": "midnight-elegance",
+    "tier": "premium",
+    "motif": "midnight-starlight",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 115,
+    "name": "Black Tie Romance",
+    "slug": "black-tie-romance",
+    "tier": "premium",
+    "motif": "tuxedo-geometric",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 116,
+    "name": "Elegant Floral",
+    "slug": "elegant-floral",
+    "tier": "free",
+    "motif": "floral",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 117,
+    "name": "Romance In Blush",
+    "slug": "romance-in-blush",
+    "tier": "free",
+    "motif": "rose-spray",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 118,
+    "name": "Peony Bloom",
+    "slug": "peony-bloom-card",
+    "tier": "free",
+    "motif": "peony-bloom",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 119,
+    "name": "Botanical Press",
+    "slug": "botanical-press",
+    "tier": "free",
+    "motif": "fern-press",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 120,
+    "name": "Garden Party",
+    "slug": "garden-party",
+    "tier": "free",
+    "motif": "garden-gate",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 121,
+    "name": "Rosewater Romance",
+    "slug": "rosewater-romance",
+    "tier": "premium",
+    "motif": "rosewater-bloom",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 122,
+    "name": "Lotus Garden",
+    "slug": "lotus-garden",
+    "tier": "premium",
+    "motif": "sacred-lotus",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 123,
+    "name": "Wildflower Vows",
+    "slug": "wildflower-vows",
+    "tier": "free",
+    "motif": "wildflower-bunch",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 124,
+    "name": "Watercolor Romance",
+    "slug": "watercolor-romance",
+    "tier": "premium",
+    "motif": "watercolor-arch",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 125,
+    "name": "Pastel Garden",
+    "slug": "pastel-garden",
+    "tier": "free",
+    "motif": "pastel-bouquet",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 126,
+    "name": "Cherry Blossom Love",
+    "slug": "cherry-blossom-love",
+    "tier": "premium",
+    "motif": "sakura-branch",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 127,
+    "name": "Coastal Vows",
+    "slug": "coastal-vows",
+    "tier": "free",
+    "motif": "wave-shell",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 128,
+    "name": "Mountain Vows",
+    "slug": "mountain-vows",
+    "tier": "free",
+    "motif": "pine-ridge",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 129,
+    "name": "Destination Voyage",
+    "slug": "destination-voyage",
+    "tier": "free",
+    "motif": "compass",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 130,
+    "name": "Moonlit Florals",
+    "slug": "moonlit-florals",
+    "tier": "premium",
+    "motif": "moonlit-botanical",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 131,
+    "name": "Beachside Bliss",
+    "slug": "beachside-bliss",
+    "tier": "free",
+    "motif": "ocean-waves",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 132,
+    "name": "Goa Sunset Vows",
+    "slug": "goa-sunset-vows",
+    "tier": "premium",
+    "motif": "goa-palm-sunset",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 133,
+    "name": "Tropical Paradise",
+    "slug": "tropical-paradise",
+    "tier": "premium",
+    "motif": "tropical-monstera",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 134,
+    "name": "Desert Romance",
+    "slug": "desert-romance",
+    "tier": "premium",
+    "motif": "desert-dunes",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 135,
+    "name": "Lakefront Love",
+    "slug": "lakefront-love",
+    "tier": "premium",
+    "motif": "lake-reflection",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 136,
+    "name": "European Escape",
+    "slug": "european-escape",
+    "tier": "premium",
+    "motif": "tuscan-villa",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 137,
+    "name": "Minimal Wedding",
+    "slug": "minimal-wedding",
+    "tier": "free",
+    "motif": "geometric",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 138,
+    "name": "Modern Love",
+    "slug": "modern-love",
+    "tier": "premium",
+    "motif": "arch",
+    "backdrop": "luxurious-gold-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 139,
+    "name": "Editorial Ivory",
+    "slug": "editorial-ivory",
+    "tier": "free",
+    "motif": "rule-stack",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 140,
+    "name": "Quiet Minimal",
+    "slug": "quiet-minimal",
+    "tier": "free",
+    "motif": "hairline",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 141,
+    "name": "Contemporary Arch",
+    "slug": "contemporary-arch",
+    "tier": "free",
+    "motif": "soft-arch",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 142,
+    "name": "Vintage Letterpress",
+    "slug": "vintage-letterpress",
+    "tier": "free",
+    "motif": "letterpress",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 143,
+    "name": "Gen Z Bold",
+    "slug": "gen-z-bold",
+    "tier": "free",
+    "motif": "blob-stack",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 144,
+    "name": "Digital Wedding",
+    "slug": "digital-wedding",
+    "tier": "free",
+    "motif": "screen-frame",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 145,
+    "name": "Story Card",
+    "slug": "story-card",
+    "tier": "free",
+    "motif": "story-ring",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 146,
+    "name": "Modern Romance",
+    "slug": "modern-romance",
+    "tier": "free",
+    "motif": "soft-heart",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 147,
+    "name": "Type Only",
+    "slug": "type-only",
+    "tier": "free",
+    "motif": "type-bar",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 148,
+    "name": "Monogram Seal",
+    "slug": "monogram-seal",
+    "tier": "free",
+    "motif": "mono-ring",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 149,
+    "name": "Editorial Grid",
+    "slug": "editorial-grid",
+    "tier": "free",
+    "motif": "grid-marks",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 150,
+    "name": "Modern Monogram",
+    "slug": "modern-monogram",
+    "tier": "free",
+    "motif": "duo-monogram",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  },
+  {
+    "index": 151,
+    "name": "Luxury Editorial",
+    "slug": "luxury-editorial",
+    "tier": "free",
+    "motif": "vogue-masthead",
+    "backdrop": "curated-motif-frame",
+    "status": "READY",
+    "notes": "Standard decorative gold-foil framing & motif"
+  }
+]

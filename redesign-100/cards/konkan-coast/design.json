@@ -1,0 +1,40 @@
+{
+ "slug": "konkan-coast",
+ "name": "Konkan Coast",
+ "base": "cards/konkan-coast/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "beads",
+  "venue": "framed",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/konkan-coast.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/konkan-coast.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Konkan coastal wedding lawn under coconut palms with a floral mandap, laterite stone walls and the sea behind, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4045207,
+   "raw": "..\\work\\raw\\konkan-coast__venue__4045207_37ll1.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of coconut palm fronds, white mogra and orange aboli flowers, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9237391,
+   "raw": "..\\work\\raw\\konkan-coast__crest__9237391_33xeh.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Konkan shoreline with leaning coconut palms and red laterite cliffs, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4325479,
+   "raw": "..\\work\\raw\\konkan-coast__footer__4325479_4t1w6.png"
+  }
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "slug": "jewel-of-jaipur",
+ "name": "Jewel of Jaipur",
+ "base": "cards/jewel-of-jaipur/",
+ "spec": {
+  "layout": "monogram",
+  "frame": "vine",
+  "venue": "framed",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/jewel-of-jaipur.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/jewel-of-jaipur.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Jaipur palace courtyard with carved pink sandstone jharokhas, lanterns and marigolds for a royal wedding, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7731673,
+   "raw": "..\\work\\raw\\jewel-of-jaipur__venue__7731673_3l12r.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a gold kundan jewelled pendant with emeralds and rubies, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4916749,
+   "raw": "..\\work\\raw\\jewel-of-jaipur__crest__4916749_155qp.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Hawa Mahal and Jaipur rooftops at sunset, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4521245,
+   "raw": "..\\work\\raw\\jewel-of-jaipur__footer__4521245_30gyr.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of pink roses, marigolds and jasmine, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9787787,
+   "raw": "..\\work\\raw\\jewel-of-jaipur__corner__9787787_2bw5d.png"
+  }
+ }
+}

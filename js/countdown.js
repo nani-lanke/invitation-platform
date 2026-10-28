@@ -10,6 +10,10 @@
        ... hours / minutes / seconds ...
      </div>
    Optional: data-countdown-done="Message shown once the date passes"
+
+   Once the date passes the timer counts UP (time since the event), gains
+   .is-since (pink digits), and every [data-cd-since] in its section swaps
+   its text for that attribute's value ([data-cd-since-show] is revealed).
    ========================================================================== */
 
 (function (window, document) {
@@ -81,6 +85,22 @@
 
     var live = qs('[data-cd-live]', root);
     var finished = false;
+    /* Titles that change with the timer: the host page's section heading,
+       or the caption inside the card's countdown. */
+    var scope = root.closest('.site-count-section, .invitation') || root;
+    var since = null;
+
+    function setSince(on) {
+      if (since === on) return;
+      since = on;
+      root.classList.toggle('is-since', on);
+      root.setAttribute('aria-label', on ? 'Time since the event' : 'Time remaining until the event');
+      qsa('[data-cd-since]', scope).forEach(function (el) {
+        if (!el.hasAttribute('data-cd-until')) el.setAttribute('data-cd-until', el.textContent);
+        el.textContent = on ? el.getAttribute('data-cd-since') : el.getAttribute('data-cd-until');
+      });
+      qsa('[data-cd-since-show]', scope).forEach(function (el) { el.hidden = !on; });
+    }
 
     function write(unit, value) {
       var slot = slots[unit];
@@ -103,20 +123,29 @@
 
       var diff = target.getTime() - now;
 
+      /* After the event: keep ticking, counting the time since it. */
       if (diff <= 0) {
+        setSince(true);
+        root.setAttribute('data-state', 'since');
         if (!finished) {
           finished = true;
-          ['days', 'hours', 'minutes', 'seconds'].forEach(function (u) { write(u, 0); });
-          root.classList.add('is-finished');
-          root.setAttribute('data-state', 'finished');
           var msg = qs('[data-cd-message]', root);
           if (msg) { msg.textContent = doneMessage; msg.hidden = false; }
           root.dispatchEvent(new CustomEvent('ih:countdownend', { bubbles: true }));
         }
-        return true;
+        var past = breakdown(-diff);
+        write('days', past.days);
+        write('hours', past.hours);
+        write('minutes', past.minutes);
+        write('seconds', past.seconds);
+        if (live && past.seconds === 0) {
+          live.textContent = past.days + ' days, ' + past.hours + ' hours and ' +
+            past.minutes + ' minutes since the event.';
+        }
+        return false;
       }
 
-      root.classList.remove('is-finished');
+      setSince(false);
       root.setAttribute('data-state', 'running');
 
       var parts = breakdown(diff);
@@ -184,11 +213,20 @@
       start();
     },
 
-    /* Build the four-unit markup used inside invitations. */
-    markup: function (isoValue, extraClass) {
+    /* What the timer is counting once the event has passed. */
+    sinceTitle: function (eventType) {
+      if (eventType === 'wedding' || eventType === 'reception' || eventType === 'anniversary') return 'Happily married for';
+      if (eventType === 'engagement') return 'Happily engaged for';
+      return 'Time since the celebration';
+    },
+
+    /* Build the four-unit markup used inside invitations. The caption is
+       hidden until the date passes and the timer starts counting up. */
+    markup: function (isoValue, extraClass, eventType) {
       var units = [['days', 'Days'], ['hours', 'Hours'], ['minutes', 'Minutes'], ['seconds', 'Seconds']];
       return '<div class="invitation__countdown' + (extraClass ? ' ' + extraClass : '') + '" ' +
         'data-countdown="' + dom.escapeHtml(isoValue || '') + '" role="timer" aria-label="Time remaining until the event">' +
+        '<p class="cd-caption" data-cd-since-show hidden>' + dom.escapeHtml(IH.countdown.sinceTitle(eventType)) + '</p>' +
         units.map(function (u) {
           return '<div class="cd-unit">' +
             '<span class="cd-value" data-cd="' + u[0] + '">' + (u[0] === 'days' ? '0' : '00') + '</span>' +
@@ -201,6 +239,13 @@
 
     parse: parseTarget,
     breakdown: breakdown,
+
+    /* Force an immediate tick update on any countdown inside root. */
+    tickNow: function (root) {
+      qsa('[data-countdown]', root || document).forEach(function (node) {
+        makeInstance(node).tick(Date.now());
+      });
+    },
 
     /* "in 4 months" / "3 days ago" — used in listings and admin-style copy. */
     relative: function (value) {

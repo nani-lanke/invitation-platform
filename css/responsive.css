@@ -226,6 +226,7 @@
   .wizard-nav .btn { width: 100%; }
 
   .preview-frame { min-height: 420px; padding: var(--space-4); }
+  .preview-stage { padding: var(--space-4); }
   .preview-controls { border-radius: var(--r-lg); }
 
   .cta-band { padding: var(--space-7) var(--space-5); }
@@ -271,9 +272,9 @@
 
   /* Card padding and header type are fluid in style.css (container units),
      so there is deliberately no fixed-padding override here. */
-  .invitation__when { grid-template-columns: 1fr; gap: var(--space-2); }
-  .invitation__when-sep { width: 52px; height: 1px; margin-inline: auto; }
-  .invitation--corporate .invitation__when-sep { margin-inline: 0; }
+  .invitation__when { grid-template-columns: repeat(3, 1fr); gap: 6px; }
+  .invitation__when-sep { display: none; }
+  .invitation--corporate .invitation__when-sep { display: none; }
   .invitation__countdown { gap: 6px; }
   .invitation__countdown .cd-value { font-size: 1.25rem; }
 
@@ -332,6 +333,7 @@
 
   .preview-controls { gap: 6px; padding: var(--space-2); }
   .preview-controls .btn--sm { padding: 8px 11px; }
+  .preview-stage { padding: var(--space-3); }
 
   .link-box { flex-wrap: wrap; padding: var(--space-3); border-radius: var(--r-md); }
   .link-box code { flex-basis: 100%; }
@@ -341,6 +343,22 @@
 /* --------------------------------------------------------------------------
    <= 360px — 320px baseline; nothing may overflow horizontally
    -------------------------------------------------------------------------- */
+
+/* Narrow screens: the two outermost cards step out first. */
+@media (max-width: 900px), (min-width: 1025px) and (max-width: 1200px) {
+  .hero-fan__card--far-l, .hero-fan__card--far-r { display: none; }
+}
+
+/* Phones: the fan keeps three cards, sized to the screen with no empty band around it. */
+@media (max-width: 600px) {
+  .hero__visual:has(.hero__fan) { min-height: 0; padding-block: var(--space-3); }
+  .hero__fan { aspect-ratio: 1.38 / 1; margin-top: 0; }
+  .hero-fan__card--back-l, .hero-fan__card--back-r,
+  .hero-fan__card--far-l, .hero-fan__card--far-r { display: none; }
+  .hero-fan__card--mid-l { --x: -38%; --r: -8deg; width: 38%; }
+  .hero-fan__card--mid-r { --x: 38%;  --r: 8deg;  width: 38%; }
+  .hero-fan__card--front { width: 46%; }
+}
 
 @media (max-width: 360px) {
   :root { --space-5: 18px; --space-6: 26px; }
@@ -355,6 +373,7 @@
   .rail { margin-inline: -14px; }
   .filter-bar { padding-inline: 14px; scroll-padding-inline: 14px; }
   .rail { scroll-padding-inline: 14px; }
+  .preview-stage { padding: var(--space-2); }
 
   .feature-grid { grid-template-columns: 1fr; }
   .option-grid { grid-template-columns: 1fr; }
@@ -364,7 +383,7 @@
 
   .hero__stats { flex-direction: column; gap: var(--space-4); }
   .hero__float { display: none; }
-  .hero__float--1, .hero__float--4 { display: block; width: 84px; }
+  .hero__float--1, .hero__float--2 { display: block; width: 84px; }
 
   .invitation__countdown { grid-template-columns: repeat(2, 1fr); }
 }

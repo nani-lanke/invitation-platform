@@ -1,0 +1,47 @@
+{
+ "slug": "pastel-garden",
+ "name": "Pastel Garden",
+ "base": "cards/pastel-garden/",
+ "spec": {
+  "layout": "arch",
+  "frame": "arch",
+  "venue": "stack",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/pastel-garden.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/pastel-garden.svg",
+  "corners": "inline SVG corner set (arch)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a pastel garden wedding with lavender, peach ranunculus and white chairs, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6154053,
+   "raw": "..\\work\\raw\\pastel-garden__venue__6154053_1ar7j.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a pastel bouquet of lavender and peach ranunculus, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6009249,
+   "raw": "..\\work\\raw\\pastel-garden__crest__6009249_2kplu.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of lavender fields with a stone farmhouse, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9229025,
+   "raw": "..\\work\\raw\\pastel-garden__footer__9229025_574e7.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of lavender, peach ranunculus and white roses, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7307903,
+   "raw": "..\\work\\raw\\pastel-garden__corner__7307903_18u36.png"
+  }
+ }
+}

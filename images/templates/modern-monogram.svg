@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Modern Monogram — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-modern-monogram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8F7F5"/>
+      <stop offset="55%" stop-color="#E9E6E1"/>
+      <stop offset="100%" stop-color="#F8F7F5"/>
+    </linearGradient>
+    <radialGradient id="gl-modern-monogram" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-modern-monogram" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-modern-monogram)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-modern-monogram)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-modern-monogram)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Architectural Monogram Frame with Precision Lines -->
+      <g stroke="#48443E" fill="none">
+        <rect x="36" y="36" width="528" height="728" stroke-width="1.5" opacity="0.8"/>
+        <!-- Architectural Crosshair Marks -->
+        <line x1="300" y1="20" x2="300" y2="45" stroke-width="1"/>
+        <line x1="300" y1="755" x2="300" y2="780" stroke-width="1"/>
+        <line x1="20" y1="400" x2="45" y2="400" stroke-width="1"/>
+        <line x1="555" y1="400" x2="580" y2="400" stroke-width="1"/>
+      </g>
+      <!-- Centerpiece Monogram Emblem (G &amp; B) -->
+      <g transform="translate(300, 260)">
+        <circle cx="0" cy="0" r="85" fill="none" stroke="#48443E" stroke-width="2" opacity="0.85"/>
+        <circle cx="0" cy="0" r="75" fill="none" stroke="#968D7F" stroke-width="0.8" stroke-dasharray="4 4"/>
+        <!-- Interlocking G &amp; B Monogram Letters -->
+        <text x="-15" y="16" text-anchor="middle" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#1E1D1B">G</text>
+        <text x="0" y="8" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-style="italic" fill="#968D7F">&amp;</text>
+        <text x="18" y="16" text-anchor="middle" font-family="Georgia, serif" font-size="44" font-weight="bold" fill="#1E1D1B">B</text>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Futura, Arial, sans-serif" font-size="19" letter-spacing="7" fill="#968D7F" opacity="0.85">THE WEDDING CELEBRATION OF</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#968D7F" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#968D7F" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#968D7F" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Futura, Arial, sans-serif" font-size="52" font-style="italic" fill="#1E1D1B">Modern Monogram</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1E1D1B" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#968D7F" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#1E1D1B" opacity="0.6">SAVE THE DATE</text>
+</svg>

@@ -1,0 +1,47 @@
+{
+ "slug": "champagne-palace",
+ "name": "Champagne Palace",
+ "base": "cards/champagne-palace/",
+ "spec": {
+  "layout": "monogram",
+  "frame": "deco",
+  "venue": "framed",
+  "family": "modern"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/champagne-palace.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/champagne-palace.svg",
+  "corners": "inline SVG corner set (deco)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a neoclassical palace hall in champagne and silk tones with slender arches and crystal chandeliers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7451591,
+   "raw": "..\\work\\raw\\champagne-palace__venue__7451591_3yn1n.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a crystal champagne coupe with pearls, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8079199,
+   "raw": "..\\work\\raw\\champagne-palace__crest__8079199_59pr3.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a neoclassical palace with arches and fountains in soft light, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7256503,
+   "raw": "..\\work\\raw\\champagne-palace__footer__7256503_5d5m2.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of champagne roses, white peonies and pearl strands with a few flower strings hanging straight down, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5530689,
+   "raw": "..\\work\\raw\\champagne-palace__corner__5530689_112z3.png"
+  }
+ }
+}

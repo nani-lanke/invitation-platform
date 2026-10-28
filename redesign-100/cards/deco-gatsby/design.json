@@ -1,0 +1,47 @@
+{
+ "slug": "deco-gatsby",
+ "name": "Deco Gatsby",
+ "base": "cards/deco-gatsby/",
+ "spec": {
+  "layout": "classic",
+  "frame": "band",
+  "venue": "framed",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/deco-gatsby.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/deco-gatsby.svg",
+  "corners": "inline SVG corner set (band)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of an art deco ballroom with emerald and gold decor, champagne towers and chandeliers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6511194,
+   "raw": "..\\work\\raw\\deco-gatsby__venue__6511194_2deyy.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a gold art deco fan emblem with emerald stones, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7893266,
+   "raw": "..\\work\\raw\\deco-gatsby__crest__7893266_45e87.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of an art deco skyline lit at night, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6263068,
+   "raw": "..\\work\\raw\\deco-gatsby__footer__6263068_1qu15.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, ostrich feathers and gold leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1257046,
+   "raw": "..\\work\\raw\\deco-gatsby__corner__1257046_xft5.png"
+  }
+ }
+}

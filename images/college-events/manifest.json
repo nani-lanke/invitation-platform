@@ -1,0 +1,1168 @@
+{
+ "college-fest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1553736,
+  "prompt": "Wide photograph of an empty open air college fest stage with purple lights, speakers and a crowd barrier, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-fest__venue__1553736.png"
+ },
+ "college-fest/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7846746,
+  "prompt": "A long horizontal garland of purple and gold music notes, stars and streamers draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-fest__garland__7846746.png",
+  "coverage": 0.063,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "garland"
+ },
+ "college-fest/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2119731,
+  "prompt": "A low wide compact arrangement of purple and gold music notes, stars and streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-fest__cluster__2119731.png",
+  "coverage": 0.408,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "college-fest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8010134,
+  "prompt": "Small premium ornament for the top of a college event invitation: a purple electric guitar with small music notes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-fest__crest__8010134.png",
+  "coverage": 0.08,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "culturals-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8917045,
+  "prompt": "Wide photograph of an empty college stage at night with purple spotlights and curtains, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/culturals-night__venue__8917045.png"
+ },
+ "culturals-night/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4101190,
+  "prompt": "A long horizontal garland of purple confetti, gold stars and stage lights draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/culturals-night__garland__4101190.png",
+  "coverage": 0.192,
+  "edgeTouch": 0.014,
+  "free": true,
+  "style": "garland"
+ },
+ "culturals-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4987871,
+  "prompt": "A low wide compact arrangement of purple confetti, gold stars and stage lights, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/culturals-night__cluster__4987871.png",
+  "coverage": 0.31,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "culturals-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8949346,
+  "prompt": "Small premium ornament for the top of a college event invitation: a golden theatre mask pair with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/culturals-night__crest__8949346.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "tech-symposium/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3426590,
+  "prompt": "Wide photograph of an empty modern tech auditorium with teal lighting, screens and seats, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/tech-symposium__venue__3426590.png"
+ },
+ "tech-symposium/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4280315,
+  "prompt": "A round wreath of teal circuit lines, small chips and silver geometric shapes with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/tech-symposium__wreath__4280315.png",
+  "coverage": 0.343,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "tech-symposium/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1516102,
+  "prompt": "A low wide compact arrangement of teal circuit lines, small chips and silver geometric shapes, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/tech-symposium__cluster__1516102.png",
+  "coverage": 0.244,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "tech-symposium/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6476623,
+  "prompt": "Small premium ornament for the top of a college event invitation: a glowing teal circuit chip with geometric lines, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/tech-symposium__crest__6476623.png",
+  "coverage": 0.07,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "freshers-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4329306,
+  "prompt": "Wide photograph of an empty college hall decorated for a freshers party with pink lights and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-party__venue__4329306.png"
+ },
+ "freshers-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8957046,
+  "prompt": "A long horizontal garland of hot pink balloons, sparkles and confetti draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-party__garland__8957046.png",
+  "coverage": 0.253,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "freshers-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9242470,
+  "prompt": "A low wide compact arrangement of hot pink balloons, sparkles and confetti, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-party__cluster__9242470.png",
+  "coverage": 0.351,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "freshers-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2007791,
+  "prompt": "Small premium ornament for the top of a college event invitation: a bunch of hot pink balloons with sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-party__crest__2007791.png",
+  "coverage": 0.169,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "college-annual-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9079278,
+  "prompt": "Wide photograph of an empty grand college auditorium with navy drapes and gold stage lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-annual-day__venue__9079278.png"
+ },
+ "college-annual-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4232254,
+  "prompt": "A small compact arrangement of gold laurel leaves, navy ribbons and gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-annual-day__bouquet__4232254.png",
+  "coverage": 0.043,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "college-annual-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1571373,
+  "prompt": "A low wide compact arrangement of gold laurel leaves, navy ribbons and gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-annual-day__cluster__1571373.png",
+  "coverage": 0.221,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "college-annual-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3156400,
+  "prompt": "Small premium ornament for the top of a college event invitation: a navy and gold laurel wreath around a small star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-annual-day__crest__3156400.png",
+  "coverage": 0.039,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "grand-college-fest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1756529,
+  "prompt": "Wide photograph of an empty large campus festival ground with a stage, lights and flags, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/grand-college-fest__venue__1756529.png"
+ },
+ "grand-college-fest/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7861839,
+  "prompt": "A small compact arrangement of purple and teal confetti, balloons and stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/grand-college-fest__bouquet__7861839.png",
+  "coverage": 0.042,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "grand-college-fest/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4114704,
+  "prompt": "A low wide compact arrangement of purple and teal confetti, balloons and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/grand-college-fest__cluster__4114704.png",
+  "coverage": 0.35,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "grand-college-fest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3786145,
+  "prompt": "Small premium ornament for the top of a college event invitation: a purple microphone with teal confetti bursting around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/grand-college-fest__crest__3786145.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "freshers-welcome/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2376474,
+  "prompt": "Wide photograph of an empty bright college atrium decorated with sky blue and coral balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-welcome__venue__2376474.png"
+ },
+ "freshers-welcome/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7095511,
+  "prompt": "A long horizontal garland of sky blue and coral balloons, confetti and stars draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-welcome__garland__7095511.png",
+  "coverage": 0.244,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "garland"
+ },
+ "freshers-welcome/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8883286,
+  "prompt": "A low wide compact arrangement of sky blue and coral balloons, confetti and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-welcome__cluster__8883286.png",
+  "coverage": 0.478,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "freshers-welcome/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2392511,
+  "prompt": "Small premium ornament for the top of a college event invitation: sky blue and coral balloons with an upward arrow, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-welcome__crest__2392511.png",
+  "coverage": 0.09,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "college-farewell-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9628087,
+  "prompt": "Wide photograph of an empty crimson and gold college hall with fairy lights and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-farewell-party__venue__9628087.png"
+ },
+ "college-farewell-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1349697,
+  "prompt": "A small compact arrangement of crimson roses, gold music notes and stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-farewell-party__bouquet__1349697.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-farewell-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7926462,
+  "prompt": "A low wide compact arrangement of crimson roses, gold music notes and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-farewell-party__cluster__7926462.png",
+  "coverage": 0.425,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-farewell-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2101879,
+  "prompt": "Small premium ornament for the top of a college event invitation: golden music notes and small stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-farewell-party__crest__2101879.png",
+  "coverage": 0.038,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "graduation-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4627606,
+  "prompt": "Wide photograph of an empty college convocation hall with emerald drapes and gold lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/graduation-ceremony__venue__4627606.png"
+ },
+ "graduation-ceremony/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1113380,
+  "prompt": "A tall slender vertical hanging strand of emerald ribbons, gold laurel leaves and gold tassels from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/graduation-ceremony__vine__1113380.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "graduation-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7236487,
+  "prompt": "Small premium ornament for the top of a college event invitation: an emerald graduation cap with a gold tassel, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/graduation-ceremony__crest__7236487.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "convocation-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9106289,
+  "prompt": "Wide photograph of an empty formal convocation hall with navy drapes, a stage and rows of chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/convocation-ceremony__venue__9106289.png"
+ },
+ "convocation-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4300337,
+  "prompt": "A low wide compact arrangement of navy ribbons, champagne roses and rolled scrolls, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/convocation-ceremony__cluster__4300337.png",
+  "coverage": 0.336,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "convocation-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8139252,
+  "prompt": "Small premium ornament for the top of a college event invitation: a rolled scroll with an academic gold seal, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/convocation-ceremony__crest__8139252.png",
+  "coverage": 0.083,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "orientation-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1877060,
+  "prompt": "Wide photograph of an empty college lecture hall decorated with blue and orange balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/orientation-day__venue__1877060.png"
+ },
+ "orientation-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7541144,
+  "prompt": "A low wide compact arrangement of royal blue and orange balloons, maps and compasses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/orientation-day__cluster__7541144.png",
+  "coverage": 0.383,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "orientation-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9311769,
+  "prompt": "Small premium ornament for the top of a college event invitation: a royal blue and orange compass, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/orientation-day__crest__9311769.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "freshers-orientation/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5575351,
+  "prompt": "Wide photograph of an empty bright college hall set up for orientation with chairs and a screen, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-orientation__venue__5575351.png"
+ },
+ "freshers-orientation/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4455803,
+  "prompt": "A small compact arrangement of sky blue and teal balloons, sparkles and paper planes, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-orientation__bouquet__4455803.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "freshers-orientation/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2298340,
+  "prompt": "A low wide compact arrangement of sky blue and teal balloons, sparkles and paper planes, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-orientation__cluster__2298340.png",
+  "coverage": 0.325,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "freshers-orientation/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8766133,
+  "prompt": "Small premium ornament for the top of a college event invitation: a sky blue arrow with a small sparkle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/freshers-orientation__crest__8766133.png",
+  "coverage": 0.037,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "alumni-meet/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2547748,
+  "prompt": "Wide photograph of an empty heritage college courtyard decorated with green and gold lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-meet__venue__2547748.png"
+ },
+ "alumni-meet/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1716378,
+  "prompt": "A small compact arrangement of forest green ribbons, gold laurel leaves and white roses, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-meet__bouquet__1716378.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "alumni-meet/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5262097,
+  "prompt": "A low wide compact arrangement of forest green ribbons, gold laurel leaves and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-meet__cluster__5262097.png",
+  "coverage": 0.458,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "alumni-meet/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5406356,
+  "prompt": "Small premium ornament for the top of a college event invitation: a small university building model beneath a gold laurel, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-meet__crest__5406356.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "alumni-reunion/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5877037,
+  "prompt": "Wide photograph of an empty elegant burgundy reunion hall with round tables and silver lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-reunion__venue__5877037.png"
+ },
+ "alumni-reunion/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7971990,
+  "prompt": "A tall slender vertical hanging strand of burgundy roses, silver leaves and ribbons from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-reunion__vine__7971990.png",
+  "coverage": 0.153,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "vines"
+ },
+ "alumni-reunion/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5013849,
+  "prompt": "Small premium ornament for the top of a college event invitation: two silver hands in a handshake, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/alumni-reunion__crest__5013849.png",
+  "coverage": 0.095,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "cultural-fest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8771060,
+  "prompt": "Wide photograph of an empty campus open air theatre decorated with crimson and mustard bunting, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/cultural-fest__venue__8771060.png"
+ },
+ "cultural-fest/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5036247,
+  "prompt": "A long horizontal garland of crimson and mustard flowers, music notes and bunting draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/cultural-fest__garland__5036247.png",
+  "coverage": 0.193,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-fest/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3007574,
+  "prompt": "A low wide compact arrangement of crimson and mustard flowers, music notes and bunting, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/cultural-fest__cluster__3007574.png",
+  "coverage": 0.388,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-fest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6484223,
+  "prompt": "Small premium ornament for the top of a college event invitation: golden music notes with a blossom sprig, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/cultural-fest__crest__6484223.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "college-sports-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8145713,
+  "prompt": "Wide photograph of an empty college sports field with a running track, pennants and a podium, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-sports-day__venue__8145713.png"
+ },
+ "college-sports-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7982830,
+  "prompt": "A small compact arrangement of emerald pennants, silver medals and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-sports-day__bouquet__7982830.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-sports-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7597021,
+  "prompt": "A low wide compact arrangement of emerald pennants, silver medals and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-sports-day__cluster__7597021.png",
+  "coverage": 0.367,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-sports-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2916544,
+  "prompt": "Small premium ornament for the top of a college event invitation: a silver trophy with small flame accents, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-sports-day__crest__2916544.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "inter-college-sports-meet/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7605580,
+  "prompt": "Wide photograph of an empty stadium with a running track, royal blue flags and a podium, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/inter-college-sports-meet__venue__7605580.png"
+ },
+ "inter-college-sports-meet/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3125513,
+  "prompt": "A low wide compact arrangement of royal blue ribbons, gold medals and laurel leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/inter-college-sports-meet__cluster__3125513.png",
+  "coverage": 0.206,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "inter-college-sports-meet/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6806684,
+  "prompt": "Small premium ornament for the top of a college event invitation: a gold medal inside a royal blue laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/inter-college-sports-meet__crest__6806684.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-tech-fest/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9569855,
+  "prompt": "Wide photograph of an empty dark tech fest arena glowing with neon green lights and screens, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-tech-fest__venue__9569855.png"
+ },
+ "college-tech-fest/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6579344,
+  "prompt": "A low wide compact arrangement of neon green circuit lines, small gears and chips, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-tech-fest__cluster__6579344.png",
+  "coverage": 0.324,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-tech-fest/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6417377,
+  "prompt": "Small premium ornament for the top of a college event invitation: neon green circuit lines around a metal gear, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-tech-fest__crest__6417377.png",
+  "coverage": 0.112,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "hackathon/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9546864,
+  "prompt": "Wide photograph of an empty hackathon hall with rows of desks, laptops and violet lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/hackathon__venue__9546864.png"
+ },
+ "hackathon/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5755706,
+  "prompt": "A tall slender vertical hanging strand of violet and lime circuit lines, laptops and coffee cups from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/hackathon__vine__5755706.png",
+  "coverage": 0.07,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "hackathon/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7561693,
+  "prompt": "Small premium ornament for the top of a college event invitation: an open laptop with glowing violet and lime code lines, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/hackathon__crest__7561693.png",
+  "coverage": 0.16,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "science-exhibition/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9288632,
+  "prompt": "Wide photograph of an empty college exhibition hall with project tables and teal lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/science-exhibition__venue__9288632.png"
+ },
+ "science-exhibition/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8755892,
+  "prompt": "A long horizontal garland of glass flasks, atom models and teal sparkles draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/science-exhibition__garland__8755892.png",
+  "coverage": 0.127,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "garland"
+ },
+ "science-exhibition/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2517157,
+  "prompt": "A low wide compact arrangement of glass flasks, atom models and teal sparkles, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/science-exhibition__cluster__2517157.png",
+  "coverage": 0.24,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "science-exhibition/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7185176,
+  "prompt": "Small premium ornament for the top of a college event invitation: a silver atom model beside a glass lab flask, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/science-exhibition__crest__7185176.png",
+  "coverage": 0.039,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "college-art-exhibition/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9367180,
+  "prompt": "Wide photograph of an empty white walled art gallery with student paintings and spotlights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-art-exhibition__venue__9367180.png"
+ },
+ "college-art-exhibition/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1557245,
+  "prompt": "A small compact arrangement of terracotta paint splashes, brushes and mustard flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-art-exhibition__bouquet__1557245.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-art-exhibition/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4297138,
+  "prompt": "A low wide compact arrangement of terracotta paint splashes, brushes and mustard flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-art-exhibition__cluster__4297138.png",
+  "coverage": 0.271,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-art-exhibition/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7270331,
+  "prompt": "Small premium ornament for the top of a college event invitation: a paint brush and a vintage camera, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-art-exhibition__crest__7270331.png",
+  "coverage": 0.069,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "music-festival/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7873807,
+  "prompt": "Wide photograph of an empty outdoor festival stage with plum lights, speakers and banners without letters, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/music-festival__venue__7873807.png"
+ },
+ "music-festival/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7203556,
+  "prompt": "A small compact arrangement of plum and gold music notes, stars and streamers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/music-festival__bouquet__7203556.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "music-festival/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2861847,
+  "prompt": "A low wide compact arrangement of plum and gold music notes, stars and streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/music-festival__cluster__2861847.png",
+  "coverage": 0.243,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "music-festival/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2709034,
+  "prompt": "Small premium ornament for the top of a college event invitation: golden music notes with small plum stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/music-festival__crest__2709034.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "college-dance-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6800800,
+  "prompt": "Wide photograph of an empty college dance floor with magenta and violet lights and a disco ball, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-dance-night__venue__6800800.png"
+ },
+ "college-dance-night/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3165328,
+  "prompt": "A small compact arrangement of magenta and violet sparkles, balloons and stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-dance-night__bouquet__3165328.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-dance-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6735099,
+  "prompt": "A low wide compact arrangement of magenta and violet sparkles, balloons and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-dance-night__cluster__6735099.png",
+  "coverage": 0.244,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-dance-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2193646,
+  "prompt": "Small premium ornament for the top of a college event invitation: a mirrored disco ball with magenta sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-dance-night__crest__2193646.png",
+  "coverage": 0.194,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "talent-show/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6901403,
+  "prompt": "Wide photograph of an empty stage with a microphone, spotlight and navy curtains, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/talent-show__venue__6901403.png"
+ },
+ "talent-show/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2019556,
+  "prompt": "A small compact arrangement of navy and pink stars, spotlights and music notes, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/talent-show__bouquet__2019556.png",
+  "coverage": 0.049,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "talent-show/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8645143,
+  "prompt": "A low wide compact arrangement of navy and pink stars, spotlights and music notes, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/talent-show__cluster__8645143.png",
+  "coverage": 0.256,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "talent-show/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2902186,
+  "prompt": "Small premium ornament for the top of a college event invitation: a pink star over a vintage microphone, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/talent-show__crest__2902186.png",
+  "coverage": 0.103,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "college-debate-competition/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5595984,
+  "prompt": "Wide photograph of an empty debate hall with two lecterns, a stage and rows of seats, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-debate-competition__venue__5595984.png"
+ },
+ "college-debate-competition/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1710869,
+  "prompt": "A round wreath of charcoal ribbons, gold leaves and small books with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-debate-competition__wreath__1710869.png",
+  "coverage": 0.359,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "college-debate-competition/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7334024,
+  "prompt": "A low wide compact arrangement of charcoal ribbons, gold leaves and small books, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-debate-competition__cluster__7334024.png",
+  "coverage": 0.194,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "college-debate-competition/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1971305,
+  "prompt": "Small premium ornament for the top of a college event invitation: a charcoal wooden lectern with a gold microphone, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-debate-competition__crest__1971305.png",
+  "coverage": 0.166,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "quiz-competition/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9930269,
+  "prompt": "Wide photograph of an empty quiz stage with buzzers on tables, teal lights and a screen, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/quiz-competition__venue__9930269.png"
+ },
+ "quiz-competition/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3235363,
+  "prompt": "A small compact arrangement of teal and orange light bulbs, books and stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/quiz-competition__bouquet__3235363.png",
+  "coverage": 0.068,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "quiz-competition/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2060140,
+  "prompt": "A low wide compact arrangement of teal and orange light bulbs, books and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/quiz-competition__cluster__2060140.png",
+  "coverage": 0.303,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "quiz-competition/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2476877,
+  "prompt": "Small premium ornament for the top of a college event invitation: a teal trophy cup with an orange glowing light bulb, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/quiz-competition__crest__2476877.png",
+  "coverage": 0.134,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "seminar/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3906821,
+  "prompt": "Wide photograph of an empty college seminar hall with a podium, screen and rows of chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/seminar__venue__3906821.png"
+ },
+ "seminar/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3612296,
+  "prompt": "A tall slender vertical hanging strand of navy ribbons, silver leaves and small books from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/seminar__vine__3612296.png",
+  "coverage": 0.096,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "seminar/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6389435,
+  "prompt": "Small premium ornament for the top of a college event invitation: a silver podium with an open book, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/seminar__crest__6389435.png",
+  "coverage": 0.145,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "guest-lecture/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4568539,
+  "prompt": "Wide photograph of an empty classic college lecture theatre with wooden benches and a lectern, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/guest-lecture__venue__4568539.png"
+ },
+ "guest-lecture/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1459175,
+  "prompt": "A round wreath of forest green sprigs, gold leaves and books with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/guest-lecture__wreath__1459175.png",
+  "coverage": 0.384,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "guest-lecture/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2890674,
+  "prompt": "A low wide compact arrangement of forest green sprigs, gold leaves and books, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/guest-lecture__cluster__2890674.png",
+  "coverage": 0.342,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "guest-lecture/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8296699,
+  "prompt": "Small premium ornament for the top of a college event invitation: an open book framed by green sprigs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/guest-lecture__crest__8296699.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "workshop/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1617989,
+  "prompt": "Wide photograph of an empty bright workshop lab with tables, laptops and amber lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/workshop__venue__1617989.png"
+ },
+ "workshop/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6137545,
+  "prompt": "A small compact arrangement of amber gears, small tools and laptops, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/workshop__bouquet__6137545.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "workshop/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1223910,
+  "prompt": "A low wide compact arrangement of amber gears, small tools and laptops, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/workshop__cluster__1223910.png",
+  "coverage": 0.181,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "workshop/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1621807,
+  "prompt": "Small premium ornament for the top of a college event invitation: an amber metal gear beside an open laptop, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/workshop__crest__1621807.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "career-fair/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1720175,
+  "prompt": "Wide photograph of an empty career fair hall with booths, banners without letters and blue lights, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/career-fair__venue__1720175.png"
+ },
+ "career-fair/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6845882,
+  "prompt": "A low wide compact arrangement of royal blue ribbons, small briefcases and green leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/career-fair__cluster__6845882.png",
+  "coverage": 0.292,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "career-fair/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5406707,
+  "prompt": "Small premium ornament for the top of a college event invitation: a royal blue briefcase in front of small office buildings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/career-fair__crest__5406707.png",
+  "coverage": 0.165,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "placement-drive/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3518686,
+  "prompt": "Wide photograph of an empty college interview hall with tables, chairs and navy decor, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/placement-drive__venue__3518686.png"
+ },
+ "placement-drive/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1571669,
+  "prompt": "A tall slender vertical hanging strand of navy ribbons, silver leaves and small briefcases from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/placement-drive__vine__1571669.png",
+  "coverage": 0.1,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "placement-drive/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5031384,
+  "prompt": "Small premium ornament for the top of a college event invitation: a silver handshake above a navy briefcase, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/placement-drive__crest__5031384.png",
+  "coverage": 0.178,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "college-awards-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8123858,
+  "prompt": "Wide photograph of an empty black and gold awards stage with spotlights and round tables, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-awards-night__venue__8123858.png"
+ },
+ "college-awards-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9846098,
+  "prompt": "A low wide compact arrangement of gold stars, black ribbons and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-awards-night__cluster__9846098.png",
+  "coverage": 0.239,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-awards-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2745883,
+  "prompt": "Small premium ornament for the top of a college event invitation: a gold trophy with small gold stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-awards-night__crest__2745883.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "student-achievement-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3435136,
+  "prompt": "Wide photograph of an empty crimson and cream ceremony hall with a stage and chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/student-achievement-ceremony__venue__3435136.png"
+ },
+ "student-achievement-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3065545,
+  "prompt": "A low wide compact arrangement of crimson ribbons, gold laurel leaves and cream roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/student-achievement-ceremony__cluster__3065545.png",
+  "coverage": 0.381,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "student-achievement-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9082780,
+  "prompt": "Small premium ornament for the top of a college event invitation: a gold medal within a crimson laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/student-achievement-ceremony__crest__9082780.png",
+  "coverage": 0.133,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-foundation-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1782500,
+  "prompt": "Wide photograph of an empty heritage college quadrangle decorated with burgundy and gold drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-foundation-day__venue__1782500.png"
+ },
+ "college-foundation-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6893615,
+  "prompt": "A low wide compact arrangement of burgundy ribbons, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-foundation-day__cluster__6893615.png",
+  "coverage": 0.376,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-foundation-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5343890,
+  "prompt": "Small premium ornament for the top of a college event invitation: a flaming torch beside a small university building, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-foundation-day__crest__5343890.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "college-club-event/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1757486,
+  "prompt": "Wide photograph of an empty college courtyard set up with club stalls, pennants and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-club-event__venue__1757486.png"
+ },
+ "college-club-event/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7562109,
+  "prompt": "A small compact arrangement of violet and teal balloons, stars and pennants, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-club-event__bouquet__7562109.png",
+  "coverage": 0.066,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-club-event/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1302002,
+  "prompt": "A low wide compact arrangement of violet and teal balloons, stars and pennants, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-club-event__cluster__1302002.png",
+  "coverage": 0.466,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-club-event/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1256251,
+  "prompt": "Small premium ornament for the top of a college event invitation: a violet shield with small teal stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-club-event__crest__1256251.png",
+  "coverage": 0.092,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "college-graduation-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9925079,
+  "prompt": "Wide photograph of an empty party hall decorated for a graduation with sky blue and gold balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-graduation-party__venue__9925079.png"
+ },
+ "college-graduation-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1949027,
+  "prompt": "A long horizontal garland of sky blue and gold balloons, confetti and stars draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-graduation-party__garland__1949027.png",
+  "coverage": 0.272,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "garland"
+ },
+ "college-graduation-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5097954,
+  "prompt": "A low wide compact arrangement of sky blue and gold balloons, confetti and stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-graduation-party__cluster__5097954.png",
+  "coverage": 0.511,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "college-graduation-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9824523,
+  "prompt": "Small premium ornament for the top of a college event invitation: a graduation cap with confetti and sky blue balloons, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium college event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COLLEGE-EVENTS/college-graduation-party__crest__9824523.png",
+  "coverage": 0.089,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ }
+}

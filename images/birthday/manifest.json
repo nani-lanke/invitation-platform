@@ -1,0 +1,2406 @@
+{
+ "kids-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4627222,
+  "prompt": "Wide photograph of an empty bright kids birthday party room with colourful balloons, streamers and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/kids-birthday__venue__4627222.png"
+ },
+ "kids-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1229732,
+  "prompt": "A low wide compact arrangement of glossy red, yellow and orange party balloons with curly ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/kids-birthday__cluster__1229732.png",
+  "coverage": 0.502,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "kids-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2269109,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a bunch of three glossy orange, yellow and red party balloons tied together, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/kids-birthday__crest__2269109.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "kids-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3387195,
+  "prompt": "A small compact bunch of glossy red, yellow and orange party balloons with curly ribbons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/kids-birthday__bouquet__3387195.png",
+  "coverage": 0.149,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "corners"
+ },
+ "princess-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7399668,
+  "prompt": "Wide photograph of an empty pink princess birthday party hall with a castle backdrop, tulle drapes and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/princess-birthday__venue__7399668.png"
+ },
+ "princess-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6081877,
+  "prompt": "A small compact bunch of pink roses, pale pink peonies and small gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/princess-birthday__bouquet__6081877.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "princess-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4752778,
+  "prompt": "A low wide compact arrangement of pink roses, pale pink peonies and small gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/princess-birthday__cluster__4752778.png",
+  "coverage": 0.534,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "princess-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5078563,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small sparkling pink and gold princess tiara with jewels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/princess-birthday__crest__5078563.png",
+  "coverage": 0.101,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "first-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2915029,
+  "prompt": "Wide photograph of an empty soft mint and white first birthday party setup with a cake table, clouds and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/first-birthday__venue__2915029.png"
+ },
+ "first-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7936110,
+  "prompt": "A small compact bunch of soft mint, white and pale gold balloons with little white clouds, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/first-birthday__bouquet__7936110.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "first-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1613085,
+  "prompt": "A low wide compact arrangement of soft mint, white and pale gold balloons with little white clouds, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/first-birthday__cluster__1613085.png",
+  "coverage": 0.351,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "first-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6247407,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small mint and white first birthday smash cake with a single candle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/first-birthday__crest__6247407.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "teddy-bear-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9532447,
+  "prompt": "Wide photograph of an empty teddy bear picnic birthday party with a cake table, plush bears and beige balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/teddy-bear-birthday__venue__9532447.png"
+ },
+ "teddy-bear-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8141913,
+  "prompt": "A small compact bunch of beige and caramel balloons with small plush teddy bears, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/teddy-bear-birthday__bouquet__8141913.png",
+  "coverage": 0.127,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "teddy-bear-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4585782,
+  "prompt": "A low wide compact arrangement of beige and caramel balloons with small plush teddy bears, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/teddy-bear-birthday__cluster__4585782.png",
+  "coverage": 0.436,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "teddy-bear-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7909151,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a soft brown teddy bear holding a small red balloon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/teddy-bear-birthday__crest__7909151.png",
+  "coverage": 0.138,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cute-animal-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2639626,
+  "prompt": "Wide photograph of an empty cute animal themed kids birthday party with plush toys and peach balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/cute-animal-party__venue__2639626.png"
+ },
+ "cute-animal-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3250521,
+  "prompt": "A small compact bunch of peach and cream balloons with small plush animals, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/cute-animal-party__bouquet__3250521.png",
+  "coverage": 0.096,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cute-animal-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8694390,
+  "prompt": "A low wide compact arrangement of peach and cream balloons with small plush animals, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/cute-animal-party__cluster__8694390.png",
+  "coverage": 0.557,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cute-animal-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1727071,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a cute plush bunny, a plush kitten and a plush puppy sitting together, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/cute-animal-party__crest__1727071.png",
+  "coverage": 0.247,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "magical-unicorn/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9700488,
+  "prompt": "Wide photograph of an empty magical unicorn birthday party with pastel balloons, flowers and a unicorn cake, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/magical-unicorn__venue__9700488.png"
+ },
+ "magical-unicorn/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4278313,
+  "prompt": "A small compact bunch of pastel pink and lilac roses with iridescent balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/magical-unicorn__bouquet__4278313.png",
+  "coverage": 0.144,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "magical-unicorn/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6908678,
+  "prompt": "A low wide compact arrangement of pastel pink and lilac roses with iridescent balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/magical-unicorn__cluster__6908678.png",
+  "coverage": 0.469,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "magical-unicorn/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2988111,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a white unicorn head with a golden horn and a pastel pink flower crown, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/magical-unicorn__crest__2988111.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "birthday-vibes/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2814252,
+  "prompt": "Wide photograph of an empty pink and gold birthday party lounge with a balloon garland and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/birthday-vibes__venue__2814252.png"
+ },
+ "birthday-vibes/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3719521,
+  "prompt": "A small compact bunch of pink, white and gold balloons with paper pompoms, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/birthday-vibes__bouquet__3719521.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "birthday-vibes/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5472734,
+  "prompt": "A low wide compact arrangement of pink, white and gold balloons with paper pompoms, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/birthday-vibes__cluster__5472734.png",
+  "coverage": 0.431,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "birthday-vibes/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6262679,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a pink frosted birthday cupcake with sprinkles and a candle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/birthday-vibes__crest__6262679.png",
+  "coverage": 0.148,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-elegance/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4138201,
+  "prompt": "Wide photograph of an empty elegant floral birthday dinner with a pink rose centrepiece and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/floral-elegance__venue__4138201.png"
+ },
+ "floral-elegance/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2296237,
+  "prompt": "A small compact bunch of blush pink roses, peonies and soft greenery, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/floral-elegance__bouquet__2296237.png",
+  "coverage": 0.118,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-elegance/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5087266,
+  "prompt": "A low wide compact arrangement of blush pink roses, peonies and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/floral-elegance__cluster__5087266.png",
+  "coverage": 0.536,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-elegance/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1089291,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small round posy of pink garden roses and peonies, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/floral-elegance__crest__1089291.png",
+  "coverage": 0.212,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blush-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6188550,
+  "prompt": "Wide photograph of an empty blush pink birthday party with a balloon garland and a floral cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/blush-celebration__venue__6188550.png"
+ },
+ "blush-celebration/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9842669,
+  "prompt": "A small compact bunch of blush roses, white spray roses and blush balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/blush-celebration__bouquet__9842669.png",
+  "coverage": 0.211,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blush-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5238818,
+  "prompt": "A low wide compact arrangement of blush roses, white spray roses and blush balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/blush-celebration__cluster__5238818.png",
+  "coverage": 0.441,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blush-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7204299,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a blush pink tiered birthday cake with fresh roses, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/blush-celebration__crest__7204299.png",
+  "coverage": 0.216,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pink-champagne/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9992025,
+  "prompt": "Wide photograph of an empty pink champagne birthday party with a champagne tower and pink florals, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pink-champagne__venue__9992025.png"
+ },
+ "pink-champagne/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7545679,
+  "prompt": "A small compact bunch of pink roses, blush peonies and rose gold balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pink-champagne__bouquet__7545679.png",
+  "coverage": 0.151,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pink-champagne/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4556752,
+  "prompt": "A low wide compact arrangement of pink roses, blush peonies and rose gold balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pink-champagne__cluster__4556752.png",
+  "coverage": 0.456,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "pink-champagne/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3801441,
+  "prompt": "Small premium ornament for the top of an birthday invitation: two crystal champagne coupes with pink champagne, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pink-champagne__crest__3801441.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "luxury-rose-gold/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3528295,
+  "prompt": "Wide photograph of an empty luxury rose gold birthday party with a floral wall and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/luxury-rose-gold__venue__3528295.png"
+ },
+ "luxury-rose-gold/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2653322,
+  "prompt": "A small compact bunch of blush roses, rose gold leaves and rose gold balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/luxury-rose-gold__bouquet__2653322.png",
+  "coverage": 0.175,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "luxury-rose-gold/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4085825,
+  "prompt": "A low wide compact arrangement of blush roses, rose gold leaves and rose gold balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/luxury-rose-gold__cluster__4085825.png",
+  "coverage": 0.373,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "luxury-rose-gold/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4201956,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a rose gold gift box with a satin bow, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/luxury-rose-gold__crest__4201956.png",
+  "coverage": 0.177,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "sweet-16/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3271969,
+  "prompt": "Wide photograph of an empty sweet sixteen birthday party with a pink balloon arch, a dance floor and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sweet-16__venue__3271969.png"
+ },
+ "sweet-16/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4867010,
+  "prompt": "A small compact bunch of pink roses, blush peonies and pink balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sweet-16__bouquet__4867010.png",
+  "coverage": 0.186,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "sweet-16/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8283545,
+  "prompt": "A low wide compact arrangement of pink roses, blush peonies and pink balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sweet-16__cluster__8283545.png",
+  "coverage": 0.403,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "sweet-16/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7987212,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a pink frosted tiered cake with a small tiara on top, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sweet-16__crest__7987212.png",
+  "coverage": 0.23,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rainbow-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4103692,
+  "prompt": "Wide photograph of an empty rainbow themed kids birthday party with a pastel balloon arch and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rainbow-birthday__venue__4103692.png"
+ },
+ "rainbow-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9092262,
+  "prompt": "A small compact bunch of pastel rainbow coloured balloons in a gentle arc, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rainbow-birthday__bouquet__9092262.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rainbow-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7412117,
+  "prompt": "A low wide compact arrangement of pastel rainbow coloured balloons in a gentle arc, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rainbow-birthday__cluster__7412117.png",
+  "coverage": 0.354,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rainbow-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8553384,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a fluffy pastel rainbow arch on two small white clouds, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rainbow-birthday__crest__8553384.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "space-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2706817,
+  "prompt": "Wide photograph of an empty space themed kids birthday party room with glowing planets hanging from the ceiling and starry lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/space-birthday__venue__2706817.png"
+ },
+ "space-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3639682,
+  "prompt": "A small compact bunch of small glowing planets, silver stars and a tiny toy rocket, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/space-birthday__bouquet__3639682.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "space-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1318425,
+  "prompt": "A low wide compact arrangement of small glowing planets, silver stars and a tiny toy rocket, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/space-birthday__cluster__1318425.png",
+  "coverage": 0.295,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "space-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3654604,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small shiny silver and red toy rocket ship with a flame, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/space-birthday__crest__3654604.png",
+  "coverage": 0.065,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-nights/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4673904,
+  "prompt": "Wide photograph of an empty neon nightclub party lounge with pink and turquoise neon lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-nights__venue__4673904.png"
+ },
+ "neon-nights/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6859860,
+  "prompt": "A small compact bunch of glowing neon pink and turquoise light tubes and chrome balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-nights__bouquet__6859860.png",
+  "coverage": 0.069,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-nights/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5591559,
+  "prompt": "A low wide compact arrangement of glowing neon pink and turquoise light tubes and chrome balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-nights__cluster__5591559.png",
+  "coverage": 0.425,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-nights/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9461626,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a glowing pink and turquoise neon sphere orb, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-nights__crest__9461626.png",
+  "coverage": 0.144,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "superhero-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2669495,
+  "prompt": "Wide photograph of an empty superhero kids birthday party with a city skyline backdrop and red and blue balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/superhero-birthday__venue__2669495.png"
+ },
+ "superhero-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5923667,
+  "prompt": "A small compact bunch of red, blue and yellow glossy balloons with small gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/superhero-birthday__bouquet__5923667.png",
+  "coverage": 0.108,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "superhero-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9985500,
+  "prompt": "A low wide compact arrangement of red, blue and yellow glossy balloons with small gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/superhero-birthday__cluster__9985500.png",
+  "coverage": 0.361,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "superhero-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1899805,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a red and blue superhero shield emblem with a gold star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/superhero-birthday__crest__1899805.png",
+  "coverage": 0.059,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "racing-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7134023,
+  "prompt": "Wide photograph of an empty racing themed birthday party with a race track backdrop and red balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/racing-birthday__venue__7134023.png"
+ },
+ "racing-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4393920,
+  "prompt": "A small compact bunch of red, black and white balloons with chequered flags, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/racing-birthday__bouquet__4393920.png",
+  "coverage": 0.053,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "racing-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3145899,
+  "prompt": "A low wide compact arrangement of red, black and white balloons with chequered flags, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/racing-birthday__cluster__3145899.png",
+  "coverage": 0.42,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "racing-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5075838,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a shiny red toy race car, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/racing-birthday__crest__5075838.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9394069,
+  "prompt": "Wide photograph of an empty neon glow birthday party with magenta and cyan lights and a dance floor, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-party__venue__9394069.png"
+ },
+ "neon-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6180665,
+  "prompt": "A small compact bunch of glowing neon tubes and chrome magenta balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-party__bouquet__6180665.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5376918,
+  "prompt": "A low wide compact arrangement of glowing neon tubes and chrome magenta balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-party__cluster__5376918.png",
+  "coverage": 0.256,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "neon-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6009215,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a glowing neon magenta and cyan party star shape, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/neon-party__crest__6009215.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "music-night/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1899401,
+  "prompt": "Wide photograph of an empty music night party lounge with a small stage, a microphone stand and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/music-night__venue__1899401.png"
+ },
+ "music-night/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8688016,
+  "prompt": "A small compact bunch of vinyl records, gold music notes and small gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/music-night__bouquet__8688016.png",
+  "coverage": 0.063,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "music-night/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3360955,
+  "prompt": "A low wide compact arrangement of vinyl records, gold music notes and small gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/music-night__cluster__3360955.png",
+  "coverage": 0.345,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "music-night/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6591214,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a vintage gold microphone with a small vinyl record, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/music-night__crest__6591214.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "disco-dreams/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5182651,
+  "prompt": "Wide photograph of an empty disco party dance floor with mirror balls, violet lights and sparkles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/disco-dreams__venue__5182651.png"
+ },
+ "disco-dreams/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4414009,
+  "prompt": "A small compact bunch of gold and violet mirror disco balls and gold streamers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/disco-dreams__bouquet__4414009.png",
+  "coverage": 0.069,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "disco-dreams/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3610262,
+  "prompt": "A low wide compact arrangement of gold and violet mirror disco balls and gold streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/disco-dreams__cluster__3610262.png",
+  "coverage": 0.404,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "disco-dreams/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4798399,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a sparkling gold disco mirror ball, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/disco-dreams__crest__4798399.png",
+  "coverage": 0.254,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3129225,
+  "prompt": "Wide photograph of an empty outdoor birthday party under a starry night sky with fairy lights and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/starry-birthday__venue__3129225.png"
+ },
+ "starry-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8473359,
+  "prompt": "A small compact bunch of gold stars, silver stars and tiny glowing fairy lights, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/starry-birthday__bouquet__8473359.png",
+  "coverage": 0.039,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5484432,
+  "prompt": "A low wide compact arrangement of gold stars, silver stars and tiny glowing fairy lights, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/starry-birthday__cluster__5484432.png",
+  "coverage": 0.267,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4082529,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a cluster of three glowing gold stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/starry-birthday__crest__4082529.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "street-style-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7955628,
+  "prompt": "Wide photograph of an empty urban street style party with a graffiti brick wall, neon lights and lounge seating, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/street-style-birthday__venue__7955628.png"
+ },
+ "street-style-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5749369,
+  "prompt": "A small compact bunch of gold chrome balloons, a skateboard and a boombox, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/street-style-birthday__bouquet__5749369.png",
+  "coverage": 0.07,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "street-style-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6912918,
+  "prompt": "A low wide compact arrangement of gold chrome balloons, a skateboard and a boombox, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/street-style-birthday__cluster__6912918.png",
+  "coverage": 0.305,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "street-style-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7247551,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a classic white high top sneaker with a gold lace, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/street-style-birthday__crest__7247551.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5836917,
+  "prompt": "Wide photograph of an empty sunset birthday party deck with peach and orange decor at golden hour, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sunset-celebration__venue__5836917.png"
+ },
+ "sunset-celebration/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6082515,
+  "prompt": "A small compact bunch of peach roses, orange ranunculus and dried palm leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sunset-celebration__bouquet__6082515.png",
+  "coverage": 0.136,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1144348,
+  "prompt": "A low wide compact arrangement of peach roses, orange ranunculus and dried palm leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sunset-celebration__cluster__1144348.png",
+  "coverage": 0.33,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3099357,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small gold sun ornament over gentle waves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sunset-celebration__crest__3099357.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3517793,
+  "prompt": "Wide photograph of an empty celestial birthday party under a starry ceiling in midnight blue and gold, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/celestial-birthday__venue__3517793.png"
+ },
+ "celestial-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6395694,
+  "prompt": "A small compact bunch of gold stars, silver crescent moons and white roses, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/celestial-birthday__bouquet__6395694.png",
+  "coverage": 0.055,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9072669,
+  "prompt": "A low wide compact arrangement of gold stars, silver crescent moons and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/celestial-birthday__cluster__9072669.png",
+  "coverage": 0.282,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2217984,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a gold crescent moon with a small star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/celestial-birthday__crest__2217984.png",
+  "coverage": 0.043,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-stars/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1444470,
+  "prompt": "Wide photograph of an empty midnight garden birthday party under a starry sky with lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-stars__venue__1444470.png"
+ },
+ "midnight-stars/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6983110,
+  "prompt": "A small compact bunch of silver stars, white baby breath and tiny fairy lights, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-stars__bouquet__6983110.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-stars/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8809205,
+  "prompt": "A low wide compact arrangement of silver stars, white baby breath and tiny fairy lights, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-stars__cluster__8809205.png",
+  "coverage": 0.289,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "midnight-stars/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9757832,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a glowing silver shooting star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-stars__crest__9757832.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "18th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2527472,
+  "prompt": "Wide photograph of an empty glamorous eighteenth birthday party lounge in black and gold with neon lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/18th-birthday__venue__2527472.png"
+ },
+ "18th-birthday/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3486575,
+  "prompt": "A small compact bunch of black and gold balloons with gold streamers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/18th-birthday__bouquet__3486575.png",
+  "coverage": 0.107,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "18th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9497648,
+  "prompt": "A low wide compact arrangement of black and gold balloons with gold streamers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/18th-birthday__cluster__9497648.png",
+  "coverage": 0.499,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "18th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3529409,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a gold key with a jewelled handle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/18th-birthday__crest__3529409.png",
+  "coverage": 0.046,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "retro-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8617356,
+  "prompt": "Wide photograph of an empty seventies retro birthday party lounge with orange and olive decor and a record player, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/retro-party__venue__8617356.png"
+ },
+ "retro-party/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1507435,
+  "prompt": "A small compact bunch of retro orange, olive and mustard balloons with vinyl records, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/retro-party__bouquet__1507435.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "retro-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1294740,
+  "prompt": "A low wide compact arrangement of retro orange, olive and mustard balloons with vinyl records, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/retro-party__cluster__1294740.png",
+  "coverage": 0.412,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "retro-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4323397,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a vintage orange cassette tape, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/retro-party__crest__4323397.png",
+  "coverage": 0.139,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "toyland-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9058207,
+  "prompt": "Wide photograph of an empty toyland kids birthday party room with toy shelves, a toy train and colourful balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/toyland-celebration__venue__9058207.png"
+ },
+ "toyland-celebration/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5041926,
+  "prompt": "A long horizontal party garland of colourful wooden building blocks, a toy drum and small balloons draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/toyland-celebration__garland__5041926.png",
+  "coverage": 0.124,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "garland"
+ },
+ "toyland-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1191327,
+  "prompt": "A low wide compact arrangement of colourful wooden building blocks, a toy drum and small balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/toyland-celebration__cluster__1191327.png",
+  "coverage": 0.217,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "toyland-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4803106,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a classic red wooden toy train engine, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/toyland-celebration__crest__4803106.png",
+  "coverage": 0.11,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "pirate-adventure/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1518677,
+  "prompt": "Wide photograph of an empty pirate adventure kids birthday party with a wooden ship backdrop, barrels and treasure chests, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pirate-adventure__venue__1518677.png"
+ },
+ "pirate-adventure/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7216292,
+  "prompt": "A long horizontal party garland of old rope, a ship wheel, gold coins and a small treasure map scroll draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pirate-adventure__garland__7216292.png",
+  "coverage": 0.139,
+  "edgeTouch": 0.014,
+  "free": true,
+  "style": "garland"
+ },
+ "pirate-adventure/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3227701,
+  "prompt": "A low wide compact arrangement of old rope, a ship wheel, gold coins and a small treasure map scroll, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pirate-adventure__cluster__3227701.png",
+  "coverage": 0.333,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "pirate-adventure/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6234184,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small wooden treasure chest overflowing with gold coins, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pirate-adventure__crest__6234184.png",
+  "coverage": 0.164,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "farmyard-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3284787,
+  "prompt": "Wide photograph of an empty farmyard kids birthday party with hay bales, a red barn backdrop and sunflowers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/farmyard-birthday__venue__3284787.png"
+ },
+ "farmyard-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2951896,
+  "prompt": "A long horizontal party garland of golden wheat, sunflowers and small hay bales draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/farmyard-birthday__garland__2951896.png",
+  "coverage": 0.192,
+  "edgeTouch": 0.011,
+  "free": true,
+  "style": "garland"
+ },
+ "farmyard-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6099529,
+  "prompt": "A low wide compact arrangement of golden wheat, sunflowers and small hay bales, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/farmyard-birthday__cluster__6099529.png",
+  "coverage": 0.374,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "farmyard-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9292380,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small red wooden toy barn with a tiny windmill, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/farmyard-birthday__crest__9292380.png",
+  "coverage": 0.063,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "little-artist/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5768108,
+  "prompt": "Wide photograph of an empty art party kids birthday with small easels, paint pots and colourful canvases, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-artist__venue__5768108.png"
+ },
+ "little-artist/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6779838,
+  "prompt": "A long horizontal party garland of paint brushes, colourful crayons and small paint pots draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-artist__garland__6779838.png",
+  "coverage": 0.144,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "garland"
+ },
+ "little-artist/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2964903,
+  "prompt": "A low wide compact arrangement of paint brushes, colourful crayons and small paint pots, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-artist__cluster__2964903.png",
+  "coverage": 0.227,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "little-artist/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5206170,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a wooden painter palette with bright paint dabs and two small brushes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-artist__crest__5206170.png",
+  "coverage": 0.146,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "purple-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4313363,
+  "prompt": "Wide photograph of an empty purple themed birthday party with a lilac balloon arch and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/purple-party__venue__4313363.png"
+ },
+ "purple-party/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5413757,
+  "prompt": "A long horizontal party garland of purple, lilac and silver balloons draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/purple-party__garland__5413757.png",
+  "coverage": 0.186,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "garland"
+ },
+ "purple-party/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4367780,
+  "prompt": "A low wide compact arrangement of purple, lilac and silver balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/purple-party__cluster__4367780.png",
+  "coverage": 0.453,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "purple-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3141173,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a round purple and silver mirror disco ball, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/purple-party__crest__3141173.png",
+  "coverage": 0.127,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "trendy-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2572109,
+  "prompt": "Wide photograph of an empty trendy boho birthday party with a neutral balloon garland and rattan chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/trendy-birthday__venue__2572109.png"
+ },
+ "trendy-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2118810,
+  "prompt": "A long horizontal party garland of caramel, cream and terracotta balloons with dried pampas grass draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/trendy-birthday__garland__2118810.png",
+  "coverage": 0.35,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "garland"
+ },
+ "trendy-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4833139,
+  "prompt": "A low wide compact arrangement of caramel, cream and terracotta balloons with dried pampas grass, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/trendy-birthday__cluster__4833139.png",
+  "coverage": 0.487,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "trendy-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1077078,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a caramel and cream balloon bouquet with a small gold star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/trendy-birthday__crest__1077078.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "rustic-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7948999,
+  "prompt": "Wide photograph of an empty rustic barn birthday party with wooden tables, fairy lights and hay bales, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rustic-birthday__venue__7948999.png"
+ },
+ "rustic-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3462714,
+  "prompt": "A long horizontal party garland of dried flowers, wheat, cotton stems and burlap draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rustic-birthday__garland__3462714.png",
+  "coverage": 0.254,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "rustic-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1296275,
+  "prompt": "A low wide compact arrangement of dried flowers, wheat, cotton stems and burlap, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rustic-birthday__cluster__1296275.png",
+  "coverage": 0.35,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "rustic-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8768182,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small rustic wooden lantern with a candle and twine, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rustic-birthday__crest__8768182.png",
+  "coverage": 0.142,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4099192,
+  "prompt": "Wide photograph of an empty boho birthday party with rattan chairs, rugs, pampas grass and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/boho-birthday__venue__4099192.png"
+ },
+ "boho-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8351086,
+  "prompt": "A long horizontal party garland of terracotta roses, pampas grass and dried palm leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/boho-birthday__garland__8351086.png",
+  "coverage": 0.239,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6236454,
+  "prompt": "A low wide compact arrangement of terracotta roses, pampas grass and dried palm leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/boho-birthday__cluster__6236454.png",
+  "coverage": 0.379,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "boho-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7532746,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a woven macrame dreamcatcher with feathers, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/boho-birthday__crest__7532746.png",
+  "coverage": 0.18,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "sports-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2536840,
+  "prompt": "Wide photograph of an empty sports themed birthday party with a stadium backdrop and blue balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sports-birthday__venue__2536840.png"
+ },
+ "sports-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3593399,
+  "prompt": "A long horizontal party garland of blue and white balloons with small sports balls draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sports-birthday__garland__3593399.png",
+  "coverage": 0.15,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "garland"
+ },
+ "sports-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2015094,
+  "prompt": "A low wide compact arrangement of blue and white balloons with small sports balls, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sports-birthday__cluster__2015094.png",
+  "coverage": 0.235,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "sports-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4535263,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a classic leather football beside a small gold trophy, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/sports-birthday__crest__4535263.png",
+  "coverage": 0.089,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "60th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6106190,
+  "prompt": "Wide photograph of an empty Indian birthday celebration hall with a decorated stage, marigold garlands and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/60th-birthday__venue__6106190.png"
+ },
+ "60th-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2109862,
+  "prompt": "A long horizontal party garland of marigolds, white jasmine and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/60th-birthday__garland__2109862.png",
+  "coverage": 0.267,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "garland"
+ },
+ "60th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5806143,
+  "prompt": "A low wide compact arrangement of marigolds, white jasmine and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/60th-birthday__cluster__5806143.png",
+  "coverage": 0.419,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "60th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6218434,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a brass oil lamp with a lit flame on a small brass plate, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/60th-birthday__crest__6218434.png",
+  "coverage": 0.037,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "80th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4289735,
+  "prompt": "Wide photograph of an empty grand family birthday celebration hall in gold with flower garlands and a stage, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/80th-birthday__venue__4289735.png"
+ },
+ "80th-birthday/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2723371,
+  "prompt": "A long horizontal party garland of marigolds, white roses and gold leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/80th-birthday__garland__2723371.png",
+  "coverage": 0.242,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "garland"
+ },
+ "80th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1511517,
+  "prompt": "A low wide compact arrangement of marigolds, white roses and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/80th-birthday__cluster__1511517.png",
+  "coverage": 0.421,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "80th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5340672,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a brass lamp with a lit flame beside a small marigold garland, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/80th-birthday__crest__5340672.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "fairy-tale-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4687529,
+  "prompt": "Wide photograph of an empty fairy tale birthday party with a lilac castle backdrop, fairy lights and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/fairy-tale-birthday__venue__4687529.png"
+ },
+ "fairy-tale-birthday/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6334118,
+  "prompt": "A round wreath of lilac roses, wisteria and tiny gold stars with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/fairy-tale-birthday__wreath__6334118.png",
+  "coverage": 0.401,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "fairy-tale-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7758865,
+  "prompt": "A low wide compact arrangement of lilac roses, wisteria and tiny gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/fairy-tale-birthday__cluster__7758865.png",
+  "coverage": 0.475,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "fairy-tale-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2441300,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small lilac fairy tale castle with pastel turrets, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/fairy-tale-birthday__crest__2441300.png",
+  "coverage": 0.15,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "under-the-sea-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2809911,
+  "prompt": "Wide photograph of an empty under the sea kids birthday party with ocean blue balloons, nets and a shell cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/under-the-sea-birthday__venue__2809911.png"
+ },
+ "under-the-sea-birthday/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2309850,
+  "prompt": "A round wreath of pastel seashells, starfish and sea blue balloons with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/under-the-sea-birthday__wreath__2309850.png",
+  "coverage": 0.376,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "under-the-sea-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6825877,
+  "prompt": "A low wide compact arrangement of pastel seashells, starfish and sea blue balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/under-the-sea-birthday__cluster__6825877.png",
+  "coverage": 0.322,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "under-the-sea-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5407336,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a pastel seashell with a pearl and a small starfish, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/under-the-sea-birthday__crest__5407336.png",
+  "coverage": 0.136,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "rose-garden/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8669737,
+  "prompt": "Wide photograph of an empty rose garden birthday party with a long table among blooming rose bushes, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rose-garden__venue__8669737.png"
+ },
+ "rose-garden/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9877351,
+  "prompt": "A round wreath of dusty pink garden roses, rose buds and green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rose-garden__wreath__9877351.png",
+  "coverage": 0.452,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "rose-garden/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3606066,
+  "prompt": "A low wide compact arrangement of dusty pink garden roses, rose buds and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rose-garden__cluster__3606066.png",
+  "coverage": 0.531,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "rose-garden/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5897403,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a single dusty pink garden rose with two leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/rose-garden__crest__5897403.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "butterfly-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6324971,
+  "prompt": "Wide photograph of an empty butterfly garden birthday party with lilac flowers, butterflies and a cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/butterfly-birthday__venue__6324971.png"
+ },
+ "butterfly-birthday/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5954841,
+  "prompt": "A round wreath of lilac butterflies, lavender and small white flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/butterfly-birthday__wreath__5954841.png",
+  "coverage": 0.407,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "butterfly-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8380764,
+  "prompt": "A low wide compact arrangement of lilac butterflies, lavender and small white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/butterfly-birthday__cluster__8380764.png",
+  "coverage": 0.412,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "butterfly-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5807005,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a pair of lilac and purple butterflies on a small flower, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/butterfly-birthday__crest__5807005.png",
+  "coverage": 0.058,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "lavender-dreams/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3416310,
+  "prompt": "Wide photograph of an empty lavender themed birthday garden party with candles and lilac drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/lavender-dreams__venue__3416310.png"
+ },
+ "lavender-dreams/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5074030,
+  "prompt": "A round wreath of lavender sprigs, lilac roses and white sweet peas with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/lavender-dreams__wreath__5074030.png",
+  "coverage": 0.374,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "lavender-dreams/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6243913,
+  "prompt": "A low wide compact arrangement of lavender sprigs, lilac roses and white sweet peas, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/lavender-dreams__cluster__6243913.png",
+  "coverage": 0.434,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "lavender-dreams/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9091292,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small bundle of lavender tied with a lilac ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/lavender-dreams__crest__9091292.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8800553,
+  "prompt": "Wide photograph of an empty pearl white birthday party with ivory drapes, pearls and white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pearl-birthday__venue__8800553.png"
+ },
+ "pearl-birthday/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6986152,
+  "prompt": "A round wreath of ivory roses, pearl strands and champagne leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pearl-birthday__wreath__6986152.png",
+  "coverage": 0.461,
+  "edgeTouch": 0.006,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8292107,
+  "prompt": "A low wide compact arrangement of ivory roses, pearl strands and champagne leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pearl-birthday__cluster__8292107.png",
+  "coverage": 0.495,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8854942,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a strand of lustrous pearls curled around a small gift box, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/pearl-birthday__crest__8854942.png",
+  "coverage": 0.115,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "elegant-bloom/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5828954,
+  "prompt": "Wide photograph of an empty elegant birthday luncheon with champagne florals and linen tables, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/elegant-bloom__venue__5828954.png"
+ },
+ "elegant-bloom/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3023664,
+  "prompt": "A round wreath of champagne roses, ivory ranunculus and soft green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/elegant-bloom__wreath__3023664.png",
+  "coverage": 0.405,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "elegant-bloom/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7131459,
+  "prompt": "A low wide compact arrangement of champagne roses, ivory ranunculus and soft green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/elegant-bloom__cluster__7131459.png",
+  "coverage": 0.435,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "elegant-bloom/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2087814,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small round posy of champagne roses and ranunculus, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/elegant-bloom__crest__2087814.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "25th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9848190,
+  "prompt": "Wide photograph of an empty silver themed birthday dinner with silver balloons and candlelight, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/25th-birthday__venue__9848190.png"
+ },
+ "25th-birthday/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1453137,
+  "prompt": "A round wreath of silver and white balloons with white roses with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/25th-birthday__wreath__1453137.png",
+  "coverage": 0.376,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "25th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2483492,
+  "prompt": "A low wide compact arrangement of silver and white balloons with white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/25th-birthday__cluster__2483492.png",
+  "coverage": 0.628,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "25th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7642165,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a sparkling silver gift box with a bow, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/25th-birthday__crest__7642165.png",
+  "coverage": 0.193,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "silver-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8170841,
+  "prompt": "Wide photograph of an empty silver themed birthday party with silver balloons and crystal lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/silver-celebration__venue__8170841.png"
+ },
+ "silver-celebration/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5743870,
+  "prompt": "A round wreath of silver balloons, white roses and silver leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/silver-celebration__wreath__5743870.png",
+  "coverage": 0.416,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "silver-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4612889,
+  "prompt": "A low wide compact arrangement of silver balloons, white roses and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/silver-celebration__cluster__4612889.png",
+  "coverage": 0.314,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "silver-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5135756,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a sparkling silver star ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/silver-celebration__crest__5135756.png",
+  "coverage": 0.09,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "adventure-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6671905,
+  "prompt": "Wide photograph of an empty adventure themed outdoor birthday camp with tents, lanterns and a campfire area, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/adventure-birthday__venue__6671905.png"
+ },
+ "adventure-birthday/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2624256,
+  "prompt": "A round wreath of pine sprigs, fern leaves and small pine cones with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/adventure-birthday__wreath__2624256.png",
+  "coverage": 0.369,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "adventure-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4607123,
+  "prompt": "A low wide compact arrangement of pine sprigs, fern leaves and small pine cones, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/adventure-birthday__cluster__4607123.png",
+  "coverage": 0.37,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "adventure-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3715190,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small brass compass on a folded map, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/adventure-birthday__crest__3715190.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "dinosaur-adventure/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3294422,
+  "prompt": "Wide photograph of an empty dinosaur adventure kids party with jungle leaves, toy dinosaurs and a green cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/dinosaur-adventure__venue__3294422.png"
+ },
+ "dinosaur-adventure/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3636507,
+  "prompt": "A tall slender vertical hanging strand of tropical green leaves, ferns and small green toy dinosaurs from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/dinosaur-adventure__vine__3636507.png",
+  "coverage": 0.162,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "dinosaur-adventure/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5736790,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a friendly green toy dinosaur with a small party hat, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/dinosaur-adventure__crest__5736790.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "jungle-party/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4721368,
+  "prompt": "Wide photograph of an empty jungle safari kids birthday party with big tropical leaves and a wooden cake table, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/jungle-party__venue__4721368.png"
+ },
+ "jungle-party/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5445317,
+  "prompt": "A tall slender vertical hanging strand of monstera leaves, palm fronds and small yellow flowers from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/jungle-party__vine__5445317.png",
+  "coverage": 0.182,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "jungle-party/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3693416,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a smiling toy lion cub sitting among leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/jungle-party__crest__3693416.png",
+  "coverage": 0.216,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "little-explorer/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1454240,
+  "prompt": "Wide photograph of an empty explorer themed kids birthday party with a small tent, maps and lanterns in a garden, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-explorer__venue__1454240.png"
+ },
+ "little-explorer/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7768683,
+  "prompt": "A tall slender vertical hanging strand of green leaves, small pine cones and a tiny brass telescope from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-explorer__vine__7768683.png",
+  "coverage": 0.126,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "little-explorer/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4419398,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small vintage brass compass with a leather strap, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/little-explorer__crest__4419398.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "safari-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9112307,
+  "prompt": "Wide photograph of an empty safari themed kids birthday party with a jeep backdrop, palm leaves and toy animals, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/safari-birthday__venue__9112307.png"
+ },
+ "safari-birthday/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6006589,
+  "prompt": "A tall slender vertical hanging strand of palm leaves, dried pampas grass and small toy safari animals from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/safari-birthday__vine__6006589.png",
+  "coverage": 0.165,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "vines"
+ },
+ "safari-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9064336,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a cute toy giraffe and toy elephant standing together, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/safari-birthday__crest__9064336.png",
+  "coverage": 0.153,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-soiree/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2290967,
+  "prompt": "Wide photograph of an empty garden soiree birthday party at golden hour with long tables and string lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/garden-soiree__venue__2290967.png"
+ },
+ "garden-soiree/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7652072,
+  "prompt": "A tall slender vertical hanging strand of wildflowers, sage leaves and small yellow blooms from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/garden-soiree__vine__7652072.png",
+  "coverage": 0.12,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-soiree/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7091995,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small brass garden lantern with a candle among leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/garden-soiree__crest__7091995.png",
+  "coverage": 0.065,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tropical-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7552092,
+  "prompt": "Wide photograph of an empty tropical birthday party by a pool with palms, lanterns and teal decor, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/tropical-birthday__venue__7552092.png"
+ },
+ "tropical-birthday/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8440101,
+  "prompt": "A tall slender vertical hanging strand of red hibiscus, orange bird of paradise and monstera leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/tropical-birthday__vine__8440101.png",
+  "coverage": 0.145,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tropical-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8374408,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a bright red hibiscus flower with a small gold pineapple, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/tropical-birthday__crest__8374408.png",
+  "coverage": 0.122,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "botanical-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8462984,
+  "prompt": "Wide photograph of an empty botanical greenhouse birthday party with plants, a long table and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/botanical-birthday__venue__8462984.png"
+ },
+ "botanical-birthday/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6679298,
+  "prompt": "A tall slender vertical hanging strand of ferns, eucalyptus and green botanical leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/botanical-birthday__vine__6679298.png",
+  "coverage": 0.192,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "botanical-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7198005,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a small potted fern in a terracotta pot, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/botanical-birthday__crest__7198005.png",
+  "coverage": 0.141,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "minimal-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5560492,
+  "prompt": "Wide photograph of an empty minimal white birthday dinner table with soft daylight and simple flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/minimal-birthday__venue__5560492.png"
+ },
+ "minimal-birthday/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7835518,
+  "prompt": "A tall slender vertical hanging strand of white ranunculus, eucalyptus and a single white balloon from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/minimal-birthday__vine__7835518.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "minimal-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2056945,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a simple white frosted cake with a single thin candle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/minimal-birthday__crest__2056945.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-masculine/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6294376,
+  "prompt": "Wide photograph of an empty modern minimal birthday lounge in charcoal and grey with clean lines, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/modern-masculine__venue__6294376.png"
+ },
+ "modern-masculine/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2897238,
+  "prompt": "A tall slender vertical hanging strand of grey eucalyptus, dark leaves and charcoal balloons from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/modern-masculine__vine__2897238.png",
+  "coverage": 0.129,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-masculine/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8077593,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a minimalist charcoal stone with a single gold line, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/modern-masculine__crest__8077593.png",
+  "coverage": 0.116,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "social-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1363161,
+  "prompt": "Wide photograph of an empty chic birthday party terrace with lounge seating, string lights and greenery, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/social-celebration__venue__1363161.png"
+ },
+ "social-celebration/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8043295,
+  "prompt": "A tall slender vertical hanging strand of white roses, eucalyptus and taupe balloons from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/social-celebration__vine__8043295.png",
+  "coverage": 0.182,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "social-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1399450,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a pair of clinking crystal glasses with a sparkle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/social-celebration__crest__1399450.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "classic-gentleman/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6378325,
+  "prompt": "Wide photograph of an empty classic gentleman lounge with leather chesterfield sofas and a wooden bar, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/classic-gentleman__venue__6378325.png"
+ },
+ "classic-gentleman/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4533081,
+  "prompt": "A low wide compact arrangement of dark green eucalyptus, brown leather and brass accents, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/classic-gentleman__cluster__4533081.png",
+  "coverage": 0.301,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-gentleman/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3839116,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a classic bow tie beside a vintage pocket watch, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/classic-gentleman__crest__3839116.png",
+  "coverage": 0.123,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-and-gold-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8027073,
+  "prompt": "Wide photograph of an empty black and gold birthday party with gold balloons and dark drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/black-and-gold-birthday__venue__8027073.png"
+ },
+ "black-and-gold-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8760365,
+  "prompt": "A low wide compact arrangement of black and gold balloons with gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/black-and-gold-birthday__cluster__8760365.png",
+  "coverage": 0.544,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-and-gold-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9113456,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a gold sunburst medallion with a sparkle at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/black-and-gold-birthday__crest__9113456.png",
+  "coverage": 0.1,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-navy-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6475551,
+  "prompt": "Wide photograph of an empty royal navy and gold birthday party hall with navy drapes and gold accents, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/royal-navy-birthday__venue__6475551.png"
+ },
+ "royal-navy-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3265099,
+  "prompt": "A low wide compact arrangement of navy blue and gold balloons with white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/royal-navy-birthday__cluster__3265099.png",
+  "coverage": 0.55,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-navy-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9197854,
+  "prompt": "Small premium ornament for the top of an birthday invitation: an ornate gold crest with a small anchor at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/royal-navy-birthday__crest__9197854.png",
+  "coverage": 0.051,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "midnight-gentleman/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8614350,
+  "prompt": "Wide photograph of an empty midnight gentleman lounge with dark wood, low lights and a whisky bar, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-gentleman__venue__8614350.png"
+ },
+ "midnight-gentleman/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8113027,
+  "prompt": "A low wide compact arrangement of dark leaves, navy thistle and gold accents, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-gentleman__cluster__8113027.png",
+  "coverage": 0.384,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "midnight-gentleman/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7294854,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a crystal whisky glass beside a gold cufflink, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/midnight-gentleman__crest__7294854.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "vintage-gentleman/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9258495,
+  "prompt": "Wide photograph of an empty vintage gentleman study with antique furniture, books and warm lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/vintage-gentleman__venue__9258495.png"
+ },
+ "vintage-gentleman/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7720695,
+  "prompt": "A low wide compact arrangement of dried leaves, brown roses and brass accents, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/vintage-gentleman__cluster__7720695.png",
+  "coverage": 0.378,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "vintage-gentleman/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3282890,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a vintage brown fedora hat with a pipe, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/vintage-gentleman__crest__3282890.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4393846,
+  "prompt": "Wide photograph of an empty golden birthday party ballroom with gold balloons and a chandelier, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/golden-birthday__venue__4393846.png"
+ },
+ "golden-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4038012,
+  "prompt": "A low wide compact arrangement of gold roses, gold balloons and gilded leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/golden-birthday__cluster__4038012.png",
+  "coverage": 0.486,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5987517,
+  "prompt": "Small premium ornament for the top of an birthday invitation: an ornate gold crown with small jewels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/golden-birthday__crest__5987517.png",
+  "coverage": 0.09,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-glow/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8332876,
+  "prompt": "Wide photograph of an empty champagne themed birthday party with a champagne tower and gold decor, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/champagne-glow__venue__8332876.png"
+ },
+ "champagne-glow/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4131109,
+  "prompt": "A low wide compact arrangement of champagne roses, ivory peonies and pampas grass, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/champagne-glow__cluster__4131109.png",
+  "coverage": 0.442,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "luxury"
+ },
+ "champagne-glow/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6426264,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a champagne bottle with two crystal coupes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/champagne-glow__crest__6426264.png",
+  "coverage": 0.145,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "modern-luxury/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3062124,
+  "prompt": "Wide photograph of an empty modern luxury birthday lounge in black and gold with designer lighting, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/modern-luxury__venue__3062124.png"
+ },
+ "modern-luxury/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4887498,
+  "prompt": "A low wide compact arrangement of gold leaves, black calla lilies and gold accents, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/modern-luxury__cluster__4887498.png",
+  "coverage": 0.373,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "modern-luxury/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5144227,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a sleek gold geometric sphere ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/modern-luxury__crest__5144227.png",
+  "coverage": 0.104,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-velvet/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7684508,
+  "prompt": "Wide photograph of an empty black velvet birthday party lounge with red roses and candlelight, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/black-velvet__venue__7684508.png"
+ },
+ "black-velvet/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1209993,
+  "prompt": "A low wide compact arrangement of deep red roses, burgundy peonies and dark leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/black-velvet__cluster__1209993.png",
+  "coverage": 0.466,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "black-velvet/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2600476,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a single deep red rose on black velvet, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/black-velvet__crest__2600476.png",
+  "coverage": 0.148,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-elegance/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9668579,
+  "prompt": "Wide photograph of an empty emerald and gold birthday dinner with green velvet chairs and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/emerald-elegance__venue__9668579.png"
+ },
+ "emerald-elegance/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7374046,
+  "prompt": "A low wide compact arrangement of white roses, emerald leaves and gold accents, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/emerald-elegance__cluster__7374046.png",
+  "coverage": 0.453,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-elegance/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5728919,
+  "prompt": "Small premium ornament for the top of an birthday invitation: an emerald gemstone in an ornate gold setting, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/emerald-elegance__crest__5728919.png",
+  "coverage": 0.076,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9462205,
+  "prompt": "Wide photograph of an empty grand maroon and gold birthday ballroom with chandeliers and a large cake, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/grand-birthday__venue__9462205.png"
+ },
+ "grand-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5495073,
+  "prompt": "A low wide compact arrangement of deep red roses, gold leaves and burgundy peonies, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/grand-birthday__cluster__5495073.png",
+  "coverage": 0.436,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1711556,
+  "prompt": "Small premium ornament for the top of an birthday invitation: an ornate gold candelabra with three lit candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/grand-birthday__crest__1711556.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "21st-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4961387,
+  "prompt": "Wide photograph of an empty twenty first birthday party with a champagne bar, navy decor and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/21st-birthday__venue__4961387.png"
+ },
+ "21st-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5507171,
+  "prompt": "A low wide compact arrangement of navy and gold balloons with white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/21st-birthday__cluster__5507171.png",
+  "coverage": 0.463,
+  "edgeTouch": 0.006,
+  "free": true,
+  "style": "luxury"
+ },
+ "21st-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6003366,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a crystal champagne coupe with sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/21st-birthday__crest__6003366.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "30th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2006023,
+  "prompt": "Wide photograph of an empty glamorous birthday party in gold with a champagne tower and lounge seating, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/30th-birthday__venue__2006023.png"
+ },
+ "30th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1509670,
+  "prompt": "A low wide compact arrangement of gold balloons, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/30th-birthday__cluster__1509670.png",
+  "coverage": 0.436,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "30th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1845935,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a gold champagne bottle with a burst of sparkle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/30th-birthday__crest__1845935.png",
+  "coverage": 0.163,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "40th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8262600,
+  "prompt": "Wide photograph of an empty elegant wine and dine birthday dinner in maroon and gold with candles, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/40th-birthday__venue__8262600.png"
+ },
+ "40th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2708225,
+  "prompt": "A low wide compact arrangement of deep red roses, burgundy dahlias and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/40th-birthday__cluster__2708225.png",
+  "coverage": 0.538,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "40th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3279140,
+  "prompt": "Small premium ornament for the top of an birthday invitation: a classic crystal wine glass with deep red wine, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/40th-birthday__crest__3279140.png",
+  "coverage": 0.09,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "50th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5746717,
+  "prompt": "Wide photograph of an empty golden jubilee birthday party hall in black and gold with chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/50th-birthday__venue__5746717.png"
+ },
+ "50th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4493924,
+  "prompt": "A low wide compact arrangement of gold roses, gold balloons and gilded leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/50th-birthday__cluster__4493924.png",
+  "coverage": 0.451,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "50th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3405813,
+  "prompt": "Small premium ornament for the top of an birthday invitation: an ornate gold anniversary medallion with a star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/50th-birthday__crest__3405813.png",
+  "coverage": 0.083,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "70th-birthday/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9342730,
+  "prompt": "Wide photograph of an empty elegant family birthday banquet in plum and gold with flowers and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/70th-birthday__venue__9342730.png"
+ },
+ "70th-birthday/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9451058,
+  "prompt": "A low wide compact arrangement of purple orchids, gold leaves and white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/70th-birthday__cluster__9451058.png",
+  "coverage": 0.412,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "70th-birthday/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8924475,
+  "prompt": "Small premium ornament for the top of an birthday invitation: an ornate gold and amethyst medallion with a small crown, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium party decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/BIRTHDAY/70th-birthday__crest__8924475.png",
+  "coverage": 0.067,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ }
+}

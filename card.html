@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invitation Card — InviteAura</title>
+  <link rel="stylesheet" href="css/style.css?v=2.8">
+  <link rel="stylesheet" href="css/animations.css?v=1.2">
+  <link rel="stylesheet" href="css/responsive.css?v=1.6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap">
+  <script src="js/main.js?v=1.2" defer></script>
+  <script src="js/templates.js?v=2.5" defer></script>
+  <script src="js/countdown.js?v=1.2" defer></script>
+  <script src="js/wedding-designs.js?v=2.2" defer></script>
+  <script src="js/redesign-collection-data.js?v=1.2" defer></script>
+  <script src="js/redesign-collection.js?v=1.4" defer></script>
+  <script src="js/preview.js?v=2.3" defer></script>
+  <script src="js/export.js?v=2.3" defer></script>
+  <script src="js/html-to-image.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js" defer></script>
+  <style>
+    /* The card alone, centred on a plain backdrop. */
+    /* Full-size card; the page scrolls vertically when it is taller than the window. */
+    body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding: 24px 16px; box-sizing: border-box; background: #EDEAE6; }
+    #card-fit { width: min(100%, 704px); }
+    #card-root { width: 100%; }
+    #card-root .invitation { max-width: none; }
+    /* Floating music button, same as the host page. */
+    .site-music-btn { position: fixed; right: 20px; bottom: 20px; z-index: 900; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 2px solid rgba(255,255,255,.9); background: rgba(22,18,28,.86); color: #fff; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); box-shadow: 0 0 0 1px rgba(0,0,0,.35), 0 12px 30px rgba(0,0,0,.35); cursor: pointer; transition: transform .2s ease; }
+    .site-music-btn:hover { transform: scale(1.08); }
+    .site-music-btn svg { width: 22px; height: 22px; }
+    .site-music-btn.is-playing svg { animation: site-spin 3s linear infinite; }
+    @keyframes site-spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .site-music-btn.is-playing svg { animation: none; } }
+    /* Download image button, above the music button when there is music. */
+    .site-dl-btn { position: fixed; right: 20px; bottom: 20px; z-index: 900; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 2px solid rgba(255,255,255,.9); background: rgba(22,18,28,.86); color: #fff; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); box-shadow: 0 0 0 1px rgba(0,0,0,.35), 0 12px 30px rgba(0,0,0,.35); cursor: pointer; transition: transform .2s ease, opacity .2s ease; }
+    .site-dl-btn--stack { bottom: 84px; }
+    .site-dl-btn:hover { transform: scale(1.08); }
+    .site-dl-btn svg { width: 22px; height: 22px; }
+    .site-dl-btn.is-busy { opacity: .6; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div id="card-fit">
+    <div class="invitation-container" id="card-root">
+      <div style="padding: 60px; text-align: center; color: var(--fg-muted);">Loading invitation...</div>
+    </div>
+  </div>
+
+  <script>
+    /* Shows only the invitation card from the current draft — the same
+       render the Create page's Card preview uses, without the host page. */
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        var data = null;
+        try {
+          data = IH.store ? IH.store.get('draft', null) : null;
+        } catch (e) {}
+
+        if (!data) data = (IH.invitation && IH.invitation.SAMPLE) ? IH.invitation.SAMPLE : {};
+        if (!data.date) {
+          var d = new Date(); d.setMonth(d.getMonth() + 3);
+          data.date = d.toISOString().slice(0, 10);
+          data.time = data.time || '18:30';
+        }
+
+        /* One width whichever Create step opened this page: #card-fit is
+           704px on a laptop and the full screen width on a phone. */
+
+        /* The music plays from the corner button, not a player inside the card. */
+        var music = data.musicFile;
+        data = Object.assign({}, data, { musicFile: '' });
+
+        var root = document.getElementById('card-root');
+        if (root && IH.invitation && IH.invitation.mount) {
+          root.innerHTML = '';
+          IH.invitation.mount(root, data);
+        }
+        if (music) addMusicButton(music);
+        // Downloading the image comes with the paid hosting.
+        if (data.hostingPaid) addDownloadButton(data, !!music);
+      }, 50);
+    });
+
+    /* Saves the card as a JPG, named like the invitation's .html file. */
+    function addDownloadButton(data, stacked) {
+      var btn = document.createElement('button');
+      btn.className = 'site-dl-btn' + (stacked ? ' site-dl-btn--stack' : '');
+      btn.type = 'button';
+      btn.title = 'Download image';
+      btn.setAttribute('aria-label', 'Download invitation image');
+      btn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>';
+
+      var card = document.querySelector('#card-root .invitation');
+      var primary = card ? getComputedStyle(card).getPropertyValue('--inv-primary').trim() : '';
+      if (primary) btn.style.setProperty('--card-p', primary);
+      var file = (IH.exportPage ? IH.exportPage.fileName(data) : 'invitation.html').replace(/\.html$/, '.jpg');
+
+      btn.addEventListener('click', function () {
+        var target = document.querySelector('#card-root .invitation');
+        if (!target) return;
+        btn.classList.add('is-busy');
+        captureCard(target)
+          .then(function (canvas) {
+            var a = document.createElement('a');
+            a.href = canvas.toDataURL('image/jpeg', 0.92);
+            a.download = file;
+            document.body.appendChild(a); a.click(); a.remove();
+          })
+          .catch(function (err) { console.error('Download image failed', err); })
+          .then(function () { btn.classList.remove('is-busy'); });
+      });
+      document.body.appendChild(btn);
+    }
+
+    /* The image is the card exactly as it is on screen: laptop width on a
+       laptop, phone width on a phone. html-to-image lets the browser paint
+       it (the same capture as the Create page); html2canvas is the fallback. */
+    function captureCard(target) {
+      var rect = target.getBoundingClientRect();
+      var size = { width: Math.round(rect.width), height: Math.round(rect.height) };
+      var flatten = function (canvas) {
+        var flat = document.createElement('canvas');
+        flat.width = canvas.width; flat.height = canvas.height;
+        var ctx = flat.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, flat.width, flat.height);
+        ctx.drawImage(canvas, 0, 0);
+        return flat;
+      };
+      var fallback = function () {
+        if (!window.html2canvas) return Promise.reject(new Error('No capture library loaded'));
+        return html2canvas(target, { scale: 2, useCORS: true, backgroundColor: '#ffffff', width: size.width, height: size.height });
+      };
+      if (!window.htmlToImage) return fallback();
+      return (document.fonts ? document.fonts.ready : Promise.resolve())
+        .then(fontEmbedCss)
+        .then(function (css) {
+          return htmlToImage.toCanvas(target, {
+            pixelRatio: 2, width: size.width, height: size.height,
+            fontEmbedCSS: css, style: { margin: '0' }
+          });
+        })
+        .then(flatten)
+        .catch(function (err) {
+          console.warn('Native capture failed, using html2canvas', err);
+          return fallback();
+        });
+    }
+
+    /* Google Fonts CSS is cross-origin, so inline its font files for the capture. */
+    function fontEmbedCss() {
+      var link = document.querySelector('link[href*="fonts.googleapis.com/css"]');
+      if (!link || !window.fetch) return Promise.resolve('');
+      var toDataUrl = function (blob) {
+        return new Promise(function (resolve, reject) {
+          var reader = new FileReader();
+          reader.onload = function () { resolve(reader.result); };
+          reader.onerror = reject;
+          reader.readAsDataURL(blob);
+        });
+      };
+      return fetch(link.href).then(function (res) { return res.text(); }).then(function (css) {
+        var faces = (css.match(/@font-face\s*\{[^}]*\}/g) || []).filter(function (face) {
+          return !/unicode-range/.test(face) || /U\+0000-00FF|U\+0C00|U\+0B8/i.test(face);
+        });
+        return Promise.all(faces.map(function (face) {
+          var m = face.match(/url\((https:[^)]+)\)/);
+          if (!m) return face;
+          return fetch(m[1]).then(function (res) { return res.blob(); }).then(toDataUrl)
+            .then(function (url) { return face.replace(m[1], url); })
+            .catch(function () { return ''; });
+        }));
+      }).then(function (list) { return list.join('\n'); }).catch(function () { return ''; });
+    }
+
+    function addMusicButton(src) {
+      var audio = document.createElement('audio');
+      audio.preload = 'none';
+      audio.src = src;
+      var btn = document.createElement('button');
+      btn.className = 'site-music-btn';
+      btn.type = 'button';
+      btn.setAttribute('aria-label', 'Play music');
+      btn.setAttribute('aria-pressed', 'false');
+      btn.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>';
+
+      /* Take the card's own main colour. */
+      var card = document.querySelector('#card-root .invitation');
+      var primary = card ? getComputedStyle(card).getPropertyValue('--inv-primary').trim() : '';
+      if (primary) btn.style.setProperty('--card-p', primary);
+
+      function setPlaying(on) {
+        btn.classList.toggle('is-playing', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+        btn.setAttribute('aria-label', on ? 'Pause music' : 'Play music');
+      }
+      btn.addEventListener('click', function () {
+        if (audio.paused) audio.play().then(function () { setPlaying(true); }).catch(function () {});
+        else { audio.pause(); setPlaying(false); }
+      });
+      audio.addEventListener('ended', function () { setPlaying(false); });
+
+      document.body.appendChild(audio);
+      document.body.appendChild(btn);
+    }
+  </script>
+</body>
+</html>

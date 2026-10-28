@@ -1,0 +1,47 @@
+{
+ "slug": "destination-voyage",
+ "name": "Destination Voyage",
+ "base": "cards/destination-voyage/",
+ "spec": {
+  "layout": "classic",
+  "frame": "beads",
+  "venue": "split",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/destination-voyage.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/destination-voyage.svg",
+  "corners": "inline SVG corner set (beads)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a destination wedding at a heritage port with a compass, old maps and travel trunks decorated with flowers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1889354,
+   "raw": "..\\work\\raw\\destination-voyage__venue__1889354_1y07r.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: an antique brass compass, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 3261282,
+   "raw": "..\\work\\raw\\destination-voyage__crest__3261282_5ibvu.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a harbour with old ships at sunset, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1181292,
+   "raw": "..\\work\\raw\\destination-voyage__footer__1181292_1kugq.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, olive branches and eucalyptus, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9156646,
+   "raw": "..\\work\\raw\\destination-voyage__corner__9156646_3fdgt.png"
+  }
+ }
+}

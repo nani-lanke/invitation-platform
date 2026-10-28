@@ -110,6 +110,12 @@
 
 .js-reveal-ready [data-reveal="left"]  { transform: translateX(-30px); }
 .js-reveal-ready [data-reveal="right"] { transform: translateX(30px); }
+/* One column on a phone: a sideways start pushed the page 30px wider than
+   the screen until the block scrolled into view, so slide up instead. */
+@media (max-width: 760px) {
+  .js-reveal-ready [data-reveal="left"]:not(.is-revealed),
+  .js-reveal-ready [data-reveal="right"]:not(.is-revealed) { transform: translateY(26px); }
+}
 .js-reveal-ready [data-reveal="zoom"]  { transform: scale(.94); }
 .js-reveal-ready [data-reveal="fade"]  { transform: none; }
 
@@ -127,6 +133,7 @@
    -------------------------------------------------------------------------- */
 
 .hero__phone { animation: float-y-soft 7s var(--ease) infinite; }
+.hero__fan { animation: float-y-soft 8s var(--ease) infinite; }
 
 .hero__float {
   animation: float-y 8s var(--ease) infinite;
@@ -157,22 +164,23 @@
     flex-shrink: 0;
 }
 
-[data-draft-download-jpg].is-loading {
+[data-draft-download-jpg].is-loading,
+[data-invite-jpg].is-loading {
     cursor: wait;
     pointer-events: none;
+    opacity: .75;
 }
 
-[data-draft-download-jpg].is-loading .btn-text {
-    display: none;
-}
-
-[data-draft-download-jpg].is-loading .jpg-download-spinner {
+[data-draft-download-jpg].is-loading .jpg-download-spinner,
+[data-invite-jpg].is-loading .jpg-download-spinner {
     display: inline-block;
     animation: jpg-download-spin 0.7s linear infinite;
 }
 
 [data-draft-download-jpg].is-loading [data-icon],
-[data-draft-download-jpg].is-loading .icon {
+[data-draft-download-jpg].is-loading .icon,
+[data-invite-jpg].is-loading [data-icon],
+[data-invite-jpg].is-loading .icon {
     display: none;
 }
 
@@ -291,6 +299,7 @@
   }
 
   .hero__phone,
+  .hero__fan,
   .hero__float,
   .hero__orb,
   .animate-float,

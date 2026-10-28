@@ -1,0 +1,47 @@
+{
+ "slug": "imperial-gold",
+ "name": "Imperial Gold",
+ "base": "cards/imperial-gold/",
+ "spec": {
+  "layout": "royal",
+  "frame": "vine",
+  "venue": "split",
+  "family": "modern"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/imperial-gold.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/imperial-gold.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of an imperial palace hall in ivory and 24k gold with chandeliers and white flowers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6428440,
+   "raw": "..\\work\\raw\\imperial-gold__venue__6428440_1r4xr.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: an embossed 24k gold filigree emblem, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6525300,
+   "raw": "..\\work\\raw\\imperial-gold__crest__6525300_28bru.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a white palace with gold domes at golden hour, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5328758,
+   "raw": "..\\work\\raw\\imperial-gold__footer__5328758_47in9.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, ivory orchids and gold leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7969908,
+   "raw": "..\\work\\raw\\imperial-gold__corner__7969908_3hdhi.png"
+  }
+ }
+}

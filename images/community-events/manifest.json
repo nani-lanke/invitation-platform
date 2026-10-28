@@ -1,0 +1,626 @@
+{
+ "community-gathering/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4968642,
+  "prompt": "Wide photograph of an empty community hall with chairs arranged in a circle, plants and warm light, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-gathering__venue__4968642.png"
+ },
+ "community-gathering/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7904218,
+  "prompt": "A tall slender vertical hanging strand of terracotta flowers, cream blossoms and green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-gathering__vine__7904218.png",
+  "coverage": 0.158,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "community-gathering/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1374397,
+  "prompt": "Small premium ornament for the top of a community event invitation: interlocking terracotta rings forming a circle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-gathering__crest__1374397.png",
+  "coverage": 0.169,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "neighborhood-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1272833,
+  "prompt": "Wide photograph of an empty residential street decorated with blue bunting and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-celebration__venue__1272833.png"
+ },
+ "neighborhood-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5988210,
+  "prompt": "A low wide compact arrangement of royal blue bunting, fairy lights and green leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-celebration__cluster__5988210.png",
+  "coverage": 0.368,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "neighborhood-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6848507,
+  "prompt": "Small premium ornament for the top of a community event invitation: a small row of royal blue rooftop houses, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-celebration__crest__6848507.png",
+  "coverage": 0.068,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "community-festival/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2391572,
+  "prompt": "Wide photograph of an empty community festival ground with stalls, bunting and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-festival__venue__2391572.png"
+ },
+ "community-festival/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9807770,
+  "prompt": "A small compact arrangement of teal and coral bunting, flowers and balloons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-festival__bouquet__9807770.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "community-festival/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4353489,
+  "prompt": "A low wide compact arrangement of teal and coral bunting, flowers and balloons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-festival__cluster__4353489.png",
+  "coverage": 0.413,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "community-festival/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8958228,
+  "prompt": "Small premium ornament for the top of a community event invitation: colourful teal and coral bunting flags on a string, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-festival__crest__8958228.png",
+  "coverage": 0.053,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "corners"
+ },
+ "local-cultural-festival/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3922451,
+  "prompt": "Wide photograph of an empty cultural festival stage with burgundy drapes, marigolds and lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-cultural-festival__venue__3922451.png"
+ },
+ "local-cultural-festival/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6692778,
+  "prompt": "A long horizontal garland of orange marigolds, gold diyas and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-cultural-festival__garland__6692778.png",
+  "coverage": 0.32,
+  "edgeTouch": 0.012,
+  "free": true,
+  "style": "garland"
+ },
+ "local-cultural-festival/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5648618,
+  "prompt": "A low wide compact arrangement of orange marigolds, gold diyas and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-cultural-festival__cluster__5648618.png",
+  "coverage": 0.405,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "local-cultural-festival/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7118083,
+  "prompt": "Small premium ornament for the top of a community event invitation: an ornate burgundy and gold mandala medallion, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-cultural-festival__crest__7118083.png",
+  "coverage": 0.168,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "community-picnic/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7202832,
+  "prompt": "Wide photograph of an empty sunny park lawn with picnic blankets, baskets and shade trees, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-picnic__venue__7202832.png"
+ },
+ "community-picnic/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2992532,
+  "prompt": "A round wreath of wild flowers, green leaves and strawberries with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-picnic__wreath__2992532.png",
+  "coverage": 0.331,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "community-picnic/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2235447,
+  "prompt": "A low wide compact arrangement of wild flowers, green leaves and strawberries, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-picnic__cluster__2235447.png",
+  "coverage": 0.275,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "community-picnic/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9268938,
+  "prompt": "Small premium ornament for the top of a community event invitation: a wicker picnic basket with a checked blanket, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-picnic__crest__9268938.png",
+  "coverage": 0.122,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "neighborhood-bbq/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6516948,
+  "prompt": "Wide photograph of an empty backyard with a barbecue grill, long tables and string lights, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-bbq__venue__6516948.png"
+ },
+ "neighborhood-bbq/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6225386,
+  "prompt": "A long horizontal garland of corn cobs, rosemary and red chillies draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-bbq__garland__6225386.png",
+  "coverage": 0.197,
+  "edgeTouch": 0.009,
+  "free": true,
+  "style": "garland"
+ },
+ "neighborhood-bbq/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6637027,
+  "prompt": "A low wide compact arrangement of corn cobs, rosemary and red chillies, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-bbq__cluster__6637027.png",
+  "coverage": 0.347,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "neighborhood-bbq/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3040998,
+  "prompt": "Small premium ornament for the top of a community event invitation: a charcoal barbecue grill with glowing flames, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/neighborhood-bbq__crest__3040998.png",
+  "coverage": 0.11,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "community-fair/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3907115,
+  "prompt": "Wide photograph of an empty fairground with striped tents, pennants and a small ferris wheel, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-fair__venue__3907115.png"
+ },
+ "community-fair/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2653020,
+  "prompt": "A small compact arrangement of sky blue pennants, balloons and paper pinwheels, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-fair__bouquet__2653020.png",
+  "coverage": 0.044,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "community-fair/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2604207,
+  "prompt": "A low wide compact arrangement of sky blue pennants, balloons and paper pinwheels, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-fair__cluster__2604207.png",
+  "coverage": 0.307,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "community-fair/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1700498,
+  "prompt": "Small premium ornament for the top of a community event invitation: a small sky blue and white striped tent with pennants, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-fair__crest__1700498.png",
+  "coverage": 0.11,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "charity-fundraiser/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7110081,
+  "prompt": "Wide photograph of an empty elegant navy fundraiser hall with round tables and gold lights, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-fundraiser__venue__7110081.png"
+ },
+ "charity-fundraiser/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6103135,
+  "prompt": "A low wide compact arrangement of navy ribbons, gold leaves and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-fundraiser__cluster__6103135.png",
+  "coverage": 0.236,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "charity-fundraiser/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5527586,
+  "prompt": "Small premium ornament for the top of a community event invitation: two gold hands holding a small golden heart, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-fundraiser__crest__5527586.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "charity-walk/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4662484,
+  "prompt": "Wide photograph of an empty park walking path lined with teal ribbons and balloons in morning light, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-walk__venue__4662484.png"
+ },
+ "charity-walk/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8536744,
+  "prompt": "A round wreath of teal ribbons, green leaves and white flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-walk__wreath__8536744.png",
+  "coverage": 0.325,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "charity-walk/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8799179,
+  "prompt": "A low wide compact arrangement of teal ribbons, green leaves and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-walk__cluster__8799179.png",
+  "coverage": 0.33,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "charity-walk/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8479390,
+  "prompt": "Small premium ornament for the top of a community event invitation: a pair of teal footprints on a curved path, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-walk__crest__8479390.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "community-clean-up/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3663363,
+  "prompt": "Wide photograph of an empty clean green park with recycling bins, trees and a sunny sky, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-clean-up__venue__3663363.png"
+ },
+ "community-clean-up/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8861333,
+  "prompt": "A small compact arrangement of forest green leaves, small saplings and recycling bins, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-clean-up__bouquet__8861333.png",
+  "coverage": 0.064,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "community-clean-up/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7532234,
+  "prompt": "A low wide compact arrangement of forest green leaves, small saplings and recycling bins, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-clean-up__cluster__7532234.png",
+  "coverage": 0.42,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "community-clean-up/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2397283,
+  "prompt": "Small premium ornament for the top of a community event invitation: a green recycling symbol made of leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-clean-up__crest__2397283.png",
+  "coverage": 0.103,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "tree-planting-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2962621,
+  "prompt": "Wide photograph of an empty green field ready for tree planting with saplings and shovels, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/tree-planting-day__venue__2962621.png"
+ },
+ "tree-planting-day/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5070800,
+  "prompt": "A tall slender vertical hanging strand of young saplings, green leaves and garden tools from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/tree-planting-day__vine__5070800.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "tree-planting-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7637683,
+  "prompt": "Small premium ornament for the top of a community event invitation: a small green sapling with golden roots in soil, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/tree-planting-day__crest__7637683.png",
+  "coverage": 0.091,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "local-food-festival/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3800801,
+  "prompt": "Wide photograph of an empty food festival street with food stalls, lanterns and wooden tables, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-food-festival__venue__3800801.png"
+ },
+ "local-food-festival/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4794913,
+  "prompt": "A round wreath of mustard flowers, chillies and fresh herbs with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-food-festival__wreath__4794913.png",
+  "coverage": 0.371,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "local-food-festival/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5268916,
+  "prompt": "A low wide compact arrangement of mustard flowers, chillies and fresh herbs, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-food-festival__cluster__5268916.png",
+  "coverage": 0.363,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "local-food-festival/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2883557,
+  "prompt": "Small premium ornament for the top of a community event invitation: a crossed silver fork and spoon with a small chilli, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/local-food-festival__crest__2883557.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "community-sports-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6238967,
+  "prompt": "Wide photograph of an empty community sports ground with courts, pennants and a podium, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-sports-day__venue__6238967.png"
+ },
+ "community-sports-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4101738,
+  "prompt": "A small compact arrangement of coral pennants, gold medals and footballs, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-sports-day__bouquet__4101738.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "community-sports-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5534241,
+  "prompt": "A low wide compact arrangement of coral pennants, gold medals and footballs, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-sports-day__cluster__5534241.png",
+  "coverage": 0.305,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "community-sports-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7296004,
+  "prompt": "Small premium ornament for the top of a community event invitation: a golden trophy with a coral ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-sports-day__crest__7296004.png",
+  "coverage": 0.091,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "family-community-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9368513,
+  "prompt": "Wide photograph of an empty park set up for a family day with tents, balloons and games, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/family-community-day__venue__9368513.png"
+ },
+ "family-community-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2992799,
+  "prompt": "A small compact arrangement of plum and lavender balloons, flowers and pinwheels, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/family-community-day__bouquet__2992799.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "family-community-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5779360,
+  "prompt": "A low wide compact arrangement of plum and lavender balloons, flowers and pinwheels, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/family-community-day__cluster__5779360.png",
+  "coverage": 0.516,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "family-community-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3431697,
+  "prompt": "Small premium ornament for the top of a community event invitation: a small plum house with family figures under its roof, stylised, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/family-community-day__crest__3431697.png",
+  "coverage": 0.082,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "senior-community-gathering/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1069332,
+  "prompt": "Wide photograph of an empty calm community lounge with armchairs, tea tables and plants, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/senior-community-gathering__venue__1069332.png"
+ },
+ "senior-community-gathering/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5763969,
+  "prompt": "A tall slender vertical hanging strand of sage leaves, white flowers and soft eucalyptus from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/senior-community-gathering__vine__5763969.png",
+  "coverage": 0.137,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "senior-community-gathering/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5744916,
+  "prompt": "Small premium ornament for the top of a community event invitation: a sage green wreath with a small teacup, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/senior-community-gathering__crest__5744916.png",
+  "coverage": 0.102,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "community-volunteer-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9410840,
+  "prompt": "Wide photograph of an empty community centre with tables of supplies, plants and navy banners without letters, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-volunteer-day__venue__9410840.png"
+ },
+ "community-volunteer-day/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2655955,
+  "prompt": "A small compact arrangement of navy ribbons, gold stars and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-volunteer-day__bouquet__2655955.png",
+  "coverage": 0.047,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "community-volunteer-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1244252,
+  "prompt": "A low wide compact arrangement of navy ribbons, gold stars and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-volunteer-day__cluster__1244252.png",
+  "coverage": 0.246,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "community-volunteer-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6967965,
+  "prompt": "Small premium ornament for the top of a community event invitation: joined hands around a golden star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-volunteer-day__crest__6967965.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "cultural-heritage-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6312284,
+  "prompt": "Wide photograph of an empty heritage courtyard with burgundy drapes, lamps and marigold garlands, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/cultural-heritage-celebration__venue__6312284.png"
+ },
+ "cultural-heritage-celebration/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8770388,
+  "prompt": "A long horizontal garland of burgundy paisleys, marigolds and gold leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/cultural-heritage-celebration__garland__8770388.png",
+  "coverage": 0.233,
+  "edgeTouch": 0.006,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-heritage-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8401212,
+  "prompt": "A low wide compact arrangement of burgundy paisleys, marigolds and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/cultural-heritage-celebration__cluster__8401212.png",
+  "coverage": 0.464,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-heritage-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9772989,
+  "prompt": "Small premium ornament for the top of a community event invitation: a burgundy paisley arch with gold details, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/cultural-heritage-celebration__crest__9772989.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "community-awareness-event/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5614667,
+  "prompt": "Wide photograph of an empty community hall with a small stage, mint decor and rows of chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-awareness-event__venue__5614667.png"
+ },
+ "community-awareness-event/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1339239,
+  "prompt": "A tall slender vertical hanging strand of mint and sky blue ribbons, leaves and flowers from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-awareness-event__vine__1339239.png",
+  "coverage": 0.179,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "community-awareness-event/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8980594,
+  "prompt": "Small premium ornament for the top of a community event invitation: a mint green megaphone with sound waves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-awareness-event__crest__8980594.png",
+  "coverage": 0.103,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "community-appreciation-day/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5879314,
+  "prompt": "Wide photograph of an empty elegant community hall with champagne decor, a stage and tables, celebration venue decor, no people, warm inviting light, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-appreciation-day__venue__5879314.png"
+ },
+ "community-appreciation-day/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1891673,
+  "prompt": "A low wide compact arrangement of champagne ribbons, gold leaves and white flowers, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-appreciation-day__cluster__1891673.png",
+  "coverage": 0.318,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "community-appreciation-day/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8395340,
+  "prompt": "Small premium ornament for the top of a community event invitation: a champagne ribbon rosette award with a gold medal, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/community-appreciation-day__crest__8395340.png",
+  "coverage": 0.151,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "charity-fundraiser/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7215426,
+  "prompt": "A long horizontal garland of navy ribbons, gold leaves and white roses draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium community event decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/COMMUNITY-EVENTS/charity-fundraiser__garland__7215426.png",
+  "coverage": 0.211,
+  "edgeTouch": 0.011,
+  "free": true,
+  "style": "garland"
+ }
+}

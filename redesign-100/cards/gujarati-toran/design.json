@@ -1,0 +1,47 @@
+{
+ "slug": "gujarati-toran",
+ "name": "Gujarati Toran",
+ "base": "cards/gujarati-toran/",
+ "spec": {
+  "layout": "arch",
+  "frame": "kolam",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/gujarati-toran.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/gujarati-toran.svg",
+  "corners": "inline SVG corner set (kolam)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Gujarati wedding mandap under a mirrorwork canopy with beaded torans, brass lamps and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7324088,
+   "raw": "..\\work\\raw\\gujarati-toran__venue__7324088_1lrkz.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a beaded Gujarati toran hanging with mirrors and small brass bells, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7317780,
+   "raw": "..\\work\\raw\\gujarati-toran__crest__7317780_yacj.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Gujarat stepwell with carved stone galleries, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4808982,
+   "raw": "..\\work\\raw\\gujarati-toran__footer__4808982_1ibly.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of orange marigolds, mango leaves and red roses, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8952084,
+   "raw": "..\\work\\raw\\gujarati-toran__corner__8952084_1w2eb.png"
+  }
+ }
+}

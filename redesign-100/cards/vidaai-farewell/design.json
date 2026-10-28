@@ -1,0 +1,47 @@
+{
+ "slug": "vidaai-farewell",
+ "name": "Vidaai Farewell",
+ "base": "cards/vidaai-farewell/",
+ "spec": {
+  "layout": "classic",
+  "frame": "vine",
+  "venue": "split",
+  "family": "personal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/vidaai-farewell.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/vidaai-farewell.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a vidaai scene at a haveli gate with a decorated wooden doli palanquin, marigolds and rose petals, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4719347,
+   "raw": "..\\work\\raw\\vidaai-farewell__venue__4719347_5r5jf.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a small carved wooden Indian doli palanquin miniature with red silk curtains, gold trim and carrying poles, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2733987,
+   "raw": "..\\work\\raw\\vidaai-farewell__crest__2733987_48tl2.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a haveli gateway on a quiet village road at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6324667,
+   "raw": "..\\work\\raw\\vidaai-farewell__footer__6324667_12ax9.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of marigolds, roses and rice grains, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1161877,
+   "raw": "..\\work\\raw\\vidaai-farewell__corner__1161877_1qti7.png"
+  }
+ }
+}

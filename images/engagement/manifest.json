@@ -1,0 +1,1958 @@
+{
+ "blush-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5521907,
+  "prompt": "Wide photograph of an elegant Indian engagement ring ceremony stage in a hotel ballroom, a soft blush pink and ivory floral arch of garden roses and peonies, a low decorated platform with two ivory chairs, a small table holding a ring tray, hanging crystal lights and candles, warm golden evening light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__venue__5521907.png"
+ },
+ "blush-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7310442,
+  "prompt": "A sparkling solitaire diamond engagement ring standing in an open blush pink velvet ring box, two small blush garden roses and green leaves beside the box, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__crest__7310442.png",
+  "coverage": 0.476,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "corners"
+ },
+ "blush-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7310443,
+  "prompt": "Lush spray of fresh blush pink garden roses, soft peonies, white spray roses and eucalyptus leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__corner-top__7310443.png",
+  "coverage": 0.352
+ },
+ "blush-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7310444,
+  "prompt": "Low cluster of fresh blush pink garden roses, peonies, rosebuds and soft green leaves growing upward from the bottom-left corner, empty space in the top right, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__corner-bottom__7310444.png",
+  "coverage": 0.346
+ },
+ "blush-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7310445,
+  "prompt": "A small horizontal sprig of one blush pink rosebud with soft green leaves and tiny white flowers, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__sprig__7310445.png",
+  "coverage": 0.251,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "classic-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8127800,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a solitaire diamond ring in an open aubergine velvet ring box, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/classic-engagement__crest__8127800.png",
+  "coverage": 0.4,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1913972,
+  "prompt": "Lush spray of fresh champagne roses, deep plum dahlias and ivory spray roses spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/classic-engagement__corner-top__1913972.png",
+  "coverage": 0.346
+ },
+ "classic-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1308466,
+  "prompt": "Low cluster of fresh champagne roses, deep plum dahlias and ivory spray roses growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/classic-engagement__corner-bottom__1308466.png",
+  "coverage": 0.273
+ },
+ "classic-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4825600,
+  "prompt": "A small horizontal sprig of champagne roses, deep plum dahlias and ivory spray roses, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/classic-engagement__sprig__4825600.png",
+  "coverage": 0.298,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9722900,
+  "prompt": "Wide photograph of a classic hotel ballroom engagement stage with plum and champagne drapes and crystal chandeliers, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/classic-engagement__venue__9722900.png"
+ },
+ "roka-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3531524,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a brass shagun thali holding a coconut wrapped in red cloth, a red envelope and gold coins, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__crest__3531524.png",
+  "coverage": 0.209,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "roka-ceremony/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6029328,
+  "prompt": "Lush spray of fresh orange marigolds, red roses and mango leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__corner-top__6029328.png",
+  "coverage": 0.459
+ },
+ "roka-ceremony/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4691214,
+  "prompt": "Low cluster of fresh orange marigolds, red roses and mango leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__corner-bottom__4691214.png",
+  "coverage": 0.302
+ },
+ "roka-ceremony/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3178308,
+  "prompt": "A small horizontal sprig of orange marigolds, red roses and mango leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__sprig__3178308.png",
+  "coverage": 0.225,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "roka-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4831560,
+  "prompt": "Wide photograph of an Indian roka ceremony living room setup with marigold garlands, a low decorated seating and brass thalis, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__venue__4831560.png"
+ },
+ "modern-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8234983,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two interlocked platinum engagement rings resting on a lilac silk ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/modern-engagement__crest__8234983.png",
+  "coverage": 0.179,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5169113,
+  "prompt": "Lush spray of fresh lilac sweet peas, white ranunculus and soft eucalyptus spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/modern-engagement__corner-top__5169113.png",
+  "coverage": 0.358
+ },
+ "modern-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3763797,
+  "prompt": "Low cluster of fresh lilac sweet peas, white ranunculus and soft eucalyptus growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/modern-engagement__corner-bottom__3763797.png",
+  "coverage": 0.254
+ },
+ "modern-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2486681,
+  "prompt": "A small horizontal sprig of lilac sweet peas, white ranunculus and soft eucalyptus, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/modern-engagement__sprig__2486681.png",
+  "coverage": 0.268,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "modern-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8422653,
+  "prompt": "Wide photograph of a modern rooftop engagement setup with a lilac floral arch, white chairs and string lights at dusk, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/modern-engagement__venue__8422653.png"
+ },
+ "ring-of-promise/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4843030,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two brushed gold wedding bands with a solitaire diamond ring, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__crest__4843030.png",
+  "coverage": 0.155,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "ring-of-promise/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7467378,
+  "prompt": "Lush spray of fresh white roses, teal eucalyptus and gold-dipped leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__corner-top__7467378.png",
+  "coverage": 0.255
+ },
+ "ring-of-promise/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4194612,
+  "prompt": "Low cluster of fresh white roses, teal eucalyptus and gold-dipped leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__corner-bottom__4194612.png",
+  "coverage": 0.208
+ },
+ "ring-of-promise/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9373078,
+  "prompt": "A small horizontal sprig of white roses, teal eucalyptus and gold-dipped leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__sprig__9373078.png",
+  "coverage": 0.19,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "ring-of-promise/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8701862,
+  "prompt": "Wide photograph of an evening garden engagement terrace with teal and gold drapes, lanterns and candles, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__venue__8701862.png"
+ },
+ "ring-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8171221,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two crossed gold bands beneath a solitaire diamond ring on a small ivory pillow, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__crest__8171221.png",
+  "coverage": 0.239,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "ring-ceremony/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9373873,
+  "prompt": "Low cluster of fresh dusty mauve roses, white peonies and fine greenery growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__corner-bottom__9373873.png",
+  "coverage": 0.276
+ },
+ "ring-ceremony/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9211629,
+  "prompt": "A small horizontal sprig of dusty mauve roses, white peonies and fine greenery, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__sprig__9211629.png",
+  "coverage": 0.272,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "ring-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2330257,
+  "prompt": "Wide photograph of an intimate ring ceremony stage with a mauve and ivory floral backdrop and two velvet chairs, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__venue__2330257.png"
+ },
+ "ring-ceremony/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8538548,
+  "prompt": "Lush spray of fresh dusty mauve roses, white peonies and fine greenery spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__corner-top__8538548.png",
+  "coverage": 0.381
+ },
+ "tilak-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4065700,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a small brass plate with red kumkum tilak, rice grains and a small brass kalash with mango leaves, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__crest__4065700.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "tilak-ceremony/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7239342,
+  "prompt": "Low cluster of fresh marigolds, red roses and betel leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__corner-bottom__7239342.png",
+  "coverage": 0.214
+ },
+ "tilak-ceremony/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7135780,
+  "prompt": "A small horizontal sprig of marigolds, red roses and betel leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__sprig__7135780.png",
+  "coverage": 0.237,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "tilak-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8789032,
+  "prompt": "Wide photograph of an Indian tilak ceremony courtyard with a decorated seat, marigold strings and brass lamps, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__venue__8789032.png"
+ },
+ "tilak-ceremony/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7598111,
+  "prompt": "Lush spray of fresh marigolds, red roses and betel leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__corner-top__7598111.png",
+  "coverage": 0.455
+ },
+ "royal-ring-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7104111,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an ornate gold crown above a ruby engagement ring, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/royal-ring-ceremony__crest__7104111.png",
+  "coverage": 0.191,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-ring-ceremony/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8065007,
+  "prompt": "Lush spray of fresh deep red roses, burgundy peonies and gold leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/royal-ring-ceremony__corner-top__8065007.png",
+  "coverage": 0.455
+ },
+ "royal-ring-ceremony/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2768903,
+  "prompt": "Low cluster of fresh deep red roses, burgundy peonies and gold leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/royal-ring-ceremony__corner-bottom__2768903.png",
+  "coverage": 0.3
+ },
+ "royal-ring-ceremony/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8928303,
+  "prompt": "A small horizontal sprig of deep red roses, burgundy peonies and gold leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/royal-ring-ceremony__sprig__8928303.png",
+  "coverage": 0.267,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-ring-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8209847,
+  "prompt": "Wide photograph of a royal palace durbar hall decorated for a ring ceremony with burgundy velvet, gold thrones and chandeliers, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/royal-ring-ceremony__venue__8209847.png"
+ },
+ "elegant-ring-ceremony/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1105252,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two interlocked gold rings inside a small floral arch, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__crest__1105252.png",
+  "coverage": 0.231,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "elegant-ring-ceremony/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5361520,
+  "prompt": "Lush spray of fresh champagne roses, ivory peonies and pampas grass spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__corner-top__5361520.png",
+  "coverage": 0.287
+ },
+ "elegant-ring-ceremony/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9271470,
+  "prompt": "Low cluster of fresh champagne roses, ivory peonies and pampas grass growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__corner-bottom__9271470.png",
+  "coverage": 0.262
+ },
+ "elegant-ring-ceremony/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5592484,
+  "prompt": "A small horizontal sprig of champagne roses, ivory peonies and pampas grass, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__sprig__5592484.png",
+  "coverage": 0.302,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "elegant-ring-ceremony/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4474280,
+  "prompt": "Wide photograph of an elegant ivory and champagne floral arch over a ring ceremony platform with candles, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__venue__4474280.png"
+ },
+ "golden-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5190455,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a gold engagement ring at the centre of an ornate gold mandala medallion, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/golden-engagement__crest__5190455.png",
+  "coverage": 0.297,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2393935,
+  "prompt": "Low cluster of fresh gold roses, marigolds and gilded leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/golden-engagement__corner-bottom__2393935.png",
+  "coverage": 0.186
+ },
+ "golden-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8547431,
+  "prompt": "A small horizontal sprig of gold roses, marigolds and gilded leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/golden-engagement__sprig__8547431.png",
+  "coverage": 0.164,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3992175,
+  "prompt": "Wide photograph of a grand gold-themed engagement hall with a golden mandala backdrop and warm lights, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/golden-engagement__venue__3992175.png"
+ },
+ "golden-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1372694,
+  "prompt": "Lush spray of fresh gold roses, marigolds and gilded leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/golden-engagement__corner-top__1372694.png",
+  "coverage": 0.4
+ },
+ "rose-gold-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2603556,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a rose gold heart-shaped engagement ring in an open blush box, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__crest__2603556.png",
+  "coverage": 0.425,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5909872,
+  "prompt": "Lush spray of fresh blush roses, rose gold leaves and white spray roses spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__corner-top__5909872.png",
+  "coverage": 0.365
+ },
+ "rose-gold-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4635694,
+  "prompt": "Low cluster of fresh blush roses, rose gold leaves and white spray roses growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__corner-bottom__4635694.png",
+  "coverage": 0.194
+ },
+ "rose-gold-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5123492,
+  "prompt": "A small horizontal sprig of blush roses, rose gold leaves and white spray roses, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__sprig__5123492.png",
+  "coverage": 0.142,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "rose-gold-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5972584,
+  "prompt": "Wide photograph of a rose gold and blush engagement stage with a heart-shaped floral arch and fairy lights, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__venue__5972584.png"
+ },
+ "emerald-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4158052,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an emerald engagement ring in an open green velvet ring box, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/emerald-engagement__crest__4158052.png",
+  "coverage": 0.389,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3456560,
+  "prompt": "Lush spray of fresh white roses, emerald monstera and lush green leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/emerald-engagement__corner-top__3456560.png",
+  "coverage": 0.269
+ },
+ "emerald-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3886894,
+  "prompt": "Low cluster of fresh white roses, emerald monstera and lush green leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/emerald-engagement__corner-bottom__3886894.png",
+  "coverage": 0.241
+ },
+ "emerald-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9195428,
+  "prompt": "A small horizontal sprig of white roses, emerald monstera and lush green leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/emerald-engagement__sprig__9195428.png",
+  "coverage": 0.264,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8881384,
+  "prompt": "Wide photograph of a lush garden engagement venue with an emerald green floral wall and gold accents, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/emerald-engagement__venue__8881384.png"
+ },
+ "sapphire-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5014368,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a sapphire and diamond engagement ring in an open navy velvet box, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sapphire-engagement__crest__5014368.png",
+  "coverage": 0.399,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5053228,
+  "prompt": "Lush spray of fresh white roses, blue delphinium and silver leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sapphire-engagement__corner-top__5053228.png",
+  "coverage": 0.388
+ },
+ "sapphire-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4334458,
+  "prompt": "Low cluster of fresh white roses, blue delphinium and silver leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sapphire-engagement__corner-bottom__4334458.png",
+  "coverage": 0.206
+ },
+ "sapphire-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6282200,
+  "prompt": "A small horizontal sprig of white roses, blue delphinium and silver leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sapphire-engagement__sprig__6282200.png",
+  "coverage": 0.173,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7469612,
+  "prompt": "Wide photograph of a sapphire blue and gold engagement reception hall with crystal chandeliers, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/sapphire-engagement__venue__7469612.png"
+ },
+ "pearl-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9326520,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a pearl engagement ring with a strand of pearls and a small white dove figurine, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__crest__9326520.png",
+  "coverage": 0.143,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4970804,
+  "prompt": "Lush spray of fresh white roses, pearl strands and soft ivory peonies spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__corner-top__4970804.png",
+  "coverage": 0.203
+ },
+ "pearl-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7527474,
+  "prompt": "Low cluster of fresh white roses, pearl strands and soft ivory peonies growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__corner-bottom__7527474.png",
+  "coverage": 0.342
+ },
+ "pearl-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7584960,
+  "prompt": "A small horizontal sprig of white roses, pearl strands and soft ivory peonies, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__sprig__7584960.png",
+  "coverage": 0.285,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6355412,
+  "prompt": "Wide photograph of a quiet pearl white engagement setup with ivory drapes, white flowers and candles, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__venue__6355412.png"
+ },
+ "floral-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2936032,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a diamond ring resting inside a dusty rose bloom, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__crest__2936032.png",
+  "coverage": 0.297,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2545580,
+  "prompt": "Lush spray of fresh dusty rose garden roses, burgundy dahlias and green leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__corner-top__2545580.png",
+  "coverage": 0.349
+ },
+ "floral-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6339898,
+  "prompt": "Low cluster of fresh dusty rose garden roses, burgundy dahlias and green leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__corner-bottom__6339898.png",
+  "coverage": 0.305
+ },
+ "floral-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2447960,
+  "prompt": "A small horizontal sprig of dusty rose garden roses, burgundy dahlias and green leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__sprig__2447960.png",
+  "coverage": 0.28,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1375212,
+  "prompt": "Wide photograph of a floral engagement stage with a dusty rose and burgundy rose wall, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__venue__1375212.png"
+ },
+ "garden-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3810599,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two rings tied with a sage ribbon on a small bunch of white blossoms, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/garden-engagement__crest__3810599.png",
+  "coverage": 0.162,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2377015,
+  "prompt": "Lush spray of fresh white blossoms, sage eucalyptus and small white roses spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/garden-engagement__corner-top__2377015.png",
+  "coverage": 0.248
+ },
+ "garden-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3809407,
+  "prompt": "Low cluster of fresh white blossoms, sage eucalyptus and small white roses growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/garden-engagement__corner-bottom__3809407.png",
+  "coverage": 0.157
+ },
+ "garden-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2156695,
+  "prompt": "A small horizontal sprig of white blossoms, sage eucalyptus and small white roses, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/garden-engagement__sprig__2156695.png",
+  "coverage": 0.123,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6926911,
+  "prompt": "Wide photograph of an open-air garden engagement lawn with a sage and ivory floral arch and wooden chairs, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/garden-engagement__venue__6926911.png"
+ },
+ "luxury-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2489867,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a solitaire diamond ring beneath a small crystal chandelier pendant, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/luxury-engagement__crest__2489867.png",
+  "coverage": 0.156,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1835131,
+  "prompt": "Lush spray of fresh plum orchids, champagne roses and white orchids spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/luxury-engagement__corner-top__1835131.png",
+  "coverage": 0.251
+ },
+ "luxury-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2462115,
+  "prompt": "Low cluster of fresh plum orchids, champagne roses and white orchids growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/luxury-engagement__corner-bottom__2462115.png",
+  "coverage": 0.242
+ },
+ "luxury-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4349971,
+  "prompt": "A small horizontal sprig of plum orchids, champagne roses and white orchids, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/luxury-engagement__sprig__4349971.png",
+  "coverage": 0.218,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3095019,
+  "prompt": "Wide photograph of a luxury hotel ballroom engagement with a huge crystal chandelier and plum and champagne decor, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/luxury-engagement__venue__3095019.png"
+ },
+ "minimal-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1234611,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two simple interlocked silver rings, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/minimal-engagement__crest__1234611.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "minimal-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9720947,
+  "prompt": "Lush spray of fresh a single white calla lily with a few green leaves spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/minimal-engagement__corner-top__9720947.png",
+  "coverage": 0.217
+ },
+ "minimal-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3326795,
+  "prompt": "Low cluster of fresh a single white calla lily with a few green leaves growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/minimal-engagement__corner-bottom__3326795.png",
+  "coverage": 0.09
+ },
+ "minimal-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8846859,
+  "prompt": "A small horizontal sprig of a single white calla lily with a few green leaves, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/minimal-engagement__sprig__8846859.png",
+  "coverage": 0.104,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "minimal-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1302179,
+  "prompt": "Wide photograph of a minimal modern engagement setup with white flowers, clean white drapes and soft daylight, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/minimal-engagement__venue__1302179.png"
+ },
+ "contemporary-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2207745,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two stacked gold rings on a small navy and ivory geometric stand, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/contemporary-engagement__crest__2207745.png",
+  "coverage": 0.213,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "contemporary-engagement/corner-top.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4261569,
+  "prompt": "Lush spray of fresh white orchids, navy blue thistle and eucalyptus spreading from the top-left corner along the top edge and down the left edge, empty space in the bottom right, no ribbons, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/contemporary-engagement__corner-top__4261569.png",
+  "coverage": 0.217
+ },
+ "contemporary-engagement/corner-bottom.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4031053,
+  "prompt": "Low cluster of fresh white orchids, navy blue thistle and eucalyptus growing upward from the bottom-left corner, empty space in the top right, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/contemporary-engagement__corner-bottom__4031053.png",
+  "coverage": 0.122
+ },
+ "contemporary-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9590177,
+  "prompt": "A small horizontal sprig of white orchids, navy blue thistle and eucalyptus, one small bloom with a few leaves, curving gently, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/contemporary-engagement__sprig__9590177.png",
+  "coverage": 0.146,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "contemporary-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9488421,
+  "prompt": "Wide photograph of a contemporary engagement lounge in navy and ivory with geometric gold frames and white flowers, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/contemporary-engagement__venue__9488421.png"
+ },
+ "romantic-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7909445,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a heart-shaped diamond ring with two small glowing hearts, front view, centred, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/romantic-engagement__crest__7909445.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "blush-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8133956,
+  "prompt": "An elegant sweeping corner spray of fresh blush pink garden roses, soft peonies, white spray roses and eucalyptus, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__bouquet__8133956.png",
+  "coverage": 0.327,
+  "edgeTouch": 0.008,
+  "free": true,
+  "style": "corners"
+ },
+ "blush-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9368951,
+  "prompt": "A low wide compact floral arrangement of fresh blush pink garden roses, soft peonies, white spray roses and eucalyptus, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/blush-engagement__cluster__9368951.png",
+  "coverage": 0.434,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "classic-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9999045,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, deep plum dahlias and ivory spray roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/classic-engagement__cluster__9999045.png",
+  "coverage": 0.402,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "roka-ceremony/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2215616,
+  "prompt": "A long horizontal floral garland swag of fresh orange marigolds, red roses and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__garland__2215616.png",
+  "coverage": 0.326,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "roka-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7150177,
+  "prompt": "A low wide compact floral arrangement of fresh orange marigolds, red roses and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/roka-ceremony__cluster__7150177.png",
+  "coverage": 0.427,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "modern-engagement/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3590502,
+  "prompt": "A tall slender vertical cascade of fresh lilac sweet peas, white ranunculus and soft eucalyptus hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/modern-engagement__vine__3590502.png",
+  "coverage": 0.225,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "ring-ceremony/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2756017,
+  "prompt": "A round floral wreath of fresh dusty mauve roses, white peonies and fine greenery with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__wreath__2756017.png",
+  "coverage": 0.569,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "ring-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6807876,
+  "prompt": "A low wide compact floral arrangement of fresh dusty mauve roses, white peonies and fine greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-ceremony__cluster__6807876.png",
+  "coverage": 0.411,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "ring-of-promise/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5225030,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, teal eucalyptus and gold-dipped leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__bouquet__5225030.png",
+  "coverage": 0.254,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "ring-of-promise/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2895155,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, teal eucalyptus and gold-dipped leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/ring-of-promise__cluster__2895155.png",
+  "coverage": 0.391,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "rose-gold-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5118081,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, rose gold leaves and white spray roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__cluster__5118081.png",
+  "coverage": 0.424,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8140541,
+  "prompt": "An elegant sweeping corner spray of fresh dusty rose garden roses, burgundy dahlias and green leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__bouquet__8140541.png",
+  "coverage": 0.232,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9609469,
+  "prompt": "A low wide compact floral arrangement of fresh dusty rose garden roses, burgundy dahlias and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/floral-engagement__cluster__9609469.png",
+  "coverage": 0.322,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8609249,
+  "prompt": "Wide photograph of a romantic candlelit engagement terrace with mauve flowers and heart-shaped decor, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/romantic-engagement__venue__8609249.png"
+ },
+ "romantic-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1299883,
+  "prompt": "An elegant sweeping corner spray of fresh mauve roses, lavender and soft pink peonies, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/romantic-engagement__bouquet__1299883.png",
+  "coverage": 0.354,
+  "edgeTouch": 0.01,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2949844,
+  "prompt": "A low wide compact floral arrangement of fresh mauve roses, lavender and soft pink peonies, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/romantic-engagement__cluster__2949844.png",
+  "coverage": 0.364,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3124573,
+  "prompt": "A small horizontal sprig of mauve roses, lavender and soft pink peonies, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/romantic-engagement__sprig__3124573.png",
+  "coverage": 0.225,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "sunset-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7688192,
+  "prompt": "Wide photograph of a seaside engagement deck at sunset with terracotta and cream decor, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/sunset-engagement__venue__7688192.png"
+ },
+ "sunset-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1051281,
+  "prompt": "An elegant sweeping corner spray of fresh terracotta roses, peach ranunculus and dried pampas, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sunset-engagement__bouquet__1051281.png",
+  "coverage": 0.282,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8077224,
+  "prompt": "A low wide compact floral arrangement of fresh terracotta roses, peach ranunculus and dried pampas, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sunset-engagement__cluster__8077224.png",
+  "coverage": 0.36,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2231980,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two rings in front of a small low setting sun ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sunset-engagement__crest__2231980.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "sunset-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7020732,
+  "prompt": "A small horizontal sprig of terracotta roses, peach ranunculus and dried pampas, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sunset-engagement__sprig__7020732.png",
+  "coverage": 0.174,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6961203,
+  "prompt": "Wide photograph of an outdoor night engagement garden under string lights and a starry sky, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/starry-engagement__venue__6961203.png"
+ },
+ "starry-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2984149,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, baby breath and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/starry-engagement__bouquet__2984149.png",
+  "coverage": 0.322,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1655050,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, baby breath and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/starry-engagement__cluster__1655050.png",
+  "coverage": 0.449,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6943139,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a diamond ring with small gold stars around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/starry-engagement__crest__6943139.png",
+  "coverage": 0.081,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "starry-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7957371,
+  "prompt": "A small horizontal sprig of white roses, baby breath and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/starry-engagement__sprig__7957371.png",
+  "coverage": 0.177,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1421791,
+  "prompt": "Wide photograph of a moonlit outdoor engagement garden with midnight blue drapes, candles and a crescent moon, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/moonlight-engagement__venue__1421791.png"
+ },
+ "moonlight-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1812384,
+  "prompt": "An elegant sweeping corner spray of fresh white moonflowers, silver leaves and white roses, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/moonlight-engagement__bouquet__1812384.png",
+  "coverage": 0.318,
+  "edgeTouch": 0.014,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1320110,
+  "prompt": "A low wide compact floral arrangement of fresh white moonflowers, silver leaves and white roses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/moonlight-engagement__cluster__1320110.png",
+  "coverage": 0.368,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1728775,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a silver crescent moon holding a diamond engagement ring, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/moonlight-engagement__crest__1728775.png",
+  "coverage": 0.077,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "moonlight-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5254071,
+  "prompt": "A small horizontal sprig of white moonflowers, silver leaves and white roses, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/moonlight-engagement__sprig__5254071.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4634906,
+  "prompt": "Wide photograph of a celestial engagement night reception under a starry ceiling in midnight blue and gold, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/celestial-engagement__venue__4634906.png"
+ },
+ "celestial-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7138844,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, gold stars and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/celestial-engagement__bouquet__7138844.png",
+  "coverage": 0.33,
+  "edgeTouch": 0.015,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7090031,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, gold stars and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/celestial-engagement__cluster__7090031.png",
+  "coverage": 0.415,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6016978,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a gold crescent and star emblem with two raised champagne coupes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/celestial-engagement__crest__6016978.png",
+  "coverage": 0.169,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "celestial-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5377626,
+  "prompt": "A small horizontal sprig of white roses, gold stars and silver leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/celestial-engagement__sprig__5377626.png",
+  "coverage": 0.158,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3925764,
+  "prompt": "Wide photograph of a stylish engagement cocktail lounge with a bar, navy and gold decor and fairy lights, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/cocktail-engagement__venue__3925764.png"
+ },
+ "cocktail-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9377030,
+  "prompt": "An elegant sweeping corner spray of fresh white orchids, navy thistle and gold leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cocktail-engagement__bouquet__9377030.png",
+  "coverage": 0.263,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2712949,
+  "prompt": "A low wide compact floral arrangement of fresh white orchids, navy thistle and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cocktail-engagement__cluster__2712949.png",
+  "coverage": 0.431,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6282248,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a champagne coupe with sparkles and an engagement ring, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cocktail-engagement__crest__6282248.png",
+  "coverage": 0.094,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cocktail-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6063376,
+  "prompt": "A small horizontal sprig of white orchids, navy thistle and gold leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cocktail-engagement__sprig__6063376.png",
+  "coverage": 0.103,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "engagement-dinner/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7491736,
+  "prompt": "Wide photograph of an elegant engagement dinner table with candles, plum and champagne flowers and fine china, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/engagement-dinner__venue__7491736.png"
+ },
+ "engagement-dinner/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1543354,
+  "prompt": "An elegant sweeping corner spray of fresh plum roses, champagne roses and dark leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/engagement-dinner__bouquet__1543354.png",
+  "coverage": 0.307,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "engagement-dinner/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6003313,
+  "prompt": "A low wide compact floral arrangement of fresh plum roses, champagne roses and dark leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/engagement-dinner__cluster__6003313.png",
+  "coverage": 0.477,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "engagement-dinner/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7588596,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two champagne coupes clinking beside a lit candle and an engagement ring, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/engagement-dinner__crest__7588596.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "engagement-dinner/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6447028,
+  "prompt": "A small horizontal sprig of plum roses, champagne roses and dark leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/engagement-dinner__sprig__6447028.png",
+  "coverage": 0.139,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "tilak-ceremony/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5726048,
+  "prompt": "A long horizontal floral garland swag of fresh marigolds, red roses and betel leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__garland__5726048.png",
+  "coverage": 0.3,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "garland"
+ },
+ "tilak-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6329985,
+  "prompt": "A low wide compact floral arrangement of fresh marigolds, red roses and betel leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/tilak-ceremony__cluster__6329985.png",
+  "coverage": 0.482,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4400581,
+  "prompt": "Wide photograph of a traditional Indian engagement mandap with brass lamps, marigold garlands and a decorated seat, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/traditional-engagement__venue__4400581.png"
+ },
+ "traditional-engagement/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7049865,
+  "prompt": "A long horizontal floral garland swag of fresh marigolds, jasmine strings and mango leaves draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/traditional-engagement__garland__7049865.png",
+  "coverage": 0.329,
+  "edgeTouch": 0.004,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2814160,
+  "prompt": "A low wide compact floral arrangement of fresh marigolds, jasmine strings and mango leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/traditional-engagement__cluster__2814160.png",
+  "coverage": 0.426,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4255777,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a brass kalash with mango leaves and coconut above a row of small lit diyas, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/traditional-engagement__crest__4255777.png",
+  "coverage": 0.16,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "traditional-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2535041,
+  "prompt": "A small horizontal sprig of marigolds, jasmine strings and mango leaves, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/traditional-engagement__sprig__2535041.png",
+  "coverage": 0.135,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7324612,
+  "prompt": "Wide photograph of a cultural Indian engagement hall with red and gold drapes, a gold mandala backdrop and lamps, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/cultural-engagement__venue__7324612.png"
+ },
+ "cultural-engagement/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5412004,
+  "prompt": "A long horizontal floral garland swag of fresh marigolds, deep red roses and jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cultural-engagement__garland__5412004.png",
+  "coverage": 0.28,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1423413,
+  "prompt": "A low wide compact floral arrangement of fresh marigolds, deep red roses and jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cultural-engagement__cluster__1423413.png",
+  "coverage": 0.424,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4104392,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an ornate gold mandala medallion with two rings at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cultural-engagement__crest__4104392.png",
+  "coverage": 0.111,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8112976,
+  "prompt": "A small horizontal sprig of marigolds, deep red roses and jasmine, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/cultural-engagement__sprig__8112976.png",
+  "coverage": 0.081,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "heritage-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9674915,
+  "prompt": "Wide photograph of a heritage haveli courtyard engagement setup in deep green and gold with lamps, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/heritage-engagement__venue__9674915.png"
+ },
+ "heritage-engagement/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4943787,
+  "prompt": "A long horizontal floral garland swag of fresh white jasmine, deep green leaves and gold marigolds draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/heritage-engagement__garland__4943787.png",
+  "coverage": 0.349,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "garland"
+ },
+ "heritage-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4120442,
+  "prompt": "A low wide compact floral arrangement of fresh white jasmine, deep green leaves and gold marigolds, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/heritage-engagement__cluster__4120442.png",
+  "coverage": 0.384,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "heritage-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9607347,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an ornate gold medallion shield with an engagement ring at its centre, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/heritage-engagement__crest__9607347.png",
+  "coverage": 0.139,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "heritage-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8219595,
+  "prompt": "A small horizontal sprig of white jasmine, deep green leaves and gold marigolds, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/heritage-engagement__sprig__8219595.png",
+  "coverage": 0.125,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-engagement/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8556173,
+  "prompt": "A long horizontal floral garland swag of fresh terracotta roses, autumn leaves and wheat draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/family-engagement__garland__8556173.png",
+  "coverage": 0.249,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8156615,
+  "prompt": "A low wide compact floral arrangement of fresh terracotta roses, autumn leaves and wheat, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/family-engagement__cluster__8156615.png",
+  "coverage": 0.344,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3105018,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a small tree with many branches and two rings hanging from it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/family-engagement__crest__3105018.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3607154,
+  "prompt": "A small horizontal sprig of terracotta roses, autumn leaves and wheat, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/family-engagement__sprig__3607154.png",
+  "coverage": 0.156,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "intimate-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1959793,
+  "prompt": "Wide photograph of an empty cosy living room decorated for an intimate family engagement with blush flowers and candles, no people, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/intimate-engagement__venue__1959793.png"
+ },
+ "intimate-engagement/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2333715,
+  "prompt": "A long horizontal floral garland swag of fresh blush roses, white sweet peas and soft greenery draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intimate-engagement__garland__2333715.png",
+  "coverage": 0.32,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "intimate-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8206642,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, white sweet peas and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intimate-engagement__cluster__8206642.png",
+  "coverage": 0.389,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "intimate-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6571067,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a small heart-shaped ring box tied with a ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intimate-engagement__crest__6571067.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "intimate-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9600963,
+  "prompt": "A small horizontal sprig of blush roses, white sweet peas and soft greenery, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intimate-engagement__sprig__9600963.png",
+  "coverage": 0.135,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "elegant-ring-ceremony/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8820438,
+  "prompt": "A round floral wreath of fresh champagne roses, ivory peonies and pampas grass with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__wreath__8820438.png",
+  "coverage": 0.522,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "elegant-ring-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9081089,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, ivory peonies and pampas grass, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/elegant-ring-ceremony__cluster__9081089.png",
+  "coverage": 0.437,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-engagement/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2654346,
+  "prompt": "A round floral wreath of fresh white roses, pearl strands and soft ivory peonies with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__wreath__2654346.png",
+  "coverage": 0.596,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4660997,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, pearl strands and soft ivory peonies, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/pearl-engagement__cluster__4660997.png",
+  "coverage": 0.501,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vintage-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3652822,
+  "prompt": "Wide photograph of a vintage engagement setup with antique furniture, old books, sepia flowers and candles, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/vintage-engagement__venue__3652822.png"
+ },
+ "vintage-engagement/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7057936,
+  "prompt": "A round floral wreath of fresh sepia toned roses, dried flowers and lace with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/vintage-engagement__wreath__7057936.png",
+  "coverage": 0.515,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vintage-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2616163,
+  "prompt": "A low wide compact floral arrangement of fresh sepia toned roses, dried flowers and lace, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/vintage-engagement__cluster__2616163.png",
+  "coverage": 0.408,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vintage-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2870118,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a vintage feather quill crossed with an antique gold ring, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/vintage-engagement__crest__2870118.png",
+  "coverage": 0.09,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vintage-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5720550,
+  "prompt": "A small horizontal sprig of sepia toned roses, dried flowers and lace, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/vintage-engagement__sprig__5720550.png",
+  "coverage": 0.092,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "botanical-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7807671,
+  "prompt": "Wide photograph of a botanical greenhouse engagement venue with sage greenery and white blossoms, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/botanical-engagement__venue__7807671.png"
+ },
+ "botanical-engagement/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3766427,
+  "prompt": "A round floral wreath of fresh white blossoms, sage ferns and small white flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/botanical-engagement__wreath__3766427.png",
+  "coverage": 0.548,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "botanical-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8803366,
+  "prompt": "A low wide compact floral arrangement of fresh white blossoms, sage ferns and small white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/botanical-engagement__cluster__8803366.png",
+  "coverage": 0.307,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "botanical-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3195695,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two interlocked rings over a fresh blossom branch, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/botanical-engagement__crest__3195695.png",
+  "coverage": 0.117,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "botanical-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7384687,
+  "prompt": "A small horizontal sprig of white blossoms, sage ferns and small white flowers, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/botanical-engagement__sprig__7384687.png",
+  "coverage": 0.166,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "intercultural-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7639880,
+  "prompt": "Wide photograph of an intercultural engagement venue blending lanterns, white roses and marigold garlands, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/intercultural-engagement__venue__7639880.png"
+ },
+ "intercultural-engagement/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5731254,
+  "prompt": "A round floral wreath of fresh white roses, marigolds and olive branches with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intercultural-engagement__wreath__5731254.png",
+  "coverage": 0.498,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "intercultural-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2470177,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, marigolds and olive branches, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intercultural-engagement__cluster__2470177.png",
+  "coverage": 0.384,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "intercultural-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4374020,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two interlocking rings beneath a small hanging lantern, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intercultural-engagement__crest__4374020.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "intercultural-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5988100,
+  "prompt": "A small horizontal sprig of white roses, marigolds and olive branches, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/intercultural-engagement__sprig__5988100.png",
+  "coverage": 0.139,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3888164,
+  "prompt": "Wide photograph of an international engagement reception hall in emerald and champagne with a decorative border wall, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/international-engagement__venue__3888164.png"
+ },
+ "international-engagement/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9024858,
+  "prompt": "A round floral wreath of fresh white roses, emerald leaves and champagne peonies with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/international-engagement__wreath__9024858.png",
+  "coverage": 0.594,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1232533,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, emerald leaves and champagne peonies, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/international-engagement__cluster__1232533.png",
+  "coverage": 0.486,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2635240,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an ornate globe in a gold frame with two rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/international-engagement__crest__2635240.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "international-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2313200,
+  "prompt": "A small horizontal sprig of white roses, emerald leaves and champagne peonies, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/international-engagement__sprig__2313200.png",
+  "coverage": 0.121,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "minimal-engagement/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6830864,
+  "prompt": "A tall slender vertical cascade of fresh a single white calla lily with a few green leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/minimal-engagement__vine__6830864.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "contemporary-engagement/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8305326,
+  "prompt": "A tall slender vertical cascade of fresh white orchids, navy blue thistle and eucalyptus hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/contemporary-engagement__vine__8305326.png",
+  "coverage": 0.18,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-engagement/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8185796,
+  "prompt": "A tall slender vertical cascade of fresh white blossoms, sage eucalyptus and small white roses hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/garden-engagement__vine__8185796.png",
+  "coverage": 0.211,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "beach-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6205803,
+  "prompt": "Wide photograph of a beach engagement setup on white sand with a powder blue and white floral arch by the sea, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/beach-engagement__venue__6205803.png"
+ },
+ "beach-engagement/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3244024,
+  "prompt": "A tall slender vertical cascade of fresh white frangipani, sea grass and powder blue hydrangeas hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/beach-engagement__vine__3244024.png",
+  "coverage": 0.2,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "beach-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9616715,
+  "prompt": "Small premium ornament for the top of an engagement invitation: two silver rings on a seashell with a starfish, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/beach-engagement__crest__9616715.png",
+  "coverage": 0.132,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "beach-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1232211,
+  "prompt": "A small horizontal sprig of white frangipani, sea grass and powder blue hydrangeas, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/beach-engagement__sprig__1232211.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "destination-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4751208,
+  "prompt": "Wide photograph of a destination engagement terrace with white classic columns overlooking the sea, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/destination-engagement__venue__4751208.png"
+ },
+ "destination-engagement/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4009009,
+  "prompt": "A tall slender vertical cascade of fresh white roses, olive branches and silver eucalyptus hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/destination-engagement__vine__4009009.png",
+  "coverage": 0.256,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "vines"
+ },
+ "destination-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9027876,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an antique globe with a diamond engagement ring resting beside it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/destination-engagement__crest__9027876.png",
+  "coverage": 0.104,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "destination-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5065252,
+  "prompt": "A small horizontal sprig of white roses, olive branches and silver eucalyptus, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/destination-engagement__sprig__5065252.png",
+  "coverage": 0.167,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "royal-ring-ceremony/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3025510,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy peonies and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/royal-ring-ceremony__cluster__3025510.png",
+  "coverage": 0.491,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5830590,
+  "prompt": "A low wide compact floral arrangement of fresh gold roses, marigolds and gilded leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/golden-engagement__cluster__5830590.png",
+  "coverage": 0.474,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3352957,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, blue delphinium and silver leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/sapphire-engagement__cluster__3352957.png",
+  "coverage": 0.321,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3109185,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, emerald monstera and lush green leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/emerald-engagement__cluster__3109185.png",
+  "coverage": 0.463,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3730018,
+  "prompt": "A low wide compact floral arrangement of fresh plum orchids, champagne roses and white orchids, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/luxury-engagement__cluster__3730018.png",
+  "coverage": 0.395,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "palace-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6624826,
+  "prompt": "Wide photograph of a royal palace courtyard engagement in purple and gold with ornate gates and chandeliers, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/palace-engagement__venue__6624826.png"
+ },
+ "palace-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7250703,
+  "prompt": "A low wide compact floral arrangement of fresh purple orchids, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/palace-engagement__cluster__7250703.png",
+  "coverage": 0.426,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "palace-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7099570,
+  "prompt": "Small premium ornament for the top of an engagement invitation: an ornate gold palace gate with a fleur-de-lis and an engagement ring, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/palace-engagement__crest__7099570.png",
+  "coverage": 0.182,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "palace-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6460218,
+  "prompt": "A small horizontal sprig of purple orchids, champagne roses and gold leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/palace-engagement__sprig__6460218.png",
+  "coverage": 0.119,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-engagement-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3530237,
+  "prompt": "Wide photograph of a grand engagement celebration hall with a black and gold stage, gold rays and chandeliers, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/grand-engagement-celebration__venue__3530237.png"
+ },
+ "grand-engagement-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8873000,
+  "prompt": "A low wide compact floral arrangement of fresh gold roses, white orchids and gilded leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/grand-engagement-celebration__cluster__8873000.png",
+  "coverage": 0.329,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-engagement-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1359433,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a sparkling diamond ring with a gold sunburst behind it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/grand-engagement-celebration__crest__1359433.png",
+  "coverage": 0.149,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "grand-engagement-celebration/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4626969,
+  "prompt": "A small horizontal sprig of gold roses, white orchids and gilded leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/grand-engagement-celebration__sprig__4626969.png",
+  "coverage": 0.148,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4883783,
+  "prompt": "Wide photograph of an intimate candlelight engagement dinner hall with rows of glowing candles and burgundy roses, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/candlelight-engagement__venue__4883783.png"
+ },
+ "candlelight-engagement/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8377334,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy peonies and dark leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/candlelight-engagement__cluster__8377334.png",
+  "coverage": 0.487,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-engagement/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5511391,
+  "prompt": "Small premium ornament for the top of an engagement invitation: a diamond ring in front of three lit pillar candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/candlelight-engagement__crest__5511391.png",
+  "coverage": 0.247,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-engagement/sprig.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6982367,
+  "prompt": "A small horizontal sprig of deep red roses, burgundy peonies and dark leaves, with gold-dipped leaves and fine gold accents, one small bloom with a few leaves, curving gently, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/candlelight-engagement__sprig__6982367.png",
+  "coverage": 0.218,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "rose-gold-engagement/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8299300,
+  "prompt": "An elegant sweeping corner spray of fresh blush roses, rose gold leaves and white spray roses, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ENG/rose-gold-engagement__bouquet__8299300.png",
+  "coverage": 0.305,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "corners"
+ },
+ "family-engagement/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4928432,
+  "prompt": "Wide photograph of an empty home garden set up for a family engagement with terracotta flowers, long decorated tables and chairs, no people, engagement ceremony venue decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ENG/family-engagement__venue__4928432.png"
+ }
+}

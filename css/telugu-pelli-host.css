@@ -1,0 +1,108 @@
+/* Telugu Pelli host page: same layers as the card (pillars, mamidi thoranam, marigold/jasmine, bells, gold Ganesha, temple lake). */
+.site-host--regional .site-hero{background:radial-gradient(ellipse at 50% 30%,#FFFDF8 0%,#F8F0E2 60%,#EFE3CD 100%)!important;overflow:hidden}
+.site-host--regional .site-hero__inner{padding:clamp(118px,13vw,190px) clamp(58px,10vw,150px) clamp(56px,7vw,96px)}
+.site-host--regional .tp-host-pillar{top:clamp(84px,10vw,150px);bottom:0;width:clamp(46px,6.6vw,104px);z-index:1;background-repeat:no-repeat,no-repeat,repeat-y;background-position:center top,center bottom,center top;background-size:100% auto;filter:drop-shadow(2px 4px 6px rgba(92,62,24,.3))}
+.site-host--regional .tp-host-pillar--left{left:clamp(-6px,-.2vw,0px)}
+.site-host--regional .tp-host-pillar--right{right:clamp(-6px,-.2vw,0px);transform:scaleX(-1)}
+.site-host--regional .tp-host-toran{top:0;left:50%;transform:translateX(-50%);width:min(74%,980px);height:auto;z-index:3}
+.site-host--regional .tp-host-canopy{top:0;width:clamp(96px,15vw,240px);height:auto;z-index:5}
+.site-host--regional .tp-host-canopy--left{left:-1.5%}
+.site-host--regional .tp-host-canopy--right{right:-1.5%;transform:scaleX(-1)}
+.site-host--regional .tp-host-jasmine{top:clamp(150px,20vw,330px);width:clamp(26px,3.4vw,54px);height:auto;z-index:4}
+.site-host--regional .tp-host-jasmine--left{left:clamp(10px,1.8vw,30px)}
+.site-host--regional .tp-host-jasmine--right{right:clamp(10px,1.8vw,30px);transform:scaleX(-1)}
+.site-host--regional .tp-host-bells{top:clamp(34px,4.4vw,66px);width:clamp(28px,3.6vw,54px);height:auto;z-index:6}
+.site-host--regional .tp-host-bells--left{left:clamp(92px,14.5vw,232px)}
+.site-host--regional .tp-host-bells--right{right:clamp(92px,14.5vw,232px)}
+.site-host--regional .site-hero__apex-img{width:clamp(64px,7.5vw,104px);height:auto;filter:drop-shadow(0 6px 14px rgba(160,116,46,.35))}
+.site-host--regional .tp-host-greeting{font-family:'Noto Serif Telugu',serif;font-size:clamp(1.15rem,2.1vw,1.55rem);font-weight:600;color:#7A1C28;letter-spacing:.04em;margin:0 0 10px}
+.site-host--regional .tp-host-greeting{display:flex;justify-content:center;align-items:baseline;gap:clamp(16px,4vw,56px);white-space:nowrap}
+.site-host--regional .tp-host-greeting span{font-size:clamp(.95rem,1.8vw,1.3rem)}
+.site-host--regional .tp-host-greeting span:nth-child(2){font-size:clamp(1.15rem,2.1vw,1.55rem)}
+.site-host--regional .site-hero__additional-title{font-size:clamp(.72rem,1.3vw,.95rem);letter-spacing:.24em;color:#8A6A2F;white-space:pre-line}
+.site-host--regional .site-hero__additional-subtitle{white-space:pre-line}
+.site-host--regional .site-hero__person-name{font-family:'Great Vibes','Playfair Display',cursive;font-weight:400;font-size:clamp(3rem,7.4vw,6.2rem);line-height:1.08;letter-spacing:0;text-shadow:none}
+.site-host--regional .site-hero__person{display:flex;flex-direction:column;grid-row:1}
+.site-host--regional .site-hero__person--left{grid-column:1;align-items:flex-end;text-align:right}
+.site-host--regional .site-hero__person--right{grid-column:3;align-items:flex-start;text-align:left}
+.site-host--regional .site-hero__couple-sep{grid-column:2;grid-row:1;align-self:start;padding-top:clamp(.6rem,1.6vw,1.4rem)}
+.site-host--regional .tp-host-name-te{font-family:'Noto Serif Telugu',serif;font-size:clamp(.95rem,1.7vw,1.25rem);font-weight:500;color:#8A6A2F;margin:0 0 4px}
+.site-host--regional .site-hero__couple-sep{display:flex;align-items:center;justify-content:center;gap:clamp(4px,1vw,12px)}
+.site-host--regional .site-hero__couple-sep .amp{font-family:'Great Vibes',cursive;font-weight:400;color:#7A1C28;text-shadow:none;font-size:clamp(2.2rem,4.6vw,3.6rem)}
+.site-host--regional .tp-host-sprig{width:clamp(28px,3.6vw,54px);height:auto;transform:rotate(48deg)}
+.site-host--regional .tp-host-sprig--left{transform:scaleX(-1) rotate(48deg)}
+.site-host--regional .tp-host-tagline{font-family:'Cinzel',Georgia,serif;font-size:clamp(.62rem,1.15vw,.86rem);letter-spacing:.26em;text-transform:uppercase;color:#8A6A2F;margin:18px 0 14px}
+.site-host--regional .tp-host-pk{display:inline-flex;gap:.3em;margin:0 .5em;vertical-align:.05em}
+.site-host--regional .tp-host-pk i{display:block;width:.66em;height:.66em;border-radius:50%}
+.site-host--regional .tp-host-pk__pasupu{background:radial-gradient(circle at 35% 35%,#F7D25A,#D99A0B)}
+.site-host--regional .tp-host-pk__kumkuma{background:radial-gradient(circle at 35% 35%,#E2475E,#A30F2B)}
+.site-host--regional .site-blessings-ornament .tp-host-pk{font-size:1.3rem}
+.site-host--regional .tp-host-date{position:relative;z-index:0;margin:4px auto 22px;padding:8px 0;font-family:'Cinzel',Georgia,serif;color:#3D2E1E;text-transform:uppercase}
+.site-host--regional .tp-host-date .tp-muggu{position:absolute;left:50%;top:50%;width:clamp(170px,22vw,300px);height:auto;transform:translate(-50%,-50%);opacity:.16;z-index:-1;pointer-events:none}
+.site-host--regional .tp-host-date__weekday{display:flex;align-items:center;justify-content:center;gap:clamp(10px,1.6vw,20px);font-size:clamp(.82rem,1.5vw,1.12rem);letter-spacing:.24em;font-weight:600}
+.site-host--regional .tp-host-date__rule{width:clamp(40px,8vw,120px);height:1px;background:linear-gradient(90deg,transparent,#B8913F)}
+.site-host--regional .tp-host-date__rule:last-child{background:linear-gradient(90deg,#B8913F,transparent)}
+.site-host--regional .tp-host-date__row{display:flex;align-items:center;justify-content:center;margin:6px 0}
+.site-host--regional .tp-host-date__side{font-size:clamp(1.05rem,2.1vw,1.6rem);letter-spacing:.14em;font-weight:600;padding:0 clamp(14px,2.4vw,30px)}
+.site-host--regional .tp-host-date__day{font-size:clamp(2.6rem,5.2vw,4rem);font-weight:600;color:#7A1C28;line-height:1;padding:0 clamp(14px,2.4vw,30px);border-left:1.5px solid #7A1C28;border-right:1.5px solid #7A1C28}
+.site-host--regional .tp-host-date__time{font-size:clamp(.8rem,1.4vw,1.05rem);letter-spacing:.18em;font-weight:600}
+.site-host--regional .site-title h2::after{content:"";display:block;width:clamp(170px,22vw,290px);height:clamp(12px,1.5vw,18px);margin:12px auto 0;background:var(--tp-divider) center/contain no-repeat}
+.site-host--regional .site-celebrations-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.site-host--regional .site-celebration-card__img{width:clamp(64px,7vw,84px);height:clamp(64px,7vw,84px)}
+.site-landscape--regional{position:relative;width:100%;height:clamp(230px,32vw,470px);overflow:hidden;background:var(--site-b1);pointer-events:none;user-select:none}
+.site-landscape--regional img{position:absolute;pointer-events:none;user-select:none;-webkit-user-drag:none}
+.site-landscape--regional .tp-host-land__lake{left:0;bottom:0;width:100%;height:100%;object-fit:cover;object-position:center 68%;z-index:1;-webkit-mask-image:linear-gradient(to top,#000 0%,#000 55%,transparent 100%);mask-image:linear-gradient(to top,#000 0%,#000 55%,transparent 100%)}
+.site-landscape--regional .tp-host-land__banana{bottom:3%;width:clamp(88px,13vw,210px);height:auto;z-index:2}
+.site-landscape--regional .tp-host-land__banana--left{left:-1.5%}
+.site-landscape--regional .tp-host-land__banana--right{right:-1.5%;transform:scaleX(-1)}
+.site-landscape--regional .tp-host-land__lotus{bottom:-2px;left:14%;width:72%;height:auto;z-index:3}
+.site-landscape--regional .tp-host-land__elephant{bottom:2%;width:clamp(112px,18vw,300px);height:auto;z-index:4}
+.site-landscape--regional .tp-host-land__elephant--left{left:1%}
+.site-landscape--regional .tp-host-land__elephant--right{right:1%;transform:scaleX(-1)}
+@media(max-width:900px){
+  .site-host--regional .site-celebrations-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:620px}
+}
+@media(max-width:640px){
+  .site-host--regional .site-hero__inner{padding:clamp(104px,30vw,130px) 52px 44px}
+  .site-host--regional .tp-host-jasmine{top:clamp(120px,34vw,150px)}
+  .site-host--regional .site-hero__couple{display:flex;flex-direction:column;align-items:center;gap:0}
+  .site-host--regional .site-hero__person{align-items:center;text-align:center}
+  .site-host--regional .site-hero__person-name,.site-host--regional .site-hero__person-parents{text-align:center!important}
+  .site-host--regional .site-hero__couple-sep{padding-top:0;margin:2px 0;align-self:center}
+  .site-host--regional .site-hero__additional-title{letter-spacing:.14em}
+}
+/* Tamil Thirumanam host: its own maroon Kanchipuram-silk look with light gold/ivory text (no marble pillars). */
+body.site-host--regional-tamil-thirumanam{--site-b1:#6E1224;--site-b2:#4E0B19;--site-ink:#FBEFD9;--site-p:#F3D58A;--site-s:#E4B45C;background:#5C0F1F;color:#FBEFD9}
+.site-host--regional-tamil-thirumanam .tp-host-pillar{display:none}
+.site-host--regional-tamil-thirumanam .site-hero{background:radial-gradient(ellipse at 50% 30%,rgba(255,214,140,.16) 0%,transparent 55%),repeating-linear-gradient(115deg,rgba(255,255,255,.025) 0 2px,transparent 2px 7px),linear-gradient(180deg,#7A1428 0%,#5C0F1F 100%)!important}
+.site-host--regional-tamil-thirumanam .site-hero::before{content:"";position:absolute;inset:10px;border:2px solid #D9B45F;border-radius:18px;box-shadow:inset 0 0 0 4px rgba(58,8,18,.9),inset 0 0 0 5.5px rgba(228,180,92,.75);pointer-events:none;z-index:2}
+.site-host--regional-tamil-thirumanam .site-nav{background:rgba(74,10,24,.95);border-bottom-color:rgba(228,180,92,.5)}
+.site-host--regional-tamil-thirumanam .site-nav__brand{color:#F3D58A}
+.site-host--regional-tamil-thirumanam .site-nav__link{color:#FBEFD9}
+.site-host--regional-tamil-thirumanam .site-nav__link:hover{color:#F3D58A;background:rgba(228,180,92,.16)}
+.site-host--regional-tamil-thirumanam .site-nav__burger{color:#F3D58A;border-color:#E4B45C}
+.site-host--regional-tamil-thirumanam .site-hero__person-name{font-family:'Cinzel',Georgia,serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.1rem,5.6vw,4.4rem);color:#F3D58A;text-shadow:0 2px 0 rgba(58,8,18,.6),0 0 22px rgba(228,180,92,.25)}
+.site-host--regional-tamil-thirumanam .site-hero__couple-sep .amp{font-family:'Cinzel',Georgia,serif;font-weight:700;color:#F3D58A}
+.site-host--regional-tamil-thirumanam .tp-host-greeting,.site-host--regional-tamil-thirumanam .tp-host-date__day{color:#F3D58A}
+.site-host--regional-tamil-thirumanam .site-hero__additional-title,.site-host--regional-tamil-thirumanam .tp-host-tagline,.site-host--regional-tamil-thirumanam .tp-host-name-te,.site-host--regional-tamil-thirumanam .site-hero__person-parents span{color:#E4B45C}
+.site-host--regional-tamil-thirumanam .site-hero__additional-subtitle,.site-host--regional-tamil-thirumanam .site-hero__person-parents strong,.site-host--regional-tamil-thirumanam .tp-host-date{color:#FBEFD9}
+.site-host--regional-tamil-thirumanam .tp-host-date__day{display:inline-flex;align-items:center;justify-content:center;width:clamp(76px,9vw,116px);height:clamp(76px,9vw,116px);margin:0 clamp(12px,2vw,24px);padding:0;border:1.5px solid #D9B45F;border-radius:50%;box-shadow:0 0 0 4px rgba(58,8,18,.6),0 0 0 5.5px rgba(228,180,92,.6)}
+.site-host--regional-tamil-thirumanam .tp-host-date__side{padding:0}
+.site-host--regional-tamil-thirumanam .tp-host-date .tp-muggu{opacity:.22}
+.site-host--regional-tamil-thirumanam .tp-host-date .tp-muggu g[stroke]{stroke:#E4B45C}
+.site-host--regional-tamil-thirumanam .tp-host-date .tp-muggu g[fill]:not([fill="none"]){fill:#E4B45C}
+.site-host--regional-tamil-thirumanam .site-section{background:#5C0F1F}
+.site-host--regional-tamil-thirumanam .site-section--alt,.site-host--regional-tamil-thirumanam .site-count-section{background:linear-gradient(180deg,#6E1224 0%,#4E0B19 100%)}
+.site-host--regional-tamil-thirumanam .site-title__eyebrow{color:#E4B45C}
+.site-host--regional-tamil-thirumanam .site-title h2{color:#F3D58A}
+.site-host--regional-tamil-thirumanam .site-title p{color:#FBEFD9}
+.site-host--regional-tamil-thirumanam .site-story,.site-host--regional-tamil-thirumanam .site-celebration-card,.site-host--regional-tamil-thirumanam .site-detail,.site-host--regional-tamil-thirumanam .site-count .cd-unit,.site-host--regional-tamil-thirumanam .site-venue__card,.site-host--regional-tamil-thirumanam .site-blessings-card{background:linear-gradient(145deg,rgba(74,10,24,.9),rgba(45,6,14,.96));border-color:#D9B45F;box-shadow:inset 0 0 0 2px rgba(58,8,18,.9),inset 0 0 0 3.5px rgba(228,180,92,.45),0 8px 22px rgba(0,0,0,.3)}
+.site-host--regional-tamil-thirumanam .site-story p,.site-host--regional-tamil-thirumanam .site-detail strong,.site-host--regional-tamil-thirumanam .site-venue__card p,.site-host--regional-tamil-thirumanam .site-blessings-side p,.site-host--regional-tamil-thirumanam .site-blessings-msg,.site-host--regional-tamil-thirumanam .site-celebration-card__weekday,.site-host--regional-tamil-thirumanam .site-celebration-card__time{color:#FBEFD9}
+.site-host--regional-tamil-thirumanam .site-celebration-card__title,.site-host--regional-tamil-thirumanam .site-celebration-card__date,.site-host--regional-tamil-thirumanam .site-detail small,.site-host--regional-tamil-thirumanam .site-venue__card h3,.site-host--regional-tamil-thirumanam .site-blessings-side strong,.site-host--regional-tamil-thirumanam .site-blessings-subheading,.site-host--regional-tamil-thirumanam .site-count .cd-value{color:#F3D58A}
+.site-host--regional-tamil-thirumanam .site-count .cd-label,.site-host--regional-tamil-thirumanam .site-detail svg{color:#E4B45C}
+.site-host--regional-tamil-thirumanam .site-venue__media{border-radius:50% 50% 18px 18px / 26% 26% 18px 18px;border-color:#D9B45F}
+.site-host--regional-tamil-thirumanam .site-btn--soft,.site-host--regional-tamil-thirumanam .site-venue__media-link{background:#E4B45C;color:#4E0B19;border-color:#F3D58A}
+.site-host--regional-tamil-thirumanam .site-btn--ghost{background:transparent;color:#F3D58A;border-color:#E4B45C}
+.site-landscape--regional{background:var(--site-b1)}
+.site-host--regional-tamil-thirumanam .site-count-section .site-title h2{color:#F3D58A}
+.site-host--regional-tamil-thirumanam .site-count-section .site-title p{color:#FBEFD9}

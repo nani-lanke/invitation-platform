@@ -1,0 +1,47 @@
+{
+ "slug": "kashmir-garden",
+ "name": "Kashmir Garden",
+ "base": "cards/kashmir-garden/",
+ "spec": {
+  "layout": "royal",
+  "frame": "double",
+  "venue": "stack",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/kashmir-garden.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/kashmir-garden.svg",
+  "corners": "inline SVG corner set (double)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Mughal garden pavilion in Srinagar with terraced fountains and chinar trees decorated for a wedding, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6823079,
+   "raw": "..\\work\\raw\\kashmir-garden__venue__6823079_5ew39.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a hand painted Kashmiri papier mache vase with Persian florals, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1765759,
+   "raw": "..\\work\\raw\\kashmir-garden__crest__1765759_57wqj.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of Shalimar Bagh terraced Mughal gardens with fountains and mountains, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7095063,
+   "raw": "..\\work\\raw\\kashmir-garden__footer__7095063_2b3rc.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of chinar leaves, roses and tulips, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6723553,
+   "raw": "..\\work\\raw\\kashmir-garden__corner__6723553_3m5s8.png"
+  }
+ }
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Pastel Garden — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-pastel-garden" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDF7FA"/>
+      <stop offset="55%" stop-color="#F2E1EC"/>
+      <stop offset="100%" stop-color="#FDF7FA"/>
+    </linearGradient>
+    <radialGradient id="gl-pastel-garden" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-pastel-garden" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-pastel-garden)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-pastel-garden)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-pastel-garden)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Pastel Garland &amp; Ranunculus Bouquet -->
+      <g stroke="#944D7C" stroke-width="1.4" fill="none" opacity="0.65">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#7AA682" stroke-width="1" rx="6"/>
+      </g>
+      <!-- Pastel Symphony Bouquet -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="105" fill="none" stroke="#7AA682" stroke-width="1.5" opacity="0.5"/>
+        <!-- Lavender Sprigs &amp; Sage Leaves -->
+        <g stroke="#7AA682" stroke-width="1.6" fill="none" opacity="0.75">
+          <path d="M -30 40 Q -60 0 -50 -50"/>
+          <path d="M 30 40 Q 60 0 50 -50"/>
+          <path d="M 0 40 Q 0 0 0 -60"/>
+        </g>
+        <!-- Pastel Blossom Heads -->
+        <circle cx="-45" cy="-45" r="14" fill="#944D7C" opacity="0.75"/>
+        <circle cx="45" cy="-45" r="14" fill="#944D7C" opacity="0.75"/>
+        <circle cx="0" cy="-55" r="18" fill="#E8A598" opacity="0.85"/>
+        <circle cx="-20" cy="-20" r="16" fill="#D9829B" opacity="0.8"/>
+        <circle cx="20" cy="-20" r="16" fill="#7AA682" opacity="0.8"/>
+        <circle cx="0" cy="-55" r="6" fill="#FDF7FA"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#7AA682" opacity="0.85">THE WEDDING DAY OF</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#7AA682" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#7AA682" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#7AA682" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#362233">Pastel Garden</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#362233" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#7AA682" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#362233" opacity="0.6">SPRINGTIME RECEPTION</text>
+</svg>

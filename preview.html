@@ -7,38 +7,42 @@
 <meta name="description" content="Preview any InviteAura invitation template at full size — on mobile and desktop, with zoom and full screen — before you personalise it with your own details.">
 <meta name="keywords" content="invitation preview, template preview, e-invite demo, wedding card preview, digital invitation example">
 <meta name="theme-color" content="#FDFAFB">
-<link rel="canonical" href="https://inviteaura.example.com/preview.html">
+<link rel="canonical" href="https://www.inviteaura.in/preview.html">
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="InviteAura">
 <meta property="og:title" content="Template Preview | InviteAura">
 <meta property="og:description" content="See exactly how your invitation will look to guests before you personalise it.">
-<meta property="og:url" content="https://inviteaura.example.com/preview.html">
-<meta property="og:image" content="https://inviteaura.example.com/images/hero/og-image.svg">
+<meta property="og:url" content="https://www.inviteaura.in/preview.html">
+<meta property="og:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Template Preview | InviteAura">
 <meta name="twitter:description" content="See exactly how your invitation will look to guests.">
-<meta name="twitter:image" content="https://inviteaura.example.com/images/hero/og-image.svg">
+<meta name="twitter:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
 
-<link rel="icon" href="images/logo/favicon.png" type="image/svg+xml">
-<link rel="apple-touch-icon" href="images/logo/favicon.png">
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/logo/favicon-180.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap"></noscript>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap"></noscript>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css?v=2.8">
+<link rel="stylesheet" href="css/animations.css?v=1.2">
+<link rel="stylesheet" href="css/responsive.css?v=1.6">
 
 <script>(function(){try{var s=JSON.parse(localStorage.getItem('inviteaura:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
 
-<script src="js/main.js" defer></script>
-<script src="js/templates.js" defer></script>
-<script src="js/countdown.js" defer></script>
-<script src="js/preview.js" defer></script>
-<script src="js/share.js" defer></script>
+<script src="js/main.js?v=1.2" defer></script>
+<script src="js/templates.js?v=2.5" defer></script>
+<script src="js/countdown.js?v=1.2" defer></script>
+<script src="js/wedding-designs.js?v=2.2" defer></script>
+<script src="js/redesign-collection-data.js?v=1.2" defer></script>
+<script src="js/redesign-collection.js?v=1.4" defer></script>
+<script src="js/preview.js?v=2.3" defer></script>
+<script src="js/share.js?v=1.2" defer></script>
 </head>
 <body>
 
@@ -101,16 +105,12 @@
             <button class="btn btn--ghost btn--sm" type="button" data-zoom="1" aria-label="Zoom in"><i data-icon="zoom-in" data-icon-size="17"></i></button>
             <button class="btn btn--ghost btn--sm" type="button" data-zoom="0" aria-label="Reset zoom to 100 percent"><i data-icon="rotate-ccw" data-icon-size="17"></i></button>
 
-            <div class="device-switch" role="group" aria-label="Preview device">
-              <button type="button" data-device="mobile" aria-pressed="true" aria-label="Preview on mobile" title="Preview on mobile"><i data-icon="smartphone" data-icon-size="17"></i></button>
-              <button type="button" data-device="desktop" aria-pressed="false" aria-label="Preview on desktop" title="Preview on desktop"><i data-icon="monitor" data-icon-size="17"></i></button>
-            </div>
 
             <button class="btn btn--ghost btn--sm" type="button" data-fullscreen aria-label="Toggle full screen"><i data-icon="maximize" data-icon-size="17"></i></button>
             <a class="btn btn--ghost btn--sm" href="templates.html" aria-label="Back to all templates"><i data-icon="arrow-left" data-icon-size="17"></i><span>Back</span></a>
           </div>
 
-          <div class="preview-frame" data-device="mobile" data-preview-frame aria-label="Live invitation preview"></div>
+          <div class="preview-frame" data-device="card" data-preview-frame aria-label="Live invitation preview"></div>
 
           <p class="muted center" style="margin-top:var(--space-4);font-size:.8rem">
             Tip: hold <kbd>Ctrl</kbd> (or <kbd>⌘</kbd>) and scroll inside the frame to zoom.

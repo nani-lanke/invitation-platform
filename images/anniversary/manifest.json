@@ -1,0 +1,1272 @@
+{
+ "floral-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9139171,
+  "prompt": "Wide photograph of an empty romantic floral anniversary dinner setup with pink roses, candles and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/floral-anniversary__venue__9139171.png"
+ },
+ "floral-anniversary/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9178157,
+  "prompt": "An elegant sweeping corner spray of fresh pink garden roses, peonies and soft greenery, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/floral-anniversary__bouquet__9178157.png",
+  "coverage": 0.263,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2969186,
+  "prompt": "A low wide compact floral arrangement of fresh pink garden roses, peonies and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/floral-anniversary__cluster__2969186.png",
+  "coverage": 0.301,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "floral-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2350667,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small round posy of pink roses and peonies tied with a satin ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/floral-anniversary__crest__2350667.png",
+  "coverage": 0.158,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "silver-jubilee/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8072364,
+  "prompt": "Wide photograph of an empty elegant silver and white anniversary ballroom with crystal chandeliers and white florals, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/silver-jubilee__venue__8072364.png"
+ },
+ "silver-jubilee/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4696507,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, silver dusty miller leaves and white orchids, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/silver-jubilee__cluster__4696507.png",
+  "coverage": 0.387,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "silver-jubilee/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1335342,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked polished silver wedding bands, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/silver-jubilee__crest__1335342.png",
+  "coverage": 0.083,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-jubilee/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7137459,
+  "prompt": "Wide photograph of an empty grand gold anniversary hall with chandeliers, gold drapes and floral centrepieces, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/golden-jubilee__venue__7137459.png"
+ },
+ "golden-jubilee/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8136703,
+  "prompt": "A low wide compact floral arrangement of fresh yellow roses, gold leaves and orange marigolds, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/golden-jubilee__cluster__8136703.png",
+  "coverage": 0.375,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-jubilee/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9870274,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked gold wedding bands on a gold mandala, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/golden-jubilee__crest__9870274.png",
+  "coverage": 0.084,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "forever-yours/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8056528,
+  "prompt": "Wide photograph of an empty soft blush anniversary garden setup with a floral arch and a table for two, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-yours__venue__8056528.png"
+ },
+ "forever-yours/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9599894,
+  "prompt": "An elegant sweeping corner spray of fresh blush roses, peach ranunculus and green leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-yours__bouquet__9599894.png",
+  "coverage": 0.266,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "forever-yours/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5934661,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, peach ranunculus and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-yours__cluster__5934661.png",
+  "coverage": 0.386,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "forever-yours/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1699064,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small blush rose shaped heart of petals, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-yours__crest__1699064.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "anniversary-laurel/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9130777,
+  "prompt": "Wide photograph of an empty classic anniversary dinner hall with gold accents, olive garlands and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/anniversary-laurel__venue__9130777.png"
+ },
+ "anniversary-laurel/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5390281,
+  "prompt": "A low wide compact floral arrangement of fresh olive branches, white roses and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/anniversary-laurel__cluster__5390281.png",
+  "coverage": 0.39,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "anniversary-laurel/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9939868,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small gold laurel wreath ornament with a tiny heart in the middle, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/anniversary-laurel__crest__9939868.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "vow-renewal/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4989472,
+  "prompt": "Wide photograph of an empty vow renewal ceremony garden with a white floral arch and rows of white chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vow-renewal__venue__4989472.png"
+ },
+ "vow-renewal/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7023261,
+  "prompt": "A round floral wreath of fresh white roses, lilac sweet peas and soft greenery with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vow-renewal__wreath__7023261.png",
+  "coverage": 0.401,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vow-renewal/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8945920,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, lilac sweet peas and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vow-renewal__cluster__8945920.png",
+  "coverage": 0.39,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vow-renewal/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6974833,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of white doves with a pair of gold rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vow-renewal__crest__6974833.png",
+  "coverage": 0.056,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "ruby-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9771219,
+  "prompt": "Wide photograph of an empty ruby red anniversary dinner with red roses, candles and crystal glasses, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ruby-anniversary__venue__9771219.png"
+ },
+ "ruby-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9405092,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy dahlias and dark leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ruby-anniversary__cluster__9405092.png",
+  "coverage": 0.465,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "ruby-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9266037,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a sparkling ruby red heart gemstone, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ruby-anniversary__crest__9266037.png",
+  "coverage": 0.032,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "pearl-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2271887,
+  "prompt": "Wide photograph of an empty ivory pearl anniversary hall with white flowers, pearl strands and soft lights, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/pearl-anniversary__venue__2271887.png"
+ },
+ "pearl-anniversary/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8331599,
+  "prompt": "A round floral wreath of fresh white roses, pearl beads and white orchids with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/pearl-anniversary__wreath__8331599.png",
+  "coverage": 0.372,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2187626,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, pearl beads and white orchids, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/pearl-anniversary__cluster__2187626.png",
+  "coverage": 0.435,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "pearl-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8596739,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small string of lustrous white pearls in a shell, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/pearl-anniversary__crest__8596739.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "diamond-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4248426,
+  "prompt": "Wide photograph of an empty luxurious diamond anniversary ballroom with crystal chandeliers and white florals, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/diamond-anniversary__venue__4248426.png"
+ },
+ "diamond-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8163422,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, crystals and silver leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/diamond-anniversary__cluster__8163422.png",
+  "coverage": 0.411,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "diamond-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6864535,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a large sparkling cut diamond, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/diamond-anniversary__crest__6864535.png",
+  "coverage": 0.044,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2710994,
+  "prompt": "Wide photograph of an empty emerald green and gold anniversary dinner with lush greenery and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/emerald-anniversary__venue__2710994.png"
+ },
+ "emerald-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8054630,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, emerald green leaves and ferns, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/emerald-anniversary__cluster__8054630.png",
+  "coverage": 0.369,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "emerald-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6818718,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a sparkling emerald green gemstone set in gold, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/emerald-anniversary__crest__6818718.png",
+  "coverage": 0.037,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3060404,
+  "prompt": "Wide photograph of an empty sapphire blue and silver anniversary ballroom with blue florals and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/sapphire-anniversary__venue__3060404.png"
+ },
+ "sapphire-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4124962,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, blue delphiniums and silver leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/sapphire-anniversary__cluster__4124962.png",
+  "coverage": 0.356,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "sapphire-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5329803,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a sparkling deep blue sapphire gemstone set in silver, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/sapphire-anniversary__crest__5329803.png",
+  "coverage": 0.071,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "rose-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9128545,
+  "prompt": "Wide photograph of an empty rose themed anniversary dinner with red roses, candles and velvet chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/rose-anniversary__venue__9128545.png"
+ },
+ "rose-anniversary/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7668614,
+  "prompt": "An elegant sweeping corner spray of fresh deep red and dusty rose roses with dark leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/rose-anniversary__bouquet__7668614.png",
+  "coverage": 0.28,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "rose-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9494709,
+  "prompt": "A low wide compact floral arrangement of fresh deep red and dusty rose roses with dark leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/rose-anniversary__cluster__9494709.png",
+  "coverage": 0.349,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "rose-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7010888,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a single deep red rose with two leaves, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/rose-anniversary__crest__7010888.png",
+  "coverage": 0.102,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "golden-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4780947,
+  "prompt": "Wide photograph of an empty warm golden anniversary dinner hall with gold drapes and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/golden-love__venue__4780947.png"
+ },
+ "golden-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8553751,
+  "prompt": "A low wide compact floral arrangement of fresh yellow roses, gold leaves and orange blooms, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/golden-love__cluster__8553751.png",
+  "coverage": 0.418,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "golden-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8073514,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a gold heart shaped ornament with mandala engraving, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/golden-love__crest__8073514.png",
+  "coverage": 0.165,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "eternal-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3542445,
+  "prompt": "Wide photograph of an empty elegant ivory anniversary reception with floral centrepieces and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/eternal-love__venue__3542445.png"
+ },
+ "eternal-love/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6199150,
+  "prompt": "A round floral wreath of fresh ivory roses, white ranunculus and eucalyptus with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/eternal-love__wreath__6199150.png",
+  "coverage": 0.396,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "eternal-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6228297,
+  "prompt": "A low wide compact floral arrangement of fresh ivory roses, white ranunculus and eucalyptus, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/eternal-love__cluster__6228297.png",
+  "coverage": 0.398,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "eternal-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1883915,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked gold wedding rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/eternal-love__crest__1883915.png",
+  "coverage": 0.053,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "forever-together/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6958633,
+  "prompt": "Wide photograph of an empty navy and silver anniversary evening terrace with fairy lights and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-together__venue__6958633.png"
+ },
+ "forever-together/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3272310,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, navy blue flowers and silver leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-together__bouquet__3272310.png",
+  "coverage": 0.274,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "forever-together/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6595301,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, navy blue flowers and silver leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-together__cluster__6595301.png",
+  "coverage": 0.396,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "forever-together/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6341016,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked silver rings with a tiny star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/forever-together__crest__6341016.png",
+  "coverage": 0.039,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "years-of-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5388336,
+  "prompt": "Wide photograph of an empty warm champagne anniversary dinner with candles and floral centrepieces, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/years-of-love__venue__5388336.png"
+ },
+ "years-of-love/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5338127,
+  "prompt": "A long horizontal floral garland swag of fresh champagne roses, cream flowers and soft greenery draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/years-of-love__garland__5338127.png",
+  "coverage": 0.314,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "garland"
+ },
+ "years-of-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5517182,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, cream flowers and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/years-of-love__cluster__5517182.png",
+  "coverage": 0.37,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "years-of-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9634231,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small vintage hourglass with gold sand, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/years-of-love__crest__9634231.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "love-through-the-years/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6615767,
+  "prompt": "Wide photograph of an empty vintage anniversary dinner with antique clocks, candles and roses, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/love-through-the-years__venue__6615767.png"
+ },
+ "love-through-the-years/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9255431,
+  "prompt": "A long horizontal floral garland swag of fresh champagne roses, dried flowers and soft greenery draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/love-through-the-years__garland__9255431.png",
+  "coverage": 0.296,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "love-through-the-years/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9548774,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, dried flowers and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/love-through-the-years__cluster__9548774.png",
+  "coverage": 0.327,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "love-through-the-years/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8051631,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small vintage gold pocket watch with a heart, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/love-through-the-years__crest__8051631.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "still-in-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5979323,
+  "prompt": "Wide photograph of an empty romantic pink anniversary dinner with roses, heart balloons and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/still-in-love__venue__5979323.png"
+ },
+ "still-in-love/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6274483,
+  "prompt": "An elegant sweeping corner spray of fresh pink roses, coral peonies and soft greenery, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/still-in-love__bouquet__6274483.png",
+  "coverage": 0.288,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "corners"
+ },
+ "still-in-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1290364,
+  "prompt": "A low wide compact floral arrangement of fresh pink roses, coral peonies and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/still-in-love__cluster__1290364.png",
+  "coverage": 0.324,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "still-in-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7954749,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small pink heart shaped balloon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/still-in-love__crest__7954749.png",
+  "coverage": 0.085,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "our-forever/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1656845,
+  "prompt": "Wide photograph of an empty lilac anniversary garden party with a floral arch and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-forever__venue__1656845.png"
+ },
+ "our-forever/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7160528,
+  "prompt": "A round floral wreath of fresh lilac roses, white flowers and soft greenery with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-forever__wreath__7160528.png",
+  "coverage": 0.43,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "our-forever/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4862627,
+  "prompt": "A low wide compact floral arrangement of fresh lilac roses, white flowers and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-forever__cluster__4862627.png",
+  "coverage": 0.431,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "our-forever/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7435046,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked rose gold rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-forever__crest__7435046.png",
+  "coverage": 0.051,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "timeless-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2394558,
+  "prompt": "Wide photograph of an empty plum and silver anniversary ballroom with crystal chandeliers and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/timeless-love__venue__2394558.png"
+ },
+ "timeless-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5129778,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, purple orchids and silver leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/timeless-love__cluster__5129778.png",
+  "coverage": 0.379,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "timeless-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8003515,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small crystal chandelier ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/timeless-love__crest__8003515.png",
+  "coverage": 0.036,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "ever-after/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6246138,
+  "prompt": "Wide photograph of an empty midnight blue anniversary terrace under a starry sky with fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ever-after__venue__6246138.png"
+ },
+ "ever-after/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1150507,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, gold leaves and tiny fairy lights, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ever-after__bouquet__1150507.png",
+  "coverage": 0.271,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "diagonal"
+ },
+ "ever-after/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2905108,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, gold leaves and tiny fairy lights, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ever-after__cluster__2905108.png",
+  "coverage": 0.502,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "ever-after/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1358405,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small glowing gold star with a soft halo, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/ever-after__crest__1358405.png",
+  "coverage": 0.056,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "together-forever/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3611554,
+  "prompt": "Wide photograph of an empty navy anniversary rooftop dinner with warm string lights and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/together-forever__venue__3611554.png"
+ },
+ "together-forever/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3088260,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, eucalyptus and warm string lights, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/together-forever__bouquet__3088260.png",
+  "coverage": 0.283,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "diagonal"
+ },
+ "together-forever/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3396565,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, eucalyptus and warm string lights, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/together-forever__cluster__3396565.png",
+  "coverage": 0.428,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "together-forever/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1783784,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small warm glowing vintage light bulb with a heart filament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/together-forever__crest__1783784.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "endless-romance/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2442415,
+  "prompt": "Wide photograph of an empty romantic coral anniversary dinner with roses, candles and a table for two, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/endless-romance__venue__2442415.png"
+ },
+ "endless-romance/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9244560,
+  "prompt": "An elegant sweeping corner spray of fresh coral roses, pink peonies and soft greenery, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/endless-romance__bouquet__9244560.png",
+  "coverage": 0.286,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "corners"
+ },
+ "endless-romance/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3814331,
+  "prompt": "A low wide compact floral arrangement of fresh coral roses, pink peonies and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/endless-romance__cluster__3814331.png",
+  "coverage": 0.38,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "endless-romance/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4263086,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small coral heart made of rose petals, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/endless-romance__crest__4263086.png",
+  "coverage": 0.074,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "our-love-story/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3667679,
+  "prompt": "Wide photograph of an empty garden anniversary picnic with an open book, flowers and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-love-story__venue__3667679.png"
+ },
+ "our-love-story/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3807040,
+  "prompt": "A tall slender vertical cascade of fresh white roses, olive leaves and small green leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-love-story__vine__3807040.png",
+  "coverage": 0.21,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "our-love-story/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1157123,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small open vintage book with a pressed rose, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/our-love-story__crest__1157123.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "memories-and-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3025300,
+  "prompt": "Wide photograph of an empty warm anniversary dinner with photo frames, candles and floral centrepieces, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/memories-and-love__venue__3025300.png"
+ },
+ "memories-and-love/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1074512,
+  "prompt": "A long horizontal floral garland swag of fresh champagne roses, cream flowers and olive branches draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/memories-and-love__garland__1074512.png",
+  "coverage": 0.275,
+  "edgeTouch": 0.005,
+  "free": true,
+  "style": "garland"
+ },
+ "memories-and-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1065361,
+  "prompt": "A low wide compact floral arrangement of fresh champagne roses, cream flowers and olive branches, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/memories-and-love__cluster__1065361.png",
+  "coverage": 0.332,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "memories-and-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7682196,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small gold tree of life ornament with tiny hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/memories-and-love__crest__7682196.png",
+  "coverage": 0.045,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "romantic-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9015262,
+  "prompt": "Wide photograph of an empty romantic anniversary dinner with red roses, candles and rose petals on the table, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/romantic-anniversary__venue__9015262.png"
+ },
+ "romantic-anniversary/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2007238,
+  "prompt": "An elegant sweeping corner spray of fresh red and pink roses with soft greenery, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/romantic-anniversary__bouquet__2007238.png",
+  "coverage": 0.267,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3833333,
+  "prompt": "A low wide compact floral arrangement of fresh red and pink roses with soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/romantic-anniversary__cluster__3833333.png",
+  "coverage": 0.398,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "romantic-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9893704,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small red heart tied with a gold ribbon, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/romantic-anniversary__crest__9893704.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "luxury-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5866830,
+  "prompt": "Wide photograph of an empty luxury black and gold anniversary ballroom with gold chandeliers and white florals, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/luxury-anniversary__venue__5866830.png"
+ },
+ "luxury-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4121207,
+  "prompt": "A low wide compact floral arrangement of fresh ivory roses, white orchids and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/luxury-anniversary__cluster__4121207.png",
+  "coverage": 0.438,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "luxury-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7737034,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small ornate gold fleur de lis ornament, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/luxury-anniversary__crest__7737034.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "garden-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6547441,
+  "prompt": "Wide photograph of an empty garden anniversary party with blossom trees, lanterns and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/garden-anniversary__venue__6547441.png"
+ },
+ "garden-anniversary/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8840507,
+  "prompt": "A tall slender vertical cascade of fresh white blossoms, garden roses and soft greenery hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/garden-anniversary__vine__8840507.png",
+  "coverage": 0.226,
+  "edgeTouch": 0.002,
+  "free": true,
+  "style": "vines"
+ },
+ "garden-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5645430,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small branch of white cherry blossom, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/garden-anniversary__crest__5645430.png",
+  "coverage": 0.049,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "candlelight-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1301146,
+  "prompt": "Wide photograph of an empty candlelit anniversary dinner with dozens of candles, red roses and crystal glasses, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/candlelight-anniversary__venue__1301146.png"
+ },
+ "candlelight-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4674491,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy flowers and dark leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/candlelight-anniversary__cluster__4674491.png",
+  "coverage": 0.392,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "candlelight-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2650990,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small cluster of three glowing pillar candles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/candlelight-anniversary__crest__2650990.png",
+  "coverage": 0.056,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "evening-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8759146,
+  "prompt": "Wide photograph of an empty navy anniversary evening terrace with lanterns, candles and a moonlit sky, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/evening-anniversary__venue__8759146.png"
+ },
+ "evening-anniversary/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9802984,
+  "prompt": "An elegant sweeping corner spray of fresh white roses, navy flowers and gold leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/evening-anniversary__bouquet__9802984.png",
+  "coverage": 0.267,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "diagonal"
+ },
+ "evening-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4682646,
+  "prompt": "A low wide compact floral arrangement of fresh white roses, navy flowers and gold leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/evening-anniversary__cluster__4682646.png",
+  "coverage": 0.368,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "dinner-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4882359,
+  "prompt": "Wide photograph of an empty elegant anniversary dinner table with crystal glasses, candles and red roses, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/dinner-anniversary__venue__4882359.png"
+ },
+ "dinner-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1528468,
+  "prompt": "A low wide compact floral arrangement of fresh deep red roses, burgundy flowers and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/dinner-anniversary__cluster__1528468.png",
+  "coverage": 0.361,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "dinner-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9198085,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: two crystal champagne coupes clinking, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/dinner-anniversary__crest__9198085.png",
+  "coverage": 0.063,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "family-anniversary-celebration/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7010996,
+  "prompt": "Wide photograph of an empty family anniversary celebration hall with a long dining table, flowers and lights, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/family-anniversary-celebration__venue__7010996.png"
+ },
+ "family-anniversary-celebration/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1273874,
+  "prompt": "A long horizontal floral garland swag of fresh peach roses, cream flowers and soft greenery draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/family-anniversary-celebration__garland__1273874.png",
+  "coverage": 0.259,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-anniversary-celebration/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5972283,
+  "prompt": "A low wide compact floral arrangement of fresh peach roses, cream flowers and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/family-anniversary-celebration__cluster__5972283.png",
+  "coverage": 0.311,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "family-anniversary-celebration/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7321006,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small gold heart ornament with a family of tiny hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/family-anniversary-celebration__crest__7321006.png",
+  "coverage": 0.044,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "classic-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8921461,
+  "prompt": "Wide photograph of an empty classic gold anniversary banquet hall with chandeliers and white tablecloths, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/classic-anniversary__venue__8921461.png"
+ },
+ "classic-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9739690,
+  "prompt": "A low wide compact floral arrangement of fresh yellow roses, gold leaves and white flowers, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/classic-anniversary__cluster__9739690.png",
+  "coverage": 0.485,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "classic-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1981443,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small ornate gold crown with pearls, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/classic-anniversary__crest__1981443.png",
+  "coverage": 0.058,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "modern-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4490029,
+  "prompt": "Wide photograph of an empty modern minimal anniversary lounge with sleek furniture and white flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/modern-anniversary__venue__4490029.png"
+ },
+ "modern-anniversary/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2313586,
+  "prompt": "An elegant sweeping corner spray of fresh white calla lilies, eucalyptus and grey leaves, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/modern-anniversary__bouquet__2313586.png",
+  "coverage": 0.195,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "modern-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7175881,
+  "prompt": "A low wide compact floral arrangement of fresh white calla lilies, eucalyptus and grey leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/modern-anniversary__cluster__7175881.png",
+  "coverage": 0.304,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "modern-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1460700,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked minimal platinum rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/modern-anniversary__crest__1460700.png",
+  "coverage": 0.032,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "minimal-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8533191,
+  "prompt": "Wide photograph of an empty minimal anniversary dinner with a white table, white tulips and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/minimal-anniversary__venue__8533191.png"
+ },
+ "minimal-anniversary/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8012775,
+  "prompt": "A tall slender vertical cascade of fresh white tulips and soft green leaves hanging from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/minimal-anniversary__vine__8012775.png",
+  "coverage": 0.177,
+  "edgeTouch": 0.01,
+  "free": true,
+  "style": "vines"
+ },
+ "minimal-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1331442,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a pair of interlocked thin silver rings, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/minimal-anniversary__crest__1331442.png",
+  "coverage": 0.048,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "royal-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9174395,
+  "prompt": "Wide photograph of an empty royal purple and gold anniversary palace hall with chandeliers and drapes, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/royal-anniversary__venue__9174395.png"
+ },
+ "royal-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5939599,
+  "prompt": "A low wide compact floral arrangement of fresh deep purple roses, gold leaves and orchids, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/royal-anniversary__cluster__5939599.png",
+  "coverage": 0.365,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "royal-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8348210,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small ornate gold royal crown with purple jewels, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/royal-anniversary__crest__8348210.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "vintage-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8797023,
+  "prompt": "Wide photograph of an empty vintage anniversary tea party with lace tablecloths, roses and antique china, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vintage-anniversary__venue__8797023.png"
+ },
+ "vintage-anniversary/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6902105,
+  "prompt": "A round floral wreath of fresh dusty pink roses, dried flowers and lace with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vintage-anniversary__wreath__6902105.png",
+  "coverage": 0.367,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vintage-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5963292,
+  "prompt": "A low wide compact floral arrangement of fresh dusty pink roses, dried flowers and lace, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vintage-anniversary__cluster__5963292.png",
+  "coverage": 0.347,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "vintage-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8490717,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small vintage gold quill feather, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/vintage-anniversary__crest__8490717.png",
+  "coverage": 0.042,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "heritage-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1041111,
+  "prompt": "Wide photograph of an empty traditional Indian anniversary hall with marigold garlands, brass lamps and a decorated stage, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/heritage-anniversary__venue__1041111.png"
+ },
+ "heritage-anniversary/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9565910,
+  "prompt": "A long horizontal floral garland swag of fresh red roses, orange marigolds and white jasmine draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/heritage-anniversary__garland__9565910.png",
+  "coverage": 0.314,
+  "edgeTouch": 0.007,
+  "free": true,
+  "style": "garland"
+ },
+ "heritage-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3105039,
+  "prompt": "A low wide compact floral arrangement of fresh red roses, orange marigolds and white jasmine, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/heritage-anniversary__cluster__3105039.png",
+  "coverage": 0.406,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "heritage-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5485554,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small brass kalash with mango leaves and jasmine, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/heritage-anniversary__crest__5485554.png",
+  "coverage": 0.093,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-anniversary/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9050635,
+  "prompt": "Wide photograph of an empty traditional Indian anniversary courtyard with marigold garlands, lamps and rangoli, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/cultural-anniversary__venue__9050635.png"
+ },
+ "cultural-anniversary/garland.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3053931,
+  "prompt": "A long horizontal floral garland swag of fresh orange marigolds, red roses and peacock feathers draping in a gentle downward curve, both ends free and visible, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/cultural-anniversary__garland__3053931.png",
+  "coverage": 0.369,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "cultural-anniversary/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4197882,
+  "prompt": "A low wide compact floral arrangement of fresh orange marigolds, red roses and peacock feathers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/cultural-anniversary__cluster__4197882.png",
+  "coverage": 0.403,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ },
+ "celebration-of-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8567043,
+  "prompt": "Wide photograph of an empty warm anniversary celebration hall with floral centrepieces and string lights, celebration venue decor, no people, warm inviting light, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/celebration-of-love__venue__8567043.png"
+ },
+ "celebration-of-love/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8781231,
+  "prompt": "An elegant sweeping corner spray of fresh blush roses, champagne flowers and soft greenery, arranged diagonally from the upper left towards the lower right, loose and airy, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/celebration-of-love__bouquet__8781231.png",
+  "coverage": 0.306,
+  "edgeTouch": 0.003,
+  "free": true,
+  "style": "corners"
+ },
+ "celebration-of-love/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5792304,
+  "prompt": "A low wide compact floral arrangement of fresh blush roses, champagne flowers and soft greenery, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/celebration-of-love__cluster__5792304.png",
+  "coverage": 0.378,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "celebration-of-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9081520,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small gold heart with tiny sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/celebration-of-love__crest__9081520.png",
+  "coverage": 0.031,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "evening-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2660091,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: a small glowing gold crescent moon with a tiny star, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/evening-anniversary__crest__2660091.png",
+  "coverage": 0.033,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "cultural-anniversary/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3426850,
+  "prompt": "Small premium ornament for the top of an anniversary invitation: an ornate gold and turquoise peacock figurine standing with its tail feathers fanned out, large in the frame, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no ribbon, no paper, no frame, photorealistic, premium anniversary celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/ANNIVERSARY/cultural-anniversary__crest__3426850.png",
+  "coverage": 0.031,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "garland"
+ }
+}

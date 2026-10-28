@@ -1,0 +1,47 @@
+{
+ "slug": "haldi-ceremony",
+ "name": "Haldi Ceremony",
+ "base": "cards/haldi-ceremony/",
+ "spec": {
+  "layout": "classic",
+  "frame": "beads",
+  "venue": "split",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/haldi-ceremony.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/haldi-ceremony.svg",
+  "corners": "inline SVG corner set (beads)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a haldi ceremony setup with a brass turmeric bowl, mango leaf applicators, marigold heads and yellow drapes, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7691335,
+   "raw": "..\\work\\raw\\haldi-ceremony__venue__7691335_3ztb9.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a brass haldi bowl with mango leaves and marigold heads, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4498143,
+   "raw": "..\\work\\raw\\haldi-ceremony__crest__4498143_53au4.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a courtyard of an old Indian house in bright morning light, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2607927,
+   "raw": "..\\work\\raw\\haldi-ceremony__footer__2607927_3ujks.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of marigold heads, mango leaves and yellow chrysanthemums, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9778945,
+   "raw": "..\\work\\raw\\haldi-ceremony__corner__9778945_3wtd3.png"
+  }
+ }
+}

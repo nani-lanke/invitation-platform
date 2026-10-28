@@ -1,0 +1,47 @@
+{
+ "slug": "mysore-madhuve",
+ "name": "Mysore Madhuve",
+ "base": "cards/mysore-madhuve/",
+ "spec": {
+  "layout": "arch",
+  "frame": "double",
+  "venue": "stack",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/mysore-madhuve.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/mysore-madhuve.svg",
+  "corners": "inline SVG corner set (double)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Mysore palace style durbar hall with cusped arches, ribbed domes and sandalwood carvings decorated for a Kannada wedding, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8840248,
+   "raw": "..\\work\\raw\\mysore-madhuve__venue__8840248_5rjpn.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a carved Mysore sandalwood casket with gold inlay, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1080020,
+   "raw": "..\\work\\raw\\mysore-madhuve__crest__1080020_n03m.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the illuminated Mysore palace across palace gardens, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4802262,
+   "raw": "..\\work\\raw\\mysore-madhuve__footer__4802262_4xa7u.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of mallige jasmine strings, yellow marigolds and betel leaves with a few flower strings hanging straight down, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1808020,
+   "raw": "..\\work\\raw\\mysore-madhuve__corner__1808020_4clv4.png"
+  }
+ }
+}

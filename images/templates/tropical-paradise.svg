@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Tropical Paradise — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-tropical-paradise" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3F8F5"/>
+      <stop offset="55%" stop-color="#D9ECE0"/>
+      <stop offset="100%" stop-color="#F3F8F5"/>
+    </linearGradient>
+    <radialGradient id="gl-tropical-paradise" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-tropical-paradise" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-tropical-paradise)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-tropical-paradise)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-tropical-paradise)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Monstera Fronds &amp; Exotic Hibiscus Wreath -->
+      <g stroke="#1F6B45" stroke-width="1.5" fill="none" opacity="0.65">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#D65A31" stroke-width="1" rx="6"/>
+      </g>
+      <!-- Tropical Monstera &amp; Hibiscus Vignette -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="110" fill="none" stroke="#1F6B45" stroke-width="1.5" opacity="0.4"/>
+        <!-- Large Monstera Leaves -->
+        <g fill="#1F6B45" opacity="0.75">
+          <path d="M 0 40 C -70 20, -90 -40, -40 -70 C 0 -60, -10 0, 0 40 Z"/>
+          <path d="M 0 40 C 70 20, 90 -40, 40 -70 C 0 -60, 10 0, 0 40 Z"/>
+        </g>
+        <!-- Red Hibiscus Bloom -->
+        <g transform="translate(0, -20)" fill="#D65A31" opacity="0.9">
+          
+            <ellipse cx="20" cy="0" rx="18" ry="12" transform="rotate(0 20 0)"/>
+          
+            <ellipse cx="6.180339887498949" cy="19.02113032590307" rx="18" ry="12" transform="rotate(72 6.180339887498949 19.02113032590307)"/>
+          
+            <ellipse cx="-16.180339887498945" cy="11.755705045849465" rx="18" ry="12" transform="rotate(144 -16.180339887498945 11.755705045849465)"/>
+          
+            <ellipse cx="-16.18033988749895" cy="-11.75570504584946" rx="18" ry="12" transform="rotate(216 -16.18033988749895 -11.75570504584946)"/>
+          
+            <ellipse cx="6.180339887498945" cy="-19.021130325903073" rx="18" ry="12" transform="rotate(288 6.180339887498945 -19.021130325903073)"/>
+          
+          <circle cx="0" cy="0" r="8" fill="#FFF8EE"/>
+          <line x1="0" y1="0" x2="0" y2="-22" stroke="#FFF8EE" stroke-width="2.5"/>
+          <circle cx="0" cy="-24" r="3" fill="#D65A31"/>
+        </g>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#D65A31" opacity="0.85">CELEBRATING OUR UNION</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#D65A31" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#D65A31" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#D65A31" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#142E20">Tropical Paradise</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#142E20" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#D65A31" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#142E20" opacity="0.6">ISLAND GETAWAY VOWS</text>
+</svg>

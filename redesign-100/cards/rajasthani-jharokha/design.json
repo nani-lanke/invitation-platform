@@ -1,0 +1,47 @@
+{
+ "slug": "rajasthani-jharokha",
+ "name": "Rajasthani Jharokha",
+ "base": "cards/rajasthani-jharokha/",
+ "spec": {
+  "layout": "classic",
+  "frame": "band",
+  "venue": "stack",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/rajasthani-jharokha.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/rajasthani-jharokha.svg",
+  "corners": "inline SVG corner set (band)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Rajasthani haveli courtyard with carved jharokha balconies in royal blue and gold, lit with lanterns and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 5362982,
+   "raw": "..\\work\\raw\\rajasthani-jharokha__venue__5362982_2g3mh.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a carved sandstone Rajasthani jharokha balcony miniature with a gold dome, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1504150,
+   "raw": "..\\work\\raw\\rajasthani-jharokha__crest__1504150_4ij3h.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of golden Rajasthan fort walls on a hill above a lake, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6216048,
+   "raw": "..\\work\\raw\\rajasthani-jharokha__footer__6216048_5tdpq.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of orange marigolds, red roses and jasmine strings with a few flower strings hanging straight down, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 6585466,
+   "raw": "..\\work\\raw\\rajasthani-jharokha__corner__6585466_1juho.png"
+  }
+ }
+}

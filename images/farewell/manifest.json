@@ -1,0 +1,1034 @@
+{
+ "farewell-evening/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5244108,
+  "prompt": "Wide photograph of an empty cosy violet lit lounge with a small stage, string lights and sofas, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-evening__venue__5244108.png"
+ },
+ "farewell-evening/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7763729,
+  "prompt": "A small compact arrangement of violet ribbons, small music notes and white flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-evening__bouquet__7763729.png",
+  "coverage": 0.045,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "farewell-evening/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3515790,
+  "prompt": "A low wide compact arrangement of violet ribbons, small music notes and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-evening__cluster__3515790.png",
+  "coverage": 0.289,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "farewell-evening/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6418343,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a small vintage gramophone with music notes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-evening__crest__6418343.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "until-we-meet/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3325149,
+  "prompt": "Wide photograph of an empty rooftop terrace at dusk with warm string lights and lounge chairs, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet__venue__3325149.png"
+ },
+ "until-we-meet/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3154773,
+  "prompt": "A round wreath of warm string lights, dusk blue ribbons and white flowers with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet__wreath__3154773.png",
+  "coverage": 0.347,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "until-we-meet/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7759368,
+  "prompt": "A low wide compact arrangement of warm string lights, dusk blue ribbons and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet__cluster__7759368.png",
+  "coverage": 0.325,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "until-we-meet/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3618345,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a glowing string of warm light bulbs looped into a heart, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet__crest__3618345.png",
+  "coverage": 0.051,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "new-chapter/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5305476,
+  "prompt": "Wide photograph of an empty warm café corner with bookshelves, armchairs and soft lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-chapter__venue__5305476.png"
+ },
+ "new-chapter/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4631050,
+  "prompt": "A small compact arrangement of warm paper flowers, brown leaves and small open books, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-chapter__bouquet__4631050.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "new-chapter/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3464641,
+  "prompt": "A low wide compact arrangement of warm paper flowers, brown leaves and small open books, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-chapter__cluster__3464641.png",
+  "coverage": 0.364,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "new-chapter/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2417124,
+  "prompt": "Small premium ornament for the top of a farewell invitation: an open book with warm paper pages and a ribbon bookmark, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-chapter__crest__2417124.png",
+  "coverage": 0.124,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "send-off/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6565196,
+  "prompt": "Wide photograph of an empty teal decorated office lounge with balloons and a farewell table, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/send-off__venue__6565196.png"
+ },
+ "send-off/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2495408,
+  "prompt": "A small compact arrangement of teal ribbons, small music notes and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/send-off__bouquet__2495408.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "send-off/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6212827,
+  "prompt": "A low wide compact arrangement of teal ribbons, small music notes and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/send-off__cluster__6212827.png",
+  "coverage": 0.298,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "send-off/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1887886,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a teal vintage radio with small music notes, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/send-off__crest__1887886.png",
+  "coverage": 0.109,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "until-we-meet-again/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3776794,
+  "prompt": "Wide photograph of an empty open air terrace under a starry midnight sky with silver lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet-again__venue__3776794.png"
+ },
+ "until-we-meet-again/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2863928,
+  "prompt": "A small compact arrangement of silver stars, midnight blue ribbons and white flowers, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet-again__bouquet__2863928.png",
+  "coverage": 0.063,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "until-we-meet-again/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5079299,
+  "prompt": "A low wide compact arrangement of silver stars, midnight blue ribbons and white flowers, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet-again__cluster__5079299.png",
+  "coverage": 0.335,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "until-we-meet-again/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7835974,
+  "prompt": "Small premium ornament for the top of a farewell invitation: an open road curving towards silver stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-we-meet-again__crest__7835974.png",
+  "coverage": 0.121,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "goodbye-with-love/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3838573,
+  "prompt": "Wide photograph of an empty dusty rose and beige café with flowers, candles and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-with-love__venue__3838573.png"
+ },
+ "goodbye-with-love/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9725334,
+  "prompt": "A tall slender vertical hanging strand of dusty rose blossoms, beige ribbons and soft leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-with-love__vine__9725334.png",
+  "coverage": 0.188,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "goodbye-with-love/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7267161,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a dusty rose heart framed by small blossom sprigs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-with-love__crest__7267161.png",
+  "coverage": 0.122,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "a-fond-farewell/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5637277,
+  "prompt": "Wide photograph of an empty garden room with emerald plants, cream table linen and soft daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-fond-farewell__venue__5637277.png"
+ },
+ "a-fond-farewell/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9526642,
+  "prompt": "A round wreath of emerald botanical sprigs, cream flowers and ferns with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-fond-farewell__wreath__9526642.png",
+  "coverage": 0.345,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-fond-farewell/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1757693,
+  "prompt": "A low wide compact arrangement of emerald botanical sprigs, cream flowers and ferns, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-fond-farewell__cluster__1757693.png",
+  "coverage": 0.27,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-fond-farewell/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7987488,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a small emerald heart with botanical sprigs around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-fond-farewell__crest__7987488.png",
+  "coverage": 0.041,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "see-you-on-the-other-side/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8512108,
+  "prompt": "Wide photograph of an empty elegant charcoal lounge with a champagne tower, gold lights and velvet sofas, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/see-you-on-the-other-side__venue__8512108.png"
+ },
+ "see-you-on-the-other-side/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3331559,
+  "prompt": "A low wide compact arrangement of champagne roses, gold leaves and charcoal ribbons, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/see-you-on-the-other-side__cluster__3331559.png",
+  "coverage": 0.412,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "see-you-on-the-other-side/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2640666,
+  "prompt": "Small premium ornament for the top of a farewell invitation: two clinking champagne coupes with gold sparkles, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/see-you-on-the-other-side__crest__2640666.png",
+  "coverage": 0.072,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "new-journey-begins/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1504844,
+  "prompt": "Wide photograph of an empty teal and gold terrace at sunrise with lanterns and lounge seating, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-journey-begins__venue__1504844.png"
+ },
+ "new-journey-begins/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9492681,
+  "prompt": "A tall slender vertical hanging strand of teal ribbons, gold sun rays and green leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-journey-begins__vine__9492681.png",
+  "coverage": 0.125,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "vines"
+ },
+ "new-journey-begins/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7731692,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a golden sun rising over an open road, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-journey-begins__crest__7731692.png",
+  "coverage": 0.204,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "farewell-and-best-wishes/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1358648,
+  "prompt": "Wide photograph of an empty elegant burgundy dining room with gold candles and roses, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-and-best-wishes__venue__1358648.png"
+ },
+ "farewell-and-best-wishes/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1336080,
+  "prompt": "A low wide compact arrangement of burgundy roses, champagne ribbons and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-and-best-wishes__cluster__1336080.png",
+  "coverage": 0.424,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "farewell-and-best-wishes/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7160097,
+  "prompt": "Small premium ornament for the top of a farewell invitation: an elegant burgundy ribbon bow with champagne gold edges, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-and-best-wishes__crest__7160097.png",
+  "coverage": 0.121,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "cheers-to-new-beginnings/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2271208,
+  "prompt": "Wide photograph of an empty luxurious dark gold lounge with a champagne bar and warm lights, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/cheers-to-new-beginnings__venue__2271208.png"
+ },
+ "cheers-to-new-beginnings/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1617599,
+  "prompt": "A low wide compact arrangement of dark gold confetti, champagne ribbons and gold leaves, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/cheers-to-new-beginnings__cluster__1617599.png",
+  "coverage": 0.407,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "cheers-to-new-beginnings/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6132034,
+  "prompt": "Small premium ornament for the top of a farewell invitation: two dark gold coupe glasses with confetti, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/cheers-to-new-beginnings__crest__6132034.png",
+  "coverage": 0.061,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "until-our-paths-cross-again/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4829858,
+  "prompt": "Wide photograph of an empty moonlit garden path with silver lanterns and fairy lights, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-our-paths-cross-again__venue__4829858.png"
+ },
+ "until-our-paths-cross-again/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8818313,
+  "prompt": "A tall slender vertical hanging strand of silver stars, midnight blue ribbons and white flowers from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-our-paths-cross-again__vine__8818313.png",
+  "coverage": 0.101,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "until-our-paths-cross-again/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6550060,
+  "prompt": "Small premium ornament for the top of a farewell invitation: two silver paths crossing beneath small silver stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/until-our-paths-cross-again__crest__6550060.png",
+  "coverage": 0.057,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "goodbye-dear-friend/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7072068,
+  "prompt": "Wide photograph of an empty soft peach café with flowers, cushions and warm daylight, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-dear-friend__venue__7072068.png"
+ },
+ "goodbye-dear-friend/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5866057,
+  "prompt": "A round wreath of peach roses, soft rose blossoms and green leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-dear-friend__wreath__5866057.png",
+  "coverage": 0.414,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "goodbye-dear-friend/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1151820,
+  "prompt": "A low wide compact arrangement of peach roses, soft rose blossoms and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-dear-friend__cluster__1151820.png",
+  "coverage": 0.414,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "goodbye-dear-friend/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4180717,
+  "prompt": "Small premium ornament for the top of a farewell invitation: two small peach hearts side by side, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-dear-friend__crest__4180717.png",
+  "coverage": 0.04,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "memories-we-keep/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6400801,
+  "prompt": "Wide photograph of an empty plum and lavender lounge with framed photographs and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-we-keep__venue__6400801.png"
+ },
+ "memories-we-keep/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3061186,
+  "prompt": "A small compact arrangement of plum and lavender blossoms, small photo frames and leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-we-keep__bouquet__3061186.png",
+  "coverage": 0.08,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "memories-we-keep/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7772633,
+  "prompt": "A low wide compact arrangement of plum and lavender blossoms, small photo frames and leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-we-keep__cluster__7772633.png",
+  "coverage": 0.342,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "memories-we-keep/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5347916,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a small plum photo frame with blossom sprigs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-we-keep__crest__5347916.png",
+  "coverage": 0.135,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "one-chapter-ends/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9563389,
+  "prompt": "Wide photograph of an empty warm brown library lounge with leather chairs and brass lamps, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/one-chapter-ends__venue__9563389.png"
+ },
+ "one-chapter-ends/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4729296,
+  "prompt": "A tall slender vertical hanging strand of warm brown leaves, gold ribbons and open books from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/one-chapter-ends__vine__4729296.png",
+  "coverage": 0.161,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "one-chapter-ends/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6545459,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a closing book with a new page turning over in gold, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/one-chapter-ends__crest__6545459.png",
+  "coverage": 0.123,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "a-beautiful-goodbye/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7995827,
+  "prompt": "Wide photograph of an empty terracotta and cream courtyard with lanterns, plants and a long table, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-beautiful-goodbye__venue__7995827.png"
+ },
+ "a-beautiful-goodbye/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1221907,
+  "prompt": "A round wreath of terracotta blossoms, cream flowers and dried grasses with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-beautiful-goodbye__wreath__1221907.png",
+  "coverage": 0.421,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-beautiful-goodbye/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1142894,
+  "prompt": "A low wide compact arrangement of terracotta blossoms, cream flowers and dried grasses, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-beautiful-goodbye__cluster__1142894.png",
+  "coverage": 0.314,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "a-beautiful-goodbye/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8219463,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a terracotta heart wrapped in blossom sprigs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-beautiful-goodbye__crest__8219463.png",
+  "coverage": 0.19,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "wishing-you-the-best/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9496526,
+  "prompt": "Wide photograph of an empty sage and ivory garden terrace with soft daylight and plants, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/wishing-you-the-best__venue__9496526.png"
+ },
+ "wishing-you-the-best/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5418307,
+  "prompt": "A tall slender vertical hanging strand of sage green sprigs, ivory flowers and soft leaves from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/wishing-you-the-best__vine__5418307.png",
+  "coverage": 0.146,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "wishing-you-the-best/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8753838,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a calm golden sun over leafy green sprigs, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/wishing-you-the-best__crest__8753838.png",
+  "coverage": 0.099,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "goodbye-for-now/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7743707,
+  "prompt": "Wide photograph of an empty pastel lavender party room with balloons and a dessert table, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-for-now__venue__7743707.png"
+ },
+ "goodbye-for-now/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7769036,
+  "prompt": "A small compact arrangement of pastel lavender balloons, small stars and confetti, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-for-now__bouquet__7769036.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "goodbye-for-now/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8190623,
+  "prompt": "A low wide compact arrangement of pastel lavender balloons, small stars and confetti, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-for-now__cluster__8190623.png",
+  "coverage": 0.535,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "goodbye-for-now/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5014178,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a small bunch of pastel lavender balloons with stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-for-now__crest__5014178.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "new-adventures-await/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4386402,
+  "prompt": "Wide photograph of an empty travel themed navy lounge with a globe, maps and vintage suitcases, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-adventures-await__venue__4386402.png"
+ },
+ "new-adventures-await/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1597983,
+  "prompt": "A small compact arrangement of travel maps, brass compasses and navy ribbons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-adventures-await__bouquet__1597983.png",
+  "coverage": 0.079,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "new-adventures-await/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6351840,
+  "prompt": "A low wide compact arrangement of travel maps, brass compasses and navy ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-adventures-await__cluster__6351840.png",
+  "coverage": 0.345,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "new-adventures-await/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6215889,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a paper plane above a brass compass, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/new-adventures-await__crest__6215889.png",
+  "coverage": 0.086,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "friends-forever/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7519988,
+  "prompt": "Wide photograph of an empty dusty pink café corner with flowers, fairy lights and cushions, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/friends-forever__venue__7519988.png"
+ },
+ "friends-forever/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2118095,
+  "prompt": "A round wreath of dusty pink roses, small hearts and soft leaves with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/friends-forever__wreath__2118095.png",
+  "coverage": 0.327,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "friends-forever/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8851178,
+  "prompt": "A low wide compact arrangement of dusty pink roses, small hearts and soft leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/friends-forever__cluster__8851178.png",
+  "coverage": 0.403,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "friends-forever/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3029251,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a dusty pink heart made of two looping lines, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/friends-forever__crest__3029251.png",
+  "coverage": 0.065,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "bon-voyage/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7207592,
+  "prompt": "Wide photograph of an empty deep teal lounge with travel decor, a globe and paper planes hanging, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/bon-voyage__venue__7207592.png"
+ },
+ "bon-voyage/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2130262,
+  "prompt": "A tall slender vertical hanging strand of teal ribbons, white clouds and small paper planes from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/bon-voyage__vine__2130262.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "bon-voyage/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7132424,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a teal paper plane sailing through small white clouds, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/bon-voyage__crest__7132424.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "safe-travels/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6353566,
+  "prompt": "Wide photograph of an empty bright sky blue party room with cloud decor and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/safe-travels__venue__6353566.png"
+ },
+ "safe-travels/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5877917,
+  "prompt": "A small compact arrangement of sky blue balloons, white clouds and small paper planes, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/safe-travels__bouquet__5877917.png",
+  "coverage": 0.073,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "safe-travels/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5744658,
+  "prompt": "A low wide compact arrangement of sky blue balloons, white clouds and small paper planes, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/safe-travels__cluster__5744658.png",
+  "coverage": 0.458,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "safe-travels/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5526747,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a sky blue paper plane over soft white clouds, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/safe-travels__crest__5526747.png",
+  "coverage": 0.106,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "goodbye-teacher/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8576258,
+  "prompt": "Wide photograph of an empty bright school staff room decorated with paper flowers and a farewell table, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-teacher__venue__8576258.png"
+ },
+ "goodbye-teacher/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2999312,
+  "prompt": "A small compact arrangement of colourful pencils, red apples and green leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-teacher__bouquet__2999312.png",
+  "coverage": 0.054,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "goodbye-teacher/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6672251,
+  "prompt": "A low wide compact arrangement of colourful pencils, red apples and green leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-teacher__cluster__6672251.png",
+  "coverage": 0.359,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "goodbye-teacher/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8076206,
+  "prompt": "Small premium ornament for the top of a farewell invitation: an open book with colourful pencils and a red apple, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-teacher__crest__8076206.png",
+  "coverage": 0.088,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "farewell-classmates/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4547902,
+  "prompt": "Wide photograph of an empty school classroom decorated with blue balloons, stars and streamers, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-classmates__venue__4547902.png"
+ },
+ "farewell-classmates/wreath.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4403409,
+  "prompt": "A round wreath of blue stars, paper planes and colourful pencils with a large empty white centre, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-classmates__wreath__4403409.png",
+  "coverage": 0.322,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "farewell-classmates/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6603748,
+  "prompt": "A low wide compact arrangement of blue stars, paper planes and colourful pencils, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-classmates__cluster__6603748.png",
+  "coverage": 0.323,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "farewell-classmates/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1107509,
+  "prompt": "Small premium ornament for the top of a farewell invitation: an open book with small blue stars rising from it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-classmates__crest__1107509.png",
+  "coverage": 0.032,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "wreath"
+ },
+ "graduation-goodbye/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4336188,
+  "prompt": "Wide photograph of an empty college auditorium decorated with navy and gold balloons and lights, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/graduation-goodbye__venue__4336188.png"
+ },
+ "graduation-goodbye/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2411668,
+  "prompt": "A small compact arrangement of gold stars, navy ribbons and gold laurel leaves, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/graduation-goodbye__bouquet__2411668.png",
+  "coverage": 0.05,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "graduation-goodbye/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1143367,
+  "prompt": "A low wide compact arrangement of gold stars, navy ribbons and gold laurel leaves, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/graduation-goodbye__cluster__1143367.png",
+  "coverage": 0.17,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "graduation-goodbye/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5058426,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a navy graduation cap with small gold stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/graduation-goodbye__crest__5058426.png",
+  "coverage": 0.062,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "farewell-seniors/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7741939,
+  "prompt": "Wide photograph of an empty college hall decorated for a farewell party with purple lights and balloons, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-seniors__venue__7741939.png"
+ },
+ "farewell-seniors/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7732486,
+  "prompt": "A small compact arrangement of purple balloons, confetti and gold stars, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-seniors__bouquet__7732486.png",
+  "coverage": 0.067,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "farewell-seniors/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9558581,
+  "prompt": "A low wide compact arrangement of purple balloons, confetti and gold stars, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-seniors__cluster__9558581.png",
+  "coverage": 0.386,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "farewell-seniors/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1023688,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a purple graduation cap with confetti bursting around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-seniors__crest__1023688.png",
+  "coverage": 0.037,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "goodbye-colleague/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5112732,
+  "prompt": "Wide photograph of an empty modern office cafeteria decorated with slate balloons and a farewell cake, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-colleague__venue__5112732.png"
+ },
+ "goodbye-colleague/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6188815,
+  "prompt": "A small compact arrangement of slate blue ribbons, white flowers and small clocks, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-colleague__bouquet__6188815.png",
+  "coverage": 0.052,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "goodbye-colleague/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2441680,
+  "prompt": "A low wide compact arrangement of slate blue ribbons, white flowers and small clocks, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-colleague__cluster__2441680.png",
+  "coverage": 0.313,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "goodbye-colleague/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5452577,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a slate grey leather briefcase with a small clock, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/goodbye-colleague__crest__5452577.png",
+  "coverage": 0.262,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "thank-you-for-everything/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5675069,
+  "prompt": "Wide photograph of an empty bright office lounge with blue and white decor and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/thank-you-for-everything__venue__5675069.png"
+ },
+ "thank-you-for-everything/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6847039,
+  "prompt": "A tall slender vertical hanging strand of blue ribbons, white roses and small hearts from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/thank-you-for-everything__vine__6847039.png",
+  "coverage": 0.088,
+  "edgeTouch": 0.001,
+  "free": true,
+  "style": "vines"
+ },
+ "thank-you-for-everything/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7172538,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a professional blue ribbon bow with small hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/thank-you-for-everything__crest__7172538.png",
+  "coverage": 0.077,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "farewell-to-a-wonderful-leader/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9019354,
+  "prompt": "Wide photograph of an empty formal navy and gold banquet hall with a stage and chandeliers, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-to-a-wonderful-leader__venue__9019354.png"
+ },
+ "farewell-to-a-wonderful-leader/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4970824,
+  "prompt": "A low wide compact arrangement of gold laurel leaves, navy ribbons and white roses, with gold-dipped leaves and fine gold accents, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-to-a-wonderful-leader__cluster__4970824.png",
+  "coverage": 0.221,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "farewell-to-a-wonderful-leader/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5605737,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a gold medal seal inside a navy laurel wreath, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-to-a-wonderful-leader__crest__5605737.png",
+  "coverage": 0.177,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "luxury"
+ },
+ "farewell-dear-family/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9986640,
+  "prompt": "Wide photograph of an empty warm family living room decorated with flowers, photos and lanterns, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-dear-family__venue__9986640.png"
+ },
+ "farewell-dear-family/vine.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8065907,
+  "prompt": "A tall slender vertical hanging strand of warm blossoms, green leaves and small lanterns from top to bottom, narrow, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-dear-family__vine__8065907.png",
+  "coverage": 0.159,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "farewell-dear-family/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9653822,
+  "prompt": "Small premium ornament for the top of a farewell invitation: an open wooden door with blossom sprigs around it, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/farewell-dear-family__crest__9653822.png",
+  "coverage": 0.087,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "vines"
+ },
+ "memories-forever/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2416342,
+  "prompt": "Wide photograph of an empty soft gold and ivory room with framed photographs and candles, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-forever__venue__2416342.png"
+ },
+ "memories-forever/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2268401,
+  "prompt": "A small compact arrangement of soft gold leaves, ivory roses and small photo frames, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-forever__bouquet__2268401.png",
+  "coverage": 0.077,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "memories-forever/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3751342,
+  "prompt": "A low wide compact arrangement of soft gold leaves, ivory roses and small photo frames, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-forever__cluster__3751342.png",
+  "coverage": 0.362,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "memories-forever/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6506631,
+  "prompt": "Small premium ornament for the top of a farewell invitation: a small soft gold photo frame with tiny hearts, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/memories-forever__crest__6506631.png",
+  "coverage": 0.06,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "diagonal"
+ },
+ "a-toast-to-your-next-adventure/venue.jpg": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9141361,
+  "prompt": "Wide photograph of an empty champagne coloured lounge with a bar, fairy lights and flowers, celebration venue decor, no people, warm inviting light, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-toast-to-your-next-adventure__venue__9141361.png"
+ },
+ "a-toast-to-your-next-adventure/bouquet.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3913724,
+  "prompt": "A small compact arrangement of champagne roses, gold stars and ivory ribbons, floating in the middle of the image, leaning slightly to the right, small in the frame, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-toast-to-your-next-adventure__bouquet__3913724.png",
+  "coverage": 0.075,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "a-toast-to-your-next-adventure/cluster.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6692111,
+  "prompt": "A low wide compact arrangement of champagne roses, gold stars and ivory ribbons, wider than tall, flat bottom, gently rounded top, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-toast-to-your-next-adventure__cluster__6692111.png",
+  "coverage": 0.429,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ },
+ "a-toast-to-your-next-adventure/crest.png": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6357874,
+  "prompt": "Small premium ornament for the top of a farewell invitation: two champagne coupes with small golden stars, front view, centred, compact, the whole arrangement fully visible with a wide empty white margin on every side, not touching the edges of the image, no vase, no table, no frame, photorealistic, premium farewell celebration decor photography, rich true colours, ultra fine detail, no text, no letters, no numbers, no watermark, no logo, no people, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/FAREWELL/a-toast-to-your-next-adventure__crest__6357874.png",
+  "coverage": 0.09,
+  "edgeTouch": 0,
+  "free": true,
+  "style": "corners"
+ }
+}

@@ -26,7 +26,7 @@
      its title is the whole identity. This drives the friendly demo names
      in the live preview only; the form itself is configured below. */
   var NAME_MODE = {
-    wedding: 'couple', engagement: 'couple',
+    wedding: 'couple', engagement: 'couple', reception: 'couple',
     birthday: 'person', 'naming-ceremony': 'person', graduation: 'person',
     retirement: 'person', farewell: 'person'
   };
@@ -44,7 +44,7 @@
      before the venue is booked.                                  */
 
   /* Every input that can appear in the Details form. */
-  var ALL_FIELDS = ['title', 'hostName', 'groomName', 'brideName', 'personName',
+  var ALL_FIELDS = ['title', 'hostName', 'groomName', 'groomParents', 'brideName', 'brideParents', 'personName',
     'babyName', 'babyRelation', 'parentsName', 'organization', 'date', 'time', 'venue',
     'address', 'mapsUrl', 'years', 'classCourse', 'department', 'role',
     'yearsOfService', 'eventKind', 'theme', 'phone', 'email', 'message',
@@ -52,53 +52,55 @@
 
   /* Which event type shows which fields. 'other' is the fallback. */
   var FIELDS_BY_CATEGORY = {
-    wedding: ['title', 'hostName', 'groomName', 'brideName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    engagement: ['title', 'hostName', 'groomName', 'brideName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    reception: ['title', 'hostName', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    festival: ['title', 'hostName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'message', 'additionalInformation'],
-    birthday: ['title', 'hostName', 'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    'baby-shower': ['title', 'hostName', 'personName', 'babyName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    'naming-ceremony': ['title', 'hostName', 'babyName', 'babyRelation', 'parentsName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    'house-warming': ['title', 'hostName', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    anniversary: ['title', 'hostName', 'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    graduation: ['title', 'hostName', 'personName', 'organization', 'classCourse', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    retirement: ['title', 'hostName', 'personName', 'role', 'yearsOfService', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    farewell: ['title', 'hostName', 'personName', 'role', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    corporate: ['title', 'hostName', 'organization', 'department', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    'school-events': ['title', 'hostName', 'organization', 'classCourse', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    'college-events': ['title', 'hostName', 'organization', 'department', 'classCourse', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    party: ['title', 'hostName', 'personName', 'theme', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    'community-events': ['title', 'hostName', 'organization', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
-    other: ['title', 'hostName', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message']
+    wedding: ['title', 'groomName', 'groomParents', 'brideName', 'brideParents', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    engagement: ['title', 'groomName', 'groomParents', 'brideName', 'brideParents', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    reception: ['title', 'groomName', 'groomParents', 'brideName', 'brideParents', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    festival: ['title', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message', 'additionalInformation'],
+    birthday: ['title', 'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'baby-shower': ['title', 'personName', 'babyName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'naming-ceremony': ['title', 'babyName', 'babyRelation', 'parentsName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'house-warming': ['title', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    anniversary: ['title', 'personName', 'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    graduation: ['title', 'personName', 'organization', 'classCourse', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    retirement: ['title', 'personName', 'role', 'yearsOfService', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    farewell: ['title', 'personName', 'role', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    corporate: ['title', 'organization', 'department', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'school-events': ['title', 'organization', 'classCourse', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'college-events': ['title', 'organization', 'department', 'classCourse', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    party: ['title', 'personName', 'theme', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    'community-events': ['title', 'organization', 'eventKind', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message'],
+    other: ['title', 'personName', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message']
   };
 
   /* Fields that must be filled in before the wizard lets the host move on. */
   var REQUIRED_BY_CATEGORY = {
-    wedding: ['title', 'groomName', 'brideName', 'date', 'email'],
-    engagement: ['title', 'groomName', 'brideName', 'date', 'email'],
-    reception: ['title', 'personName', 'date', 'email'],
-    festival: ['title', 'date', 'email'],
-    birthday: ['title', 'personName', 'date', 'email'],
-    'baby-shower': ['title', 'personName', 'date', 'email'],
-    'naming-ceremony': ['title', 'babyName', 'babyRelation', 'parentsName', 'date', 'email'],
-    'house-warming': ['title', 'personName', 'date', 'email'],
-    anniversary: ['title', 'personName', 'date', 'email'],
-    graduation: ['title', 'personName', 'date', 'email'],
-    retirement: ['title', 'personName', 'date', 'email'],
-    farewell: ['title', 'personName', 'date', 'email'],
-    corporate: ['title', 'organization', 'date', 'email'],
-    'school-events': ['title', 'organization', 'date', 'email'],
-    'college-events': ['title', 'organization', 'date', 'email'],
-    party: ['title', 'personName', 'date', 'email'],
-    'community-events': ['title', 'organization', 'date', 'email'],
-    other: ['title', 'date', 'email']
+    wedding: ['title', 'groomName', 'brideName', 'date', 'time', 'email'],
+    engagement: ['title', 'groomName', 'brideName', 'date', 'time', 'email'],
+    reception: ['title', 'groomName', 'brideName', 'date', 'time', 'email'],
+    festival: ['title', 'date', 'time', 'email'],
+    birthday: ['title', 'personName', 'date', 'time', 'email'],
+    'baby-shower': ['title', 'personName', 'date', 'time', 'email'],
+    'naming-ceremony': ['title', 'babyName', 'babyRelation', 'parentsName', 'date', 'time', 'email'],
+    'house-warming': ['title', 'personName', 'date', 'time', 'email'],
+    anniversary: ['title', 'personName', 'date', 'time', 'email'],
+    graduation: ['title', 'personName', 'date', 'time', 'email'],
+    retirement: ['title', 'personName', 'date', 'time', 'email'],
+    farewell: ['title', 'personName', 'date', 'time', 'email'],
+    corporate: ['title', 'organization', 'date', 'time', 'email'],
+    'school-events': ['title', 'organization', 'date', 'time', 'email'],
+    'college-events': ['title', 'organization', 'date', 'time', 'email'],
+    party: ['title', 'personName', 'date', 'time', 'email'],
+    'community-events': ['title', 'organization', 'date', 'time', 'email'],
+    other: ['title', 'date', 'time', 'email']
   };
 
   var BASE_LABELS = {
     title: 'Event title',
     hostName: 'Hosted by',
     groomName: 'Groom’s name',
+    groomParents: 'SON OF',
     brideName: 'Bride’s name',
+    brideParents: 'DAUGHTER OF',
     personName: 'Name',
     babyName: 'Baby’s name / nickname',
     babyRelation: 'Baby’s relation',
@@ -134,7 +136,6 @@
       graduation: 'Graduate’s name',
       retirement: 'Retiree’s name',
       farewell: 'Person being honored',
-      reception: 'Couple’s name / Guest of honor',
       party: 'Guest of honor / Celebrant'
     },
     babyName: {
@@ -160,6 +161,9 @@
       anniversary: 'Years together / Anniversary number',
       birthday: 'Age / birthday number'
     },
+    venue: {
+      birthday: 'Party venue'
+    },
     message: {
       festival: 'Festival message / greeting',
       'baby-shower': 'Shower message',
@@ -178,6 +182,9 @@
   };
 
   var FIELD_PLACEHOLDERS = {
+    venue: {
+      birthday: 'e.g. The Grand Terrace'
+    },
     babyName: {
       'naming-ceremony': 'e.g. Baby’s first name'
     },
@@ -192,6 +199,8 @@
 
   function fieldLabel(name, type) {
     var over = FIELD_LABELS[name];
+    // Each occasion names its venue ("Shower venue", "Event venue"...).
+    if (name === 'venue' && occasionCfg(type)) return occasionCfg(type).venue;
     return (over && over[type]) || BASE_LABELS[name] || name;
   }
 
@@ -244,10 +253,17 @@
     return {
       eventType: 'wedding',
       template: 'elegant-floral',
+      previewMode: 'card',
+      aiBackground: '',
+      aiBackgroundAsset: '',
       title: '',
+      additionalTitle: 'A BLESSED BEGINNING\nWith the blessings of our parents',
+      additionalSubtitle: 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of',
       hostName: '',
       brideName: '',
+      brideParents: '',
       groomName: '',
+      groomParents: '',
       personName: '',
       babyName: '',
       babyRelation: 'Son',
@@ -267,20 +283,41 @@
       mapsUrl: '',
       phone: '',
       email: '',
-      message: '',
+      message: 'Request the pleasure of your company as we begin our life together.\nYour presence would make our day complete.',
       additionalInformation: '',
       photo: '',
       background: '',
       gallery: [],
+      venueImage: '',
       music: 'none',
       musicFile: '',
-      font: 'playfair',
+      font: '',
+      fontPicked: false,
       colors: null,
       customColors: false,
       animation: 'fade',
       showCountdown: true,
       showMaps: true,
       showGallery: true,
+      showBlessings: true,
+      blessingsHeading: 'WITH THE BLESSINGS OF',
+      blessingsLeftTitle: "Bride's Family",
+      blessingsLeftDetails: 'Bride’s Parents & Family',
+      blessingsRightTitle: "Groom's Family",
+      blessingsRightDetails: 'Groom’s Parents & Family',
+      blessingsMessage: 'Your presence and blessings will make our celebration even more special.',
+      haldiEnabled: false,
+      haldiDate: '',
+      haldiTime: '',
+      mehndiEnabled: false,
+      mehndiDate: '',
+      mehndiTime: '',
+      ceremonyEnabled: false,
+      ceremonyDate: '',
+      ceremonyTime: '',
+      receptionEnabled: false,
+      receptionDate: '',
+      receptionTime: '',
       plan: '99',
       hosted: false,
       hostedUrl: '',
@@ -291,7 +328,9 @@
       filename: '',
       hostedAt: null,
       hostingStatus: '',
+      emailStatus: null,
       step: 1,
+      namesSwapped: false,
       updatedAt: null,
       published: false,
       publishedAt: null
@@ -307,6 +346,10 @@
       });
     }
 
+    /* 'playfair' used to be the default and meant "the design's own font"
+       ('cinzel' meant Telugu Pelli's own font). Both now read as no pick. */
+    if (saved && !saved.fontPicked && (saved.font === 'playfair' || (saved.font === 'cinzel' && base.template === 'telugu-pelli'))) base.font = '';
+
     /* Older naming-ceremony drafts kept the baby's name in the shared
        personName field, which is now dedicated to birthdays, graduations
        and the other one-person occasions. A saved naming ceremony moves
@@ -320,19 +363,98 @@
     /* Relation is a rendering default, never a required real answer — a
        draft saved before the field existed must still announce Son. */
     if (!base.babyRelation) base.babyRelation = 'Son';
+
+    /* Receptions used to name the couple in one field ("Rohan & Ananya");
+       they now take Groom and Bride like a wedding, so split the old value. */
+    if (base.eventType === 'reception' && base.personName && !base.groomName && !base.brideName) {
+      var couple = String(base.personName).split(/\s*(?:&|\band\b)\s*/i).filter(Boolean);
+      base.groomName = couple[0] || '';
+      base.brideName = couple.slice(1).join(' & ');
+      base.personName = '';
+    }
+
+    /* Migrate legacy or truncated additional header strings to full standard defaults */
+    if (!base.additionalSubtitle ||
+        base.additionalSubtitle === 'We joyfully invite you to celebrate the wedding of' ||
+        base.additionalSubtitle === 'WITH JOY IN OUR HEARTS' ||
+        base.additionalSubtitle === 'WITH JOY IN OUR HEARTS We joyfully invite you to celebrate the wedding of' ||
+        base.additionalSubtitle === 'WITH JOY IN OUR HEARTS  We joyfully invite you to celebrate the wedding of') {
+      base.additionalSubtitle = 'WITH JOY IN OUR HEARTS\nWe joyfully invite you to celebrate the wedding of';
+    }
+    if (!base.additionalTitle ||
+        base.additionalTitle === 'A BLESSED BEGINNING' ||
+        base.additionalTitle === 'With the blessings of our parents' ||
+        base.additionalTitle === 'A BLESSED BEGINNING With the blessings of our parents' ||
+        base.additionalTitle === 'A BLESSED BEGINNING  With the blessings of our parents') {
+      base.additionalTitle = 'A BLESSED BEGINNING\nWith the blessings of our parents';
+    }
+    if (!base.message) {
+      base.message = 'Request the pleasure of your company as we begin our life together.\nYour presence would make our day complete.';
+    }
     return base;
   }
 
-  var saveDraft = dom.debounce(function () {
+  /*
+   * Drafts store the generated background's project-relative asset path.
+   * Rehydrate that PNG into a data URL when the editor starts so the existing
+   * preview, link and publish/export pipelines continue to work unchanged.
+   */
+  function hydrateAiBackground() {
+    if (!state || !state.aiBackgroundAsset) return Promise.resolve();
+
+    if (String(state.aiBackground || '').indexOf('data:image/') === 0) {
+      return Promise.resolve();
+    }
+
+    return fetch(state.aiBackgroundAsset, { cache: 'no-store' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('AI background asset could not be loaded.');
+        return response.blob();
+      })
+      .then(function (blob) {
+        return new Promise(function (resolve, reject) {
+          var reader = new FileReader();
+          reader.onload = function () {
+            state.aiBackground = reader.result;
+            resolve();
+          };
+          reader.onerror = reject;
+          reader.readAsDataURL(blob);
+        });
+      })
+      .catch(function (err) {
+        /* The project file may have been removed or the editor may be opened
+           without Live Server. Keep the saved path so a later generation can
+           replace it, but do not break the editor boot. */
+        if (window.console) console.warn('InviteAura: could not hydrate AI background —', err);
+      });
+  }
+
+  function saveDraftSync() {
     state.updatedAt = new Date().toISOString();
-    var ok = IH.store.set(DRAFT_KEY, state);
+
+    /*
+     * AI backgrounds are real project files. Keep the current data URL in
+     * runtime state so export/publish validation can still embed it, but
+     * store only the small asset path in localStorage. A 3–5 MB PNG should
+     * never consume the browser's draft quota.
+     */
+    var draft = Object.assign({}, state);
+    if (state.aiBackgroundAsset) {
+      draft.aiBackground = state.aiBackgroundAsset;
+    }
+
+    var ok = IH.store.set(DRAFT_KEY, draft);
     var stamp = qs('[data-draft-stamp]', root);
     if (stamp) {
       stamp.textContent = ok
         ? 'Draft saved in this browser · ' + new Date().toLocaleTimeString()
         : 'Draft too large to save — photos are kept for this session only';
     }
-  }, 500);
+    return ok;
+  }
+
+  var saveDraft = dom.debounce(saveDraftSync, 500);
 
   /* ------------------------------------------------------------------
      3. Live preview
@@ -342,6 +464,7 @@
     var data = Object.assign({}, state);
     if (!state.customColors) IH.invitation.applyTemplate(data, state.template);
     else data.colors = state.colors;
+    data.aiBackground = state.aiBackground || '';
 
     // Fall back to friendly demo copy so the card never looks broken.
     if (!data.title && !data.brideName && !data.groomName && !data.personName && !data.babyName) {
@@ -349,6 +472,8 @@
     }
     if (nameMode(data.eventType) === 'couple') {
       if (!data.brideName && !data.groomName) { data.brideName = 'Bride'; data.groomName = 'Groom'; }
+      if (!data.groomParents) data.groomParents = 'Groom’s Parents';
+      if (!data.brideParents) data.brideParents = 'Bride’s Parents';
     }
     if (!data.message) {
       /* messageFor arrived with the per-event sample copy; a browser still
@@ -368,19 +493,47 @@
     return data;
   }
 
+  /* Set when the entrance animation changes, so the next render plays it. */
+  var replayEntrance = false;
+
   var renderPreview = dom.debounce(function () {
-    var data = previewData();
+    saveDraftSync();
+    var frame = document.getElementById('preview-viewport-frame');
+    if (!frame) return;
 
-    var stage = qs('[data-create-preview]', root);
-    var previewStage = qs('.preview-stage', root);
-    var device = previewStage ? previewStage.getAttribute('data-device') : 'mobile';
-
-    if (device === 'hosted') {
-      // In hosted mode, update the iframe preview
-      renderHostedPreviewDebounced();
-    } else if (stage) {
-      // Mobile/Desktop mode - use regular card preview
-      IH.invitation.mount(stage, data);
+    if (state.previewMode === 'card') {
+      // Card view: Directly mount to the frame
+      var mountZone = document.getElementById('invitation-mountzone');
+      if (!mountZone) {
+        frame.innerHTML = '<div class="invitation-container" id="invitation-mountzone"></div>';
+        mountZone = document.getElementById('invitation-mountzone');
+      }
+      if (mountZone && IH.invitation && IH.invitation.mount) {
+        mountZone.classList.toggle('is-still', !replayEntrance);
+        replayEntrance = false;
+        /* No music player in the editor preview; card.html (Open card ↗)
+           reads the saved draft, so the music still plays there. */
+        var cardData = previewData();
+        cardData.musicFile = '';
+        IH.invitation.mount(mountZone, cardData);
+      }
+    } else {
+      // Host view: Load host.html directly in iframe to use exact same webpage design and rendering logic
+      var iframe = document.getElementById('host-preview-iframe');
+      if (!iframe) {
+        frame.innerHTML = '<iframe id="host-preview-iframe" src="host.html" style="width: 100%; height: 100%; border: none; background: #fff;"></iframe>';
+        iframe = document.getElementById('host-preview-iframe');
+      } else {
+        try {
+          if (iframe.contentWindow && typeof iframe.contentWindow.location.reload === 'function') {
+            iframe.contentWindow.location.reload();
+          } else {
+            iframe.src = 'host.html';
+          }
+        } catch (e) {
+          iframe.src = 'host.html';
+        }
+      }
     }
   }, 140);
 
@@ -411,8 +564,8 @@
     if (openLink) openLink.href = url;
   }
 
-  var INVITE_STEP = 5;   // the finished invitation — free download & share
-  var PAY_STEP = 6;      // hosting — the optional ₹99 online publish
+  var INVITE_STEP = 6;   // the finished invitation — free download & share
+  var PAY_STEP = 7;      // hosting — the optional ₹99 online publish
 
   /* ------------------------------------------------------------------
      3c. Step 5 — everything that ended up on the card
@@ -427,14 +580,34 @@
     if (data.showCountdown !== false) sections.push('Countdown');
     if (data.showGallery !== false && data.gallery && data.gallery.length) sections.push('Gallery');
     if (data.showMaps !== false && (data.mapsUrl || data.address)) sections.push('View Location');
+    /* The programme slots are renamed per occasion on Additional Details
+       (Cake Cutting, Ring Ceremony...), so the summary reads those labels;
+       a slot whose card is hidden there (Haldi on an engagement) is left out. */
+    var celebrations = [];
+    var FALLBACK = { haldiEnabled: 'Haldi', mehndiEnabled: 'Mehndi', ceremonyEnabled: 'Wedding', receptionEnabled: 'Reception' };
+    Object.keys(FALLBACK).forEach(function (name) {
+      if (!data[name]) return;
+      var box = root && qs('[name="' + name + '"]', root);
+      var card = box && box.closest('.wedding-event-card');
+      if (card && card.style.display === 'none') return;
+      var span = box && box.parentNode.querySelector('span');
+      celebrations.push((span && span.textContent.trim()) || FALLBACK[name]);
+    });
+    var hasProgramme = data.eventType === 'wedding' || data.eventType === 'engagement' || hasOccasionDetails(data.eventType) ||
+      (data.eventType === 'reception' && !!(IH.weddingDesigns && IH.weddingDesigns.applies(data.template)));
+    if (hasProgramme && celebrations.length) sections.push('Programme: ' + celebrations.join(', '));
 
     return [
-      ['Occasion', IH.invitation.EVENT_TYPES[data.eventType] ? IH.invitation.EVENT_TYPES[data.eventType].label : 'Event'],
+      ['Occasion', IH.invitation.EVENT_TYPES[data.eventType] && data.eventType !== 'other' ? IH.invitation.EVENT_TYPES[data.eventType].label : 'Event'],
       ['Title', data.title],
+      ['Additional title', data.additionalTitle],
+      ['Additional subtitle', data.additionalSubtitle],
       ['Hosted by', data.hostName],
       ['Names', data.eventType === 'naming-ceremony'
         ? (data.babyName || data.personName)
-        : ([data.groomName, data.brideName].filter(Boolean).join(' & ') || data.personName || data.babyName || data.parentsName)],
+        : ((data.namesSwapped ? [data.brideName, data.groomName] : [data.groomName, data.brideName]).filter(Boolean).join(' & ') || data.personName || data.babyName || data.parentsName)],
+      ['Groom’s parents', data.groomParents],
+      ['Bride’s parents', data.brideParents],
       ['Company / Institution', data.organization],
       ['Department', data.department],
       ['Course / Class', data.classCourse],
@@ -482,20 +655,14 @@
 
     var rows = [
       hosted
-        ? '<li>' + IH.icon('globe', 18) + '<span>Your invitation is hosted online at its own public ' +
-          'address — guests open it directly, and WhatsApp shows a preview of it.</span></li>'
-        : '<li>' + IH.icon('link', 18) + '<span>Your invitation travels inside its own link — ' +
-          'nothing is stored on a server, so it works the moment your site is live.</span></li>',
-      '<li>' + IH.icon('zap', 18) + '<span>Link length: ' + url.length +
-        ' characters' + (url.length > 2000 ? ' — long, but WhatsApp and email carry it fine' : '') +
-        '</span></li>'
+        ? '<li>' + IH.icon('globe', 18) + '<span>Your invitation is online. Guests open it directly from your link.</span></li>'
+        : '<li>' + IH.icon('image', 18) + '<span>The <b>card picture (JPG)</b> is the simplest way to send it on WhatsApp.</span></li>',
+      '<li>' + IH.icon('file-text', 18) + '<span>The <b>page (.html)</b> keeps the countdown, map and gallery. Guests open it in any browser.</span></li>'
     ];
 
     if (embedded) {
-      rows.push('<li>' + IH.icon('image', 18) + '<span><strong>' + embedded + ' uploaded photo' +
-        (embedded === 1 ? '' : 's') + ' cannot travel in the link.</strong> ' +
-        'Use <em>Download .html</em> below to get a file with the photos inside, or commit them to ' +
-        'your repository and pick them from there.</span></li>');
+      rows.push('<li>' + IH.icon('info', 18) + '<span>Your ' + embedded + ' uploaded photo' + (embedded === 1 ? ' is' : 's are') +
+        ' included in the downloaded page and in hosting.</span></li>');
     }
 
     files.innerHTML = rows.join('');
@@ -508,9 +675,35 @@
     var exportBox = qs('[data-export-box]', root);
     if (!exportBox || !IH.exportPage) return;
 
-    on(qs('[data-export-download]', exportBox), 'click', function () {
-      var res = IH.exportPage.download(previewData());
-      IH.toast.success(res.file + ' saved to your downloads folder.', { title: 'Downloaded' });
+    on(qs('[data-export-download]', exportBox), 'click', saveInvitationPages);
+
+    on(qs('[data-invite-jpg]', root), 'click', function () {
+      var jpg = qs('[data-draft-download-jpg]', root);
+      if (jpg) jpg.click();
+    });
+    on(qs('[data-goto-hosting]', root), 'click', function () {
+      showStep(7);
+      var top = qs('[data-step-panel="7"]', root);
+      if (top && top.scrollIntoView) top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  /* Download .html: the host page and the card page, built from the saved
+     draft exactly as host.html and card.html show them, under one name —
+     the host page in invitation_card/, the card in invitation_card/invitations/. */
+  function saveInvitationPages() {
+    saveDraftSync();
+    var draft = IH.store.get(DRAFT_KEY, null) || state;
+    IH.exportPage.saveFiles(draft).then(function (res) {
+      var list = res.paths.join(' and ');
+      if (res.mode === 'download') {
+        IH.toast.success('Saved to your downloads folder. Move them to ' + list + ' (drop _card from the card file).', { title: 'Downloaded' });
+      } else {
+        IH.toast.success('Saved ' + list + '.', { title: 'Saved' });
+      }
+    }).catch(function (err) {
+      if (err && err.name === 'AbortError') return; // folder picker closed
+      IH.toast.error('Could not save the pages: ' + (err && err.message ? err.message : err));
     });
   }
 
@@ -571,16 +764,9 @@
     var steps = qs('[data-publish-steps]', box);
     if (steps) {
       steps.innerHTML = [
-        '<li>' + IH.icon('globe', 18) + '<span><strong>Publish it now</strong> renders the page on the ' +
-          'server, commits it to <code>' + escapeHtml(where.dir) + '/</code> and returns your unique ' +
-          'public link (<code>&lt;name&gt;-&lt;id&gt;.html</code>). Needs the Vercel deployment — ' +
-          'GitHub Pages cannot run it.</span></li>',
-        '<li>' + IH.icon('download', 18) + '<span><strong>Download page folder</strong> gives you ' +
-          '<code>' + escapeHtml(where.file) + '</code> plus your photos and music, named to match ' +
-          'it, to unpack at the root of your repository and push yourself. This is the one that ' +
-          'keeps your uploads.</span></li>',
-        '<li>' + IH.icon('zap', 18) + '<span>Either way it becomes a real page, so WhatsApp and ' +
-          'Facebook can show a preview of it — which the link above can never do.</span></li>'
+        '<li>' + IH.icon('globe', 18) + '<span><strong>Publish it now</strong> puts your page online again if the first try did not finish.</span></li>',
+        '<li>' + IH.icon('download', 18) + '<span><strong>Download page folder</strong> gives you a copy of the page with its photos and music (' +
+          escapeHtml(where.file) + ').</span></li>'
       ].join('');
     }
   }
@@ -739,6 +925,18 @@
     'festival', 'school-events', 'college-events', 'party', 'community-events', 'other'
   ];
 
+  /* One soft accent per occasion — tints the tile wash and the glow behind
+     its illustration. The illustrations are transparent cut-outs in
+     images/event-tiles/, so they sit on the tile instead of a dark square. */
+  var EVENT_ACCENTS = {
+    'wedding': '#C2185B', 'engagement': '#B8860B', 'reception': '#8E44AD',
+    'birthday': '#E8590C', 'baby-shower': '#E77FA8', 'naming-ceremony': '#D97706',
+    'house-warming': '#A0522D', 'anniversary': '#B91C3C', 'graduation': '#1E3A8A',
+    'retirement': '#2E7D6B', 'farewell': '#7C3AED', 'corporate': '#475569',
+    'festival': '#EA580C', 'school-events': '#2563EB', 'college-events': '#0E7490',
+    'party': '#9333EA', 'community-events': '#15803D', 'other': '#B45309'
+  };
+
   function buildEventTiles() {
     var host = qs('[data-event-tiles]', root);
     if (!host) return;
@@ -746,12 +944,21 @@
     host.innerHTML = EVENT_CHOICES.map(function (key) {
       var meta = IH.invitation.EVENT_TYPES[key];
       var count = IH.data.templates.filter(function (t) { return t.category === key; }).length;
+      var catObj = IH.data && IH.data.getCategory ? IH.data.getCategory(key) : null;
+      var displayCount = catObj && catObj.displayCount !== undefined ? catObj.displayCount : count;
+      var accent = EVENT_ACCENTS[key] || '#C2185B';
+
+      var iconContent = '<span class="option-tile__icon-wrap">' +
+        '<img class="option-tile__illus" src="images/event-tiles/' + key + '.png" alt="" width="72" height="72" loading="lazy" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'inline-block\';">' +
+        '<span class="option-tile__fallback-icon" style="display:none">' + IH.icon(meta.icon, 28) + '</span>' +
+        '</span>';
+
       return '<label class="option-tile">' +
         '<input type="radio" name="eventType" value="' + key + '"' + (state.eventType === key ? ' checked' : '') + '>' +
-        '<span class="option-tile__box">' +
-          IH.icon(meta.icon, 28) +
+        '<span class="option-tile__box option-tile--event" style="--tile-accent:' + accent + '">' +
+          iconContent +
           '<span>' + escapeHtml(meta.label) + '</span>' +
-          '<small>' + (count ? count + ' template' + (count === 1 ? '' : 's') : 'Any template') + '</small>' +
+          '<small>' + (displayCount ? displayCount + ' template' + (displayCount === 1 ? '' : 's') : 'Any template') + '</small>' +
         '</span>' +
       '</label>';
     }).join('');
@@ -765,6 +972,10 @@
   function setEventType(type) {
     state.eventType = type;
 
+    // The category background is only for the event tiles; the card keeps its template's own design.
+    state.aiBackground = '';
+    state.aiBackgroundAsset = '';
+
     // Move to a template that actually belongs to this event, unless the
     // visitor already picked one deliberately from this category.
     var cat = TEMPLATE_CATEGORY_FOR_EVENT[type];
@@ -775,6 +986,7 @@
       state.template = match ? match.slug : (fallback ? fallback.defaultTemplate : 'minimal-wedding');
       state.customColors = false;
     }
+    applyWeddingText();
 
     applyFieldRules();
     paintEventTemplates();
@@ -784,7 +996,56 @@
     saveDraft();
   }
 
+  /* Fields that belong to one design only (e.g. the Telugu-script names of
+     Telugu Pelli). They sit outside ALL_FIELDS, so the category rules above
+     never touch them; the value is kept when they are hidden. */
+  function applyTemplateFields() {
+    var couple = state.eventType === 'wedding' || state.eventType === 'engagement';
+    qsa('[data-template-only]', root).forEach(function (field) {
+      var on = couple && field.getAttribute('data-template-only') === state.template;
+      field.hidden = !on;
+      field.style.display = on ? '' : 'none';
+    });
+    syncCelebrationDetails();
+  }
+
+  /* Weddings, engagements, birthdays and the other occasions ask for the invitation
+     message on Additional Details; every other category keeps it on Event details. */
+  function placeMessageField() {
+    var field = qs('[data-message-field]', root);
+    var couple = state.eventType === 'wedding' || state.eventType === 'engagement' || hasOccasionDetails(state.eventType);
+    var anchor = qs(couple ? '[data-message-slot]' : '[data-message-home]', root);
+    if (field && anchor && field.nextSibling !== anchor) anchor.parentNode.insertBefore(field, anchor);
+  }
+
+  /* A title that only names another occasion ("wedding", "The Wedding
+     Celebration"...) follows the chosen event; a title the host wrote
+     themselves is never touched. */
+  function syncEventTitle() {
+    var type = state.eventType;
+    var current = String(state.title || '').trim().toLowerCase();
+    if (!current || !TITLE_PLACEHOLDERS[type]) return;
+    var generic = {};
+    Object.keys(TITLE_PLACEHOLDERS).forEach(function (k) {
+      generic[TITLE_PLACEHOLDERS[k].replace(/^e\.g\.\s*/, '').toLowerCase()] = k;
+      var meta = IH.invitation.EVENT_TYPES[k];
+      if (meta && meta.label) generic[meta.label.toLowerCase()] = k;
+    });
+    generic['wedding celebration'] = generic['the wedding celebration'] = 'wedding';
+    if (generic[current] && generic[current] !== type) {
+      /* Couple events get a full title; others simply take the event's name. */
+      var meta = IH.invitation.EVENT_TYPES[type];
+      state.title = (type === 'wedding' || type === 'engagement' || type === 'reception' || type === 'other' || !meta)
+        ? TITLE_PLACEHOLDERS[type].replace(/^e\.g\.\s*/, '') : meta.label;
+      var input = qs('[name="title"]', root);
+      if (input) input.value = state.title;
+    }
+  }
+
   function applyFieldRules() {
+    syncEventTitle();
+    applyTemplateFields();
+    placeMessageField();
     var type = state.eventType;
     var shown = FIELDS_BY_CATEGORY[type] || FIELDS_BY_CATEGORY.other;
     var need = REQUIRED_BY_CATEGORY[type] || REQUIRED_BY_CATEGORY.other;
@@ -830,7 +1091,9 @@
       }
 
       var placeholder = FIELD_PLACEHOLDERS[name] && FIELD_PLACEHOLDERS[name][type];
-      if (placeholder) input.placeholder = placeholder;
+      // Remember the page's own placeholder so another occasion gets it back.
+      if (!input.hasAttribute('data-placeholder')) input.setAttribute('data-placeholder', input.placeholder || '');
+      input.placeholder = placeholder || input.getAttribute('data-placeholder');
 
       if (name === 'personName') {
         if (type === 'house-warming') {
@@ -913,6 +1176,92 @@
       stepTitle.textContent = STEP_TITLE_OVERRIDES[type] ||
         ((meta && type !== 'other') ? meta.label + ' details' : 'Event details');
     }
+
+    syncCelebrationDetails();
+  }
+
+  /* The wedding details box (header wording + ceremonies) also serves the
+     engagement cards that run on the wedding design engine, relabelled for
+     an engagement. Called on event-type and template changes. */
+  var CELEBRATION_LABELS = {
+    wedding: { heading: 'Wedding celebrations', haldiEnabled: 'Haldi', mehndiEnabled: 'Mehndi', ceremonyEnabled: 'Wedding', receptionEnabled: 'Reception' },
+    engagement: { heading: 'Engagement programme', haldiEnabled: 'Haldi', mehndiEnabled: 'Mehndi', ceremonyEnabled: 'Ring Ceremony', receptionEnabled: 'Engagement Lunch / Dinner' },
+    reception: { heading: 'Reception programme', haldiEnabled: 'Haldi', mehndiEnabled: 'Mehndi', ceremonyEnabled: 'Welcome & Cocktails', receptionEnabled: 'Dinner & Dance' },
+    birthday: { heading: 'Party programme', haldiEnabled: 'Welcome & Games', mehndiEnabled: 'Cake Cutting', ceremonyEnabled: 'Lunch / Dinner', receptionEnabled: 'Music & Dance' }
+  };
+  var STEP3_INTRO = {
+    wedding: 'Special title and subtitle for your wedding invitation header.',
+    occasion: 'Header wording, the invitation message and the programme for your invitation.'
+  };
+  /* Occasions that follow the birthday pattern (OCCASION_DETAILS in js/preview.js). */
+  function occasionCfg(type) {
+    var all = IH.invitation && IH.invitation.OCCASION_DETAILS;
+    return (all && all[type]) || null;
+  }
+  function hasOccasionDetails(type) { return type === 'birthday' || !!occasionCfg(type); }
+  var WEDDING_SUBTITLE_TEXT = 'We joyfully invite you to celebrate the wedding of';
+  var ENGAGEMENT_SUBTITLE_TEXT = 'We joyfully invite you to celebrate the engagement of';
+  function syncCelebrationDetails() {
+    var type = state.eventType;
+    /* Every engagement uses Additional Details (header wording, programme,
+       invitation message), relabelled for an engagement. */
+    // Reception cards on the design engine get the same box, relabelled.
+    var receptionWd = type === 'reception' && !!(IH.weddingDesigns && IH.weddingDesigns.applies(state.template));
+    var engaged = type === 'engagement' || receptionWd;
+    // Birthdays and the other occasions use the same box: header wording, message and a programme.
+    var occasion = hasOccasionDetails(type);
+    var cfg = occasionCfg(type);
+    var isWedding = type === 'wedding' || engaged || occasion;
+    var meta = IH.invitation.EVENT_TYPES[type];
+    var stepNote = qs('[data-step-btn="3"] .step__text small', root);
+    if (stepNote) stepNote.textContent = occasion ? (meta && type !== 'other' ? meta.label : 'Event') + ' details' : receptionWd ? 'Reception details' : engaged ? 'Engagement details' : 'Wedding details';
+    var intro = qs('#step3-title + p', root);
+    if (intro) intro.textContent = STEP3_INTRO[occasion ? 'occasion' : 'wedding'];
+    // The family blessings header belongs to a couple.
+    var blessingsTile = qs('[name="showBlessings"]', root);
+    blessingsTile = blessingsTile && blessingsTile.closest('.option-tile');
+    if (blessingsTile) blessingsTile.style.display = occasion ? 'none' : '';
+    var addWeddingBox = qs('[data-additional-details-wedding]', root);
+    if (addWeddingBox) {
+      addWeddingBox.hidden = !isWedding;
+      addWeddingBox.style.display = isWedding ? '' : 'none';
+      var addInputs = qsa('input', addWeddingBox);
+      addInputs.forEach(function (inp) {
+        inp.disabled = !isWedding;
+        if (!isWedding) IH.validate.clearError(inp);
+      });
+      var labels = cfg
+        ? { heading: cfg.programme, haldiEnabled: cfg.items[0][0], mehndiEnabled: cfg.items[1][0], ceremonyEnabled: cfg.items[2][0], receptionEnabled: cfg.items[3][0] }
+        : Object.assign({}, CELEBRATION_LABELS[type === 'birthday' ? 'birthday' : receptionWd ? 'reception' : engaged ? 'engagement' : 'wedding']);
+      var spec = engaged && IH.weddingDesigns.spec(state.template);
+      if (spec && spec.mainEvent) labels.ceremonyEnabled = spec.mainEvent; // Roka / Tilak cards
+      var heading = qs('.wedding-events-grid', addWeddingBox);
+      heading = heading && heading.previousElementSibling;
+      if (heading && heading.tagName === 'H3') heading.textContent = labels.heading;
+      Object.keys(labels).forEach(function (name) {
+        var box = qs('[name="' + name + '"]', addWeddingBox);
+        var span = box && box.parentNode.querySelector('span');
+        if (span) span.textContent = labels[name];
+        var slot = name.replace('Enabled', '');
+        qsa('[name="' + slot + 'Date"], [name="' + slot + 'Time"]', addWeddingBox).forEach(function (inp) {
+          inp.setAttribute('aria-label', labels[name] + (inp.type === 'date' ? ' date' : ' time'));
+        });
+        // An engagement has only the ring ceremony and a meal: no Haldi / Mehndi.
+        var card = box && box.closest('.wedding-event-card');
+        if (card && (name === 'haldiEnabled' || name === 'mehndiEnabled')) card.style.display = engaged ? 'none' : '';
+      });
+      // Swap only the untouched default sentence; wording the host typed stays.
+      var sub = qs('[name="additionalSubtitle"]', addWeddingBox);
+      if (sub && typeof state.additionalSubtitle === 'string') {
+        // A reception card keeps the wedding sentence (the card words it for a reception).
+        var toEng = engaged && !receptionWd;
+        var from = toEng ? WEDDING_SUBTITLE_TEXT : ENGAGEMENT_SUBTITLE_TEXT, to = toEng ? ENGAGEMENT_SUBTITLE_TEXT : WEDDING_SUBTITLE_TEXT;
+        if (state.additionalSubtitle.indexOf(from) >= 0 && (type === 'engagement' || type === 'wedding' || receptionWd)) {
+          state.additionalSubtitle = state.additionalSubtitle.split(from).join(to);
+          sub.value = state.additionalSubtitle;
+        }
+      }
+    }
   }
 
   /* ------------------------------------------------------------------
@@ -948,8 +1297,7 @@
     var cat = TEMPLATE_CATEGORY_FOR_EVENT[type];
     if (!cat) return [];
     return IH.data.templates
-      .filter(function (t) { return t.category === cat; })
-      .sort(byPopularity);
+      .filter(function (t) { return t.category === cat; });
   }
 
   /* Checked state without a rebuild, so clicking a tile does not tear the
@@ -962,10 +1310,48 @@
 
   /* Every route to choosing a design ends here, so a pick from step 1 and
      a pick from the Design step do exactly the same thing. */
+  /* Wedding designs each carry their own header and message wording
+     (IH.invitation.weddingTextFor). A field is replaced only while it still
+     holds sample wording, so text the host typed is never overwritten. */
+  var WEDDING_TEXT_FIELDS = ['additionalTitle', 'additionalSubtitle', 'message'];
+  function applyWeddingText() {
+    var inv = IH.invitation;
+    var type = state.eventType;
+    if (!inv.weddingTextFor) return false;
+    var isOccasionText = function (name) { return !!(inv.isOccasionSampleText && inv.isOccasionSampleText(name, state[name])); };
+    var couple = type === 'wedding' || type === 'engagement';
+    var occasion = hasOccasionDetails(type) && !!inv.occasionTextFor;
+    /* An engagement goes back to the standard wording, which
+       syncCelebrationDetails rewords for an engagement. A birthday or other
+       occasion takes its own header wording; a reception drops it again. */
+    var text = occasion ? inv.occasionTextFor(type, state.template) : type === 'wedding' ? inv.weddingTextFor(state.template) : defaultState(), changed = false;
+    WEDDING_TEXT_FIELDS.forEach(function (name) {
+      /* A reception also drops a wedding design's own wording ("A garden of
+         joy… the wedding of"): only the standard sentence is reworded for a
+         reception card, so any other wedding sample would print as is. */
+      var sample = couple || occasion
+        ? inv.isWeddingSampleText(name, state[name]) || isOccasionText(name)
+        : (isOccasionText(name) || (type === 'reception' && inv.isWeddingSampleText(name, state[name]))) && !!String(state[name] || '').trim();
+      if (state[name] !== text[name] && sample) {
+        state[name] = text[name];
+        changed = true;
+        var input = root && qs('[name="' + name + '"]', root);
+        if (input) input.value = state[name];
+      }
+    });
+    return changed;
+  }
+
   function selectTemplate(slug, announce) {
+    if (state.template !== slug) {
+      state.aiBackground = '';
+      state.aiBackgroundAsset = '';
+    }
     state.template = slug;
     state.customColors = false;
     IH.invitation.applyTemplate(state, slug);
+    applyWeddingText();
+    applyTemplateFields();
     markSelected();
     syncColorInputs();
     renderPreview();
@@ -1149,18 +1535,19 @@
       var input = qs('[name="' + name + '"]', root);
       on(input, 'change', function () {
         state[name] = input.value;
-        if (name === 'animation') {
-          var stage = qs('[data-create-preview]', root);
-          if (stage) { stage.classList.remove('animate-fade-in', 'animate-pop'); void stage.offsetWidth;
-            stage.classList.add(input.value === 'pop' ? 'animate-pop' : 'animate-fade-in'); }
-        }
+        // A font chosen here is the host's own pick, which loadDraft keeps as is.
+        if (name === 'font') state.fontPicked = true;
+        /* The preview stays still while typing; picking an animation
+           replays it once so the choice can be seen. */
+        if (name === 'animation') replayEntrance = true;
         renderPreview();
         saveDraft();
       });
     });
 
-    ['showCountdown', 'showMaps', 'showGallery'].forEach(function (name) {
+    ['showCountdown', 'showMaps', 'showGallery', 'showBlessings'].forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
+      if (!input) return;
       on(input, 'change', function () {
         state[name] = input.checked;
         renderPreview();
@@ -1246,7 +1633,7 @@
 
   function initMedia() {
     // Single-image zones: profile photo and background
-    [['photo', '[data-drop-photo]'], ['background', '[data-drop-background]']].forEach(function (pair) {
+    [['photo', '[data-drop-photo]'], ['background', '[data-drop-background]'], ['venueImage', '[data-drop-venue]']].forEach(function (pair) {
       var key = pair[0];
       var zone = qs(pair[1], root);
       if (!zone) return;
@@ -1288,6 +1675,59 @@
 
       paint();
     });
+
+    // Venue AI image generation using FLUX.2 Klein 4B via local/remote ComfyUI
+    var venueGenBtn = qs('[data-generate-venue-image]', root);
+    if (venueGenBtn) {
+      on(venueGenBtn, 'click', function () {
+        venueGenBtn.disabled = true;
+        var originalText = venueGenBtn.innerHTML;
+        venueGenBtn.innerHTML = IH.icon('spinner', 16) + '<span>Generating...</span>';
+
+        fetch('/api/generate-venue', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            venueName: state.venue,
+            address: state.address
+          })
+        })
+        .then(function (res) {
+          if (!res.ok) {
+            return res.json().then(function (err) { throw new Error(err.error || 'Server error'); });
+          }
+          return res.json();
+        })
+        .then(function (json) {
+          if (json.dataUrl) {
+            state.venueImage = json.dataUrl;
+            renderPreview();
+            saveDraft();
+
+            // Find and paint the preview slot
+            var zone = qs('[data-drop-venue]', root);
+            if (zone) {
+              var out = qs('[data-preview-slot]', zone.parentNode);
+              if (out) {
+                out.innerHTML = '<div class="thumb"><img src="' + escapeHtml(state.venueImage) + '" alt="Generated venue">' +
+                  '<button class="thumb__remove" type="button" data-remove-single="venueImage" ' +
+                  'aria-label="Remove this image">' + IH.icon('close', 14) + '</button></div>';
+              }
+            }
+            IH.toast.success('AI venue image generated successfully.');
+          } else {
+            throw new Error('No image URL returned.');
+          }
+        })
+        .catch(function (err) {
+          IH.toast.error('AI Venue generation failed: ' + err.message);
+        })
+        .finally(function () {
+          venueGenBtn.disabled = false;
+          venueGenBtn.innerHTML = originalText;
+        });
+      });
+    }
 
     /* Background music. state.music keeps the original filename, which is
        what the card and the export name the track by; state.musicFile
@@ -1372,7 +1812,8 @@
         Promise.all(list.map(function (f) {
           return readImage(f).catch(function (err) { IH.toast.error(err.message); return null; });
         })).then(function (results) {
-          results.filter(Boolean).forEach(function (src) { state.gallery.push(src); });
+          // Re-checked here: a second pick made while these were decoding may have filled the gallery.
+          results.filter(Boolean).forEach(function (src) { if (state.gallery.length < 6) state.gallery.push(src); });
           paintGallery();
           renderPreview();
           saveDraft();
@@ -1422,20 +1863,46 @@
      7. Text inputs -> state
      ------------------------------------------------------------------ */
 
-  var TEXT_FIELDS = ['title', 'hostName', 'groomName', 'brideName', 'personName', 'babyName', 'parentsName',
+  var TEXT_FIELDS = ['title', 'hostName', 'groomName', 'groomParents', 'brideName', 'brideParents', 'personName', 'babyName', 'parentsName',
     'organization', 'classCourse', 'department', 'role', 'yearsOfService', 'eventKind', 'theme',
     'years', 'date', 'time', 'venue', 'address', 'mapsUrl', 'phone', 'email', 'message',
-    'additionalInformation'];
+    'additionalInformation', 'additionalTitle', 'additionalSubtitle',
+    'haldiDate', 'haldiTime', 'mehndiDate', 'mehndiTime', 'ceremonyDate', 'ceremonyTime', 'receptionDate', 'receptionTime'];
 
   function initInputs() {
     TEXT_FIELDS.forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
       if (!input) return;
+
+      // Sync DOM from state, or state from DOM if state is empty
+      if (state[name] !== undefined && state[name] !== null) {
+        input.value = state[name];
+      } else if (input.value) {
+        state[name] = input.value;
+      }
+
       on(input, 'input', function () {
         state[name] = input.value;
         renderPreview();
         saveDraft();
       });
+    });
+
+    /* Quick-fill sample text suggestion chips */
+    on(root, 'click', function (evt) {
+      var btn = evt.target.closest('[data-fill-target]');
+      if (!btn) return;
+      var targetId = btn.getAttribute('data-fill-target');
+      var text = btn.getAttribute('data-fill-text');
+      var input = document.getElementById(targetId);
+      if (input && text) {
+        input.value = text;
+        var fieldName = input.getAttribute('name');
+        if (fieldName) state[fieldName] = text;
+        if (window.IH && IH.validate && IH.validate.clearError) IH.validate.clearError(input);
+        renderPreview();
+        saveDraft();
+      }
     });
 
     /* The relation is a dropdown, so it announces its change with a
@@ -1454,6 +1921,54 @@
         saveDraft();
       });
     }
+
+    initWeddingEvents();
+
+    var swapBtn = qs('[data-swap-names]', root);
+    function updateSwapBtnText() {
+      if (!swapBtn) return;
+      var label = qs('span', swapBtn);
+      if (label) {
+        label.textContent = state.namesSwapped ? 'Swap Groom & Bride Names' : 'Swap Bride & Groom Names';
+      }
+      swapBtn.classList.toggle('btn--active', !!state.namesSwapped);
+    }
+
+    if (swapBtn) {
+      on(swapBtn, 'click', function () {
+        state.namesSwapped = !state.namesSwapped;
+        updateSwapBtnText();
+        saveDraftSync();
+        renderPreview();
+      });
+      // Set initial state
+      updateSwapBtnText();
+    }
+  }
+
+  function initWeddingEvents() {
+    ['haldiEnabled', 'mehndiEnabled', 'ceremonyEnabled', 'receptionEnabled'].forEach(function (name) {
+      var input = qs('[name="' + name + '"]', root);
+      if (!input) return;
+      var card = input.closest('.wedding-event-card');
+      var fieldsDiv = card ? qs('.wedding-event-fields', card) : null;
+
+      function updateFieldsVisibility() {
+        if (fieldsDiv) {
+          fieldsDiv.hidden = !input.checked;
+          fieldsDiv.style.display = input.checked ? '' : 'none';
+        }
+      }
+
+      updateFieldsVisibility();
+
+      on(input, 'change', function () {
+        state[name] = input.checked;
+        updateFieldsVisibility();
+        renderPreview();
+        saveDraft();
+      });
+    });
   }
 
   function syncInputs() {
@@ -1467,12 +1982,34 @@
       var input = qs('[name="' + name + '"]', root);
       if (input) input.value = state[name];
     });
-    ['showCountdown', 'showMaps', 'showGallery'].forEach(function (name) {
+    ['showCountdown', 'showMaps', 'showGallery', 'showBlessings'].forEach(function (name) {
       var input = qs('[name="' + name + '"]', root);
-      if (input) input.checked = !!state[name];
+      if (input) {
+        input.checked = !!state[name];
+      }
+    });
+    ['haldiEnabled', 'mehndiEnabled', 'ceremonyEnabled', 'receptionEnabled'].forEach(function (name) {
+      var input = qs('[name="' + name + '"]', root);
+      if (input) {
+        input.checked = !!state[name];
+        var card = input.closest('.wedding-event-card');
+        var fieldsDiv = card ? qs('.wedding-event-fields', card) : null;
+        if (fieldsDiv) {
+          fieldsDiv.hidden = !input.checked;
+          fieldsDiv.style.display = input.checked ? '' : 'none';
+        }
+      }
     });
     var eventInput = qs('[name="eventType"][value="' + state.eventType + '"]', root);
     if (eventInput) eventInput.checked = true;
+    var swapBtn = qs('[data-swap-names]', root);
+    if (swapBtn) {
+      var label = qs('span', swapBtn);
+      if (label) {
+        label.textContent = state.namesSwapped ? 'Swap Groom & Bride Names' : 'Swap Bride & Groom Names';
+      }
+      swapBtn.classList.toggle('btn--active', !!state.namesSwapped);
+    }
     markSelected();
     syncColorInputs();
   }
@@ -1481,7 +2018,7 @@
      8. Wizard navigation
      ------------------------------------------------------------------ */
 
-  var TOTAL_STEPS = 6;
+  var TOTAL_STEPS = 7;
   var furthest = 1;
 
   function panelFor(n) { return qs('[data-step-panel="' + n + '"]', root); }
@@ -1502,6 +2039,14 @@
     if (n === 2) {
       var panel = panelFor(2);
       if (!IH.validate.scope(panel)) {
+        IH.toast.error('A few details still need your attention.', { title: 'Check the form' });
+        return false;
+      }
+      return true;
+    }
+    if (n === 3) {
+      var panel3 = panelFor(3);
+      if (panel3 && !IH.validate.scope(panel3)) {
         IH.toast.error('A few details still need your attention.', { title: 'Check the form' });
         return false;
       }
@@ -1577,7 +2122,7 @@
     if (preview) preview.hidden = (n === 1);
 
     if (n === 1) paintEventTemplates();
-    if (n === 4) buildTemplatePicker();
+    if (n === 5) buildTemplatePicker();
     if (n === INVITE_STEP) {
       /* Reaching the Invitation step is free — the invitation is complete,
          and it can be downloaded or shared as it is. Online hosting stays a
@@ -1629,27 +2174,31 @@
   /* ------------------------------------------------------------------
      JPG Download button loading state helpers
      ------------------------------------------------------------------ */
+  /* Both JPG buttons (the preview's and step 6's "Download card (JPG)")
+     show a spinner and "Downloading…" while the capture runs, stay
+     disabled, then return to their own icon and label. */
   function setJpgDownloadLoading(isLoading) {
-    var btn = qs('[data-draft-download-jpg]', root);
-    if (!btn) return;
+    qsa('[data-draft-download-jpg], [data-invite-jpg]', root).forEach(function (btn) {
+      var label = btn.querySelector('span:not(.jpg-download-spinner)');
+      var spinner = btn.querySelector('.jpg-download-spinner');
+      if (!spinner) {
+        spinner = document.createElement('span');
+        spinner.className = 'jpg-download-spinner';
+        spinner.setAttribute('aria-hidden', 'true');
+        btn.insertBefore(spinner, label || null);
+      }
+      if (label && !label.hasAttribute('data-label')) label.setAttribute('data-label', label.textContent);
 
-    if (isLoading) {
-      btn.classList.add('is-loading');
-      btn.setAttribute('aria-busy', 'true');
-      btn.setAttribute('aria-disabled', 'true');
-      btn.disabled = true;
-      // Change button text to "Downloading JPG..."
-      var btnText = btn.querySelector('.btn-text');
-      if (btnText) btnText.textContent = 'Downloading JPG...';
-    } else {
-      btn.classList.remove('is-loading');
-      btn.removeAttribute('aria-busy');
-      btn.removeAttribute('aria-disabled');
-      btn.disabled = false;
-      // Restore original button text
-      var btnText = btn.querySelector('.btn-text');
-      if (btnText) btnText.textContent = 'Download JPG';
-    }
+      btn.classList.toggle('is-loading', isLoading);
+      btn.disabled = isLoading;
+      if (isLoading) {
+        btn.setAttribute('aria-busy', 'true');
+        if (label) label.textContent = 'Downloading…';
+      } else {
+        btn.removeAttribute('aria-busy');
+        if (label) label.textContent = label.getAttribute('data-label');
+      }
+    });
   }
 
   /* ------------------------------------------------------------------
@@ -1658,236 +2207,304 @@
      If the mobile invitation is already rendered in the Live Preview, clones it.
      Otherwise, renders the mobile invitation off-screen temporarily.
      ------------------------------------------------------------------ */
+  /* Helper to find the invitation element in the preview area,
+     checking both directly or inside the host-preview iframe. */
+  function getInvitationElement() {
+    var previewStage = qs('.preview-stage', root);
+    if (!previewStage) return null;
+    var el = previewStage.querySelector('.invitation');
+    if (el) return el;
+    var iframe = qs('#host-preview-iframe', root);
+    if (iframe && iframe.contentDocument) {
+      return iframe.contentDocument.querySelector('.invitation');
+    }
+    return null;
+  }
+
+  /* Helper to poll briefly for the live invitation element if the preview is currently mounting */
+  function waitForLiveInvitation(maxWaitMs) {
+    var el = getInvitationElement();
+    if (el) return Promise.resolve(el);
+    var start = Date.now();
+    return new Promise(function (resolve) {
+      var interval = setInterval(function () {
+        var found = getInvitationElement();
+        if (found) {
+          clearInterval(interval);
+          return resolve(found);
+        }
+        if (Date.now() - start >= (maxWaitMs || 2500)) {
+          clearInterval(interval);
+          return resolve(null);
+        }
+      }, 100);
+    });
+  }
+
+  /* Helper to convert modern CSS color(srgb ...) values into standard rgba(...) format
+     that html2canvas 1.4.1 can parse accurately. */
+  function srgbToRgba(str) {
+    if (!str || typeof str !== 'string') return str;
+    if (str.indexOf('color(srgb') === -1) return str;
+    return str.replace(/color\(srgb\s+([\d.]+)\s+([\d.]+)\s+([\d.]+)(?:\s*\/\s*([\d.]+))?\)/g, function (_, r, g, b, a) {
+      var red = Math.round(parseFloat(r) * 255);
+      var green = Math.round(parseFloat(g) * 255);
+      var blue = Math.round(parseFloat(b) * 255);
+      var alpha = a !== undefined ? parseFloat(a) : 1;
+      return 'rgba(' + red + ', ' + green + ', ' + blue + ', ' + alpha + ')';
+    });
+  }
+
+  /* Wait for fonts in a document to be fully loaded and ready */
+  function waitForFonts(doc) {
+    if (!doc || !doc.fonts) return Promise.resolve(true);
+    return doc.fonts.ready.then(function () {
+      var fontsToCheck = [
+        'Playfair Display',
+        'DM Sans',
+        'Great Vibes',
+        'Cormorant Garamond',
+        'Cinzel',
+        'Noto Serif Telugu'
+      ];
+      var promises = fontsToCheck.map(function (font) {
+        return doc.fonts.load('16px "' + font + '"').catch(function () { return true; });
+      });
+      return Promise.all(promises);
+    }).catch(function () { return true; });
+  }
+
+  /* Wait for all images inside an element to be complete and decoded */
+  function waitForImages(rootEl) {
+    var images = rootEl.querySelectorAll('img');
+    var promises = [];
+    for (var k = 0; k < images.length; k++) {
+      var img = images[k];
+      if (!img.complete || img.naturalWidth === 0) {
+        promises.push(new Promise(function (resolve) {
+          img.addEventListener('load', resolve, { once: true });
+          img.addEventListener('error', resolve, { once: true });
+        }));
+      }
+      if (img.decode) {
+        promises.push(img.decode().catch(function () {}));
+      }
+    }
+    return Promise.all(promises);
+  }
+
+  // Ensure html2canvas is loaded
+  function ensureHtml2Canvas() {
+    if (typeof html2canvas !== 'undefined') {
+      return Promise.resolve();
+    }
+    return loadHtml2Canvas();
+  }
+
   function downloadInvitationAsJPG() {
+    console.log('[create] downloadInvitationAsJPG started');
     var btn = qs('[data-draft-download-jpg]', root);
-    // Prevent multiple clicks
     if (!btn || btn.disabled || btn.classList.contains('is-loading')) return;
 
     setJpgDownloadLoading(true);
 
-    var data = previewData();
-    var previewStage = qs('.preview-stage[data-device="mobile"]', root);
-    var source = null;
-    var tempContainer = null;
-    var tempStage = null;
-    var tempMountPoint = null;
-    var captureRoot = null;
-
-    try {
-      // Check if mobile invitation is already rendered in the Live Preview
-      if (previewStage) {
-        source = previewStage.querySelector('.invitation');
+    waitForLiveInvitation(2500).then(function (liveInvitation) {
+      if (!liveInvitation) {
+        setJpgDownloadLoading(false);
+        IH.toast.error('No invitation preview found to download. Please wait a moment and try again.');
+        return;
       }
 
-      // If not rendered (e.g., user is on Desktop/Hosted tab), render it off-screen temporarily
-      if (!source) {
-        tempContainer = document.createElement('div');
-        tempContainer.style.position = 'fixed';
-        tempContainer.style.left = '-100000px';
-        tempContainer.style.top = '0';
-        tempContainer.style.width = '340px';
-        tempContainer.style.zIndex = '-1';
-        tempContainer.style.pointerEvents = 'none';
-        tempContainer.style.opacity = '0';
-
-        tempStage = document.createElement('div');
-        tempStage.className = 'preview-stage';
-        tempStage.setAttribute('data-device', 'mobile');
-        tempStage.style.width = '340px';
-        tempStage.style.minHeight = 'auto';
-        tempStage.style.padding = '0';
-        tempStage.style.border = 'none';
-        tempStage.style.background = 'transparent';
-        tempStage.style.overflow = 'visible';
-        tempStage.style.boxShadow = 'none';
-
-        tempMountPoint = document.createElement('div');
-        tempMountPoint.setAttribute('data-create-preview', '');
-        tempMountPoint.style.width = '100%';
-
-        tempStage.appendChild(tempMountPoint);
-        tempContainer.appendChild(tempStage);
-        document.body.appendChild(tempContainer);
-
-        // Render the mobile invitation
-        IH.invitation.mount(tempMountPoint, data);
-        source = tempMountPoint.querySelector('.invitation');
-
-        if (!source) {
-          throw new Error('Failed to render invitation for download.');
-        }
-      }
-
-      // Get source dimensions for the capture
-      var rect = source.getBoundingClientRect();
-      var width = Math.ceil(source.scrollWidth || rect.width);
-      var height = Math.ceil(source.scrollHeight || rect.height);
-
-      // Create an invisible off-screen capture container
-      captureRoot = document.createElement('div');
-      captureRoot.style.position = 'fixed';
-      captureRoot.style.left = '-100000px';
-      captureRoot.style.top = '0';
-      captureRoot.style.width = width + 'px';
-      captureRoot.style.height = height + 'px';
-      captureRoot.style.background = 'transparent';
-      captureRoot.style.pointerEvents = 'none';
-      captureRoot.style.zIndex = '-1';
-      captureRoot.style.overflow = 'visible';
-
-      // Clone the invitation
-      var clone = source.cloneNode(true);
-      captureRoot.appendChild(clone);
-      document.body.appendChild(captureRoot);
-
-      // Clean up temporary rendering container if we created one
-      if (tempContainer && tempContainer.parentNode) {
-        tempContainer.remove();
-        tempContainer = null;
-      }
-
-      // Helper to copy all computed styles from source to clone recursively
-      function copyComputedStyles(sourceNode, cloneNode) {
-        var computed = window.getComputedStyle(sourceNode);
-        for (var i = 0; i < computed.length; i++) {
-          var property = computed[i];
-          var value = computed.getPropertyValue(property);
-          var priority = computed.getPropertyPriority(property);
-          if (value) {
-            cloneNode.style.setProperty(property, value, priority);
-          }
-        }
-        // Recursively copy styles for all children
-        var sourceChildren = sourceNode.children;
-        var cloneChildren = cloneNode.children;
-        for (var j = 0; j < sourceChildren.length; j++) {
-          if (cloneChildren[j]) {
-            copyComputedStyles(sourceChildren[j], cloneChildren[j]);
-          }
-        }
-      }
-
-      // Apply computed styles to the clone so html2canvas captures resolved values
-      copyComputedStyles(source, clone);
-
-      // Wait for fonts
-      function waitForFonts() {
-        return document.fonts ? document.fonts.ready : Promise.resolve();
-      }
-
-      // Wait for all images in the clone to load
-      function waitForImages(root) {
-        var images = root.querySelectorAll('img');
-        var promises = [];
-        for (var k = 0; k < images.length; k++) {
-          var img = images[k];
-          if (!img.complete || img.naturalWidth === 0) {
-            promises.push(new Promise(function (resolve) {
-              img.addEventListener('load', resolve, { once: true });
-              img.addEventListener('error', resolve, { once: true });
-            }));
-          }
-          if (img.decode) {
-            promises.push(img.decode().catch(function () {}));
-          }
-        }
-        return Promise.all(promises);
-      }
-
-      // Ensure html2canvas is loaded
-      function ensureHtml2Canvas() {
-        if (typeof html2canvas !== 'undefined') {
-          return Promise.resolve();
-        }
-        return loadHtml2Canvas();
-      }
-
-      // Do the capture
-      function doCapture() {
-        return html2canvas(clone, {
-          backgroundColor: null,
-          useCORS: true,
-          allowTaint: false,
-          logging: false,
-          scale: 2,
-          width: width,
-          height: height,
-          windowWidth: width,
-          windowHeight: height,
-          scrollX: 0,
-          scrollY: 0,
-          imageTimeout: 15000
-        });
-      }
-
-      // Generate filename
       var data2 = previewData();
       var fileName = IH.exportPage.buildInvitationFilename(data2).replace(/\.html$/, '.jpg');
+      var targetDoc = liveInvitation.ownerDocument || document;
+      var targetWin = targetDoc.defaultView || window;
 
-      // Execute capture pipeline
-      var promise = Promise.all([waitForFonts(), waitForImages(clone), ensureHtml2Canvas()])
-        .then(function () {
-          // Wait for browser paint
-          return new Promise(function (resolve) { requestAnimationFrame(resolve); })
-            .then(function () { return new Promise(function (resolve) { requestAnimationFrame(resolve); }); })
-            .then(function () { return new Promise(function (resolve) { setTimeout(resolve, 100); }); });
-        })
-        .then(doCapture)
-        .then(function (canvas) {
-          var blobPromise = new Promise(function (resolve) {
-            canvas.toBlob(resolve, 'image/jpeg', 0.95);
-          });
-          return blobPromise.then(function (blob) {
-            if (!blob) throw new Error('Could not create JPG');
-            return blob;
-          });
-        })
-        .then(function (blob) {
-          var url = URL.createObjectURL(blob);
-          var a = document.createElement('a');
-          a.href = url;
-          a.download = fileName;
-          a.style.display = 'none';
-          a.rel = 'noopener';
-          document.body.appendChild(a);
-          // Use setTimeout to ensure the anchor is in the DOM before clicking
-          setTimeout(function () {
-            a.click();
-            a.remove();
-            setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
-            IH.toast.success('Invitation downloaded as JPG.');
-          }, 0);
-        })
-        .catch(function (err) {
-          console.error('[create] Invitation JPG capture failed:', err);
-          IH.toast.error('Unable to download the invitation image. Please try again.');
-        })
-        .finally(function () {
-          // Always clean up - this runs AFTER the entire Promise chain completes
-          if (captureRoot && captureRoot.parentNode) {
-            captureRoot.remove();
-          }
-          if (tempContainer && tempContainer.parentNode) {
-            tempContainer.remove();
-          }
-          // Always restore button state
-          setJpgDownloadLoading(false);
+      // Scroll target preview window to top before measuring and capturing
+      if (targetWin && targetWin.scrollTo) {
+        try { targetWin.scrollTo(0, 0); } catch (e) {}
+      }
+
+      return Promise.all([
+        waitForFonts(targetDoc),
+        waitForImages(liveInvitation),
+        typeof htmlToImage !== 'undefined' ? Promise.resolve() : ensureHtml2Canvas()
+      ]).then(function () {
+        // Measure the live invitation element to match the active preview layout exactly (Mobile, Tablet, Desktop, Responsive)
+        var rect = liveInvitation.getBoundingClientRect();
+        var width = Math.round(rect.width || liveInvitation.offsetWidth || 390);
+        var height = Math.round(rect.height || liveInvitation.offsetHeight || 844);
+
+        console.log('[create] Capturing live invitation WYSIWYG:', width, 'x', height);
+
+        return captureInvitationCanvas(liveInvitation, width, height, targetDoc, targetWin);
+      }).then(function (canvas) {
+        return new Promise(function (resolve) {
+          canvas.toBlob(resolve, 'image/jpeg', 0.95);
         });
-
-      return promise;
-    } catch (err) {
-      // Synchronous errors (e.g., failed to render invitation)
+      }).then(function (blob) {
+        if (!blob) throw new Error('Could not create JPG blob');
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = fileName;
+        a.style.display = 'none';
+        a.rel = 'noopener';
+        document.body.appendChild(a);
+        setTimeout(function () {
+          a.click();
+          a.remove();
+          setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+          IH.toast.success('Invitation downloaded as JPG.');
+        }, 0);
+      });
+    }).catch(function (err) {
       console.error('[create] Invitation JPG capture failed:', err);
       IH.toast.error('Unable to download the invitation image. Please try again.');
-      // Clean up on synchronous error
-      if (captureRoot && captureRoot.parentNode) {
-        captureRoot.remove();
-      }
-      if (tempContainer && tempContainer.parentNode) {
-        tempContainer.remove();
-      }
+    }).finally(function () {
       setJpgDownloadLoading(false);
+    });
+  }
+
+  /* The browser paints the card itself through an SVG foreignObject
+     (html-to-image), so mask-image fades, filters, blend modes and card
+     boxes come out exactly as in the preview. html2canvas re-implements
+     CSS and drops those, so it is kept only as a fallback. */
+  function captureInvitationCanvas(liveInvitation, width, height, targetDoc, targetWin) {
+    if (typeof htmlToImage === 'undefined') {
+      return ensureHtml2Canvas().then(function () {
+        return captureWithHtml2Canvas(liveInvitation, width, height, targetWin);
+      });
     }
+    return getFontEmbedCss(targetDoc).then(function (fontCss) {
+      // No backgroundColor option: html-to-image paints it over the card's own
+      // parchment. JPG has no alpha, so the rounded corners are flattened onto white here.
+      return htmlToImage.toCanvas(liveInvitation, {
+        pixelRatio: 2,
+        width: width,
+        height: height,
+        fontEmbedCSS: fontCss,
+        // The card is centred with auto margins; keep them out of the capture
+        style: { margin: '0' }
+      });
+    }).then(function (canvas) {
+      var flat = document.createElement('canvas');
+      flat.width = canvas.width;
+      flat.height = canvas.height;
+      var ctx = flat.getContext('2d');
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, flat.width, flat.height);
+      ctx.drawImage(canvas, 0, 0);
+      return flat;
+    }).catch(function (err) {
+      console.warn('[create] Native capture failed, falling back to html2canvas:', err);
+      return ensureHtml2Canvas().then(function () {
+        return captureWithHtml2Canvas(liveInvitation, width, height, targetWin);
+      });
+    });
+  }
+
+  /* The Google Fonts <link> is cross-origin, so its rules cannot be read
+     from document.styleSheets. Fetch the CSS directly and inline the font
+     files as data URLs — once per page load. Only the Latin, Telugu and
+     Tamil subsets are kept; the cards never use the others. */
+  var fontEmbedCssPromise = null;
+  function getFontEmbedCss(doc) {
+    if (fontEmbedCssPromise) return fontEmbedCssPromise;
+    var link = (doc && doc.querySelector('link[href*="fonts.googleapis.com/css"]')) ||
+               document.querySelector('link[href*="fonts.googleapis.com/css"]');
+    if (!link || typeof fetch === 'undefined') return Promise.resolve('');
+
+    var toDataUrl = function (blob) {
+      return new Promise(function (resolve, reject) {
+        var reader = new FileReader();
+        reader.onload = function () { resolve(reader.result); };
+        reader.onerror = reject;
+        reader.readAsDataURL(blob);
+      });
+    };
+
+    fontEmbedCssPromise = fetch(link.href).then(function (res) { return res.text(); }).then(function (css) {
+      var faces = (css.match(/@font-face\s*\{[^}]*\}/g) || []).filter(function (face) {
+        return !/unicode-range/.test(face) || /U\+0000-00FF|U\+0C00|U\+0B8/i.test(face);
+      });
+      return Promise.all(faces.map(function (face) {
+        var m = face.match(/url\((https:[^)]+)\)/);
+        if (!m) return face;
+        return fetch(m[1]).then(function (res) { return res.blob(); }).then(toDataUrl).then(function (dataUrl) {
+          return face.replace(m[1], dataUrl);
+        }).catch(function () { return ''; });
+      }));
+    }).then(function (list) {
+      return list.join('\n');
+    }).catch(function () {
+      fontEmbedCssPromise = null;
+      return '';
+    });
+    return fontEmbedCssPromise;
+  }
+
+  function captureWithHtml2Canvas(liveInvitation, width, height, targetWin) {
+    return html2canvas(liveInvitation, {
+      backgroundColor: null,
+      useCORS: true,
+      allowTaint: true,
+      logging: false,
+      scale: 2,
+      width: width,
+      height: height,
+      scrollX: 0,
+      scrollY: 0,
+      imageTimeout: 15000,
+      onclone: function (clonedDoc) {
+        // Apply accurate computed colors to resolve CSS color-mix() into standard rgba()
+        var liveElements = liveInvitation.querySelectorAll('*');
+        var clonedLive = clonedDoc.querySelector('.invitation');
+        if (!clonedLive) return;
+
+        var rootComp = targetWin.getComputedStyle(liveInvitation);
+        if (rootComp.backgroundColor && rootComp.backgroundColor.indexOf('color(srgb') !== -1) {
+          clonedLive.style.backgroundColor = srgbToRgba(rootComp.backgroundColor);
+        }
+
+        var clonedElements = clonedLive.querySelectorAll('*');
+        for (var i = 0; i < liveElements.length && i < clonedElements.length; i++) {
+          var orig = liveElements[i];
+          var cloned = clonedElements[i];
+          var comp = targetWin.getComputedStyle(orig);
+
+          if (comp.backgroundColor && comp.backgroundColor.indexOf('color(srgb') !== -1) {
+            cloned.style.backgroundColor = srgbToRgba(comp.backgroundColor);
+          }
+          if (comp.borderColor && comp.borderColor.indexOf('color(srgb') !== -1) {
+            cloned.style.borderColor = srgbToRgba(comp.borderColor);
+          }
+          if (comp.color && comp.color.indexOf('color(srgb') !== -1) {
+            cloned.style.color = srgbToRgba(comp.color);
+          }
+        }
+
+        // Explicitly sync card container backgrounds and borders
+        var cardSelectors = [
+          '.invitation__when-unified',
+          '.cd-unit',
+          '.invitation__venue-section',
+          '.invitation__extra',
+          '.invitation__when-col',
+          '.invitation__couple-cell',
+          '.invitation__save-date-box'
+        ];
+        cardSelectors.forEach(function (sel) {
+          var origEls = liveInvitation.querySelectorAll(sel);
+          var clonedEls = clonedDoc.querySelectorAll(sel);
+          for (var k = 0; k < origEls.length && k < clonedEls.length; k++) {
+            var c = targetWin.getComputedStyle(origEls[k]);
+            if (c.backgroundColor) clonedEls[k].style.backgroundColor = srgbToRgba(c.backgroundColor);
+            if (c.borderColor) clonedEls[k].style.borderColor = srgbToRgba(c.borderColor);
+          }
+        });
+      }
+    });
   }
 
   // html2canvas is loaded via <script defer> in create.html.
@@ -1955,32 +2572,29 @@
 
   function initPreviewColumn() {
     var stage = qs('.preview-stage', root);
-    qsa('[data-preview-device]', root).forEach(function (btn) {
+    if (IH) IH.exportJpg = downloadInvitationAsJPG;
+    qsa('[data-device-btn]', root).forEach(function (btn) {
       on(btn, 'click', function () {
-        var mode = btn.getAttribute('data-preview-device');
-        if (stage) stage.setAttribute('data-device', mode);
-        qsa('[data-preview-device]', root).forEach(function (other) {
-          other.setAttribute('aria-pressed', other === btn ? 'true' : 'false');
-        });
-
-        // Handle hosted preview mode
-        if (mode === 'hosted') {
-          // Render full Host Page via exportPage.buildHtml into iframe
-          var container = qs('[data-create-preview]', root);
-          if (container) {
-            // Clear any existing content
-            container.innerHTML = '';
-          }
-          renderHostedPreviewDebounced();
-        } else {
-          // Mobile/Desktop mode - use regular card preview
-          var container = qs('[data-create-preview]', root);
-          if (container) {
-            container.innerHTML = '';
-            // Re-render the card preview
-            renderPreview();
-          }
+        var w = btn.getAttribute('data-device-btn');
+        var frame = document.getElementById('preview-viewport-frame');
+        if (frame) {
+          frame.style.width = w === '100%' ? '100%' : w + 'px';
+          frame.style.height = w === '390' ? '844px' : (w === '768' ? '1024px' : (w === '1366' ? '768px' : (w === '1920' ? '1080px' : '100%')));
         }
+        qsa('[data-device-btn]', root).forEach(function (other) {
+          other.classList.toggle('is-active', other === btn);
+        });
+      });
+    });
+
+    qsa('[data-view-btn]', root).forEach(function (btn) {
+      on(btn, 'click', function () {
+        state.previewMode = btn.getAttribute('data-view-btn');
+        qsa('[data-view-btn]', root).forEach(function (other) {
+          other.classList.toggle('is-active', other === btn);
+        });
+        renderPreview();
+        saveDraft();
       });
     });
 
@@ -2002,6 +2616,14 @@
 
     on(qs('[data-draft-download-jpg]', root), 'click', function () {
       downloadInvitationAsJPG();
+    });
+
+    on(qs('[data-draft-download-html]', root), 'click', function () {
+      if (!IH.exportPage) return;
+      var res = IH.exportPage.download(previewData());
+      if (res && res.file) {
+        IH.toast.success(res.file + ' saved to your downloads folder.', { title: 'Downloaded' });
+      }
     });
   } // close initPreviewColumn
 
@@ -2307,7 +2929,7 @@
         } else if (result.email && (result.email.sent === false || result.email.rejected) && !result.email.skipped) {
           var reason = result.email.reason || result.email.error || 'Mail server error';
           setPaymentStatus('❌ Email sending failed', 'Reason: ' + reason, 'warn');
-          IH.toast.warn('Email sending failed. Reason: ' + reason, { title: '❌ Email sending failed' });
+          IH.toast.warning('Email sending failed. Reason: ' + reason, { title: '❌ Email sending failed' });
         }
 
         /* 10. 🎉 Your invitation is ready! */
@@ -2413,7 +3035,7 @@
         };
         saveDraft();
         setPaymentStatus('❌ Email sending failed', 'Reason: ' + (err.message || 'Unknown error'), 'warn');
-        IH.toast.warn('Email sending failed. Reason: ' + (err.message || ''), { title: '❌ Email sending failed' });
+        IH.toast.warning('Email sending failed. Reason: ' + (err.message || ''), { title: '❌ Email sending failed' });
         paintHostedEmailStatus(state.emailStatus);
       })
       .then(function () {
@@ -2457,10 +3079,7 @@
       IH.qrModal.open(state.hostedUrl || '');
     });
 
-    on(qs('[data-hosted-download]', root), 'click', function () {
-      var res = IH.exportPage.download(previewData());
-      IH.toast.success(res.file + ' saved to your downloads folder.', { title: 'Downloaded' });
-    });
+    on(qs('[data-hosted-download]', root), 'click', saveInvitationPages);
 
     paintHostingStatus();
   }
@@ -2491,7 +3110,18 @@
     if (params.get('event') && IH.invitation.EVENT_TYPES[params.get('event')]) {
       state.eventType = params.get('event');
     }
+    /* Apply the link once, then drop it from the address bar: otherwise a
+       reload re-applies it and overrides what was chosen since (an
+       engagement design opened from the gallery kept turning a wedding
+       back into an engagement). */
+    if ((wanted || params.get('event')) && window.history && history.replaceState) {
+      params.delete('template');
+      params.delete('event');
+      var rest = params.toString();
+      history.replaceState(null, '', location.pathname + (rest ? '?' + rest : '') + location.hash);
+    }
     state.plan = '99';
+    applyWeddingText();
 
     var hadDraft = !!IH.store.get(DRAFT_KEY, null);
     furthest = hadDraft ? Math.max(1, state.step || 1) : 1;
@@ -2529,7 +3159,18 @@
     }
 
     showStep(wanted ? 2 : (state.step || 1));
-    renderPreview();
+
+    // Set view buttons active state
+    var btn = qs('[data-view-btn="' + state.previewMode + '"]', root);
+    if (btn) {
+        qsa('[data-view-btn]', root).forEach(function (other) {
+          other.classList.toggle('is-active', other === btn);
+        });
+    }
+
+    hydrateAiBackground().then(function () {
+      renderPreview();
+    });
 
     if (hadDraft && !wanted) {
       IH.toast.info('We restored the draft saved in this browser.', { title: 'Welcome back' });

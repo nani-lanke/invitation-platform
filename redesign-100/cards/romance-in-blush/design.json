@@ -1,0 +1,47 @@
+{
+ "slug": "romance-in-blush",
+ "name": "Romance In Blush",
+ "base": "cards/romance-in-blush/",
+ "spec": {
+  "layout": "classic",
+  "frame": "beads",
+  "venue": "stack",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/romance-in-blush.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/romance-in-blush.svg",
+  "corners": "inline SVG corner set (beads)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a romantic blush wedding reception with open roses and candles, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7089252,
+   "raw": "..\\work\\raw\\romance-in-blush__venue__7089252_4rxae.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a single open blush pink garden rose, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5836328,
+   "raw": "..\\work\\raw\\romance-in-blush__crest__5836328_145s6.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a soft blush sunset over a rose garden, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9678970,
+   "raw": "..\\work\\raw\\romance-in-blush__footer__9678970_3rrr5.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of open blush roses, soft pink peonies and green leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9223352,
+   "raw": "..\\work\\raw\\romance-in-blush__corner__9223352_276p0.png"
+  }
+ }
+}

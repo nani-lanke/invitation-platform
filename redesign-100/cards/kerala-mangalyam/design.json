@@ -1,0 +1,40 @@
+{
+ "slug": "kerala-mangalyam",
+ "name": "Kerala Mangalyam",
+ "base": "cards/kerala-mangalyam/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "band",
+  "venue": "split",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/kerala-mangalyam.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/kerala-mangalyam.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Kerala temple courtyard wedding venue with a wooden nalukettu roof, tall brass nilavilakku lamps and jasmine garlands, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2598614,
+   "raw": "..\\work\\raw\\kerala-mangalyam__venue__2598614.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of white jasmine, banana leaves and tender coconut palm fronds, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1815910,
+   "raw": "..\\work\\raw\\kerala-mangalyam__crest__1815910.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of Kerala backwaters with coconut palms and a traditional kettuvallam houseboat, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8512896,
+   "raw": "..\\work\\raw\\kerala-mangalyam__footer__8512896.png"
+  }
+ }
+}

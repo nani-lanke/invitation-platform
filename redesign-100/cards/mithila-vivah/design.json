@@ -1,0 +1,40 @@
+{
+ "slug": "mithila-vivah",
+ "name": "Mithila Vivah",
+ "base": "cards/mithila-vivah/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "arch",
+  "venue": "split",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/mithila-vivah.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/mithila-vivah.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Mithila wedding kohbar room with Madhubani painted walls, lamps, bamboo and lotus decorations, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8126235,
+   "raw": "..\\work\\raw\\mithila-vivah__venue__8126235_2oghk.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of pink lotus flowers, lotus leaves and marigolds, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5694875,
+   "raw": "..\\work\\raw\\mithila-vivah__crest__5694875_2331g.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Mithila village pond with lotus flowers and mud houses, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9177027,
+   "raw": "..\\work\\raw\\mithila-vivah__footer__9177027_4k0gg.png"
+  }
+ }
+}

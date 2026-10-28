@@ -1,0 +1,63 @@
+/* Creative briefs for the reception cards on the wedding design engine.
+   [crest object, flowers for the decoration, venue scene (empty, no people)]
+   Used by scripts/generate-engagement-decor.js --set=reception (FLUX.2 Klein 4B). */
+module.exports = {
+  'grand-reception': ['a pair of crystal champagne coupes under a small string of glowing bulbs', 'white roses, ivory peonies and eucalyptus', 'an empty grand wedding reception hall under strings of warm lights with round tables and a floral stage'],
+  'evening-reception': ['a gold candelabra with three lit candles', 'white roses, navy thistle and gold leaves', 'an empty elegant evening reception ballroom in navy and gold with candlelit tables'],
+  'midnight-soiree': ['a vintage gold pocket watch showing midnight beside a champagne coupe', 'white orchids, indigo delphinium and silver leaves', 'an empty late night reception lounge in deep indigo with hanging lights and lounge seating'],
+  'rose-gold-evening': ['a rose gold mandala medallion with a small heart at its centre', 'blush roses, rose gold leaves and plum dahlias', 'an empty rose gold and plum reception hall with floral centrepieces and chandeliers'],
+  'garden-reception': ['a small brass garden lantern wrapped with green leaves', 'white garden roses, ferns and trailing ivy', 'an empty garden wedding reception lawn under open sky with long tables and greenery'],
+  'reception-evening': ['two clinking champagne coupes beneath a string of bulbs', 'champagne roses, white spray roses and gold leaves', 'an empty evening reception terrace with string lights, dining tables and flowers'],
+  'after-party': ['a sparkling silver disco mirror ball', 'purple orchids, white roses and silver leaves', 'an empty after party dance floor with a mirror ball, purple lights and a DJ booth'],
+  'wedding-brunch': ['a porcelain teacup on a saucer with a small sprig of flowers and a folded linen napkin', 'white ranunculus, sage leaves and small yellow blooms', 'an empty sunlit wedding brunch table in a garden conservatory with linen, flowers and pastries'],
+  'grand-luxury-reception': ['an ornate gold crown with jewels', 'gold roses, white orchids and gilded leaves', 'an empty grand luxury reception ballroom in black and gold with a huge chandelier'],
+  'royal-palace-reception': ['an ornate gold palace gate with a fleur-de-lis on top', 'white roses, navy delphinium and gold leaves', 'an empty royal palace ballroom decorated for a wedding reception with gilded columns'],
+  'modern-minimal-reception': ['two simple interlocked gold rings', 'a single white calla lily with green leaves', 'an empty modern minimal reception venue with white tables, clean lines and soft daylight'],
+  'classic-elegant-reception': ['a single deep red rose under a small gold arch', 'deep red roses, burgundy peonies and gold leaves', 'an empty classic elegant reception hall in burgundy and gold with candelabras'],
+  'luxury-ballroom-reception': ['a small crystal chandelier pendant', 'blush roses, white orchids and crystal beads', 'an empty luxury ballroom with crystal chandeliers and rose gold decor'],
+  'garden-evening-reception': ['a round wreath of green leaves around a small lit lantern', 'white roses, sage eucalyptus and fairy lights among leaves', 'an empty garden reception at dusk with lanterns, long tables and sage greenery'],
+  'beach-reception': ['a silver seashell with a pearl', 'white frangipani, blue hydrangeas and sea grass', 'an empty beach wedding reception with white tables on the sand by the sea at sunset'],
+  'rooftop-reception': ['a glowing vintage Edison light bulb', 'white roses, olive branches and eucalyptus', 'an empty city rooftop wedding reception with string lights, lounge seating and skyline at dusk'],
+  'hotel-reception': ['a champagne coupe between two small classical columns', 'white roses, champagne roses and gold leaves', 'an empty grand hotel ballroom set for a wedding reception with columns and chandeliers'],
+  'resort-reception': ['a hibiscus flower lei with a gold coconut cup', 'red hibiscus, white orchids and palm leaves', 'an empty tropical resort wedding reception by a pool with lanterns and palms'],
+  'candlelight-reception': ['three lit ivory pillar candles in a gold holder', 'deep red roses, burgundy peonies and dark leaves', 'an empty candlelit wedding reception hall with rows of glowing candles and burgundy roses'],
+  'floral-reception': ['a round posy of dusty rose garden roses tied with a ribbon', 'dusty rose garden roses, burgundy dahlias and green leaves', 'an empty floral wedding reception with a wall of dusty rose and burgundy flowers'],
+  'black-gold-reception': ['a gold sunburst medallion with a sparkle at its centre', 'black calla lilies, gold roses and gold leaves', 'an empty black and gold wedding reception hall with gold rays and dark drapes'],
+  'rose-gold-reception': ['a single rose gold rose inside a small arch frame', 'blush roses, rose gold leaves and white spray roses', 'an empty rose gold wedding reception with a floral arch and soft lights'],
+  'champagne-reception': ['two raised crystal champagne coupes catching golden light', 'champagne roses, ivory peonies and pampas grass', 'an empty champagne coloured wedding reception with a champagne tower and gold decor'],
+  'crystal-reception': ['a glittering crystal snowflake ornament', 'white roses, silver leaves and crystal beads', 'an empty winter crystal wedding reception in sapphire and silver with crystal chandeliers'],
+  'vintage-reception': ['an antique feather quill in a sepia brass inkwell', 'sepia toned roses, dried flowers and lace', 'an empty vintage wedding reception with antique furniture, lace and candles'],
+  'boho-reception': ['a woven macrame dreamcatcher with dried flowers', 'terracotta roses, pampas grass and dried palm leaves', 'an empty boho wedding reception with rattan chairs, pampas grass and terracotta decor'],
+  'contemporary-reception': ['two interlocking gold rings on a charcoal stone block', 'white orchids, eucalyptus and gold leaves', 'an empty contemporary wedding reception lounge in charcoal and gold'],
+  'romantic-evening-reception': ['a heart shaped crystal pendant glowing softly', 'dusty rose roses, blush peonies and soft greenery', 'an empty romantic evening wedding reception with candles and dusty rose flowers'],
+  'moonlight-reception': ['a silver crescent moon ornament', 'white moonflowers, white roses and silver leaves', 'an empty moonlit outdoor wedding reception with midnight blue drapes and candles'],
+  'starry-night-reception': ['a small gold star cluster ornament', 'white roses, baby breath and silver leaves', 'an empty outdoor wedding reception under a starry night sky with fairy lights'],
+  'sunset-reception': ['a gold low setting sun ornament over small waves', 'terracotta roses, peach ranunculus and dried pampas', 'an empty wedding reception deck at sunset with terracotta decor'],
+  'lotus-garden-reception': ['a single pink lotus flower in a small brass bowl of water', 'pink lotus flowers, lotus leaves and white jasmine', 'an empty lotus garden wedding reception beside a lotus pond with lanterns'],
+  'palace-courtyard-reception': ['a gold peacock mandala medallion', 'marigolds, deep red roses and jasmine', 'an empty Indian palace courtyard wedding reception in maroon and gold with lamps'],
+  'luxury-dinner-reception': ['an emerald and gold candelabra with lit candles', 'white roses, emerald leaves and gold accents', 'an empty luxury fine dining wedding reception table in emerald and champagne with candelabras'],
+  'cocktail-reception': ['a crystal cocktail coupe with a gold music note beside it', 'white orchids, navy thistle and gold leaves', 'an empty wedding cocktail reception lounge with a bar and navy and gold decor'],
+  'traditional-celebration-reception': ['a round rangoli medallion made of flower petals', 'marigolds, jasmine strings and mango leaves', 'an empty traditional Indian wedding reception stage with marigold garlands and brass lamps'],
+  'cultural-heritage-reception': ['an ornate gold mandala medallion', 'marigolds, red roses and jasmine', 'an empty cultural heritage wedding reception hall with gold mandala backdrop and festive bunting'],
+  'international-reception': ['an ornate silver globe on a stand', 'white roses, blue hydrangeas and silver leaves', 'an empty international wedding reception ballroom in sapphire and silver'],
+  'tropical-reception': ['a bright hibiscus flower with a gold pineapple ornament', 'red hibiscus, orange bird of paradise and monstera leaves', 'an empty tropical island wedding reception with palms, lanterns and teal decor'],
+  'winter-evening-reception': ['a silver snowflake ornament with frosted pine sprigs', 'white roses, frosted pine and silver leaves', 'an empty cosy winter evening wedding reception with snowy windows and candles'],
+  'luxury-maroon-reception': ['a single maroon rose in a gilded frame', 'maroon roses, burgundy peonies and gold leaves', 'an empty luxury maroon and gold wedding reception hall with chandeliers'],
+  'emerald-garden-reception': ['a round emerald leaf wreath with a small gold lantern', 'white roses, emerald monstera and gold leaves', 'an empty emerald garden wedding reception with a green floral wall and gold accents'],
+  'sapphire-evening-reception': ['a sapphire gemstone in an ornate silver setting', 'white roses, blue delphinium and silver leaves', 'an empty sapphire blue evening wedding reception with crystal chandeliers'],
+  'pearl-white-reception': ['a strand of pearls with a small white dove figurine', 'white roses, pearl strands and ivory peonies', 'an empty pearl white wedding reception with ivory drapes and white flowers'],
+  'lavender-romance-reception': ['a small bundle of lavender tied with a satin ribbon', 'lavender, lilac roses and white sweet peas', 'an empty lavender themed romantic wedding reception with candles'],
+  'terracotta-sunset-reception': ['a terracotta clay pot with dried flowers and a small sun ornament', 'terracotta roses, dried palm and pampas grass', 'an empty terracotta themed wedding reception at sunset with rattan chairs'],
+  'heritage-gold-reception': ['a crowned gold heritage medallion', 'gold roses, marigolds and gilded leaves', 'an empty heritage palace wedding reception hall in gold and brown with lamps'],
+  'celestial-reception': ['a gold crescent and star emblem', 'white roses, gold stars and silver leaves', 'an empty celestial wedding reception under a starry ceiling in midnight blue and gold']
+};
+
+/* Decoration style per card (must match RECEPTION rows in js/wedding-designs.js). */
+module.exports.STYLES = {
+  'garden-reception': 'vines', 'modern-minimal-reception': 'vines', 'rooftop-reception': 'vines', 'beach-reception': 'vines', 'contemporary-reception': 'vines', 'boho-reception': 'vines', 'wedding-brunch': 'vines', 'tropical-reception': 'vines',
+  'floral-reception': 'corners', 'rose-gold-reception': 'corners', 'rose-gold-evening': 'corners', 'romantic-evening-reception': 'corners', 'lavender-romance-reception': 'corners', 'vintage-reception': 'corners',
+  'evening-reception': 'diagonal', 'midnight-soiree': 'diagonal', 'reception-evening': 'diagonal', 'moonlight-reception': 'diagonal', 'starry-night-reception': 'diagonal', 'celestial-reception': 'diagonal', 'sunset-reception': 'diagonal', 'terracotta-sunset-reception': 'diagonal', 'cocktail-reception': 'diagonal', 'after-party': 'diagonal',
+  'palace-courtyard-reception': 'garland', 'traditional-celebration-reception': 'garland', 'cultural-heritage-reception': 'garland', 'lotus-garden-reception': 'garland', 'resort-reception': 'garland',
+  'garden-evening-reception': 'wreath', 'pearl-white-reception': 'wreath', 'crystal-reception': 'wreath', 'winter-evening-reception': 'wreath', 'emerald-garden-reception': 'wreath', 'international-reception': 'wreath',
+  'grand-reception': 'luxury', 'grand-luxury-reception': 'luxury', 'royal-palace-reception': 'luxury', 'classic-elegant-reception': 'luxury', 'luxury-ballroom-reception': 'luxury', 'hotel-reception': 'luxury', 'candlelight-reception': 'luxury', 'black-gold-reception': 'luxury', 'champagne-reception': 'luxury', 'luxury-dinner-reception': 'luxury', 'luxury-maroon-reception': 'luxury', 'sapphire-evening-reception': 'luxury', 'heritage-gold-reception': 'luxury'
+};

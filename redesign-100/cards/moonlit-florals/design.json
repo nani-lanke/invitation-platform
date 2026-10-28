@@ -1,0 +1,47 @@
+{
+ "slug": "moonlit-florals",
+ "name": "Moonlit Florals",
+ "base": "cards/moonlit-florals/",
+ "spec": {
+  "layout": "classic",
+  "frame": "deco",
+  "venue": "framed",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/moonlit-florals.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/moonlit-florals.svg",
+  "corners": "inline SVG corner set (deco)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a moonlit garden wedding with white flowers, candles and silver lanterns, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1797962,
+   "raw": "..\\work\\raw\\moonlit-florals__venue__1797962_4atwo.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a white moonflower bloom with silver leaves, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8549858,
+   "raw": "..\\work\\raw\\moonlit-florals__crest__8549858_153yl.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a moonlit garden with a pavilion, deep evening twilight with warm lamp glow, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4839404,
+   "raw": "..\\work\\raw\\moonlit-florals__footer__4839404_5oe3w.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, white moonflowers and silver leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 3660582,
+   "raw": "..\\work\\raw\\moonlit-florals__corner__3660582_399e8.png"
+  }
+ }
+}

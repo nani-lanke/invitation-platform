@@ -1,0 +1,47 @@
+{
+ "slug": "marathi-paithani",
+ "name": "Marathi Paithani",
+ "base": "cards/marathi-paithani/",
+ "spec": {
+  "layout": "classic",
+  "frame": "vine",
+  "venue": "stack",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/marathi-paithani.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/marathi-paithani.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Maharashtrian wedding hall with a decorated mandap, banana plants, rangoli and green Paithani silk drapes, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4455155,
+   "raw": "..\\work\\raw\\marathi-paithani__venue__4455155_1duz9.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a folded green Paithani silk sari with a gold zari peacock border, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 3715875,
+   "raw": "..\\work\\raw\\marathi-paithani__crest__3715875_11vxa.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Sahyadri hills with an old Maratha fort at dawn, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1752379,
+   "raw": "..\\work\\raw\\marathi-paithani__footer__1752379_2nfij.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white mogra jasmine, orange marigolds and mango leaves, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 7915925,
+   "raw": "..\\work\\raw\\marathi-paithani__corner__7915925_2llbi.png"
+  }
+ }
+}

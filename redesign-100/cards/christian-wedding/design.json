@@ -1,0 +1,47 @@
+{
+ "slug": "christian-wedding",
+ "name": "Christian Wedding",
+ "base": "cards/christian-wedding/",
+ "spec": {
+  "layout": "classic",
+  "frame": "vine",
+  "venue": "stack",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/christian-wedding.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/christian-wedding.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a church interior with a stained glass rose window, white flowers on the pews and candles at the altar, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7953384,
+   "raw": "..\\work\\raw\\christian-wedding__venue__7953384_5qdr1.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a small stained glass rose window medallion with a simple cross, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2617060,
+   "raw": "..\\work\\raw\\christian-wedding__crest__2617060_53bbw.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a stone church on a green hill at golden hour, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7997350,
+   "raw": "..\\work\\raw\\christian-wedding__footer__7997350_4afj2.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of white roses, lilies and baby breath, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2373988,
+   "raw": "..\\work\\raw\\christian-wedding__corner__2373988_3k4ol.png"
+  }
+ }
+}

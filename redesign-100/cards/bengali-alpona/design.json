@@ -1,0 +1,47 @@
+{
+ "slug": "bengali-alpona",
+ "name": "Bengali Alpona",
+ "base": "cards/bengali-alpona/",
+ "spec": {
+  "layout": "classic",
+  "frame": "hairline",
+  "venue": "stack",
+  "family": "botanical"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/bengali-alpona.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/bengali-alpona.svg",
+  "corners": "inline SVG corner set (hairline)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a Bengali wedding chhadnatola courtyard with white alpona painted on the floor, banana plants and a decorated bamboo canopy, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6961076,
+   "raw": "..\\work\\raw\\bengali-alpona__venue__6961076_1dgae.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a round brass Bengali plate with an alpona lotus painted in white rice paste, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5262808,
+   "raw": "..\\work\\raw\\bengali-alpona__crest__5262808_4lczj.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a Bengal village pond with coconut palms and a terracotta temple, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 1637354,
+   "raw": "..\\work\\raw\\bengali-alpona__footer__1637354_44pti.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower arrangement spreading from the top-left: a lush compact cluster of white tuberose rajanigandha, red roses and banana leaves, no ribbons, no strings, no stems hanging, no paper, no frame, no border lines, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9376424,
+   "raw": "..\\work\\raw\\bengali-alpona__corner__9376424_lo91.png"
+  }
+ }
+}

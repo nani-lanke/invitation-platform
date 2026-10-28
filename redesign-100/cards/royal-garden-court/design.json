@@ -1,0 +1,47 @@
+{
+ "slug": "royal-garden-court",
+ "name": "Royal Garden Court",
+ "base": "cards/royal-garden-court/",
+ "spec": {
+  "layout": "royal",
+  "frame": "double",
+  "venue": "stack",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/royal-garden-court.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/royal-garden-court.svg",
+  "corners": "inline SVG corner set (double)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a French Mughal formal garden estate with wrought iron gates, fountains and rose hedges decorated for a wedding, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9208387,
+   "raw": "..\\work\\raw\\royal-garden-court__venue__9208387_4229b.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: an ornate wrought iron garden gate miniature with gold accents, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 5021587,
+   "raw": "..\\work\\raw\\royal-garden-court__crest__5021587_15cfm.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a formal palace garden with fountains and a palace at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 3954731,
+   "raw": "..\\work\\raw\\royal-garden-court__footer__3954731_5mbpx.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of roses, ivy and white flowers, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 8673541,
+   "raw": "..\\work\\raw\\royal-garden-court__corner__8673541_27hb1.png"
+  }
+ }
+}

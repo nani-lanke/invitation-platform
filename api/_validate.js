@@ -44,9 +44,13 @@ const TEXT = {
   eventType:  40,
   template:   60,
   title:     120,
+  additionalTitle: 120,
+  additionalSubtitle: 200,
   hostName:  120,
   brideName:  80,
+  brideParents: 120,
   groomName:  80,
+  groomParents: 120,
   personName: 80,
   babyName:   80,
   babyRelation: 12,
@@ -187,6 +191,9 @@ function clean(body) {
 
     const background = accept(body.background, 'image', 'The background image');
     if (background) state.background = background;
+
+    const aiBackground = accept(body.aiBackground, 'image', 'The AI background image');
+    if (aiBackground) state.aiBackground = aiBackground;
 
     if (Array.isArray(body.gallery)) {
       const gallery = [];

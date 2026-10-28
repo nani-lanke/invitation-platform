@@ -1,0 +1,47 @@
+{
+ "slug": "odia-bahaghara",
+ "name": "Odia Bahaghara",
+ "base": "cards/odia-bahaghara/",
+ "spec": {
+  "layout": "classic",
+  "frame": "double",
+  "venue": "framed",
+  "family": "heritage"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/odia-bahaghara.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/odia-bahaghara.svg",
+  "corners": "inline SVG corner set (double)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of an Odia wedding bedi with a decorated canopy, pattachitra panels, brass lamps and marigolds, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 4273327,
+   "raw": "..\\work\\raw\\odia-bahaghara__venue__4273327_4gk03.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: a carved stone Konark sun temple chariot wheel in miniature, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 1140983,
+   "raw": "..\\work\\raw\\odia-bahaghara__crest__1140983_tv5j.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of the Konark sun temple at sunrise, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 6772223,
+   "raw": "..\\work\\raw\\odia-bahaghara__footer__6772223_39qhb.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of yellow marigolds, white jasmine and lotus buds, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 3199305,
+   "raw": "..\\work\\raw\\odia-bahaghara__corner__3199305_1sann.png"
+  }
+ }
+}

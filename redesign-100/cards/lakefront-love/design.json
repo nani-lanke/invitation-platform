@@ -1,0 +1,40 @@
+{
+ "slug": "lakefront-love",
+ "name": "Lakefront Love",
+ "base": "cards/lakefront-love/",
+ "spec": {
+  "layout": "botanical",
+  "frame": "arch",
+  "venue": "split",
+  "family": "destination"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/lakefront-love.svg",
+  "footer": "footer.jpg"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/lakefront-love.svg",
+  "corners": null,
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a lakefront wedding deck by an alpine lake with mountains and white flowers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 2249159,
+   "raw": "..\\work\\raw\\lakefront-love__venue__2249159_2af7i.png"
+  },
+  "crest": {
+   "prompt": "Elegant real fresh flower spray of white roses, blue hydrangeas and eucalyptus, arranged diagonally, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 2876767,
+   "raw": "..\\work\\raw\\lakefront-love__crest__2876767_4ni0k.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of an alpine lake reflecting misty mountains, soft warm golden daylight with a pale hazy sky, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 8187703,
+   "raw": "..\\work\\raw\\lakefront-love__footer__8187703_45um9.png"
+  }
+ }
+}

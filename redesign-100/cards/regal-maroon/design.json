@@ -1,0 +1,47 @@
+{
+ "slug": "regal-maroon",
+ "name": "Regal Maroon",
+ "base": "cards/regal-maroon/",
+ "spec": {
+  "layout": "royal",
+  "frame": "vine",
+  "venue": "split",
+  "family": "royal"
+ },
+ "images": {
+  "venue": "venue.jpg",
+  "crest": "crest.png",
+  "motif": "images/wedding-motifs/regal-maroon.svg",
+  "footer": "footer.jpg",
+  "cornerTL": "corner-tl.png",
+  "cornerTR": "corner-tr.png"
+ },
+ "replaces": {
+  "venueImage": "images/templates/venue-default.jpg",
+  "motif": "images/wedding-motifs/regal-maroon.svg",
+  "corners": "inline SVG corner set (vine)",
+  "footer": null
+ },
+ "prompts": {
+  "venue": {
+   "prompt": "Wide photograph of a regal palace hall with burgundy velvet drapes, antique gold crests and chandeliers, wedding venue interior and decor, warm inviting light, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 7687322,
+   "raw": "..\\work\\raw\\regal-maroon__venue__7687322_4jlsu.png"
+  },
+  "crest": {
+   "prompt": "Small premium ornament for the top of a wedding invitation: an antique gold royal crest with burgundy enamel, front view, centred, symmetrical, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 9069394,
+   "raw": "..\\work\\raw\\regal-maroon__crest__9069394_2ip37.png"
+  },
+  "footer": {
+   "prompt": "Wide panoramic landscape photograph of a royal palace facade with domes at dusk, calm serene composition, the sky above fading smoothly into soft plain haze, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people",
+   "seed": 9887964,
+   "raw": "..\\work\\raw\\regal-maroon__footer__9887964_1pjax.png"
+  },
+  "corner": {
+   "prompt": "Real fresh flower decoration for the top-left corner of a luxury wedding card: a lush compact cluster of burgundy roses, gold leaves and jasmine, no ribbons, no strings, no stems hanging, photorealistic, premium luxury wedding decor photography, rich true colours, ultra fine detail, no text, no letters, no watermark, no logo, no people, isolated on a plain pure white background",
+   "seed": 4881942,
+   "raw": "..\\work\\raw\\regal-maroon__corner__4881942_3i1zb.png"
+  }
+ }
+}

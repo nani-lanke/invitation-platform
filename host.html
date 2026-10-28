@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wedding Invitation — InviteAura</title>
+  <link rel="stylesheet" href="css/style.css?v=2.8">
+  <link rel="stylesheet" href="css/animations.css?v=1.2">
+  <link rel="stylesheet" href="css/responsive.css?v=1.6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap">
+  <script src="js/main.js?v=1.2" defer></script>
+  <script src="js/templates.js?v=2.5" defer></script>
+  <script src="js/countdown.js?v=1.2" defer></script>
+  <script src="js/wedding-designs.js?v=2.2" defer></script>
+  <script src="js/redesign-collection-data.js?v=1.2" defer></script>
+  <script src="js/redesign-collection.js?v=1.4" defer></script>
+  <script src="js/preview.js?v=2.3" defer></script>
+  <script src="js/share.js?v=1.2" defer></script>
+  <script src="js/export.js?v=2.3" defer></script>
+</head>
+<body>
+  <div id="host-root" style="min-height: 100vh;">
+    <div style="padding: 60px; text-align: center; color: var(--fg-muted);">Loading invitation...</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        var data = null;
+        try {
+          data = IH.store ? IH.store.get('draft', null) : null;
+        } catch (e) {}
+
+        if (!data) {
+          data = (IH.invitation && IH.invitation.SAMPLE) ? IH.invitation.SAMPLE : {
+            title: 'The Wedding Celebration',
+            brideName: 'Bride',
+            groomName: 'Groom',
+            groomParents: 'Groom’s Parents',
+            brideParents: 'Bride’s Parents',
+            date: '2026-12-25',
+            time: '18:30',
+            venue: 'Grand Palace Hall',
+            address: 'Anna Salai, Chennai, Tamil Nadu'
+          };
+        }
+
+        if (IH.exportPage && IH.exportPage.buildHtml) {
+          var html = IH.exportPage.buildHtml(data, { skipMainJs: false, up: '', download: !!data.hostingPaid });
+          document.open();
+          document.write(html);
+          document.close();
+        } else {
+          var root = document.getElementById('host-root');
+          if (root && IH.invitation && IH.invitation.mount) {
+            IH.invitation.mount(root, data);
+          }
+        }
+      }, 50);
+    });
+  </script>
+</body>
+</html>

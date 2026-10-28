@@ -13,25 +13,29 @@
 <meta property="og:title" content="You're Invited">
 <meta property="og:description" content="Open your invitation.">
 
-<link rel="icon" href="images/logo/favicon.png" type="image/svg+xml">
-<link rel="apple-touch-icon" href="images/logo/favicon.png">
+<link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="images/logo/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="images/logo/favicon-180.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap">
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animations.css">
-<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css?v=2.8">
+<link rel="stylesheet" href="css/animations.css?v=1.2">
+<link rel="stylesheet" href="css/responsive.css?v=1.6">
 
 <script>(function(){try{var s=JSON.parse(localStorage.getItem('inviteaura:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
 
-<script src="js/main.js" defer></script>
-<script src="js/templates.js" defer></script>
-<script src="js/countdown.js" defer></script>
-<script src="js/preview.js" defer></script>
-<script src="js/share.js" defer></script>
-<script src="js/link.js" defer></script>
+<script src="js/main.js?v=1.2" defer></script>
+<script src="js/templates.js?v=2.5" defer></script>
+<script src="js/countdown.js?v=1.2" defer></script>
+<script src="js/wedding-designs.js?v=2.2" defer></script>
+<script src="js/redesign-collection-data.js?v=1.2" defer></script>
+<script src="js/redesign-collection.js?v=1.4" defer></script>
+<script src="js/preview.js?v=2.3" defer></script>
+<script src="js/share.js?v=1.2" defer></script>
+<script src="js/link.js?v=1.2" defer></script>
 
 <style>
   body{display:grid;place-items:center;min-height:100svh;padding:clamp(1rem,4vw,3rem) 1rem;
@@ -83,7 +87,8 @@
     }
 
     // Give the tab and any link preview the couple's real names.
-    var who = [data.groomName, data.brideName].filter(Boolean).join(' & ') ||
+    var names = data.namesSwapped ? [data.brideName, data.groomName] : [data.groomName, data.brideName];
+    var who = names.filter(Boolean).join(' & ') ||
               data.personName || data.title;
     if (who) { document.title = who + ' | You are invited'; }
   });
