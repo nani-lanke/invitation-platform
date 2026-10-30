@@ -50,7 +50,9 @@
     '.site-dl-btn--stack{bottom:84px}',
     '.site-dl-btn:hover{transform:scale(1.08)}',
     '.site-dl-btn svg{width:22px;height:22px}',
-    '.site-dl-btn.is-busy{opacity:.6;pointer-events:none}'
+    '.site-dl-btn.is-busy{opacity:.6;pointer-events:none}',
+    /* Phones: smaller corner buttons (music + download) so they do not cover the card. */
+    '@media (max-width:600px){.site-music-btn,.site-dl-btn{right:calc(10px + env(safe-area-inset-right));bottom:calc(10px + env(safe-area-inset-bottom));width:40px;height:40px;border-width:1.5px}.site-dl-btn--stack{bottom:calc(58px + env(safe-area-inset-bottom))}.site-music-btn svg,.site-dl-btn svg{width:18px;height:18px}}'
   ].join('\n');
   var DL_SCRIPT = [
     '  // --- Download image ---',
@@ -2024,23 +2026,7 @@
     '    else setTimeout(initCountdown, 100);',
     '  })();',
     '',
-    '  // --- Share ---',
-    '  (function () {',
-    '    var btn = document.querySelector("[data-share-invitation]");',
-    '    if (!btn) return;',
-    '    var shareData = { title: document.title, url: window.location.href };',
-    '    btn.addEventListener("click", function () {',
-    '      if (navigator.share) {',
-    '        navigator.share(shareData).catch(function () {});',
-    '      } else {',
-    '        navigator.clipboard.writeText(window.location.href).then(function () {',
-    '          var original = btn.innerHTML;',
-    '          btn.innerHTML = \'<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span>Copied!</span>\';',
-    '          setTimeout(function () { btn.innerHTML = original; }, 1500);',
-    '        }).catch(function () {});',
-    '      }',
-    '    });',
-    '  })();',
+    '  // Share: handled by js/share.js (the [data-share-invitation] button).',
     '',
     '  // --- Navigation & Smooth In-Page Scrolling ---',
     '  (function () {',

@@ -17,8 +17,8 @@
   <script src="js/redesign-collection-data.js?v=1.2" defer></script>
   <script src="js/redesign-collection.js?v=1.4" defer></script>
   <script src="js/preview.js?v=2.3" defer></script>
-  <script src="js/share.js?v=1.2" defer></script>
-  <script src="js/export.js?v=2.3" defer></script>
+  <script src="js/share.js?v=1.3" defer></script>
+  <script src="js/export.js?v=2.4" defer></script>
 </head>
 <body>
   <div id="host-root" style="min-height: 100vh;">
@@ -48,7 +48,8 @@
         }
 
         if (IH.exportPage && IH.exportPage.buildHtml) {
-          var html = IH.exportPage.buildHtml(data, { skipMainJs: false, up: '', download: !!data.hostingPaid });
+          // Draft preview: the download button is only on the paid, published pages.
+          var html = IH.exportPage.buildHtml(data, { skipMainJs: false, up: '', download: false });
           document.open();
           document.write(html);
           document.close();

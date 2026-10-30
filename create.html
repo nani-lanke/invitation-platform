@@ -43,13 +43,14 @@
 <script src="js/redesign-collection-data.js?v=1.2" defer></script>
 <script src="js/redesign-collection.js?v=1.4" defer></script>
 <script src="js/preview.js?v=2.3" defer></script>
-<script src="js/share.js?v=1.2" defer></script>
+<script src="js/share.js?v=1.3" defer></script>
 <script src="js/link.js?v=1.2" defer></script>
-<script src="js/export.js?v=2.3" defer></script>
-<script src="js/publish.js?v=1.2" defer></script>
-<script src="js/create.js?v=2.3" defer></script>
+<script src="js/export.js?v=2.4" defer></script>
+<script src="js/publish.js?v=1.3" defer></script>
+<script src="js/create.js?v=2.4" defer></script>
 <script src="js/html-to-image.js" defer></script>
 <script src="js/html2canvas.min.js" defer></script>
+<script src="js/maintenance.js?v=1.1" defer></script>
 </head>
 <body>
 
@@ -441,15 +442,15 @@ We joyfully invite you to celebrate the wedding of</textarea>
           <!-- STEP 4 -->
           <section class="wizard-panel" data-step-panel="4" aria-labelledby="step4-title" hidden>
             <h2 id="step4-title" style="font-size:var(--step-2)">Photos &amp; music</h2>
-            <p class="muted" style="margin:var(--space-2) 0 var(--space-4)">All optional. Files stay in this browser.</p>
+            <p class="muted" style="margin:var(--space-2) 0 var(--space-4)">All optional. Files stay in this browser. Each box accepts files up to the size shown, so everything together stays under 5 MB.</p>
 
             <div class="upload-grid">
               <div class="field upload-card">
-                <span class="field__label">Main photo</span>
+                <span class="field__label">Main photo <span class="badge">max 500 KB</span></span>
                 <div class="upload-card__box">
                   <div class="dropzone" data-drop-photo tabindex="0" role="button" aria-label="Choose a main photo">
                     <i data-icon="arrow-up" data-icon-size="34"></i>
-                    <strong>Drag &amp; Drop To Upload Image<br>Or Click To Browse</strong>
+                    <strong><span class="dz-long">Drag &amp; Drop To Upload Image<br>Or Click To Browse</span><span class="dz-short">Tap to add image</span></strong>
                     <input type="file" accept="image/*">
                   </div>
                   <div class="thumb-grid" data-preview-slot></div>
@@ -457,22 +458,22 @@ We joyfully invite you to celebrate the wedding of</textarea>
                 <p class="upload-card__ok">Image uploaded successfully!</p>
               </div>
               <div class="field upload-card">
-                <span class="field__label">Venue photo</span>
+                <span class="field__label">Venue photo <span class="badge">max 100 KB</span></span>
                 <div class="upload-card__box">
                   <div class="dropzone" data-drop-venue tabindex="0" role="button" aria-label="Choose a venue image">
                     <i data-icon="arrow-up" data-icon-size="34"></i>
-                    <strong>Drag &amp; Drop To Upload Image<br>Or Click To Browse</strong>
+                    <strong><span class="dz-long">Drag &amp; Drop To Upload Image<br>Or Click To Browse</span><span class="dz-short">Tap to add image</span></strong>
                     <input type="file" accept="image/*">
                   </div>
                   <div class="thumb-grid" data-preview-slot></div>
                 </div>
                 <p class="upload-card__ok">Image uploaded successfully!</p>              </div>
               <div class="field upload-card">
-                <span class="field__label">Background image</span>
+                <span class="field__label">Background image <span class="badge">max 500 KB</span></span>
                 <div class="upload-card__box">
                   <div class="dropzone" data-drop-background tabindex="0" role="button" aria-label="Choose a background image">
                     <i data-icon="arrow-up" data-icon-size="34"></i>
-                    <strong>Drag &amp; Drop To Upload Image<br>Or Click To Browse</strong>
+                    <strong><span class="dz-long">Drag &amp; Drop To Upload Image<br>Or Click To Browse</span><span class="dz-short">Tap to add image</span></strong>
                     <input type="file" accept="image/*">
                   </div>
                   <div class="thumb-grid" data-preview-slot></div>
@@ -480,11 +481,11 @@ We joyfully invite you to celebrate the wedding of</textarea>
                 <p class="upload-card__ok">Image uploaded successfully!</p>
               </div>
               <div class="field upload-card upload-card--file">
-                <span class="field__label">Background music</span>
+                <span class="field__label">Background music <span class="badge">max 2.5 MB</span></span>
                 <div class="upload-card__box">
                   <div class="dropzone" data-drop-music tabindex="0" role="button" aria-label="Choose a background music file">
                     <i data-icon="music" data-icon-size="34"></i>
-                    <strong>Drag &amp; Drop To Upload Music<br>Or Click To Browse</strong>
+                    <strong><span class="dz-long">Drag &amp; Drop To Upload Music<br>Or Click To Browse</span><span class="dz-short">Tap to add music</span></strong>
                     <input type="file" accept="audio/*">
                   </div>
                   <div data-music-slot></div>
@@ -492,11 +493,11 @@ We joyfully invite you to celebrate the wedding of</textarea>
                 <p class="upload-card__ok">Music uploaded successfully!</p>
               </div>
               <div class="field upload-card upload-card--gallery">
-                <span class="field__label">Photo gallery <span class="badge">up to 6</span></span>
+                <span class="field__label">Photo gallery <span class="badge">up to 6 · 200 KB each</span></span>
                 <div class="upload-card__box">
                   <div class="dropzone" data-drop-gallery tabindex="0" role="button" aria-label="Choose gallery photos">
                     <i data-icon="arrow-up" data-icon-size="34"></i>
-                    <strong>Drag &amp; Drop To Upload Photos<br>Or Click To Browse</strong>
+                    <strong><span class="dz-long">Drag &amp; Drop To Upload Photos<br>Or Click To Browse</span><span class="dz-short">Tap to add photos</span></strong>
                     <input type="file" accept="image/*" multiple>
                   </div>
                   <div class="thumb-grid" data-gallery-thumbs></div>
@@ -711,6 +712,7 @@ We joyfully invite you to celebrate the wedding of</textarea>
                 <code data-hosted-url>…</code>
                 <button class="btn btn--primary btn--sm" type="button" data-hosted-copy><i data-icon="copy" data-icon-size="16"></i><span>Copy Link</span></button>
               </div>
+              <p class="muted center" data-hosted-until hidden style="margin-top:var(--space-3);font-size:var(--step--1)"></p>
               <div class="btn-group" style="margin-top:var(--space-4);justify-content:center">
                 <a class="btn btn--primary" data-hosted-open href="#" target="_blank" rel="noopener"><i data-icon="external-link" data-icon-size="18"></i><span>Open Invitation</span></a>
                 <button class="btn btn--secondary" type="button" data-hosted-share><i data-icon="share" data-icon-size="18"></i><span>Share</span></button>
@@ -735,7 +737,7 @@ We joyfully invite you to celebrate the wedding of</textarea>
             <h3 class="step-subtitle">Questions about payment</h3>
             <div class="faq-mini">
               <details><summary>Is it a one-time payment?</summary><p>Yes. ₹99 is charged once. There is no subscription, and nothing renews automatically.</p></details>
-              <details><summary>How long will my invitation stay online?</summary><p>There's no expiry date. Your invitation stays online at its link.</p></details>
+              <details><summary>How long will my invitation stay online?</summary><p>Until 31 days after your event. After that the card and host page are deleted automatically, so download a copy if you want to keep it.</p></details>
               <details><summary>What if I close the payment window or the payment fails?</summary><p>Nothing is charged. Your invitation stays saved, and you can try again anytime.</p></details>
               <details><summary>I paid, but my invitation didn't go live. What now?</summary><p>Your payment is safe and remembered in this browser. Click <b>Host My Invitation</b> again: it publishes without asking you to pay a second time. If it still fails, contact us and we'll fix it or refund you.</p></details>
               <details><summary>Can I get a refund?</summary><p>Hosting is delivered as soon as you pay, so payments are generally non-refundable. If it fails because of us (the invitation doesn't publish or the link doesn't work), we'll fix it or refund you. Duplicate charges are always refunded. See our <a href="terms.html">Terms</a>.</p></details>
@@ -843,11 +845,10 @@ We joyfully invite you to celebrate the wedding of</textarea>
         </a>
         <p>Beautiful digital invitations for every special moment.</p>
         <div class="social-row">
-          <a href="https://facebook.com" data-net="facebook" target="_blank" aria-label="InviteAura on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
-          <a href="https://instagram.com" data-net="instagram" target="_blank" aria-label="InviteAura on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
-          <a href="https://wa.me/" data-net="whatsapp" target="_blank" aria-label="InviteAura on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
-          <a href="https://telegram.org" data-net="telegram" target="_blank" aria-label="InviteAura on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
-          <a href="https://youtube.com" data-net="youtube" target="_blank" aria-label="InviteAura on YouTube"><i data-icon="youtube" data-icon-size="19"></i></a>
+          <a data-net="facebook" aria-label="InviteAura on Facebook"><i data-icon="facebook" data-icon-size="19"></i></a>
+          <a data-net="instagram" aria-label="InviteAura on Instagram"><i data-icon="instagram" data-icon-size="19"></i></a>
+          <a data-net="whatsapp" aria-label="InviteAura on WhatsApp"><i data-icon="whatsapp" data-icon-size="19"></i></a>
+          <a data-net="telegram" aria-label="InviteAura on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
         </div>
       </div>
       <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
@@ -856,7 +857,7 @@ We joyfully invite you to celebrate the wedding of</textarea>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span data-year>2026</span> InviteAura. All rights reserved.</p>
-      <nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+      <nav aria-label="Legal"><a href="mailto:help.lovelyaz@gmail.com">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
     </div>
   </div>
 </footer>

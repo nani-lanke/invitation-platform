@@ -327,6 +327,7 @@
       invitationId: '',
       filename: '',
       hostedAt: null,
+      expiresAt: '',
       hostingStatus: '',
       emailStatus: null,
       step: 1,
@@ -750,12 +751,13 @@
        here beats letting the button fail with a 400. */
     var note = qs('[data-publish-note]', box);
     if (note) {
-      /* Uploads now publish too, but the request has a ceiling: Vercel
-         refuses a body over 4.5 MB, and base64 adds a third. Saying so
+      /* Uploads go up in pieces ahead of the publish (js/publish.js), so
+         the ceiling is the server's per-invitation total of 5 MB; base64
+         adds a third, hence about 6.7 MB of data: URL text. Saying so
          before the click beats a rejection after it. */
       var weight = IH.publish.payloadSize(data);
       note.textContent = !IH.publish.hasUploads(data) ? ''
-        : weight > 4 * 1024 * 1024
+        : weight > 6.7 * 1024 * 1024
           ? 'Your photos and music come to about ' + Math.round(weight / 1024 / 1024 * 10) / 10 +
             ' MB, which is over the publishing limit. Use Download page folder for this one.'
           : 'Your photos and music will be committed alongside the page.';
@@ -820,6 +822,7 @@
         state.invitationId = result.invitationId || '';
         state.filename = result.filename || '';
         state.hostedAt = result.hostedAt || state.hostedAt || new Date().toISOString();
+        state.expiresAt = result.expiresAt || '';
         state.hostingStatus = 'active';
         saveDraft();
         paintStepperDone();
@@ -1586,15 +1589,41 @@
      ------------------------------------------------------------------ */
 
   var MAX_DIMENSION = 1400;
-  var MAX_FILE_BYTES = 8 * 1024 * 1024;
+
+  /* Each upload box has its own size, so with every box filled the whole
+     invitation stays under 5 MB (4.8 MB). api/_validate.js holds the same
+     numbers. A file over its box's size is refused with a message. */
+  var SLOT_LIMITS = {
+    photo: 500 * 1024,             // Main photo
+    venueImage: 100 * 1024,        // Venue photo
+    background: 500 * 1024,        // Background image
+    gallery: 200 * 1024,           // each of up to 6 gallery photos
+    musicFile: 2.5 * 1024 * 1024   // Background music
+  };
+
+  function sizeLabel(bytes) {
+    return bytes >= 1024 * 1024
+      ? Math.round(bytes / 1024 / 1024 * 10) / 10 + ' MB'
+      : Math.round(bytes / 1024) + ' KB';
+  }
+
+  /* base64 carries 3 bytes in every 4 characters. */
+  function dataUrlBytes(src) {
+    if (typeof src !== 'string' || src.slice(0, 5) !== 'data:') return 0;
+    return Math.floor((src.length - src.indexOf(',') - 1) * 3 / 4);
+  }
 
   /* Audio is stored as read — there is no lossless way to shrink it in a
      browser, and re-encoding music is not something to do behind
-     someone's back. The 8 MB ceiling is what keeps it sane. */
+     someone's back. So a track over its box's size is refused. */
   function readAudio(file) {
     return new Promise(function (resolve, reject) {
       if (!/^audio\//.test(file.type)) { reject(new Error(file.name + ' is not an audio file.')); return; }
-      if (file.size > MAX_FILE_BYTES) { reject(new Error(file.name + ' is larger than 8 MB.')); return; }
+      if (file.size > SLOT_LIMITS.musicFile) {
+        reject(new Error(file.name + ' is ' + sizeLabel(file.size) + ' — background music can be up to ' +
+                         sizeLabel(SLOT_LIMITS.musicFile) + '. Choose a shorter or smaller track.'));
+        return;
+      }
 
       var reader = new FileReader();
       reader.onerror = function () { reject(new Error('Could not read ' + file.name + '.')); };
@@ -1603,12 +1632,53 @@
     });
   }
 
+  /* Re-encode a loaded image, stepping the size and then the quality down
+     until it fits `budget`. A phone photo reaches 500 KB at about 1400 px;
+     the 100 KB venue box usually lands near 800 px. */
+  var FIT_SIZES = [MAX_DIMENSION, 1200, 1000, 800, 640, 480, 360];
+  var FIT_QUALITIES = [0.82, 0.7, 0.6, 0.5];
+
+  function fitImage(img, budget) {
+    var canvas = document.createElement('canvas');
+    var ctx = canvas.getContext('2d');
+    for (var i = 0; i < FIT_SIZES.length; i++) {
+      var scale = Math.min(1, FIT_SIZES[i] / Math.max(img.width, img.height));
+      canvas.width = Math.round(img.width * scale);
+      canvas.height = Math.round(img.height * scale);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      for (var q = 0; q < FIT_QUALITIES.length; q++) {
+        var out = canvas.toDataURL('image/jpeg', FIT_QUALITIES[q]);
+        if (dataUrlBytes(out) <= budget) return out;
+      }
+    }
+    return null;
+  }
+
+  /* An image already held as a data: URL (e.g. a generated venue photo),
+     brought down to its box's size the same way. */
+  function fitDataUrl(src, budget) {
+    if (dataUrlBytes(src) <= budget) return Promise.resolve(src);
+    return new Promise(function (resolve, reject) {
+      var img = new Image();
+      img.onerror = function () { reject(new Error('The image could not be decoded.')); };
+      img.onload = function () {
+        var out = fitImage(img, budget);
+        if (out) resolve(out); else reject(new Error('The image could not be made small enough.'));
+      };
+      img.src = src;
+    });
+  }
+
   /* Downscale before storing so a 6 MB phone photo does not blow the
-     localStorage quota or stall the preview. */
-  function readImage(file) {
+     localStorage quota or stall the preview, and so it fits its box. */
+  function readImage(file, budget) {
     return new Promise(function (resolve, reject) {
       if (!/^image\//.test(file.type)) { reject(new Error(file.name + ' is not an image.')); return; }
-      if (file.size > MAX_FILE_BYTES) { reject(new Error(file.name + ' is larger than 8 MB.')); return; }
+      if (file.size > budget) {
+        reject(new Error(file.name + ' is ' + sizeLabel(file.size) + ' — this box accepts images up to ' +
+                         sizeLabel(budget) + '. Choose a smaller image.'));
+        return;
+      }
 
       var reader = new FileReader();
       reader.onerror = function () { reject(new Error('Could not read ' + file.name + '.')); };
@@ -1617,18 +1687,36 @@
         img.onerror = function () { reject(new Error(file.name + ' could not be decoded.')); };
         img.onload = function () {
           var scale = Math.min(1, MAX_DIMENSION / Math.max(img.width, img.height));
-          if (scale === 1 && file.size < 400 * 1024) { resolve(reader.result); return; }
-          var canvas = document.createElement('canvas');
-          canvas.width = Math.round(img.width * scale);
-          canvas.height = Math.round(img.height * scale);
-          var ctx = canvas.getContext('2d');
-          ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-          resolve(canvas.toDataURL('image/jpeg', 0.82));
+          // Kept as-is only in a format api/_validate.js publishes; a BMP, SVG
+          // or similar is re-encoded to JPEG so publishing cannot refuse it.
+          var keepable = /^data:image\/(jpeg|png|webp|gif|avif);/.test(reader.result);
+          if (scale === 1 && file.size <= budget && keepable) { resolve(reader.result); return; }
+          var out = fitImage(img, budget);
+          if (!out) {
+            reject(new Error(file.name + ' could not be made smaller than ' + sizeLabel(budget) + '. Try another photo.'));
+            return;
+          }
+          resolve(out);
         };
         img.src = reader.result;
       };
       reader.readAsDataURL(file);
     });
+  }
+
+  /* Shows (or clears, with no message) a size/type error under an upload box. */
+  function uploadError(zone, msg) {
+    var card = zone && zone.closest('.upload-card');
+    if (!card) return;
+    var el = qs('.upload-card__err', card);
+    if (!el) {
+      el = document.createElement('p');
+      el.className = 'upload-card__err';
+      el.setAttribute('role', 'alert');
+      card.appendChild(el);
+    }
+    el.textContent = msg || '';
+    el.hidden = !msg;
   }
 
   function initMedia() {
@@ -1651,13 +1739,14 @@
 
       function accept(files) {
         if (!files || !files.length) return;
-        readImage(files[0]).then(function (dataUrl) {
+        readImage(files[0], SLOT_LIMITS[key]).then(function (dataUrl) {
           state[key] = dataUrl;
+          uploadError(zone, '');
           paint();
           renderPreview();
           saveDraft();
           IH.toast.success('Image added. It stays in your browser — nothing is uploaded.');
-        }).catch(function (err) { IH.toast.error(err.message); });
+        }).catch(function (err) { uploadError(zone, err.message); IH.toast.error(err.message); });
       }
 
       on(zone, 'click', function (evt) { if (evt.target !== input) input.click(); });
@@ -1697,6 +1786,12 @@
             return res.json().then(function (err) { throw new Error(err.error || 'Server error'); });
           }
           return res.json();
+        })
+        .then(function (json) {
+          // A generated venue photo is held to the same 100 KB box as an upload.
+          return json.dataUrl
+            ? fitDataUrl(json.dataUrl, SLOT_LIMITS.venueImage).then(function (src) { json.dataUrl = src; return json; })
+            : json;
         })
         .then(function (json) {
           if (json.dataUrl) {
@@ -1753,11 +1848,12 @@
         readAudio(files[0]).then(function (picked) {
           state.musicFile = picked.data;
           state.music = picked.name;
+          uploadError(musicZone, '');
           paintMusic();
           renderPreview();
           saveDraft();
           IH.toast.success('Music added. It stays in your browser until you publish or download.');
-        }).catch(function (err) { IH.toast.error(err.message); });
+        }).catch(function (err) { uploadError(musicZone, err.message); IH.toast.error(err.message); });
       };
 
       on(musicZone, 'click', function (evt) { if (evt.target !== musicInput) musicInput.click(); });
@@ -1809,9 +1905,11 @@
           IH.toast.info('Only the first ' + room + ' photo' + (room === 1 ? '' : 's') + ' were added — the gallery holds six.');
           list = list.slice(0, room);
         }
+        var errors = [];
         Promise.all(list.map(function (f) {
-          return readImage(f).catch(function (err) { IH.toast.error(err.message); return null; });
+          return readImage(f, SLOT_LIMITS.gallery).catch(function (err) { errors.push(err.message); IH.toast.error(err.message); return null; });
         })).then(function (results) {
+          uploadError(galleryZone, errors.join(' '));
           // Re-checked here: a second pick made while these were decoding may have filled the gallery.
           results.filter(Boolean).forEach(function (src) { if (state.gallery.length < 6) state.gallery.push(src); });
           paintGallery();
@@ -2666,6 +2764,17 @@
     }
   }
 
+  /* ISO -> '15 January 2027' in India time; '' when missing or invalid. */
+  function liveUntilLabel(iso) {
+    var at = Date.parse(iso || '');
+    if (!at) return '';
+    try {
+      return new Date(at).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata' });
+    } catch (e) {
+      return new Date(at).toDateString();
+    }
+  }
+
   function paintHostingStatus() {
     var status = qs('[data-host-status]', root);
     var note = qs('[data-host-status-note]', root);
@@ -2692,6 +2801,17 @@
       if (urlOut) urlOut.textContent = url;
       if (open) open.href = url;
       result.hidden = !(hosted && url);
+
+      /* api/publish returns when the hosted pages are deleted (31 days
+         after the event); older drafts have no date and show nothing. */
+      var until = qs('[data-hosted-until]', result);
+      var untilLabel = liveUntilLabel(state.expiresAt);
+      if (until) {
+        until.textContent = untilLabel
+          ? 'Live until ' + untilLabel + ' (31 days after your event). Download a copy if you want to keep it after that.'
+          : '';
+        until.hidden = !untilLabel;
+      }
     }
 
     var offer = qs('[data-host-offer]', root);
@@ -2908,6 +3028,7 @@
         state.invitationId = result.invitationId || '';
         state.filename = result.filename || '';
         state.hostedAt = result.hostedAt || new Date().toISOString();
+        state.expiresAt = result.expiresAt || '';
         state.hostingStatus = 'active';
         state.published = true;
         state.emailStatus = result.email || null;
@@ -2934,7 +3055,9 @@
 
         /* 10. 🎉 Your invitation is ready! */
         setTimeout(function () {
-          setPaymentStatus('🎉 Your invitation is ready!', 'Your invitation is live at ' + state.hostedUrl);
+          var untilLabel = liveUntilLabel(state.expiresAt);
+          setPaymentStatus('🎉 Your invitation is ready!', 'Your invitation is live at ' + state.hostedUrl +
+            (untilLabel ? ' until ' + untilLabel + '.' : ''));
         }, 1800);
 
         paintHostingStatus();

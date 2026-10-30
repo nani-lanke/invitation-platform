@@ -531,6 +531,52 @@
     if (holder) return holder.textContent.trim();
     return 'You are invited! Open my invitation on InviteAura.';
   }
+
+  /* Copies text; falls back to a hidden textarea where the Clipboard API
+     is missing (plain http, older phones). */
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).catch(function () { return legacyCopy(text); });
+    }
+    return legacyCopy(text);
+  }
+
+  function legacyCopy(text) {
+    return new Promise(function (resolve, reject) {
+      var area = document.createElement('textarea');
+      area.value = text;
+      area.setAttribute('readonly', '');
+      area.style.cssText = 'position:fixed;top:0;left:0;opacity:0;pointer-events:none';
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) {}
+      area.remove();
+      if (ok) resolve(); else reject(new Error('Copy is not supported'));
+    });
+  }
+
+  function nativeShare(url, text, title) {
+    if (!navigator.share) return Promise.reject(new Error('Web Share is not supported'));
+    return navigator.share({ title: title || document.title, text: text || '', url: url });
+  }
+
+  var SHARE_TARGETS = {
+    whatsapp: function (u, t) { return 'https://wa.me/?text=' + encodeURIComponent(t ? t + ' ' + u : u); },
+    facebook: function (u) { return 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(u); },
+    telegram: function (u, t) { return 'https://t.me/share/url?url=' + encodeURIComponent(u) + '&text=' + encodeURIComponent(t || ''); },
+    email: function (u, t) { return 'mailto:?subject=' + encodeURIComponent('You are invited!') + '&body=' + encodeURIComponent((t ? t + '\n\n' : '') + u); }
+  };
+
+  function openShare(network, url, text) {
+    var build = SHARE_TARGETS[network];
+    if (!build) return;
+    var target = build(url, text);
+    if (network === 'email') window.location.href = target;
+    else window.open(target, '_blank', 'noopener,noreferrer');
+  }
+
+  IH.share = { copy: copyText, native: nativeShare, open: openShare };
   /* ==================================================================
      PART 3 — QR modal
      ================================================================== */
@@ -649,7 +695,8 @@
         var iText = currentShareText(invShare);
         if (navigator.share) {
           IH.share.native(iUrl, iText).catch(function (err) {
-            if (err && err.name === 'AbortError') return;
+            // InvalidStateError: older published pages also open the share sheet inline.
+            if (err && (err.name === 'AbortError' || err.name === 'InvalidStateError')) return;
             IH.share.copy(iUrl).then(function () { IH.toast.success('Link copied — paste it anywhere.'); });
           });
         } else {

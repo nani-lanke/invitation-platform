@@ -9,6 +9,8 @@
 
 'use strict';
 
+const MAINTENANCE = require('../js/maintenance.js');
+
 const KEY_ID = process.env.RAZORPAY_KEY_ID;
 const KEY_SECRET = process.env.RAZORPAY_KEY_SECRET;
 
@@ -29,6 +31,16 @@ module.exports = async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
     return json(res, 405, { error: 'Use POST.' });
+  }
+
+  /* Scheduled maintenance (js/maintenance.js): no new payments until it ends. */
+  const maintenance = MAINTENANCE.status();
+  if (maintenance.phase === 'active') {
+    const mins = Math.ceil((maintenance.end - Date.now()) / 60000);
+    res.setHeader('Retry-After', String(mins * 60));
+    return json(res, 503, {
+      error: 'Server maintenance is in progress, so payments are paused. Please try again in about ' + mins + ' minutes.'
+    });
   }
 
   if (!KEY_ID || !KEY_SECRET) {

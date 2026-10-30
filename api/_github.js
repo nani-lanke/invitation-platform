@@ -15,6 +15,9 @@
      config()               -> { repo, branch } or throws if unset
      getFile(path)          -> { text, sha } | null
      putFile(path, text, message) -> { path, sha, url }
+     exists(path)           -> true | false
+     putFiles(files, message)     -> { commit, count }  (a file may be { path, remove: true })
+     putBlob(text) / getBlob(sha) -> staged upload pieces
    ==================================================================== */
 
 'use strict';
@@ -73,23 +76,23 @@ async function getFile(repoPath) {
 }
 
 /* Like getFile, but returns the raw decoded bytes. Media — photos, audio —
-   is not text, so decoding to a UTF-8 string would corrupt it. */
+   is not text, so decoding to a UTF-8 string would corrupt it. The raw
+   media type is asked for because the JSON form leaves `content` empty
+   for any file over 1 MB, which served larger photos and music as nothing. */
 async function getRaw(repoPath) {
   const cfg = config();
   const url = API + '/repos/' + cfg.repo + '/contents/' + safePath(repoPath) +
               '?ref=' + encodeURIComponent(cfg.branch);
 
-  const res = await fetch(url, { headers: headers(cfg.token) });
+  const res = await fetch(url, {
+    headers: Object.assign(headers(cfg.token), { Accept: 'application/vnd.github.raw' })
+  });
   if (res.status === 404) return null;
   if (!res.ok) {
     throw new Error('GitHub refused to read ' + repoPath + ' (' + res.status + ')');
   }
 
-  const body = await res.json();
-  return {
-    sha: body.sha,
-    buffer: Buffer.from(body.content || '', 'base64')
-  };
+  return { buffer: Buffer.from(await res.arrayBuffer()) };
 }
 
 /* Creating and updating are the same call; an update just has to name the
@@ -148,7 +151,44 @@ async function api(cfg, path, init) {
   return res.json();
 }
 
-/* files: [{ path, content }] where content is base64 of the raw bytes. */
+/* Staging. A Vercel request body stops at 4.5 MB, so the editor sends
+   large uploads ahead in pieces (api/upload). Each piece is kept as a
+   loose blob — in no tree, on no branch — until api/publish reads the
+   pieces back, joins them, and commits the whole file. */
+async function putBlob(text) {
+  const cfg = config();
+  const blob = await api(cfg, '/git/blobs', {
+    method: 'POST',
+    body: JSON.stringify({ content: text, encoding: 'utf-8' })
+  });
+  return blob.sha;
+}
+
+async function getBlob(sha) {
+  const cfg = config();
+  const blob = await api(cfg, '/git/blobs/' + sha);
+  return Buffer.from(blob.content || '', 'base64').toString('utf8');
+}
+
+/* Cheap existence check (no body), used before deleting: a tree entry
+   that removes a path which is not there makes GitHub reject the commit. */
+async function exists(repoPath) {
+  const cfg = config();
+  const url = API + '/repos/' + cfg.repo + '/contents/' + safePath(repoPath) +
+              '?ref=' + encodeURIComponent(cfg.branch);
+
+  const res = await fetch(url, { method: 'HEAD', headers: headers(cfg.token) });
+  if (res.status === 404) return false;
+  if (!res.ok) {
+    throw new Error('GitHub refused to check ' + repoPath + ' (' + res.status + ')');
+  }
+  return true;
+}
+
+/* files: [{ path, content }] where content is base64 of the raw bytes,
+   or [{ path, remove: true }] to delete that path in the same commit.
+   The blobs go up together, so a page with a gallery and a track does
+   not spend most of the function's time limit waiting in line. */
 async function putFiles(files, message) {
   const cfg = config();
   files.forEach(function (f) { safePath(f.path); });
@@ -156,14 +196,17 @@ async function putFiles(files, message) {
   const ref = await api(cfg, '/git/ref/heads/' + encodeURIComponent(cfg.branch));
   const head = await api(cfg, '/git/commits/' + ref.object.sha);
 
-  const blobs = [];
-  for (const f of files) {
-    const blob = await api(cfg, '/git/blobs', {
+  const blobs = await Promise.all(files.map(function (f) {
+    if (f.remove) {
+      return { path: f.path, mode: '100644', type: 'blob', sha: null };
+    }
+    return api(cfg, '/git/blobs', {
       method: 'POST',
       body: JSON.stringify({ content: f.content, encoding: 'base64' })
+    }).then(function (blob) {
+      return { path: f.path, mode: '100644', type: 'blob', sha: blob.sha };
     });
-    blobs.push({ path: f.path, mode: '100644', type: 'blob', sha: blob.sha });
-  }
+  }));
 
   const tree = await api(cfg, '/git/trees', {
     method: 'POST',
@@ -183,4 +226,7 @@ async function putFiles(files, message) {
   return { commit: commit.sha, count: files.length };
 }
 
-module.exports = { config: config, getFile: getFile, getRaw: getRaw, putFile: putFile, putFiles: putFiles };
+module.exports = {
+  config: config, getFile: getFile, getRaw: getRaw, exists: exists, putFile: putFile, putFiles: putFiles,
+  putBlob: putBlob, getBlob: getBlob
+};

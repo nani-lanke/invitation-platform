@@ -4,9 +4,16 @@
   "trailingSlash": false,
 
   "functions": {
-    "api/publish.js": { "includeFiles": "js/**" },
-    "api/check.js": { "includeFiles": "js/**" }
+    "api/publish.js": { "includeFiles": "js/**", "maxDuration": 60 },
+    "api/upload.js": { "maxDuration": 30 },
+    "api/invite.js": { "maxDuration": 30 },
+    "api/check.js": { "includeFiles": "js/**" },
+    "api/cleanup.js": { "maxDuration": 60 }
   },
+
+  "crons": [
+    { "path": "/api/cleanup", "schedule": "30 21 * * *" }
+  ],
 
   "rewrites": [
     {

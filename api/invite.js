@@ -23,13 +23,18 @@
 'use strict';
 
 const github = require('./_github');
+const expiry = require('./_expiry');
 
 const DEFAULT_DIR = 'invitation_card';
 const LEGACY_DIR = 'invitations';
+const INDEX = DEFAULT_DIR + '/index.json';
+const HOUR = 3600;
+const DAY = 86400;
 
-/* Only a flat filename, and only .html. No slashes means no traversal,
-   and no directory listing to stumble into. */
-const HTML_NAME = /^[A-Za-z0-9._-]{1,120}\.html$/;
+/* Only .html, either flat (the host page) or one folder down in
+   invitations/ (its card page, which api/publish commits beside it).
+   No other slash means no traversal and no directory listing. */
+const HTML_NAME = /^(invitations\/)?[A-Za-z0-9._-]{1,120}\.html$/;
 
 /* Media sits one folder under the page, in exactly the folders
    js/export.js uses. The registry file index.json matches neither rule,
@@ -52,7 +57,7 @@ const CORS = {
   'Access-Control-Allow-Methods': 'GET, HEAD, OPTIONS'
 };
 
-function fail(res, status, message) {
+function fail(res, status, message, note) {
   res.status(status);
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=60');
@@ -60,14 +65,42 @@ function fail(res, status, message) {
   res.end(
     '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width,initial-scale=1">' +
-    '<title>Invitation not found</title>' +
+    '<title>' + (status === 410 ? 'Invitation ended' : 'Invitation not found') + '</title>' +
     '<link rel="stylesheet" href="/css/style.css"></head><body>' +
     '<main class="container" style="max-width:34rem;margin:4rem auto;text-align:center">' +
     '<h1>' + message + '</h1>' +
-    '<p>Ask whoever invited you to send the link again.</p>' +
+    '<p>' + (note || 'Ask whoever invited you to send the link again.') + '</p>' +
     '<p><a class="btn btn--primary" href="/create.html">Create your own invitation</a></p>' +
     '</main></body></html>'
   );
+}
+
+/* The registry entry for a host page ('x.html') or its card page
+   ('invitations/x.html'). A failed registry read returns null, so a
+   GitHub hiccup never takes a live invitation down. */
+async function entryFor(name) {
+  try {
+    const found = await github.getFile(INDEX);
+    if (!found) return null;
+    const entries = JSON.parse(found.text);
+    const file = name.replace(/^invitations\//, '');
+    return (Array.isArray(entries) ? entries : []).find(function (e) {
+      return e && e.filename === file;
+    }) || null;
+  } catch (err) {
+    console.error('registry read for ' + name + ' failed:', err.message);
+    return null;
+  }
+}
+
+/* Edge caching that can never outlive the invitation: hold it for an hour
+   (plus a day of stale-while-revalidate) only while that much time is left. */
+function cacheFor(left) {
+  if (left === Infinity || left > HOUR + DAY) {
+    return 'public, max-age=0, s-maxage=' + HOUR + ', stale-while-revalidate=' + DAY;
+  }
+  const hold = Math.max(1, Math.min(HOUR, left));
+  return 'public, max-age=0, s-maxage=' + hold + ', stale-while-revalidate=' + Math.max(0, left - hold);
 }
 
 module.exports = async function handler(req, res) {
@@ -93,6 +126,15 @@ module.exports = async function handler(req, res) {
 
   try {
     if (HTML_NAME.test(name)) {
+      /* Hosted invitations end 31 days after the event (api/_expiry);
+         api/cleanup deletes the files, this stops serving them on time. */
+      const entry = dir === DEFAULT_DIR ? await entryFor(name) : null;
+      const left = expiry.secondsLeft(entry);
+      if (left <= 0) {
+        return fail(res, 410, 'This invitation has ended',
+          'Hosted invitations are removed ' + expiry.DAYS_AFTER_EVENT + ' days after the event. Thank you for celebrating with us.');
+      }
+
       const found = await github.getFile(dir + '/' + name);
       if (!found) {
         return fail(res, 404, 'This invitation is no longer here');
@@ -102,8 +144,9 @@ module.exports = async function handler(req, res) {
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
       /* Published invitations do not change, so the edge may hold one for
          an hour and keep serving a stale copy for a day while it
-         refreshes — which also carries guests through a GitHub outage. */
-      res.setHeader('Cache-Control', 'public, max-age=0, s-maxage=3600, stale-while-revalidate=86400');
+         refreshes — which also carries guests through a GitHub outage —
+         but never past the invitation's end. */
+      res.setHeader('Cache-Control', cacheFor(left));
       res.setHeader('X-Content-Type-Options', 'nosniff');
       Object.keys(CORS).forEach(function (k) { res.setHeader(k, CORS[k]); });
       res.end(req.method === 'HEAD' ? '' : found.text);

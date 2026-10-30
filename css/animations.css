@@ -110,9 +110,10 @@
 
 .js-reveal-ready [data-reveal="left"]  { transform: translateX(-30px); }
 .js-reveal-ready [data-reveal="right"] { transform: translateX(30px); }
-/* One column on a phone: a sideways start pushed the page 30px wider than
-   the screen until the block scrolled into view, so slide up instead. */
-@media (max-width: 760px) {
+/* One column (phones and tablets — .split-two stacks up to 1024px): a
+   sideways start pushed the page 30px wider than the screen until the block
+   scrolled into view, so slide up instead. */
+@media (max-width: 1024px) {
   .js-reveal-ready [data-reveal="left"]:not(.is-revealed),
   .js-reveal-ready [data-reveal="right"]:not(.is-revealed) { transform: translateY(26px); }
 }

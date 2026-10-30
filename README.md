@@ -316,7 +316,7 @@ can store it verbatim — no field-by-field mapping required.
 | Accounts | Supabase Auth; add a login page and a session check |
 | Unique URLs | A Vercel dynamic route `/i/[slug]` rendering `IH.invitation.render()` |
 | Image storage | Supabase Storage; replace the `FileReader` result with an upload URL |
-| Automatic expiry | A scheduled function deleting rows and objects past `expires_at` |
+| Automatic expiry | **Done** for hosted invitations: live until 31 days after the event (`api/_expiry.js`), `api/invite.js` answers 410 after that, and the daily cron `api/cleanup.js` deletes the pages and media (needs `CRON_SECRET`) |
 | Payments | Razorpay Checkout plus a webhook that sets `published_at` and `expires_at` |
 | Admin dashboard | A new page listing the current user's `invitations` rows |
 

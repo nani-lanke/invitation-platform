@@ -99,12 +99,14 @@ function addressOf(req) {
   return first || req.socket && req.socket.remoteAddress || 'unknown';
 }
 
-async function check(req) {
+/* scope keeps separate endpoints on separate counters ('pub' by default). */
+async function check(req, scope) {
   const ip = addressOf(req);
   const hour = Math.floor(Date.now() / (HOUR * 1000));
   const day = Math.floor(Date.now() / (DAY * 1000));
+  const ns = 'ih:' + (scope || 'pub') + ':';
 
-  const mine = await bump('ih:pub:' + ip + ':' + hour, HOUR);
+  const mine = await bump(ns + ip + ':' + hour, HOUR);
   if (mine > PER_IP) {
     return {
       ok: false,
@@ -113,7 +115,7 @@ async function check(req) {
     };
   }
 
-  const all = await bump('ih:pub:all:' + day, DAY);
+  const all = await bump(ns + 'all:' + day, DAY);
   if (all > PER_DAY) {
     return {
       ok: false,

@@ -23,6 +23,8 @@ const browser = require('./_browser');
 const validate = require('./_validate');
 const limit = require('./_limit');
 const github = require('./_github');
+const paymentGate = require('./_payment').gate;
+const expiry = require('./_expiry');
 
 const FOLDER = 'invitation_card';
 const INDEX = FOLDER + '/index.json';
@@ -142,33 +144,26 @@ function json(res, status, body) {
   res.end(JSON.stringify(body));
 }
 
-/* The payment gate. When RAZORPAY_KEY_SECRET is configured, a valid
-   Razorpay signature is required before anything is committed, so the
-   invitation is never hosted ahead of a genuine ₹99 payment. When the
-   secret is absent, the whole payment step degrades gracefully and the
-   check is skipped rather than refusing every publish. */
-function paymentGate(body) {
-  const secret = process.env.RAZORPAY_KEY_SECRET;
-  if (!secret) return { ok: true, paymentId: '' };
+/* Large uploads arrive ahead of this request in pieces (api/upload), and
+   the body carries 'staged:<sha>,<sha>…' in their place. Each is joined
+   back into its data: URL here, before validation, so the size and type
+   checks see the whole file exactly as if it had come inline. */
+const STAGED = /^staged:([0-9a-f]{40})(,[0-9a-f]{40}){0,15}$/;
+const UPLOAD_KEYS = ['photo', 'background', 'venueImage', 'aiBackground', 'musicFile'];
 
-  const oid = String((body && body.razorpay_order_id) || '');
-  const pid = String((body && body.razorpay_payment_id) || '');
-  const sig = String((body && body.razorpay_signature) || '');
+async function unstage(value) {
+  if (typeof value !== 'string' || !STAGED.test(value)) return value;
+  const shas = value.slice(7).split(',');
+  const parts = await Promise.all(shas.map(github.getBlob));
+  return parts.join('');
+}
 
-  if (!oid || !pid || !sig) {
-    return { ok: false, error: 'A verified ₹99 payment is required before hosting.' };
+async function unstageAll(body) {
+  if (!body || typeof body !== 'object') return;
+  for (const key of UPLOAD_KEYS) body[key] = await unstage(body[key]);
+  if (Array.isArray(body.gallery)) {
+    body.gallery = await Promise.all(body.gallery.map(unstage));
   }
-
-  const expected = crypto
-    .createHmac('sha256', secret)
-    .update(oid + '|' + pid)
-    .digest('hex');
-
-  if (expected !== sig) {
-    return { ok: false, error: 'The payment could not be verified.' };
-  }
-
-  return { ok: true, paymentId: pid };
 }
 
 /* The registry: one index.json inside the invitations folder listing
@@ -228,17 +223,19 @@ module.exports = async function handler(req, res) {
       }
     }
 
+    const payment = paymentGate(body);
+    if (!payment.ok) {
+      return json(res, 402, { error: payment.error });
+    }
+
+    await unstageAll(body);
+
     const checked = validate.clean(body);
 
     if (!checked.ok) {
       return json(res, 400, {
         error: checked.error
       });
-    }
-
-    const payment = paymentGate(body);
-    if (!payment.ok) {
-      return json(res, 402, { error: payment.error });
     }
 
     /* Safe identifiers only — never the signature or any secret. */
@@ -297,11 +294,14 @@ module.exports = async function handler(req, res) {
           mp4: 'm4a',
           'x-m4a': 'm4a',
           aac: 'aac',
+          'x-aac': 'aac',
           ogg: 'ogg',
           wav: 'wav',
           'x-wav': 'wav',
+          'vnd.wave': 'wav',
           webm: 'webm',
-          flac: 'flac'
+          flac: 'flac',
+          'x-flac': 'flac'
         })[
           (m && m[1] || '').toLowerCase()
         ] || 'mp3';
@@ -409,6 +409,10 @@ module.exports = async function handler(req, res) {
        disagree. */
     const index = await readIndex();
 
+    /* Live until 31 days after the event (see api/_expiry); the file list
+       is what api/cleanup deletes when that day passes. */
+    const expiresAt = expiry.expiresAt(state.date, now);
+
     if (index.ok) {
       index.entries.push({
         invitationId: id,
@@ -416,8 +420,11 @@ module.exports = async function handler(req, res) {
         publicUrl: publicUrl,
         eventType: state.eventType || '',
         eventTitle: state.title || '',
+        eventDate: state.date || '',
         createdAt: now,
         hostedAt: now,
+        expiresAt: expiresAt,
+        files: files.map(function (f) { return f.path; }),
         paymentId: payment.paymentId || '',
         hostingStatus: 'active'
       });
@@ -494,6 +501,7 @@ module.exports = async function handler(req, res) {
             invitationUrl: publicUrl,
             invitationName: invitationName,
             customerName: customerName,
+            expiresAt: expiresAt,
             attemptId: attemptId
           });
 
@@ -572,6 +580,8 @@ module.exports = async function handler(req, res) {
       verified: true,
 
       hostedAt: now,
+
+      expiresAt: expiresAt,
 
       email: emailStatus
     });

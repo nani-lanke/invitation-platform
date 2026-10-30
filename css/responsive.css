@@ -396,6 +396,8 @@
   .template-card__overlay { opacity: 1; background: linear-gradient(180deg, transparent 42%, rgba(20, 7, 15, .82)); }
   .template-card__overlay .btn { min-width: 0; }
   .hero__float:hover { animation-play-state: running; }
+  /* The legal links were 21px tall — pad the tap area, not the layout. */
+  .footer-bottom nav a { display: inline-block; padding: 10px 6px; margin: -10px -6px; }
 }
 
 /* --------------------------------------------------------------------------

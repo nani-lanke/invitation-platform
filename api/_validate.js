@@ -73,13 +73,33 @@ const TEXT = {
   animation:  30
 };
 
-/* Vercel caps a function's request body at 4.5 MB. Staying under it with
-   room to spare keeps the failure a readable message rather than a blank
-   413 from the platform. */
-const MAX_TOTAL = 4 * 1024 * 1024;
-const MAX_IMAGE = 2 * 1024 * 1024;
-const MAX_AUDIO = 3 * 1024 * 1024;
+/* Vercel caps a function's request body at 4.5 MB, so large uploads are
+   staged ahead in pieces (api/upload) and joined before these checks run.
+   The caps below are per invitation, not per request: music matches the
+   Each upload box has its own size, matching SLOT_LIMITS in js/create.js,
+   so with every box filled an invitation stays under 5 MB (4.8 MB). The
+   AI background is template art, not an upload, so it has its own cap
+   and is not counted in the 5 MB. */
+const SLOT = {
+  photo: 500 * 1024,
+  venueImage: 100 * 1024,
+  background: 500 * 1024,
+  gallery: 200 * 1024,
+  musicFile: 2.5 * 1024 * 1024,
+  aiBackground: 2 * 1024 * 1024
+};
+const MAX_TOTAL = 5 * 1024 * 1024;
 const MAX_GALLERY = 6;
+
+/* A little slack over each box: the editor's own size estimate and this
+   one can differ by a few bytes of base64 padding. */
+const SLACK = 1024;
+
+function sizeLabel(bytes) {
+  return bytes >= 1024 * 1024
+    ? Math.round(bytes / 1024 / 1024 * 10) / 10 + ' MB'
+    : Math.round(bytes / 1024) + ' KB';
+}
 
 const IMAGE_URL = /^data:image\/(jpeg|jpg|png|webp|gif|avif);base64,[A-Za-z0-9+/=]+$/;
 const AUDIO_URL = /^data:audio\/[\w.+-]+;base64,[A-Za-z0-9+/=]+$/;
@@ -164,47 +184,58 @@ function clean(body) {
      small enough to slip through. */
   let budget = MAX_TOTAL;
 
-  function accept(value, kind, label) {
+  /* `slot` names the upload box, and so its size; `counted` is false only
+     for the AI background, which sits outside the 5 MB of uploads. */
+  function accept(value, kind, label, slot, counted) {
     const pattern = kind === 'audio' ? AUDIO_URL : IMAGE_URL;
-    const cap = kind === 'audio' ? MAX_AUDIO : MAX_IMAGE;
+    const cap = SLOT[slot];
 
     if (typeof value !== 'string' || !value) return null;
     if (!pattern.test(value)) {
       throw new Error(label + ' is not a ' + (kind === 'audio' ? 'supported audio file' : 'supported image') + '.');
     }
     const size = decodedSize(value);
-    if (size > cap) {
-      throw new Error(label + ' is ' + Math.round(size / 1024 / 1024 * 10) / 10 +
-                      ' MB — the limit for publishing is ' + (cap / 1024 / 1024) + ' MB.');
+    if (size > cap + SLACK) {
+      throw new Error(label + ' is ' + sizeLabel(size) + ' — the limit is ' + sizeLabel(cap) + '. ' +
+                      (kind === 'audio' ? 'Choose a shorter or smaller track.'
+                                        : 'Remove it and add it again so it is resized to fit.'));
     }
-    budget -= size;
-    if (budget < 0) {
-      throw new Error('Together your photos and music are over ' +
-                      (MAX_TOTAL / 1024 / 1024) + ' MB. Remove one, or use Download page folder.');
+    if (counted !== false) {
+      budget -= size;
+      if (budget < 0) {
+        throw new Error('Together your photos and music are over ' + sizeLabel(MAX_TOTAL) +
+                        '. Remove one and try again.');
+      }
     }
     return value;
   }
 
   try {
-    const photo = accept(body.photo, 'image', 'The main photo');
-    if (photo) state.photo = photo;
+    const main = accept(body.photo, 'image', 'The main photo', 'photo');
+    if (main) state.photo = main;
 
-    const background = accept(body.background, 'image', 'The background image');
+    /* A venue photo may also be a site path (a stock picture), which needs
+       no upload; only an uploaded or generated one is checked and kept. */
+    if (typeof body.venueImage === 'string' && body.venueImage.slice(0, 5) === 'data:') {
+      state.venueImage = accept(body.venueImage, 'image', 'The venue photo', 'venueImage');
+    }
+
+    const background = accept(body.background, 'image', 'The background image', 'background');
     if (background) state.background = background;
 
-    const aiBackground = accept(body.aiBackground, 'image', 'The AI background image');
+    const aiBackground = accept(body.aiBackground, 'image', 'The AI background image', 'aiBackground', false);
     if (aiBackground) state.aiBackground = aiBackground;
 
     if (Array.isArray(body.gallery)) {
       const gallery = [];
       body.gallery.slice(0, MAX_GALLERY).forEach(function (src, i) {
-        const ok = accept(src, 'image', 'Gallery photo ' + (i + 1));
+        const ok = accept(src, 'image', 'Gallery photo ' + (i + 1), 'gallery');
         if (ok) gallery.push(ok);
       });
       if (gallery.length) state.gallery = gallery;
     }
 
-    const music = accept(body.musicFile, 'audio', 'The background music');
+    const music = accept(body.musicFile, 'audio', 'The background music', 'musicFile');
     if (music) {
       state.musicFile = music;
       if (typeof body.music === 'string') state.music = text(body.music, 120);

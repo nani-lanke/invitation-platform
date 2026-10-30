@@ -17,7 +17,7 @@
   <script src="js/redesign-collection-data.js?v=1.2" defer></script>
   <script src="js/redesign-collection.js?v=1.4" defer></script>
   <script src="js/preview.js?v=2.3" defer></script>
-  <script src="js/export.js?v=2.3" defer></script>
+  <script src="js/export.js?v=2.4" defer></script>
   <script src="js/html-to-image.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/dist/html2canvas-pro.min.js" defer></script>
   <style>
@@ -40,6 +40,12 @@
     .site-dl-btn:hover { transform: scale(1.08); }
     .site-dl-btn svg { width: 22px; height: 22px; }
     .site-dl-btn.is-busy { opacity: .6; pointer-events: none; }
+    /* Phones: smaller corner buttons so they do not cover the card. */
+    @media (max-width: 600px) {
+      .site-music-btn, .site-dl-btn { right: calc(10px + env(safe-area-inset-right)); bottom: calc(10px + env(safe-area-inset-bottom)); width: 40px; height: 40px; border-width: 1.5px; }
+      .site-dl-btn--stack { bottom: calc(58px + env(safe-area-inset-bottom)); }
+      .site-music-btn svg, .site-dl-btn svg { width: 18px; height: 18px; }
+    }
   </style>
 </head>
 <body>
@@ -79,8 +85,8 @@
           IH.invitation.mount(root, data);
         }
         if (music) addMusicButton(music);
-        // Downloading the image comes with the paid hosting.
-        if (data.hostingPaid) addDownloadButton(data, !!music);
+        /* No download here: this is the draft preview. The download button
+           is only on the published pages in invitation_card/, after payment. */
       }, 50);
     });
 

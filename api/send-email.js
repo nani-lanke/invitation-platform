@@ -114,8 +114,18 @@ function escapeHtml(s) {
     .replace(/'/g, '&#39;');
 }
 
+/* expiresAt (ISO) -> '15 January 2027', in India time; '' when absent. */
+function liveUntilLabel(expiresAt) {
+  const at = Date.parse(expiresAt || '');
+  if (!at) return '';
+  return new Date(at).toLocaleDateString('en-IN', {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Asia/Kolkata'
+  });
+}
+
 function buildEmailHtml(opts) {
   const url = opts.invitationUrl;
+  const until = escapeHtml(liveUntilLabel(opts.expiresAt));
   const name = escapeHtml(opts.invitationName);
   const customer = escapeHtml(opts.customerName);
   return `<!DOCTYPE html>
@@ -172,7 +182,9 @@ function buildEmailHtml(opts) {
               </p>
 
               <p style="margin:0 0 20px;font-size:16px;color:#333;">You can open your invitation using the link above and share it with your family and friends.</p>
-
+${until ? `
+              <p style="margin:0 0 20px;padding:12px 16px;background-color:#faf7f2;border-left:3px solid #B98A2E;border-radius:6px;font-size:14px;color:#555;">Your invitation stays live until <strong>${until}</strong> — 31 days after your event. After that the card and host page are deleted automatically, so download a copy if you want to keep it.</p>
+` : ''}
               <p style="margin:0 0 12px;font-size:15px;color:#333;">Thank you for choosing InviteAura. ❤️</p>
               <p style="margin:0 0 12px;font-size:15px;color:#333;">We hope your celebration is beautiful, memorable, and filled with happiness.</p>
               <p style="margin:0 0 24px;font-size:15px;color:#666;font-style:italic;">Create. Celebrate. Share.</p>
@@ -219,7 +231,9 @@ Your Invitation Link:
 ${opts.invitationUrl}
 
 You can open your invitation using the link above and share it with your family and friends.
-
+${liveUntilLabel(opts.expiresAt) ? `
+Your invitation stays live until ${liveUntilLabel(opts.expiresAt)} — 31 days after your event. After that the card and host page are deleted automatically, so download a copy if you want to keep it.
+` : ''}
 Thank you for choosing InviteAura. ❤️
 
 We hope your celebration is beautiful, memorable, and filled with happiness.
@@ -240,6 +254,7 @@ support@inviteaura.in`;
      invitationUrl: string,
      invitationName?: string,
      customerName?: string,
+     expiresAt?: string,       (ISO; adds a "live until" line)
      attemptId?: string
    }
    ==================================================================== */
@@ -351,12 +366,14 @@ async function sendInvitationEmail(opts) {
       text: buildEmailText({
         invitationUrl: invitationUrl,
         invitationName: invitationName,
-        customerName: customerName
+        customerName: customerName,
+        expiresAt: opts && opts.expiresAt
       }),
       html: buildEmailHtml({
         invitationUrl: invitationUrl,
         invitationName: invitationName,
-        customerName: customerName
+        customerName: customerName,
+        expiresAt: opts && opts.expiresAt
       }),
       headers: {
         'X-Mailer': 'InviteAura Platform Mailer',
@@ -417,6 +434,17 @@ async function sendInvitationEmail(opts) {
 /* ====================================================================
    Direct HTTP entry point for Vercel /api/send-email
    ==================================================================== */
+function isOwnInvitationUrl(value, req) {
+  let url;
+  try { url = new URL(String(value || '')); } catch (err) { return false; }
+  const hosts = [req.headers['x-forwarded-host'], req.headers.host];
+  if (process.env.SITE_URL) {
+    try { hosts.push(new URL(process.env.SITE_URL).host); } catch (err) { /* ignore */ }
+  }
+  return hosts.filter(Boolean).includes(url.host) &&
+    /^\/(invitation_card|invitations)\/[\w.-]+\.html$/.test(url.pathname);
+}
+
 async function httpHandler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST');
@@ -433,12 +461,25 @@ async function httpHandler(req, res) {
   }
   body = body || {};
 
+  /* This endpoint is public (the "resend email" button), so it must not
+     become an open mail relay: it only sends links to invitations hosted
+     on this site, and it is rate limited like /api/publish. */
+  if (!isOwnInvitationUrl(body.invitationUrl, req)) {
+    return json(res, 400, { error: 'Only invitations hosted on this site can be emailed.' });
+  }
+  const gate = await require('./_limit').check(req, 'mail');
+  if (!gate.ok) {
+    res.setHeader('Retry-After', String(gate.retryAfter));
+    return json(res, 429, { error: 'Too many emails sent. Please try again later.' });
+  }
+
   try {
     const result = await sendInvitationEmail({
       email: body.email,
       invitationUrl: body.invitationUrl,
       invitationName: body.invitationName,
       customerName: body.customerName,
+      expiresAt: body.expiresAt,
       attemptId: body.attemptId
     });
 

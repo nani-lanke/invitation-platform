@@ -335,7 +335,7 @@
        and commits them beside the page — see api/_validate.js for the
        ceilings, which exist because Vercel refuses a request body over
        4.5 MB before the function ever runs. */
-    'photo', 'background', 'gallery', 'musicFile', 'music'
+    'photo', 'background', 'venueImage', 'gallery', 'musicFile', 'music'
   ];
 
   function payload(state) {
@@ -354,7 +354,7 @@
      knowing before the platform rejects the whole request. */
   function payloadSize(state) {
     var total = 0;
-    ['photo', 'background', 'musicFile'].forEach(function (k) {
+    ['photo', 'background', 'venueImage', 'musicFile'].forEach(function (k) {
       if (typeof state[k] === 'string') total += state[k].length;
     });
     (state.gallery || []).forEach(function (src) {
@@ -367,6 +367,57 @@
     function uploaded(v) { return typeof v === 'string' && v.slice(0, 5) === 'data:'; }
     return uploaded(state.photo) || uploaded(state.background) ||
            uploaded(state.musicFile) || (state.gallery || []).some(uploaded);
+  }
+
+  /* Vercel refuses a request body over 4.5 MB, which one song alone can
+     pass once base64 adds its third. Every large upload is therefore sent
+     ahead to api/upload in pieces, one request each, and replaced in the
+     publish body by 'staged:<sha>,<sha>…'; the server joins the pieces
+     back before it checks or commits anything. */
+  var STAGE_OVER = 512 * 1024;
+  var PIECE = 2 * 1024 * 1024;
+
+  function stageOne(value, receipt) {
+    if (typeof value !== 'string' || value.slice(0, 5) !== 'data:' || value.length <= STAGE_OVER) {
+      return Promise.resolve(value);
+    }
+    var pieces = [];
+    for (var i = 0; i < value.length; i += PIECE) pieces.push(value.slice(i, i + PIECE));
+
+    var shas = [];
+    return pieces.reduce(function (chain, piece) {
+      return chain.then(function () {
+        return fetch('api/upload', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(Object.assign({ chunk: piece }, receipt))
+        }).then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (body) {
+            if (!res.ok || !body.sha) throw new Error(body.error || 'A photo or the music could not be uploaded.');
+            shas.push(body.sha);
+          });
+        });
+      });
+    }, Promise.resolve()).then(function () { return 'staged:' + shas.join(','); });
+  }
+
+  function stageUploads(data) {
+    var receipt = {
+      razorpay_order_id: data.razorpay_order_id,
+      razorpay_payment_id: data.razorpay_payment_id,
+      razorpay_signature: data.razorpay_signature
+    };
+    var keys = ['photo', 'background', 'venueImage', 'aiBackground', 'musicFile'];
+    var chain = Promise.resolve();
+    keys.forEach(function (k) {
+      chain = chain.then(function () { return stageOne(data[k], receipt); })
+        .then(function (v) { if (v !== undefined) data[k] = v; });
+    });
+    (data.gallery || []).forEach(function (src, i) {
+      chain = chain.then(function () { return stageOne(src, receipt); })
+        .then(function (v) { data.gallery[i] = v; });
+    });
+    return chain;
   }
 
   function toServer(state, payment) {
@@ -390,15 +441,20 @@
       hasSignature: !!(payment && payment.razorpay_signature)
     });
 
-    return fetch('api/publish', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
+    return stageUploads(data).then(function () {
+      return fetch('api/publish', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
     }).then(function (res) {
       console.log('[publish] /api/publish responded with', res.status);
       if (res.status === 404 || res.status === 405) {
         throw new Error('This copy of the site cannot publish — it is served as ' +
                         'static files. Deploy it to Vercel, or use Download page folder.');
+      }
+      if (res.status === 413) {
+        throw new Error('Your photos and music are too large to publish together. Remove one and try again.');
       }
       return res.json().catch(function () {
         throw new Error('The server sent back something unreadable.');
