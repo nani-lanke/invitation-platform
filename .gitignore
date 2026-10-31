@@ -17,3 +17,19 @@ Thumbs.db
 
 .vercel
 .env*
+
+# Dependencies
+node_modules/
+
+# Generated redesign assets and reports
+redesign-100/output/
+redesign-100/work/raw/
+redesign-100/work/*.log
+redesign-100/work/*.txt
+redesign-100/work/*.json
+
+# Generated screenshots
+redesign-100/integration/shots/
+
+# Original AI-generated source images (keep locally, do not push)
+ai-generated/comfyui-raw/
