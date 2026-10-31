@@ -1,0 +1,3068 @@
+{
+ "kalasam-blessing": {
+  "slug": "kalasam-blessing",
+  "index": 1,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1537,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kalasam-blessing/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kalasam-blessing/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kalasam-blessing/footer.jpg"
+   ]
+  },
+  "png": "output/png/001-kalasam-blessing.png",
+  "renderedAt": "2026-10-24T04:38:33.825Z",
+  "ok": true
+ },
+ "gopuram-vows": {
+  "slug": "gopuram-vows",
+  "index": 2,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1640,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gopuram-vows/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gopuram-vows/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gopuram-vows/footer.jpg"
+   ]
+  },
+  "png": "output/png/002-gopuram-vows.png",
+  "renderedAt": "2026-10-24T04:38:38.133Z",
+  "ok": true
+ },
+ "talambralu-pearls": {
+  "slug": "talambralu-pearls",
+  "index": 3,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1593,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/talambralu-pearls/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/talambralu-pearls/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/talambralu-pearls/footer.jpg"
+   ]
+  },
+  "png": "output/png/003-talambralu-pearls.png",
+  "renderedAt": "2026-10-24T04:38:41.020Z",
+  "ok": true
+ },
+ "kerala-mangalyam": {
+  "slug": "kerala-mangalyam",
+  "index": 4,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1435,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kerala-mangalyam/footer.jpg"
+   ]
+  },
+  "png": "output/png/004-kerala-mangalyam.png",
+  "renderedAt": "2026-10-24T04:38:43.444Z",
+  "ok": true
+ },
+ "kasavu-gold-border": {
+  "slug": "kasavu-gold-border",
+  "index": 5,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1368,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kasavu-gold-border/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kasavu-gold-border/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kasavu-gold-border/footer.jpg"
+   ]
+  },
+  "png": "output/png/005-kasavu-gold-border.png",
+  "renderedAt": "2026-10-24T04:38:46.588Z",
+  "ok": true
+ },
+ "mysore-madhuve": {
+  "slug": "mysore-madhuve",
+  "index": 6,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1609,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mysore-madhuve/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mysore-madhuve/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mysore-madhuve/footer.jpg"
+   ]
+  },
+  "png": "output/png/006-mysore-madhuve.png",
+  "renderedAt": "2026-10-24T04:38:49.305Z",
+  "ok": true
+ },
+ "punjabi-phulkari": {
+  "slug": "punjabi-phulkari",
+  "index": 7,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1527,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/punjabi-phulkari/footer.jpg"
+   ]
+  },
+  "png": "output/png/007-punjabi-phulkari.png",
+  "renderedAt": "2026-10-24T04:38:54.430Z",
+  "ok": true
+ },
+ "bengali-alpona": {
+  "slug": "bengali-alpona",
+  "index": 8,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1586,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bengali-alpona/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bengali-alpona/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bengali-alpona/footer.jpg"
+   ]
+  },
+  "png": "output/png/008-bengali-alpona.png",
+  "renderedAt": "2026-10-24T04:38:58.874Z",
+  "ok": true
+ },
+ "shankha-pola": {
+  "slug": "shankha-pola",
+  "index": 9,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1459,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/shankha-pola/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/shankha-pola/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/shankha-pola/footer.jpg"
+   ]
+  },
+  "png": "output/png/009-shankha-pola.png",
+  "renderedAt": "2026-10-24T04:39:03.236Z",
+  "ok": true
+ },
+ "gujarati-toran": {
+  "slug": "gujarati-toran",
+  "index": 10,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1799,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gujarati-toran/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gujarati-toran/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gujarati-toran/footer.jpg"
+   ]
+  },
+  "png": "output/png/010-gujarati-toran.png",
+  "renderedAt": "2026-10-24T04:39:06.733Z",
+  "ok": true
+ },
+ "bandhani-bloom": {
+  "slug": "bandhani-bloom",
+  "index": 11,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1506,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bandhani-bloom/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bandhani-bloom/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bandhani-bloom/footer.jpg"
+   ]
+  },
+  "png": "output/png/011-bandhani-bloom.png",
+  "renderedAt": "2026-10-24T04:39:10.214Z",
+  "ok": true
+ },
+ "marathi-paithani": {
+  "slug": "marathi-paithani",
+  "index": 12,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1787,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/marathi-paithani/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/marathi-paithani/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/marathi-paithani/footer.jpg"
+   ]
+  },
+  "png": "output/png/012-marathi-paithani.png",
+  "renderedAt": "2026-10-24T04:39:13.512Z",
+  "ok": true
+ },
+ "mundavalya-pearls": {
+  "slug": "mundavalya-pearls",
+  "index": 13,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1603,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mundavalya-pearls/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mundavalya-pearls/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mundavalya-pearls/footer.jpg"
+   ]
+  },
+  "png": "output/png/013-mundavalya-pearls.png",
+  "renderedAt": "2026-10-24T04:39:16.932Z",
+  "ok": true
+ },
+ "rajasthani-jharokha": {
+  "slug": "rajasthani-jharokha",
+  "index": 14,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1632,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/rajasthani-jharokha/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/rajasthani-jharokha/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/rajasthani-jharokha/footer.jpg"
+   ]
+  },
+  "png": "output/png/014-rajasthani-jharokha.png",
+  "renderedAt": "2026-10-24T04:39:20.356Z",
+  "ok": true
+ },
+ "haveli-jaali": {
+  "slug": "haveli-jaali",
+  "index": 15,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1787,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haveli-jaali/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haveli-jaali/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haveli-jaali/footer.jpg"
+   ]
+  },
+  "png": "output/png/015-haveli-jaali.png",
+  "renderedAt": "2026-10-24T04:39:24.081Z",
+  "ok": true
+ },
+ "assamese-biya": {
+  "slug": "assamese-biya",
+  "index": 16,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1800,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/assamese-biya/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/assamese-biya/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/assamese-biya/footer.jpg"
+   ]
+  },
+  "png": "output/png/016-assamese-biya.png",
+  "renderedAt": "2026-10-24T04:39:27.456Z",
+  "ok": true
+ },
+ "gamosa-weave": {
+  "slug": "gamosa-weave",
+  "index": 17,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1648,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gamosa-weave/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gamosa-weave/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/gamosa-weave/footer.jpg"
+   ]
+  },
+  "png": "output/png/017-gamosa-weave.png",
+  "renderedAt": "2026-10-24T04:39:30.953Z",
+  "ok": true
+ },
+ "odia-bahaghara": {
+  "slug": "odia-bahaghara",
+  "index": 18,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1861,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/odia-bahaghara/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/odia-bahaghara/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/odia-bahaghara/footer.jpg"
+   ]
+  },
+  "png": "output/png/018-odia-bahaghara.png",
+  "renderedAt": "2026-10-24T04:39:34.368Z",
+  "ok": true
+ },
+ "pattachitra-vows": {
+  "slug": "pattachitra-vows",
+  "index": 19,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1839,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pattachitra-vows/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pattachitra-vows/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pattachitra-vows/footer.jpg"
+   ]
+  },
+  "png": "output/png/019-pattachitra-vows.png",
+  "renderedAt": "2026-10-24T04:39:37.870Z",
+  "ok": true
+ },
+ "sindhi-ajrak": {
+  "slug": "sindhi-ajrak",
+  "index": 20,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1411,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sindhi-ajrak/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sindhi-ajrak/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sindhi-ajrak/footer.jpg"
+   ]
+  },
+  "png": "output/png/020-sindhi-ajrak.png",
+  "renderedAt": "2026-10-24T04:39:40.587Z",
+  "ok": true
+ },
+ "goan-azulejo": {
+  "slug": "goan-azulejo",
+  "index": 21,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1634,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/goan-azulejo/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/goan-azulejo/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/goan-azulejo/footer.jpg"
+   ]
+  },
+  "png": "output/png/021-goan-azulejo.png",
+  "renderedAt": "2026-10-24T04:39:42.998Z",
+  "ok": true
+ },
+ "konkan-coast": {
+  "slug": "konkan-coast",
+  "index": 22,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1775,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/konkan-coast/footer.jpg"
+   ]
+  },
+  "png": "output/png/022-konkan-coast.png",
+  "renderedAt": "2026-10-24T04:39:45.570Z",
+  "ok": true
+ },
+ "kashmiri-chinar": {
+  "slug": "kashmiri-chinar",
+  "index": 23,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1534,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kashmiri-chinar/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kashmiri-chinar/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kashmiri-chinar/footer.jpg"
+   ]
+  },
+  "png": "output/png/023-kashmiri-chinar.png",
+  "renderedAt": "2026-10-24T04:39:48.012Z",
+  "ok": true
+ },
+ "nepali-bihe": {
+  "slug": "nepali-bihe",
+  "index": 24,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1536,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nepali-bihe/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nepali-bihe/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nepali-bihe/footer.jpg"
+   ]
+  },
+  "png": "output/png/024-nepali-bihe.png",
+  "renderedAt": "2026-10-24T04:39:50.626Z",
+  "ok": true
+ },
+ "mithila-vivah": {
+  "slug": "mithila-vivah",
+  "index": 25,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1512,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mithila-vivah/footer.jpg"
+   ]
+  },
+  "png": "output/png/025-mithila-vivah.png",
+  "renderedAt": "2026-10-24T04:39:52.961Z",
+  "ok": true
+ },
+ "lucknawi-chikankari": {
+  "slug": "lucknawi-chikankari",
+  "index": 26,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1761,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lucknawi-chikankari/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lucknawi-chikankari/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lucknawi-chikankari/footer.jpg"
+   ]
+  },
+  "png": "output/png/026-lucknawi-chikankari.png",
+  "renderedAt": "2026-10-24T04:39:55.938Z",
+  "ok": true
+ },
+ "kanchipuram-silk": {
+  "slug": "kanchipuram-silk",
+  "index": 27,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1629,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kanchipuram-silk/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kanchipuram-silk/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kanchipuram-silk/footer.jpg"
+   ]
+  },
+  "png": "output/png/027-kanchipuram-silk.png",
+  "renderedAt": "2026-10-24T04:39:59.470Z",
+  "ok": true
+ },
+ "tanjore-grandeur": {
+  "slug": "tanjore-grandeur",
+  "index": 28,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1683,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/tanjore-grandeur/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/tanjore-grandeur/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/tanjore-grandeur/footer.jpg"
+   ]
+  },
+  "png": "output/png/028-tanjore-grandeur.png",
+  "renderedAt": "2026-10-24T04:40:03.074Z",
+  "ok": true
+ },
+ "chettinad-heritage": {
+  "slug": "chettinad-heritage",
+  "index": 29,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1600,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/chettinad-heritage/footer.jpg"
+   ]
+  },
+  "png": "output/png/029-chettinad-heritage.png",
+  "renderedAt": "2026-10-24T04:40:06.722Z",
+  "ok": true
+ },
+ "andhra-kalamkari": {
+  "slug": "andhra-kalamkari",
+  "index": 30,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1541,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/andhra-kalamkari/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/andhra-kalamkari/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/andhra-kalamkari/footer.jpg"
+   ]
+  },
+  "png": "output/png/030-andhra-kalamkari.png",
+  "renderedAt": "2026-10-24T04:40:09.739Z",
+  "ok": true
+ },
+ "telangana-bathukamma": {
+  "slug": "telangana-bathukamma",
+  "index": 31,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1891,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/telangana-bathukamma/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/telangana-bathukamma/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/telangana-bathukamma/footer.jpg"
+   ]
+  },
+  "png": "output/png/031-telangana-bathukamma.png",
+  "renderedAt": "2026-10-24T04:40:12.647Z",
+  "ok": true
+ },
+ "coorg-kodava": {
+  "slug": "coorg-kodava",
+  "index": 32,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1477,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/coorg-kodava/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/coorg-kodava/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/coorg-kodava/footer.jpg"
+   ]
+  },
+  "png": "output/png/032-coorg-kodava.png",
+  "renderedAt": "2026-10-24T04:40:15.166Z",
+  "ok": true
+ },
+ "kutch-mirrorwork": {
+  "slug": "kutch-mirrorwork",
+  "index": 33,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1760,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kutch-mirrorwork/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kutch-mirrorwork/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kutch-mirrorwork/footer.jpg"
+   ]
+  },
+  "png": "output/png/033-kutch-mirrorwork.png",
+  "renderedAt": "2026-10-24T04:40:17.587Z",
+  "ok": true
+ },
+ "banarasi-royale": {
+  "slug": "banarasi-royale",
+  "index": 34,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1788,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/banarasi-royale/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/banarasi-royale/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/banarasi-royale/footer.jpg"
+   ]
+  },
+  "png": "output/png/034-banarasi-royale.png",
+  "renderedAt": "2026-10-24T04:40:20.237Z",
+  "ok": true
+ },
+ "awadhi-nawab": {
+  "slug": "awadhi-nawab",
+  "index": 35,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1725,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/awadhi-nawab/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/awadhi-nawab/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/awadhi-nawab/footer.jpg"
+   ]
+  },
+  "png": "output/png/035-awadhi-nawab.png",
+  "renderedAt": "2026-10-24T04:40:22.896Z",
+  "ok": true
+ },
+ "kashmir-garden": {
+  "slug": "kashmir-garden",
+  "index": 36,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1556,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kashmir-garden/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kashmir-garden/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/kashmir-garden/footer.jpg"
+   ]
+  },
+  "png": "output/png/036-kashmir-garden.png",
+  "renderedAt": "2026-10-24T04:40:26.047Z",
+  "ok": true
+ },
+ "royal-shehnai": {
+  "slug": "royal-shehnai",
+  "index": 37,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1574,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-shehnai/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-shehnai/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-shehnai/footer.jpg"
+   ]
+  },
+  "png": "output/png/037-royal-shehnai.png",
+  "renderedAt": "2026-10-24T04:40:30.052Z",
+  "ok": true
+ },
+ "jewel-of-jaipur": {
+  "slug": "jewel-of-jaipur",
+  "index": 38,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1885,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jewel-of-jaipur/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jewel-of-jaipur/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jewel-of-jaipur/footer.jpg"
+   ]
+  },
+  "png": "output/png/038-jewel-of-jaipur.png",
+  "renderedAt": "2026-10-24T04:40:33.949Z",
+  "ok": true
+ },
+ "udaipur-romance": {
+  "slug": "udaipur-romance",
+  "index": 39,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1541,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/udaipur-romance/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/udaipur-romance/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/udaipur-romance/footer.jpg"
+   ]
+  },
+  "png": "output/png/039-udaipur-romance.png",
+  "renderedAt": "2026-10-24T04:40:36.602Z",
+  "ok": true
+ },
+ "traditional-wedding": {
+  "slug": "traditional-wedding",
+  "index": 40,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1453,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/traditional-wedding/footer.jpg"
+   ]
+  },
+  "png": "output/png/040-traditional-wedding.png",
+  "renderedAt": "2026-10-24T04:40:39.923Z",
+  "ok": true
+ },
+ "royal-wedding": {
+  "slug": "royal-wedding",
+  "index": 41,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1460,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-wedding/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-wedding/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-wedding/footer.jpg"
+   ]
+  },
+  "png": "output/png/041-royal-wedding.png",
+  "renderedAt": "2026-10-24T04:40:43.454Z",
+  "ok": true
+ },
+ "golden-celebration": {
+  "slug": "golden-celebration",
+  "index": 42,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1832,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/golden-celebration/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/golden-celebration/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/golden-celebration/footer.jpg"
+   ]
+  },
+  "png": "output/png/042-golden-celebration.png",
+  "renderedAt": "2026-10-24T04:40:46.428Z",
+  "ok": true
+ },
+ "sangeet-night": {
+  "slug": "sangeet-night",
+  "index": 43,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1691,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sangeet-night/footer.jpg"
+   ]
+  },
+  "png": "output/png/043-sangeet-night.png",
+  "renderedAt": "2026-10-24T04:40:49.681Z",
+  "ok": true
+ },
+ "mehendi-morning": {
+  "slug": "mehendi-morning",
+  "index": 44,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1774,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mehendi-morning/footer.jpg"
+   ]
+  },
+  "png": "output/png/044-mehendi-morning.png",
+  "renderedAt": "2026-10-24T04:40:53.837Z",
+  "ok": true
+ },
+ "haldi-sunshine": {
+  "slug": "haldi-sunshine",
+  "index": 45,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1817,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haldi-sunshine/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haldi-sunshine/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haldi-sunshine/footer.jpg"
+   ]
+  },
+  "png": "output/png/045-haldi-sunshine.png",
+  "renderedAt": "2026-10-24T04:40:56.933Z",
+  "ok": true
+ },
+ "mehendi-ceremony": {
+  "slug": "mehendi-ceremony",
+  "index": 46,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1870,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mehendi-ceremony/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mehendi-ceremony/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mehendi-ceremony/footer.jpg"
+   ]
+  },
+  "png": "output/png/046-mehendi-ceremony.png",
+  "renderedAt": "2026-10-24T04:40:59.826Z",
+  "ok": true
+ },
+ "haldi-ceremony": {
+  "slug": "haldi-ceremony",
+  "index": 47,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1627,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haldi-ceremony/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haldi-ceremony/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/haldi-ceremony/footer.jpg"
+   ]
+  },
+  "png": "output/png/047-haldi-ceremony.png",
+  "renderedAt": "2026-10-24T04:41:03.311Z",
+  "ok": true
+ },
+ "sangeet-evening": {
+  "slug": "sangeet-evening",
+  "index": 48,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1478,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sangeet-evening/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sangeet-evening/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sangeet-evening/footer.jpg"
+   ]
+  },
+  "png": "output/png/048-sangeet-evening.png",
+  "renderedAt": "2026-10-24T04:41:06.170Z",
+  "ok": true
+ },
+ "hindu-vivah": {
+  "slug": "hindu-vivah",
+  "index": 49,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1531,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/hindu-vivah/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/hindu-vivah/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/hindu-vivah/footer.jpg"
+   ]
+  },
+  "png": "output/png/049-hindu-vivah.png",
+  "renderedAt": "2026-10-24T04:41:08.965Z",
+  "ok": true
+ },
+ "anand-karaj": {
+  "slug": "anand-karaj",
+  "index": 50,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1645,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/anand-karaj/footer.jpg"
+   ]
+  },
+  "png": "output/png/050-anand-karaj.png",
+  "renderedAt": "2026-10-24T04:41:11.888Z",
+  "ok": true
+ },
+ "nikah-ceremony": {
+  "slug": "nikah-ceremony",
+  "index": 51,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1849,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nikah-ceremony/footer.jpg"
+   ]
+  },
+  "png": "output/png/051-nikah-ceremony.png",
+  "renderedAt": "2026-10-24T04:41:15.918Z",
+  "ok": true
+ },
+ "christian-wedding": {
+  "slug": "christian-wedding",
+  "index": 52,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1588,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/christian-wedding/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/christian-wedding/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/christian-wedding/footer.jpg"
+   ]
+  },
+  "png": "output/png/052-christian-wedding.png",
+  "renderedAt": "2026-10-24T04:41:19.194Z",
+  "ok": true
+ },
+ "jain-vivah": {
+  "slug": "jain-vivah",
+  "index": 53,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1523,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jain-vivah/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jain-vivah/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jain-vivah/footer.jpg"
+   ]
+  },
+  "png": "output/png/053-jain-vivah.png",
+  "renderedAt": "2026-10-24T04:41:23.106Z",
+  "ok": true
+ },
+ "buddhist-union": {
+  "slug": "buddhist-union",
+  "index": 54,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1679,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/buddhist-union/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/buddhist-union/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/buddhist-union/footer.jpg"
+   ]
+  },
+  "png": "output/png/054-buddhist-union.png",
+  "renderedAt": "2026-10-24T04:41:26.502Z",
+  "ok": true
+ },
+ "parsi-lagan": {
+  "slug": "parsi-lagan",
+  "index": 55,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1474,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/parsi-lagan/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/parsi-lagan/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/parsi-lagan/footer.jpg"
+   ]
+  },
+  "png": "output/png/055-parsi-lagan.png",
+  "renderedAt": "2026-10-24T04:41:29.757Z",
+  "ok": true
+ },
+ "interfaith-union": {
+  "slug": "interfaith-union",
+  "index": 56,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1432,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/interfaith-union/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/interfaith-union/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/interfaith-union/footer.jpg"
+   ]
+  },
+  "png": "output/png/056-interfaith-union.png",
+  "renderedAt": "2026-10-24T04:41:32.760Z",
+  "ok": true
+ },
+ "baraat-procession": {
+  "slug": "baraat-procession",
+  "index": 57,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1724,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/baraat-procession/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/baraat-procession/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/baraat-procession/footer.jpg"
+   ]
+  },
+  "png": "output/png/057-baraat-procession.png",
+  "renderedAt": "2026-10-24T04:41:35.799Z",
+  "ok": true
+ },
+ "jaimala-exchange": {
+  "slug": "jaimala-exchange",
+  "index": 58,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1483,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jaimala-exchange/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jaimala-exchange/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/jaimala-exchange/footer.jpg"
+   ]
+  },
+  "png": "output/png/058-jaimala-exchange.png",
+  "renderedAt": "2026-10-24T04:41:39.238Z",
+  "ok": true
+ },
+ "saat-phere": {
+  "slug": "saat-phere",
+  "index": 59,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1546,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/saat-phere/footer.jpg"
+   ]
+  },
+  "png": "output/png/059-saat-phere.png",
+  "renderedAt": "2026-10-24T04:41:42.738Z",
+  "ok": true
+ },
+ "nikah-nama": {
+  "slug": "nikah-nama",
+  "index": 60,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1768,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nikah-nama/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nikah-nama/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/nikah-nama/footer.jpg"
+   ]
+  },
+  "png": "output/png/060-nikah-nama.png",
+  "renderedAt": "2026-10-24T04:41:46.758Z",
+  "ok": true
+ },
+ "anand-karaj-ardas": {
+  "slug": "anand-karaj-ardas",
+  "index": 61,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1535,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/anand-karaj-ardas/footer.jpg"
+   ]
+  },
+  "png": "output/png/061-anand-karaj-ardas.png",
+  "renderedAt": "2026-10-24T04:41:50.055Z",
+  "ok": true
+ },
+ "wedding-day-mandap": {
+  "slug": "wedding-day-mandap",
+  "index": 62,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1578,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/wedding-day-mandap/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/wedding-day-mandap/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/wedding-day-mandap/footer.jpg"
+   ]
+  },
+  "png": "output/png/062-wedding-day-mandap.png",
+  "renderedAt": "2026-10-24T04:41:53.865Z",
+  "ok": true
+ },
+ "vidaai-farewell": {
+  "slug": "vidaai-farewell",
+  "index": 63,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1390,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/vidaai-farewell/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/vidaai-farewell/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/vidaai-farewell/footer.jpg"
+   ]
+  },
+  "png": "output/png/063-vidaai-farewell.png",
+  "renderedAt": "2026-10-24T04:41:57.683Z",
+  "ok": true
+ },
+ "cinematic-love-story": {
+  "slug": "cinematic-love-story",
+  "index": 64,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1773,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/cinematic-love-story/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/cinematic-love-story/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/cinematic-love-story/footer.jpg"
+   ]
+  },
+  "png": "output/png/064-cinematic-love-story.png",
+  "renderedAt": "2026-10-24T04:42:01.852Z",
+  "ok": true
+ },
+ "royal-durbar": {
+  "slug": "royal-durbar",
+  "index": 65,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1490,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-durbar/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-durbar/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-durbar/footer.jpg"
+   ]
+  },
+  "png": "output/png/065-royal-durbar.png",
+  "renderedAt": "2026-10-24T04:42:06.540Z",
+  "ok": true
+ },
+ "luxe-noir": {
+  "slug": "luxe-noir",
+  "index": 66,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1525,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/luxe-noir/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/luxe-noir/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/luxe-noir/footer.jpg"
+   ]
+  },
+  "png": "output/png/066-luxe-noir.png",
+  "renderedAt": "2026-10-24T04:42:12.269Z",
+  "ok": true
+ },
+ "velvet-rouge": {
+  "slug": "velvet-rouge",
+  "index": 67,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1422,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/velvet-rouge/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/velvet-rouge/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/velvet-rouge/footer.jpg"
+   ]
+  },
+  "png": "output/png/067-velvet-rouge.png",
+  "renderedAt": "2026-10-24T04:42:21.732Z",
+  "ok": true
+ },
+ "palace-colonnade": {
+  "slug": "palace-colonnade",
+  "index": 68,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1541,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/palace-colonnade/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/palace-colonnade/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/palace-colonnade/footer.jpg"
+   ]
+  },
+  "png": "output/png/068-palace-colonnade.png",
+  "renderedAt": "2026-10-24T04:42:28.294Z",
+  "ok": true
+ },
+ "deco-gatsby": {
+  "slug": "deco-gatsby",
+  "index": 69,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1717,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/deco-gatsby/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/deco-gatsby/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/deco-gatsby/footer.jpg"
+   ]
+  },
+  "png": "output/png/069-deco-gatsby.png",
+  "renderedAt": "2026-10-24T04:42:32.087Z",
+  "ok": true
+ },
+ "maharaja-palace": {
+  "slug": "maharaja-palace",
+  "index": 70,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1411,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/maharaja-palace/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/maharaja-palace/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/maharaja-palace/footer.jpg"
+   ]
+  },
+  "png": "output/png/070-maharaja-palace.png",
+  "renderedAt": "2026-10-24T04:42:37.295Z",
+  "ok": true
+ },
+ "regal-maroon": {
+  "slug": "regal-maroon",
+  "index": 71,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1411,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/regal-maroon/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/regal-maroon/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/regal-maroon/footer.jpg"
+   ]
+  },
+  "png": "output/png/071-regal-maroon.png",
+  "renderedAt": "2026-10-24T04:42:46.726Z",
+  "ok": true
+ },
+ "imperial-gold": {
+  "slug": "imperial-gold",
+  "index": 72,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1450,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/imperial-gold/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/imperial-gold/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/imperial-gold/footer.jpg"
+   ]
+  },
+  "png": "output/png/072-imperial-gold.png",
+  "renderedAt": "2026-10-24T04:42:49.692Z",
+  "ok": true
+ },
+ "champagne-palace": {
+  "slug": "champagne-palace",
+  "index": 73,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1900,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/champagne-palace/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/champagne-palace/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/champagne-palace/footer.jpg"
+   ]
+  },
+  "png": "output/png/073-champagne-palace.png",
+  "renderedAt": "2026-10-24T04:42:53.620Z",
+  "ok": true
+ },
+ "royal-garden-court": {
+  "slug": "royal-garden-court",
+  "index": 74,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1666,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-garden-court/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-garden-court/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/royal-garden-court/footer.jpg"
+   ]
+  },
+  "png": "output/png/074-royal-garden-court.png",
+  "renderedAt": "2026-10-24T04:42:57.414Z",
+  "ok": true
+ },
+ "pearl-and-champagne": {
+  "slug": "pearl-and-champagne",
+  "index": 75,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1454,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pearl-and-champagne/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pearl-and-champagne/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pearl-and-champagne/footer.jpg"
+   ]
+  },
+  "png": "output/png/075-pearl-and-champagne.png",
+  "renderedAt": "2026-10-24T04:43:00.882Z",
+  "ok": true
+ },
+ "midnight-elegance": {
+  "slug": "midnight-elegance",
+  "index": 76,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1526,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/midnight-elegance/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/midnight-elegance/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/midnight-elegance/footer.jpg"
+   ]
+  },
+  "png": "output/png/076-midnight-elegance.png",
+  "renderedAt": "2026-10-24T04:43:04.114Z",
+  "ok": true
+ },
+ "pakistani-truck-art": {
+  "slug": "pakistani-truck-art",
+  "index": 77,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1508,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pakistani-truck-art/footer.jpg"
+   ]
+  },
+  "png": "output/png/077-pakistani-truck-art.png",
+  "renderedAt": "2026-10-24T04:43:07.447Z",
+  "ok": true
+ },
+ "bangladeshi-jamdani": {
+  "slug": "bangladeshi-jamdani",
+  "index": 78,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1830,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bangladeshi-jamdani/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bangladeshi-jamdani/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/bangladeshi-jamdani/footer.jpg"
+   ]
+  },
+  "png": "output/png/078-bangladeshi-jamdani.png",
+  "renderedAt": "2026-10-24T04:43:11.405Z",
+  "ok": true
+ },
+ "sri-lankan-poruwa": {
+  "slug": "sri-lankan-poruwa",
+  "index": 79,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1728,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sri-lankan-poruwa/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sri-lankan-poruwa/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/sri-lankan-poruwa/footer.jpg"
+   ]
+  },
+  "png": "output/png/079-sri-lankan-poruwa.png",
+  "renderedAt": "2026-10-24T04:43:15.367Z",
+  "ok": true
+ },
+ "elegant-floral": {
+  "slug": "elegant-floral",
+  "index": 80,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1456,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/elegant-floral/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/elegant-floral/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/elegant-floral/footer.jpg"
+   ]
+  },
+  "png": "output/png/080-elegant-floral.png",
+  "renderedAt": "2026-10-24T04:43:18.962Z",
+  "ok": true
+ },
+ "romance-in-blush": {
+  "slug": "romance-in-blush",
+  "index": 81,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1554,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/romance-in-blush/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/romance-in-blush/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/romance-in-blush/footer.jpg"
+   ]
+  },
+  "png": "output/png/081-romance-in-blush.png",
+  "renderedAt": "2026-10-24T04:43:22.350Z",
+  "ok": true
+ },
+ "peony-bloom-card": {
+  "slug": "peony-bloom-card",
+  "index": 82,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1596,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/peony-bloom-card/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/peony-bloom-card/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/peony-bloom-card/footer.jpg"
+   ]
+  },
+  "png": "output/png/082-peony-bloom-card.png",
+  "renderedAt": "2026-10-24T04:43:26.083Z",
+  "ok": true
+ },
+ "botanical-press": {
+  "slug": "botanical-press",
+  "index": 83,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1788,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/botanical-press/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/botanical-press/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/botanical-press/footer.jpg"
+   ]
+  },
+  "png": "output/png/083-botanical-press.png",
+  "renderedAt": "2026-10-24T04:43:30.258Z",
+  "ok": true
+ },
+ "garden-party": {
+  "slug": "garden-party",
+  "index": 84,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1519,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/garden-party/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/garden-party/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/garden-party/footer.jpg"
+   ]
+  },
+  "png": "output/png/084-garden-party.png",
+  "renderedAt": "2026-10-24T04:43:33.552Z",
+  "ok": true
+ },
+ "rosewater-romance": {
+  "slug": "rosewater-romance",
+  "index": 85,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1690,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/rosewater-romance/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/rosewater-romance/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/rosewater-romance/footer.jpg"
+   ]
+  },
+  "png": "output/png/085-rosewater-romance.png",
+  "renderedAt": "2026-10-24T04:43:37.097Z",
+  "ok": true
+ },
+ "lotus-garden": {
+  "slug": "lotus-garden",
+  "index": 86,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1768,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lotus-garden/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lotus-garden/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lotus-garden/footer.jpg"
+   ]
+  },
+  "png": "output/png/086-lotus-garden.png",
+  "renderedAt": "2026-10-24T04:43:40.261Z",
+  "ok": true
+ },
+ "wildflower-vows": {
+  "slug": "wildflower-vows",
+  "index": 87,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1315,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/wildflower-vows/footer.jpg"
+   ]
+  },
+  "png": "output/png/087-wildflower-vows.png",
+  "renderedAt": "2026-10-24T04:43:43.236Z",
+  "ok": true
+ },
+ "watercolor-romance": {
+  "slug": "watercolor-romance",
+  "index": 88,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1678,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/watercolor-romance/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/watercolor-romance/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/watercolor-romance/footer.jpg"
+   ]
+  },
+  "png": "output/png/088-watercolor-romance.png",
+  "renderedAt": "2026-10-24T04:43:46.970Z",
+  "ok": true
+ },
+ "pastel-garden": {
+  "slug": "pastel-garden",
+  "index": 89,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1681,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pastel-garden/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pastel-garden/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/pastel-garden/footer.jpg"
+   ]
+  },
+  "png": "output/png/089-pastel-garden.png",
+  "renderedAt": "2026-10-24T04:43:49.642Z",
+  "ok": true
+ },
+ "cherry-blossom-love": {
+  "slug": "cherry-blossom-love",
+  "index": 90,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1523,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/cherry-blossom-love/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/cherry-blossom-love/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/cherry-blossom-love/footer.jpg"
+   ]
+  },
+  "png": "output/png/090-cherry-blossom-love.png",
+  "renderedAt": "2026-10-24T04:43:52.228Z",
+  "ok": true
+ },
+ "coastal-vows": {
+  "slug": "coastal-vows",
+  "index": 91,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1571,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/coastal-vows/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/coastal-vows/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/coastal-vows/footer.jpg"
+   ]
+  },
+  "png": "output/png/091-coastal-vows.png",
+  "renderedAt": "2026-10-24T04:43:54.523Z",
+  "ok": true
+ },
+ "mountain-vows": {
+  "slug": "mountain-vows",
+  "index": 92,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1768,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/mountain-vows/footer.jpg"
+   ]
+  },
+  "png": "output/png/092-mountain-vows.png",
+  "renderedAt": "2026-10-24T04:44:01.101Z",
+  "ok": true
+ },
+ "destination-voyage": {
+  "slug": "destination-voyage",
+  "index": 93,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1594,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/destination-voyage/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/destination-voyage/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/destination-voyage/footer.jpg"
+   ]
+  },
+  "png": "output/png/093-destination-voyage.png",
+  "renderedAt": "2026-10-24T04:44:04.742Z",
+  "ok": true
+ },
+ "moonlit-florals": {
+  "slug": "moonlit-florals",
+  "index": 94,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1803,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/moonlit-florals/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/moonlit-florals/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/moonlit-florals/footer.jpg"
+   ]
+  },
+  "png": "output/png/094-moonlit-florals.png",
+  "renderedAt": "2026-10-24T04:44:08.323Z",
+  "ok": true
+ },
+ "beachside-bliss": {
+  "slug": "beachside-bliss",
+  "index": 95,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1579,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/beachside-bliss/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/beachside-bliss/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/beachside-bliss/footer.jpg"
+   ]
+  },
+  "png": "output/png/095-beachside-bliss.png",
+  "renderedAt": "2026-10-24T04:44:11.187Z",
+  "ok": true
+ },
+ "goa-sunset-vows": {
+  "slug": "goa-sunset-vows",
+  "index": 96,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0.006,
+   "width": 420,
+   "height": 1720,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/goa-sunset-vows/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/goa-sunset-vows/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/goa-sunset-vows/footer.jpg"
+   ]
+  },
+  "png": "output/png/096-goa-sunset-vows.png",
+  "renderedAt": "2026-10-24T04:44:14.350Z",
+  "ok": true
+ },
+ "tropical-paradise": {
+  "slug": "tropical-paradise",
+  "index": 97,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1576,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/tropical-paradise/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/tropical-paradise/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/tropical-paradise/footer.jpg"
+   ]
+  },
+  "png": "output/png/097-tropical-paradise.png",
+  "renderedAt": "2026-10-24T04:44:17.310Z",
+  "ok": true
+ },
+ "desert-romance": {
+  "slug": "desert-romance",
+  "index": 98,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": true,
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1582,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/desert-romance/corner-tl.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/desert-romance/corner-tr.png",
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/desert-romance/footer.jpg"
+   ]
+  },
+  "png": "output/png/098-desert-romance.png",
+  "renderedAt": "2026-10-24T04:44:20.442Z",
+  "ok": true
+ },
+ "lakefront-love": {
+  "slug": "lakefront-love",
+  "index": 99,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1365,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/lakefront-love/footer.jpg"
+   ]
+  },
+  "png": "output/png/099-lakefront-love.png",
+  "renderedAt": "2026-10-24T04:44:23.447Z",
+  "ok": true
+ },
+ "european-escape": {
+  "slug": "european-escape",
+  "index": 100,
+  "checks": {
+   "rendererCard": true,
+   "crestMapped": true,
+   "venueMapped": true,
+   "venueCropOk": true,
+   "footerMapped": true,
+   "cornersMapped": "n/a (botanical: crest used as corner sprays)",
+   "layersLoaded": true,
+   "textUnchanged": true,
+   "importantTextPresent": true,
+   "noHorizontalOverflow": true,
+   "noScriptErrors": true
+  },
+  "failures": [],
+  "metrics": {
+   "venueCrop": 0,
+   "width": 420,
+   "height": 1450,
+   "layerUrls": [
+    "file:///C:/Users/nanil/OneDrive/Desktop/Matey/web%20pages/invitation-platform-main/redesign-100/cards/european-escape/footer.jpg"
+   ]
+  },
+  "png": "output/png/100-european-escape.png",
+  "renderedAt": "2026-10-24T04:44:27.181Z",
+  "ok": true
+ }
+}

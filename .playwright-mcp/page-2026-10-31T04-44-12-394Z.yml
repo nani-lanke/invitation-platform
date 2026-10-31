@@ -1,0 +1,278 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "InviteAura home" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "InviteAura" [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to light mode" [pressed] [ref=e8] [cursor=pointer]
+        - button "Open navigation menu" [ref=e9] [cursor=pointer]
+  - main [ref=e14]:
+    - generic [ref=e16]:
+      - heading "Elegant Floral ✦" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Wedding template
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - group "Preview controls" [ref=e23]:
+          - button "Zoom out" [ref=e24] [cursor=pointer]
+          - generic [ref=e28]: 100%
+          - button "Zoom in" [ref=e29] [cursor=pointer]
+          - button "Reset zoom to 100 percent" [ref=e33] [cursor=pointer]
+          - button "Toggle full screen" [ref=e37] [cursor=pointer]
+          - link "Back to all templates" [ref=e40] [cursor=pointer]:
+            - /url: templates.html
+            - generic [ref=e43]: Back
+        - generic "Live invitation preview" [ref=e44]:
+          - article "Wedding invitation preview" [ref=e46]:
+            - paragraph [ref=e49]: LOVE IN FULL BLOOM
+            - paragraph [ref=e50]: With the blessings of our parents
+            - heading "A GARDEN OF JOY" [level=3] [ref=e51]
+            - paragraph [ref=e55]: We would love you to celebrate the wedding of
+            - generic [ref=e56]:
+              - generic [ref=e57]:
+                - heading "Groom" [level=2] [ref=e58]
+                - paragraph [ref=e59]:
+                  - generic [ref=e60]: Son of
+                  - text: Groom’s Parents
+              - generic [ref=e61]: "&"
+              - generic [ref=e62]:
+                - heading "Bride" [level=2] [ref=e63]
+                - paragraph [ref=e64]:
+                  - generic [ref=e65]: Daughter of
+                  - text: Bride’s Parents
+            - heading "Save the date" [level=3] [ref=e66]
+            - generic [ref=e74]:
+              - generic [ref=e75]: DECEMBER
+              - generic [ref=e76]: "25"
+              - generic [ref=e78]: "2026"
+              - paragraph [ref=e79]: FRIDAY · 6:30 PM
+            - heading "A new chapter begins" [level=3] [ref=e80]
+            - paragraph [ref=e87]: Join us among the flowers as we say "I do" and begin our forever. Your presence will make our day bloom.
+            - timer "Time remaining until the event" [ref=e88]:
+              - generic [ref=e89]:
+                - generic [ref=e90]: "55"
+                - text: Days
+              - generic [ref=e91]:
+                - generic [ref=e92]: "08"
+                - text: Hours
+              - generic [ref=e93]:
+                - generic [ref=e94]: "15"
+                - text: Minutes
+              - generic [ref=e95]:
+                - generic [ref=e96]: "47"
+                - text: Seconds
+            - heading "The celebration venue" [level=3] [ref=e98]
+            - generic [ref=e106]:
+              - figure [ref=e107]:
+                - img "Grand Palace Hall" [ref=e108]
+              - generic [ref=e109]:
+                - paragraph [ref=e110]: Grand Palace Hall
+                - paragraph [ref=e111]: Anna Salai, Chennai, Tamil Nadu 600002
+                - link "View on Google Maps" [ref=e112] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/search/?api=1&query=Chennai
+            - heading "Our wedding celebrations" [level=3] [ref=e117]
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - strong [ref=e129]: Haldi
+                - generic [ref=e130]: Thursday, 24 Dec 2026
+                - generic [ref=e131]: 10:00 AM
+              - generic [ref=e132]:
+                - strong [ref=e134]: Mehndi
+                - generic [ref=e135]: Thursday, 24 Dec 2026
+                - generic [ref=e136]: 5:00 PM
+              - generic [ref=e137]:
+                - strong [ref=e139]: Wedding Ceremony
+                - generic [ref=e140]: Friday, 25 Dec 2026
+                - generic [ref=e141]: 10:30 AM
+              - generic [ref=e142]:
+                - strong [ref=e144]: Reception
+                - generic [ref=e145]: Friday, 25 Dec 2026
+                - generic [ref=e146]: 6:30 PM
+            - generic [ref=e147]:
+              - heading "With the blessings of our families" [level=3] [ref=e148]
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - strong [ref=e159]: Groom's Family
+                  - paragraph [ref=e160]: Groom’s Parents and Family
+                - generic [ref=e162]:
+                  - strong [ref=e163]: Bride's Family
+                  - paragraph [ref=e164]: Bride’s Parents and Family
+              - generic [ref=e165]:
+                - paragraph [ref=e169]: Your blessings mean the world
+                - paragraph [ref=e170]: We look forward to celebrating this special day with you.
+            - generic [ref=e171]:
+              - link "Call Host" [ref=e172] [cursor=pointer]:
+                - /url: tel:0000000000
+              - button "Share" [ref=e176] [cursor=pointer]
+            - paragraph [ref=e183]: Created with InviteAura
+        - paragraph [ref=e184]: "Tip: hold Ctrl (or ⌘) and scroll inside the frame to zoom."
+      - generic [ref=e185]:
+        - generic [ref=e187]:
+          - heading "Elegant Floral" [level=2] [ref=e188]
+          - paragraph [ref=e189]: Hand-drawn rosettes on blush paper — the most-used free wedding card.
+        - heading "What this template includes" [level=3] [ref=e190]
+        - list [ref=e191]:
+          - listitem [ref=e192]:
+            - generic [ref=e196]: Live countdown timer
+          - listitem [ref=e197]:
+            - generic [ref=e201]: Google Maps directions
+          - listitem [ref=e202]:
+            - generic [ref=e206]: Mobile & desktop ready
+          - listitem [ref=e207]:
+            - generic [ref=e211]: One-tap WhatsApp share
+          - listitem [ref=e212]:
+            - generic [ref=e216]: Photo gallery
+          - listitem [ref=e217]:
+            - generic [ref=e221]: Background music
+          - listitem [ref=e222]:
+            - generic [ref=e226]: QR code for print
+          - listitem [ref=e227]:
+            - generic [ref=e231]: Custom fonts & colours
+        - heading "Specifications" [level=3] [ref=e232]
+        - table [ref=e233]:
+          - rowgroup [ref=e234]:
+            - row [ref=e235]:
+              - rowheader "Category" [ref=e236]
+              - cell "Wedding" [ref=e237]
+            - row [ref=e238]:
+              - rowheader "Orientation" [ref=e239]
+              - cell "Portrait 3:4" [ref=e240]
+            - row [ref=e241]:
+              - rowheader "Best for" [ref=e242]
+              - cell "Mobile sharing & WhatsApp" [ref=e243]
+            - row [ref=e244]:
+              - rowheader "Added" [ref=e245]
+              - cell "2 February 2026" [ref=e246]
+        - generic [ref=e247]:
+          - link "Use This Template" [ref=e248] [cursor=pointer]:
+            - /url: create.html?template=elegant-floral
+          - button "Save Elegant Floral to favourites" [ref=e253] [cursor=pointer]:
+            - generic [ref=e256]: Save to favourites
+          - button "Copy link to this template" [ref=e257] [cursor=pointer]
+        - heading "Printed card artwork" [level=3] [ref=e262]
+        - paragraph [ref=e263]: The same design as a portrait card, ready for a printed insert or a social post.
+        - img "Elegant Floral card artwork" [ref=e265]
+    - generic [ref=e267]:
+      - generic [ref=e268]:
+        - paragraph [ref=e269]: More like this
+        - heading "You Might Also Like" [level=2] [ref=e273]
+      - generic [ref=e274]:
+        - article [ref=e275]:
+          - generic [ref=e276]:
+            - img "Tamil Thirumanam — Wedding invitation template" [ref=e277]
+            - button "Save Tamil Thirumanam to favourites" [ref=e278] [cursor=pointer]
+            - generic [ref=e281]:
+              - link "Preview" [ref=e282] [cursor=pointer]:
+                - /url: preview.html?template=tamil-thirumanam
+              - link "Use This Template" [ref=e287] [cursor=pointer]:
+                - /url: create.html?template=tamil-thirumanam
+          - generic [ref=e293]:
+            - heading "Tamil Thirumanam" [level=3] [ref=e294]
+            - paragraph [ref=e295]: Wedding
+        - article [ref=e296]:
+          - generic [ref=e297]:
+            - img "Kalasam Blessing — Wedding invitation template" [ref=e298]
+            - button "Save Kalasam Blessing to favourites" [ref=e299] [cursor=pointer]
+            - generic [ref=e302]:
+              - link "Preview" [ref=e303] [cursor=pointer]:
+                - /url: preview.html?template=kalasam-blessing
+              - link "Use This Template" [ref=e308] [cursor=pointer]:
+                - /url: create.html?template=kalasam-blessing
+          - generic [ref=e314]:
+            - heading "Kalasam Blessing" [level=3] [ref=e315]
+            - paragraph [ref=e316]: Wedding
+        - article [ref=e317]:
+          - generic [ref=e318]:
+            - img "Gopuram Vows — Wedding invitation template" [ref=e319]
+            - button "Save Gopuram Vows to favourites" [ref=e320] [cursor=pointer]
+            - generic [ref=e323]:
+              - link "Preview" [ref=e324] [cursor=pointer]:
+                - /url: preview.html?template=gopuram-vows
+              - link "Use This Template" [ref=e329] [cursor=pointer]:
+                - /url: create.html?template=gopuram-vows
+          - generic [ref=e335]:
+            - heading "Gopuram Vows" [level=3] [ref=e336]
+            - paragraph [ref=e337]: Wedding
+        - article [ref=e338]:
+          - generic [ref=e339]:
+            - img "Telugu Pelli — Wedding invitation template" [ref=e340]
+            - button "Save Telugu Pelli to favourites" [ref=e341] [cursor=pointer]
+            - generic [ref=e344]:
+              - link "Preview" [ref=e345] [cursor=pointer]:
+                - /url: preview.html?template=telugu-pelli
+              - link "Use This Template" [ref=e350] [cursor=pointer]:
+                - /url: create.html?template=telugu-pelli
+          - generic [ref=e356]:
+            - heading "Telugu Pelli" [level=3] [ref=e357]
+            - paragraph [ref=e358]: Wedding
+      - paragraph [ref=e359]:
+        - link "Browse all templates" [ref=e360] [cursor=pointer]:
+          - /url: templates.html
+  - contentinfo [ref=e365]:
+    - generic [ref=e366]:
+      - generic [ref=e367]:
+        - generic [ref=e368]:
+          - link [ref=e369] [cursor=pointer]:
+            - /url: index.html
+            - img "InviteAura" [ref=e370]
+          - paragraph [ref=e371]: Beautiful digital invitations for every special moment.
+          - generic [ref=e372]:
+            - generic "InviteAura on Facebook" [ref=e373]
+            - generic "InviteAura on Instagram" [ref=e376]
+            - generic "InviteAura on WhatsApp" [ref=e381]
+            - generic "InviteAura on Telegram" [ref=e385]
+        - generic [ref=e389]:
+          - heading "Explore" [level=3] [ref=e390]
+          - list [ref=e391]:
+            - listitem [ref=e392]:
+              - link "Home" [ref=e393] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e394]:
+              - link "Templates" [ref=e395] [cursor=pointer]:
+                - /url: templates.html
+            - listitem [ref=e396]:
+              - link "Categories" [ref=e397] [cursor=pointer]:
+                - /url: categories.html
+            - listitem [ref=e398]:
+              - link "Create Invitation" [ref=e399] [cursor=pointer]:
+                - /url: create.html
+        - generic [ref=e400]:
+          - heading "Learn" [level=3] [ref=e401]
+          - list [ref=e402]:
+            - listitem [ref=e403]:
+              - link "Pricing" [ref=e404] [cursor=pointer]:
+                - /url: pricing.html
+            - listitem [ref=e405]:
+              - link "How It Works" [ref=e406] [cursor=pointer]:
+                - /url: index.html#how-it-works
+            - listitem [ref=e407]:
+              - link "FAQ" [ref=e408] [cursor=pointer]:
+                - /url: faq.html
+            - listitem [ref=e409]:
+              - link "About" [ref=e410] [cursor=pointer]:
+                - /url: about.html
+        - generic [ref=e411]:
+          - heading "Company" [level=3] [ref=e412]
+          - list [ref=e413]:
+            - listitem [ref=e414]:
+              - link "Privacy Policy" [ref=e415] [cursor=pointer]:
+                - /url: privacy.html
+            - listitem [ref=e416]:
+              - link "Terms & Conditions" [ref=e417] [cursor=pointer]:
+                - /url: terms.html
+            - listitem [ref=e418]:
+              - link "Template Preview" [ref=e419] [cursor=pointer]:
+                - /url: preview.html
+      - generic [ref=e420]:
+        - paragraph [ref=e421]:
+          - text: © 2026 InviteAura. All rights reserved.
+          - generic [ref=e422]: Version 1.0.0
+        - navigation "Legal" [ref=e423]:
+          - link "Contact" [ref=e424] [cursor=pointer]:
+            - /url: mailto:help.lovelyaz@gmail.com
+          - link "Privacy" [ref=e425] [cursor=pointer]:
+            - /url: privacy.html
+          - link "Terms" [ref=e426] [cursor=pointer]:
+            - /url: terms.html

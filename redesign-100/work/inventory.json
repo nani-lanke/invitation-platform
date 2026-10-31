@@ -1,0 +1,4206 @@
+[
+ {
+  "slug": "tamil-thirumanam",
+  "name": "Tamil Thirumanam",
+  "tier": "free",
+  "motif": "kolam",
+  "blurb": "Rich Kanchipuram silk maroon and antique gold framed by traditional temple arches, sacred temple lake, palatial pavilions, and ceremonial artifacts for an auspicious Tamil Thirumanam.",
+  "colors": {
+   "bg1": "#7A1428",
+   "bg2": "#5C0F1F",
+   "ink": "#FBE6C4",
+   "primary": "#FFF8EB",
+   "secondary": "#E4B45C"
+  },
+  "keywords": "tamil thirumanam wedding kolam tamil nadu south indian thirumanam kolam chennai madurai regional maroon gold",
+  "spec": null
+ },
+ {
+  "slug": "kalasam-blessing",
+  "name": "Kalasam Blessing",
+  "tier": "free",
+  "motif": "kalasam",
+  "blurb": "The purna kumbham — pot, mango leaves and coconut — set inside a sandalwood arch for an auspicious South Indian muhurtham.",
+  "colors": {
+   "bg1": "#FDF4E3",
+   "bg2": "#F5E0BC",
+   "ink": "#5A2A12",
+   "primary": "#8A3B14",
+   "secondary": "#B8862F"
+  },
+  "keywords": "kalasam blessing wedding kalasam south indian kalasam kumbham muhurtham temple traditional regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 5,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "kalasam-blessing",
+   "signature": "arch|beads|pill|flourish|5|row|split|timeline"
+  }
+ },
+ {
+  "slug": "gopuram-vows",
+  "name": "Gopuram Vows",
+  "tier": "free",
+  "motif": "gopuram",
+  "blurb": "A tiered Dravidian gopuram rising under the names, in the kumkum red and gold of a temple kalyanam.",
+  "colors": {
+   "bg1": "#7A1410",
+   "bg2": "#A83218",
+   "ink": "#FCE6C0",
+   "primary": "#FFF2DA",
+   "secondary": "#EFC069"
+  },
+  "keywords": "gopuram vows wedding gopuram south indian temple gopuram dravidian kalyanam regional tamil",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 1,
+   "names": "row",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "gopuram-vows",
+   "signature": "royal|vine|pill|rules|1|row|framed|cards"
+  }
+ },
+ {
+  "slug": "telugu-pelli",
+  "name": "Telugu Pelli",
+  "tier": "free",
+  "motif": "jasmine",
+  "blurb": "Warm antique ivory parchment framed by traditional temple arches, hanging deepams, palatial pavilions, and ceremonial elephants.",
+  "colors": {
+   "bg1": "#FAF5EC",
+   "bg2": "#F5EADB",
+   "ink": "#3D2E1E",
+   "primary": "#7A1C28",
+   "secondary": "#B8860B"
+  },
+  "keywords": "telugu pelli wedding jasmine telugu andhra telangana pelli parchment ivory burgundy temple gold pachani",
+  "spec": null
+ },
+ {
+  "slug": "talambralu-pearls",
+  "name": "Talambralu Pearls",
+  "tier": "free",
+  "motif": "talambralu",
+  "blurb": "The basinga and the shower of pearled rice, framed like a portrait mount in pearl and rose.",
+  "colors": {
+   "bg1": "#FBF1EC",
+   "bg2": "#F0DCD2",
+   "ink": "#4A2A20",
+   "primary": "#8A4A34",
+   "secondary": "#B98A5E"
+  },
+  "keywords": "talambralu pearls wedding talambralu telugu talambralu basinga pearls muhurtham andhra regional",
+  "spec": {
+   "family": "royal",
+   "layout": "monogram",
+   "frame": "arch",
+   "date": "pill",
+   "heading": "rules",
+   "font": 0,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "talambralu-pearls",
+   "signature": "monogram|arch|pill|rules|0|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "kerala-mangalyam",
+  "name": "Kerala Mangalyam",
+  "tier": "free",
+  "motif": "nilavilakku",
+  "blurb": "The bell-metal nilavilakku at the centre of an ivory card, lit the way it is before a Kerala mangalyam.",
+  "colors": {
+   "bg1": "#FDF8EC",
+   "bg2": "#F3E8CE",
+   "ink": "#3E3418",
+   "primary": "#6E5A1E",
+   "secondary": "#A88A2E"
+  },
+  "keywords": "kerala mangalyam wedding nilavilakku kerala malayali mangalyam nilavilakku lamp nair kochi regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "band",
+   "date": "line",
+   "heading": "diamond",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "kerala-mangalyam",
+   "signature": "botanical|band|line|diamond|3|row|split|timeline"
+  }
+ },
+ {
+  "slug": "kasavu-gold-border",
+  "name": "Kasavu Gold Border",
+  "tier": "free",
+  "motif": "kasavu",
+  "blurb": "Zari temple-point borders woven top and bottom, in the deep green and kasavu gold of a Kerala mundu.",
+  "colors": {
+   "bg1": "#0E3A2A",
+   "bg2": "#1B5C42",
+   "ink": "#F6E4B8",
+   "primary": "#FFF4D8",
+   "secondary": "#DCB055"
+  },
+  "keywords": "kasavu gold border wedding kasavu kerala kasavu zari saree malayali sadya green gold regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "double",
+   "date": "ribbon",
+   "heading": "diamond",
+   "font": 0,
+   "names": "row",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "kasavu-gold-border",
+   "signature": "royal|double|ribbon|diamond|0|row|framed|cards"
+  }
+ },
+ {
+  "slug": "mysore-madhuve",
+  "name": "Mysore Madhuve",
+  "tier": "free",
+  "motif": "mysore-arch",
+  "blurb": "A cusped Mysore arch under a ribbed dome, in sandalwood and kumkum for a Kannada madhuve.",
+  "colors": {
+   "bg1": "#F6E9CE",
+   "bg2": "#EBD6A8",
+   "ink": "#5A1A18",
+   "primary": "#8A241E",
+   "secondary": "#B4842A"
+  },
+  "keywords": "mysore madhuve wedding mysore-arch kannada karnataka mysore madhuve sandalwood bangalore regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "double",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 1,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "mysore-madhuve",
+   "signature": "arch|double|stack|diamond|1|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "punjabi-phulkari",
+  "name": "Punjabi Phulkari",
+  "tier": "free",
+  "motif": "phulkari",
+  "blurb": "Phulkari darn stitch worked across the whole card in magenta and marigold floss, with a clear plaque for the names.",
+  "colors": {
+   "bg1": "#7A0F3C",
+   "bg2": "#B01B4C",
+   "ink": "#FFE2B0",
+   "primary": "#FFF0D2",
+   "secondary": "#F2A62E"
+  },
+  "keywords": "punjabi phulkari wedding phulkari punjabi punjab phulkari embroidery vivah amritsar ludhiana regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "line",
+   "heading": "rules",
+   "font": 6,
+   "names": "row",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "punjabi-phulkari",
+   "signature": "botanical|beads|line|rules|6|row|framed|columns"
+  }
+ },
+ {
+  "slug": "bengali-alpona",
+  "name": "Bengali Alpona",
+  "tier": "free",
+  "motif": "alpona",
+  "blurb": "An alpona lotus with curling tendrils, drawn in rice paste on the courtyard floor of a Bengali biye.",
+  "colors": {
+   "bg1": "#FDF7EF",
+   "bg2": "#F6E6D6",
+   "ink": "#7A1220",
+   "primary": "#A31A24",
+   "secondary": "#B8862F"
+  },
+  "keywords": "bengali alpona wedding alpona bengali bengal biye alpona kolkata lotus regional",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "caps",
+   "font": 5,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "bengali-alpona",
+   "signature": "classic|hairline|stack|caps|5|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "shankha-pola",
+  "name": "Shankha Pola",
+  "tier": "free",
+  "motif": "shankha",
+  "blurb": "The conch and the red-and-white bangles of a Bengali bride, set on a crest in sindoor red.",
+  "colors": {
+   "bg1": "#8A1220",
+   "bg2": "#B42433",
+   "ink": "#FDF0E2",
+   "primary": "#FFF6EC",
+   "secondary": "#E8B266"
+  },
+  "keywords": "shankha pola wedding shankha bengali shankha pola conch bangles biye ashirbad regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "beads",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 5,
+   "names": "row",
+   "venue": "split",
+   "events": "columns",
+   "slug": "shankha-pola",
+   "signature": "royal|beads|stack|diamond|5|row|split|columns"
+  }
+ },
+ {
+  "slug": "gujarati-toran",
+  "name": "Gujarati Toran",
+  "tier": "free",
+  "motif": "toran",
+  "blurb": "A beaded toran with mirrorwork and bells hung below the names, in the green and gold of a Gujarati lagna.",
+  "colors": {
+   "bg1": "#0E4A34",
+   "bg2": "#1C6B48",
+   "ink": "#FDECC8",
+   "primary": "#FFF6DE",
+   "secondary": "#E8B44E"
+  },
+  "keywords": "gujarati toran wedding toran gujarati gujarat lagna toran mirrorwork ahmedabad regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "kolam",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 5,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "gujarati-toran",
+   "signature": "arch|kolam|medallion|flourish|5|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "bandhani-bloom",
+  "name": "Bandhani Bloom",
+  "tier": "free",
+  "motif": "bandhani",
+  "blurb": "Tie-dyed bandhani rosettes scattered edge to edge in rose and gold, the way a Gujarati odhani is dotted.",
+  "colors": {
+   "bg1": "#FDEAF2",
+   "bg2": "#F7CFE0",
+   "ink": "#5A1230",
+   "primary": "#A01A52",
+   "secondary": "#C4802A"
+  },
+  "keywords": "bandhani bloom wedding bandhani gujarati rajasthani bandhani bandhej tie dye odhani vivah regional",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "vine",
+   "date": "line",
+   "heading": "caps",
+   "font": 3,
+   "names": "row",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "bandhani-bloom",
+   "signature": "arch|vine|line|caps|3|row|framed|cards"
+  }
+ },
+ {
+  "slug": "marathi-paithani",
+  "name": "Marathi Paithani",
+  "tier": "free",
+  "motif": "paithani",
+  "blurb": "The Paithani peacock and its zari border, in the deep green and gold of a Maharashtrian nauvari.",
+  "colors": {
+   "bg1": "#0C3A32",
+   "bg2": "#1A5C4C",
+   "ink": "#F8E2B4",
+   "primary": "#FFF2D4",
+   "secondary": "#DCA83E"
+  },
+  "keywords": "marathi paithani wedding paithani marathi maharashtra paithani peacock vivah pune mumbai regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "vine",
+   "date": "stack",
+   "heading": "rules",
+   "font": 5,
+   "names": "stack",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "marathi-paithani",
+   "signature": "classic|vine|stack|rules|5|stack|stack|cards"
+  }
+ },
+ {
+  "slug": "mundavalya-pearls",
+  "name": "Mundavalya Pearls",
+  "tier": "free",
+  "motif": "mundavalya",
+  "blurb": "Pearl mundavalya strings tied across a quiet pearl-white card, for a Marathi ceremony that keeps things restrained.",
+  "colors": {
+   "bg1": "#FBF6F0",
+   "bg2": "#EFE4D6",
+   "ink": "#4A2430",
+   "primary": "#7A2C42",
+   "secondary": "#A88450"
+  },
+  "keywords": "mundavalya pearls wedding mundavalya marathi mundavalya pearls maharashtra shubh vivah minimal regional",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 2,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "mundavalya-pearls",
+   "signature": "editorial|band|stack|diamond|2|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "rajasthani-jharokha",
+  "name": "Rajasthani Jharokha",
+  "tier": "free",
+  "motif": "jharokha",
+  "blurb": "A carved haveli jharokha in royal blue and gold, the balcony a Rajasthani bride watches the baraat from.",
+  "colors": {
+   "bg1": "#14265E",
+   "bg2": "#2A3F8C",
+   "ink": "#FBE0C0",
+   "primary": "#FFF0D8",
+   "secondary": "#E8A83E"
+  },
+  "keywords": "rajasthani jharokha wedding jharokha rajasthani rajasthan jharokha haveli udaipur jaipur royal regional",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "band",
+   "date": "stack",
+   "heading": "rules",
+   "font": 6,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "rajasthani-jharokha",
+   "signature": "classic|band|stack|rules|6|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "haveli-jaali",
+  "name": "Haveli Jaali",
+  "tier": "free",
+  "motif": "jaali",
+  "blurb": "Pierced sandstone jaali worked into a full border, in the pink-city tones of a Rajasthani haveli.",
+  "colors": {
+   "bg1": "#F6E2D2",
+   "bg2": "#E8C6AC",
+   "ink": "#5C2A18",
+   "primary": "#8A3E1E",
+   "secondary": "#B0742E"
+  },
+  "keywords": "haveli jaali wedding jaali rajasthani jaali lattice sandstone haveli jaipur pink city regional",
+  "spec": {
+   "family": "royal",
+   "layout": "monogram",
+   "frame": "double",
+   "date": "line",
+   "heading": "rules",
+   "font": 4,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "haveli-jaali",
+   "signature": "monogram|double|line|rules|4|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "assamese-biya",
+  "name": "Assamese Biya",
+  "tier": "free",
+  "motif": "japi",
+  "blurb": "The bamboo japi and gamosa weave on ivory, for an Assamese biya in the Brahmaputra valley.",
+  "colors": {
+   "bg1": "#FFFBF4",
+   "bg2": "#F4E9DC",
+   "ink": "#8A1A20",
+   "primary": "#A82228",
+   "secondary": "#B4823A"
+  },
+  "keywords": "assamese biya wedding japi assamese assam biya japi gamosa guwahati northeast regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 3,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "assamese-biya",
+   "signature": "arch|beads|pill|flourish|3|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "gamosa-weave",
+  "name": "Gamosa Weave",
+  "tier": "free",
+  "motif": "gamosa",
+  "blurb": "The red end-border of a hand-woven gamosa running down both sides of the card, offered the way the cloth itself is.",
+  "colors": {
+   "bg1": "#7A1218",
+   "bg2": "#A32026",
+   "ink": "#FDF2E4",
+   "primary": "#FFF8EE",
+   "secondary": "#E2B074"
+  },
+  "keywords": "gamosa weave wedding gamosa assamese gamosa weave handloom assam biya juron regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 5,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "gamosa-weave",
+   "signature": "royal|arch|medallion|rules|5|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "odia-bahaghara",
+  "name": "Odia Bahaghara",
+  "tier": "free",
+  "motif": "konark",
+  "blurb": "The Konark chariot wheel at full size on Jagannath yellow, for an Odia bahaghara.",
+  "colors": {
+   "bg1": "#F6DC94",
+   "bg2": "#E8BE58",
+   "ink": "#5A1410",
+   "primary": "#8A1E14",
+   "secondary": "#A8681E"
+  },
+  "keywords": "odia bahaghara wedding konark odia odisha bahaghara konark wheel puri jagannath regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "double",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 0,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "odia-bahaghara",
+   "signature": "classic|double|pill|flourish|0|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "pattachitra-vows",
+  "name": "Pattachitra Vows",
+  "tier": "free",
+  "motif": "pattachitra",
+  "blurb": "Scrolling pattachitra vine borders top and bottom, painted the way palm-leaf scrolls are in Raghurajpur.",
+  "colors": {
+   "bg1": "#2A1608",
+   "bg2": "#52300F",
+   "ink": "#F6DCA8",
+   "primary": "#FBEDCA",
+   "secondary": "#D9A64E"
+  },
+  "keywords": "pattachitra vows wedding pattachitra odia pattachitra scroll painting odisha bahaghara folk regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "arch",
+   "date": "line",
+   "heading": "flourish",
+   "font": 3,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "pattachitra-vows",
+   "signature": "classic|arch|line|flourish|3|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "sindhi-ajrak",
+  "name": "Sindhi Ajrak",
+  "tier": "free",
+  "motif": "ajrak",
+  "blurb": "Ajrak block print in indigo and madder, repeated across the card as it is stamped on the cloth.",
+  "colors": {
+   "bg1": "#12233F",
+   "bg2": "#24406E",
+   "ink": "#F4D8C6",
+   "primary": "#C4442E",
+   "secondary": "#D98A5E"
+  },
+  "keywords": "sindhi ajrak wedding ajrak sindhi sindh ajrak block print indigo madder shadi regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "double",
+   "date": "pill",
+   "heading": "rules",
+   "font": 1,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "sindhi-ajrak",
+   "signature": "royal|double|pill|rules|1|row|split|cards"
+  }
+ },
+ {
+  "slug": "goan-azulejo",
+  "name": "Goan Azulejo",
+  "tier": "free",
+  "motif": "azulejo",
+  "blurb": "Blue-and-white azulejo tiles from a Goan verandah, laid as a full field behind the names.",
+  "colors": {
+   "bg1": "#F4F8FC",
+   "bg2": "#D8E6F2",
+   "ink": "#12345E",
+   "primary": "#1A4A80",
+   "secondary": "#3E7AB0"
+  },
+  "keywords": "goan azulejo wedding azulejo goan goa azulejo tiles portuguese catholic nuptial regional",
+  "spec": {
+   "family": "destination",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 7,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "goan-azulejo",
+   "signature": "classic|hairline|medallion|rules|7|row|stack|cards"
+  }
+ },
+ {
+  "slug": "konkan-coast",
+  "name": "Konkan Coast",
+  "tier": "free",
+  "motif": "coconut-palm",
+  "blurb": "Coconut palms leaning over a Konkan shoreline, in sea teal and laterite orange.",
+  "colors": {
+   "bg1": "#0E3A3E",
+   "bg2": "#1E6068",
+   "ink": "#FBE6CE",
+   "primary": "#E07A3E",
+   "secondary": "#E8A468"
+  },
+  "keywords": "konkan coast wedding coconut-palm konkani konkan coastal mangalore goa palm beach regional",
+  "spec": {
+   "family": "destination",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "line",
+   "heading": "caps",
+   "font": 3,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "konkan-coast",
+   "signature": "botanical|beads|line|caps|3|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "kashmiri-chinar",
+  "name": "Kashmiri Chinar",
+  "tier": "free",
+  "motif": "chinar",
+  "blurb": "Chinar leaves falling across walnut and saffron, painted the way Kashmiri papier-mache is.",
+  "colors": {
+   "bg1": "#34180E",
+   "bg2": "#66301A",
+   "ink": "#F6DCB4",
+   "primary": "#C4531E",
+   "secondary": "#DFA24E"
+  },
+  "keywords": "kashmiri chinar wedding chinar kashmiri kashmir chinar leaf saffron walnut srinagar regional",
+  "spec": {
+   "family": "botanical",
+   "layout": "royal",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "caps",
+   "font": 2,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "kashmiri-chinar",
+   "signature": "royal|hairline|stack|caps|2|row|split|cards"
+  }
+ },
+ {
+  "slug": "nepali-bihe",
+  "name": "Nepali Bihe",
+  "tier": "free",
+  "motif": "pagoda",
+  "blurb": "A tiered Newari pagoda with its hanging bells, in crimson and saffron for a Nepali bihe.",
+  "colors": {
+   "bg1": "#6E0F16",
+   "bg2": "#C1440E",
+   "ink": "#FFE8C0",
+   "primary": "#FFF4DC",
+   "secondary": "#F2B23C"
+  },
+  "keywords": "nepali bihe wedding pagoda nepali nepal bihe pagoda newari kathmandu temple regional",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "stack",
+   "heading": "rules",
+   "font": 1,
+   "names": "row",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "nepali-bihe",
+   "signature": "arch|arch|stack|rules|1|row|stack|columns"
+  }
+ },
+ {
+  "slug": "mithila-vivah",
+  "name": "Mithila Vivah",
+  "tier": "free",
+  "motif": "madhubani",
+  "blurb": "Madhubani fish and lotus in hatched line work, the pairing painted on a Mithila kohbar wall.",
+  "colors": {
+   "bg1": "#F7E7C6",
+   "bg2": "#E9CE99",
+   "ink": "#3A2008",
+   "primary": "#A8341A",
+   "secondary": "#7A4A12"
+  },
+  "keywords": "mithila vivah wedding madhubani mithila madhubani bihar maithili folk art fish lotus vivah regional",
+  "spec": {
+   "family": "botanical",
+   "layout": "botanical",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "mithila-vivah",
+   "signature": "botanical|arch|medallion|caps|2|stack|split|cards"
+  }
+ },
+ {
+  "slug": "lucknawi-chikankari",
+  "name": "Lucknawi Chikankari",
+  "tier": "free",
+  "motif": "chikankari",
+  "blurb": "Chikankari shadow-work butis on mint white, as fine and as quiet as the Awadhi embroidery itself.",
+  "colors": {
+   "bg1": "#F4FAF6",
+   "bg2": "#DCEDE2",
+   "ink": "#24423A",
+   "primary": "#2E5A4A",
+   "secondary": "#8AA894"
+  },
+  "keywords": "lucknawi chikankari wedding chikankari lucknow awadhi chikankari embroidery shaadi minimal white regional",
+  "spec": {
+   "family": "modern",
+   "layout": "monogram",
+   "frame": "hairline",
+   "date": "pill",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "lucknawi-chikankari",
+   "signature": "monogram|hairline|pill|caps|2|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "luxury-editorial",
+  "name": "Luxury Editorial",
+  "tier": "premium",
+  "motif": "editorial-frame",
+  "blurb": "High-fashion editorial wedding invitation with refined serif typography, champagne gold borders, and minimalist luxury spacing.",
+  "colors": {
+   "bg1": "#FBF9F4",
+   "bg2": "#EDE5D5",
+   "ink": "#2E2822",
+   "primary": "#5A4C3A",
+   "secondary": "#C49F58"
+  },
+  "keywords": "luxury editorial wedding editorial-frame luxury editorial high fashion serif gold minimal elegant wedding",
+  "spec": {
+   "family": "modern",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 4,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "luxury-editorial",
+   "signature": "classic|hairline|medallion|diamond|4|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "kanchipuram-silk",
+  "name": "Kanchipuram Silk",
+  "tier": "free",
+  "motif": "kanchipuram-sari",
+  "blurb": "South Indian luxury wedding inspired by pure Kanchipuram silk weaves with rich temple borders and zari gold luster.",
+  "colors": {
+   "bg1": "#FFF8EE",
+   "bg2": "#F3E6D0",
+   "ink": "#401018",
+   "primary": "#8E1538",
+   "secondary": "#D4AF37"
+  },
+  "keywords": "kanchipuram silk wedding kanchipuram-sari kanchipuram silk saree south indian temple gold zari royal traditional wedding south",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 4,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "kanchipuram-silk",
+   "signature": "royal|vine|stack|diamond|4|row|stack|cards"
+  }
+ },
+ {
+  "slug": "tanjore-grandeur",
+  "name": "Tanjore Grandeur",
+  "tier": "premium",
+  "motif": "tanjore-frame",
+  "blurb": "Classical Tanjore painting aesthetic with embossed 22-karat gold foil borders, precious gemstone accents, and divine archways.",
+  "colors": {
+   "bg1": "#FAF5E8",
+   "bg2": "#EFE0C2",
+   "ink": "#382410",
+   "primary": "#9A2420",
+   "secondary": "#DDA83A"
+  },
+  "keywords": "tanjore grandeur wedding tanjore-frame tanjore grandeur gold embossed temple art classical south indian royal wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "deco",
+   "date": "line",
+   "heading": "flourish",
+   "font": 4,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "tanjore-grandeur",
+   "signature": "classic|deco|line|flourish|4|row|stack|cards"
+  }
+ },
+ {
+  "slug": "chettinad-heritage",
+  "name": "Chettinad Heritage",
+  "tier": "premium",
+  "motif": "chettinad-tile",
+  "blurb": "Rich Chettinad architectural heritage featuring antique teak pillars, Athangudi tile geometry, and glowing brass vilakku lamps.",
+  "colors": {
+   "bg1": "#FDF5ED",
+   "bg2": "#EED6C2",
+   "ink": "#3D2016",
+   "primary": "#A2482B",
+   "secondary": "#C68841"
+  },
+  "keywords": "chettinad heritage wedding chettinad-tile chettinad heritage terracotta athangudi tiles brass pillars vintage traditional wedding",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "band",
+   "date": "line",
+   "heading": "diamond",
+   "font": 1,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "chettinad-heritage",
+   "signature": "botanical|band|line|diamond|1|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "andhra-kalamkari",
+  "name": "Andhra Kalamkari",
+  "tier": "premium",
+  "motif": "kalamkari-vine",
+  "blurb": "Hand-drawn Srikalahasti Kalamkari artistry depicting blossoming lotus vines, majestic dancing peacocks, and organic vegetable dye tones.",
+  "colors": {
+   "bg1": "#F8F2E6",
+   "bg2": "#E8DCC4",
+   "ink": "#2E1F18",
+   "primary": "#872828",
+   "secondary": "#365D68"
+  },
+  "keywords": "andhra kalamkari wedding kalamkari-vine andhra kalamkari peacock handpainted floral vine earth tones traditional ethnic wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "split",
+   "events": "columns",
+   "slug": "andhra-kalamkari",
+   "signature": "classic|arch|medallion|caps|2|stack|split|columns"
+  }
+ },
+ {
+  "slug": "telangana-bathukamma",
+  "name": "Telangana Bathukamma",
+  "tier": "premium",
+  "motif": "bathukamma-floral",
+  "blurb": "Vibrant Telangana floral festival celebration with concentric tiers of golden marigolds, gunugu blossoms, and festive brass lamps.",
+  "colors": {
+   "bg1": "#FFF9F0",
+   "bg2": "#FCE6CC",
+   "ink": "#3D1808",
+   "primary": "#D64218",
+   "secondary": "#F5A623"
+  },
+  "keywords": "telangana bathukamma wedding bathukamma-floral telangana bathukamma floral marigold celebration colorful festive south indian wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "stack",
+   "heading": "rules",
+   "font": 3,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "telangana-bathukamma",
+   "signature": "arch|arch|stack|rules|3|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "coorg-kodava",
+  "name": "Coorg Kodava",
+  "tier": "premium",
+  "motif": "coorg-foliage",
+  "blurb": "Misty Western Ghats coffee estate grandeur adorned with Kodava kupya-chele sash accents and lush rainforest greenery.",
+  "colors": {
+   "bg1": "#F3F7F2",
+   "bg2": "#DCE7DA",
+   "ink": "#182C1C",
+   "primary": "#2F5938",
+   "secondary": "#C29648"
+  },
+  "keywords": "coorg kodava wedding coorg-foliage coorg kodava hills coffee estate emerald green western ghats traditional heritage wedding",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "arch",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 0,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "coorg-kodava",
+   "signature": "royal|arch|stack|diamond|0|row|split|cards"
+  }
+ },
+ {
+  "slug": "kutch-mirrorwork",
+  "name": "Kutch Mirrorwork",
+  "tier": "premium",
+  "motif": "kutch-mirror",
+  "blurb": "Artisanal Kutchi Rabari embroidery featuring reflective abhala mirrorwork, geometric chevron borders, and jewel-toned silk threads.",
+  "colors": {
+   "bg1": "#FDF7F2",
+   "bg2": "#F8E5D8",
+   "ink": "#361622",
+   "primary": "#B52151",
+   "secondary": "#E68A2E"
+  },
+  "keywords": "kutch mirrorwork wedding kutch-mirror kutch mirrorwork gujarati embroidery abhala geometric colorful ethnic royal wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 1,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "kutch-mirrorwork",
+   "signature": "arch|arch|medallion|flourish|1|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "banarasi-royale",
+  "name": "Banarasi Royale",
+  "tier": "premium",
+  "motif": "banarasi-brocade",
+  "blurb": "Opulent crimson Banarasi silk brocade woven with interlocking gold zari jaal patterns and imperial mughal floral bel borders.",
+  "colors": {
+   "bg1": "#3B0A1E",
+   "bg2": "#6A1435",
+   "ink": "#FCEFD2",
+   "primary": "#E8C15A",
+   "secondary": "#F5E096"
+  },
+  "keywords": "banarasi royale wedding banarasi-brocade banarasi royale silk brocade zari gold red crimson royal regal wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "arch",
+   "frame": "double",
+   "date": "stack",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "banarasi-royale",
+   "signature": "arch|double|stack|rules|3|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "awadhi-nawab",
+  "name": "Awadhi Nawab",
+  "tier": "premium",
+  "motif": "awadhi-arch",
+  "blurb": "Lakhnawi Nawabi grace with delicate shadow-work Chikankari filigree, cusped Mughal arches, and soft champagne gold accents.",
+  "colors": {
+   "bg1": "#FBF9F4",
+   "bg2": "#EDE5D5",
+   "ink": "#2E2822",
+   "primary": "#6C5B4C",
+   "secondary": "#C49F58"
+  },
+  "keywords": "awadhi nawab wedding awadhi-arch awadhi nawab lucknow chikankari arch mughal royal palace ivory gold wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "arch",
+   "date": "line",
+   "heading": "rules",
+   "font": 6,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "awadhi-nawab",
+   "signature": "classic|arch|line|rules|6|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "kashmir-garden",
+  "name": "Kashmir Garden",
+  "tier": "premium",
+  "motif": "kashmir-chinar",
+  "blurb": "Romantic Shalimar Bagh gardens with autumnal Chinar leaf motifs, Persian paisley buta, and Dal Lake misty mountain vistas.",
+  "colors": {
+   "bg1": "#F6F8F6",
+   "bg2": "#E1ECE3",
+   "ink": "#1E2D24",
+   "primary": "#3B6B55",
+   "secondary": "#BA7032"
+  },
+  "keywords": "kashmir garden wedding kashmir-chinar kashmir garden chinar paisley shalimar bagh mountain floral green luxury wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "kashmir-garden",
+   "signature": "royal|double|medallion|flourish|1|row|stack|columns"
+  }
+ },
+ {
+  "slug": "royal-shehnai",
+  "name": "Royal Shehnai",
+  "tier": "premium",
+  "motif": "shehnai-duet",
+  "blurb": "Auspicious classical royal shehnai and tabla melodies draped with sacred marigold torans and auspicious swarna tassels.",
+  "colors": {
+   "bg1": "#FFF9F2",
+   "bg2": "#F8E9D6",
+   "ink": "#421816",
+   "primary": "#A82823",
+   "secondary": "#D99E32"
+  },
+  "keywords": "royal shehnai wedding shehnai-duet royal shehnai music instrument marigold traditional auspicious celebration indian wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 6,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "royal-shehnai",
+   "signature": "classic|double|medallion|rules|6|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "jewel-of-jaipur",
+  "name": "Jewel of Jaipur",
+  "tier": "premium",
+  "motif": "jaipur-jharokha",
+  "blurb": "Pink City Hawa Mahal splendor featuring carved stone jharokha lattice windows, royal peacocks, and emerald jewel filigree.",
+  "colors": {
+   "bg1": "#FDF3F0",
+   "bg2": "#F5DDD4",
+   "ink": "#3D1C1E",
+   "primary": "#C04E58",
+   "secondary": "#D49B42"
+  },
+  "keywords": "jewel of jaipur wedding jaipur-jharokha jewel jaipur pink city jharokha window peacock rajasthan royal palace wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "monogram",
+   "frame": "vine",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 3,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "jewel-of-jaipur",
+   "signature": "monogram|vine|ribbon|flourish|3|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "udaipur-romance",
+  "name": "Udaipur Romance",
+  "tier": "premium",
+  "motif": "udaipur-lake",
+  "blurb": "Dreamy Lake Pichola sunset with the floating white marble palace silhouette, candlelit water ripples, and royal chhatri domes.",
+  "colors": {
+   "bg1": "#F5F7FB",
+   "bg2": "#DFE7F5",
+   "ink": "#1C2638",
+   "primary": "#2F4D77",
+   "secondary": "#C9934B"
+  },
+  "keywords": "udaipur romance wedding udaipur-lake udaipur romance lake pichola palace water reflection sunset rajasthan luxury wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "arch",
+   "frame": "band",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 4,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "udaipur-romance",
+   "signature": "arch|band|medallion|flourish|4|row|split|cards"
+  }
+ },
+ {
+  "slug": "traditional-wedding",
+  "name": "Traditional Wedding",
+  "tier": "premium",
+  "motif": "diya",
+  "blurb": "Kumkum red with lamp motifs for a classic South Indian Shubh Vivah.",
+  "colors": {
+   "bg1": "#7B1E22",
+   "bg2": "#B03A26",
+   "ink": "#FCE8C2",
+   "primary": "#FFF3DC",
+   "secondary": "#F0BE72"
+  },
+  "keywords": "traditional wedding wedding diya ",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "vine",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 5,
+   "names": "stack",
+   "venue": "split",
+   "events": "columns",
+   "slug": "traditional-wedding",
+   "signature": "botanical|vine|medallion|diamond|5|stack|split|columns"
+  }
+ },
+ {
+  "slug": "royal-wedding",
+  "name": "Royal Wedding",
+  "tier": "premium",
+  "motif": "mandala",
+  "blurb": "A deep plum and gold mandala frame built for grand traditional weddings.",
+  "colors": {
+   "bg1": "#4C1D3D",
+   "bg2": "#7A2E52",
+   "ink": "#F7E6C8",
+   "primary": "#FBEFD8",
+   "secondary": "#E8C27A"
+  },
+  "keywords": "royal wedding wedding mandala ",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "royal-wedding",
+   "signature": "royal|vine|pill|rules|3|row|split|cards"
+  }
+ },
+ {
+  "slug": "golden-celebration",
+  "name": "Golden Celebration",
+  "tier": "premium",
+  "motif": "mandala",
+  "blurb": "Antique gold on espresso — reads beautifully on a phone at night.",
+  "colors": {
+   "bg1": "#2B2113",
+   "bg2": "#6E5220",
+   "ink": "#F6DFA5",
+   "primary": "#FBEFCB",
+   "secondary": "#E0B252"
+  },
+  "keywords": "golden celebration wedding mandala ",
+  "spec": {
+   "family": "royal",
+   "layout": "arch",
+   "frame": "band",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 4,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "golden-celebration",
+   "signature": "arch|band|medallion|rules|4|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "sangeet-night",
+  "name": "Sangeet Night",
+  "tier": "free",
+  "motif": "music",
+  "blurb": "Magenta and gold for the music night before the wedding.",
+  "colors": {
+   "bg1": "#2A0E38",
+   "bg2": "#701F63",
+   "ink": "#FFD9F0",
+   "primary": "#FFFFFF",
+   "secondary": "#E88FD0"
+  },
+  "keywords": "sangeet night wedding music ",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "vine",
+   "date": "stack",
+   "heading": "rules",
+   "font": 5,
+   "names": "row",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "sangeet-night",
+   "signature": "botanical|vine|stack|rules|5|row|framed|cards"
+  }
+ },
+ {
+  "slug": "mehendi-morning",
+  "name": "Mehendi Morning",
+  "tier": "free",
+  "motif": "floral",
+  "blurb": "Fresh henna green with paisley for the mehendi morning.",
+  "colors": {
+   "bg1": "#26380C",
+   "bg2": "#5E7A18",
+   "ink": "#F2F7CE",
+   "primary": "#FFFFFF",
+   "secondary": "#C4D468"
+  },
+  "keywords": "mehendi morning wedding floral ",
+  "spec": {
+   "family": "botanical",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "stack",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "mehendi-morning",
+   "signature": "botanical|beads|stack|caps|2|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "haldi-sunshine",
+  "name": "Haldi Sunshine",
+  "tier": "free",
+  "motif": "mandala",
+  "blurb": "Turmeric yellow and marigold for the haldi ritual.",
+  "colors": {
+   "bg1": "#4A3005",
+   "bg2": "#A87410",
+   "ink": "#FFEFC2",
+   "primary": "#FFFFFF",
+   "secondary": "#EBBF4E"
+  },
+  "keywords": "haldi sunshine wedding mandala ",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 6,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "haldi-sunshine",
+   "signature": "arch|double|medallion|flourish|6|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "mehendi-ceremony",
+  "name": "Mehendi Ceremony",
+  "tier": "free",
+  "motif": "mehndi-cone",
+  "blurb": "A henna cone trailing paisley across deep leaf green, for the afternoon before everything begins.",
+  "colors": {
+   "bg1": "#1E3A0C",
+   "bg2": "#3E6E16",
+   "ink": "#F2F6CE",
+   "primary": "#8AB42E",
+   "secondary": "#C4D468"
+  },
+  "keywords": "mehendi ceremony wedding mehndi-cone mehendi mehndi henna paisley function bride pre wedding",
+  "spec": {
+   "family": "personal",
+   "layout": "monogram",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "rules",
+   "font": 5,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "mehendi-ceremony",
+   "signature": "monogram|beads|pill|rules|5|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "haldi-ceremony",
+  "name": "Haldi Ceremony",
+  "tier": "free",
+  "motif": "haldi-pot",
+  "blurb": "The turmeric bowl and its applicators between marigold heads, in the yellow the whole morning turns.",
+  "colors": {
+   "bg1": "#4A3200",
+   "bg2": "#B8860B",
+   "ink": "#FFF0C4",
+   "primary": "#FFF8E2",
+   "secondary": "#F2C64E"
+  },
+  "keywords": "haldi ceremony wedding haldi-pot haldi turmeric pithi ubtan marigold function pre wedding",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 3,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "haldi-ceremony",
+   "signature": "classic|beads|medallion|diamond|3|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "sangeet-evening",
+  "name": "Sangeet Evening",
+  "tier": "free",
+  "motif": "ghungroo",
+  "blurb": "Ghungroo bells strung above a dholak, for the night both families finally perform.",
+  "colors": {
+   "bg1": "#2A0C46",
+   "bg2": "#68168E",
+   "ink": "#FBD8F4",
+   "primary": "#FFF0FC",
+   "secondary": "#E88FD8"
+  },
+  "keywords": "sangeet evening wedding ghungroo sangeet dance music dholak ghungroo function pre wedding",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "double",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "split",
+   "events": "columns",
+   "slug": "sangeet-evening",
+   "signature": "arch|double|stack|flourish|1|row|split|columns"
+  }
+ },
+ {
+  "slug": "hindu-vivah",
+  "name": "Hindu Vivah",
+  "tier": "free",
+  "motif": "havan",
+  "blurb": "The sacred fire in its havan kund with a lotus above it, for the ceremony where the vows are taken before Agni.",
+  "colors": {
+   "bg1": "#7A1E10",
+   "bg2": "#B24A18",
+   "ink": "#FCE4B8",
+   "primary": "#FFF2D6",
+   "secondary": "#EFBE68"
+  },
+  "keywords": "hindu vivah wedding havan hindu vivah havan agni fire pheras sanatan religious ceremony",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "kolam",
+   "date": "line",
+   "heading": "flourish",
+   "font": 0,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "hindu-vivah",
+   "signature": "royal|kolam|line|flourish|0|row|split|cards"
+  }
+ },
+ {
+  "slug": "anand-karaj",
+  "name": "Anand Karaj",
+  "tier": "free",
+  "motif": "khanda",
+  "blurb": "The Khanda set inside a gurdwara arch, for the four lavan of a Sikh Anand Karaj.",
+  "colors": {
+   "bg1": "#0E3A5A",
+   "bg2": "#1A5C7E",
+   "ink": "#FBE2B4",
+   "primary": "#FFF2D8",
+   "secondary": "#E8B855"
+  },
+  "keywords": "anand karaj wedding khanda sikh anand karaj khanda gurdwara lavan punjabi religious",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 3,
+   "names": "stack",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "anand-karaj",
+   "signature": "botanical|beads|medallion|rules|3|stack|stack|cards"
+  }
+ },
+ {
+  "slug": "nikah-ceremony",
+  "name": "Nikah Ceremony",
+  "tier": "free",
+  "motif": "khatam",
+  "blurb": "Khatam eight-point geometry worked into a full border, the way it is cut into a mosque screen.",
+  "colors": {
+   "bg1": "#0C2A3E",
+   "bg2": "#17506E",
+   "ink": "#F2DCAE",
+   "primary": "#FBEED0",
+   "secondary": "#D9B25E"
+  },
+  "keywords": "nikah ceremony wedding khatam muslim islamic nikah walima khatam geometry mehr religious",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 3,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "nikah-ceremony",
+   "signature": "botanical|beads|stack|flourish|3|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "christian-wedding",
+  "name": "Christian Wedding",
+  "tier": "free",
+  "motif": "rose-window",
+  "blurb": "A stained-glass rose window under a plain cross, with two doves on the sill.",
+  "colors": {
+   "bg1": "#F6F3FA",
+   "bg2": "#DFD8EE",
+   "ink": "#2A2044",
+   "primary": "#4A3272",
+   "secondary": "#8A6EB4"
+  },
+  "keywords": "christian wedding wedding rose-window christian catholic church wedding matrimony rose window cross religious",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "vine",
+   "date": "ribbon",
+   "heading": "caps",
+   "font": 0,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "christian-wedding",
+   "signature": "classic|vine|ribbon|caps|0|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "jain-vivah",
+  "name": "Jain Vivah",
+  "tier": "free",
+  "motif": "ahimsa",
+  "blurb": "The ahimsa hand with its wheel of restraint, in the ivory and gold of a Jain ceremony.",
+  "colors": {
+   "bg1": "#FDF6EA",
+   "bg2": "#F2E2C6",
+   "ink": "#3A2A10",
+   "primary": "#7A5418",
+   "secondary": "#A88434"
+  },
+  "keywords": "jain vivah wedding ahimsa jain vivah ahimsa derasar shwetambar digambar religious",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "arch",
+   "date": "line",
+   "heading": "diamond",
+   "font": 5,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "jain-vivah",
+   "signature": "royal|arch|line|diamond|5|row|split|timeline"
+  }
+ },
+ {
+  "slug": "buddhist-union",
+  "name": "Buddhist Union",
+  "tier": "free",
+  "motif": "dharmachakra",
+  "blurb": "The dharma wheel resting on a lotus throne, flanked by endless knots, in monastic saffron.",
+  "colors": {
+   "bg1": "#5A2410",
+   "bg2": "#8E4418",
+   "ink": "#FBE0B0",
+   "primary": "#FFF0D2",
+   "secondary": "#E8AE58"
+  },
+  "keywords": "buddhist union wedding dharmachakra buddhist dharma wheel lotus endless knot saffron religious",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 0,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "buddhist-union",
+   "signature": "arch|hairline|stack|flourish|0|row|stack|cards"
+  }
+ },
+ {
+  "slug": "parsi-lagan",
+  "name": "Parsi Lagan",
+  "tier": "free",
+  "motif": "faravahar",
+  "blurb": "The winged faravahar between two cypress trees, for a Parsi lagan held at dusk.",
+  "colors": {
+   "bg1": "#123A4E",
+   "bg2": "#1E5E76",
+   "ink": "#F6E0BC",
+   "primary": "#FFF2DA",
+   "secondary": "#DDB268"
+  },
+  "keywords": "parsi lagan wedding faravahar parsi zoroastrian lagan faravahar cypress ashirwad religious",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 6,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "parsi-lagan",
+   "signature": "royal|beads|pill|flourish|6|row|split|timeline"
+  }
+ },
+ {
+  "slug": "interfaith-union",
+  "name": "Interfaith Union",
+  "tier": "free",
+  "motif": "two-arches",
+  "blurb": "Two arches meeting as one doorway, with a botanical sprig where they overlap — no single tradition takes the lead.",
+  "colors": {
+   "bg1": "#F7F4EE",
+   "bg2": "#E6DFD2",
+   "ink": "#33302A",
+   "primary": "#5A4E3C",
+   "secondary": "#9A8A66"
+  },
+  "keywords": "interfaith union wedding two-arches interfaith mixed faith blended union neutral secular religious",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "vine",
+   "date": "ribbon",
+   "heading": "diamond",
+   "font": 0,
+   "names": "row",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "interfaith-union",
+   "signature": "arch|vine|ribbon|diamond|0|row|stack|columns"
+  }
+ },
+ {
+  "slug": "civil-ceremony",
+  "name": "Civil Ceremony",
+  "tier": "free",
+  "motif": "civil-knot",
+  "blurb": "Two plain rings and a reef knot on cool grey — a registry-office card with no religious mark on it at all.",
+  "colors": {
+   "bg1": "#F4F5F7",
+   "bg2": "#E2E5EA",
+   "ink": "#1E2530",
+   "primary": "#33404F",
+   "secondary": "#7A8798"
+  },
+  "keywords": "civil ceremony wedding civil-knot civil secular registry courthouse non religious humanist minimal",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 7,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "civil-ceremony",
+   "signature": "editorial|band|ribbon|rules|7|row|split|cards"
+  }
+ },
+ {
+  "slug": "japanese-mizuhiki",
+  "name": "Japanese Mizuhiki",
+  "tier": "free",
+  "motif": "mizuhiki",
+  "blurb": "A mizuhiki knot tied above a crane, with asanoha marks on washi-toned paper.",
+  "colors": {
+   "bg1": "#FBF7F2",
+   "bg2": "#EAE0D4",
+   "ink": "#2E2A26",
+   "primary": "#8C2F2A",
+   "secondary": "#A8865C"
+  },
+  "keywords": "japanese mizuhiki wedding mizuhiki japanese japan mizuhiki crane shinto kekkon washi international",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "line",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "japanese-mizuhiki",
+   "signature": "arch|arch|line|rules|3|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "korean-dancheong",
+  "name": "Korean Dancheong",
+  "tier": "free",
+  "motif": "dancheong",
+  "blurb": "Dancheong eave banding above and below a pair of mandarin ducks — the Korean sign of a marriage that lasts.",
+  "colors": {
+   "bg1": "#0E2E4A",
+   "bg2": "#1C5578",
+   "ink": "#F6E0C0",
+   "primary": "#FFF2DC",
+   "secondary": "#E0A85E"
+  },
+  "keywords": "korean dancheong wedding dancheong korean korea dancheong hanbok pyebaek mandarin duck international",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "arch",
+   "date": "line",
+   "heading": "diamond",
+   "font": 6,
+   "names": "row",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "korean-dancheong",
+   "signature": "botanical|arch|line|diamond|6|row|framed|columns"
+  }
+ },
+ {
+  "slug": "chinese-double-joy",
+  "name": "Chinese Double Joy",
+  "tier": "free",
+  "motif": "peony-lantern",
+  "blurb": "A palace lantern between peonies and cloud scrolls, in the vermilion and gold of a Chinese wedding.",
+  "colors": {
+   "bg1": "#7A0F16",
+   "bg2": "#B01E22",
+   "ink": "#FCE0B4",
+   "primary": "#FFF2D8",
+   "secondary": "#EFC062"
+  },
+  "keywords": "chinese double joy wedding peony-lantern chinese china hunli peony lantern tea ceremony red gold international",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "vine",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 0,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "chinese-double-joy",
+   "signature": "classic|vine|medallion|flourish|0|row|split|timeline"
+  }
+ },
+ {
+  "slug": "filipino-sampaguita",
+  "name": "Filipino Sampaguita",
+  "tier": "free",
+  "motif": "sampaguita",
+  "blurb": "Sampaguita blooms strung above piña-weave banding, the way the garland is offered at a Filipino kasalan.",
+  "colors": {
+   "bg1": "#F8F5EE",
+   "bg2": "#E8E0CE",
+   "ink": "#2A3A2E",
+   "primary": "#3E6A4A",
+   "secondary": "#A08A4E"
+  },
+  "keywords": "filipino sampaguita wedding sampaguita filipino philippines kasalan sampaguita barong pina international",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 5,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "filipino-sampaguita",
+   "signature": "arch|arch|stack|flourish|5|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "thai-lai-kranok",
+  "name": "Thai Lai Kranok",
+  "tier": "free",
+  "motif": "kranok",
+  "blurb": "Lai kranok flame scrollwork rising inside a temple arch, with a phuang malai garland beneath.",
+  "colors": {
+   "bg1": "#2E1440",
+   "bg2": "#5E2468",
+   "ink": "#F8DEA8",
+   "primary": "#FFF0CE",
+   "secondary": "#E4B052"
+  },
+  "keywords": "thai lai kranok wedding kranok thai thailand kranok phuang malai buddhist rod nam sang international",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "double",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 3,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "thai-lai-kranok",
+   "signature": "botanical|double|ribbon|rules|3|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "indonesian-batik",
+  "name": "Indonesian Batik",
+  "tier": "free",
+  "motif": "batik",
+  "blurb": "The parang diagonal of a batik cloth repeated across the card in soga brown and cream.",
+  "colors": {
+   "bg1": "#2A1A0E",
+   "bg2": "#5A3A18",
+   "ink": "#F4E0BC",
+   "primary": "#C4732E",
+   "secondary": "#D9A45E"
+  },
+  "keywords": "indonesian batik wedding batik indonesian indonesia batik parang javanese pernikahan international",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "kolam",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 6,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "indonesian-batik",
+   "signature": "botanical|kolam|medallion|rules|6|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "vietnamese-lotus",
+  "name": "Vietnamese Lotus",
+  "tier": "free",
+  "motif": "vn-lotus",
+  "blurb": "The lotus of a Dong Ho print resting on still water, above a bamboo rail.",
+  "colors": {
+   "bg1": "#F9F2EE",
+   "bg2": "#EEDCD2",
+   "ink": "#7A2018",
+   "primary": "#A8301E",
+   "secondary": "#B4823E"
+  },
+  "keywords": "vietnamese lotus wedding vn-lotus vietnamese vietnam le cuoi lotus ao dai dong ho international",
+  "spec": {
+   "family": "botanical",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "stack",
+   "heading": "rules",
+   "font": 5,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "vietnamese-lotus",
+   "signature": "botanical|beads|stack|rules|5|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "pakistani-truck-art",
+  "name": "Pakistani Truck Art",
+  "tier": "free",
+  "motif": "truck-art",
+  "blurb": "A truck-art panel — scalloped arch, painted rosette and hanging chains — in the colours that cover a Karachi lorry.",
+  "colors": {
+   "bg1": "#0E3A4E",
+   "bg2": "#1A6076",
+   "ink": "#FBDCA4",
+   "primary": "#E0552E",
+   "secondary": "#EFA644"
+  },
+  "keywords": "pakistani truck art wedding truck-art pakistani pakistan truck art shaadi barat walima folk international",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "kolam",
+   "date": "pill",
+   "heading": "diamond",
+   "font": 5,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "pakistani-truck-art",
+   "signature": "botanical|kolam|pill|diamond|5|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "bangladeshi-jamdani",
+  "name": "Bangladeshi Jamdani",
+  "tier": "free",
+  "motif": "jamdani",
+  "blurb": "Jamdani butis woven into a full border around a water-lily, in the green and red of a Dhaka wedding.",
+  "colors": {
+   "bg1": "#0E3A2E",
+   "bg2": "#1C6048",
+   "ink": "#F8E2B8",
+   "primary": "#C4342E",
+   "secondary": "#DCA84E"
+  },
+  "keywords": "bangladeshi jamdani wedding jamdani bangladeshi bangladesh jamdani biye gaye holud dhaka international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "arch",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 0,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "bangladeshi-jamdani",
+   "signature": "classic|arch|stack|diamond|0|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "sri-lankan-poruwa",
+  "name": "Sri Lankan Poruwa",
+  "tier": "free",
+  "motif": "punkalasa",
+  "blurb": "The Kandyan punkalasa, pot of plenty, standing on the poruwa platform where the couple exchange their vows.",
+  "colors": {
+   "bg1": "#FDF6E6",
+   "bg2": "#F2E2BE",
+   "ink": "#4A2A0E",
+   "primary": "#8A4A16",
+   "secondary": "#B0842E"
+  },
+  "keywords": "sri lankan poruwa wedding punkalasa sri lankan sinhala kandyan poruwa punkalasa colombo international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "sri-lankan-poruwa",
+   "signature": "classic|band|ribbon|flourish|1|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "italian-rinascimento",
+  "name": "Italian Rinascimento",
+  "tier": "free",
+  "motif": "renaissance",
+  "blurb": "A Florentine rosette between acanthus scrolls and olive sprigs, on Tuscan stone tones.",
+  "colors": {
+   "bg1": "#F7F1E4",
+   "bg2": "#E8DAC0",
+   "ink": "#3A2A18",
+   "primary": "#6E4A20",
+   "secondary": "#A88440"
+  },
+  "keywords": "italian rinascimento wedding renaissance italian italy matrimonio tuscany renaissance olive amalfi international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 6,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "italian-rinascimento",
+   "signature": "classic|beads|ribbon|rules|6|row|split|cards"
+  }
+ },
+ {
+  "slug": "french-fleur-de-lis",
+  "name": "French Fleur de Lis",
+  "tier": "free",
+  "motif": "fleur",
+  "blurb": "A fleur-de-lis held inside an art-nouveau iron scroll, in Parisian grey-blue and antique brass.",
+  "colors": {
+   "bg1": "#F4F5FA",
+   "bg2": "#DFE2EE",
+   "ink": "#22283E",
+   "primary": "#3A4468",
+   "secondary": "#8A7A4E"
+  },
+  "keywords": "french fleur de lis wedding fleur french france mariage fleur de lis paris provence chateau international",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "arch",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 1,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "french-fleur-de-lis",
+   "signature": "botanical|arch|stack|flourish|1|stack|split|cards"
+  }
+ },
+ {
+  "slug": "greek-meander",
+  "name": "Greek Meander",
+  "tier": "free",
+  "motif": "meander",
+  "blurb": "The meander key border framing an olive branch, in Aegean blue and whitewash.",
+  "colors": {
+   "bg1": "#F6FAFD",
+   "bg2": "#DCEAF4",
+   "ink": "#123A5E",
+   "primary": "#1A5484",
+   "secondary": "#3E86B4"
+  },
+  "keywords": "greek meander wedding meander greek greece gamos meander olive santorini aegean stefana international",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "arch",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 6,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "greek-meander",
+   "signature": "royal|arch|ribbon|rules|6|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "spanish-mudejar",
+  "name": "Spanish Mudejar",
+  "tier": "free",
+  "motif": "mudejar",
+  "blurb": "A mudéjar star tile above a folding fan, in Sevillian red and gold.",
+  "colors": {
+   "bg1": "#6E1418",
+   "bg2": "#A82A22",
+   "ink": "#FBE2BE",
+   "primary": "#FFF0D4",
+   "secondary": "#E8B058"
+  },
+  "keywords": "spanish mudejar wedding mudejar spanish spain boda mudejar seville flamenco andalusia international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "double",
+   "date": "pill",
+   "heading": "rules",
+   "font": 3,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "spanish-mudejar",
+   "signature": "classic|double|pill|rules|3|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "british-regency",
+  "name": "British Regency",
+  "tier": "free",
+  "motif": "heraldic",
+  "blurb": "A laurel crest above letterpress rules, in the bottle green and warm brass of an English country wedding.",
+  "colors": {
+   "bg1": "#12332A",
+   "bg2": "#1E5442",
+   "ink": "#F0E4C8",
+   "primary": "#FBF2DC",
+   "secondary": "#C9AC6E"
+  },
+  "keywords": "british regency wedding heraldic british england uk regency laurel crest countryside international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 3,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "british-regency",
+   "signature": "classic|beads|medallion|flourish|3|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "nigerian-adire",
+  "name": "Nigerian Adire",
+  "tier": "free",
+  "motif": "adire",
+  "blurb": "Adire indigo resist — rings, combs and stitched squares — repeated the way the cloth is dyed in Abeokuta.",
+  "colors": {
+   "bg1": "#101C4A",
+   "bg2": "#22357A",
+   "ink": "#F2E2C4",
+   "primary": "#E8A62E",
+   "secondary": "#D9B468"
+  },
+  "keywords": "nigerian adire wedding adire nigerian nigeria adire yoruba igbeyawo aso ebi indigo international",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "split",
+   "events": "columns",
+   "slug": "nigerian-adire",
+   "signature": "royal|arch|medallion|flourish|1|row|split|columns"
+  }
+ },
+ {
+  "slug": "ghanaian-kente",
+  "name": "Ghanaian Kente",
+  "tier": "free",
+  "motif": "kente",
+  "blurb": "Kente strip weave running down both sides with an adinkra knot at the centre, in Ashanti gold, green and red.",
+  "colors": {
+   "bg1": "#1A1206",
+   "bg2": "#4A3208",
+   "ink": "#F8DC8C",
+   "primary": "#C4281E",
+   "secondary": "#E0B22E"
+  },
+  "keywords": "ghanaian kente wedding kente ghanaian ghana kente adinkra ashanti ayeforo knocking international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 5,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "ghanaian-kente",
+   "signature": "classic|double|medallion|diamond|5|row|split|cards"
+  }
+ },
+ {
+  "slug": "moroccan-zellige",
+  "name": "Moroccan Zellige",
+  "tier": "free",
+  "motif": "zellige",
+  "blurb": "A zellige star with riad lanterns hung either side, in Marrakech teal and terracotta.",
+  "colors": {
+   "bg1": "#0E3A3E",
+   "bg2": "#1A6068",
+   "ink": "#F6E0B4",
+   "primary": "#C4472E",
+   "secondary": "#DFA84E"
+  },
+  "keywords": "moroccan zellige wedding zellige moroccan morocco zellige riad marrakech lantern zafaf international",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "kolam",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 6,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "moroccan-zellige",
+   "signature": "royal|kolam|ribbon|flourish|6|row|split|cards"
+  }
+ },
+ {
+  "slug": "mexican-papel-picado",
+  "name": "Mexican Papel Picado",
+  "tier": "free",
+  "motif": "papel-picado",
+  "blurb": "Papel picado banners strung over marigolds, in the cobalt and cempasúchil orange of a Mexican fiesta.",
+  "colors": {
+   "bg1": "#0E2A5A",
+   "bg2": "#1E4A8C",
+   "ink": "#FCE2B0",
+   "primary": "#E8542E",
+   "secondary": "#F0AE3E"
+  },
+  "keywords": "mexican papel picado wedding papel-picado mexican mexico boda papel picado marigold talavera fiesta international",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 5,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "mexican-papel-picado",
+   "signature": "classic|beads|ribbon|flourish|5|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "brazilian-tropical",
+  "name": "Brazilian Tropical",
+  "tier": "free",
+  "motif": "tropical",
+  "blurb": "Monstera and palm leaves falling across the card above a Portuguese tile band.",
+  "colors": {
+   "bg1": "#0C3226",
+   "bg2": "#1A5C3E",
+   "ink": "#F6E8C8",
+   "primary": "#E0A02E",
+   "secondary": "#8AC49A"
+  },
+  "keywords": "brazilian tropical wedding tropical brazilian brazil casamento tropical monstera rio praia international",
+  "spec": {
+   "family": "destination",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "line",
+   "heading": "caps",
+   "font": 2,
+   "names": "row",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "brazilian-tropical",
+   "signature": "botanical|beads|line|caps|2|row|framed|columns"
+  }
+ },
+ {
+  "slug": "caribbean-hibiscus",
+  "name": "Caribbean Hibiscus",
+  "tier": "free",
+  "motif": "hibiscus",
+  "blurb": "Hibiscus blooms over a two-line sea, in turquoise water and sunset coral.",
+  "colors": {
+   "bg1": "#06333E",
+   "bg2": "#0E6072",
+   "ink": "#FDE8CE",
+   "primary": "#E86A3E",
+   "secondary": "#F0AE7A"
+  },
+  "keywords": "caribbean hibiscus wedding hibiscus caribbean island beach hibiscus jamaica trinidad tropical international",
+  "spec": {
+   "family": "botanical",
+   "layout": "royal",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 0,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "caribbean-hibiscus",
+   "signature": "royal|arch|medallion|flourish|0|row|stack|cards"
+  }
+ },
+ {
+  "slug": "persian-boteh",
+  "name": "Persian Boteh",
+  "tier": "free",
+  "motif": "boteh",
+  "blurb": "Boteh paisleys turning around a tile rosette, in the turquoise and saffron of an Iranian sofreh aghd.",
+  "colors": {
+   "bg1": "#0E3A4A",
+   "bg2": "#186478",
+   "ink": "#F6E2B8",
+   "primary": "#C4442E",
+   "secondary": "#DFB05E"
+  },
+  "keywords": "persian boteh wedding boteh persian iranian aroosi boteh paisley sofreh aghd turquoise international",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "persian-boteh",
+   "signature": "royal|beads|pill|rules|3|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "ethiopian-habesha",
+  "name": "Ethiopian Habesha",
+  "tier": "free",
+  "motif": "habesha",
+  "blurb": "A habesha cross above woven tibeb banding, on the natural white of a hand-spun kemis.",
+  "colors": {
+   "bg1": "#FDF8EE",
+   "bg2": "#F0E4D0",
+   "ink": "#5A1A16",
+   "primary": "#8A2A18",
+   "secondary": "#B4863A"
+  },
+  "keywords": "ethiopian habesha wedding habesha ethiopian ethiopia habesha serg tibeb kemis melse international",
+  "spec": {
+   "family": "heritage",
+   "layout": "arch",
+   "frame": "band",
+   "date": "line",
+   "heading": "flourish",
+   "font": 3,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "ethiopian-habesha",
+   "signature": "arch|band|line|flourish|3|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "baraat-procession",
+  "name": "Baraat Procession",
+  "tier": "free",
+  "motif": "baraat",
+  "blurb": "The ghodi under her plumed canopy, waiting for the band to start.",
+  "colors": {
+   "bg1": "#0E2A6E",
+   "bg2": "#2450A8",
+   "ink": "#FBDCA8",
+   "primary": "#FFF0CE",
+   "secondary": "#EFB43E"
+  },
+  "keywords": "baraat procession wedding baraat baraat ghodi procession horse band groom function wedding day",
+  "spec": {
+   "family": "personal",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "caps",
+   "font": 5,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "baraat-procession",
+   "signature": "classic|hairline|stack|caps|5|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "jaimala-exchange",
+  "name": "Jaimala Exchange",
+  "tier": "free",
+  "motif": "varmala",
+  "blurb": "Two varmala held ready — the moment before the garlands are exchanged.",
+  "colors": {
+   "bg1": "#FDF2F4",
+   "bg2": "#F6DCE2",
+   "ink": "#5A1A2A",
+   "primary": "#96304A",
+   "secondary": "#C08A44"
+  },
+  "keywords": "jaimala exchange wedding varmala jaimala varmala garland exchange stage function wedding day",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "jaimala-exchange",
+   "signature": "classic|band|ribbon|rules|3|row|split|timeline"
+  }
+ },
+ {
+  "slug": "saat-phere",
+  "name": "Saat Phere",
+  "tier": "free",
+  "motif": "saptapadi",
+  "blurb": "Seven steps marked around the sacred fire, one for each vow taken that night.",
+  "colors": {
+   "bg1": "#6E1408",
+   "bg2": "#A83A10",
+   "ink": "#FCE2B0",
+   "primary": "#FFF0D2",
+   "secondary": "#EFBA5E"
+  },
+  "keywords": "saat phere wedding saptapadi phere saptapadi seven steps agni fire vows function wedding day",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "arch",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "saat-phere",
+   "signature": "botanical|arch|pill|flourish|1|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "nikah-nama",
+  "name": "Nikah Nama",
+  "tier": "free",
+  "motif": "nikahnama",
+  "blurb": "The nikahnama and the qalam, with arabesque corners — the contract at the centre of the day.",
+  "colors": {
+   "bg1": "#F7F6F0",
+   "bg2": "#E6E4D6",
+   "ink": "#1E3A32",
+   "primary": "#2E5A4A",
+   "secondary": "#8A8250"
+  },
+  "keywords": "nikah nama wedding nikahnama nikah nikahnama contract qalam walima muslim function",
+  "spec": {
+   "family": "heritage",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "rules",
+   "font": 1,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "nikah-nama",
+   "signature": "classic|beads|pill|rules|1|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "anand-karaj-ardas",
+  "name": "Anand Karaj Ardas",
+  "tier": "free",
+  "motif": "palki",
+  "blurb": "The palki canopy with its rumala fringe, for the morning of the four lavan.",
+  "colors": {
+   "bg1": "#F6F2E4",
+   "bg2": "#E6DEC2",
+   "ink": "#1E3A5A",
+   "primary": "#2A5480",
+   "secondary": "#A8863E"
+  },
+  "keywords": "anand karaj ardas wedding palki anand karaj palki ardas lavan langar sikh gurdwara function",
+  "spec": {
+   "family": "heritage",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 0,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "anand-karaj-ardas",
+   "signature": "botanical|beads|pill|flourish|0|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "wedding-day-mandap",
+  "name": "Wedding Day",
+  "tier": "free",
+  "motif": "mandap",
+  "blurb": "A four-post mandap under a draped canopy, drawn for the ceremony itself rather than the parties around it.",
+  "colors": {
+   "bg1": "#FDF4EC",
+   "bg2": "#F2DFCC",
+   "ink": "#5A2418",
+   "primary": "#8A3A1E",
+   "secondary": "#B4823A"
+  },
+  "keywords": "wedding day wedding mandap wedding day mandap ceremony muhurtham vows function main",
+  "spec": {
+   "family": "heritage",
+   "layout": "royal",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 6,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "wedding-day-mandap",
+   "signature": "royal|beads|pill|flourish|6|row|stack|cards"
+  }
+ },
+ {
+  "slug": "vidaai-farewell",
+  "name": "Vidaai Farewell",
+  "tier": "free",
+  "motif": "doli",
+  "blurb": "The doli and a handful of rice thrown back over a shoulder, in the muted plum of a goodbye.",
+  "colors": {
+   "bg1": "#3A2438",
+   "bg2": "#6E4468",
+   "ink": "#F6E2E8",
+   "primary": "#FFF2F4",
+   "secondary": "#D9A8B8"
+  },
+  "keywords": "vidaai farewell wedding doli vidaai bidaai farewell doli departure bride family function",
+  "spec": {
+   "family": "personal",
+   "layout": "classic",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 2,
+   "names": "row",
+   "venue": "split",
+   "events": "columns",
+   "slug": "vidaai-farewell",
+   "signature": "classic|vine|pill|rules|2|row|split|columns"
+  }
+ },
+ {
+  "slug": "bride-and-groom",
+  "name": "Bride & Groom",
+  "tier": "free",
+  "motif": "rings-classic",
+  "blurb": "The classic pairing — two bands inside a laurel, with room for both families above the names.",
+  "colors": {
+   "bg1": "#FBF7F0",
+   "bg2": "#EDE3D2",
+   "ink": "#3A2C1E",
+   "primary": "#6E4E2A",
+   "secondary": "#A88A50"
+  },
+  "keywords": "bride & groom wedding rings-classic bride groom couple classic traditional him her people",
+  "spec": {
+   "family": "personal",
+   "layout": "royal",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "caps",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "bride-and-groom",
+   "signature": "royal|double|medallion|caps|3|row|split|timeline"
+  }
+ },
+ {
+  "slug": "bride-and-bride",
+  "name": "Bride & Bride",
+  "tier": "free",
+  "motif": "twin-blooms",
+  "blurb": "Two blooms opening from one shared stem — a card written for two brides rather than adapted for them.",
+  "colors": {
+   "bg1": "#FDF2F6",
+   "bg2": "#F4DAE6",
+   "ink": "#4A1E36",
+   "primary": "#8A2E58",
+   "secondary": "#C08A5E"
+  },
+  "keywords": "bride & bride wedding twin-blooms bride bride lesbian lgbtq same sex two brides queer people",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "pill",
+   "heading": "caps",
+   "font": 5,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "bride-and-bride",
+   "signature": "arch|arch|pill|caps|5|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "groom-and-groom",
+  "name": "Groom & Groom",
+  "tier": "free",
+  "motif": "twin-bands",
+  "blurb": "Two bands woven through a square knot in slate and brass — structural rather than floral.",
+  "colors": {
+   "bg1": "#12283A",
+   "bg2": "#1E4A66",
+   "ink": "#EFE0C4",
+   "primary": "#FBF0DA",
+   "secondary": "#C9A468"
+  },
+  "keywords": "groom & groom wedding twin-bands groom groom gay lgbtq same sex two grooms queer people",
+  "spec": {
+   "family": "personal",
+   "layout": "royal",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "caps",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "groom-and-groom",
+   "signature": "royal|hairline|stack|caps|3|row|split|cards"
+  }
+ },
+ {
+  "slug": "the-two-of-us",
+  "name": "The Two Of Us",
+  "tier": "free",
+  "motif": "infinity",
+  "blurb": "One continuous ribbon with no beginning, for a couple marrying on their own terms.",
+  "colors": {
+   "bg1": "#F6F6F4",
+   "bg2": "#E4E6E2",
+   "ink": "#26302C",
+   "primary": "#3E5248",
+   "secondary": "#8A9A8E"
+  },
+  "keywords": "the two of us wedding infinity couple elopement intimate small partners two of us people",
+  "spec": {
+   "family": "modern",
+   "layout": "classic",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 7,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "the-two-of-us",
+   "signature": "classic|double|medallion|rules|7|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "our-sons-wedding",
+  "name": "Our Son’s Wedding",
+  "tier": "free",
+  "motif": "wheat-crest",
+  "blurb": "A family shield with a wheat sheaf, worded from the parents rather than the couple.",
+  "colors": {
+   "bg1": "#1E3218",
+   "bg2": "#3A5C28",
+   "ink": "#F0E6C4",
+   "primary": "#FBF4DE",
+   "secondary": "#C9B064"
+  },
+  "keywords": "our son’s wedding wedding wheat-crest son wedding parents family host blessings people",
+  "spec": {
+   "family": "personal",
+   "layout": "botanical",
+   "frame": "vine",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "our-sons-wedding",
+   "signature": "botanical|vine|medallion|rules|3|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "our-daughters-wedding",
+  "name": "Our Daughter’s Wedding",
+  "tier": "free",
+  "motif": "rose-cartouche",
+  "blurb": "A rose spray inside an oval cartouche, framed the way a family portrait is.",
+  "colors": {
+   "bg1": "#FBF2F2",
+   "bg2": "#F0DCDA",
+   "ink": "#4A2226",
+   "primary": "#8A343A",
+   "secondary": "#B4845E"
+  },
+  "keywords": "our daughter’s wedding wedding rose-cartouche daughter wedding parents family host blessings people",
+  "spec": {
+   "family": "botanical",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "medallion",
+   "heading": "caps",
+   "font": 5,
+   "names": "row",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "our-daughters-wedding",
+   "signature": "botanical|beads|medallion|caps|5|row|framed|columns"
+  }
+ },
+ {
+  "slug": "my-brothers-wedding",
+  "name": "My Brother’s Wedding",
+  "tier": "free",
+  "motif": "rope-knot",
+  "blurb": "Two rope loops locked together, for the sibling doing the inviting.",
+  "colors": {
+   "bg1": "#12303A",
+   "bg2": "#1E5464",
+   "ink": "#EFE2C6",
+   "primary": "#2E7A8E",
+   "secondary": "#C9A868"
+  },
+  "keywords": "my brother’s wedding wedding rope-knot brother sibling wedding family invite bhai people",
+  "spec": {
+   "family": "personal",
+   "layout": "monogram",
+   "frame": "double",
+   "date": "ribbon",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "my-brothers-wedding",
+   "signature": "monogram|double|ribbon|caps|2|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "my-sisters-wedding",
+  "name": "My Sister’s Wedding",
+  "tier": "free",
+  "motif": "mirror-fans",
+  "blurb": "Two mirrored fans opening from one point, in plum and orchid.",
+  "colors": {
+   "bg1": "#3A1C42",
+   "bg2": "#6E3468",
+   "ink": "#F6E2F0",
+   "primary": "#FFF0FA",
+   "secondary": "#D9A8CE"
+  },
+  "keywords": "my sister’s wedding wedding mirror-fans sister sibling wedding family invite behen didi people",
+  "spec": {
+   "family": "personal",
+   "layout": "classic",
+   "frame": "double",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 3,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "my-sisters-wedding",
+   "signature": "classic|double|stack|flourish|3|stack|split|cards"
+  }
+ },
+ {
+  "slug": "a-friends-wedding",
+  "name": "A Friend’s Wedding",
+  "tier": "free",
+  "motif": "confetti-arc",
+  "blurb": "An arc of confetti thrown across a poster-format card — informal, and meant to be forwarded.",
+  "colors": {
+   "bg1": "#0E1A2E",
+   "bg2": "#22406E",
+   "ink": "#E4EEFC",
+   "primary": "#7FB2F0",
+   "secondary": "#F0C86E"
+  },
+  "keywords": "a friend’s wedding wedding confetti-arc friend wedding informal group chat invite squad people",
+  "spec": {
+   "family": "personal",
+   "layout": "botanical",
+   "frame": "hairline",
+   "date": "pill",
+   "heading": "rules",
+   "font": 2,
+   "names": "stack",
+   "venue": "split",
+   "events": "columns",
+   "slug": "a-friends-wedding",
+   "signature": "botanical|hairline|pill|rules|2|stack|split|columns"
+  }
+ },
+ {
+  "slug": "a-family-wedding",
+  "name": "A Family Wedding",
+  "tier": "free",
+  "motif": "family-tree",
+  "blurb": "One tree with many branches, for the wedding the whole family hosts between them.",
+  "colors": {
+   "bg1": "#F6F4EA",
+   "bg2": "#E4E0CE",
+   "ink": "#2A3220",
+   "primary": "#4A5A32",
+   "secondary": "#96A05E"
+  },
+  "keywords": "a family wedding wedding family-tree family wedding relatives clan together tree joint people",
+  "spec": {
+   "family": "personal",
+   "layout": "royal",
+   "frame": "hairline",
+   "date": "pill",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "a-family-wedding",
+   "signature": "royal|hairline|pill|rules|3|row|split|cards"
+  }
+ },
+ {
+  "slug": "cinematic-love-story",
+  "name": "Cinematic Love Story",
+  "tier": "premium",
+  "motif": "cinema-spotlight",
+  "blurb": "Cinematic widescreen romantic feature poster complete with dramatic rim lighting, film billing block titles, and moody intimacy.",
+  "colors": {
+   "bg1": "#100C14",
+   "bg2": "#241A2D",
+   "ink": "#FAF5FF",
+   "primary": "#E8B4B8",
+   "secondary": "#9D7494"
+  },
+  "keywords": "cinematic love story wedding cinema-spotlight cinematic love story movie poster film dramatic romance atmospheric storytelling wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "cinematic-love-story",
+   "signature": "arch|arch|medallion|flourish|1|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "royal-durbar",
+  "name": "Royal Durbar",
+  "tier": "free",
+  "motif": "damask-crown",
+  "blurb": "A crown over a damask cartouche, repeated into a full border in imperial purple and old gold.",
+  "colors": {
+   "bg1": "#2A0F3E",
+   "bg2": "#54206E",
+   "ink": "#F6DCA8",
+   "primary": "#FBEDCE",
+   "secondary": "#DFB055"
+  },
+  "keywords": "royal durbar wedding damask-crown royal regal crown damask imperial palace grand luxury style",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "double",
+   "date": "pill",
+   "heading": "diamond",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "royal-durbar",
+   "signature": "classic|double|pill|diamond|3|row|split|timeline"
+  }
+ },
+ {
+  "slug": "luxe-noir",
+  "name": "Luxe Noir",
+  "tier": "free",
+  "motif": "luxe-rays",
+  "blurb": "A fine sunburst on near-black with a single gold bar — the most expensive-looking card in the set.",
+  "colors": {
+   "bg1": "#0B0B0D",
+   "bg2": "#22222A",
+   "ink": "#EFE2C0",
+   "primary": "#FBF2DC",
+   "secondary": "#C9A85E"
+  },
+  "keywords": "luxe noir wedding luxe-rays luxury luxe black gold noir premium formal black tie style",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 0,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "luxe-noir",
+   "signature": "royal|vine|ribbon|rules|0|row|stack|cards"
+  }
+ },
+ {
+  "slug": "velvet-rouge",
+  "name": "Velvet Rouge",
+  "tier": "free",
+  "motif": "velvet-damask",
+  "blurb": "Baroque damask repeated edge to edge in oxblood, with the names on a clear velvet plaque.",
+  "colors": {
+   "bg1": "#3E0A16",
+   "bg2": "#701426",
+   "ink": "#F6D8C4",
+   "primary": "#FBEADE",
+   "secondary": "#D9A070"
+  },
+  "keywords": "velvet rouge wedding velvet-damask velvet damask baroque oxblood rich deep red opulent style",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 0,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "velvet-rouge",
+   "signature": "royal|vine|pill|rules|0|row|split|cards"
+  }
+ },
+ {
+  "slug": "gilded-branch",
+  "name": "Gilded Branch",
+  "tier": "free",
+  "motif": "gilded-leaf",
+  "blurb": "A single gilded branch running up the right edge, with the names set flush left against it.",
+  "colors": {
+   "bg1": "#141410",
+   "bg2": "#33301E",
+   "ink": "#F2E4BE",
+   "primary": "#FBF2D8",
+   "secondary": "#D9B45E"
+  },
+  "keywords": "gilded branch wedding gilded-leaf gold gilded leaf branch foil metallic editorial luxe style",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "double",
+   "date": "pill",
+   "heading": "caps",
+   "font": 6,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "gilded-branch",
+   "signature": "editorial|double|pill|caps|6|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "palace-colonnade",
+  "name": "Palace Colonnade",
+  "tier": "free",
+  "motif": "palace-dome",
+  "blurb": "A ribbed dome above a colonnade, in the sandstone and gold of a heritage palace venue.",
+  "colors": {
+   "bg1": "#F6E8D2",
+   "bg2": "#E8CFA8",
+   "ink": "#4A2A14",
+   "primary": "#7A421A",
+   "secondary": "#A87A32"
+  },
+  "keywords": "palace colonnade wedding palace-dome palace heritage dome colonnade grand venue fort majestic style",
+  "spec": {
+   "family": "royal",
+   "layout": "arch",
+   "frame": "deco",
+   "date": "stack",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "palace-colonnade",
+   "signature": "arch|deco|stack|rules|3|row|split|cards"
+  }
+ },
+ {
+  "slug": "deco-gatsby",
+  "name": "Deco Gatsby",
+  "tier": "free",
+  "motif": "deco-fan",
+  "blurb": "A stepped deco fan over chevron banding, in the emerald and gold of a 1920s ballroom.",
+  "colors": {
+   "bg1": "#0E1418",
+   "bg2": "#1E3038",
+   "ink": "#EFD9A4",
+   "primary": "#FBEECA",
+   "secondary": "#D9B45E"
+  },
+  "keywords": "deco gatsby wedding deco-fan art deco gatsby 1920s geometric chevron jazz age style",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "band",
+   "date": "stack",
+   "heading": "flourish",
+   "font": 1,
+   "names": "row",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "deco-gatsby",
+   "signature": "classic|band|stack|flourish|1|row|framed|columns"
+  }
+ },
+ {
+  "slug": "maharaja-palace",
+  "name": "Maharaja Palace",
+  "tier": "premium",
+  "motif": "maharaja-arch",
+  "blurb": "Monumental royal Rajput durbar palace with towering fluted sandstone pillars, cascading crystal chandeliers, and imperial gilded crests.",
+  "colors": {
+   "bg1": "#201309",
+   "bg2": "#402612",
+   "ink": "#FDF5E6",
+   "primary": "#E5B348",
+   "secondary": "#F7D788"
+  },
+  "keywords": "maharaja palace wedding maharaja-arch maharaja palace royal grand arch sandstone columns chandelier gold luxury wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 6,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "maharaja-palace",
+   "signature": "royal|vine|pill|rules|6|row|split|cards"
+  }
+ },
+ {
+  "slug": "regal-maroon",
+  "name": "Regal Maroon",
+  "tier": "premium",
+  "motif": "regal-crest",
+  "blurb": "Sumptuous deep burgundy velvet background encircled by antique royal gold filigree and ceremonial damask scrollwork.",
+  "colors": {
+   "bg1": "#2E0814",
+   "bg2": "#521226",
+   "ink": "#FFF2D9",
+   "primary": "#D4A745",
+   "secondary": "#F0CF7D"
+  },
+  "keywords": "regal maroon wedding regal-crest regal maroon velvet dark gold antique vintage royal grand luxury wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 1,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "regal-maroon",
+   "signature": "royal|vine|pill|rules|1|row|split|cards"
+  }
+ },
+ {
+  "slug": "imperial-gold",
+  "name": "Imperial Gold",
+  "tier": "premium",
+  "motif": "imperial-filigree",
+  "blurb": "Ultra-luxe heavy handmade ivory vellum embossed with shimmering 24k gold leaf borders and haute-couture typography.",
+  "colors": {
+   "bg1": "#FAF8F2",
+   "bg2": "#EFE7D2",
+   "ink": "#332B1A",
+   "primary": "#A67D28",
+   "secondary": "#D6A845"
+  },
+  "keywords": "imperial gold wedding imperial-filigree imperial gold metallic ivory embossed luxury high end minimalist regal wedding",
+  "spec": {
+   "family": "modern",
+   "layout": "royal",
+   "frame": "vine",
+   "date": "pill",
+   "heading": "rules",
+   "font": 4,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "imperial-gold",
+   "signature": "royal|vine|pill|rules|4|row|split|cards"
+  }
+ },
+ {
+  "slug": "champagne-palace",
+  "name": "Champagne Palace",
+  "tier": "premium",
+  "motif": "champagne-arch",
+  "blurb": "Modern champagne and spun-silk aesthetic with slender neoclassical arches, luminous gold leafing, and refined serifs.",
+  "colors": {
+   "bg1": "#FAF7F0",
+   "bg2": "#EDE5D4",
+   "ink": "#302A24",
+   "primary": "#8C7355",
+   "secondary": "#CDB388"
+  },
+  "keywords": "champagne palace wedding champagne-arch champagne palace soft gold ivory modern luxury elegant editorial arches wedding",
+  "spec": {
+   "family": "modern",
+   "layout": "monogram",
+   "frame": "deco",
+   "date": "stack",
+   "heading": "rules",
+   "font": 2,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "champagne-palace",
+   "signature": "monogram|deco|stack|rules|2|stack|framed|timeline"
+  }
+ },
+ {
+  "slug": "royal-garden-court",
+  "name": "Royal Garden Court",
+  "tier": "premium",
+  "motif": "garden-palace-gate",
+  "blurb": "Aristocratic French-Mughal formal garden estate framed by intricate wrought-iron gilded gates and climbing English roses.",
+  "colors": {
+   "bg1": "#F6F8F3",
+   "bg2": "#E0E7D7",
+   "ink": "#1E2E20",
+   "primary": "#3C6342",
+   "secondary": "#B88E44"
+  },
+  "keywords": "royal garden court wedding garden-palace-gate royal garden court gate estate columns roses formal luxury green gold wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "double",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 0,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "royal-garden-court",
+   "signature": "royal|double|medallion|flourish|0|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "pearl-and-champagne",
+  "name": "Pearl & Champagne",
+  "tier": "premium",
+  "motif": "pearl-garland",
+  "blurb": "Luminescent mother-of-pearl sheen accented with bubbling vintage champagne gold and delicate silk satin ribbons.",
+  "colors": {
+   "bg1": "#FAF7F2",
+   "bg2": "#ECE3D4",
+   "ink": "#342C25",
+   "primary": "#A68B67",
+   "secondary": "#D9C3A3"
+  },
+  "keywords": "pearl & champagne wedding pearl-garland pearl and champagne iridescent ivory gold soft luxury glam opulent wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "double",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 6,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "pearl-and-champagne",
+   "signature": "royal|double|ribbon|flourish|6|row|split|timeline"
+  }
+ },
+ {
+  "slug": "midnight-elegance",
+  "name": "Midnight Elegance",
+  "tier": "premium",
+  "motif": "midnight-starlight",
+  "blurb": "Starlit midnight velvet sky enveloped in shimmering stardust and intricate filigree 24-karat gold constellation borders.",
+  "colors": {
+   "bg1": "#0A0D1A",
+   "bg2": "#161D36",
+   "ink": "#F5F7FA",
+   "primary": "#D4AF37",
+   "secondary": "#8CA4D8"
+  },
+  "keywords": "midnight elegance wedding midnight-starlight midnight elegance dark navy stardust gold luxury royal cinematic formal wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "monogram",
+   "frame": "arch",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 6,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "midnight-elegance",
+   "signature": "monogram|arch|ribbon|rules|6|stack|split|cards"
+  }
+ },
+ {
+  "slug": "black-tie-romance",
+  "name": "Black Tie Romance",
+  "tier": "premium",
+  "motif": "tuxedo-geometric",
+  "blurb": "High-society Manhattan black tie gala featuring razor-sharp monochrome geometry, silver metallic hairline rules, and haute couture fonts.",
+  "colors": {
+   "bg1": "#111215",
+   "bg2": "#21242B",
+   "ink": "#F4F5F7",
+   "primary": "#E2E4E9",
+   "secondary": "#A1A7B4"
+  },
+  "keywords": "black tie romance wedding tuxedo-geometric black tie romance formal monochrome modern minimal luxury sleek contemporary wedding",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "deco",
+   "date": "line",
+   "heading": "diamond",
+   "font": 4,
+   "names": "stack",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "black-tie-romance",
+   "signature": "editorial|deco|line|diamond|4|stack|stack|timeline"
+  }
+ },
+ {
+  "slug": "elegant-floral",
+  "name": "Elegant Floral",
+  "tier": "free",
+  "motif": "floral",
+  "blurb": "Hand-drawn rosettes on blush paper — the most-used free wedding card.",
+  "colors": {
+   "bg1": "#FDF0F4",
+   "bg2": "#F6D9E4",
+   "ink": "#4A2033",
+   "primary": "#8B2F58",
+   "secondary": "#B98A2E"
+  },
+  "keywords": "elegant floral wedding floral ",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "hairline",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 0,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "elegant-floral",
+   "signature": "arch|hairline|medallion|rules|0|row|split|cards"
+  }
+ },
+ {
+  "slug": "romance-in-blush",
+  "name": "Romance In Blush",
+  "tier": "free",
+  "motif": "rose-spray",
+  "blurb": "Open roses falling from two corners across blush paper, in the softest palette in the collection.",
+  "colors": {
+   "bg1": "#FDF3F3",
+   "bg2": "#F6DCDC",
+   "ink": "#5A2A32",
+   "primary": "#9A3E4E",
+   "secondary": "#C08A72"
+  },
+  "keywords": "romance in blush wedding rose-spray romantic romance blush rose soft pink love pretty style",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "caps",
+   "font": 3,
+   "names": "row",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "romance-in-blush",
+   "signature": "classic|beads|pill|caps|3|row|stack|columns"
+  }
+ },
+ {
+  "slug": "peony-bloom-card",
+  "name": "Peony Bloom",
+  "tier": "free",
+  "motif": "peony-bloom",
+  "blurb": "One peony drawn fully open, four rings of petals deep, centred like a medallion.",
+  "colors": {
+   "bg1": "#FBF4F8",
+   "bg2": "#F2DCE8",
+   "ink": "#4A2038",
+   "primary": "#8E2E5A",
+   "secondary": "#B4844E"
+  },
+  "keywords": "peony bloom wedding peony-bloom floral peony flower bloom garden botanical feminine style",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "arch",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 5,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "peony-bloom-card",
+   "signature": "classic|arch|ribbon|rules|5|row|stack|cards"
+  }
+ },
+ {
+  "slug": "botanical-press",
+  "name": "Botanical Press",
+  "tier": "free",
+  "motif": "fern-press",
+  "blurb": "Two pressed fern fronds running down each side, laid out like a herbarium sheet.",
+  "colors": {
+   "bg1": "#F4F6EE",
+   "bg2": "#DFE6D6",
+   "ink": "#26321E",
+   "primary": "#3E5230",
+   "secondary": "#7A9060"
+  },
+  "keywords": "botanical press wedding fern-press botanical fern pressed herbarium green natural foliage style",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "botanical-press",
+   "signature": "arch|hairline|stack|rules|3|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "garden-party",
+  "name": "Garden Party",
+  "tier": "free",
+  "motif": "garden-gate",
+  "blurb": "A wrought-iron gate with roses climbing it, for a wedding held on the lawn.",
+  "colors": {
+   "bg1": "#EEF4EA",
+   "bg2": "#D6E4CE",
+   "ink": "#254028",
+   "primary": "#3E6E3E",
+   "secondary": "#8AA870"
+  },
+  "keywords": "garden party wedding garden-gate garden outdoor lawn roses gate green party daytime style",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "rules",
+   "font": 0,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "garden-party",
+   "signature": "classic|hairline|stack|rules|0|row|split|timeline"
+  }
+ },
+ {
+  "slug": "rosewater-romance",
+  "name": "Rosewater Romance",
+  "tier": "premium",
+  "motif": "rosewater-bloom",
+  "blurb": "Whisper-soft dusty rose and blush petals infused with sparkling champagne mist and delicate calligraphy flourishes.",
+  "colors": {
+   "bg1": "#FAF2F2",
+   "bg2": "#EEDADB",
+   "ink": "#422026",
+   "primary": "#A64B5D",
+   "secondary": "#CF9D76"
+  },
+  "keywords": "rosewater romance wedding rosewater-bloom rosewater romance dusty rose blush pink petals floral soft romantic wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "vine",
+   "date": "stack",
+   "heading": "caps",
+   "font": 3,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "rosewater-romance",
+   "signature": "classic|vine|stack|caps|3|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "lotus-garden",
+  "name": "Lotus Garden",
+  "tier": "premium",
+  "motif": "sacred-lotus",
+  "blurb": "Sacred blooming pink lotuses rising above serene jade waters with gentle morning ripples and gilded lily pads.",
+  "colors": {
+   "bg1": "#F7FAF6",
+   "bg2": "#DEEAE0",
+   "ink": "#1B3026",
+   "primary": "#2E6B56",
+   "secondary": "#D9829B"
+  },
+  "keywords": "lotus garden wedding sacred-lotus lotus garden water lily pond serene floral zen botanical luxury wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "monogram",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 0,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "lotus-garden",
+   "signature": "monogram|band|ribbon|flourish|0|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "wildflower-vows",
+  "name": "Wildflower Vows",
+  "tier": "free",
+  "motif": "wildflower-bunch",
+  "blurb": "Carefree meadow blooms of cornflowers, poppies, and chamomile pressed onto sun-drenched handmade cotton paper.",
+  "colors": {
+   "bg1": "#F9F8F3",
+   "bg2": "#EDEBDC",
+   "ink": "#282C22",
+   "primary": "#556B2F",
+   "secondary": "#D48C46"
+  },
+  "keywords": "wildflower vows wedding wildflower-bunch wildflower vows rustic meadow natural botanical organic boho romantic wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "botanical",
+   "frame": "hairline",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 2,
+   "names": "row",
+   "venue": "split",
+   "events": "columns",
+   "slug": "wildflower-vows",
+   "signature": "botanical|hairline|ribbon|flourish|2|row|split|columns"
+  }
+ },
+ {
+  "slug": "watercolor-romance",
+  "name": "Watercolor Romance",
+  "tier": "premium",
+  "motif": "watercolor-arch",
+  "blurb": "Artisan watercolour wash in misty lilac, blush, and cornflower blues cascading into a soft floral archway.",
+  "colors": {
+   "bg1": "#FAF4F8",
+   "bg2": "#ECDDE8",
+   "ink": "#3D1E35",
+   "primary": "#8F3D72",
+   "secondary": "#5C82A6"
+  },
+  "keywords": "watercolor romance wedding watercolor-arch watercolor romance handpainted wash floral arch pastel artistic soft wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "royal",
+   "frame": "beads",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 5,
+   "names": "row",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "watercolor-romance",
+   "signature": "royal|beads|ribbon|rules|5|row|framed|cards"
+  }
+ },
+ {
+  "slug": "pastel-garden",
+  "name": "Pastel Garden",
+  "tier": "free",
+  "motif": "pastel-bouquet",
+  "blurb": "Dreamy pastel garden symphony of French lavender, sweet peach ranunculus, and powdery sage foliage.",
+  "colors": {
+   "bg1": "#FDF7FA",
+   "bg2": "#F2E1EC",
+   "ink": "#362233",
+   "primary": "#944D7C",
+   "secondary": "#7AA682"
+  },
+  "keywords": "pastel garden wedding pastel-bouquet pastel garden lavender peach pink sage floral dreamy romantic spring wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "caps",
+   "font": 3,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "pastel-garden",
+   "signature": "arch|arch|medallion|caps|3|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "cherry-blossom-love",
+  "name": "Cherry Blossom Love",
+  "tier": "premium",
+  "motif": "sakura-branch",
+  "blurb": "Graceful Japanese sakura boughs in springtime bloom with delicate drifting petals and minimalist aesthetic balance.",
+  "colors": {
+   "bg1": "#FCF5F7",
+   "bg2": "#F5DEE5",
+   "ink": "#3A1C24",
+   "primary": "#BA4B6E",
+   "secondary": "#8C6239"
+  },
+  "keywords": "cherry blossom love wedding sakura-branch cherry blossom love sakura japanese spring blush pink petals zen elegant wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "royal",
+   "frame": "beads",
+   "date": "pill",
+   "heading": "flourish",
+   "font": 5,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "cherry-blossom-love",
+   "signature": "royal|beads|pill|flourish|5|row|split|timeline"
+  }
+ },
+ {
+  "slug": "coastal-vows",
+  "name": "Coastal Vows",
+  "tier": "free",
+  "motif": "wave-shell",
+  "blurb": "A scallop shell above two lines of surf, in sea glass and driftwood tones.",
+  "colors": {
+   "bg1": "#EAF4F8",
+   "bg2": "#CDE4EE",
+   "ink": "#123A4A",
+   "primary": "#1E6076",
+   "secondary": "#5AA0B8"
+  },
+  "keywords": "coastal vows wedding wave-shell beach coastal sea ocean shell shore seaside destination style",
+  "spec": {
+   "family": "destination",
+   "layout": "arch",
+   "frame": "arch",
+   "date": "pill",
+   "heading": "caps",
+   "font": 7,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "coastal-vows",
+   "signature": "arch|arch|pill|caps|7|stack|split|cards"
+  }
+ },
+ {
+  "slug": "mountain-vows",
+  "name": "Mountain Vows",
+  "tier": "free",
+  "motif": "pine-ridge",
+  "blurb": "A ridge line with pines and a low sun behind it, in slate and pine green.",
+  "colors": {
+   "bg1": "#14262E",
+   "bg2": "#26454E",
+   "ink": "#E4EDE8",
+   "primary": "#F6FBF8",
+   "secondary": "#8AB0A4"
+  },
+  "keywords": "mountain vows wedding pine-ridge mountain hills pine ridge alpine outdoor adventure style",
+  "spec": {
+   "family": "destination",
+   "layout": "botanical",
+   "frame": "beads",
+   "date": "line",
+   "heading": "rules",
+   "font": 5,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "mountain-vows",
+   "signature": "botanical|beads|line|rules|5|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "destination-voyage",
+  "name": "Destination Voyage",
+  "tier": "free",
+  "motif": "compass",
+  "blurb": "A compass rose over a dotted route, for the wedding everyone has to fly to.",
+  "colors": {
+   "bg1": "#0E2A3A",
+   "bg2": "#1A4A62",
+   "ink": "#F2E2C2",
+   "primary": "#FBF0D8",
+   "secondary": "#D9B06E"
+  },
+  "keywords": "destination voyage wedding compass destination travel abroad compass voyage passport resort style",
+  "spec": {
+   "family": "destination",
+   "layout": "classic",
+   "frame": "beads",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 5,
+   "names": "stack",
+   "venue": "split",
+   "events": "columns",
+   "slug": "destination-voyage",
+   "signature": "classic|beads|medallion|flourish|5|stack|split|columns"
+  }
+ },
+ {
+  "slug": "moonlit-florals",
+  "name": "Moonlit Florals",
+  "tier": "premium",
+  "motif": "moonlit-botanical",
+  "blurb": "Nocturnal secret garden bathed in silver moonlight with glowing white night-blooming jasmine and celestial star dust.",
+  "colors": {
+   "bg1": "#0B132B",
+   "bg2": "#1C2541",
+   "ink": "#EAF0FA",
+   "primary": "#48CAE4",
+   "secondary": "#C0D6DF"
+  },
+  "keywords": "moonlit florals wedding moonlit-botanical moonlit florals night garden dark navy silver celestial night bloom luxury wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "classic",
+   "frame": "deco",
+   "date": "stack",
+   "heading": "diamond",
+   "font": 1,
+   "names": "stack",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "moonlit-florals",
+   "signature": "classic|deco|stack|diamond|1|stack|framed|cards"
+  }
+ },
+ {
+  "slug": "beachside-bliss",
+  "name": "Beachside Bliss",
+  "tier": "free",
+  "motif": "ocean-waves",
+  "blurb": "Golden sun-kissed shoreline with translucent aquamarine ocean waves, soft sea foam, and delicate pearl shells.",
+  "colors": {
+   "bg1": "#F6FAFA",
+   "bg2": "#DCEDF0",
+   "ink": "#102E38",
+   "primary": "#2A7B9B",
+   "secondary": "#D9A05B"
+  },
+  "keywords": "beachside bliss wedding ocean-waves beachside bliss ocean coastal beach sea waves destination tropical resort wedding",
+  "spec": {
+   "family": "destination",
+   "layout": "editorial",
+   "frame": "hairline",
+   "date": "ribbon",
+   "heading": "flourish",
+   "font": 5,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "beachside-bliss",
+   "signature": "editorial|hairline|ribbon|flourish|5|stack|split|cards"
+  }
+ },
+ {
+  "slug": "goa-sunset-vows",
+  "name": "Goa Sunset Vows",
+  "tier": "premium",
+  "motif": "goa-palm-sunset",
+  "blurb": "Sunkissed Goan coastal romance with swaying silhouette coconut palms, fiery amber sunset horizons, and Portuguese azulejos.",
+  "colors": {
+   "bg1": "#FFF5EC",
+   "bg2": "#FCE0CA",
+   "ink": "#3D1B14",
+   "primary": "#D64C27",
+   "secondary": "#327A7B"
+  },
+  "keywords": "goa sunset vows wedding goa-palm-sunset goa sunset vows coastal destination beach palms tropical warm vibrant wedding",
+  "spec": {
+   "family": "destination",
+   "layout": "classic",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "flourish",
+   "font": 7,
+   "names": "row",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "goa-sunset-vows",
+   "signature": "classic|arch|medallion|flourish|7|row|stack|timeline"
+  }
+ },
+ {
+  "slug": "tropical-paradise",
+  "name": "Tropical Paradise",
+  "tier": "premium",
+  "motif": "tropical-monstera",
+  "blurb": "Lush Hawaiian resort haven adorned with emerald monstera fronds, golden orchids, and exotic scarlet hibiscus.",
+  "colors": {
+   "bg1": "#F3F8F5",
+   "bg2": "#D9ECE0",
+   "ink": "#142E20",
+   "primary": "#1F6B45",
+   "secondary": "#D65A31"
+  },
+  "keywords": "tropical paradise wedding tropical-monstera tropical paradise monstera hibiscus palm emerald resort island destination wedding",
+  "spec": {
+   "family": "botanical",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 5,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "tropical-paradise",
+   "signature": "classic|hairline|ribbon|rules|5|stack|split|cards"
+  }
+ },
+ {
+  "slug": "desert-romance",
+  "name": "Desert Romance",
+  "tier": "premium",
+  "motif": "desert-dunes",
+  "blurb": "Mystical Thar and Arabian sand dunes bathed in copper sunset glow with desert succulents and terracotta geometry.",
+  "colors": {
+   "bg1": "#FAF3EC",
+   "bg2": "#EEDBC8",
+   "ink": "#3D2214",
+   "primary": "#A85324",
+   "secondary": "#D99B4E"
+  },
+  "keywords": "desert romance wedding desert-dunes desert romance dunes sunset terracotta sand boho warm luxury destination wedding",
+  "spec": {
+   "family": "royal",
+   "layout": "royal",
+   "frame": "deco",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 6,
+   "names": "row",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "desert-romance",
+   "signature": "royal|deco|medallion|diamond|6|row|framed|columns"
+  }
+ },
+ {
+  "slug": "lakefront-love",
+  "name": "Lakefront Love",
+  "tier": "premium",
+  "motif": "lake-reflection",
+  "blurb": "Tranquil alpine lake mirrored against misty blue mountain ridges with wild water reeds and floating morning mist.",
+  "colors": {
+   "bg1": "#F4F8FA",
+   "bg2": "#D8E7EE",
+   "ink": "#182834",
+   "primary": "#325A77",
+   "secondary": "#92B4A7"
+  },
+  "keywords": "lakefront love wedding lake-reflection lakefront love lake water mountains calm serene reflections outdoor landscape wedding",
+  "spec": {
+   "family": "destination",
+   "layout": "botanical",
+   "frame": "arch",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 3,
+   "names": "row",
+   "venue": "split",
+   "events": "cards",
+   "slug": "lakefront-love",
+   "signature": "botanical|arch|ribbon|rules|3|row|split|cards"
+  }
+ },
+ {
+  "slug": "european-escape",
+  "name": "European Escape",
+  "tier": "premium",
+  "motif": "tuscan-villa",
+  "blurb": "Old-world Tuscan villa romance with sun-bleached stone courtyards, olive branch wreaths, and antique deckled paper.",
+  "colors": {
+   "bg1": "#F9F7F2",
+   "bg2": "#ECE6D8",
+   "ink": "#2D2720",
+   "primary": "#5C6B57",
+   "secondary": "#B89262"
+  },
+  "keywords": "european escape wedding tuscan-villa european escape tuscany italy villa olive branch vintage classic timeless wedding",
+  "spec": {
+   "family": "destination",
+   "layout": "botanical",
+   "frame": "arch",
+   "date": "medallion",
+   "heading": "rules",
+   "font": 5,
+   "names": "row",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "european-escape",
+   "signature": "botanical|arch|medallion|rules|5|row|split|timeline"
+  }
+ },
+ {
+  "slug": "minimal-wedding",
+  "name": "Minimal Wedding",
+  "tier": "free",
+  "motif": "geometric",
+  "blurb": "Quiet ivory paper, wide letter-spacing and nothing else in the way.",
+  "colors": {
+   "bg1": "#FAF8F5",
+   "bg2": "#EDE7DE",
+   "ink": "#3A342C",
+   "primary": "#23201A",
+   "secondary": "#8A7A5E"
+  },
+  "keywords": "minimal wedding wedding geometric ",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "double",
+   "date": "ribbon",
+   "heading": "caps",
+   "font": 2,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "minimal-wedding",
+   "signature": "editorial|double|ribbon|caps|2|row|stack|cards"
+  }
+ },
+ {
+  "slug": "modern-love",
+  "name": "Modern Love",
+  "tier": "premium",
+  "motif": "arch",
+  "blurb": "A midnight violet arch for couples who want contemporary, not classic.",
+  "colors": {
+   "bg1": "#1B1033",
+   "bg2": "#4A2B7A",
+   "ink": "#EADDFF",
+   "primary": "#FFFFFF",
+   "secondary": "#C9A6F5"
+  },
+  "keywords": "modern love wedding arch ",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "caps",
+   "font": 7,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "modern-love",
+   "signature": "editorial|band|ribbon|caps|7|row|stack|cards"
+  }
+ },
+ {
+  "slug": "editorial-ivory",
+  "name": "Editorial Ivory",
+  "tier": "free",
+  "motif": "rule-stack",
+  "blurb": "Rules of shifting weight and a hard left margin — a fashion masthead rather than an invitation.",
+  "colors": {
+   "bg1": "#FBFAF6",
+   "bg2": "#EAE8E0",
+   "ink": "#1E1E1C",
+   "primary": "#3A3A34",
+   "secondary": "#8A8878"
+  },
+  "keywords": "editorial ivory wedding rule-stack editorial magazine masthead ivory typographic modern clean style",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "pill",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "framed",
+   "events": "columns",
+   "slug": "editorial-ivory",
+   "signature": "editorial|band|pill|caps|2|stack|framed|columns"
+  }
+ },
+ {
+  "slug": "quiet-minimal",
+  "name": "Quiet Minimal",
+  "tier": "free",
+  "motif": "hairline",
+  "blurb": "One line, one dot, and a great deal of paper left alone.",
+  "colors": {
+   "bg1": "#FAFAF8",
+   "bg2": "#EDEDEA",
+   "ink": "#2A2A28",
+   "primary": "#4A4A46",
+   "secondary": "#9A9A92"
+  },
+  "keywords": "quiet minimal wedding hairline minimal minimalist simple clean white space quiet plain style",
+  "spec": {
+   "family": "modern",
+   "layout": "monogram",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "caps",
+   "font": 4,
+   "names": "stack",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "quiet-minimal",
+   "signature": "monogram|hairline|stack|caps|4|stack|stack|cards"
+  }
+ },
+ {
+  "slug": "contemporary-arch",
+  "name": "Contemporary Arch",
+  "tier": "free",
+  "motif": "soft-arch",
+  "blurb": "Nested arches in terracotta and clay — the shape every contemporary venue is building right now.",
+  "colors": {
+   "bg1": "#F6EFE8",
+   "bg2": "#E6D8CC",
+   "ink": "#3A2A24",
+   "primary": "#B4644A",
+   "secondary": "#C98A6E"
+  },
+  "keywords": "contemporary arch wedding soft-arch contemporary modern arch terracotta clay minimal warm style",
+  "spec": {
+   "family": "modern",
+   "layout": "classic",
+   "frame": "band",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 2,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "contemporary-arch",
+   "signature": "classic|band|medallion|diamond|2|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "vintage-letterpress",
+  "name": "Vintage Letterpress",
+  "tier": "free",
+  "motif": "letterpress",
+  "blurb": "A Victorian printer’s ornament inside a double rule, set the way a letterpress shop would have.",
+  "colors": {
+   "bg1": "#F6F0E2",
+   "bg2": "#E4DAC2",
+   "ink": "#33291A",
+   "primary": "#5A4626",
+   "secondary": "#967A44"
+  },
+  "keywords": "vintage letterpress wedding letterpress vintage letterpress victorian antique retro classic print style",
+  "spec": {
+   "family": "modern",
+   "layout": "monogram",
+   "frame": "deco",
+   "date": "pill",
+   "heading": "diamond",
+   "font": 6,
+   "names": "stack",
+   "venue": "stack",
+   "events": "columns",
+   "slug": "vintage-letterpress",
+   "signature": "monogram|deco|pill|diamond|6|stack|stack|columns"
+  }
+ },
+ {
+  "slug": "gen-z-bold",
+  "name": "Gen Z Bold",
+  "tier": "free",
+  "motif": "blob-stack",
+  "blurb": "Soft blobs and a four-point star under poster type — loud, lowercase and completely unbothered.",
+  "colors": {
+   "bg1": "#0E0F1A",
+   "bg2": "#241E4E",
+   "ink": "#F2ECFF",
+   "primary": "#B4F04E",
+   "secondary": "#F472B6"
+  },
+  "keywords": "gen z bold wedding blob-stack gen z bold fun playful lowercase neon poster young modern",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "double",
+   "date": "stack",
+   "heading": "caps",
+   "font": 2,
+   "names": "row",
+   "venue": "stack",
+   "events": "cards",
+   "slug": "gen-z-bold",
+   "signature": "editorial|double|stack|caps|2|row|stack|cards"
+  }
+ },
+ {
+  "slug": "digital-wedding",
+  "name": "Digital Wedding",
+  "tier": "free",
+  "motif": "screen-frame",
+  "blurb": "A screen with a play mark and a signal arc, for the ceremony half the guest list will watch on a laptop.",
+  "colors": {
+   "bg1": "#0A1220",
+   "bg2": "#12324E",
+   "ink": "#DCEEFC",
+   "primary": "#4EC9F0",
+   "secondary": "#8AA8C4"
+  },
+  "keywords": "digital wedding wedding screen-frame digital virtual online zoom livestream remote hybrid modern",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "caps",
+   "font": 6,
+   "names": "stack",
+   "venue": "split",
+   "events": "columns",
+   "slug": "digital-wedding",
+   "signature": "editorial|band|ribbon|caps|6|stack|split|columns"
+  }
+ },
+ {
+  "slug": "story-card",
+  "name": "Story Card",
+  "tier": "free",
+  "motif": "story-ring",
+  "blurb": "A story ring with a heart inside it, built to be screenshot and reposted rather than printed.",
+  "colors": {
+   "bg1": "#FDF2F6",
+   "bg2": "#F6DCE8",
+   "ink": "#33203A",
+   "primary": "#E0468A",
+   "secondary": "#B47ACE"
+  },
+  "keywords": "story card wedding story-ring social media instagram story reels share screenshot modern",
+  "spec": {
+   "family": "modern",
+   "layout": "monogram",
+   "frame": "hairline",
+   "date": "line",
+   "heading": "caps",
+   "font": 7,
+   "names": "stack",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "story-card",
+   "signature": "monogram|hairline|line|caps|7|stack|stack|timeline"
+  }
+ },
+ {
+  "slug": "modern-romance",
+  "name": "Modern Romance",
+  "tier": "free",
+  "motif": "soft-heart",
+  "blurb": "A single unbroken line drawing a heart, with nothing else on the card to compete with it.",
+  "colors": {
+   "bg1": "#FBF6F4",
+   "bg2": "#EEDCD8",
+   "ink": "#2E2226",
+   "primary": "#A8485A",
+   "secondary": "#C98A94"
+  },
+  "keywords": "modern romance wedding soft-heart modern romance heart line art simple contemporary love modern",
+  "spec": {
+   "family": "modern",
+   "layout": "classic",
+   "frame": "band",
+   "date": "pill",
+   "heading": "rules",
+   "font": 7,
+   "names": "row",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "modern-romance",
+   "signature": "classic|band|pill|rules|7|row|framed|timeline"
+  }
+ },
+ {
+  "slug": "type-only",
+  "name": "Type Only",
+  "tier": "free",
+  "motif": "type-bar",
+  "blurb": "Three bars set like a masthead under enormous type — the whole design is the typography.",
+  "colors": {
+   "bg1": "#F4F4F2",
+   "bg2": "#E2E2DE",
+   "ink": "#141414",
+   "primary": "#33332E",
+   "secondary": "#8A8A82"
+  },
+  "keywords": "type only wedding type-bar typography type only text minimal swiss grotesk bold modern",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "diamond",
+   "font": 6,
+   "names": "row",
+   "venue": "framed",
+   "events": "cards",
+   "slug": "type-only",
+   "signature": "editorial|band|ribbon|diamond|6|row|framed|cards"
+  }
+ },
+ {
+  "slug": "monogram-seal",
+  "name": "Monogram Seal",
+  "tier": "free",
+  "motif": "mono-ring",
+  "blurb": "A double ring broken for the initials, sized like a wax seal at the top of an otherwise empty card.",
+  "colors": {
+   "bg1": "#F7F5F0",
+   "bg2": "#E8E4DA",
+   "ink": "#2A2620",
+   "primary": "#5A5044",
+   "secondary": "#A2957E"
+  },
+  "keywords": "monogram seal wedding mono-ring monogram initials seal crest letters simple elegant modern",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "hairline",
+   "date": "stack",
+   "heading": "caps",
+   "font": 2,
+   "names": "stack",
+   "venue": "split",
+   "events": "timeline",
+   "slug": "monogram-seal",
+   "signature": "editorial|hairline|stack|caps|2|stack|split|timeline"
+  }
+ },
+ {
+  "slug": "editorial-grid",
+  "name": "Editorial Grid",
+  "tier": "free",
+  "motif": "grid-marks",
+  "blurb": "Crop marks and a visible baseline grid, left exactly as the designer set it.",
+  "colors": {
+   "bg1": "#F2F3F1",
+   "bg2": "#DEE0DC",
+   "ink": "#16181A",
+   "primary": "#2E3236",
+   "secondary": "#7A8288"
+  },
+  "keywords": "editorial grid wedding grid-marks editorial grid contemporary swiss layout crop marks modern",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "ribbon",
+   "heading": "rules",
+   "font": 6,
+   "names": "stack",
+   "venue": "stack",
+   "events": "timeline",
+   "slug": "editorial-grid",
+   "signature": "editorial|band|ribbon|rules|6|stack|stack|timeline"
+  }
+ },
+ {
+  "slug": "modern-monogram",
+  "name": "Modern Monogram",
+  "tier": "free",
+  "motif": "duo-monogram",
+  "blurb": "Striking contemporary monogram centerpiece enclosed in precision architectural lines and editorial negative space.",
+  "colors": {
+   "bg1": "#F8F7F5",
+   "bg2": "#E9E6E1",
+   "ink": "#1E1D1B",
+   "primary": "#48443E",
+   "secondary": "#968D7F"
+  },
+  "keywords": "modern monogram wedding duo-monogram modern monogram initials couple crest contemporary clean minimalist chic wedding",
+  "spec": {
+   "family": "modern",
+   "layout": "editorial",
+   "frame": "band",
+   "date": "pill",
+   "heading": "caps",
+   "font": 7,
+   "names": "stack",
+   "venue": "split",
+   "events": "cards",
+   "slug": "modern-monogram",
+   "signature": "editorial|band|pill|caps|7|stack|split|cards"
+  }
+ },
+ {
+  "slug": "luxury-editorial",
+  "name": "Luxury Editorial",
+  "tier": "free",
+  "motif": "vogue-masthead",
+  "blurb": "Vogue-inspired high-fashion editorial layout with dramatic typographic hierarchy, bold asymmetric rules, and avant-garde white space.",
+  "colors": {
+   "bg1": "#F5F4F0",
+   "bg2": "#E3E0D8",
+   "ink": "#121212",
+   "primary": "#242424",
+   "secondary": "#757065"
+  },
+  "keywords": "luxury editorial wedding vogue-masthead luxury editorial fashion magazine vogue masthead high end avant garde modern wedding",
+  "spec": {
+   "family": "modern",
+   "layout": "classic",
+   "frame": "hairline",
+   "date": "medallion",
+   "heading": "diamond",
+   "font": 4,
+   "names": "stack",
+   "venue": "framed",
+   "events": "timeline",
+   "slug": "luxury-editorial",
+   "signature": "classic|hairline|medallion|diamond|4|stack|framed|timeline"
+  }
+ }
+]

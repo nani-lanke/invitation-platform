@@ -1492,9 +1492,15 @@ input[type="range"]::-moz-range-thumb {
   .upload-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4) var(--space-2); }
   .upload-card--file, .upload-card--gallery { grid-column: 1 / -1; }
   /* Equal label height keeps the tiles aligned when "Background image" wraps. */
+  /* The size badge drops under the name so it never spills past the tile. */
   .upload-card:not(.upload-card--file):not(.upload-card--gallery) > .field__label {
-    min-height: 2.6em; display: flex; align-items: flex-end; font-size: .78rem; line-height: 1.3;
+    min-height: 4.6em; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start;
+    gap: 4px; min-width: 0; font-size: .78rem; line-height: 1.3;
   }
+  .upload-card:not(.upload-card--file):not(.upload-card--gallery) > .field__label .badge {
+    margin: 0; max-width: 100%; padding: 2px 7px; font-size: .6rem; letter-spacing: .02em; white-space: nowrap;
+  }
+  .upload-grid, .upload-card { min-width: 0; }
   .upload-card .dropzone { min-height: 0; aspect-ratio: 1; padding: var(--space-2); gap: 6px; }
   .upload-card .dropzone svg { width: 26px; height: 26px; flex-shrink: 0; }
   .upload-card .dropzone strong { font-size: .74rem; line-height: 1.3; }
@@ -4383,6 +4389,7 @@ input[type="range"]::-moz-range-thumb {
   color: var(--fg-faint);
 }
 .footer-bottom nav { display: flex; flex-wrap: wrap; gap: var(--space-4); }
+.footer-version { display: block; margin-top: 2px; font-size: .85em; opacity: .8; }
 .footer-bottom a { color: var(--fg-faint); text-decoration: none; }
 .footer-bottom a:hover { color: var(--primary-ink); }
 

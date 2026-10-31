@@ -432,6 +432,172 @@ async function sendInvitationEmail(opts) {
 }
 
 /* ====================================================================
+   sendPaymentIssueEmail(opts) — apology when a paid invitation failed
+
+   Sent when the ₹99 payment went through but the card / hosting / the
+   confirmation email failed because of a technical issue. The support
+   mailbox gets a BCC with the payment reference so the team can reach
+   out. At most one per payment id per server instance.
+
+   opts: { email, customerName?, paymentId?, orderId?, reason?, attemptId? }
+   ==================================================================== */
+const apologised = new Set();
+
+function buildIssueHtml(opts) {
+  const customer = escapeHtml(opts.customerName);
+  const ref = escapeHtml(opts.paymentId);
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>We're sorry — we're on it</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background-color:#f5f5f5;line-height:1.6;color:#333;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f5f5f5;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;background-color:#ffffff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+          <tr>
+            <td style="background:linear-gradient(135deg,#8B2F58 0%,#B98A2E 100%);padding:40px 30px;text-align:center;">
+              <h1 style="margin:0 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:28px;font-weight:600;color:#ffffff;line-height:1.3;">InviteAura</h1>
+              <p style="margin:0;font-size:18px;color:rgba(255,255,255,0.95);font-weight:500;">We're sorry for the inconvenience</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:40px 30px;">
+              <p style="margin:0 0 16px;font-size:16px;color:#333;">Hi ${customer},</p>
+              <p style="margin:0 0 16px;font-size:16px;color:#333;">Thank you for your payment. Unfortunately, due to a technical issue on our side, we could not finish creating and hosting your invitation.</p>
+              <p style="margin:0 0 24px;font-size:16px;color:#333;">Please don't worry — <strong>your payment is safe</strong> and you do not need to pay again. Our team has been notified and will reach out to you shortly to complete your invitation.</p>
+${ref ? `
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 0 24px;background-color:#faf7f2;border-radius:8px;border:1px solid #eee;">
+                <tr>
+                  <td style="padding:16px 18px;font-size:15px;color:#333;">
+                    <strong style="color:#8B2F58;">Payment reference:</strong><br>
+                    <span style="font-family:monospace;font-size:15px;display:inline-block;margin-top:4px;">${ref}</span>
+                  </td>
+                </tr>
+              </table>
+` : ''}
+              <p style="margin:0 0 20px;font-size:15px;color:#333;">If you'd like to reach us sooner, simply reply to this email or write to <a href="mailto:support@inviteaura.in" style="color:#8B2F58;">support@inviteaura.in</a>${ref ? ' with the payment reference above' : ''}.</p>
+              <p style="margin:0 0 20px;padding:12px 16px;background-color:#faf7f2;border-left:3px solid #B98A2E;border-radius:6px;font-size:14px;color:#555;">If any update or change is needed to your invitation, please <strong>reply to this email without changing the subject</strong>, so our team can find your order quickly.</p>
+              <p style="margin:0 0 24px;font-size:15px;color:#333;">We sincerely apologise for the trouble and thank you for your patience.</p>
+              <hr style="border:none;border-top:1px solid #eee;margin:28px 0;">
+              <p style="margin:0;font-size:15px;color:#333;">Warm regards,</p>
+              <p style="margin:4px 0 0;font-size:15px;font-weight:600;color:#8B2F58;">Team InviteAura</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color:#fafafa;padding:24px 30px;text-align:center;border-top:1px solid #eee;">
+              <p style="margin:0;font-size:13px;color:#888;">
+                <a href="mailto:support@inviteaura.in" style="color:#8B2F58;text-decoration:none;">support@inviteaura.in</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <p style="margin:16px 0 0;font-size:12px;color:#999;text-align:center;">&copy; 2026 InviteAura. All rights reserved.</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+function buildIssueText(opts) {
+  return `Hi ${opts.customerName},
+
+Thank you for your payment. Unfortunately, due to a technical issue on our side, we could not finish creating and hosting your invitation.
+
+Please don't worry — your payment is safe and you do not need to pay again. Our team has been notified and will reach out to you shortly to complete your invitation.
+${opts.paymentId ? `
+Payment reference: ${opts.paymentId}
+` : ''}
+If you'd like to reach us sooner, simply reply to this email or write to support@inviteaura.in.
+
+If any update or change is needed to your invitation, please reply to this email without changing the subject, so our team can find your order quickly.
+
+We sincerely apologise for the trouble and thank you for your patience.
+
+Warm regards,
+Team InviteAura
+
+support@inviteaura.in`;
+}
+
+async function sendPaymentIssueEmail(opts) {
+  const attemptId = (opts && opts.attemptId) || generateAttemptId();
+  const email = String(opts && opts.email || '').trim().toLowerCase();
+  const paymentId = String(opts && opts.paymentId || '').trim();
+  const customerName = String(opts && opts.customerName || 'there').trim() || 'there';
+  const senderEmail = 'support@inviteaura.in';
+
+  if (!validateEmail(email)) {
+    const err = new Error('A valid customer email address is required.');
+    err.code = 'INVALID_EMAIL';
+    err.attemptId = attemptId;
+    throw err;
+  }
+
+  const dedupeKey = paymentId || email;
+  if (apologised.has(dedupeKey)) {
+    console.log(`[EMAIL][${attemptId}] payment-issue already sent, skipping`);
+    return { success: true, accepted: true, alreadySent: true, attemptId: attemptId, recipient: maskEmail(email) };
+  }
+
+  const smtp = getSmtpConfig();
+  if (!smtp.ok) {
+    const err = new Error(smtp.error);
+    err.code = 'SMTP_NOT_CONFIGURED';
+    err.attemptId = attemptId;
+    throw err;
+  }
+
+  /* The support team's copy carries the details needed to follow up. */
+  const support = smtp.user || senderEmail;
+
+  console.log(`[EMAIL][${attemptId}] payment-issue START`, {
+    recipient: maskEmail(email),
+    paymentId: paymentId || 'none',
+    orderId: (opts && opts.orderId) || 'none',
+    reason: (opts && opts.reason) || 'unknown'
+  });
+
+  const transporter = nodemailer.createTransport(smtp.config);
+  const info = await transporter.sendMail({
+    from: smtp.from,
+    to: email,
+    bcc: support,
+    sender: senderEmail,
+    replyTo: senderEmail,
+    messageId: `<${attemptId}@inviteaura.in>`,
+    subject: 'We\'re sorry — a technical issue with your InviteAura invitation',
+    text: buildIssueText({ customerName: customerName, paymentId: paymentId }),
+    html: buildIssueHtml({ customerName: customerName, paymentId: paymentId }),
+    headers: {
+      'X-Mailer': 'InviteAura Platform Mailer',
+      'X-Entity-Ref-ID': attemptId,
+      'X-InviteAura-Payment-Id': paymentId || 'none',
+      'X-InviteAura-Order-Id': String((opts && opts.orderId) || 'none'),
+      'X-InviteAura-Failure': String((opts && opts.reason) || 'unknown').slice(0, 200)
+    }
+  });
+
+  const accepted = Array.isArray(info.accepted) ? info.accepted : [];
+  const ok = accepted.map(function (a) { return String(a).toLowerCase(); }).includes(email);
+  console.log(`[EMAIL][${attemptId}] payment-issue ${ok ? 'accepted' : 'rejected'}: ${String(info.response || '').trim()}`);
+
+  if (ok) apologised.add(dedupeKey);
+  return {
+    success: ok,
+    accepted: ok,
+    rejected: !ok,
+    recipient: maskEmail(email),
+    messageId: info.messageId || '',
+    attemptId: attemptId
+  };
+}
+
+/* ====================================================================
    Direct HTTP entry point for Vercel /api/send-email
    ==================================================================== */
 function isOwnInvitationUrl(value, req) {
@@ -460,6 +626,38 @@ async function httpHandler(req, res) {
     }
   }
   body = body || {};
+
+  /* The paid-but-failed apology, requested by the Create page when its
+     publish never got an answer. A genuine Razorpay signature is required,
+     so only someone who really paid can trigger it. */
+  if (body.type === 'payment-issue') {
+    const paid = require('./_payment').gate(body);
+    if (!paid.ok || !paid.paymentId) {
+      return json(res, 402, { error: paid.error || 'A verified payment is required.' });
+    }
+    const issueGate = await require('./_limit').check(req, 'mail');
+    if (!issueGate.ok) {
+      res.setHeader('Retry-After', String(issueGate.retryAfter));
+      return json(res, 429, { error: 'Too many emails sent. Please try again later.' });
+    }
+    try {
+      const result = await sendPaymentIssueEmail({
+        email: body.email,
+        customerName: body.customerName,
+        paymentId: paid.paymentId,
+        orderId: body.razorpay_order_id,
+        reason: body.reason
+      });
+      return json(res, result.success ? 200 : 422, result);
+    } catch (err) {
+      console.error('[EMAIL] payment-issue failed:', { error: err.message, code: err.code, to: maskEmail(body.email) });
+      return json(res, err.code === 'INVALID_EMAIL' ? 400 : 503, {
+        success: false,
+        attemptId: err.attemptId || 'EMAIL-UNKNOWN',
+        error: err.message || 'Unable to send email'
+      });
+    }
+  }
 
   /* This endpoint is public (the "resend email" button), so it must not
      become an open mail relay: it only sends links to invitations hosted
@@ -519,5 +717,6 @@ async function entry(reqOrOpts, maybeRes) {
 
 module.exports = entry;
 module.exports.sendInvitationEmail = sendInvitationEmail;
+module.exports.sendPaymentIssueEmail = sendPaymentIssueEmail;
 module.exports.handler = httpHandler;
 module.exports.generateAttemptId = generateAttemptId;

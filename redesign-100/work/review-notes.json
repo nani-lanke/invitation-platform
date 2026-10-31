@@ -1,0 +1,188 @@
+[
+ {
+  "slug": "bengali-alpona",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "nepali-bihe",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "kanchipuram-silk",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "kutch-mirrorwork",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "golden-celebration",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "haldi-sunshine",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "mehendi-ceremony",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "jain-vivah",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "cinematic-love-story",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "maharaja-palace",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "sri-lankan-poruwa",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "pastel-garden",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "coastal-vows",
+  "asset": "corner",
+  "issue": "FLUX drew a thin card/paper edge line beside the flowers (detected visually and by work/edgecheck.py)",
+  "action": "regenerated with a prompt without \"card\" + \"no paper, no frame, no border lines\""
+ },
+ {
+  "slug": "kasavu-gold-border",
+  "asset": "crest",
+  "issue": "cloth rendered as maroon satin, not cream kasavu",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "shankha-pola",
+  "asset": "crest",
+  "issue": "image contained garbled printed text (card)",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "gamosa-weave",
+  "asset": "crest",
+  "issue": "cloth rendered maroon, not white gamosa",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "udaipur-romance",
+  "asset": "crest",
+  "issue": "shapeless marble blob",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "sangeet-evening",
+  "asset": "crest",
+  "issue": "ghungroo strand too thin to read as a crest",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "baraat-procession",
+  "asset": "crest",
+  "issue": "malformed horse head",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "vidaai-farewell",
+  "asset": "crest",
+  "issue": "red cloth on a box, did not read as a doli",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "botanical-press",
+  "asset": "crest",
+  "issue": "grey paper rectangle instead of a fern spray",
+  "action": "regenerated with a corrected brief"
+ },
+ {
+  "slug": "anand-karaj",
+  "asset": "venue",
+  "issue": "portrait of a figure on the palki; regenerated without portraits out of religious respect",
+  "action": "regenerated"
+ },
+ {
+  "slug": "baraat-procession",
+  "asset": "venue",
+  "issue": "people (band/groom) visible",
+  "action": "regenerated without people"
+ },
+ {
+  "slug": "kutch-mirrorwork",
+  "asset": "footer",
+  "issue": "a standing person in the salt desert",
+  "action": "regenerated as an empty landscape"
+ },
+ {
+  "slug": "talambralu-pearls",
+  "asset": "corner",
+  "issue": "flagged by edgecheck (low density) - false positive, sparse pearl strands by design",
+  "action": "kept after visual check"
+ },
+ {
+  "slug": "kasavu-gold-border",
+  "asset": "crest",
+  "issue": "2nd round: white cloth keyed away with the white background; re-rendered on a dark background (@dark)",
+  "action": "regenerated"
+ },
+ {
+  "slug": "gamosa-weave",
+  "asset": "crest",
+  "issue": "2nd round: white cloth keyed away; re-rendered on a dark background (@dark)",
+  "action": "regenerated"
+ },
+ {
+  "slug": "udaipur-romance",
+  "asset": "crest",
+  "issue": "2nd round: marble shrine contained a statue; re-rendered as an empty chhatri on a dark background",
+  "action": "regenerated"
+ },
+ {
+  "slug": "baraat-procession",
+  "asset": "crest",
+  "issue": "2nd round: silver horse elongated/distorted; re-rendered as a brass caparisoned horse statuette",
+  "action": "regenerated"
+ },
+ {
+  "slug": "botanical-press",
+  "asset": "crest",
+  "issue": "2nd-4th round: crest brief itself asked for paper (arch layout uses the crest brief); brief changed to a single fern frond, thread removed",
+  "action": "regenerated"
+ },
+ {
+  "slug": "kutch-mirrorwork",
+  "asset": "footer",
+  "issue": "2nd round: empty salt flat was nearly blank",
+  "action": "regenerated with salt-pattern texture and dusk sky"
+ }
+]

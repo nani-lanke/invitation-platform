@@ -197,6 +197,10 @@ module.exports = async function handler(req, res) {
     });
   }
 
+  /* Set once the payment is verified, so a later failure can tell the
+     customer (and support) that their paid invitation hit a problem. */
+  let paid = null;
+
   try {
     const gate = await limit.check(req);
 
@@ -226,6 +230,9 @@ module.exports = async function handler(req, res) {
     const payment = paymentGate(body);
     if (!payment.ok) {
       return json(res, 402, { error: payment.error });
+    }
+    if (payment.paymentId) {
+      paid = { paymentId: payment.paymentId, orderId: body.razorpay_order_id, email: body.email, name: body.hostName || body.title };
     }
 
     await unstageAll(body);
@@ -593,12 +600,32 @@ module.exports = async function handler(req, res) {
       err
     );
 
+    /* Paid but not hosted: apologise and alert support. Never fatal. */
+    let apologySent = false;
+    if (paid && paid.email) {
+      try {
+        const sorry = await sendInvitationEmail.sendPaymentIssueEmail({
+          email: paid.email,
+          customerName: paid.name,
+          paymentId: paid.paymentId,
+          orderId: paid.orderId,
+          reason: 'publish failed: ' + (err && err.message)
+        });
+        apologySent = !!(sorry && sorry.success);
+      } catch (mailErr) {
+        console.error('[EMAIL] payment-issue email failed:', mailErr.message);
+      }
+    }
+
     return json(res, 500, {
-      error:
-        'The invitation could not be published. ' +
-        'If you are setting this up, set ' +
-        'ALLOW_CHECK=1 and open /api/check — ' +
-        'it names the step that failed.'
+      apologySent: apologySent,
+      error: paid
+        ? 'Your payment was received, but a technical issue stopped your invitation from being published. ' +
+          (apologySent ? 'We have emailed you — our team will reach out shortly.' : 'Our team will reach out shortly.')
+        : 'The invitation could not be published. ' +
+          'If you are setting this up, set ' +
+          'ALLOW_CHECK=1 and open /api/check — ' +
+          'it names the step that failed.'
     });
   }
 };

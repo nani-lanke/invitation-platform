@@ -17,8 +17,3 @@ Thumbs.db
 
 .vercel
 .env*
-
-# Generated source images and local working files
-/ai-generated/comfyui-raw/
-/redesign-100/work/
-/lineart-work/raw/

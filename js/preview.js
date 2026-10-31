@@ -1340,7 +1340,9 @@
       var target = qs('.invitation, .preview-frame__img', frame);
       if (target) {
         target.style.transformOrigin = 'top center';
-        target.style.transform = zoom === 1 ? '' : 'scale(' + zoom + ')';
+        // The individual `scale` property, not `transform`: the card's entrance
+        // animation (fill-mode both) holds `transform` and would override it.
+        target.style.scale = zoom === 1 ? '' : String(zoom);
         target.style.marginBottom = zoom > 1 ? ((zoom - 1) * 100) + '%' : '';
       }
       if (levelOut) levelOut.textContent = Math.round(zoom * 100) + '%';

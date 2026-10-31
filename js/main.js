@@ -819,6 +819,8 @@
 
   function initMisc() {
     qsa('[data-year]').forEach(function (n) { n.textContent = new Date().getFullYear(); });
+    // Site version shown in every footer; bump here on each release.
+    qsa('[data-version]').forEach(function (n) { n.textContent = '1.0.0'; });
 
     qsa('a[target="_blank"]').forEach(function (a) {
       var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);

@@ -1,0 +1,548 @@
+- generic [active] [ref=f2e1]:
+  - link "Skip to main content" [ref=f2e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=f2e3]:
+    - navigation "Main navigation" [ref=f2e4]:
+      - link "InviteAura home" [ref=f2e5] [cursor=pointer]:
+        - /url: index.html
+        - img "InviteAura" [ref=f2e6]
+      - generic [ref=f2e7]:
+        - button "Switch to light mode" [pressed] [ref=f2e8] [cursor=pointer]
+        - button "Open navigation menu" [ref=f2e9] [cursor=pointer]
+  - main [ref=f2e14]:
+    - generic [ref=f2e17]:
+      - generic [ref=f2e18]:
+        - paragraph [ref=f2e19]: 963 designs · 17 occasions · free to try
+        - heading "Create Beautiful Invitations Everyone Will Remember" [level=1] [ref=f2e24]:
+          - text: Create Beautiful Invitations
+          - generic [ref=f2e25]: Everyone Will Remember
+        - paragraph [ref=f2e26]: Design, personalise and share stunning digital invitations for every special occasion — weddings, birthdays, baby showers, house warmings, festivals and corporate events.
+        - generic [ref=f2e27]:
+          - link "Explore Invitations" [ref=f2e28] [cursor=pointer]:
+            - /url: templates.html
+          - link "Create Invitation" [ref=f2e33] [cursor=pointer]:
+            - /url: create.html
+        - generic [ref=f2e38]:
+          - generic [aria-hidden] [ref=f2e39]:
+            - generic [ref=f2e40]: RP
+            - generic [ref=f2e41]: AK
+            - generic [ref=f2e42]: SM
+            - generic [ref=f2e43]: +
+          - generic [ref=f2e44]: Loved by hosts planning weddings, first birthdays and everything in between.
+        - generic [ref=f2e45]:
+          - generic [ref=f2e46]:
+            - strong [ref=f2e47]: 963+
+            - text: Ready-made templates
+          - generic [ref=f2e48]:
+            - strong [ref=f2e49]: "17"
+            - text: Event categories
+          - generic [ref=f2e50]:
+            - strong [ref=f2e51]: 60s
+            - text: To your first draft
+      - group "Featured invitation templates" [ref=f2e53]:
+        - link "Ganesh Chaturthi festival invitation — preview this template" [ref=f2e54] [cursor=pointer]:
+          - /url: preview.html?template=ganpati-bappa
+        - link "Little Miracle baby shower invitation — preview this template" [ref=f2e55] [cursor=pointer]:
+          - /url: preview.html?template=little-miracle
+        - link "Royal Wedding invitation — preview this template" [ref=f2e56] [cursor=pointer]:
+          - /url: preview.html?template=royal-wedding
+    - generic [ref=f2e58]:
+      - generic [ref=f2e59]:
+        - heading "Everything You Need for Your Special Event ✦" [level=2] [ref=f2e60]
+        - paragraph [ref=f2e61]: One link carries your whole invitation — the design, the details, the directions and the countdown. Guests open it on any phone, no app required.
+      - group "Twelve features — scroll sideways, or use the arrow keys, to see them all" [ref=f2e62]:
+        - article [ref=f2e63]:
+          - heading "Beautiful Templates" [level=3] [ref=f2e70]
+          - paragraph [ref=f2e71]: Over three hundred hand-designed cards across seventeen occasions, from royal wedding gold to neon birthday nights.
+        - article [ref=f2e72]:
+          - heading "Easy Customisation" [level=3] [ref=f2e77]
+          - paragraph [ref=f2e78]: Change names, dates, colours and fonts in a live editor. What you see is exactly what your guests receive.
+        - article [ref=f2e79]:
+          - heading "Mobile Friendly" [level=3] [ref=f2e83]
+          - paragraph [ref=f2e84]: Built mobile-first and tested from 320px upward, so the card looks right on the oldest phone in the family.
+        - article [ref=f2e85]:
+          - heading "Share Anywhere" [level=3] [ref=f2e92]
+          - paragraph [ref=f2e93]: One link works on WhatsApp, Facebook, Telegram, email and SMS. Copy it once and send it everywhere.
+        - article [ref=f2e94]:
+          - heading "Event Countdown" [level=3] [ref=f2e99]
+          - paragraph [ref=f2e100]: A live timer ticks down to the moment — days, hours, minutes and seconds, updating on every open.
+        - article [ref=f2e101]:
+          - heading "Photo Gallery" [level=3] [ref=f2e107]
+          - paragraph [ref=f2e108]: Add up to six photos of the couple, the baby or the venue and they appear right inside the invitation.
+        - article [ref=f2e109]:
+          - heading "Google Maps" [level=3] [ref=f2e114]
+          - paragraph [ref=f2e115]: A Directions button opens the venue in the guest's own maps app — no more copying addresses by hand.
+        - article [ref=f2e116]:
+          - heading "Background Music" [level=3] [ref=f2e122]
+          - paragraph [ref=f2e123]: Upload your own track. Guests start it with one tap on the music button, so it never plays unasked.
+        - article [ref=f2e124]:
+          - heading "QR Code" [level=3] [ref=f2e131]
+          - paragraph [ref=f2e132]: Print the generated QR on your paper card so anyone can scan straight through to the digital version.
+        - article [ref=f2e133]:
+          - heading "Fast & Lightweight" [level=3] [ref=f2e137]
+          - paragraph [ref=f2e138]: No heavy frameworks and no tracking scripts — the whole page is a few hundred kilobytes and loads instantly.
+        - article [ref=f2e139]:
+          - heading "Live Through Your Event" [level=3] [ref=f2e144]
+          - paragraph [ref=f2e145]: Host once for ₹99. The link stays live until 31 days after your event, then the card and host page are deleted automatically — no renewals and no per-guest charges.
+    - generic [ref=f2e147]:
+      - generic [ref=f2e148]:
+        - heading "An Invitation for Every Occasion" [level=2] [ref=f2e149]
+        - paragraph [ref=f2e150]: Pick the moment you are celebrating and we will show you only the designs that suit it.
+      - group "Popular categories — scroll sideways, or use the arrow keys, to see them all" [ref=f2e151]:
+        - article [ref=f2e152]:
+          - generic [ref=f2e153]:
+            - img "Wedding invitation designs" [ref=f2e154]
+            - generic [ref=f2e155]: 255 templates
+          - generic [ref=f2e156]:
+            - heading "Wedding" [level=3] [ref=f2e157]
+            - paragraph [ref=f2e158]: Timeless designs for the biggest day — from grand royal frames to quiet minimal type.
+            - link "Browse Wedding" [ref=f2e159] [cursor=pointer]:
+              - /url: templates.html?category=wedding
+        - article [ref=f2e163]:
+          - generic [ref=f2e164]:
+            - img "Festival invitation designs" [ref=f2e165]
+            - generic [ref=f2e166]: 129 templates
+          - generic [ref=f2e167]:
+            - heading "Festival" [level=3] [ref=f2e168]
+            - paragraph [ref=f2e169]: Diwali, Pongal, Eid, Christmas and Navratri greetings in full colour.
+            - link "Browse Festival" [ref=f2e170] [cursor=pointer]:
+              - /url: templates.html?category=festival
+        - article [ref=f2e174]:
+          - generic [ref=f2e175]:
+            - img "Birthday invitation designs" [ref=f2e176]
+            - generic [ref=f2e177]: 78 templates
+          - generic [ref=f2e178]:
+            - heading "Birthday" [level=3] [ref=f2e179]
+            - paragraph [ref=f2e180]: Playful cards for every age — balloons, crowns, rockets and neon nights.
+            - link "Browse Birthday" [ref=f2e181] [cursor=pointer]:
+              - /url: templates.html?category=birthday
+        - article [ref=f2e185]:
+          - generic [ref=f2e186]:
+            - img "Reception invitation designs" [ref=f2e187]
+            - generic [ref=f2e188]: 51 templates
+          - generic [ref=f2e189]:
+            - heading "Reception" [level=3] [ref=f2e190]
+            - paragraph [ref=f2e191]: Evening-ready layouts with string lights, gold foil and celebration energy.
+            - link "Browse Reception" [ref=f2e192] [cursor=pointer]:
+              - /url: templates.html?category=reception
+        - article [ref=f2e196]:
+          - generic [ref=f2e197]:
+            - img "Engagement invitation designs" [ref=f2e198]
+            - generic [ref=f2e199]: 45 templates
+          - generic [ref=f2e200]:
+            - heading "Engagement" [level=3] [ref=f2e201]
+            - paragraph [ref=f2e202]: Announce the promise with elegant ring motifs and soft romantic palettes.
+            - link "Browse Engagement" [ref=f2e203] [cursor=pointer]:
+              - /url: templates.html?category=engagement
+        - article [ref=f2e207]:
+          - generic [ref=f2e208]:
+            - img "Anniversary invitation designs" [ref=f2e209]
+            - generic [ref=f2e210]: 45 templates
+          - generic [ref=f2e211]:
+            - heading "Anniversary" [level=3] [ref=f2e212]
+            - paragraph [ref=f2e213]: Mark one year or fifty with florals, laurels and jubilee gold.
+            - link "Browse Anniversary" [ref=f2e214] [cursor=pointer]:
+              - /url: templates.html?category=anniversary
+        - article [ref=f2e218]:
+          - generic [ref=f2e219]:
+            - img "Party invitation designs" [ref=f2e220]
+            - generic [ref=f2e221]: 45 templates
+          - generic [ref=f2e222]:
+            - heading "Party" [level=3] [ref=f2e223]
+            - paragraph [ref=f2e224]: House parties, get-togethers and reunions — casual and fun.
+            - link "Browse Party" [ref=f2e225] [cursor=pointer]:
+              - /url: templates.html?category=party
+        - article [ref=f2e229]:
+          - generic [ref=f2e230]:
+            - img "College Events invitation designs" [ref=f2e231]
+            - generic [ref=f2e232]: 39 templates
+          - generic [ref=f2e233]:
+            - heading "College Events" [level=3] [ref=f2e234]
+            - paragraph [ref=f2e235]: Fests, symposiums and cultural nights with bold campus energy.
+            - link "Browse College Events" [ref=f2e236] [cursor=pointer]:
+              - /url: templates.html?category=college-events
+        - article [ref=f2e240]:
+          - generic [ref=f2e241]:
+            - img "Redesigned Collection invitation designs" [ref=f2e242]
+            - generic [ref=f2e243]: 100 templates
+          - generic [ref=f2e244]:
+            - heading "Redesigned Collection" [level=3] [ref=f2e245]
+            - paragraph [ref=f2e246]: New artwork for 100 wedding designs — regional, ritual, royal and botanical. Each one is its own design; the originals are unchanged.
+            - link "Browse Redesigned Collection" [ref=f2e247] [cursor=pointer]:
+              - /url: templates.html?collection=redesign-100
+      - paragraph [ref=f2e251]:
+        - link "View all 17 categories" [ref=f2e252] [cursor=pointer]:
+          - /url: categories.html
+    - generic [ref=f2e257]:
+      - generic [ref=f2e258]:
+        - heading "Templates Hosts Keep Coming Back To" [level=2] [ref=f2e259]
+        - paragraph [ref=f2e260]: Hover any card to preview it, or open the full gallery to search and filter all 963 designs.
+      - group "Featured templates — scroll sideways, or use the arrow keys, to see them all" [ref=f2e261]:
+        - article [ref=f2e262]:
+          - generic [ref=f2e263]:
+            - img "Royal Wedding — Wedding invitation template" [ref=f2e264]
+            - button "Save Royal Wedding to favourites" [ref=f2e265] [cursor=pointer]
+            - generic [ref=f2e268]:
+              - link "Preview" [ref=f2e269] [cursor=pointer]:
+                - /url: preview.html?template=royal-wedding
+              - link "Use This Template" [ref=f2e274] [cursor=pointer]:
+                - /url: create.html?template=royal-wedding
+          - generic [ref=f2e280]:
+            - heading "Royal Wedding" [level=3] [ref=f2e281]
+            - paragraph [ref=f2e282]: Wedding
+        - article [ref=f2e283]:
+          - generic [ref=f2e284]:
+            - img "Class of 2026 — Graduation invitation template" [ref=f2e285]
+            - button "Save Class of 2026 to favourites" [ref=f2e286] [cursor=pointer]
+            - generic [ref=f2e289]:
+              - link "Preview" [ref=f2e290] [cursor=pointer]:
+                - /url: preview.html?template=class-of-2026
+              - link "Use This Template" [ref=f2e295] [cursor=pointer]:
+                - /url: create.html?template=class-of-2026
+          - generic [ref=f2e301]:
+            - heading "Class of 2026" [level=3] [ref=f2e302]
+            - paragraph [ref=f2e303]: Graduation
+        - article [ref=f2e304]:
+          - generic [ref=f2e305]:
+            - img "Luxury Editorial — Wedding invitation template" [ref=f2e306]
+            - button "Save Luxury Editorial to favourites" [ref=f2e307] [cursor=pointer]
+            - generic [ref=f2e310]:
+              - link "Preview" [ref=f2e311] [cursor=pointer]:
+                - /url: preview.html?template=luxury-editorial
+              - link "Use This Template" [ref=f2e316] [cursor=pointer]:
+                - /url: create.html?template=luxury-editorial
+          - generic [ref=f2e322]:
+            - heading "Luxury Editorial" [level=3] [ref=f2e323]
+            - paragraph [ref=f2e324]: Wedding
+        - article [ref=f2e325]:
+          - generic [ref=f2e326]:
+            - img "Kids Birthday — Birthday invitation template" [ref=f2e327]
+            - button "Save Kids Birthday to favourites" [ref=f2e328] [cursor=pointer]
+            - generic [ref=f2e331]:
+              - link "Preview" [ref=f2e332] [cursor=pointer]:
+                - /url: preview.html?template=kids-birthday
+              - link "Use This Template" [ref=f2e337] [cursor=pointer]:
+                - /url: create.html?template=kids-birthday
+          - generic [ref=f2e343]:
+            - heading "Kids Birthday" [level=3] [ref=f2e344]
+            - paragraph [ref=f2e345]: Birthday
+        - article [ref=f2e346]:
+          - generic [ref=f2e347]:
+            - img "Elegant Floral — Wedding invitation template" [ref=f2e348]
+            - button "Save Elegant Floral to favourites" [ref=f2e349] [cursor=pointer]
+            - generic [ref=f2e352]:
+              - link "Preview" [ref=f2e353] [cursor=pointer]:
+                - /url: preview.html?template=elegant-floral
+              - link "Use This Template" [ref=f2e358] [cursor=pointer]:
+                - /url: create.html?template=elegant-floral
+          - generic [ref=f2e364]:
+            - heading "Elegant Floral" [level=3] [ref=f2e365]
+            - paragraph [ref=f2e366]: Wedding
+        - article [ref=f2e367]:
+          - generic [ref=f2e368]:
+            - img "Proud Graduate — Graduation invitation template" [ref=f2e369]
+            - button "Save Proud Graduate to favourites" [ref=f2e370] [cursor=pointer]
+            - generic [ref=f2e373]:
+              - link "Preview" [ref=f2e374] [cursor=pointer]:
+                - /url: preview.html?template=proud-graduate
+              - link "Use This Template" [ref=f2e379] [cursor=pointer]:
+                - /url: create.html?template=proud-graduate
+          - generic [ref=f2e385]:
+            - heading "Proud Graduate" [level=3] [ref=f2e386]
+            - paragraph [ref=f2e387]: Graduation
+        - article [ref=f2e388]:
+          - generic [ref=f2e389]:
+            - img "Until We Meet Again — Farewell invitation template" [ref=f2e390]
+            - button "Save Until We Meet Again to favourites" [ref=f2e391] [cursor=pointer]
+            - generic [ref=f2e394]:
+              - link "Preview" [ref=f2e395] [cursor=pointer]:
+                - /url: preview.html?template=until-we-meet-again
+              - link "Use This Template" [ref=f2e400] [cursor=pointer]:
+                - /url: create.html?template=until-we-meet-again
+          - generic [ref=f2e406]:
+            - heading "Until We Meet Again" [level=3] [ref=f2e407]
+            - paragraph [ref=f2e408]: Farewell
+        - article [ref=f2e409]:
+          - generic [ref=f2e410]:
+            - img "College Annual Day — College Events invitation template" [ref=f2e411]
+            - button "Save College Annual Day to favourites" [ref=f2e412] [cursor=pointer]
+            - generic [ref=f2e415]:
+              - link "Preview" [ref=f2e416] [cursor=pointer]:
+                - /url: preview.html?template=college-annual-day
+              - link "Use This Template" [ref=f2e421] [cursor=pointer]:
+                - /url: create.html?template=college-annual-day
+          - generic [ref=f2e427]:
+            - heading "College Annual Day" [level=3] [ref=f2e428]
+            - paragraph [ref=f2e429]: College Events
+      - paragraph [ref=f2e430]:
+        - link "Browse all templates" [ref=f2e431] [cursor=pointer]:
+          - /url: templates.html
+    - generic [ref=f2e437]:
+      - heading "See It, Then Send It" [level=2] [ref=f2e439]
+      - generic [ref=f2e440]:
+        - generic [ref=f2e441]:
+          - heading "This Is What Your Guests Will See" [level=3] [ref=f2e442]
+          - paragraph [ref=f2e443]: A real, working invitation — not a screenshot. The countdown below is running right now, the Directions button opens Google Maps, and the whole thing fits in a single link.
+          - list [ref=f2e444]:
+            - listitem [ref=f2e445]:
+              - generic [ref=f2e449]: Opens instantly on any phone, tablet or laptop
+            - listitem [ref=f2e450]:
+              - generic [ref=f2e454]: No app to install and no account for your guests
+            - listitem [ref=f2e455]:
+              - generic [ref=f2e459]: Readable in both light and dark mode
+            - listitem [ref=f2e460]:
+              - generic [ref=f2e464]: Works in every Indian and international time zone
+            - listitem [ref=f2e465]:
+              - generic [ref=f2e469]: Photos and countdown included — beautifully designed and ready to share
+            - listitem [ref=f2e470]:
+              - generic [ref=f2e474]: Stays live until 31 days after your event
+            - listitem [ref=f2e475]:
+              - generic [ref=f2e479]: Every function in one place — Haldi, Mehndi, wedding and reception with their own date and time
+            - listitem [ref=f2e480]:
+              - generic [ref=f2e484]: Venue photo and a one-tap Google Maps button, so nobody gets lost on the day
+            - listitem [ref=f2e485]:
+              - generic [ref=f2e489]: Call Host and Share buttons, so guests can reach you or pass it on to family
+          - generic [ref=f2e490]:
+            - link "Make mine" [ref=f2e491] [cursor=pointer]:
+              - /url: create.html
+            - link "Open full preview" [ref=f2e496] [cursor=pointer]:
+              - /url: preview.html?template=royal-wedding
+          - generic [ref=f2e501]:
+            - generic [ref=f2e502]:
+              - heading "One Link. Every Guest." [level=3] [ref=f2e503]
+              - paragraph [ref=f2e504]: Your invitation gets a short, readable web address. Send it to one person or five hundred — it costs the same and never lands in a spam folder.
+              - generic [ref=f2e505]:
+                - code [ref=f2e506]: Creating your invitation link…
+                - button "Copy Link" [ref=f2e507] [cursor=pointer]
+              - paragraph [ref=f2e512]: You are invited to a wedding on 25 December 2026.
+              - generic [ref=f2e513]:
+                - button "WhatsApp" [ref=f2e514] [cursor=pointer]
+                - button "Facebook" [ref=f2e519] [cursor=pointer]
+                - button "Telegram" [ref=f2e523] [cursor=pointer]
+                - button "Email" [ref=f2e528] [cursor=pointer]
+                - button "QR Code" [ref=f2e533] [cursor=pointer]
+                - button "More…" [ref=f2e540] [cursor=pointer]
+              - paragraph [ref=f2e547]: Your guests just tap the link — the invitation opens in their browser with the countdown, venue, programme and your families' names, exactly as shown here. Nothing to download, nothing to sign up for.
+              - paragraph [ref=f2e548]: Free invitations use a shareable link with your invitation data. Hosting at its own short address, live until 31 days after the event, is available for ₹99.
+            - generic "QR code linking to the sample invitation" [ref=f2e549]
+        - article "Wedding invitation preview" [ref=f2e552]:
+          - paragraph [ref=f2e555]: A ROYAL CELEBRATION
+          - paragraph [ref=f2e556]: With the blessings of our honoured elders
+          - heading "THE GRAND WEDDING" [level=3] [ref=f2e557]
+          - paragraph [ref=f2e561]: We graciously invite you to the royal wedding of
+          - generic [ref=f2e562]:
+            - generic [ref=f2e563]:
+              - heading "Groom" [level=2] [ref=f2e564]
+              - paragraph [ref=f2e565]:
+                - generic [ref=f2e566]: Son of
+                - text: Groom’s Parents
+            - generic [ref=f2e567]: "&"
+            - generic [ref=f2e569]:
+              - heading "Bride" [level=2] [ref=f2e570]
+              - paragraph [ref=f2e571]:
+                - generic [ref=f2e572]: Daughter of
+                - text: Bride’s Parents
+          - heading "Save the date" [level=3] [ref=f2e573]
+          - generic [ref=f2e581]:
+            - generic [ref=f2e582]:
+              - generic [ref=f2e583]: FRIDAY
+              - generic [ref=f2e584]: "25"
+            - generic [ref=f2e585]:
+              - generic [ref=f2e586]: DECEMBER
+              - generic [ref=f2e587]: "2026"
+            - generic [ref=f2e588]:
+              - generic [ref=f2e589]: AT
+              - generic [ref=f2e590]: 6:30 PM
+          - heading "A new chapter begins" [level=3] [ref=f2e591]
+          - paragraph [ref=f2e598]: Kindly grace the festivities with your gracious presence. An evening of grandeur, music and celebration awaits.
+          - timer "Time remaining until the event" [ref=f2e599]:
+            - generic [ref=f2e600]:
+              - generic [ref=f2e601]: "55"
+              - text: Days
+            - generic [ref=f2e602]:
+              - generic [ref=f2e603]: "08"
+              - text: Hours
+            - generic [ref=f2e604]:
+              - generic [ref=f2e605]: "32"
+              - text: Minutes
+            - generic [ref=f2e606]:
+              - generic [ref=f2e607]: "49"
+              - text: Seconds
+          - heading "The celebration venue" [level=3] [ref=f2e609]
+          - generic [ref=f2e617]:
+            - figure [ref=f2e618]:
+              - img "Grand Palace Hall" [ref=f2e619]
+            - generic [ref=f2e620]:
+              - paragraph [ref=f2e621]: Grand Palace Hall
+              - paragraph [ref=f2e622]: Anna Salai, Chennai, Tamil Nadu 600002
+              - link "View on Google Maps" [ref=f2e623] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=Chennai
+          - heading "Our wedding celebrations" [level=3] [ref=f2e628]
+          - generic [ref=f2e637]:
+            - generic [ref=f2e638]:
+              - strong [ref=f2e640]: Haldi
+              - generic [ref=f2e641]: Thursday, 24 Dec 2026
+              - generic [ref=f2e642]: 10:00 AM
+            - generic [ref=f2e643]:
+              - strong [ref=f2e645]: Mehndi
+              - generic [ref=f2e646]: Thursday, 24 Dec 2026
+              - generic [ref=f2e647]: 5:00 PM
+            - generic [ref=f2e648]:
+              - strong [ref=f2e650]: Wedding Ceremony
+              - generic [ref=f2e651]: Friday, 25 Dec 2026
+              - generic [ref=f2e652]: 10:30 AM
+            - generic [ref=f2e653]:
+              - strong [ref=f2e655]: Reception
+              - generic [ref=f2e656]: Friday, 25 Dec 2026
+              - generic [ref=f2e657]: 6:30 PM
+          - generic [ref=f2e658]:
+            - heading "With the blessings of our families" [level=3] [ref=f2e659]
+            - generic [ref=f2e668]:
+              - generic [ref=f2e669]:
+                - strong [ref=f2e670]: Groom's Family
+                - paragraph [ref=f2e671]: Groom’s Parents and Family
+              - generic [ref=f2e673]:
+                - strong [ref=f2e674]: Bride's Family
+                - paragraph [ref=f2e675]: Bride’s Parents and Family
+            - generic [ref=f2e676]:
+              - paragraph [ref=f2e680]: Your blessings mean the world
+              - paragraph [ref=f2e681]: We look forward to celebrating this special day with you.
+          - generic [ref=f2e682]:
+            - link "Call Host" [ref=f2e683] [cursor=pointer]:
+              - /url: tel:0000000000
+            - button "Share" [ref=f2e687] [cursor=pointer]
+          - paragraph [ref=f2e694]: Created with InviteAura
+    - generic [ref=f2e697]:
+      - generic [ref=f2e698]:
+        - paragraph [ref=f2e699]: How it works
+        - heading "Four Steps From Idea to Inbox ✦" [level=2] [ref=f2e700]
+        - paragraph [ref=f2e701]: Most hosts finish their first draft in about a minute. You can come back and refine it as often as you like.
+      - group "Four steps — scroll sideways, or use the arrow keys, to see them all" [ref=f2e702]:
+        - article [ref=f2e703]:
+          - generic [ref=f2e704]: "1"
+          - heading "Choose the Occasion & Design" [level=3] [ref=f2e705]
+          - paragraph [ref=f2e706]: Pick what you are celebrating, from weddings to corporate events, and choose one of the designs made for it. Every template is free to use, and you can switch design at any time.
+        - article [ref=f2e707]:
+          - generic [ref=f2e708]: "2"
+          - heading "Add Your Details" [level=3] [ref=f2e709]
+          - paragraph [ref=f2e710]: Names, date, time, venue and your message, then the programme, photos, music, colours and fonts. The card beside the form updates as you type, so nothing is a surprise.
+        - article [ref=f2e711]:
+          - generic [ref=f2e712]: "3"
+          - heading "Download It Free" [level=3] [ref=f2e713]
+          - paragraph [ref=f2e714]: Your invitation is ready. Download the card as a JPG or the full page as .html and send it yourself, at no cost and with no account.
+        - article [ref=f2e715]:
+          - generic [ref=f2e716]: "4"
+          - heading "Host It Online for ₹99" [level=3] [ref=f2e717]
+          - paragraph [ref=f2e718]: "Optional: pay ₹99 once and your invitation goes live at its own link, with a QR code and a WhatsApp preview. Guests just tap and open it."
+    - generic [ref=f2e720]:
+      - heading "Frequently Asked Questions" [level=2] [ref=f2e722]
+      - generic [ref=f2e723]:
+        - generic [ref=f2e724]:
+          - button "What is a digital invitation?" [ref=f2e725] [cursor=pointer]
+          - region "What is a digital invitation?":
+            - paragraph [ref=f2e730]: A digital invitation is a web page instead of a printed card. It holds your names, date, venue and photos, and lives at its own link. Guests open it in their browser — there is no app to install and nothing to download.
+        - generic [ref=f2e731]:
+          - button "How do I create an invitation?" [ref=f2e732] [cursor=pointer]
+          - region "How do I create an invitation?":
+            - paragraph [ref=f2e737]:
+              - text: Open the
+              - link "Create Invitation" [ref=f2e738] [cursor=pointer]:
+                - /url: create.html
+              - text: "page and follow its steps: choose the occasion, fill in the details and any programme, add photos or music if you want them, pick a design, then download it free or host it online for ₹99. The card updates as you type."
+        - generic [ref=f2e739]:
+          - button "Can I share the invitation on WhatsApp?" [ref=f2e740] [cursor=pointer]
+          - region "Can I share the invitation on WhatsApp?":
+            - paragraph [ref=f2e745]: Yes. Every invitation gets a plain web link, and there is a one-tap WhatsApp button that opens your chat list with the message already written. The same link works on Telegram, Facebook, email and SMS.
+        - generic [ref=f2e746]:
+          - button "How long will my invitation stay active?" [ref=f2e747] [cursor=pointer]
+          - region "How long will my invitation stay active?":
+            - paragraph [ref=f2e752]:
+              - text: Until 31 days after your event. The ₹99 hosting plan is a one-time payment; the invitation stays live through the event and for 31 days after it, then the card, host page and uploaded photos are deleted automatically. See the
+              - link "Pricing" [ref=f2e753] [cursor=pointer]:
+                - /url: pricing.html
+              - text: page for details.
+        - generic [ref=f2e754]:
+          - button "Can I use it today?" [ref=f2e755] [cursor=pointer]
+          - region "Can I use it today?":
+            - paragraph [ref=f2e760]: Yes. Create, preview and download any invitation for free, with your draft saved in your own browser — no account needed. When you want it online, pay ₹99 once through Razorpay and it goes live at its own link until 31 days after your event, with a confirmation email.
+        - generic [ref=f2e761]:
+          - button "Can guests open it on an old phone?" [ref=f2e762] [cursor=pointer]
+          - region "Can guests open it on an old phone?":
+            - paragraph [ref=f2e767]: Yes. The layout is tested from 320px wide upward and the whole page is only a few hundred kilobytes, so it opens quickly even on a slow connection.
+      - paragraph [ref=f2e768]:
+        - link "Read all 16 questions" [ref=f2e769] [cursor=pointer]:
+          - /url: faq.html
+    - generic [ref=f2e775]:
+      - heading "Your Event Deserves a Beautiful Invitation ✦" [level=2] [ref=f2e776]
+      - paragraph [ref=f2e777]: Start with any template, change everything, and see the result as you type. Nothing to install and nothing to pay while you are trying it out.
+      - generic [ref=f2e778]:
+        - link "Create Your Invitation" [ref=f2e779] [cursor=pointer]:
+          - /url: create.html
+        - link "Browse Templates" [ref=f2e784] [cursor=pointer]:
+          - /url: templates.html
+  - contentinfo [ref=f2e789]:
+    - generic [ref=f2e790]:
+      - generic [ref=f2e791]:
+        - generic [ref=f2e792]:
+          - link [ref=f2e793] [cursor=pointer]:
+            - /url: index.html
+            - img "InviteAura" [ref=f2e794]
+          - paragraph [ref=f2e795]: Beautiful digital invitations for every special moment.
+          - generic [ref=f2e796]:
+            - generic "InviteAura on Facebook" [ref=f2e797]
+            - generic "InviteAura on Instagram" [ref=f2e800]
+            - generic "InviteAura on WhatsApp" [ref=f2e805]
+            - generic "InviteAura on Telegram" [ref=f2e809]
+        - generic [ref=f2e813]:
+          - heading "Explore" [level=3] [ref=f2e814]
+          - list [ref=f2e815]:
+            - listitem [ref=f2e816]:
+              - link "Home" [ref=f2e817] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=f2e818]:
+              - link "Templates" [ref=f2e819] [cursor=pointer]:
+                - /url: templates.html
+            - listitem [ref=f2e820]:
+              - link "Categories" [ref=f2e821] [cursor=pointer]:
+                - /url: categories.html
+            - listitem [ref=f2e822]:
+              - link "Create Invitation" [ref=f2e823] [cursor=pointer]:
+                - /url: create.html
+        - generic [ref=f2e824]:
+          - heading "Learn" [level=3] [ref=f2e825]
+          - list [ref=f2e826]:
+            - listitem [ref=f2e827]:
+              - link "Pricing" [ref=f2e828] [cursor=pointer]:
+                - /url: pricing.html
+            - listitem [ref=f2e829]:
+              - link "How It Works" [ref=f2e830] [cursor=pointer]:
+                - /url: index.html#how-it-works
+            - listitem [ref=f2e831]:
+              - link "FAQ" [ref=f2e832] [cursor=pointer]:
+                - /url: faq.html
+            - listitem [ref=f2e833]:
+              - link "About" [ref=f2e834] [cursor=pointer]:
+                - /url: about.html
+        - generic [ref=f2e835]:
+          - heading "Company" [level=3] [ref=f2e836]
+          - list [ref=f2e837]:
+            - listitem [ref=f2e838]:
+              - link "Privacy Policy" [ref=f2e839] [cursor=pointer]:
+                - /url: privacy.html
+            - listitem [ref=f2e840]:
+              - link "Terms & Conditions" [ref=f2e841] [cursor=pointer]:
+                - /url: terms.html
+            - listitem [ref=f2e842]:
+              - link "Template Preview" [ref=f2e843] [cursor=pointer]:
+                - /url: preview.html
+      - generic [ref=f2e844]:
+        - paragraph [ref=f2e845]:
+          - text: © 2026 InviteAura. All rights reserved.
+          - generic [ref=f2e846]: · v1.0.0
+        - navigation "Legal" [ref=f2e847]:
+          - link "Contact" [ref=f2e848] [cursor=pointer]:
+            - /url: mailto:help.lovelyaz@gmail.com
+          - link "Privacy" [ref=f2e849] [cursor=pointer]:
+            - /url: privacy.html
+          - link "Terms" [ref=f2e850] [cursor=pointer]:
+            - /url: terms.html

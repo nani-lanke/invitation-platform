@@ -449,17 +449,29 @@
       });
     }).then(function (res) {
       console.log('[publish] /api/publish responded with', res.status);
+      /* userFixable: the user can correct it and retry; anything else is
+         a technical failure the Create page apologises for when paid. */
+      function fail(message, extra) {
+        var e = new Error(message);
+        e.userFixable = true;
+        if (extra) for (var k in extra) e[k] = extra[k];
+        return e;
+      }
       if (res.status === 404 || res.status === 405) {
-        throw new Error('This copy of the site cannot publish — it is served as ' +
-                        'static files. Deploy it to Vercel, or use Download page folder.');
+        throw fail('This copy of the site cannot publish — it is served as ' +
+                   'static files. Deploy it to Vercel, or use Download page folder.');
       }
       if (res.status === 413) {
-        throw new Error('Your photos and music are too large to publish together. Remove one and try again.');
+        throw fail('Your photos and music are too large to publish together. Remove one and try again.');
       }
       return res.json().catch(function () {
         throw new Error('The server sent back something unreadable.');
       }).then(function (body) {
-        if (!res.ok) throw new Error(body.error || 'Publishing failed.');
+        if (!res.ok) {
+          var e = fail(body.error || 'Publishing failed.', { apologySent: !!body.apologySent });
+          if (res.status >= 500) e.userFixable = false;
+          throw e;
+        }
         return body;
       });
     });

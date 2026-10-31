@@ -775,6 +775,35 @@
 
   var publishInFlight = false;
 
+  /* Paid, but a technical failure stopped the publish (upload, network,
+     server error) and the server did not already apologise: ask it to
+     email the customer and support. The server checks the payment
+     signature, and sends at most one per payment. Never blocks the UI. */
+  function sendPaymentIssueEmail(err) {
+    var pay = state.hostingPayment;
+    if (!pay || !pay.razorpay_signature) return;
+    if (err && (err.userFixable || err.apologySent)) return;
+    var data = previewData();
+    if (!data.email) return;
+    fetch('api/send-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: 'payment-issue',
+        email: data.email,
+        customerName: data.hostName || data.title || '',
+        reason: String((err && err.message) || 'unknown').slice(0, 200),
+        razorpay_order_id: pay.razorpay_order_id,
+        razorpay_payment_id: pay.razorpay_payment_id,
+        razorpay_signature: pay.razorpay_signature
+      })
+    }).then(function (res) {
+      if (res.ok) {
+        IH.toast.info('Your payment is safe. We\'ve emailed you — our team will reach out shortly.', { title: 'Sorry for the trouble' });
+      }
+    }).catch(function () { /* best effort */ });
+  }
+
   /* The one path to the server, used by both the ₹99 hosting flow on the
      Hosting step and the manual "Publish it now" button below — so there is
      exactly one call to IH.publish.toServer and exactly one place that
@@ -855,6 +884,7 @@
           IH.toast.error('We couldn\'t publish your invitation yet. Please try again.', { title: 'Not live yet' });
         } else {
           IH.toast.error(err.message, { title: 'Not published' });
+          sendPaymentIssueEmail(err);
         }
         throw err;
       }).then(function (result) {
