@@ -80,13 +80,17 @@
     '      if (!target || (!window.htmlToImage && !window.html2canvas)) return;',
     '      btn.classList.add("is-busy");',
     '      var skip = function (el) { return el.id === "site-dl-btn" || el.id === "site-music-btn"; };',
-    '      var viaH2C = function () { return html2canvas(target, { scale: 2, useCORS: true, backgroundColor: "#ffffff", ignoreElements: skip })',
+    '      /* A whole host page is tall; phones (Safari) refuse a canvas over ~16M',
+    '         pixels, so the scale drops from 2 only as far as the page needs. */',
+    '      var area = Math.max(1, target.scrollWidth * target.scrollHeight);',
+    '      var ratio = Math.max(0.5, Math.min(2, Math.sqrt(16e6 / area)));',
+    '      var viaH2C = function () { return html2canvas(target, { scale: ratio, useCORS: true, backgroundColor: "#ffffff", ignoreElements: skip })',
     '        .then(function (canvas) { return canvas.toDataURL("image/jpeg", 0.92); }); };',
     '      /* html-to-image lets the browser paint the page itself, as the editor\'s',
     '         JPG does, so veils, fades and blend modes match the preview. */',
     '      var shot = window.htmlToImage',
     '        ? (document.fonts ? document.fonts.ready : Promise.resolve()).then(fontCss).then(function (css) {',
-    '            return htmlToImage.toJpeg(target, { pixelRatio: 2, quality: 0.92, backgroundColor: "#ffffff", style: { margin: "0" }, fontEmbedCSS: css,',
+    '            return htmlToImage.toJpeg(target, { pixelRatio: ratio, quality: 0.92, backgroundColor: "#ffffff", style: { margin: "0" }, fontEmbedCSS: css,',
     '              filter: function (el) { return !(el.id && skip(el)); } });',
     '          }).catch(function (err) { console.warn("Native capture failed, using html2canvas", err); return viaH2C(); })',
     '        : viaH2C();',
@@ -2254,10 +2258,10 @@
 
     /* Celebrations events list */
     var celebrations = [
-      { enabled: !!(data.haldiEnabled || ((isTeluguPelli || isTamilThirumanam) && data.haldiDate)), title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: isTeluguPelli ? tpAsset('tp-icon-haldi.png') : up + 'images/ceremony-icons/haldi.png', fallback: up + 'images/templates/haldi-ceremony.svg' },
-      { enabled: !!(data.mehndiEnabled || ((isTeluguPelli || isTamilThirumanam) && data.mehndiDate)), title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: isTeluguPelli ? tpAsset('tp-icon-gorintaku.png') : up + 'images/ceremony-icons/mehndi.png', fallback: up + 'images/templates/mehendi-ceremony.svg' },
-      { enabled: !!(data.ceremonyEnabled || ((isTeluguPelli || isTamilThirumanam) && (data.ceremonyDate || data.date))), title: 'WEDDING', date: data.ceremonyDate || data.date, time: data.ceremonyTime || data.time, image: isTeluguPelli ? tpAsset('tp-icon-mangalsutra.png') : up + 'images/ceremony-icons/wedding.png', fallback: up + 'images/templates/wedding-day-mandap.svg' },
-      { enabled: !!(data.receptionEnabled || ((isTeluguPelli || isTamilThirumanam) && data.receptionDate)), title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: isTeluguPelli ? tpAsset('tp-icon-kalasam.png') : up + 'images/ceremony-icons/reception.png', fallback: up + 'images/templates/reception-evening.svg' }
+      { enabled: !!data.haldiEnabled, title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: isTeluguPelli ? tpAsset('tp-icon-haldi.png') : up + 'images/ceremony-icons/haldi.png', fallback: up + 'images/templates/haldi-ceremony.svg' },
+      { enabled: !!data.mehndiEnabled, title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: isTeluguPelli ? tpAsset('tp-icon-gorintaku.png') : up + 'images/ceremony-icons/mehndi.png', fallback: up + 'images/templates/mehendi-ceremony.svg' },
+      { enabled: !!data.ceremonyEnabled, title: 'WEDDING', date: data.ceremonyDate || data.date, time: data.ceremonyTime || data.time, image: isTeluguPelli ? tpAsset('tp-icon-mangalsutra.png') : up + 'images/ceremony-icons/wedding.png', fallback: up + 'images/templates/wedding-day-mandap.svg' },
+      { enabled: !!data.receptionEnabled, title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: isTeluguPelli ? tpAsset('tp-icon-kalasam.png') : up + 'images/ceremony-icons/reception.png', fallback: up + 'images/templates/reception-evening.svg' }
     ].filter(function (e) { return e.enabled; });
     /* Engagement cards on the design engine: engagement ceremony names. */
     var wdEngaged = data.eventType === 'engagement' || !!(wdSpec && wdSpec.occasion === 'engagement');
@@ -2775,9 +2779,10 @@
       body.push('</button>');
     }
 
-    /* Download the invitation section as a JPG; sits above the music button.
+    /* Download the whole host page as a JPG — every section the preview
+       shows, not just the hero; sits above the music button.
        Only on a paid invitation's pages (opts.download). */
-    if (opts && opts.download) body.push(dlButton(state, '.site-hero', !!data.musicFile));
+    if (opts && opts.download) body.push(dlButton(state, 'body', !!data.musicFile));
 
     /* Grand Ceremonial Landscape for Telugu Pelli & Tamil Thirumanam */
     if (isTeluguPelli) {
