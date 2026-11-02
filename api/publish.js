@@ -275,7 +275,12 @@ module.exports = async function handler(req, res) {
 
     const file = slug + '-' + id + '.html';
     const path = FOLDER + '/' + file;
-    const publicUrl = root + path;
+    const hostUrl = root + path;
+    /* The link the customer gets (email, success screen) is the page they
+       previewed: the card (the editor's default view) or the host page. */
+    const publicUrl = state.previewMode === 'host'
+      ? hostUrl
+      : root + FOLDER + '/' + IH.exportPage.CARD_DIR + '/' + file;
 
     const split =
       IH.exportPage.extractAssets(
@@ -348,7 +353,7 @@ module.exports = async function handler(req, res) {
           // Paid (the gate above passed): the page gets the download button.
           download: true,
 
-          canonical: publicUrl,
+          canonical: hostUrl,
 
           image:
             mainPhoto
