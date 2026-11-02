@@ -1188,6 +1188,14 @@
       if (!on || !required) IH.validate.clearError(input);
     });
 
+    /* The swap row has no input of its own, so it follows the bride's name. */
+    var swapRow = qs('[data-swap-row]', root);
+    if (swapRow) {
+      var swapOn = shown.indexOf('brideName') !== -1;
+      swapRow.hidden = !swapOn;
+      swapRow.style.display = swapOn ? '' : 'none';
+    }
+
     var titleInput = qs('[name="title"]', root);
     if (titleInput) titleInput.placeholder = TITLE_PLACEHOLDERS[type] || TITLE_PLACEHOLDERS.other;
 
