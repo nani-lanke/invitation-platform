@@ -510,7 +510,9 @@ module.exports = async function handler(req, res) {
         try {
           const emailRes = await sendInvitationEmail({
             email: state.email,
-            invitationUrl: publicUrl,
+            /* The host page; send-email adds its card page beside it, so
+               the mail always carries both, whichever view was previewed. */
+            invitationUrl: hostUrl,
             invitationName: invitationName,
             customerName: customerName,
             expiresAt: expiresAt,
