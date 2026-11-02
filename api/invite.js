@@ -103,6 +103,20 @@ function cacheFor(left) {
   return 'public, max-age=0, s-maxage=' + hold + ', stale-while-revalidate=' + Math.max(0, left - hold);
 }
 
+/* Pages published before the download button saved the whole host page
+   carry their own copy of it, aimed at the hero alone. Retarget it to the
+   whole page as it is served, with the scale capped by page area so a tall
+   page still fits a phone's canvas limit — the same as js/export.js now. */
+const FIT_RATIO = 'Math.max(0.5, Math.min(2, Math.sqrt(16e6 / Math.max(1, target.scrollWidth * target.scrollHeight))))';
+
+function upgradeDownload(html) {
+  if (html.indexOf('data-target=".site-hero"') < 0) return html;
+  return html
+    .replace('data-target=".site-hero"', 'data-target="body"')
+    .replace('html2canvas(target, { scale: 2,', 'html2canvas(target, { scale: ' + FIT_RATIO + ',')
+    .replace('htmlToImage.toJpeg(target, { pixelRatio: 2,', 'htmlToImage.toJpeg(target, { pixelRatio: ' + FIT_RATIO + ',');
+}
+
 module.exports = async function handler(req, res) {
   if (req.method === 'OPTIONS') {
     res.status(204);
@@ -149,7 +163,7 @@ module.exports = async function handler(req, res) {
       res.setHeader('Cache-Control', cacheFor(left));
       res.setHeader('X-Content-Type-Options', 'nosniff');
       Object.keys(CORS).forEach(function (k) { res.setHeader(k, CORS[k]); });
-      res.end(req.method === 'HEAD' ? '' : found.text);
+      res.end(req.method === 'HEAD' ? '' : upgradeDownload(found.text));
       return;
     }
 
