@@ -1,4 +1,4 @@
-﻿/* ====================================================================
+/* ====================================================================
    export.js — the invitation as a single downloadable file
 
    The site is deployed to GitHub Pages, which is static hosting: nothing
@@ -59,15 +59,41 @@
     '  (function () {',
     '    var btn = document.getElementById("site-dl-btn");',
     '    if (!btn) return;',
+    '    /* Google Fonts CSS is cross-origin, so it is fetched and its Latin,',
+    '       Telugu and Tamil files inlined, as the editor\'s JPG does. */',
+    '    var fontCssPromise = null;',
+    '    function fontCss() {',
+    '      var link = document.querySelector("link[href*=\\"fonts.googleapis.com/css\\"]");',
+    '      if (!link || !window.fetch) return Promise.resolve("");',
+    '      var toDataUrl = function (blob) { return new Promise(function (ok, no) { var r = new FileReader(); r.onload = function () { ok(r.result); }; r.onerror = no; r.readAsDataURL(blob); }); };',
+    '      return fontCssPromise || (fontCssPromise = fetch(link.href).then(function (res) { return res.text(); }).then(function (css) {',
+    '        var faces = (css.match(/@font-face\\s*\\{[^}]*\\}/g) || []).filter(function (f) { return !/unicode-range/.test(f) || /U\\+0000-00FF|U\\+0C00|U\\+0B8/i.test(f); });',
+    '        return Promise.all(faces.map(function (f) {',
+    '          var m = f.match(/url\\((https:[^)]+)\\)/);',
+    '          if (!m) return f;',
+    '          return fetch(m[1]).then(function (res) { return res.blob(); }).then(toDataUrl).then(function (d) { return f.replace(m[1], d); }).catch(function () { return ""; });',
+    '        }));',
+    '      }).then(function (list) { return list.join("\\n"); }).catch(function () { fontCssPromise = null; return ""; }));',
+    '    }',
     '    btn.addEventListener("click", function () {',
     '      var target = document.querySelector(btn.getAttribute("data-target"));',
-    '      if (!target || !window.html2canvas) return;',
+    '      if (!target || (!window.htmlToImage && !window.html2canvas)) return;',
     '      btn.classList.add("is-busy");',
-    '      html2canvas(target, { scale: 2, useCORS: true, backgroundColor: "#ffffff",',
-    '        ignoreElements: function (el) { return el.id === "site-dl-btn" || el.id === "site-music-btn"; } })',
-    '        .then(function (canvas) {',
+    '      var skip = function (el) { return el.id === "site-dl-btn" || el.id === "site-music-btn"; };',
+    '      var viaH2C = function () { return html2canvas(target, { scale: 2, useCORS: true, backgroundColor: "#ffffff", ignoreElements: skip })',
+    '        .then(function (canvas) { return canvas.toDataURL("image/jpeg", 0.92); }); };',
+    '      /* html-to-image lets the browser paint the page itself, as the editor\'s',
+    '         JPG does, so veils, fades and blend modes match the preview. */',
+    '      var shot = window.htmlToImage',
+    '        ? (document.fonts ? document.fonts.ready : Promise.resolve()).then(fontCss).then(function (css) {',
+    '            return htmlToImage.toJpeg(target, { pixelRatio: 2, quality: 0.92, backgroundColor: "#ffffff", style: { margin: "0" }, fontEmbedCSS: css,',
+    '              filter: function (el) { return !(el.id && skip(el)); } });',
+    '          }).catch(function (err) { console.warn("Native capture failed, using html2canvas", err); return viaH2C(); })',
+    '        : viaH2C();',
+    '      shot',
+    '        .then(function (url) {',
     '          var a = document.createElement("a");',
-    '          a.href = canvas.toDataURL("image/jpeg", 0.92);',
+    '          a.href = url;',
     '          a.download = btn.getAttribute("data-file") || "invitation.jpg";',
     '          document.body.appendChild(a); a.click(); a.remove();',
     '        })',
@@ -2789,7 +2815,7 @@
       (opts && opts.skipMainJs ? '' : '<script src="' + up + 'js/main.js" defer><\/script>'),
       '<script src="' + up + 'js/countdown.js" defer><\/script>',
       '<script src="' + up + 'js/share.js" defer><\/script>',
-      (opts && opts.download ? '<script src="' + HTML2CANVAS + '" defer><\/script>' : ''),
+      (opts && opts.download ? '<script src="' + up + 'js/html-to-image.js" defer></script><script src="' + HTML2CANVAS + '" defer></script>' : ''),
       '<script>',
       '  /* Starts the live countdown, share, mobile nav, lightbox, music toggle. */',
       escScript(INLINE_JS),
@@ -2804,12 +2830,14 @@
   }
 
   function buildCardHtml(state, opts) {
-    var up = (opts && typeof opts.up === 'string') ? opts.up : '';
-    var data = resolvePaths(state, up);
     var assetPrefix = 'https://www.inviteaura.in/';
     if (typeof window !== 'undefined' && window.location && window.location.origin && window.location.origin !== 'null' && window.location.protocol !== 'file:') {
       assetPrefix = window.location.origin + '/';
     }
+    /* A downloaded file has no css/ or js/ folder beside it, so without an
+       `up` the stylesheet and scripts come from the site itself. */
+    var up = (opts && typeof opts.up === 'string') ? opts.up : assetPrefix;
+    var data = resolvePaths(state, up);
     data.assetPrefix = assetPrefix;
     var who = personName(state) || 'Our Invitation';
     var title = who + ' — Invitation';
@@ -2864,7 +2892,7 @@
     if (opts && opts.download) body.push(dlButton(state, '.invitation', !!music));
 
     var tail = [
-      (opts && opts.download ? '<script src="' + HTML2CANVAS + '" defer></script>' : ''),
+      (opts && opts.download ? '<script src="' + up + 'js/html-to-image.js" defer></script><script src="' + HTML2CANVAS + '" defer></script>' : ''),
       '<script src="' + up + 'js/main.js" defer></script>',
       '<script src="' + up + 'js/countdown.js" defer></script>',
       '<script>',
@@ -2905,7 +2933,13 @@
 
   function download(state) {
     var name = fileName(state);
-    downloadBlob(name, buildCardHtml(state));
+    /* The page the editor was previewing; through IH.exportPage so the
+       redesign collection's wrapped builders are used. */
+    var origin = (window.location && window.location.origin && window.location.origin !== 'null' &&
+      window.location.protocol !== 'file:') ? window.location.origin + '/' : 'https://www.inviteaura.in/';
+    downloadBlob(name, state && state.previewMode === 'host'
+      ? IH.exportPage.buildHtml(state, { up: origin })
+      : IH.exportPage.buildCardHtml(state));
     return { mode: 'download', file: name, path: FOLDER + '/' + name };
   }
 
