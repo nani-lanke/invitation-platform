@@ -201,15 +201,20 @@
                 <label class="field__label" for="f-bride">Bride’s name <span class="req" data-req aria-hidden="true">*</span></label>
                 <input class="input" id="f-bride" name="brideName" type="text" data-label="Bride’s name" placeholder="Bride" autocomplete="off">
                 <p class="field__error" role="alert"></p>
-                <button class="btn btn--ghost btn--sm" type="button" data-swap-names style="margin-top:var(--space-2)">
-                  <i data-icon="refresh-cw" data-icon-size="16"></i><span>Swap Bride &amp; Groom Names</span>
-                </button>
               </div>
 
               <div class="field">
                 <label class="field__label" for="f-bride-parents">DAUGHTER OF</label>
                 <input class="input" id="f-bride-parents" name="brideParents" type="text" data-label="DAUGHTER OF" placeholder="Bride&#39;s parents&#39; names" autocomplete="off">
                 <p class="field__error" role="alert"></p>
+              </div>
+
+              <!-- Own full-width row so it follows DAUGHTER OF on mobile and
+                   sits centred under both columns on wider screens. -->
+              <div class="field field--full" data-swap-row style="align-items:center">
+                <button class="btn btn--ghost btn--sm" type="button" data-swap-names>
+                  <i data-icon="refresh-cw" data-icon-size="16"></i><span>Swap Bride &amp; Groom Names</span>
+                </button>
               </div>
 
               <!-- One named person / couple: birthdays, naming ceremonies,
