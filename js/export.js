@@ -1448,7 +1448,9 @@
       '/* Gallery */',
       '.site-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;grid-auto-flow:dense}',
       '.site-gallery__item{position:relative;margin:0;overflow:hidden;border-radius:18px;aspect-ratio:1;cursor:zoom-in;background:color-mix(in srgb,var(--site-p) 14%,var(--site-b1))}',
-      '.site-gallery__item img{width:100%;height:100%;object-fit:contain;transition:transform .6s ease}',
+      /* Out of flow so the grid, not the photo's own height, sizes each tile
+         (a tall photo in the 3-photo layout's two-row tile stretched it). */
+      '.site-gallery__item img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .6s ease}',
       '.site-gallery__item:hover img,.site-gallery__item:focus-visible img{transform:scale(1.07)}',
       '.site-gallery__item:focus-visible{outline:3px solid var(--site-p);outline-offset:2px}',
       '.site-gallery__zoom{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,transparent,rgba(20,10,25,.45));opacity:0;transition:opacity .3s ease;color:#fff}',
