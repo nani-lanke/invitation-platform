@@ -249,6 +249,13 @@
 
   var state = null;
 
+  /* host.html (the Host preview iframe) and card.html (Open card ↗) read
+     this first: a draft with photos and music can outgrow localStorage,
+     and then the saved copy is an older one with different images. It is
+     the Card preview's own data, so empty fields get the same placeholders
+     (an uploaded venue photo still shows before the venue name is typed). */
+  IH.editorDraft = function () { return state ? previewData() : null; };
+
   function defaultState() {
     return {
       eventType: 'wedding',
