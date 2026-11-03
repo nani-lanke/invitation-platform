@@ -1088,8 +1088,9 @@
   // Programme pictures: photo-real FLUX cut-outs (scripts/generate-event-icons.js),
   // one per EVENT_ICONS kind. `pre` is where images/ lives.
   function eventIconSrc(kind, pre) { return (pre || '') + 'images/event-icons/' + (EVENT_ICONS[kind] ? kind : 'star') + '.png'; }
-  function eventIcon(kind, pre) {
-    return '<img class="wd-event__icon wd-event__icon--photo" src="' + eventIconSrc(kind, pre) + '" alt="" aria-hidden="true" loading="lazy">';
+  // `alt` is the event title, already escaped. Still aria-hidden: the title is printed beside it.
+  function eventIcon(kind, pre, alt) {
+    return '<img class="wd-event__icon wd-event__icon--photo" src="' + eventIconSrc(kind, pre) + '" alt="' + (alt || '') + '" aria-hidden="true" loading="lazy">';
   }
 
   /* ---- Markup ------------------------------------------------------------ */
@@ -1316,7 +1317,7 @@
       html.push('<div class="wd-events wd-events--' + spec.events + ' wd-events--n' + events.length + '">' + events.map(function (e) {
         var ed = ctx.formatDate(e.date);
         var when = ed.full ? ed.weekday + ', ' + ed.day + ' ' + ed.month.slice(0, 3) + ' ' + ed.year : '';
-        return '<div class="wd-event">' + eventIcon(e.icon, pre) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
+        return '<div class="wd-event">' + eventIcon(e.icon, pre, esc(e.title)) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
           (when ? '<span class="wd-event__date">' + esc(when) + '</span>' : '') +
           (e.time ? '<span class="wd-event__time">' + esc(ctx.formatTime(e.time)) + '</span>' : '') + '</div>';
       }).join('') + '</div>');
@@ -1400,7 +1401,7 @@
       '<div class="wd-events wd-events--' + spec.events + ' wd-events--n' + events.length + '">' + events.map(function (e) {
         var ed = ctx.formatDate(e.date);
         var when = ed.full ? ed.weekday + ', ' + ed.day + ' ' + ed.month.slice(0, 3) + ' ' + ed.year : '';
-        return '<div class="wd-event">' + eventIcon(e.icon, pre) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
+        return '<div class="wd-event">' + eventIcon(e.icon, pre, esc(e.title)) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
           (when ? '<span class="wd-event__date">' + esc(when) + '</span>' : '') +
           (e.time ? '<span class="wd-event__time">' + esc(ctx.formatTime(e.time)) + '</span>' : '') + '</div>';
       }).join('') + '</div>';
