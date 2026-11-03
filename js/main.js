@@ -824,6 +824,8 @@
 
     qsa('a[target="_blank"]').forEach(function (a) {
       var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+      // Same-site previews (card.html, host.html) read the editor through window.opener.
+      if (rel.indexOf('opener') !== -1) return;
       if (rel.indexOf('noopener') === -1) rel.push('noopener');
       if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
       a.setAttribute('rel', rel.join(' '));
