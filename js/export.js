@@ -1,4 +1,4 @@
-﻿/* ====================================================================
+/* ====================================================================
    export.js — the invitation as a single downloadable file
 
    The site is deployed to GitHub Pages, which is static hosting: nothing
