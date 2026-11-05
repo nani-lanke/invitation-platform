@@ -15,12 +15,15 @@
 <meta property="og:title" content="InviteAura — Create Beautiful Digital Invitations Online">
 <meta property="og:description" content="Design, personalise and share stunning digital invitations for every special occasion. Free templates, live countdown, maps.">
 <meta property="og:url" content="https://www.inviteaura.in/">
-<meta property="og:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
+<meta property="og:image" content="https://www.inviteaura.in/images/hero/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="InviteAura — Create Beautiful Digital Invitations Online">
 <meta name="twitter:description" content="Design, personalise and share stunning digital invitations for every special occasion.">
-<meta name="twitter:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
+<meta name="twitter:image" content="https://www.inviteaura.in/images/hero/og-image.jpg">
  
 <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="images/logo/favicon-32.png" type="image/png" sizes="32x32">
@@ -38,13 +41,13 @@
 <script>/* Applies the saved theme before first paint to avoid a flash. */
 (function(){try{var s=JSON.parse(localStorage.getItem('inviteaura:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
 
-<script src="js/main.js?v=1.2" defer></script>
-<script src="js/templates.js?v=2.5" defer></script>
+<script src="js/main.js?v=1.4" defer></script>
+<script src="js/templates.js?v=2.7" defer></script>
 <script src="js/countdown.js?v=1.2" defer></script>
-<script src="js/wedding-designs.js?v=2.2" defer></script>
+<script src="js/wedding-designs.js?v=2.3" defer></script>
 <script src="js/redesign-collection-data.js?v=1.2" defer></script>
 <script src="js/redesign-collection.js?v=1.4" defer></script>
-<script src="js/preview.js?v=2.4" defer></script>
+<script src="js/preview.js?v=2.5" defer></script>
 <script src="js/share.js?v=1.3" defer></script>
 
 <script type="application/ld+json">
@@ -70,7 +73,7 @@
 
 <header class="site-header">
   <nav class="nav container container--wide" aria-label="Main navigation">
-    <a class="nav__brand" href="index.html" aria-label="InviteAura home">
+    <a class="nav__brand" href="/" aria-label="InviteAura home">
       <img src="images/logo/inviteaura-light.png" alt="InviteAura" class="nav__brand-logo" data-eager>
     </a>
 
@@ -80,7 +83,7 @@
           <i data-icon="close" data-icon-size="20"></i>
         </button>
       </li>
-      <li><a class="nav__link" href="index.html">Home</a></li>
+      <li><a class="nav__link" href="/">Home</a></li>
       <li><a class="nav__link" href="templates.html">Invitations</a></li>
       <li><a class="nav__link" href="categories.html">Categories</a></li>
       <li><a class="nav__link" href="pricing.html">Pricing</a></li>
@@ -125,12 +128,11 @@
           </div>
 
           <div class="hero__ticker">
-            <span class="hero__avatars" aria-hidden="true"><span>RP</span><span>AK</span><span>SM</span><span>+</span></span>
             <span>Loved by hosts planning weddings, first birthdays and everything in between.</span>
           </div>
 
           <div class="hero__stats">
-            <div class="hero__stat"><strong data-stat="templates" data-stat-plus>80</strong><span>Ready-made templates</span></div>
+            <div class="hero__stat"><strong data-stat="templates">963</strong><span>Ready-made templates</span></div>
             <div class="hero__stat"><strong data-stat="categories">17</strong><span>Event categories</span></div>
             <div class="hero__stat"><strong>60s</strong><span>To your first draft</span></div>
           </div>
@@ -143,13 +145,13 @@
           <!-- A hand of real cards from the catalogue, the most popular wedding design in front.
                Each card opens its full preview. -->
           <div class="hero__fan" role="group" aria-label="Featured invitation templates">
-            <a class="hero-fan__card hero-fan__card--far-l" href="preview.html?template=shubh-griha-pravesh" aria-label="Shubh Griha Pravesh housewarming invitation — preview this template"><img src="images/templates/shubh-griha-pravesh.jpg" alt="" width="840" height="1122" loading="lazy"></a>
-            <a class="hero-fan__card hero-fan__card--far-r" href="preview.html?template=royal-ring-ceremony" aria-label="Royal Ring Ceremony engagement invitation — preview this template"><img src="images/templates/royal-ring-ceremony.jpg" alt="" width="840" height="1122" loading="lazy"></a>
-            <a class="hero-fan__card hero-fan__card--back-l" href="preview.html?template=kids-birthday" aria-label="Kids Birthday invitation — preview this template"><img src="images/templates/kids-birthday.jpg" alt="" width="840" height="1122" loading="lazy"></a>
-            <a class="hero-fan__card hero-fan__card--back-r" href="preview.html?template=corporate-gala" aria-label="Corporate Gala invitation — preview this template"><img src="images/templates/corporate-gala.jpg" alt="" width="840" height="1122" loading="lazy"></a>
-            <a class="hero-fan__card hero-fan__card--mid-l" href="preview.html?template=ganpati-bappa" aria-label="Ganesh Chaturthi festival invitation — preview this template"><img src="images/templates/ganpati-bappa.jpg" alt="" width="840" height="1122" loading="lazy"></a>
-            <a class="hero-fan__card hero-fan__card--mid-r" href="preview.html?template=little-miracle" aria-label="Little Miracle baby shower invitation — preview this template"><img src="images/templates/little-miracle.jpg" alt="" width="840" height="1122" loading="lazy"></a>
-            <a class="hero-fan__card hero-fan__card--front" href="preview.html?template=royal-wedding" aria-label="Royal Wedding invitation — preview this template"><img src="images/templates/royal-wedding.jpg" alt="" width="840" height="1122" fetchpriority="high"></a>
+            <a class="hero-fan__card hero-fan__card--far-l" href="/templates/shubh-griha-pravesh" aria-label="Shubh Griha Pravesh housewarming invitation — preview this template"><img src="images/templates/shubh-griha-pravesh.jpg" alt="Shubh Griha Pravesh housewarming invitation" width="840" height="1122" loading="lazy"></a>
+            <a class="hero-fan__card hero-fan__card--far-r" href="/templates/royal-ring-ceremony" aria-label="Royal Ring Ceremony engagement invitation — preview this template"><img src="images/templates/royal-ring-ceremony.jpg" alt="Royal Ring Ceremony engagement invitation" width="840" height="1122" loading="lazy"></a>
+            <a class="hero-fan__card hero-fan__card--back-l" href="/templates/kids-birthday" aria-label="Kids Birthday invitation — preview this template"><img src="images/templates/kids-birthday.jpg" alt="Kids Birthday invitation" width="840" height="1122" loading="lazy"></a>
+            <a class="hero-fan__card hero-fan__card--back-r" href="/templates/corporate-gala" aria-label="Corporate Gala invitation — preview this template"><img src="images/templates/corporate-gala.jpg" alt="Corporate Gala invitation" width="840" height="1122" loading="lazy"></a>
+            <a class="hero-fan__card hero-fan__card--mid-l" href="/templates/ganpati-bappa" aria-label="Ganesh Chaturthi festival invitation — preview this template"><img src="images/templates/ganpati-bappa.jpg" alt="Ganesh Chaturthi festival invitation" width="840" height="1122" loading="lazy"></a>
+            <a class="hero-fan__card hero-fan__card--mid-r" href="/templates/little-miracle" aria-label="Little Miracle baby shower invitation — preview this template"><img src="images/templates/little-miracle.jpg" alt="Little Miracle baby shower invitation" width="840" height="1122" loading="lazy"></a>
+            <a class="hero-fan__card hero-fan__card--front" href="/templates/royal-wedding" aria-label="Royal Wedding invitation — preview this template"><img src="images/templates/royal-wedding.jpg" alt="Royal Wedding invitation" width="840" height="1122" fetchpriority="high"></a>
           </div>
         </div>
       </div>
@@ -167,7 +169,7 @@
       <div class="feature-grid rail" data-reveal-group
            role="group" tabindex="0"
            aria-label="Twelve features — scroll sideways, or use the arrow keys, to see them all">
-        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="palette"></i></div><h3>Beautiful Templates</h3><p>Over three hundred hand-designed cards across seventeen occasions, from royal wedding gold to neon birthday nights.</p></article>
+        <article class="feature" data-reveal><div class="feature__icon"><i data-icon="palette"></i></div><h3>Beautiful Templates</h3><p>963 hand-designed cards across 17 occasions, from royal wedding gold to neon birthday nights.</p></article>
         <article class="feature" data-reveal><div class="feature__icon"><i data-icon="wand"></i></div><h3>Easy Customisation</h3><p>Change names, dates, colours and fonts in a live editor. What you see is exactly what your guests receive.</p></article>
         <article class="feature" data-reveal><div class="feature__icon"><i data-icon="smartphone"></i></div><h3>Mobile Friendly</h3><p>Built mobile-first and tested from 320px upward, so the card looks right on the oldest phone in the family.</p></article>
         <article class="feature" data-reveal><div class="feature__icon"><i data-icon="share"></i></div><h3>Share Anywhere</h3><p>One link works on WhatsApp, Facebook, Telegram, email and SMS. Copy it once and send it everywhere.</p></article>
@@ -244,7 +246,7 @@
 
           <div class="btn-group" style="margin-top:var(--space-6)">
             <a class="btn btn--primary" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Make mine</span></a>
-            <a class="btn btn--ghost" href="preview.html?template=royal-wedding"><i data-icon="external-link" data-icon-size="18"></i><span>Open full preview</span></a>
+            <a class="btn btn--ghost" href="/templates/royal-wedding"><i data-icon="external-link" data-icon-size="18"></i><span>Open full preview</span></a>
           </div>
 
           <!-- Below the pitch, in the same column: the link that carries it.
@@ -255,7 +257,7 @@
               <p class="muted" style="margin:var(--space-3) 0 var(--space-5)">Your invitation gets a short, readable web address. Send it to one person or five hundred — it costs the same and never lands in a spam folder.</p>
 
               <div class="link-box">
-                <code data-share-link>Creating your invitation link…</code>
+                <code data-share-link>https://www.inviteaura.in/templates/royal-wedding</code>
                 <button class="btn btn--primary btn--sm" type="button" data-share="copy"><i data-icon="copy" data-icon-size="16"></i><span>Copy Link</span></button>
               </div>
               <p class="sr-only" data-share-text-source>You are invited to a wedding on 25 December 2026.</p>
@@ -391,7 +393,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="footer-brand__logo" href="index.html">
+        <a class="footer-brand__logo" href="/">
           <img src="images/logo/inviteaura-light.png" alt="InviteAura" class="footer-brand__logo-img" loading="lazy">
         </a>
         <p>Beautiful digital invitations for every special moment.</p>
@@ -406,7 +408,7 @@
       <div class="footer-col">
         <h3>Explore</h3>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="templates.html">Templates</a></li>
           <li><a href="categories.html">Categories</a></li>
           <li><a href="create.html">Create Invitation</a></li>
@@ -417,7 +419,7 @@
         <h3>Learn</h3>
         <ul>
           <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="/#how-it-works">How It Works</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
@@ -436,7 +438,7 @@
     <div class="footer-bottom">
       <p>&copy; <span data-year>2026</span> InviteAura. All rights reserved.<span class="footer-version">Version <span data-version>1.0.0</span></span></p>
       <nav aria-label="Legal">
-        <a href="mailto:help.lovelyaz@gmail.com">Contact</a>
+        <a href="mailto:support@inviteaura.in">Contact</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
         

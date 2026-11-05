@@ -130,6 +130,16 @@
     }
   };
 
+  /* A template's own page. /templates/<slug> is a Vercel rewrite
+     (api/template-page.js), so a local server falls back to preview.html. */
+  IH.cleanUrls = (function () {
+    try { return /(^|\.)inviteaura\.in$|\.vercel\.app$/.test(window.location.hostname); } catch (err) { return false; }
+  })();
+  IH.templateUrl = function (slug) {
+    var s = encodeURIComponent(slug);
+    return IH.cleanUrls ? '/templates/' + s : 'preview.html?template=' + s;
+  };
+
   /* ------------------------------------------------------------------
      3. Icons — inline SVG sprite (no icon font, no network request)
      ------------------------------------------------------------------ */
@@ -596,7 +606,9 @@
     // Mark the current page in the nav based on the file name.
     var here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
     qsa('.nav__link').forEach(function (link) {
-      var href = (link.getAttribute('href') || '').split('#')[0].split('/').pop().toLowerCase();
+      var raw = (link.getAttribute('href') || '').split('#')[0];
+      // Home links point at "/" (the canonical), which is index.html.
+      var href = (raw.split('/').pop() || (raw ? 'index.html' : '')).toLowerCase();
       if (href && href === here) link.setAttribute('aria-current', 'page');
     });
   }
@@ -822,8 +834,17 @@
     // Site version shown in every footer; bump here on each release.
     qsa('[data-version]').forEach(function (n) { n.textContent = '1.0.0'; });
 
+    // Pages link to /templates/<slug>; off Vercel that path does not exist.
+    if (!IH.cleanUrls) {
+      qsa('a[href^="/templates/"]').forEach(function (a) {
+        a.setAttribute('href', IH.templateUrl(a.getAttribute('href').slice(11).split(/[?#]/)[0]));
+      });
+    }
+
     qsa('a[target="_blank"]').forEach(function (a) {
       var rel = (a.getAttribute('rel') || '').split(/\s+/).filter(Boolean);
+      // Same-site previews (card.html, host.html) read the editor through window.opener.
+      if (rel.indexOf('opener') !== -1) return;
       if (rel.indexOf('noopener') === -1) rel.push('noopener');
       if (rel.indexOf('noreferrer') === -1) rel.push('noreferrer');
       a.setAttribute('rel', rel.join(' '));

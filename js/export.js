@@ -59,15 +59,45 @@
     '  (function () {',
     '    var btn = document.getElementById("site-dl-btn");',
     '    if (!btn) return;',
+    '    /* Google Fonts CSS is cross-origin, so it is fetched and its Latin,',
+    '       Telugu and Tamil files inlined, as the editor\'s JPG does. */',
+    '    var fontCssPromise = null;',
+    '    function fontCss() {',
+    '      var link = document.querySelector("link[href*=\\"fonts.googleapis.com/css\\"]");',
+    '      if (!link || !window.fetch) return Promise.resolve("");',
+    '      var toDataUrl = function (blob) { return new Promise(function (ok, no) { var r = new FileReader(); r.onload = function () { ok(r.result); }; r.onerror = no; r.readAsDataURL(blob); }); };',
+    '      return fontCssPromise || (fontCssPromise = fetch(link.href).then(function (res) { return res.text(); }).then(function (css) {',
+    '        var faces = (css.match(/@font-face\\s*\\{[^}]*\\}/g) || []).filter(function (f) { return !/unicode-range/.test(f) || /U\\+0000-00FF|U\\+0C00|U\\+0B8/i.test(f); });',
+    '        return Promise.all(faces.map(function (f) {',
+    '          var m = f.match(/url\\((https:[^)]+)\\)/);',
+    '          if (!m) return f;',
+    '          return fetch(m[1]).then(function (res) { return res.blob(); }).then(toDataUrl).then(function (d) { return f.replace(m[1], d); }).catch(function () { return ""; });',
+    '        }));',
+    '      }).then(function (list) { return list.join("\\n"); }).catch(function () { fontCssPromise = null; return ""; }));',
+    '    }',
     '    btn.addEventListener("click", function () {',
     '      var target = document.querySelector(btn.getAttribute("data-target"));',
-    '      if (!target || !window.html2canvas) return;',
+    '      if (!target || (!window.htmlToImage && !window.html2canvas)) return;',
     '      btn.classList.add("is-busy");',
-    '      html2canvas(target, { scale: 2, useCORS: true, backgroundColor: "#ffffff",',
-    '        ignoreElements: function (el) { return el.id === "site-dl-btn" || el.id === "site-music-btn"; } })',
-    '        .then(function (canvas) {',
+    '      var skip = function (el) { return el.id === "site-dl-btn" || el.id === "site-music-btn"; };',
+    '      /* A whole host page is tall; phones (Safari) refuse a canvas over ~16M',
+    '         pixels, so the scale drops from 2 only as far as the page needs. */',
+    '      var area = Math.max(1, target.scrollWidth * target.scrollHeight);',
+    '      var ratio = Math.max(0.5, Math.min(2, Math.sqrt(16e6 / area)));',
+    '      var viaH2C = function () { return html2canvas(target, { scale: ratio, useCORS: true, backgroundColor: "#ffffff", ignoreElements: skip })',
+    '        .then(function (canvas) { return canvas.toDataURL("image/jpeg", 0.92); }); };',
+    '      /* html-to-image lets the browser paint the page itself, as the editor\'s',
+    '         JPG does, so veils, fades and blend modes match the preview. */',
+    '      var shot = window.htmlToImage',
+    '        ? (document.fonts ? document.fonts.ready : Promise.resolve()).then(fontCss).then(function (css) {',
+    '            return htmlToImage.toJpeg(target, { pixelRatio: ratio, quality: 0.92, backgroundColor: "#ffffff", style: { margin: "0" }, fontEmbedCSS: css,',
+    '              filter: function (el) { return !(el.id && skip(el)); } });',
+    '          }).catch(function (err) { console.warn("Native capture failed, using html2canvas", err); return viaH2C(); })',
+    '        : viaH2C();',
+    '      shot',
+    '        .then(function (url) {',
     '          var a = document.createElement("a");',
-    '          a.href = canvas.toDataURL("image/jpeg", 0.92);',
+    '          a.href = url;',
     '          a.download = btn.getAttribute("data-file") || "invitation.jpg";',
     '          document.body.appendChild(a); a.click(); a.remove();',
     '        })',
@@ -1418,7 +1448,9 @@
       '/* Gallery */',
       '.site-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;grid-auto-flow:dense}',
       '.site-gallery__item{position:relative;margin:0;overflow:hidden;border-radius:18px;aspect-ratio:1;cursor:zoom-in;background:color-mix(in srgb,var(--site-p) 14%,var(--site-b1))}',
-      '.site-gallery__item img{width:100%;height:100%;object-fit:contain;transition:transform .6s ease}',
+      /* Out of flow so the grid, not the photo's own height, sizes each tile
+         (a tall photo in the 3-photo layout's two-row tile stretched it). */
+      '.site-gallery__item img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transition:transform .6s ease}',
       '.site-gallery__item:hover img,.site-gallery__item:focus-visible img{transform:scale(1.07)}',
       '.site-gallery__item:focus-visible{outline:3px solid var(--site-p);outline-offset:2px}',
       '.site-gallery__zoom{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,transparent,rgba(20,10,25,.45));opacity:0;transition:opacity .3s ease;color:#fff}',
@@ -2228,10 +2260,10 @@
 
     /* Celebrations events list */
     var celebrations = [
-      { enabled: !!(data.haldiEnabled || ((isTeluguPelli || isTamilThirumanam) && data.haldiDate)), title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: isTeluguPelli ? tpAsset('tp-icon-haldi.png') : up + 'images/ceremony-icons/haldi.png', fallback: up + 'images/templates/haldi-ceremony.svg' },
-      { enabled: !!(data.mehndiEnabled || ((isTeluguPelli || isTamilThirumanam) && data.mehndiDate)), title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: isTeluguPelli ? tpAsset('tp-icon-gorintaku.png') : up + 'images/ceremony-icons/mehndi.png', fallback: up + 'images/templates/mehendi-ceremony.svg' },
-      { enabled: !!(data.ceremonyEnabled || ((isTeluguPelli || isTamilThirumanam) && (data.ceremonyDate || data.date))), title: 'WEDDING', date: data.ceremonyDate || data.date, time: data.ceremonyTime || data.time, image: isTeluguPelli ? tpAsset('tp-icon-mangalsutra.png') : up + 'images/ceremony-icons/wedding.png', fallback: up + 'images/templates/wedding-day-mandap.svg' },
-      { enabled: !!(data.receptionEnabled || ((isTeluguPelli || isTamilThirumanam) && data.receptionDate)), title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: isTeluguPelli ? tpAsset('tp-icon-kalasam.png') : up + 'images/ceremony-icons/reception.png', fallback: up + 'images/templates/reception-evening.svg' }
+      { enabled: !!data.haldiEnabled, title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: isTeluguPelli ? tpAsset('tp-icon-haldi.png') : up + 'images/ceremony-icons/haldi.png', fallback: up + 'images/templates/haldi-ceremony.svg' },
+      { enabled: !!data.mehndiEnabled, title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: isTeluguPelli ? tpAsset('tp-icon-gorintaku.png') : up + 'images/ceremony-icons/mehndi.png', fallback: up + 'images/templates/mehendi-ceremony.svg' },
+      { enabled: !!data.ceremonyEnabled, title: 'WEDDING', date: data.ceremonyDate || data.date, time: data.ceremonyTime || data.time, image: isTeluguPelli ? tpAsset('tp-icon-mangalsutra.png') : up + 'images/ceremony-icons/wedding.png', fallback: up + 'images/templates/wedding-day-mandap.svg' },
+      { enabled: !!data.receptionEnabled, title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: isTeluguPelli ? tpAsset('tp-icon-kalasam.png') : up + 'images/ceremony-icons/reception.png', fallback: up + 'images/templates/reception-evening.svg' }
     ].filter(function (e) { return e.enabled; });
     /* Engagement cards on the design engine: engagement ceremony names. */
     var wdEngaged = data.eventType === 'engagement' || !!(wdSpec && wdSpec.occasion === 'engagement');
@@ -2749,9 +2781,10 @@
       body.push('</button>');
     }
 
-    /* Download the invitation section as a JPG; sits above the music button.
+    /* Download the whole host page as a JPG — every section the preview
+       shows, not just the hero; sits above the music button.
        Only on a paid invitation's pages (opts.download). */
-    if (opts && opts.download) body.push(dlButton(state, '.site-hero', !!data.musicFile));
+    if (opts && opts.download) body.push(dlButton(state, 'body', !!data.musicFile));
 
     /* Grand Ceremonial Landscape for Telugu Pelli & Tamil Thirumanam */
     if (isTeluguPelli) {
@@ -2789,7 +2822,7 @@
       (opts && opts.skipMainJs ? '' : '<script src="' + up + 'js/main.js" defer><\/script>'),
       '<script src="' + up + 'js/countdown.js" defer><\/script>',
       '<script src="' + up + 'js/share.js" defer><\/script>',
-      (opts && opts.download ? '<script src="' + HTML2CANVAS + '" defer><\/script>' : ''),
+      (opts && opts.download ? '<script src="' + up + 'js/html-to-image.js" defer></script><script src="' + HTML2CANVAS + '" defer></script>' : ''),
       '<script>',
       '  /* Starts the live countdown, share, mobile nav, lightbox, music toggle. */',
       escScript(INLINE_JS),
@@ -2804,12 +2837,14 @@
   }
 
   function buildCardHtml(state, opts) {
-    var up = (opts && typeof opts.up === 'string') ? opts.up : '';
-    var data = resolvePaths(state, up);
     var assetPrefix = 'https://www.inviteaura.in/';
     if (typeof window !== 'undefined' && window.location && window.location.origin && window.location.origin !== 'null' && window.location.protocol !== 'file:') {
       assetPrefix = window.location.origin + '/';
     }
+    /* A downloaded file has no css/ or js/ folder beside it, so without an
+       `up` the stylesheet and scripts come from the site itself. */
+    var up = (opts && typeof opts.up === 'string') ? opts.up : assetPrefix;
+    var data = resolvePaths(state, up);
     data.assetPrefix = assetPrefix;
     var who = personName(state) || 'Our Invitation';
     var title = who + ' — Invitation';
@@ -2864,7 +2899,7 @@
     if (opts && opts.download) body.push(dlButton(state, '.invitation', !!music));
 
     var tail = [
-      (opts && opts.download ? '<script src="' + HTML2CANVAS + '" defer></script>' : ''),
+      (opts && opts.download ? '<script src="' + up + 'js/html-to-image.js" defer></script><script src="' + HTML2CANVAS + '" defer></script>' : ''),
       '<script src="' + up + 'js/main.js" defer></script>',
       '<script src="' + up + 'js/countdown.js" defer></script>',
       '<script>',
@@ -2905,7 +2940,13 @@
 
   function download(state) {
     var name = fileName(state);
-    downloadBlob(name, buildCardHtml(state));
+    /* The page the editor was previewing; through IH.exportPage so the
+       redesign collection's wrapped builders are used. */
+    var origin = (window.location && window.location.origin && window.location.origin !== 'null' &&
+      window.location.protocol !== 'file:') ? window.location.origin + '/' : 'https://www.inviteaura.in/';
+    downloadBlob(name, state && state.previewMode === 'host'
+      ? IH.exportPage.buildHtml(state, { up: origin })
+      : IH.exportPage.buildCardHtml(state));
     return { mode: 'download', file: name, path: FOLDER + '/' + name };
   }
 

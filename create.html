@@ -15,11 +15,14 @@
 <meta property="og:title" content="Create Your Invitation — Live Editor | InviteAura">
 <meta property="og:description" content="Six steps from blank card to shareable invitation — create and download free, publish online for ₹99 — with a live preview beside every field.">
 <meta property="og:url" content="https://www.inviteaura.in/create.html">
-<meta property="og:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
+<meta property="og:image" content="https://www.inviteaura.in/images/hero/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Create Your Invitation — Live Editor | InviteAura">
 <meta name="twitter:description" content="Six steps from blank card to shareable invitation — download free, publish online for ₹99.">
-<meta name="twitter:image" content="https://www.inviteaura.in/images/hero/og-image.svg">
+<meta name="twitter:image" content="https://www.inviteaura.in/images/hero/og-image.jpg">
 
 <link rel="icon" href="images/logo/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="images/logo/favicon-32.png" type="image/png" sizes="32x32">
@@ -36,18 +39,18 @@
 
 <script>(function(){try{var s=JSON.parse(localStorage.getItem('inviteaura:theme'));var m=s||(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',m);}catch(e){}})();</script>
 
-<script src="js/main.js?v=1.2" defer></script>
-<script src="js/templates.js?v=2.5" defer></script>
+<script src="js/main.js?v=1.4" defer></script>
+<script src="js/templates.js?v=2.7" defer></script>
 <script src="js/countdown.js?v=1.2" defer></script>
-<script src="js/wedding-designs.js?v=2.2" defer></script>
+<script src="js/wedding-designs.js?v=2.3" defer></script>
 <script src="js/redesign-collection-data.js?v=1.2" defer></script>
 <script src="js/redesign-collection.js?v=1.4" defer></script>
-<script src="js/preview.js?v=2.4" defer></script>
+<script src="js/preview.js?v=2.5" defer></script>
 <script src="js/share.js?v=1.3" defer></script>
 <script src="js/link.js?v=1.2" defer></script>
-<script src="js/export.js?v=2.4" defer></script>
+<script src="js/export.js?v=2.5" defer></script>
 <script src="js/publish.js?v=1.3" defer></script>
-<script src="js/create.js?v=2.4" defer></script>
+<script src="js/create.js?v=2.5" defer></script>
 <script src="js/html-to-image.js" defer></script>
 <script src="js/html2canvas.min.js" defer></script>
 <script src="js/maintenance.js?v=1.1" defer></script>
@@ -59,7 +62,7 @@
 
 <header class="site-header">
   <nav class="nav container container--wide" aria-label="Main navigation">
-    <a class="nav__brand" href="index.html" aria-label="InviteAura home">
+    <a class="nav__brand" href="/" aria-label="InviteAura home">
       <img src="images/logo/inviteaura-light.png" alt="InviteAura" class="nav__brand-logo" data-eager>
     </a>
     <ul class="nav__list" id="primary-nav">
@@ -68,11 +71,11 @@
           <i data-icon="close" data-icon-size="20"></i>
         </button>
       </li>
-      <li><a class="nav__link" href="index.html">Home</a></li>
+      <li><a class="nav__link" href="/">Home</a></li>
       <li><a class="nav__link" href="templates.html">Invitations</a></li>
       <li><a class="nav__link" href="categories.html">Categories</a></li>
       <li><a class="nav__link" href="pricing.html">Pricing</a></li>
-      <li><a class="nav__link" href="index.html#how-it-works">How It Works</a></li>
+      <li><a class="nav__link" href="/#how-it-works">How It Works</a></li>
       <li><a class="nav__link" href="about.html">About</a></li>
       <li class="nav__drawer-cta">
         <a class="btn btn--primary btn--block" href="create.html"><i data-icon="wand" data-icon-size="18"></i><span>Create Invitation</span></a>
@@ -201,15 +204,20 @@
                 <label class="field__label" for="f-bride">Bride’s name <span class="req" data-req aria-hidden="true">*</span></label>
                 <input class="input" id="f-bride" name="brideName" type="text" data-label="Bride’s name" placeholder="Bride" autocomplete="off">
                 <p class="field__error" role="alert"></p>
-                <button class="btn btn--ghost btn--sm" type="button" data-swap-names style="margin-top:var(--space-2)">
-                  <i data-icon="refresh-cw" data-icon-size="16"></i><span>Swap Bride &amp; Groom Names</span>
-                </button>
               </div>
 
               <div class="field">
                 <label class="field__label" for="f-bride-parents">DAUGHTER OF</label>
                 <input class="input" id="f-bride-parents" name="brideParents" type="text" data-label="DAUGHTER OF" placeholder="Bride&#39;s parents&#39; names" autocomplete="off">
                 <p class="field__error" role="alert"></p>
+              </div>
+
+              <!-- Own full-width row so it follows DAUGHTER OF on mobile and
+                   sits centred under both columns on wider screens. -->
+              <div class="field field--full" data-swap-row style="align-items:center">
+                <button class="btn btn--ghost btn--sm" type="button" data-swap-names>
+                  <i data-icon="refresh-cw" data-icon-size="16"></i><span>Swap Bride &amp; Groom Names</span>
+                </button>
               </div>
 
               <!-- One named person / couple: birthdays, naming ceremonies,
@@ -801,10 +809,10 @@ We joyfully invite you to celebrate the wedding of</textarea>
               <button class="btn btn--ghost btn--sm is-active" type="button" data-view-btn="card" style="font-size:0.75rem; padding:3px 8px;">Card</button>
               <button class="btn btn--ghost btn--sm" type="button" data-view-btn="host" style="font-size:0.75rem; padding:3px 8px;">Host Page</button>
             </div>
-            <a class="btn btn--ghost btn--sm" href="host.html" target="_blank" rel="noopener" style="font-size:0.75rem; padding:3px 8px; border-radius:4px;" title="Open Host Page in a new tab">
+            <a class="btn btn--ghost btn--sm" href="host.html" target="_blank" rel="opener" style="font-size:0.75rem; padding:3px 8px; border-radius:4px;" title="Open Host Page in a new tab">
               <span>Open Host Page ↗</span>
             </a>
-            <a class="btn btn--ghost btn--sm" href="card.html" data-open-card target="_blank" rel="noopener" style="font-size:0.75rem; padding:3px 8px; border-radius:4px;" title="Open the invitation card in a new tab">
+            <a class="btn btn--ghost btn--sm" href="card.html" data-open-card target="_blank" rel="opener" style="font-size:0.75rem; padding:3px 8px; border-radius:4px;" title="Open the invitation card in a new tab">
               <span>Open card ↗</span>
             </a>
           </div>
@@ -840,7 +848,7 @@ We joyfully invite you to celebrate the wedding of</textarea>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="footer-brand__logo" href="index.html">
+        <a class="footer-brand__logo" href="/">
           <img src="images/logo/inviteaura-light.png" alt="InviteAura" class="footer-brand__logo-img" loading="lazy">
         </a>
         <p>Beautiful digital invitations for every special moment.</p>
@@ -851,13 +859,13 @@ We joyfully invite you to celebrate the wedding of</textarea>
           <a data-net="telegram" aria-label="InviteAura on Telegram"><i data-icon="telegram" data-icon-size="19"></i></a>
         </div>
       </div>
-      <div class="footer-col"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
-      <div class="footer-col"><h3>Learn</h3><ul><li><a href="pricing.html">Pricing</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li></ul></div>
+      <div class="footer-col"><h3>Explore</h3><ul><li><a href="/">Home</a></li><li><a href="templates.html">Templates</a></li><li><a href="categories.html">Categories</a></li><li><a href="create.html">Create Invitation</a></li></ul></div>
+      <div class="footer-col"><h3>Learn</h3><ul><li><a href="pricing.html">Pricing</a></li><li><a href="/#how-it-works">How It Works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li></ul></div>
       <div class="footer-col"><h3>Company</h3><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="preview.html">Template Preview</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span data-year>2026</span> InviteAura. All rights reserved.<span class="footer-version">Version <span data-version>1.0.0</span></span></p>
-      <nav aria-label="Legal"><a href="mailto:help.lovelyaz@gmail.com">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+      <nav aria-label="Legal"><a href="mailto:support@inviteaura.in">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
     </div>
   </div>
 </footer>

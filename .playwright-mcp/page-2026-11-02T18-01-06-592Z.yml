@@ -1,0 +1,1504 @@
+- generic [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "InviteAura home" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "InviteAura" [ref=e6]
+      - generic [ref=e7]:
+        - button "Switch to light mode" [pressed] [ref=e8] [cursor=pointer]
+        - button "Open navigation menu" [ref=e9] [cursor=pointer]
+  - main [ref=e14]:
+    - generic [ref=e16]:
+      - heading "Create Your Invitation ✦" [level=1] [ref=e17]
+      - paragraph [ref=e18]: Fill in your details and watch the card update as you go. Your draft is saved in this browser — you can close the tab and come back to it.
+    - generic [ref=e20]:
+      - navigation "Invitation steps" [ref=e21]:
+        - button "1 Event What are you hosting?" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: "1"
+          - generic [ref=e25]:
+            - generic [ref=e26]: Event
+            - text: What are you hosting?
+        - button "2 Details Names, date, venue" [disabled] [ref=e27]:
+          - generic [ref=e28]: "2"
+          - generic [ref=e30]:
+            - generic [ref=e31]: Details
+            - text: Names, date, venue
+        - button "3 Additional Details Wedding details" [disabled] [ref=e32]:
+          - generic [ref=e33]: "3"
+          - generic [ref=e35]:
+            - generic [ref=e36]: Additional Details
+            - text: Wedding details
+        - button "4 Media Photos & music" [disabled] [ref=e37]:
+          - generic [ref=e38]: "4"
+          - generic [ref=e40]:
+            - generic [ref=e41]: Media
+            - text: Photos & music
+        - button "5 Design Template & colours" [disabled] [ref=e42]:
+          - generic [ref=e43]: "5"
+          - generic [ref=e45]:
+            - generic [ref=e46]: Design
+            - text: Template & colours
+        - button "6 Invitation Create & download for free" [disabled] [ref=e47]:
+          - generic [ref=e48]: "6"
+          - generic [ref=e50]:
+            - generic [ref=e51]: Invitation
+            - text: Create & download for free
+        - button "7 Hosting ₹99 · Publish online" [disabled] [ref=e52]:
+          - generic [ref=e53]: "7"
+          - generic [ref=e55]:
+            - generic [ref=e56]: Hosting
+            - text: ₹99 · Publish online
+      - paragraph [ref=e58]: Step 1 of 7
+      - generic [ref=e60]:
+        - region [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - heading "What are you celebrating?" [active] [level=2] [ref=e64]
+              - paragraph [ref=e65]: Pick the occasion. The wording, the layout and the suggested templates all change to match it.
+              - radiogroup "Event type" [ref=e66]:
+                - generic [ref=e67]:
+                  - radio "Wedding 255 templates" [checked] [ref=e68]
+                  - generic [ref=e69] [cursor=pointer]:
+                    - generic [ref=e71]: Wedding
+                    - generic [ref=e72]: 255 templates
+                - generic [ref=e73]:
+                  - radio "Engagement 45 templates" [ref=e74]
+                  - generic [ref=e75] [cursor=pointer]:
+                    - generic [ref=e77]: Engagement
+                    - generic [ref=e78]: 45 templates
+                - generic [ref=e79]:
+                  - radio "Reception 51 templates" [ref=e80]
+                  - generic [ref=e81] [cursor=pointer]:
+                    - generic [ref=e83]: Reception
+                    - generic [ref=e84]: 51 templates
+                - generic [ref=e85]:
+                  - radio "Birthday 78 templates" [ref=e86]
+                  - generic [ref=e87] [cursor=pointer]:
+                    - generic [ref=e89]: Birthday
+                    - generic [ref=e90]: 78 templates
+                - generic [ref=e91]:
+                  - radio "Baby Shower 33 templates" [ref=e92]
+                  - generic [ref=e93] [cursor=pointer]:
+                    - generic [ref=e95]: Baby Shower
+                    - generic [ref=e96]: 33 templates
+                - generic [ref=e97]:
+                  - radio "Naming Ceremony 33 templates" [ref=e98]
+                  - generic [ref=e99] [cursor=pointer]:
+                    - generic [ref=e101]: Naming Ceremony
+                    - generic [ref=e102]: 33 templates
+                - generic [ref=e103]:
+                  - radio "Housewarming 33 templates" [ref=e104]
+                  - generic [ref=e105] [cursor=pointer]:
+                    - generic [ref=e107]: Housewarming
+                    - generic [ref=e108]: 33 templates
+                - generic [ref=e109]:
+                  - radio "Anniversary 45 templates" [ref=e110]
+                  - generic [ref=e111] [cursor=pointer]:
+                    - generic [ref=e113]: Anniversary
+                    - generic [ref=e114]: 45 templates
+                - generic [ref=e115]:
+                  - radio "Graduation 33 templates" [ref=e116]
+                  - generic [ref=e117] [cursor=pointer]:
+                    - generic [ref=e119]: Graduation
+                    - generic [ref=e120]: 33 templates
+                - generic [ref=e121]:
+                  - radio "Retirement 24 templates" [ref=e122]
+                  - generic [ref=e123] [cursor=pointer]:
+                    - generic [ref=e125]: Retirement
+                    - generic [ref=e126]: 24 templates
+                - generic [ref=e127]:
+                  - radio "Farewell 36 templates" [ref=e128]
+                  - generic [ref=e129] [cursor=pointer]:
+                    - generic [ref=e131]: Farewell
+                    - generic [ref=e132]: 36 templates
+                - generic [ref=e133]:
+                  - radio "Corporate 33 templates" [ref=e134]
+                  - generic [ref=e135] [cursor=pointer]:
+                    - generic [ref=e137]: Corporate
+                    - generic [ref=e138]: 33 templates
+                - generic [ref=e139]:
+                  - radio "Festival 129 templates" [ref=e140]
+                  - generic [ref=e141] [cursor=pointer]:
+                    - generic [ref=e143]: Festival
+                    - generic [ref=e144]: 129 templates
+                - generic [ref=e145]:
+                  - radio "School Event 27 templates" [ref=e146]
+                  - generic [ref=e147] [cursor=pointer]:
+                    - generic [ref=e149]: School Event
+                    - generic [ref=e150]: 27 templates
+                - generic [ref=e151]:
+                  - radio "College Event 39 templates" [ref=e152]
+                  - generic [ref=e153] [cursor=pointer]:
+                    - generic [ref=e155]: College Event
+                    - generic [ref=e156]: 39 templates
+                - generic [ref=e157]:
+                  - radio "Party 45 templates" [ref=e158]
+                  - generic [ref=e159] [cursor=pointer]:
+                    - generic [ref=e161]: Party
+                    - generic [ref=e162]: 45 templates
+                - generic [ref=e163]:
+                  - radio "Community Event 24 templates" [ref=e164]
+                  - generic [ref=e165] [cursor=pointer]:
+                    - generic [ref=e167]: Community Event
+                    - generic [ref=e168]: 24 templates
+                - generic [ref=e169]:
+                  - radio "Other Any template" [ref=e170]
+                  - generic [ref=e171] [cursor=pointer]:
+                    - generic [ref=e173]: Other
+                    - generic [ref=e174]: Any template
+            - radiogroup "Invitation template" [ref=e175]:
+              - heading "Invitation templates" [level=2] [ref=e176]
+              - paragraph [ref=e177]: 255 designs made for wedding. Pick one now or change it later in Design.
+              - generic [ref=e178]:
+                - generic [ref=e179]:
+                  - radio "Tamil Thirumanam Tamil Thirumanam" [ref=e180]
+                  - generic [ref=e181] [cursor=pointer]:
+                    - img "Tamil Thirumanam" [ref=e182]
+                    - generic [ref=e183]: Tamil Thirumanam
+                - generic [ref=e184]:
+                  - radio "Kalasam Blessing Kalasam Blessing" [ref=e185]
+                  - generic [ref=e186] [cursor=pointer]:
+                    - img "Kalasam Blessing" [ref=e187]
+                    - generic [ref=e188]: Kalasam Blessing
+                - generic [ref=e189]:
+                  - radio "Kalasam Blessing (Redesigned) Kalasam Blessing (Redesigned)" [ref=e190]
+                  - generic [ref=e191] [cursor=pointer]:
+                    - img "Kalasam Blessing (Redesigned)" [ref=e192]
+                    - generic [ref=e193]: Kalasam Blessing (Redesigned)
+                - generic [ref=e194]:
+                  - radio "Gopuram Vows Gopuram Vows" [ref=e195]
+                  - generic [ref=e196] [cursor=pointer]:
+                    - img "Gopuram Vows" [ref=e197]
+                    - generic [ref=e198]: Gopuram Vows
+                - generic [ref=e199]:
+                  - radio "Gopuram Vows (Redesigned) Gopuram Vows (Redesigned)" [ref=e200]
+                  - generic [ref=e201] [cursor=pointer]:
+                    - img "Gopuram Vows (Redesigned)" [ref=e202]
+                    - generic [ref=e203]: Gopuram Vows (Redesigned)
+                - generic [ref=e204]:
+                  - radio "Telugu Pelli Telugu Pelli" [ref=e205]
+                  - generic [ref=e206] [cursor=pointer]:
+                    - img "Telugu Pelli" [ref=e207]
+                    - generic [ref=e208]: Telugu Pelli
+                - generic [ref=e209]:
+                  - radio "Talambralu Pearls Talambralu Pearls" [ref=e210]
+                  - generic [ref=e211] [cursor=pointer]:
+                    - img "Talambralu Pearls" [ref=e212]
+                    - generic [ref=e213]: Talambralu Pearls
+                - generic [ref=e214]:
+                  - radio "Talambralu Pearls (Redesigned) Talambralu Pearls (Redesigned)" [ref=e215]
+                  - generic [ref=e216] [cursor=pointer]:
+                    - img "Talambralu Pearls (Redesigned)" [ref=e217]
+                    - generic [ref=e218]: Talambralu Pearls (Redesigned)
+                - generic [ref=e219]:
+                  - radio "Kerala Mangalyam Kerala Mangalyam" [ref=e220]
+                  - generic [ref=e221] [cursor=pointer]:
+                    - img "Kerala Mangalyam" [ref=e222]
+                    - generic [ref=e223]: Kerala Mangalyam
+                - generic [ref=e224]:
+                  - radio "Kerala Mangalyam (Redesigned) Kerala Mangalyam (Redesigned)" [ref=e225]
+                  - generic [ref=e226] [cursor=pointer]:
+                    - img "Kerala Mangalyam (Redesigned)" [ref=e227]
+                    - generic [ref=e228]: Kerala Mangalyam (Redesigned)
+                - generic [ref=e229]:
+                  - radio "Kasavu Gold Border Kasavu Gold Border" [ref=e230]
+                  - generic [ref=e231] [cursor=pointer]:
+                    - img "Kasavu Gold Border" [ref=e232]
+                    - generic [ref=e233]: Kasavu Gold Border
+                - generic [ref=e234]:
+                  - radio "Kasavu Gold Border (Redesigned) Kasavu Gold Border (Redesigned)" [ref=e235]
+                  - generic [ref=e236] [cursor=pointer]:
+                    - img "Kasavu Gold Border (Redesigned)" [ref=e237]
+                    - generic [ref=e238]: Kasavu Gold Border (Redesigned)
+                - generic [ref=e239]:
+                  - radio "Mysore Madhuve Mysore Madhuve" [ref=e240]
+                  - generic [ref=e241] [cursor=pointer]:
+                    - img "Mysore Madhuve" [ref=e242]
+                    - generic [ref=e243]: Mysore Madhuve
+                - generic [ref=e244]:
+                  - radio "Mysore Madhuve (Redesigned) Mysore Madhuve (Redesigned)" [ref=e245]
+                  - generic [ref=e246] [cursor=pointer]:
+                    - img "Mysore Madhuve (Redesigned)" [ref=e247]
+                    - generic [ref=e248]: Mysore Madhuve (Redesigned)
+                - generic [ref=e249]:
+                  - radio "Punjabi Phulkari Punjabi Phulkari" [ref=e250]
+                  - generic [ref=e251] [cursor=pointer]:
+                    - img "Punjabi Phulkari" [ref=e252]
+                    - generic [ref=e253]: Punjabi Phulkari
+                - generic [ref=e254]:
+                  - radio "Punjabi Phulkari (Redesigned) Punjabi Phulkari (Redesigned)" [ref=e255]
+                  - generic [ref=e256] [cursor=pointer]:
+                    - img "Punjabi Phulkari (Redesigned)" [ref=e257]
+                    - generic [ref=e258]: Punjabi Phulkari (Redesigned)
+                - generic [ref=e259]:
+                  - radio "Bengali Alpona Bengali Alpona" [ref=e260]
+                  - generic [ref=e261] [cursor=pointer]:
+                    - img "Bengali Alpona" [ref=e262]
+                    - generic [ref=e263]: Bengali Alpona
+                - generic [ref=e264]:
+                  - radio "Bengali Alpona (Redesigned) Bengali Alpona (Redesigned)" [ref=e265]
+                  - generic [ref=e266] [cursor=pointer]:
+                    - img "Bengali Alpona (Redesigned)" [ref=e267]
+                    - generic [ref=e268]: Bengali Alpona (Redesigned)
+                - generic [ref=e269]:
+                  - radio "Shankha Pola Shankha Pola" [ref=e270]
+                  - generic [ref=e271] [cursor=pointer]:
+                    - img "Shankha Pola" [ref=e272]
+                    - generic [ref=e273]: Shankha Pola
+                - generic [ref=e274]:
+                  - radio "Shankha Pola (Redesigned) Shankha Pola (Redesigned)" [ref=e275]
+                  - generic [ref=e276] [cursor=pointer]:
+                    - img "Shankha Pola (Redesigned)" [ref=e277]
+                    - generic [ref=e278]: Shankha Pola (Redesigned)
+                - generic [ref=e279]:
+                  - radio "Gujarati Toran Gujarati Toran" [ref=e280]
+                  - generic [ref=e281] [cursor=pointer]:
+                    - img "Gujarati Toran" [ref=e282]
+                    - generic [ref=e283]: Gujarati Toran
+                - generic [ref=e284]:
+                  - radio "Gujarati Toran (Redesigned) Gujarati Toran (Redesigned)" [ref=e285]
+                  - generic [ref=e286] [cursor=pointer]:
+                    - img "Gujarati Toran (Redesigned)" [ref=e287]
+                    - generic [ref=e288]: Gujarati Toran (Redesigned)
+                - generic [ref=e289]:
+                  - radio "Bandhani Bloom Bandhani Bloom" [ref=e290]
+                  - generic [ref=e291] [cursor=pointer]:
+                    - img "Bandhani Bloom" [ref=e292]
+                    - generic [ref=e293]: Bandhani Bloom
+                - generic [ref=e294]:
+                  - radio "Bandhani Bloom (Redesigned) Bandhani Bloom (Redesigned)" [ref=e295]
+                  - generic [ref=e296] [cursor=pointer]:
+                    - img "Bandhani Bloom (Redesigned)" [ref=e297]
+                    - generic [ref=e298]: Bandhani Bloom (Redesigned)
+                - generic [ref=e299]:
+                  - radio "Marathi Paithani Marathi Paithani" [ref=e300]
+                  - generic [ref=e301] [cursor=pointer]:
+                    - img "Marathi Paithani" [ref=e302]
+                    - generic [ref=e303]: Marathi Paithani
+                - generic [ref=e304]:
+                  - radio "Marathi Paithani (Redesigned) Marathi Paithani (Redesigned)" [ref=e305]
+                  - generic [ref=e306] [cursor=pointer]:
+                    - img "Marathi Paithani (Redesigned)" [ref=e307]
+                    - generic [ref=e308]: Marathi Paithani (Redesigned)
+                - generic [ref=e309]:
+                  - radio "Mundavalya Pearls Mundavalya Pearls" [ref=e310]
+                  - generic [ref=e311] [cursor=pointer]:
+                    - img "Mundavalya Pearls" [ref=e312]
+                    - generic [ref=e313]: Mundavalya Pearls
+                - generic [ref=e314]:
+                  - radio "Mundavalya Pearls (Redesigned) Mundavalya Pearls (Redesigned)" [ref=e315]
+                  - generic [ref=e316] [cursor=pointer]:
+                    - img "Mundavalya Pearls (Redesigned)" [ref=e317]
+                    - generic [ref=e318]: Mundavalya Pearls (Redesigned)
+                - generic [ref=e319]:
+                  - radio "Rajasthani Jharokha Rajasthani Jharokha" [ref=e320]
+                  - generic [ref=e321] [cursor=pointer]:
+                    - img "Rajasthani Jharokha" [ref=e322]
+                    - generic [ref=e323]: Rajasthani Jharokha
+                - generic [ref=e324]:
+                  - radio "Rajasthani Jharokha (Redesigned) Rajasthani Jharokha (Redesigned)" [ref=e325]
+                  - generic [ref=e326] [cursor=pointer]:
+                    - img "Rajasthani Jharokha (Redesigned)" [ref=e327]
+                    - generic [ref=e328]: Rajasthani Jharokha (Redesigned)
+                - generic [ref=e329]:
+                  - radio "Haveli Jaali Haveli Jaali" [ref=e330]
+                  - generic [ref=e331] [cursor=pointer]:
+                    - img "Haveli Jaali" [ref=e332]
+                    - generic [ref=e333]: Haveli Jaali
+                - generic [ref=e334]:
+                  - radio "Haveli Jaali (Redesigned) Haveli Jaali (Redesigned)" [ref=e335]
+                  - generic [ref=e336] [cursor=pointer]:
+                    - img "Haveli Jaali (Redesigned)" [ref=e337]
+                    - generic [ref=e338]: Haveli Jaali (Redesigned)
+                - generic [ref=e339]:
+                  - radio "Assamese Biya Assamese Biya" [ref=e340]
+                  - generic [ref=e341] [cursor=pointer]:
+                    - img "Assamese Biya" [ref=e342]
+                    - generic [ref=e343]: Assamese Biya
+                - generic [ref=e344]:
+                  - radio "Assamese Biya (Redesigned) Assamese Biya (Redesigned)" [ref=e345]
+                  - generic [ref=e346] [cursor=pointer]:
+                    - img "Assamese Biya (Redesigned)" [ref=e347]
+                    - generic [ref=e348]: Assamese Biya (Redesigned)
+                - generic [ref=e349]:
+                  - radio "Gamosa Weave Gamosa Weave" [ref=e350]
+                  - generic [ref=e351] [cursor=pointer]:
+                    - img "Gamosa Weave" [ref=e352]
+                    - generic [ref=e353]: Gamosa Weave
+                - generic [ref=e354]:
+                  - radio "Gamosa Weave (Redesigned) Gamosa Weave (Redesigned)" [ref=e355]
+                  - generic [ref=e356] [cursor=pointer]:
+                    - img "Gamosa Weave (Redesigned)" [ref=e357]
+                    - generic [ref=e358]: Gamosa Weave (Redesigned)
+                - generic [ref=e359]:
+                  - radio "Odia Bahaghara Odia Bahaghara" [ref=e360]
+                  - generic [ref=e361] [cursor=pointer]:
+                    - img "Odia Bahaghara" [ref=e362]
+                    - generic [ref=e363]: Odia Bahaghara
+                - generic [ref=e364]:
+                  - radio "Odia Bahaghara (Redesigned) Odia Bahaghara (Redesigned)" [ref=e365]
+                  - generic [ref=e366] [cursor=pointer]:
+                    - img "Odia Bahaghara (Redesigned)" [ref=e367]
+                    - generic [ref=e368]: Odia Bahaghara (Redesigned)
+                - generic [ref=e369]:
+                  - radio "Pattachitra Vows Pattachitra Vows" [ref=e370]
+                  - generic [ref=e371] [cursor=pointer]:
+                    - img "Pattachitra Vows" [ref=e372]
+                    - generic [ref=e373]: Pattachitra Vows
+                - generic [ref=e374]:
+                  - radio "Pattachitra Vows (Redesigned) Pattachitra Vows (Redesigned)" [ref=e375]
+                  - generic [ref=e376] [cursor=pointer]:
+                    - img "Pattachitra Vows (Redesigned)" [ref=e377]
+                    - generic [ref=e378]: Pattachitra Vows (Redesigned)
+                - generic [ref=e379]:
+                  - radio "Sindhi Ajrak Sindhi Ajrak" [ref=e380]
+                  - generic [ref=e381] [cursor=pointer]:
+                    - img "Sindhi Ajrak" [ref=e382]
+                    - generic [ref=e383]: Sindhi Ajrak
+                - generic [ref=e384]:
+                  - radio "Sindhi Ajrak (Redesigned) Sindhi Ajrak (Redesigned)" [ref=e385]
+                  - generic [ref=e386] [cursor=pointer]:
+                    - img "Sindhi Ajrak (Redesigned)" [ref=e387]
+                    - generic [ref=e388]: Sindhi Ajrak (Redesigned)
+                - generic [ref=e389]:
+                  - radio "Goan Azulejo Goan Azulejo" [ref=e390]
+                  - generic [ref=e391] [cursor=pointer]:
+                    - img "Goan Azulejo" [ref=e392]
+                    - generic [ref=e393]: Goan Azulejo
+                - generic [ref=e394]:
+                  - radio "Goan Azulejo (Redesigned) Goan Azulejo (Redesigned)" [ref=e395]
+                  - generic [ref=e396] [cursor=pointer]:
+                    - img "Goan Azulejo (Redesigned)" [ref=e397]
+                    - generic [ref=e398]: Goan Azulejo (Redesigned)
+                - generic [ref=e399]:
+                  - radio "Konkan Coast Konkan Coast" [ref=e400]
+                  - generic [ref=e401] [cursor=pointer]:
+                    - img "Konkan Coast" [ref=e402]
+                    - generic [ref=e403]: Konkan Coast
+                - generic [ref=e404]:
+                  - radio "Konkan Coast (Redesigned) Konkan Coast (Redesigned)" [ref=e405]
+                  - generic [ref=e406] [cursor=pointer]:
+                    - img "Konkan Coast (Redesigned)" [ref=e407]
+                    - generic [ref=e408]: Konkan Coast (Redesigned)
+                - generic [ref=e409]:
+                  - radio "Kashmiri Chinar Kashmiri Chinar" [ref=e410]
+                  - generic [ref=e411] [cursor=pointer]:
+                    - img "Kashmiri Chinar" [ref=e412]
+                    - generic [ref=e413]: Kashmiri Chinar
+                - generic [ref=e414]:
+                  - radio "Kashmiri Chinar (Redesigned) Kashmiri Chinar (Redesigned)" [ref=e415]
+                  - generic [ref=e416] [cursor=pointer]:
+                    - img "Kashmiri Chinar (Redesigned)" [ref=e417]
+                    - generic [ref=e418]: Kashmiri Chinar (Redesigned)
+                - generic [ref=e419]:
+                  - radio "Nepali Bihe Nepali Bihe" [ref=e420]
+                  - generic [ref=e421] [cursor=pointer]:
+                    - img "Nepali Bihe" [ref=e422]
+                    - generic [ref=e423]: Nepali Bihe
+                - generic [ref=e424]:
+                  - radio "Nepali Bihe (Redesigned) Nepali Bihe (Redesigned)" [ref=e425]
+                  - generic [ref=e426] [cursor=pointer]:
+                    - img "Nepali Bihe (Redesigned)" [ref=e427]
+                    - generic [ref=e428]: Nepali Bihe (Redesigned)
+                - generic [ref=e429]:
+                  - radio "Mithila Vivah Mithila Vivah" [ref=e430]
+                  - generic [ref=e431] [cursor=pointer]:
+                    - img "Mithila Vivah" [ref=e432]
+                    - generic [ref=e433]: Mithila Vivah
+                - generic [ref=e434]:
+                  - radio "Mithila Vivah (Redesigned) Mithila Vivah (Redesigned)" [ref=e435]
+                  - generic [ref=e436] [cursor=pointer]:
+                    - img "Mithila Vivah (Redesigned)" [ref=e437]
+                    - generic [ref=e438]: Mithila Vivah (Redesigned)
+                - generic [ref=e439]:
+                  - radio "Lucknawi Chikankari Lucknawi Chikankari" [ref=e440]
+                  - generic [ref=e441] [cursor=pointer]:
+                    - img "Lucknawi Chikankari" [ref=e442]
+                    - generic [ref=e443]: Lucknawi Chikankari
+                - generic [ref=e444]:
+                  - radio "Lucknawi Chikankari (Redesigned) Lucknawi Chikankari (Redesigned)" [ref=e445]
+                  - generic [ref=e446] [cursor=pointer]:
+                    - img "Lucknawi Chikankari (Redesigned)" [ref=e447]
+                    - generic [ref=e448]: Lucknawi Chikankari (Redesigned)
+                - generic [ref=e449]:
+                  - radio "Luxury Editorial Luxury Editorial" [ref=e450]
+                  - generic [ref=e451] [cursor=pointer]:
+                    - img "Luxury Editorial" [ref=e452]
+                    - generic [ref=e453]: Luxury Editorial
+                - generic [ref=e454]:
+                  - radio "Kanchipuram Silk Kanchipuram Silk" [ref=e455]
+                  - generic [ref=e456] [cursor=pointer]:
+                    - img "Kanchipuram Silk" [ref=e457]
+                    - generic [ref=e458]: Kanchipuram Silk
+                - generic [ref=e459]:
+                  - radio "Kanchipuram Silk (Redesigned) Kanchipuram Silk (Redesigned)" [ref=e460]
+                  - generic [ref=e461] [cursor=pointer]:
+                    - img "Kanchipuram Silk (Redesigned)" [ref=e462]
+                    - generic [ref=e463]: Kanchipuram Silk (Redesigned)
+                - generic [ref=e464]:
+                  - radio "Tanjore Grandeur Tanjore Grandeur" [ref=e465]
+                  - generic [ref=e466] [cursor=pointer]:
+                    - img "Tanjore Grandeur" [ref=e467]
+                    - generic [ref=e468]: Tanjore Grandeur
+                - generic [ref=e469]:
+                  - radio "Tanjore Grandeur (Redesigned) Tanjore Grandeur (Redesigned)" [ref=e470]
+                  - generic [ref=e471] [cursor=pointer]:
+                    - img "Tanjore Grandeur (Redesigned)" [ref=e472]
+                    - generic [ref=e473]: Tanjore Grandeur (Redesigned)
+                - generic [ref=e474]:
+                  - radio "Chettinad Heritage Chettinad Heritage" [ref=e475]
+                  - generic [ref=e476] [cursor=pointer]:
+                    - img "Chettinad Heritage" [ref=e477]
+                    - generic [ref=e478]: Chettinad Heritage
+                - generic [ref=e479]:
+                  - radio "Chettinad Heritage (Redesigned) Chettinad Heritage (Redesigned)" [ref=e480]
+                  - generic [ref=e481] [cursor=pointer]:
+                    - img "Chettinad Heritage (Redesigned)" [ref=e482]
+                    - generic [ref=e483]: Chettinad Heritage (Redesigned)
+                - generic [ref=e484]:
+                  - radio "Andhra Kalamkari Andhra Kalamkari" [ref=e485]
+                  - generic [ref=e486] [cursor=pointer]:
+                    - img "Andhra Kalamkari" [ref=e487]
+                    - generic [ref=e488]: Andhra Kalamkari
+                - generic [ref=e489]:
+                  - radio "Andhra Kalamkari (Redesigned) Andhra Kalamkari (Redesigned)" [ref=e490]
+                  - generic [ref=e491] [cursor=pointer]:
+                    - img "Andhra Kalamkari (Redesigned)" [ref=e492]
+                    - generic [ref=e493]: Andhra Kalamkari (Redesigned)
+                - generic [ref=e494]:
+                  - radio "Telangana Bathukamma Telangana Bathukamma" [ref=e495]
+                  - generic [ref=e496] [cursor=pointer]:
+                    - img "Telangana Bathukamma" [ref=e497]
+                    - generic [ref=e498]: Telangana Bathukamma
+                - generic [ref=e499]:
+                  - radio "Telangana Bathukamma (Redesigned) Telangana Bathukamma (Redesigned)" [ref=e500]
+                  - generic [ref=e501] [cursor=pointer]:
+                    - img "Telangana Bathukamma (Redesigned)" [ref=e502]
+                    - generic [ref=e503]: Telangana Bathukamma (Redesigned)
+                - generic [ref=e504]:
+                  - radio "Coorg Kodava Coorg Kodava" [ref=e505]
+                  - generic [ref=e506] [cursor=pointer]:
+                    - img "Coorg Kodava" [ref=e507]
+                    - generic [ref=e508]: Coorg Kodava
+                - generic [ref=e509]:
+                  - radio "Coorg Kodava (Redesigned) Coorg Kodava (Redesigned)" [ref=e510]
+                  - generic [ref=e511] [cursor=pointer]:
+                    - img "Coorg Kodava (Redesigned)" [ref=e512]
+                    - generic [ref=e513]: Coorg Kodava (Redesigned)
+                - generic [ref=e514]:
+                  - radio "Kutch Mirrorwork Kutch Mirrorwork" [ref=e515]
+                  - generic [ref=e516] [cursor=pointer]:
+                    - img "Kutch Mirrorwork" [ref=e517]
+                    - generic [ref=e518]: Kutch Mirrorwork
+                - generic [ref=e519]:
+                  - radio "Kutch Mirrorwork (Redesigned) Kutch Mirrorwork (Redesigned)" [ref=e520]
+                  - generic [ref=e521] [cursor=pointer]:
+                    - img "Kutch Mirrorwork (Redesigned)" [ref=e522]
+                    - generic [ref=e523]: Kutch Mirrorwork (Redesigned)
+                - generic [ref=e524]:
+                  - radio "Banarasi Royale Banarasi Royale" [ref=e525]
+                  - generic [ref=e526] [cursor=pointer]:
+                    - img "Banarasi Royale" [ref=e527]
+                    - generic [ref=e528]: Banarasi Royale
+                - generic [ref=e529]:
+                  - radio "Banarasi Royale (Redesigned) Banarasi Royale (Redesigned)" [ref=e530]
+                  - generic [ref=e531] [cursor=pointer]:
+                    - img "Banarasi Royale (Redesigned)" [ref=e532]
+                    - generic [ref=e533]: Banarasi Royale (Redesigned)
+                - generic [ref=e534]:
+                  - radio "Awadhi Nawab Awadhi Nawab" [ref=e535]
+                  - generic [ref=e536] [cursor=pointer]:
+                    - img "Awadhi Nawab" [ref=e537]
+                    - generic [ref=e538]: Awadhi Nawab
+                - generic [ref=e539]:
+                  - radio "Awadhi Nawab (Redesigned) Awadhi Nawab (Redesigned)" [ref=e540]
+                  - generic [ref=e541] [cursor=pointer]:
+                    - img "Awadhi Nawab (Redesigned)" [ref=e542]
+                    - generic [ref=e543]: Awadhi Nawab (Redesigned)
+                - generic [ref=e544]:
+                  - radio "Kashmir Garden Kashmir Garden" [ref=e545]
+                  - generic [ref=e546] [cursor=pointer]:
+                    - img "Kashmir Garden" [ref=e547]
+                    - generic [ref=e548]: Kashmir Garden
+                - generic [ref=e549]:
+                  - radio "Kashmir Garden (Redesigned) Kashmir Garden (Redesigned)" [ref=e550]
+                  - generic [ref=e551] [cursor=pointer]:
+                    - img "Kashmir Garden (Redesigned)" [ref=e552]
+                    - generic [ref=e553]: Kashmir Garden (Redesigned)
+                - generic [ref=e554]:
+                  - radio "Royal Shehnai Royal Shehnai" [ref=e555]
+                  - generic [ref=e556] [cursor=pointer]:
+                    - img "Royal Shehnai" [ref=e557]
+                    - generic [ref=e558]: Royal Shehnai
+                - generic [ref=e559]:
+                  - radio "Royal Shehnai (Redesigned) Royal Shehnai (Redesigned)" [ref=e560]
+                  - generic [ref=e561] [cursor=pointer]:
+                    - img "Royal Shehnai (Redesigned)" [ref=e562]
+                    - generic [ref=e563]: Royal Shehnai (Redesigned)
+                - generic [ref=e564]:
+                  - radio "Jewel of Jaipur Jewel of Jaipur" [ref=e565]
+                  - generic [ref=e566] [cursor=pointer]:
+                    - img "Jewel of Jaipur" [ref=e567]
+                    - generic [ref=e568]: Jewel of Jaipur
+                - generic [ref=e569]:
+                  - radio "Jewel of Jaipur (Redesigned) Jewel of Jaipur (Redesigned)" [ref=e570]
+                  - generic [ref=e571] [cursor=pointer]:
+                    - img "Jewel of Jaipur (Redesigned)" [ref=e572]
+                    - generic [ref=e573]: Jewel of Jaipur (Redesigned)
+                - generic [ref=e574]:
+                  - radio "Udaipur Romance Udaipur Romance" [ref=e575]
+                  - generic [ref=e576] [cursor=pointer]:
+                    - img "Udaipur Romance" [ref=e577]
+                    - generic [ref=e578]: Udaipur Romance
+                - generic [ref=e579]:
+                  - radio "Udaipur Romance (Redesigned) Udaipur Romance (Redesigned)" [ref=e580]
+                  - generic [ref=e581] [cursor=pointer]:
+                    - img "Udaipur Romance (Redesigned)" [ref=e582]
+                    - generic [ref=e583]: Udaipur Romance (Redesigned)
+                - generic [ref=e584]:
+                  - radio "Traditional Wedding Traditional Wedding" [ref=e585]
+                  - generic [ref=e586] [cursor=pointer]:
+                    - img "Traditional Wedding" [ref=e587]
+                    - generic [ref=e588]: Traditional Wedding
+                - generic [ref=e589]:
+                  - radio "Traditional Wedding (Redesigned) Traditional Wedding (Redesigned)" [ref=e590]
+                  - generic [ref=e591] [cursor=pointer]:
+                    - img "Traditional Wedding (Redesigned)" [ref=e592]
+                    - generic [ref=e593]: Traditional Wedding (Redesigned)
+                - generic [ref=e594]:
+                  - radio "Royal Wedding Royal Wedding" [ref=e595]
+                  - generic [ref=e596] [cursor=pointer]:
+                    - img "Royal Wedding" [ref=e597]
+                    - generic [ref=e598]: Royal Wedding
+                - generic [ref=e599]:
+                  - radio "Royal Wedding (Redesigned) Royal Wedding (Redesigned)" [ref=e600]
+                  - generic [ref=e601] [cursor=pointer]:
+                    - img "Royal Wedding (Redesigned)" [ref=e602]
+                    - generic [ref=e603]: Royal Wedding (Redesigned)
+                - generic [ref=e604]:
+                  - radio "Golden Celebration Golden Celebration" [ref=e605]
+                  - generic [ref=e606] [cursor=pointer]:
+                    - img "Golden Celebration" [ref=e607]
+                    - generic [ref=e608]: Golden Celebration
+                - generic [ref=e609]:
+                  - radio "Golden Celebration (Redesigned) Golden Celebration (Redesigned)" [ref=e610]
+                  - generic [ref=e611] [cursor=pointer]:
+                    - img "Golden Celebration (Redesigned)" [ref=e612]
+                    - generic [ref=e613]: Golden Celebration (Redesigned)
+                - generic [ref=e614]:
+                  - radio "Sangeet Night Sangeet Night" [ref=e615]
+                  - generic [ref=e616] [cursor=pointer]:
+                    - img "Sangeet Night" [ref=e617]
+                    - generic [ref=e618]: Sangeet Night
+                - generic [ref=e619]:
+                  - radio "Sangeet Night (Redesigned) Sangeet Night (Redesigned)" [ref=e620]
+                  - generic [ref=e621] [cursor=pointer]:
+                    - img "Sangeet Night (Redesigned)" [ref=e622]
+                    - generic [ref=e623]: Sangeet Night (Redesigned)
+                - generic [ref=e624]:
+                  - radio "Mehendi Morning Mehendi Morning" [ref=e625]
+                  - generic [ref=e626] [cursor=pointer]:
+                    - img "Mehendi Morning" [ref=e627]
+                    - generic [ref=e628]: Mehendi Morning
+                - generic [ref=e629]:
+                  - radio "Mehendi Morning (Redesigned) Mehendi Morning (Redesigned)" [ref=e630]
+                  - generic [ref=e631] [cursor=pointer]:
+                    - img "Mehendi Morning (Redesigned)" [ref=e632]
+                    - generic [ref=e633]: Mehendi Morning (Redesigned)
+                - generic [ref=e634]:
+                  - radio "Haldi Sunshine Haldi Sunshine" [ref=e635]
+                  - generic [ref=e636] [cursor=pointer]:
+                    - img "Haldi Sunshine" [ref=e637]
+                    - generic [ref=e638]: Haldi Sunshine
+                - generic [ref=e639]:
+                  - radio "Haldi Sunshine (Redesigned) Haldi Sunshine (Redesigned)" [ref=e640]
+                  - generic [ref=e641] [cursor=pointer]:
+                    - img "Haldi Sunshine (Redesigned)" [ref=e642]
+                    - generic [ref=e643]: Haldi Sunshine (Redesigned)
+                - generic [ref=e644]:
+                  - radio "Mehendi Ceremony Mehendi Ceremony" [ref=e645]
+                  - generic [ref=e646] [cursor=pointer]:
+                    - img "Mehendi Ceremony" [ref=e647]
+                    - generic [ref=e648]: Mehendi Ceremony
+                - generic [ref=e649]:
+                  - radio "Mehendi Ceremony (Redesigned) Mehendi Ceremony (Redesigned)" [ref=e650]
+                  - generic [ref=e651] [cursor=pointer]:
+                    - img "Mehendi Ceremony (Redesigned)" [ref=e652]
+                    - generic [ref=e653]: Mehendi Ceremony (Redesigned)
+                - generic [ref=e654]:
+                  - radio "Haldi Ceremony Haldi Ceremony" [ref=e655]
+                  - generic [ref=e656] [cursor=pointer]:
+                    - img "Haldi Ceremony" [ref=e657]
+                    - generic [ref=e658]: Haldi Ceremony
+                - generic [ref=e659]:
+                  - radio "Haldi Ceremony (Redesigned) Haldi Ceremony (Redesigned)" [ref=e660]
+                  - generic [ref=e661] [cursor=pointer]:
+                    - img "Haldi Ceremony (Redesigned)" [ref=e662]
+                    - generic [ref=e663]: Haldi Ceremony (Redesigned)
+                - generic [ref=e664]:
+                  - radio "Sangeet Evening Sangeet Evening" [ref=e665]
+                  - generic [ref=e666] [cursor=pointer]:
+                    - img "Sangeet Evening" [ref=e667]
+                    - generic [ref=e668]: Sangeet Evening
+                - generic [ref=e669]:
+                  - radio "Sangeet Evening (Redesigned) Sangeet Evening (Redesigned)" [ref=e670]
+                  - generic [ref=e671] [cursor=pointer]:
+                    - img "Sangeet Evening (Redesigned)" [ref=e672]
+                    - generic [ref=e673]: Sangeet Evening (Redesigned)
+                - generic [ref=e674]:
+                  - radio "Hindu Vivah Hindu Vivah" [ref=e675]
+                  - generic [ref=e676] [cursor=pointer]:
+                    - img "Hindu Vivah" [ref=e677]
+                    - generic [ref=e678]: Hindu Vivah
+                - generic [ref=e679]:
+                  - radio "Hindu Vivah (Redesigned) Hindu Vivah (Redesigned)" [ref=e680]
+                  - generic [ref=e681] [cursor=pointer]:
+                    - img "Hindu Vivah (Redesigned)" [ref=e682]
+                    - generic [ref=e683]: Hindu Vivah (Redesigned)
+                - generic [ref=e684]:
+                  - radio "Anand Karaj Anand Karaj" [ref=e685]
+                  - generic [ref=e686] [cursor=pointer]:
+                    - img "Anand Karaj" [ref=e687]
+                    - generic [ref=e688]: Anand Karaj
+                - generic [ref=e689]:
+                  - radio "Anand Karaj (Redesigned) Anand Karaj (Redesigned)" [ref=e690]
+                  - generic [ref=e691] [cursor=pointer]:
+                    - img "Anand Karaj (Redesigned)" [ref=e692]
+                    - generic [ref=e693]: Anand Karaj (Redesigned)
+                - generic [ref=e694]:
+                  - radio "Nikah Ceremony Nikah Ceremony" [ref=e695]
+                  - generic [ref=e696] [cursor=pointer]:
+                    - img "Nikah Ceremony" [ref=e697]
+                    - generic [ref=e698]: Nikah Ceremony
+                - generic [ref=e699]:
+                  - radio "Nikah Ceremony (Redesigned) Nikah Ceremony (Redesigned)" [ref=e700]
+                  - generic [ref=e701] [cursor=pointer]:
+                    - img "Nikah Ceremony (Redesigned)" [ref=e702]
+                    - generic [ref=e703]: Nikah Ceremony (Redesigned)
+                - generic [ref=e704]:
+                  - radio "Christian Wedding Christian Wedding" [ref=e705]
+                  - generic [ref=e706] [cursor=pointer]:
+                    - img "Christian Wedding" [ref=e707]
+                    - generic [ref=e708]: Christian Wedding
+                - generic [ref=e709]:
+                  - radio "Christian Wedding (Redesigned) Christian Wedding (Redesigned)" [ref=e710]
+                  - generic [ref=e711] [cursor=pointer]:
+                    - img "Christian Wedding (Redesigned)" [ref=e712]
+                    - generic [ref=e713]: Christian Wedding (Redesigned)
+                - generic [ref=e714]:
+                  - radio "Jain Vivah Jain Vivah" [ref=e715]
+                  - generic [ref=e716] [cursor=pointer]:
+                    - img "Jain Vivah" [ref=e717]
+                    - generic [ref=e718]: Jain Vivah
+                - generic [ref=e719]:
+                  - radio "Jain Vivah (Redesigned) Jain Vivah (Redesigned)" [ref=e720]
+                  - generic [ref=e721] [cursor=pointer]:
+                    - img "Jain Vivah (Redesigned)" [ref=e722]
+                    - generic [ref=e723]: Jain Vivah (Redesigned)
+                - generic [ref=e724]:
+                  - radio "Buddhist Union Buddhist Union" [ref=e725]
+                  - generic [ref=e726] [cursor=pointer]:
+                    - img "Buddhist Union" [ref=e727]
+                    - generic [ref=e728]: Buddhist Union
+                - generic [ref=e729]:
+                  - radio "Buddhist Union (Redesigned) Buddhist Union (Redesigned)" [ref=e730]
+                  - generic [ref=e731] [cursor=pointer]:
+                    - img "Buddhist Union (Redesigned)" [ref=e732]
+                    - generic [ref=e733]: Buddhist Union (Redesigned)
+                - generic [ref=e734]:
+                  - radio "Parsi Lagan Parsi Lagan" [ref=e735]
+                  - generic [ref=e736] [cursor=pointer]:
+                    - img "Parsi Lagan" [ref=e737]
+                    - generic [ref=e738]: Parsi Lagan
+                - generic [ref=e739]:
+                  - radio "Parsi Lagan (Redesigned) Parsi Lagan (Redesigned)" [ref=e740]
+                  - generic [ref=e741] [cursor=pointer]:
+                    - img "Parsi Lagan (Redesigned)" [ref=e742]
+                    - generic [ref=e743]: Parsi Lagan (Redesigned)
+                - generic [ref=e744]:
+                  - radio "Interfaith Union Interfaith Union" [ref=e745]
+                  - generic [ref=e746] [cursor=pointer]:
+                    - img "Interfaith Union" [ref=e747]
+                    - generic [ref=e748]: Interfaith Union
+                - generic [ref=e749]:
+                  - radio "Interfaith Union (Redesigned) Interfaith Union (Redesigned)" [ref=e750]
+                  - generic [ref=e751] [cursor=pointer]:
+                    - img "Interfaith Union (Redesigned)" [ref=e752]
+                    - generic [ref=e753]: Interfaith Union (Redesigned)
+                - generic [ref=e754]:
+                  - radio "Civil Ceremony Civil Ceremony" [ref=e755]
+                  - generic [ref=e756] [cursor=pointer]:
+                    - img "Civil Ceremony" [ref=e757]
+                    - generic [ref=e758]: Civil Ceremony
+                - generic [ref=e759]:
+                  - radio "Japanese Mizuhiki Japanese Mizuhiki" [ref=e760]
+                  - generic [ref=e761] [cursor=pointer]:
+                    - img "Japanese Mizuhiki" [ref=e762]
+                    - generic [ref=e763]: Japanese Mizuhiki
+                - generic [ref=e764]:
+                  - radio "Korean Dancheong Korean Dancheong" [ref=e765]
+                  - generic [ref=e766] [cursor=pointer]:
+                    - img "Korean Dancheong" [ref=e767]
+                    - generic [ref=e768]: Korean Dancheong
+                - generic [ref=e769]:
+                  - radio "Chinese Double Joy Chinese Double Joy" [ref=e770]
+                  - generic [ref=e771] [cursor=pointer]:
+                    - img "Chinese Double Joy" [ref=e772]
+                    - generic [ref=e773]: Chinese Double Joy
+                - generic [ref=e774]:
+                  - radio "Filipino Sampaguita Filipino Sampaguita" [ref=e775]
+                  - generic [ref=e776] [cursor=pointer]:
+                    - img "Filipino Sampaguita" [ref=e777]
+                    - generic [ref=e778]: Filipino Sampaguita
+                - generic [ref=e779]:
+                  - radio "Thai Lai Kranok Thai Lai Kranok" [ref=e780]
+                  - generic [ref=e781] [cursor=pointer]:
+                    - img "Thai Lai Kranok" [ref=e782]
+                    - generic [ref=e783]: Thai Lai Kranok
+                - generic [ref=e784]:
+                  - radio "Indonesian Batik Indonesian Batik" [ref=e785]
+                  - generic [ref=e786] [cursor=pointer]:
+                    - img "Indonesian Batik" [ref=e787]
+                    - generic [ref=e788]: Indonesian Batik
+                - generic [ref=e789]:
+                  - radio "Vietnamese Lotus Vietnamese Lotus" [ref=e790]
+                  - generic [ref=e791] [cursor=pointer]:
+                    - img "Vietnamese Lotus" [ref=e792]
+                    - generic [ref=e793]: Vietnamese Lotus
+                - generic [ref=e794]:
+                  - radio "Pakistani Truck Art Pakistani Truck Art" [ref=e795]
+                  - generic [ref=e796] [cursor=pointer]:
+                    - img "Pakistani Truck Art" [ref=e797]
+                    - generic [ref=e798]: Pakistani Truck Art
+                - generic [ref=e799]:
+                  - radio "Pakistani Truck Art (Redesigned) Pakistani Truck Art (Redesigned)" [ref=e800]
+                  - generic [ref=e801] [cursor=pointer]:
+                    - img "Pakistani Truck Art (Redesigned)" [ref=e802]
+                    - generic [ref=e803]: Pakistani Truck Art (Redesigned)
+                - generic [ref=e804]:
+                  - radio "Bangladeshi Jamdani Bangladeshi Jamdani" [ref=e805]
+                  - generic [ref=e806] [cursor=pointer]:
+                    - img "Bangladeshi Jamdani" [ref=e807]
+                    - generic [ref=e808]: Bangladeshi Jamdani
+                - generic [ref=e809]:
+                  - radio "Bangladeshi Jamdani (Redesigned) Bangladeshi Jamdani (Redesigned)" [ref=e810]
+                  - generic [ref=e811] [cursor=pointer]:
+                    - img "Bangladeshi Jamdani (Redesigned)" [ref=e812]
+                    - generic [ref=e813]: Bangladeshi Jamdani (Redesigned)
+                - generic [ref=e814]:
+                  - radio "Sri Lankan Poruwa Sri Lankan Poruwa" [ref=e815]
+                  - generic [ref=e816] [cursor=pointer]:
+                    - img "Sri Lankan Poruwa" [ref=e817]
+                    - generic [ref=e818]: Sri Lankan Poruwa
+                - generic [ref=e819]:
+                  - radio "Sri Lankan Poruwa (Redesigned) Sri Lankan Poruwa (Redesigned)" [ref=e820]
+                  - generic [ref=e821] [cursor=pointer]:
+                    - img "Sri Lankan Poruwa (Redesigned)" [ref=e822]
+                    - generic [ref=e823]: Sri Lankan Poruwa (Redesigned)
+                - generic [ref=e824]:
+                  - radio "Italian Rinascimento Italian Rinascimento" [ref=e825]
+                  - generic [ref=e826] [cursor=pointer]:
+                    - img "Italian Rinascimento" [ref=e827]
+                    - generic [ref=e828]: Italian Rinascimento
+                - generic [ref=e829]:
+                  - radio "French Fleur de Lis French Fleur de Lis" [ref=e830]
+                  - generic [ref=e831] [cursor=pointer]:
+                    - img "French Fleur de Lis" [ref=e832]
+                    - generic [ref=e833]: French Fleur de Lis
+                - generic [ref=e834]:
+                  - radio "Greek Meander Greek Meander" [ref=e835]
+                  - generic [ref=e836] [cursor=pointer]:
+                    - img "Greek Meander" [ref=e837]
+                    - generic [ref=e838]: Greek Meander
+                - generic [ref=e839]:
+                  - radio "Spanish Mudejar Spanish Mudejar" [ref=e840]
+                  - generic [ref=e841] [cursor=pointer]:
+                    - img "Spanish Mudejar" [ref=e842]
+                    - generic [ref=e843]: Spanish Mudejar
+                - generic [ref=e844]:
+                  - radio "British Regency British Regency" [ref=e845]
+                  - generic [ref=e846] [cursor=pointer]:
+                    - img "British Regency" [ref=e847]
+                    - generic [ref=e848]: British Regency
+                - generic [ref=e849]:
+                  - radio "Nigerian Adire Nigerian Adire" [ref=e850]
+                  - generic [ref=e851] [cursor=pointer]:
+                    - img "Nigerian Adire" [ref=e852]
+                    - generic [ref=e853]: Nigerian Adire
+                - generic [ref=e854]:
+                  - radio "Ghanaian Kente Ghanaian Kente" [ref=e855]
+                  - generic [ref=e856] [cursor=pointer]:
+                    - img "Ghanaian Kente" [ref=e857]
+                    - generic [ref=e858]: Ghanaian Kente
+                - generic [ref=e859]:
+                  - radio "Moroccan Zellige Moroccan Zellige" [ref=e860]
+                  - generic [ref=e861] [cursor=pointer]:
+                    - img "Moroccan Zellige" [ref=e862]
+                    - generic [ref=e863]: Moroccan Zellige
+                - generic [ref=e864]:
+                  - radio "Mexican Papel Picado Mexican Papel Picado" [ref=e865]
+                  - generic [ref=e866] [cursor=pointer]:
+                    - img "Mexican Papel Picado" [ref=e867]
+                    - generic [ref=e868]: Mexican Papel Picado
+                - generic [ref=e869]:
+                  - radio "Brazilian Tropical Brazilian Tropical" [ref=e870]
+                  - generic [ref=e871] [cursor=pointer]:
+                    - img "Brazilian Tropical" [ref=e872]
+                    - generic [ref=e873]: Brazilian Tropical
+                - generic [ref=e874]:
+                  - radio "Caribbean Hibiscus Caribbean Hibiscus" [ref=e875]
+                  - generic [ref=e876] [cursor=pointer]:
+                    - img "Caribbean Hibiscus" [ref=e877]
+                    - generic [ref=e878]: Caribbean Hibiscus
+                - generic [ref=e879]:
+                  - radio "Persian Boteh Persian Boteh" [ref=e880]
+                  - generic [ref=e881] [cursor=pointer]:
+                    - img "Persian Boteh" [ref=e882]
+                    - generic [ref=e883]: Persian Boteh
+                - generic [ref=e884]:
+                  - radio "Ethiopian Habesha Ethiopian Habesha" [ref=e885]
+                  - generic [ref=e886] [cursor=pointer]:
+                    - img "Ethiopian Habesha" [ref=e887]
+                    - generic [ref=e888]: Ethiopian Habesha
+                - generic [ref=e889]:
+                  - radio "Baraat Procession Baraat Procession" [ref=e890]
+                  - generic [ref=e891] [cursor=pointer]:
+                    - img "Baraat Procession" [ref=e892]
+                    - generic [ref=e893]: Baraat Procession
+                - generic [ref=e894]:
+                  - radio "Baraat Procession (Redesigned) Baraat Procession (Redesigned)" [ref=e895]
+                  - generic [ref=e896] [cursor=pointer]:
+                    - img "Baraat Procession (Redesigned)" [ref=e897]
+                    - generic [ref=e898]: Baraat Procession (Redesigned)
+                - generic [ref=e899]:
+                  - radio "Jaimala Exchange Jaimala Exchange" [ref=e900]
+                  - generic [ref=e901] [cursor=pointer]:
+                    - img "Jaimala Exchange" [ref=e902]
+                    - generic [ref=e903]: Jaimala Exchange
+                - generic [ref=e904]:
+                  - radio "Jaimala Exchange (Redesigned) Jaimala Exchange (Redesigned)" [ref=e905]
+                  - generic [ref=e906] [cursor=pointer]:
+                    - img "Jaimala Exchange (Redesigned)" [ref=e907]
+                    - generic [ref=e908]: Jaimala Exchange (Redesigned)
+                - generic [ref=e909]:
+                  - radio "Saat Phere Saat Phere" [ref=e910]
+                  - generic [ref=e911] [cursor=pointer]:
+                    - img "Saat Phere" [ref=e912]
+                    - generic [ref=e913]: Saat Phere
+                - generic [ref=e914]:
+                  - radio "Saat Phere (Redesigned) Saat Phere (Redesigned)" [ref=e915]
+                  - generic [ref=e916] [cursor=pointer]:
+                    - img "Saat Phere (Redesigned)" [ref=e917]
+                    - generic [ref=e918]: Saat Phere (Redesigned)
+                - generic [ref=e919]:
+                  - radio "Nikah Nama Nikah Nama" [ref=e920]
+                  - generic [ref=e921] [cursor=pointer]:
+                    - img "Nikah Nama" [ref=e922]
+                    - generic [ref=e923]: Nikah Nama
+                - generic [ref=e924]:
+                  - radio "Nikah Nama (Redesigned) Nikah Nama (Redesigned)" [ref=e925]
+                  - generic [ref=e926] [cursor=pointer]:
+                    - img "Nikah Nama (Redesigned)" [ref=e927]
+                    - generic [ref=e928]: Nikah Nama (Redesigned)
+                - generic [ref=e929]:
+                  - radio "Anand Karaj Ardas Anand Karaj Ardas" [ref=e930]
+                  - generic [ref=e931] [cursor=pointer]:
+                    - img "Anand Karaj Ardas" [ref=e932]
+                    - generic [ref=e933]: Anand Karaj Ardas
+                - generic [ref=e934]:
+                  - radio "Anand Karaj Ardas (Redesigned) Anand Karaj Ardas (Redesigned)" [ref=e935]
+                  - generic [ref=e936] [cursor=pointer]:
+                    - img "Anand Karaj Ardas (Redesigned)" [ref=e937]
+                    - generic [ref=e938]: Anand Karaj Ardas (Redesigned)
+                - generic [ref=e939]:
+                  - radio "Wedding Day Wedding Day" [ref=e940]
+                  - generic [ref=e941] [cursor=pointer]:
+                    - img "Wedding Day" [ref=e942]
+                    - generic [ref=e943]: Wedding Day
+                - generic [ref=e944]:
+                  - radio "Wedding Day (Redesigned) Wedding Day (Redesigned)" [ref=e945]
+                  - generic [ref=e946] [cursor=pointer]:
+                    - img "Wedding Day (Redesigned)" [ref=e947]
+                    - generic [ref=e948]: Wedding Day (Redesigned)
+                - generic [ref=e949]:
+                  - radio "Vidaai Farewell Vidaai Farewell" [ref=e950]
+                  - generic [ref=e951] [cursor=pointer]:
+                    - img "Vidaai Farewell" [ref=e952]
+                    - generic [ref=e953]: Vidaai Farewell
+                - generic [ref=e954]:
+                  - radio "Vidaai Farewell (Redesigned) Vidaai Farewell (Redesigned)" [ref=e955]
+                  - generic [ref=e956] [cursor=pointer]:
+                    - img "Vidaai Farewell (Redesigned)" [ref=e957]
+                    - generic [ref=e958]: Vidaai Farewell (Redesigned)
+                - generic [ref=e959]:
+                  - radio "Bride & Groom Bride & Groom" [ref=e960]
+                  - generic [ref=e961] [cursor=pointer]:
+                    - img "Bride & Groom" [ref=e962]
+                    - generic [ref=e963]: Bride & Groom
+                - generic [ref=e964]:
+                  - radio "Bride & Bride Bride & Bride" [ref=e965]
+                  - generic [ref=e966] [cursor=pointer]:
+                    - img "Bride & Bride" [ref=e967]
+                    - generic [ref=e968]: Bride & Bride
+                - generic [ref=e969]:
+                  - radio "Groom & Groom Groom & Groom" [ref=e970]
+                  - generic [ref=e971] [cursor=pointer]:
+                    - img "Groom & Groom" [ref=e972]
+                    - generic [ref=e973]: Groom & Groom
+                - generic [ref=e974]:
+                  - radio "The Two Of Us The Two Of Us" [ref=e975]
+                  - generic [ref=e976] [cursor=pointer]:
+                    - img "The Two Of Us" [ref=e977]
+                    - generic [ref=e978]: The Two Of Us
+                - generic [ref=e979]:
+                  - radio "Our Son’s Wedding Our Son’s Wedding" [ref=e980]
+                  - generic [ref=e981] [cursor=pointer]:
+                    - img "Our Son’s Wedding" [ref=e982]
+                    - generic [ref=e983]: Our Son’s Wedding
+                - generic [ref=e984]:
+                  - radio "Our Daughter’s Wedding Our Daughter’s Wedding" [ref=e985]
+                  - generic [ref=e986] [cursor=pointer]:
+                    - img "Our Daughter’s Wedding" [ref=e987]
+                    - generic [ref=e988]: Our Daughter’s Wedding
+                - generic [ref=e989]:
+                  - radio "My Brother’s Wedding My Brother’s Wedding" [ref=e990]
+                  - generic [ref=e991] [cursor=pointer]:
+                    - img "My Brother’s Wedding" [ref=e992]
+                    - generic [ref=e993]: My Brother’s Wedding
+                - generic [ref=e994]:
+                  - radio "My Sister’s Wedding My Sister’s Wedding" [ref=e995]
+                  - generic [ref=e996] [cursor=pointer]:
+                    - img "My Sister’s Wedding" [ref=e997]
+                    - generic [ref=e998]: My Sister’s Wedding
+                - generic [ref=e999]:
+                  - radio "A Friend’s Wedding A Friend’s Wedding" [ref=e1000]
+                  - generic [ref=e1001] [cursor=pointer]:
+                    - img "A Friend’s Wedding" [ref=e1002]
+                    - generic [ref=e1003]: A Friend’s Wedding
+                - generic [ref=e1004]:
+                  - radio "A Family Wedding A Family Wedding" [ref=e1005]
+                  - generic [ref=e1006] [cursor=pointer]:
+                    - img "A Family Wedding" [ref=e1007]
+                    - generic [ref=e1008]: A Family Wedding
+                - generic [ref=e1009]:
+                  - radio "Cinematic Love Story Cinematic Love Story" [ref=e1010]
+                  - generic [ref=e1011] [cursor=pointer]:
+                    - img "Cinematic Love Story" [ref=e1012]
+                    - generic [ref=e1013]: Cinematic Love Story
+                - generic [ref=e1014]:
+                  - radio "Cinematic Love Story (Redesigned) Cinematic Love Story (Redesigned)" [ref=e1015]
+                  - generic [ref=e1016] [cursor=pointer]:
+                    - img "Cinematic Love Story (Redesigned)" [ref=e1017]
+                    - generic [ref=e1018]: Cinematic Love Story (Redesigned)
+                - generic [ref=e1019]:
+                  - radio "Royal Durbar Royal Durbar" [ref=e1020]
+                  - generic [ref=e1021] [cursor=pointer]:
+                    - img "Royal Durbar" [ref=e1022]
+                    - generic [ref=e1023]: Royal Durbar
+                - generic [ref=e1024]:
+                  - radio "Royal Durbar (Redesigned) Royal Durbar (Redesigned)" [ref=e1025]
+                  - generic [ref=e1026] [cursor=pointer]:
+                    - img "Royal Durbar (Redesigned)" [ref=e1027]
+                    - generic [ref=e1028]: Royal Durbar (Redesigned)
+                - generic [ref=e1029]:
+                  - radio "Luxe Noir Luxe Noir" [ref=e1030]
+                  - generic [ref=e1031] [cursor=pointer]:
+                    - img "Luxe Noir" [ref=e1032]
+                    - generic [ref=e1033]: Luxe Noir
+                - generic [ref=e1034]:
+                  - radio "Luxe Noir (Redesigned) Luxe Noir (Redesigned)" [ref=e1035]
+                  - generic [ref=e1036] [cursor=pointer]:
+                    - img "Luxe Noir (Redesigned)" [ref=e1037]
+                    - generic [ref=e1038]: Luxe Noir (Redesigned)
+                - generic [ref=e1039]:
+                  - radio "Velvet Rouge Velvet Rouge" [ref=e1040]
+                  - generic [ref=e1041] [cursor=pointer]:
+                    - img "Velvet Rouge" [ref=e1042]
+                    - generic [ref=e1043]: Velvet Rouge
+                - generic [ref=e1044]:
+                  - radio "Velvet Rouge (Redesigned) Velvet Rouge (Redesigned)" [ref=e1045]
+                  - generic [ref=e1046] [cursor=pointer]:
+                    - img "Velvet Rouge (Redesigned)" [ref=e1047]
+                    - generic [ref=e1048]: Velvet Rouge (Redesigned)
+                - generic [ref=e1049]:
+                  - radio "Gilded Branch Gilded Branch" [ref=e1050]
+                  - generic [ref=e1051] [cursor=pointer]:
+                    - img "Gilded Branch" [ref=e1052]
+                    - generic [ref=e1053]: Gilded Branch
+                - generic [ref=e1054]:
+                  - radio "Palace Colonnade Palace Colonnade" [ref=e1055]
+                  - generic [ref=e1056] [cursor=pointer]:
+                    - img "Palace Colonnade" [ref=e1057]
+                    - generic [ref=e1058]: Palace Colonnade
+                - generic [ref=e1059]:
+                  - radio "Palace Colonnade (Redesigned) Palace Colonnade (Redesigned)" [ref=e1060]
+                  - generic [ref=e1061] [cursor=pointer]:
+                    - img "Palace Colonnade (Redesigned)" [ref=e1062]
+                    - generic [ref=e1063]: Palace Colonnade (Redesigned)
+                - generic [ref=e1064]:
+                  - radio "Deco Gatsby Deco Gatsby" [ref=e1065]
+                  - generic [ref=e1066] [cursor=pointer]:
+                    - img "Deco Gatsby" [ref=e1067]
+                    - generic [ref=e1068]: Deco Gatsby
+                - generic [ref=e1069]:
+                  - radio "Deco Gatsby (Redesigned) Deco Gatsby (Redesigned)" [ref=e1070]
+                  - generic [ref=e1071] [cursor=pointer]:
+                    - img "Deco Gatsby (Redesigned)" [ref=e1072]
+                    - generic [ref=e1073]: Deco Gatsby (Redesigned)
+                - generic [ref=e1074]:
+                  - radio "Maharaja Palace Maharaja Palace" [ref=e1075]
+                  - generic [ref=e1076] [cursor=pointer]:
+                    - img "Maharaja Palace" [ref=e1077]
+                    - generic [ref=e1078]: Maharaja Palace
+                - generic [ref=e1079]:
+                  - radio "Maharaja Palace (Redesigned) Maharaja Palace (Redesigned)" [ref=e1080]
+                  - generic [ref=e1081] [cursor=pointer]:
+                    - img "Maharaja Palace (Redesigned)" [ref=e1082]
+                    - generic [ref=e1083]: Maharaja Palace (Redesigned)
+                - generic [ref=e1084]:
+                  - radio "Regal Maroon Regal Maroon" [ref=e1085]
+                  - generic [ref=e1086] [cursor=pointer]:
+                    - img "Regal Maroon" [ref=e1087]
+                    - generic [ref=e1088]: Regal Maroon
+                - generic [ref=e1089]:
+                  - radio "Regal Maroon (Redesigned) Regal Maroon (Redesigned)" [ref=e1090]
+                  - generic [ref=e1091] [cursor=pointer]:
+                    - img "Regal Maroon (Redesigned)" [ref=e1092]
+                    - generic [ref=e1093]: Regal Maroon (Redesigned)
+                - generic [ref=e1094]:
+                  - radio "Imperial Gold Imperial Gold" [ref=e1095]
+                  - generic [ref=e1096] [cursor=pointer]:
+                    - img "Imperial Gold" [ref=e1097]
+                    - generic [ref=e1098]: Imperial Gold
+                - generic [ref=e1099]:
+                  - radio "Imperial Gold (Redesigned) Imperial Gold (Redesigned)" [ref=e1100]
+                  - generic [ref=e1101] [cursor=pointer]:
+                    - img "Imperial Gold (Redesigned)" [ref=e1102]
+                    - generic [ref=e1103]: Imperial Gold (Redesigned)
+                - generic [ref=e1104]:
+                  - radio "Champagne Palace Champagne Palace" [ref=e1105]
+                  - generic [ref=e1106] [cursor=pointer]:
+                    - img "Champagne Palace" [ref=e1107]
+                    - generic [ref=e1108]: Champagne Palace
+                - generic [ref=e1109]:
+                  - radio "Champagne Palace (Redesigned) Champagne Palace (Redesigned)" [ref=e1110]
+                  - generic [ref=e1111] [cursor=pointer]:
+                    - img "Champagne Palace (Redesigned)" [ref=e1112]
+                    - generic [ref=e1113]: Champagne Palace (Redesigned)
+                - generic [ref=e1114]:
+                  - radio "Royal Garden Court Royal Garden Court" [ref=e1115]
+                  - generic [ref=e1116] [cursor=pointer]:
+                    - img "Royal Garden Court" [ref=e1117]
+                    - generic [ref=e1118]: Royal Garden Court
+                - generic [ref=e1119]:
+                  - radio "Royal Garden Court (Redesigned) Royal Garden Court (Redesigned)" [ref=e1120]
+                  - generic [ref=e1121] [cursor=pointer]:
+                    - img "Royal Garden Court (Redesigned)" [ref=e1122]
+                    - generic [ref=e1123]: Royal Garden Court (Redesigned)
+                - generic [ref=e1124]:
+                  - radio "Pearl & Champagne Pearl & Champagne" [ref=e1125]
+                  - generic [ref=e1126] [cursor=pointer]:
+                    - img "Pearl & Champagne" [ref=e1127]
+                    - generic [ref=e1128]: Pearl & Champagne
+                - generic [ref=e1129]:
+                  - radio "Pearl & Champagne (Redesigned) Pearl & Champagne (Redesigned)" [ref=e1130]
+                  - generic [ref=e1131] [cursor=pointer]:
+                    - img "Pearl & Champagne (Redesigned)" [ref=e1132]
+                    - generic [ref=e1133]: Pearl & Champagne (Redesigned)
+                - generic [ref=e1134]:
+                  - radio "Midnight Elegance Midnight Elegance" [ref=e1135]
+                  - generic [ref=e1136] [cursor=pointer]:
+                    - img "Midnight Elegance" [ref=e1137]
+                    - generic [ref=e1138]: Midnight Elegance
+                - generic [ref=e1139]:
+                  - radio "Midnight Elegance (Redesigned) Midnight Elegance (Redesigned)" [ref=e1140]
+                  - generic [ref=e1141] [cursor=pointer]:
+                    - img "Midnight Elegance (Redesigned)" [ref=e1142]
+                    - generic [ref=e1143]: Midnight Elegance (Redesigned)
+                - generic [ref=e1144]:
+                  - radio "Black Tie Romance Black Tie Romance" [ref=e1145]
+                  - generic [ref=e1146] [cursor=pointer]:
+                    - img "Black Tie Romance" [ref=e1147]
+                    - generic [ref=e1148]: Black Tie Romance
+                - generic [ref=e1149]:
+                  - radio "Elegant Floral Elegant Floral" [checked] [ref=e1150]
+                  - generic [ref=e1151] [cursor=pointer]:
+                    - img "Elegant Floral" [ref=e1152]
+                    - generic [ref=e1153]: Elegant Floral
+                - generic [ref=e1154]:
+                  - radio "Elegant Floral (Redesigned) Elegant Floral (Redesigned)" [ref=e1155]
+                  - generic [ref=e1156] [cursor=pointer]:
+                    - img "Elegant Floral (Redesigned)" [ref=e1157]
+                    - generic [ref=e1158]: Elegant Floral (Redesigned)
+                - generic [ref=e1159]:
+                  - radio "Romance In Blush Romance In Blush" [ref=e1160]
+                  - generic [ref=e1161] [cursor=pointer]:
+                    - img "Romance In Blush" [ref=e1162]
+                    - generic [ref=e1163]: Romance In Blush
+                - generic [ref=e1164]:
+                  - radio "Romance In Blush (Redesigned) Romance In Blush (Redesigned)" [ref=e1165]
+                  - generic [ref=e1166] [cursor=pointer]:
+                    - img "Romance In Blush (Redesigned)" [ref=e1167]
+                    - generic [ref=e1168]: Romance In Blush (Redesigned)
+                - generic [ref=e1169]:
+                  - radio "Peony Bloom Peony Bloom" [ref=e1170]
+                  - generic [ref=e1171] [cursor=pointer]:
+                    - img "Peony Bloom" [ref=e1172]
+                    - generic [ref=e1173]: Peony Bloom
+                - generic [ref=e1174]:
+                  - radio "Peony Bloom (Redesigned) Peony Bloom (Redesigned)" [ref=e1175]
+                  - generic [ref=e1176] [cursor=pointer]:
+                    - img "Peony Bloom (Redesigned)" [ref=e1177]
+                    - generic [ref=e1178]: Peony Bloom (Redesigned)
+                - generic [ref=e1179]:
+                  - radio "Botanical Press Botanical Press" [ref=e1180]
+                  - generic [ref=e1181] [cursor=pointer]:
+                    - img "Botanical Press" [ref=e1182]
+                    - generic [ref=e1183]: Botanical Press
+                - generic [ref=e1184]:
+                  - radio "Botanical Press (Redesigned) Botanical Press (Redesigned)" [ref=e1185]
+                  - generic [ref=e1186] [cursor=pointer]:
+                    - img "Botanical Press (Redesigned)" [ref=e1187]
+                    - generic [ref=e1188]: Botanical Press (Redesigned)
+                - generic [ref=e1189]:
+                  - radio "Garden Party Garden Party" [ref=e1190]
+                  - generic [ref=e1191] [cursor=pointer]:
+                    - img "Garden Party" [ref=e1192]
+                    - generic [ref=e1193]: Garden Party
+                - generic [ref=e1194]:
+                  - radio "Garden Party (Redesigned) Garden Party (Redesigned)" [ref=e1195]
+                  - generic [ref=e1196] [cursor=pointer]:
+                    - img "Garden Party (Redesigned)" [ref=e1197]
+                    - generic [ref=e1198]: Garden Party (Redesigned)
+                - generic [ref=e1199]:
+                  - radio "Rosewater Romance Rosewater Romance" [ref=e1200]
+                  - generic [ref=e1201] [cursor=pointer]:
+                    - img "Rosewater Romance" [ref=e1202]
+                    - generic [ref=e1203]: Rosewater Romance
+                - generic [ref=e1204]:
+                  - radio "Rosewater Romance (Redesigned) Rosewater Romance (Redesigned)" [ref=e1205]
+                  - generic [ref=e1206] [cursor=pointer]:
+                    - img "Rosewater Romance (Redesigned)" [ref=e1207]
+                    - generic [ref=e1208]: Rosewater Romance (Redesigned)
+                - generic [ref=e1209]:
+                  - radio "Lotus Garden Lotus Garden" [ref=e1210]
+                  - generic [ref=e1211] [cursor=pointer]:
+                    - img "Lotus Garden" [ref=e1212]
+                    - generic [ref=e1213]: Lotus Garden
+                - generic [ref=e1214]:
+                  - radio "Lotus Garden (Redesigned) Lotus Garden (Redesigned)" [ref=e1215]
+                  - generic [ref=e1216] [cursor=pointer]:
+                    - img "Lotus Garden (Redesigned)" [ref=e1217]
+                    - generic [ref=e1218]: Lotus Garden (Redesigned)
+                - generic [ref=e1219]:
+                  - radio "Wildflower Vows Wildflower Vows" [ref=e1220]
+                  - generic [ref=e1221] [cursor=pointer]:
+                    - img "Wildflower Vows" [ref=e1222]
+                    - generic [ref=e1223]: Wildflower Vows
+                - generic [ref=e1224]:
+                  - radio "Wildflower Vows (Redesigned) Wildflower Vows (Redesigned)" [ref=e1225]
+                  - generic [ref=e1226] [cursor=pointer]:
+                    - img "Wildflower Vows (Redesigned)" [ref=e1227]
+                    - generic [ref=e1228]: Wildflower Vows (Redesigned)
+                - generic [ref=e1229]:
+                  - radio "Watercolor Romance Watercolor Romance" [ref=e1230]
+                  - generic [ref=e1231] [cursor=pointer]:
+                    - img "Watercolor Romance" [ref=e1232]
+                    - generic [ref=e1233]: Watercolor Romance
+                - generic [ref=e1234]:
+                  - radio "Watercolor Romance (Redesigned) Watercolor Romance (Redesigned)" [ref=e1235]
+                  - generic [ref=e1236] [cursor=pointer]:
+                    - img "Watercolor Romance (Redesigned)" [ref=e1237]
+                    - generic [ref=e1238]: Watercolor Romance (Redesigned)
+                - generic [ref=e1239]:
+                  - radio "Pastel Garden Pastel Garden" [ref=e1240]
+                  - generic [ref=e1241] [cursor=pointer]:
+                    - img "Pastel Garden" [ref=e1242]
+                    - generic [ref=e1243]: Pastel Garden
+                - generic [ref=e1244]:
+                  - radio "Pastel Garden (Redesigned) Pastel Garden (Redesigned)" [ref=e1245]
+                  - generic [ref=e1246] [cursor=pointer]:
+                    - img "Pastel Garden (Redesigned)" [ref=e1247]
+                    - generic [ref=e1248]: Pastel Garden (Redesigned)
+                - generic [ref=e1249]:
+                  - radio "Cherry Blossom Love Cherry Blossom Love" [ref=e1250]
+                  - generic [ref=e1251] [cursor=pointer]:
+                    - img "Cherry Blossom Love" [ref=e1252]
+                    - generic [ref=e1253]: Cherry Blossom Love
+                - generic [ref=e1254]:
+                  - radio "Cherry Blossom Love (Redesigned) Cherry Blossom Love (Redesigned)" [ref=e1255]
+                  - generic [ref=e1256] [cursor=pointer]:
+                    - img "Cherry Blossom Love (Redesigned)" [ref=e1257]
+                    - generic [ref=e1258]: Cherry Blossom Love (Redesigned)
+                - generic [ref=e1259]:
+                  - radio "Coastal Vows Coastal Vows" [ref=e1260]
+                  - generic [ref=e1261] [cursor=pointer]:
+                    - img "Coastal Vows" [ref=e1262]
+                    - generic [ref=e1263]: Coastal Vows
+                - generic [ref=e1264]:
+                  - radio "Coastal Vows (Redesigned) Coastal Vows (Redesigned)" [ref=e1265]
+                  - generic [ref=e1266] [cursor=pointer]:
+                    - img "Coastal Vows (Redesigned)" [ref=e1267]
+                    - generic [ref=e1268]: Coastal Vows (Redesigned)
+                - generic [ref=e1269]:
+                  - radio "Mountain Vows Mountain Vows" [ref=e1270]
+                  - generic [ref=e1271] [cursor=pointer]:
+                    - img "Mountain Vows" [ref=e1272]
+                    - generic [ref=e1273]: Mountain Vows
+                - generic [ref=e1274]:
+                  - radio "Mountain Vows (Redesigned) Mountain Vows (Redesigned)" [ref=e1275]
+                  - generic [ref=e1276] [cursor=pointer]:
+                    - img "Mountain Vows (Redesigned)" [ref=e1277]
+                    - generic [ref=e1278]: Mountain Vows (Redesigned)
+                - generic [ref=e1279]:
+                  - radio "Destination Voyage Destination Voyage" [ref=e1280]
+                  - generic [ref=e1281] [cursor=pointer]:
+                    - img "Destination Voyage" [ref=e1282]
+                    - generic [ref=e1283]: Destination Voyage
+                - generic [ref=e1284]:
+                  - radio "Destination Voyage (Redesigned) Destination Voyage (Redesigned)" [ref=e1285]
+                  - generic [ref=e1286] [cursor=pointer]:
+                    - img "Destination Voyage (Redesigned)" [ref=e1287]
+                    - generic [ref=e1288]: Destination Voyage (Redesigned)
+                - generic [ref=e1289]:
+                  - radio "Moonlit Florals Moonlit Florals" [ref=e1290]
+                  - generic [ref=e1291] [cursor=pointer]:
+                    - img "Moonlit Florals" [ref=e1292]
+                    - generic [ref=e1293]: Moonlit Florals
+                - generic [ref=e1294]:
+                  - radio "Moonlit Florals (Redesigned) Moonlit Florals (Redesigned)" [ref=e1295]
+                  - generic [ref=e1296] [cursor=pointer]:
+                    - img "Moonlit Florals (Redesigned)" [ref=e1297]
+                    - generic [ref=e1298]: Moonlit Florals (Redesigned)
+                - generic [ref=e1299]:
+                  - radio "Beachside Bliss Beachside Bliss" [ref=e1300]
+                  - generic [ref=e1301] [cursor=pointer]:
+                    - img "Beachside Bliss" [ref=e1302]
+                    - generic [ref=e1303]: Beachside Bliss
+                - generic [ref=e1304]:
+                  - radio "Beachside Bliss (Redesigned) Beachside Bliss (Redesigned)" [ref=e1305]
+                  - generic [ref=e1306] [cursor=pointer]:
+                    - img "Beachside Bliss (Redesigned)" [ref=e1307]
+                    - generic [ref=e1308]: Beachside Bliss (Redesigned)
+                - generic [ref=e1309]:
+                  - radio "Goa Sunset Vows Goa Sunset Vows" [ref=e1310]
+                  - generic [ref=e1311] [cursor=pointer]:
+                    - img "Goa Sunset Vows" [ref=e1312]
+                    - generic [ref=e1313]: Goa Sunset Vows
+                - generic [ref=e1314]:
+                  - radio "Goa Sunset Vows (Redesigned) Goa Sunset Vows (Redesigned)" [ref=e1315]
+                  - generic [ref=e1316] [cursor=pointer]:
+                    - img "Goa Sunset Vows (Redesigned)" [ref=e1317]
+                    - generic [ref=e1318]: Goa Sunset Vows (Redesigned)
+                - generic [ref=e1319]:
+                  - radio "Tropical Paradise Tropical Paradise" [ref=e1320]
+                  - generic [ref=e1321] [cursor=pointer]:
+                    - img "Tropical Paradise" [ref=e1322]
+                    - generic [ref=e1323]: Tropical Paradise
+                - generic [ref=e1324]:
+                  - radio "Tropical Paradise (Redesigned) Tropical Paradise (Redesigned)" [ref=e1325]
+                  - generic [ref=e1326] [cursor=pointer]:
+                    - img "Tropical Paradise (Redesigned)" [ref=e1327]
+                    - generic [ref=e1328]: Tropical Paradise (Redesigned)
+                - generic [ref=e1329]:
+                  - radio "Desert Romance Desert Romance" [ref=e1330]
+                  - generic [ref=e1331] [cursor=pointer]:
+                    - img "Desert Romance" [ref=e1332]
+                    - generic [ref=e1333]: Desert Romance
+                - generic [ref=e1334]:
+                  - radio "Desert Romance (Redesigned) Desert Romance (Redesigned)" [ref=e1335]
+                  - generic [ref=e1336] [cursor=pointer]:
+                    - img "Desert Romance (Redesigned)" [ref=e1337]
+                    - generic [ref=e1338]: Desert Romance (Redesigned)
+                - generic [ref=e1339]:
+                  - radio "Lakefront Love Lakefront Love" [ref=e1340]
+                  - generic [ref=e1341] [cursor=pointer]:
+                    - img "Lakefront Love" [ref=e1342]
+                    - generic [ref=e1343]: Lakefront Love
+                - generic [ref=e1344]:
+                  - radio "Lakefront Love (Redesigned) Lakefront Love (Redesigned)" [ref=e1345]
+                  - generic [ref=e1346] [cursor=pointer]:
+                    - img "Lakefront Love (Redesigned)" [ref=e1347]
+                    - generic [ref=e1348]: Lakefront Love (Redesigned)
+                - generic [ref=e1349]:
+                  - radio "European Escape European Escape" [ref=e1350]
+                  - generic [ref=e1351] [cursor=pointer]:
+                    - img "European Escape" [ref=e1352]
+                    - generic [ref=e1353]: European Escape
+                - generic [ref=e1354]:
+                  - radio "European Escape (Redesigned) European Escape (Redesigned)" [ref=e1355]
+                  - generic [ref=e1356] [cursor=pointer]:
+                    - img "European Escape (Redesigned)" [ref=e1357]
+                    - generic [ref=e1358]: European Escape (Redesigned)
+                - generic [ref=e1359]:
+                  - radio "Minimal Wedding Minimal Wedding" [ref=e1360]
+                  - generic [ref=e1361] [cursor=pointer]:
+                    - img "Minimal Wedding" [ref=e1362]
+                    - generic [ref=e1363]: Minimal Wedding
+                - generic [ref=e1364]:
+                  - radio "Modern Love Modern Love" [ref=e1365]
+                  - generic [ref=e1366] [cursor=pointer]:
+                    - img "Modern Love" [ref=e1367]
+                    - generic [ref=e1368]: Modern Love
+                - generic [ref=e1369]:
+                  - radio "Editorial Ivory Editorial Ivory" [ref=e1370]
+                  - generic [ref=e1371] [cursor=pointer]:
+                    - img "Editorial Ivory" [ref=e1372]
+                    - generic [ref=e1373]: Editorial Ivory
+                - generic [ref=e1374]:
+                  - radio "Quiet Minimal Quiet Minimal" [ref=e1375]
+                  - generic [ref=e1376] [cursor=pointer]:
+                    - img "Quiet Minimal" [ref=e1377]
+                    - generic [ref=e1378]: Quiet Minimal
+                - generic [ref=e1379]:
+                  - radio "Contemporary Arch Contemporary Arch" [ref=e1380]
+                  - generic [ref=e1381] [cursor=pointer]:
+                    - img "Contemporary Arch" [ref=e1382]
+                    - generic [ref=e1383]: Contemporary Arch
+                - generic [ref=e1384]:
+                  - radio "Vintage Letterpress Vintage Letterpress" [ref=e1385]
+                  - generic [ref=e1386] [cursor=pointer]:
+                    - img "Vintage Letterpress" [ref=e1387]
+                    - generic [ref=e1388]: Vintage Letterpress
+                - generic [ref=e1389]:
+                  - radio "Gen Z Bold Gen Z Bold" [ref=e1390]
+                  - generic [ref=e1391] [cursor=pointer]:
+                    - img "Gen Z Bold" [ref=e1392]
+                    - generic [ref=e1393]: Gen Z Bold
+                - generic [ref=e1394]:
+                  - radio "Digital Wedding Digital Wedding" [ref=e1395]
+                  - generic [ref=e1396] [cursor=pointer]:
+                    - img "Digital Wedding" [ref=e1397]
+                    - generic [ref=e1398]: Digital Wedding
+                - generic [ref=e1399]:
+                  - radio "Story Card Story Card" [ref=e1400]
+                  - generic [ref=e1401] [cursor=pointer]:
+                    - img "Story Card" [ref=e1402]
+                    - generic [ref=e1403]: Story Card
+                - generic [ref=e1404]:
+                  - radio "Modern Romance Modern Romance" [ref=e1405]
+                  - generic [ref=e1406] [cursor=pointer]:
+                    - img "Modern Romance" [ref=e1407]
+                    - generic [ref=e1408]: Modern Romance
+                - generic [ref=e1409]:
+                  - radio "Type Only Type Only" [ref=e1410]
+                  - generic [ref=e1411] [cursor=pointer]:
+                    - img "Type Only" [ref=e1412]
+                    - generic [ref=e1413]: Type Only
+                - generic [ref=e1414]:
+                  - radio "Monogram Seal Monogram Seal" [ref=e1415]
+                  - generic [ref=e1416] [cursor=pointer]:
+                    - img "Monogram Seal" [ref=e1417]
+                    - generic [ref=e1418]: Monogram Seal
+                - generic [ref=e1419]:
+                  - radio "Editorial Grid Editorial Grid" [ref=e1420]
+                  - generic [ref=e1421] [cursor=pointer]:
+                    - img "Editorial Grid" [ref=e1422]
+                    - generic [ref=e1423]: Editorial Grid
+                - generic [ref=e1424]:
+                  - radio "Modern Monogram Modern Monogram" [ref=e1425]
+                  - generic [ref=e1426] [cursor=pointer]:
+                    - img "Modern Monogram" [ref=e1427]
+                    - generic [ref=e1428]: Modern Monogram
+                - generic [ref=e1429]:
+                  - radio "Blush Watercolour Wedding Blush Watercolour Wedding" [ref=e1430]
+                  - generic [ref=e1431] [cursor=pointer]:
+                    - img "Blush Watercolour Wedding" [ref=e1432]
+                    - generic [ref=e1433]: Blush Watercolour Wedding
+                - generic [ref=e1434]:
+                  - radio "Midnight Gold Mandap Midnight Gold Mandap" [ref=e1435]
+                  - generic [ref=e1436] [cursor=pointer]:
+                    - img "Midnight Gold Mandap" [ref=e1437]
+                    - generic [ref=e1438]: Midnight Gold Mandap
+                - generic [ref=e1439]:
+                  - radio "Jasmine Temple Arch Jasmine Temple Arch" [ref=e1440]
+                  - generic [ref=e1441] [cursor=pointer]:
+                    - img "Jasmine Temple Arch" [ref=e1442]
+                    - generic [ref=e1443]: Jasmine Temple Arch
+                - generic [ref=e1444]:
+                  - radio "Saffron Sunrise Vows Saffron Sunrise Vows" [ref=e1445]
+                  - generic [ref=e1446] [cursor=pointer]:
+                    - img "Saffron Sunrise Vows" [ref=e1447]
+                    - generic [ref=e1448]: Saffron Sunrise Vows
+                - generic [ref=e1449]:
+                  - radio "Ivory Pearl Nuptials Ivory Pearl Nuptials" [ref=e1450]
+                  - generic [ref=e1451] [cursor=pointer]:
+                    - img "Ivory Pearl Nuptials" [ref=e1452]
+                    - generic [ref=e1453]: Ivory Pearl Nuptials
+        - generic [ref=e1454]:
+          - button "Back" [ref=e1455] [cursor=pointer]
+          - button "Continue" [ref=e1459] [cursor=pointer]
+  - contentinfo [ref=e1463]:
+    - generic [ref=e1464]:
+      - generic [ref=e1465]:
+        - generic [ref=e1466]:
+          - link [ref=e1467] [cursor=pointer]:
+            - /url: index.html
+            - img "InviteAura" [ref=e1468]
+          - paragraph [ref=e1469]: Beautiful digital invitations for every special moment.
+          - generic [ref=e1470]:
+            - generic "InviteAura on Facebook" [ref=e1471]
+            - generic "InviteAura on Instagram" [ref=e1474]
+            - generic "InviteAura on WhatsApp" [ref=e1479]
+            - generic "InviteAura on Telegram" [ref=e1483]
+        - generic [ref=e1487]:
+          - heading "Explore" [level=3] [ref=e1488]
+          - list [ref=e1489]:
+            - listitem [ref=e1490]:
+              - link "Home" [ref=e1491] [cursor=pointer]:
+                - /url: index.html
+            - listitem [ref=e1492]:
+              - link "Templates" [ref=e1493] [cursor=pointer]:
+                - /url: templates.html
+            - listitem [ref=e1494]:
+              - link "Categories" [ref=e1495] [cursor=pointer]:
+                - /url: categories.html
+            - listitem [ref=e1496]:
+              - link "Create Invitation" [ref=e1497] [cursor=pointer]:
+                - /url: create.html
+        - generic [ref=e1498]:
+          - heading "Learn" [level=3] [ref=e1499]
+          - list [ref=e1500]:
+            - listitem [ref=e1501]:
+              - link "Pricing" [ref=e1502] [cursor=pointer]:
+                - /url: pricing.html
+            - listitem [ref=e1503]:
+              - link "How It Works" [ref=e1504] [cursor=pointer]:
+                - /url: index.html#how-it-works
+            - listitem [ref=e1505]:
+              - link "FAQ" [ref=e1506] [cursor=pointer]:
+                - /url: faq.html
+            - listitem [ref=e1507]:
+              - link "About" [ref=e1508] [cursor=pointer]:
+                - /url: about.html
+        - generic [ref=e1509]:
+          - heading "Company" [level=3] [ref=e1510]
+          - list [ref=e1511]:
+            - listitem [ref=e1512]:
+              - link "Privacy Policy" [ref=e1513] [cursor=pointer]:
+                - /url: privacy.html
+            - listitem [ref=e1514]:
+              - link "Terms & Conditions" [ref=e1515] [cursor=pointer]:
+                - /url: terms.html
+            - listitem [ref=e1516]:
+              - link "Template Preview" [ref=e1517] [cursor=pointer]:
+                - /url: preview.html
+      - generic [ref=e1518]:
+        - paragraph [ref=e1519]:
+          - text: © 2026 InviteAura. All rights reserved.
+          - generic [ref=e1520]: Version 1.0.0
+        - navigation "Legal" [ref=e1521]:
+          - link "Contact" [ref=e1522] [cursor=pointer]:
+            - /url: mailto:help.lovelyaz@gmail.com
+          - link "Privacy" [ref=e1523] [cursor=pointer]:
+            - /url: privacy.html
+          - link "Terms" [ref=e1524] [cursor=pointer]:
+            - /url: terms.html
+  - status:
+    - generic [ref=e1525]:
+      - generic [ref=e1530]:
+        - generic [ref=e1531]: Welcome back
+        - generic [ref=e1532]: We restored the draft saved in this browser.
+      - button "Dismiss notification" [ref=e1533] [cursor=pointer]

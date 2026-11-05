@@ -8,6 +8,7 @@
     "api/upload.js": { "maxDuration": 30 },
     "api/invite.js": { "maxDuration": 30 },
     "api/check.js": { "includeFiles": "js/**" },
+    "api/template-page.js": { "includeFiles": "{js/**,preview.html}" },
     "api/cleanup.js": { "maxDuration": 60 }
   },
 
@@ -15,7 +16,21 @@
     { "path": "/api/cleanup", "schedule": "30 21 * * *" }
   ],
 
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
+    {
+      "source": "/preview.html",
+      "has": [{ "type": "query", "key": "template", "value": "(?<slug>[a-z0-9-]+)" }],
+      "destination": "/templates/:slug",
+      "permanent": true
+    }
+  ],
+
   "rewrites": [
+    {
+      "source": "/templates/:slug([a-z0-9-]+)",
+      "destination": "/api/template-page?slug=:slug"
+    },
     {
       "source": "/invitations/:file(.*)",
       "destination": "/api/invite?dir=invitations&file=:file"

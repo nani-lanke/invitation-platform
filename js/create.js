@@ -249,6 +249,13 @@
 
   var state = null;
 
+  /* host.html (the Host preview iframe) and card.html (Open card ↗) read
+     this first: a draft with photos and music can outgrow localStorage,
+     and then the saved copy is an older one with different images. It is
+     the Card preview's own data, so empty fields get the same placeholders
+     (an uploaded venue photo still shows before the venue name is typed). */
+  IH.editorDraft = function () { return state ? previewData() : null; };
+
   function defaultState() {
     return {
       eventType: 'wedding',
@@ -1187,6 +1194,14 @@
          from the last event type the host was looking at. */
       if (!on || !required) IH.validate.clearError(input);
     });
+
+    /* The swap row has no input of its own, so it follows the bride's name. */
+    var swapRow = qs('[data-swap-row]', root);
+    if (swapRow) {
+      var swapOn = shown.indexOf('brideName') !== -1;
+      swapRow.hidden = !swapOn;
+      swapRow.style.display = swapOn ? '' : 'none';
+    }
 
     var titleInput = qs('[name="title"]', root);
     if (titleInput) titleInput.placeholder = TITLE_PLACEHOLDERS[type] || TITLE_PLACEHOLDERS.other;

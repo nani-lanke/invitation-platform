@@ -331,6 +331,11 @@
     'date', 'time', 'venue', 'address', 'mapsUrl', 'phone',
     'email', 'message', 'additionalInformation', 'font', 'colors', 'customColors', 'animation',
     'showCountdown', 'showMaps', 'showGallery',
+    /* Everything else the preview draws, so the published page matches it. */
+    'additionalTitle', 'additionalSubtitle', 'brideParents', 'groomParents', 'babyRelation',
+    'namesSwapped', 'showBlessings', 'previewMode',
+    'haldiEnabled', 'haldiDate', 'haldiTime', 'mehndiEnabled', 'mehndiDate', 'mehndiTime',
+    'ceremonyEnabled', 'ceremonyDate', 'ceremonyTime', 'receptionEnabled', 'receptionDate', 'receptionTime',
     /* The uploads travel too. The server checks each one's type and size
        and commits them beside the page — see api/_validate.js for the
        ceilings, which exist because Vercel refuses a request body over

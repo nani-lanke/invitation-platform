@@ -31,6 +31,12 @@ const SCRIPTS = [
   'js/main.js',      // IH.dom, IH.icon, IH.store, IH.toast
   'js/templates.js', // IH.data — templates and their palettes
   'js/countdown.js', // IH.countdown — markup() is needed by the page builder
+  /* The design engine and redesigned collection every category's card and
+     host page are drawn with; same order as create.html, so the published
+     page matches the editor's preview. */
+  'js/wedding-designs.js',          // IH.weddingDesigns
+  'js/redesign-collection-data.js', // rd-* card data
+  'js/redesign-collection.js',      // wraps IH.invitation / IH.exportPage on assignment
   'js/preview.js',   // IH.invitation.render
   'js/export.js'     // IH.exportPage.buildHtml
 ];
@@ -130,6 +136,8 @@ function makeSandbox(siteRoot) {
     escape: global.escape,
     unescape: global.unescape,
     TextEncoder: TextEncoder,
+    URL: URL,
+    URLSearchParams: URLSearchParams,
     setTimeout: setTimeout,
     clearTimeout: clearTimeout,
     setInterval: setInterval,

@@ -111,16 +111,27 @@ function decodedSize(dataUrl) {
   return Math.floor(b64.length * 3 / 4) - pad;
 }
 
-const FLAGS = ['customColors', 'showCountdown', 'showMaps', 'showGallery'];
+const FLAGS = ['customColors', 'showCountdown', 'showMaps', 'showGallery', 'showBlessings', 'namesSwapped',
+  'haldiEnabled', 'mehndiEnabled', 'ceremonyEnabled', 'receptionEnabled'];
+
+/* The wedding celebrations (Haldi, Mehndi, …) each carry a date and time,
+   checked like the main ones. */
+const EVENT_KEYS = ['haldi', 'mehndi', 'ceremony', 'reception'];
+
+/* Copy the editor shows on separate lines; their line breaks are kept. */
+const MULTILINE = ['additionalTitle', 'additionalSubtitle', 'message', 'additionalInformation'];
+const PREVIEW_MODES = ['card', 'host'];
 const COLOR_KEYS = ['primary', 'secondary', 'bg1', 'bg2', 'ink'];
 
 /* Control characters would survive escaping and land in the markup, and
    a stray newline in a name is never intentional. */
 const CONTROL = new RegExp('[\\u0000-\\u001F\\u007F]', 'g');
+const CONTROL_KEEP_NL = new RegExp('[\\u0000-\\u0009\\u000B-\\u001F\\u007F]', 'g');
 
-function text(value, max) {
+function text(value, max, multiline) {
   return String(value)
-    .replace(CONTROL, ' ')
+    .replace(/\r\n?/g, '\n')
+    .replace(multiline ? CONTROL_KEEP_NL : CONTROL, ' ')
     .trim()
     .slice(0, max);
 }
@@ -135,9 +146,17 @@ function clean(body) {
   Object.keys(TEXT).forEach(function (key) {
     const raw = body[key];
     if (typeof raw !== 'string' && typeof raw !== 'number') return;
-    const value = text(raw, TEXT[key]);
+    const value = text(raw, TEXT[key], MULTILINE.indexOf(key) >= 0);
     if (value) state[key] = value;
   });
+
+  EVENT_KEYS.forEach(function (key) {
+    const date = body[key + 'Date'], time = body[key + 'Time'];
+    if (typeof date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(date)) state[key + 'Date'] = date;
+    if (typeof time === 'string' && /^\d{2}:\d{2}$/.test(time)) state[key + 'Time'] = time;
+  });
+
+  if (PREVIEW_MODES.indexOf(body.previewMode) >= 0) state.previewMode = body.previewMode;
 
   if (typeof body.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(body.date)) {
     state.date = body.date;

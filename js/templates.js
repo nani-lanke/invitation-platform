@@ -1056,10 +1056,10 @@
      ------------------------------------------------------------------ */
 
   var AI_BACKGROUND_MANIFEST = {
-    "wedding": "images/generated-backgrounds/wedding/background.png",
+    "wedding": "images/generated-backgrounds/wedding/background.webp",
     "engagement": "images/generated-backgrounds/engagement/background.png",
     "reception": "images/generated-backgrounds/reception/background.png",
-    "birthday": "images/generated-backgrounds/birthday/background.png",
+    "birthday": "images/generated-backgrounds/birthday/background.webp",
     "baby-shower": "images/generated-backgrounds/baby-shower/background.png",
     "naming-ceremony": "images/generated-backgrounds/naming-ceremony/background.png",
     "house-warming": "images/generated-backgrounds/house-warming/background.png",
@@ -1068,7 +1068,7 @@
     "retirement": "images/generated-backgrounds/retirement/background.png",
     "farewell": "images/generated-backgrounds/farewell/background.png",
     "corporate": "images/generated-backgrounds/corporate/background.png",
-    "festival": "images/generated-backgrounds/festival/background.png",
+    "festival": "images/generated-backgrounds/festival/background.webp",
     "school-events": "images/generated-backgrounds/school-events/background.png",
     "college-events": "images/generated-backgrounds/college-events/background.png",
     "party": "images/generated-backgrounds/party/background.png",
@@ -1116,7 +1116,7 @@
                   'data-fav-name="' + escapeHtml(t.name) + '" aria-pressed="false" ' +
                   'aria-label="Save ' + escapeHtml(t.name) + ' to favourites">' + IH.icon('heart', 19) + '</button>' +
           '<div class="template-card__overlay">' +
-            '<a class="btn btn--glass btn--sm" href="preview.html?template=' + encodeURIComponent(t.slug) + '" ' +
+            '<a class="btn btn--glass btn--sm" href="' + escapeHtml(IH.templateUrl(t.slug)) + '" ' +
                'data-preview="' + escapeHtml(t.slug) + '">' + IH.icon('eye', 17) + '<span>Preview</span></a>' +
             '<a class="btn btn--primary btn--sm" href="create.html?template=' + encodeURIComponent(t.slug) + '">' +
                IH.icon('wand', 17) + '<span>Use This Template</span></a>' +

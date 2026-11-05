@@ -1431,7 +1431,7 @@
     var useBtn = qs('[data-preview-use]', scope);
     if (useBtn) useBtn.setAttribute('href', 'create.html?template=' + encodeURIComponent(tpl.slug));
     var fullBtn = qs('[data-preview-full]', scope);
-    if (fullBtn) fullBtn.setAttribute('href', 'preview.html?template=' + encodeURIComponent(tpl.slug));
+    if (fullBtn) fullBtn.setAttribute('href', IH.templateUrl(tpl.slug));
 
     var favBtn = qs('[data-preview-fav]', scope);
     if (favBtn) {
@@ -1806,7 +1806,9 @@
     if (!page) return;
 
     var params = new URLSearchParams(location.search);
-    var slug = params.get('template') || 'elegant-floral';
+    // /templates/<slug> (api/template-page.js), or the older ?template=<slug>.
+    var fromPath = /\/templates\/([a-z0-9-]+)\/?$/i.exec(location.pathname);
+    var slug = (fromPath && fromPath[1].toLowerCase()) || params.get('template') || 'elegant-floral';
     var tpl = IH.data.getTemplate(slug);
 
     if (!tpl) {
@@ -1821,7 +1823,8 @@
       return;
     }
 
-    document.title = tpl.name + ' — Invitation Template Preview | InviteAura';
+    // Same wording as api/template-page.js writes into the page.
+    document.title = tpl.name + ' — ' + (tpl.categoryLabel ? tpl.categoryLabel + ' ' : '') + 'Invitation Template | InviteAura';
     var metaDesc = qs('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', tpl.name + ' — ' + tpl.blurb + ' Preview and personalise it free on InviteAura.');
 

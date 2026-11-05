@@ -1,0 +1,178 @@
+- generic [active] [ref=f4e1]:
+  - navigation "Invitation" [ref=f4e2]:
+    - generic [ref=f4e3]:
+      - link "Rahul & Priya" [ref=f4e4] [cursor=pointer]:
+        - /url: "#top"
+      - generic [ref=f4e5]:
+        - link "Our Story" [ref=f4e6] [cursor=pointer]:
+          - /url: "#story"
+        - link "Celebrations" [ref=f4e7] [cursor=pointer]:
+          - /url: "#celebrations"
+        - link "Blessings" [ref=f4e8] [cursor=pointer]:
+          - /url: "#blessings"
+        - link "Details" [ref=f4e9] [cursor=pointer]:
+          - /url: "#details"
+        - link "Gallery" [ref=f4e10] [cursor=pointer]:
+          - /url: "#gallery"
+        - link "Countdown" [ref=f4e11] [cursor=pointer]:
+          - /url: "#countdown"
+        - link "Venue" [ref=f4e12] [cursor=pointer]:
+          - /url: "#venue"
+  - generic [ref=f4e14]:
+    - img "Lord Vinayaka" [ref=f4e16]
+    - paragraph [ref=f4e17]:
+      - generic [ref=f4e18]: శ్రీరస్తు
+      - generic [ref=f4e19]: శుభమస్తు
+      - generic [ref=f4e20]: అవిఘ్నమస్తు
+    - img "Rahul & Priya" [ref=f4e21]
+    - paragraph [ref=f4e22]: LOVE IN FULL BLOOM With the blessings of our parents
+    - paragraph [ref=f4e23]: A GARDEN OF JOY We would love you to celebrate the wedding of
+    - generic [ref=f4e24]:
+      - generic [ref=f4e25]:
+        - heading "Rahul" [level=1] [ref=f4e26]
+        - paragraph [ref=f4e27]:
+          - generic [ref=f4e28]: Son of
+          - strong [ref=f4e29]: Mr & Mrs Reddy
+      - generic [ref=f4e30]: "&"
+      - generic [ref=f4e32]:
+        - heading "Priya" [level=1] [ref=f4e33]
+        - paragraph [ref=f4e34]:
+          - generic [ref=f4e35]: Daughter of
+          - strong [ref=f4e36]: Mr & Mrs Rao
+    - paragraph [ref=f4e37]: Two souls One beautiful journey
+    - generic [ref=f4e41]:
+      - generic [ref=f4e42]: SATURDAY
+      - generic [ref=f4e45]:
+        - generic [ref=f4e46]: DEC
+        - generic [ref=f4e47]: "12"
+        - generic [ref=f4e48]: "2026"
+      - generic [ref=f4e49]: 6:30 PM onwards
+    - generic [ref=f4e50]:
+      - link "Our Story" [ref=f4e51] [cursor=pointer]:
+        - /url: "#story"
+      - button "Share" [ref=f4e55] [cursor=pointer]
+  - generic [ref=f4e63]:
+    - generic [ref=f4e64]:
+      - paragraph [ref=f4e65]: Auspicious Union
+      - heading "The Invitation" [level=2] [ref=f4e66]
+    - generic [ref=f4e67]:
+      - paragraph [ref=f4e68]:
+        - generic [ref=f4e69]: శ్రీరస్తు
+        - generic [ref=f4e70]: శుభమస్తు
+        - generic [ref=f4e71]: అవిఘ్నమస్తు
+      - paragraph [ref=f4e72]: Both Families
+      - paragraph [ref=f4e73]:
+        - generic [ref=f4e74]: Rahul
+        - generic [ref=f4e75]: "&"
+        - generic [ref=f4e76]: Priya
+      - paragraph [ref=f4e77]: Together with our families, we invite you to celebrate our wedding.
+      - paragraph [ref=f4e80]: Saturday · 12 December 2026 · 6:30 PM
+      - paragraph [ref=f4e81]: Grand Palace Hall, Banjara Hills, Hyderabad
+  - generic [ref=f4e83]:
+    - generic [ref=f4e84]:
+      - paragraph [ref=f4e85]: Auspicious Rituals
+      - heading "Wedding Celebrations" [level=2] [ref=f4e86]
+      - paragraph [ref=f4e87]: Please join us across all ceremonial rituals as we celebrate our auspicious union.
+    - generic [ref=f4e88]:
+      - generic [ref=f4e89]:
+        - img "HALDI" [ref=f4e90]
+        - strong [ref=f4e91]: HALDI
+        - generic [ref=f4e92]: Thursday
+        - generic [ref=f4e93]: 10 December 2026
+        - generic [ref=f4e94]: 10:00 AM
+      - generic [ref=f4e95]:
+        - img "WEDDING" [ref=f4e96]
+        - strong [ref=f4e97]: WEDDING
+        - generic [ref=f4e98]: Saturday
+        - generic [ref=f4e99]: 12 December 2026
+        - generic [ref=f4e100]: 6:30 PM
+      - generic [ref=f4e101]:
+        - img "RECEPTION" [ref=f4e102]
+        - strong [ref=f4e103]: RECEPTION
+        - generic [ref=f4e104]: Sunday
+        - generic [ref=f4e105]: 13 December 2026
+        - generic [ref=f4e106]: 7:00 PM
+  - generic [ref=f4e108]:
+    - generic [ref=f4e109]:
+      - paragraph [ref=f4e110]: Sacred Heritage
+      - heading "With the Blessings of" [level=2] [ref=f4e111]
+    - generic [ref=f4e112]:
+      - generic [ref=f4e113]:
+        - generic [ref=f4e114]:
+          - strong [ref=f4e115]: Groom's Family
+          - paragraph [ref=f4e116]: Mr & Mrs Reddy and Family
+        - generic [ref=f4e118]:
+          - strong [ref=f4e119]: Bride's Family
+          - paragraph [ref=f4e120]: Mr & Mrs Rao and Family
+      - heading "YOUR BLESSINGS MEAN THE WORLD" [level=3] [ref=f4e125]
+      - paragraph [ref=f4e126]: We look forward to celebrating this special day with you and seeking your divine blessings.
+  - generic [ref=f4e128]:
+    - generic [ref=f4e129]:
+      - paragraph [ref=f4e130]: When & Where
+      - heading "Event Details" [level=2] [ref=f4e131]
+    - generic [ref=f4e132]:
+      - generic [ref=f4e133]:
+        - generic [ref=f4e137]: Date
+        - strong [ref=f4e138]: 12 December 2026Saturday
+      - generic [ref=f4e139]:
+        - generic [ref=f4e143]: Time
+        - strong [ref=f4e144]: 6:30 PM
+      - generic [ref=f4e145]:
+        - generic [ref=f4e149]: Venue
+        - strong [ref=f4e150]: Grand Palace Hall
+  - generic [ref=f4e152]:
+    - generic [ref=f4e153]:
+      - paragraph [ref=f4e154]: Memories
+      - heading "Our Moments" [level=2] [ref=f4e155]
+      - paragraph [ref=f4e156]: A few special moments we would love to share with you.
+    - generic [ref=f4e157]:
+      - button "View photo 1 enlarged" [ref=f4e158]:
+        - img "Event photo 1" [ref=f4e159]
+        - generic [ref=f4e160]: +
+      - button "View photo 2 enlarged" [ref=f4e162]:
+        - img "Event photo 2" [ref=f4e163]
+        - generic [ref=f4e164]: +
+  - generic [ref=f4e167]:
+    - generic [ref=f4e168]:
+      - paragraph [ref=f4e169]: The Big Day
+      - heading "Counting Down" [level=2] [ref=f4e170]
+      - paragraph [ref=f4e171]: We cannot wait to celebrate this beautiful moment with you.
+    - timer "Time remaining until the event" [ref=f4e173]:
+      - generic [ref=f4e174]:
+        - generic [ref=f4e175]: "39"
+        - generic [ref=f4e176]: Days
+      - generic [ref=f4e177]:
+        - generic [ref=f4e178]: "18"
+        - generic [ref=f4e179]: Hours
+      - generic [ref=f4e180]:
+        - generic [ref=f4e181]: "54"
+        - generic [ref=f4e182]: Minutes
+      - generic [ref=f4e183]:
+        - generic [ref=f4e184]: "21"
+        - generic [ref=f4e185]: Seconds
+  - generic [ref=f4e188]:
+    - generic [ref=f4e189]:
+      - paragraph [ref=f4e190]: Join Us
+      - heading "Venue & Details" [level=2] [ref=f4e191]
+    - generic [ref=f4e192]:
+      - generic [ref=f4e193]:
+        - heading "Grand Palace Hall" [level=3] [ref=f4e194]
+        - paragraph [ref=f4e195]:
+          - strong [ref=f4e196]: Saturday · 12 December 2026 · 6:30 PM
+        - paragraph [ref=f4e197]: Banjara Hills, Hyderabad
+        - link "View Location" [ref=f4e198] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/?api=1&query=Chennai
+      - img "Grand Palace Hall" [ref=f4e203]
+  - generic [ref=f4e205]:
+    - generic [ref=f4e206]:
+      - paragraph [ref=f4e207]: Stay Connected
+      - heading "We Would Love to See You" [level=2] [ref=f4e208]
+      - paragraph [ref=f4e209]: Thank you for being part of our celebration.
+    - button "Share" [ref=f4e211] [cursor=pointer]
+  - button "Download invitation image" [ref=f4e218] [cursor=pointer]
+  - contentinfo [ref=f4e221]:
+    - generic [ref=f4e222]: Rahul & Priya
+    - paragraph [ref=f4e223]:
+      - text: Created with
+      - link "InviteAura" [ref=f4e224] [cursor=pointer]:
+        - /url: ../index.html

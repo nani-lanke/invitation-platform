@@ -123,8 +123,23 @@ function liveUntilLabel(expiresAt) {
   });
 }
 
+/* The card page is published beside the host page, under the same file
+   name in invitation_card/invitations/ (see api/publish.js). */
+function cardUrlFor(invitationUrl) {
+  try {
+    const u = new URL(invitationUrl);
+    const m = u.pathname.match(/^\/invitation_card\/([\w.-]+\.html)$/);
+    if (!m) return '';
+    u.pathname = '/invitation_card/invitations/' + m[1];
+    return u.toString();
+  } catch (err) {
+    return '';
+  }
+}
+
 function buildEmailHtml(opts) {
   const url = opts.invitationUrl;
+  const cardUrl = opts.cardUrl;
   const until = escapeHtml(liveUntilLabel(opts.expiresAt));
   const name = escapeHtml(opts.invitationName);
   const customer = escapeHtml(opts.customerName);
@@ -180,8 +195,24 @@ function buildEmailHtml(opts) {
               <p style="margin:8px 0 24px;padding:12px 16px;background-color:#f8f8f8;border-radius:8px;word-break:break-all;font-size:13px;color:#8B2F58;text-align:center;font-family:monospace;">
                 ${url}
               </p>
+${cardUrl ? `
+              <p style="margin:0 0 8px;font-size:16px;color:#333;"><strong>Your Invitation Card:</strong></p>
 
-              <p style="margin:0 0 20px;font-size:16px;color:#333;">You can open your invitation using the link above and share it with your family and friends.</p>
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:12px 0 12px;">
+                <tr>
+                  <td align="center">
+                    <a href="${cardUrl}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#ffffff;color:#8B2F58;text-decoration:none;padding:14px 32px;border-radius:8px;border:2px solid #8B2F58;font-size:16px;font-weight:600;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+                      View Your Invitation Card
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+              <p style="margin:8px 0 24px;padding:12px 16px;background-color:#f8f8f8;border-radius:8px;word-break:break-all;font-size:13px;color:#8B2F58;text-align:center;font-family:monospace;">
+                ${cardUrl}
+              </p>
+` : ''}
+              <p style="margin:0 0 20px;font-size:16px;color:#333;">You can open your invitation using the link${cardUrl ? 's' : ''} above and share ${cardUrl ? 'them' : 'it'} with your family and friends.</p>
 ${until ? `
               <p style="margin:0 0 20px;padding:12px 16px;background-color:#faf7f2;border-left:3px solid #B98A2E;border-radius:6px;font-size:14px;color:#555;">Your invitation stays live until <strong>${until}</strong> — 31 days after your event. After that the card and host page are deleted automatically, so download a copy if you want to keep it.</p>
 ` : ''}
@@ -229,8 +260,11 @@ ${opts.invitationName}
 
 Your Invitation Link:
 ${opts.invitationUrl}
-
-You can open your invitation using the link above and share it with your family and friends.
+${opts.cardUrl ? `
+Your Invitation Card:
+${opts.cardUrl}
+` : ''}
+You can open your invitation using the link${opts.cardUrl ? 's' : ''} above and share ${opts.cardUrl ? 'them' : 'it'} with your family and friends.
 ${liveUntilLabel(opts.expiresAt) ? `
 Your invitation stays live until ${liveUntilLabel(opts.expiresAt)} — 31 days after your event. After that the card and host page are deleted automatically, so download a copy if you want to keep it.
 ` : ''}
@@ -365,12 +399,14 @@ async function sendInvitationEmail(opts) {
       subject: subject,
       text: buildEmailText({
         invitationUrl: invitationUrl,
+        cardUrl: cardUrlFor(invitationUrl),
         invitationName: invitationName,
         customerName: customerName,
         expiresAt: opts && opts.expiresAt
       }),
       html: buildEmailHtml({
         invitationUrl: invitationUrl,
+        cardUrl: cardUrlFor(invitationUrl),
         invitationName: invitationName,
         customerName: customerName,
         expiresAt: opts && opts.expiresAt
