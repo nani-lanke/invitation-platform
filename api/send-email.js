@@ -393,7 +393,20 @@ async function sendInvitationEmail(opts) {
       replyTo: senderEmail,
       envelope: {
         from: senderEmail,
-        to: email
+        /* The support mailbox is blind-copied here, in the envelope, so
+           every invitation that goes out leaves a record we can read. The
+           customer's address is the only one in the To header, so they
+           never see the copy.
+
+           Do NOT add a `bcc:` field to do this instead. Nodemailer uses an
+           explicit envelope verbatim for the SMTP conversation, so a Bcc
+           field would not route anything — and it would be written into
+           the message headers rather than stripped, showing the customer
+           they were blind-copied.
+
+           Guarded for the self-send case: when support is the customer,
+           one recipient, not the same address twice. */
+        to: email === senderEmail ? [email] : [email, senderEmail]
       },
       messageId: customMessageId,
       subject: subject,
@@ -442,7 +455,17 @@ async function sendInvitationEmail(opts) {
   console.log(`[EMAIL][${attemptId}] response: ${String(info.response || 'OK').trim()}`);
   console.log(`[EMAIL][${attemptId}] END`);
 
-  if (rejected.length > 0 || accepted.length === 0) {
+  /* Only the customer's address decides whether this send succeeded. The
+     support copy rides along on the same message, so a problem with that
+     one mailbox must never report a delivered invitation as a failure —
+     which a plain "anything rejected" test would now do. */
+  const lower = function (list) {
+    return list.map(function (a) { return String(a).toLowerCase(); });
+  };
+  const customerAccepted = lower(accepted).includes(email);
+  const customerRejected = lower(rejected).includes(email);
+
+  if (customerRejected || !customerAccepted) {
     return {
       success: false,
       accepted: false,
