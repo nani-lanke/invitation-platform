@@ -278,9 +278,11 @@ module.exports = async function handler(req, res) {
     const hostUrl = root + path;
     /* The link the customer gets (email, success screen) is the page they
        previewed: the card (the editor's default view) or the host page. */
+    const cardUrl =
+      root + FOLDER + '/' + IH.exportPage.CARD_DIR + '/' + file;
     const publicUrl = state.previewMode === 'host'
       ? hostUrl
-      : root + FOLDER + '/' + IH.exportPage.CARD_DIR + '/' + file;
+      : cardUrl;
 
     const split =
       IH.exportPage.extractAssets(
@@ -388,7 +390,22 @@ module.exports = async function handler(req, res) {
             .from(
               IH.exportPage.buildCardHtml(
                 IH.exportPage.cardAssetState(split.state),
-                { up: '../../', download: true }
+                {
+                  up: '../../',
+                  download: true,
+
+                  /* The link the card's Share button hands out, and the
+                     photo a chat app shows when that link is pasted. */
+                  canonical: cardUrl,
+
+                  image:
+                    mainPhoto
+                      ? root +
+                        FOLDER +
+                        '/' +
+                        mainPhoto.path
+                      : ''
+                }
               ),
               'utf8'
             )
