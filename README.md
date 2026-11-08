@@ -219,9 +219,9 @@ works the moment the site is deployed.
 Uploaded photos. They are held in the browser as data URLs, and embedding one
 would make the URL far too long to send. A link therefore carries the text,
 dates, venue, template and colours. For an invitation with photos, use
-**Download .html** in the last step — that single file has the photos inside it
-and can be sent as an attachment, or committed to
-[invitation_card/](invitation_card/) to publish it at its own URL.
+**Download card (JPG)** in the last step — the picture is made from the card as
+rendered, photos and all — or host the invitation so the page is committed to
+[invitation_card/](invitation_card/) and served at its own URL.
 
 ## Architecture notes
 
