@@ -58,7 +58,7 @@
 
   /* One filename generator owns naming for the whole site. js/export.js
      builds the canonical name (category + DD-MM-YYYY date + 24-hour HHMM
-     time), and every route out of the editor — Download .html, this .zip
+     time), and every route out of the editor — this .zip
      and the server commit — asks it the same way. This file only asks
      for the stem; the page and every asset then share that one stem. */
   function baseName(state) {
