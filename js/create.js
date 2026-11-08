@@ -567,9 +567,6 @@
           'Use Copy Link or the share buttons instead.</p>';
       }
     }
-
-    var openLink = qs('[data-invite-open]', root);
-    if (openLink) openLink.href = url;
   }
 
   var INVITE_STEP = 6;   // the finished invitation — free download & share
@@ -664,27 +661,21 @@
     var rows = [
       hosted
         ? '<li>' + IH.icon('globe', 18) + '<span>Your invitation is online. Guests open it directly from your link.</span></li>'
-        : '<li>' + IH.icon('image', 18) + '<span>The <b>card picture (JPG)</b> is the simplest way to send it on WhatsApp.</span></li>',
-      '<li>' + IH.icon('file-text', 18) + '<span>The <b>page (.html)</b> keeps the countdown, map and gallery. Guests open it in any browser.</span></li>'
+        : '<li>' + IH.icon('image', 18) + '<span>The <b>card picture (JPG)</b> is the simplest way to send it on WhatsApp.</span></li>'
     ];
 
     if (embedded) {
       rows.push('<li>' + IH.icon('info', 18) + '<span>Your ' + embedded + ' uploaded photo' + (embedded === 1 ? ' is' : 's are') +
-        ' included in the downloaded page and in hosting.</span></li>');
+        ' included in the card picture and in hosting.</span></li>');
     }
 
     files.innerHTML = rows.join('');
   }
 
   /* The invitation lives inside its own link, so nothing is written to
-     disk. Download .html is offered for hosts who would rather send the
-     file itself than a link. */
+     disk. Step 6 offers the card picture, and hosting puts the invitation
+     online at its own address. */
   function initExport() {
-    var exportBox = qs('[data-export-box]', root);
-    if (!exportBox || !IH.exportPage) return;
-
-    on(qs('[data-export-download]', exportBox), 'click', saveInvitationPages);
-
     on(qs('[data-invite-jpg]', root), 'click', function () {
       var jpg = qs('[data-draft-download-jpg]', root);
       if (jpg) jpg.click();
@@ -693,25 +684,6 @@
       showStep(7);
       var top = qs('[data-step-panel="7"]', root);
       if (top && top.scrollIntoView) top.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  }
-
-  /* Download .html: the host page and the card page, built from the saved
-     draft exactly as host.html and card.html show them, under one name —
-     the host page in invitation_card/, the card in invitation_card/invitations/. */
-  function saveInvitationPages() {
-    saveDraftSync();
-    var draft = IH.store.get(DRAFT_KEY, null) || state;
-    IH.exportPage.saveFiles(draft).then(function (res) {
-      var list = res.paths.join(' and ');
-      if (res.mode === 'download') {
-        IH.toast.success('Saved to your downloads folder. Move them to ' + list + ' (drop _card from the card file).', { title: 'Downloaded' });
-      } else {
-        IH.toast.success('Saved ' + list + '.', { title: 'Saved' });
-      }
-    }).catch(function (err) {
-      if (err && err.name === 'AbortError') return; // folder picker closed
-      IH.toast.error('Could not save the pages: ' + (err && err.message ? err.message : err));
     });
   }
 
@@ -2760,14 +2732,6 @@
     on(qs('[data-draft-download-jpg]', root), 'click', function () {
       downloadInvitationAsJPG();
     });
-
-    on(qs('[data-draft-download-html]', root), 'click', function () {
-      if (!IH.exportPage) return;
-      var res = IH.exportPage.download(previewData());
-      if (res && res.file) {
-        IH.toast.success(res.file + ' saved to your downloads folder.', { title: 'Downloaded' });
-      }
-    });
   } // close initPreviewColumn
 
   /* ------------------------------------------------------------------
@@ -3246,8 +3210,6 @@
     on(qs('[data-hosted-qr]', root), 'click', function () {
       IH.qrModal.open(state.hostedUrl || '');
     });
-
-    on(qs('[data-hosted-download]', root), 'click', saveInvitationPages);
 
     paintHostingStatus();
   }
