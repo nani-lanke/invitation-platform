@@ -332,18 +332,22 @@
       var bits = formatBits(maskId);
       for (var i = 0; i < 15; i++) {
         var bit = (bits >>> i) & 1;
-        // Copy 1 — around the top-left finder
-        if (i < 6) m[8].cells[i] = bit;
-        else if (i === 6) m[8].cells[7] = bit;
-        else if (i === 7) m[8].cells[8] = bit;
-        else if (i === 8) m[7].cells[8] = bit;
-        else m[14 - i].cells[8] = bit;
 
-        // Copy 2 — bits 0-6 climb the bottom-left finder, bits 7-14 run along
-        // the top-right one. The split is at 7, not 8: row size-8 in column 8
-        // is the dark module and must not be used for format data.
-        if (i < 7) m[size - 1 - i].cells[8] = bit;
-        else m[8].cells[size - 15 + i] = bit;
+        /* Copy 1 — around the top-left finder (ISO/IEC 18004 figure 25).
+           Bit 0 is the TOP of column 8 and the run continues down to the
+           corner at (8,8), then turns left along row 8. Mirroring these two
+           arms swaps the bit order and every scanner rejects the symbol. */
+        if (i < 6) m[i].cells[8] = bit;            // (0,8)…(5,8)
+        else if (i === 6) m[7].cells[8] = bit;     // row 6 is the timing row
+        else if (i === 7) m[8].cells[8] = bit;     // the corner
+        else if (i === 8) m[8].cells[7] = bit;     // column 6 is timing
+        else m[8].cells[14 - i] = bit;             // (8,5)…(8,0)
+
+        /* Copy 2 — bits 0-7 run leftwards from the top-right finder, bits
+           8-14 climb the bottom-left one. The split is at 8: row size-8 in
+           column 8 is the dark module and carries no format data. */
+        if (i < 8) m[8].cells[size - 1 - i] = bit;
+        else m[size - 15 + i].cells[8] = bit;
       }
       m[size - 8].cells[8] = 1; // dark module
     }
@@ -613,7 +617,8 @@
     on(modal, 'mousedown', function (evt) { if (evt.target === modal) IH.modal.close(modal); });
 
     on(qs('[data-qr-download]', modal), 'click', function () {
-      var url = modal.getAttribute('data-current-url') || '';
+      var url = (modal.getAttribute('data-current-url') || '').trim();
+      if (!url) { IH.toast.info('Publish the invitation first — then the QR code has a link to carry.'); return; }
       try {
         var canvas = QR.toCanvas(url, { scale: 12 });
         var link = document.createElement('a');
@@ -634,10 +639,22 @@
       var modal = ensureQrModal();
       var holder = qs('[data-qr-holder]', modal);
       var caption = qs('[data-qr-caption]', modal);
-      modal.setAttribute('data-current-url', url);
+      var clean = String(url || '').trim();
+      modal.setAttribute('data-current-url', clean);
+
+      /* An empty string still encodes into a perfectly valid QR symbol —
+         it simply scans to nothing, which looks like a broken code. Say
+         what is missing instead of showing a dead symbol. */
+      if (!clean) {
+        holder.innerHTML = '<p class="muted">This invitation has no link yet. Publish it first, then open the QR code.</p>';
+        if (caption) caption.textContent = '';
+        IH.modal.open(modal);
+        return;
+      }
+
       try {
-        holder.innerHTML = QR.toSvg(url, { scale: 8 });
-        if (caption) caption.textContent = url;
+        holder.innerHTML = QR.toSvg(clean, { scale: 8 });
+        if (caption) caption.textContent = clean;
       } catch (err) {
         holder.innerHTML = '<p class="muted">' + escapeHtml(err.message) + '</p>';
       }
