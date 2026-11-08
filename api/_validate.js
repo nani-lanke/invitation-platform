@@ -269,7 +269,7 @@ function clean(body) {
 /* The canonical stem the page and all its assets share. The generator
    itself lives in js/export.js (buildInvitationFilename), which both the
    editor and this server load, so the .zip and the server commit produce
-   exactly the same filename as Download .html:
+   exactly the same filename as the editor builds:
 
        Rahul_Priya_15-08-2026_1830
        Rahul_Priya_15-08-2026_1830.html */
