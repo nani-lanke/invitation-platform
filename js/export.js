@@ -19,7 +19,7 @@
      IH.exportPage.download(state)    -> triggers a browser download
 
    fileName() is the one canonical filename generator. js/publish.js and
-   api/_validate.js both ask for the same name here, so Download .html,
+   api/_validate.js both ask for the same name here, so the hosted page,
    the .zip and the GitHub commit all use the exact same filename.
 
    opts.up is how far the page sits below the site root, as a path prefix
@@ -34,7 +34,7 @@
   var dom = IH.dom;
 
   var FOLDER = 'invitation_card';
-  /* Download .html writes the host page to invitation_card/ and the card
+  /* Hosting writes the host page to invitation_card/ and the card
      page, under the same name, to invitation_card/invitations/. */
   var SAVE_DIR = 'invitations';
   var MAX_BASE = 60;
@@ -168,7 +168,7 @@
   /* ------------------------------------------------------------------
      The one canonical filename generator.
 
-     Every route out of the editor — Download .html, the .zip, and the
+     Every route out of the editor — the .zip and the
      server commit — asks these functions for the name, so an invitation
      has exactly one name everywhere it goes. The occasion's eventType
      picks the field the name comes from (a wedding names the couple, a
@@ -354,6 +354,76 @@
     });
 
     return { state: out, assets: assets };
+  }
+
+  /* ------------------------------------------------------------------
+     2b-i. The page icon
+     ------------------------------------------------------------------ */
+
+  /* Every published invitation — wedding, birthday, baby shower, any
+     category — wears its own main photo (the Media step's main image) as
+     the tab icon, so a guest recognises the card in a crowded tab bar or
+     on a home-screen shortcut. Only an invitation with no photo falls
+     back to the InviteAura mark.
+
+     A data: photo is inlined only while it stays small: a downloaded file
+     already carries the photo in its body and must not carry a second
+     multi-megabyte copy in its head. */
+  var ICON_MIME = {
+    png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg',
+    webp: 'image/webp', gif: 'image/gif', svg: 'image/svg+xml',
+    avif: 'image/avif'
+  };
+  var MAX_INLINE_ICON = 150 * 1024;
+  var NL = String.fromCharCode(10);
+
+  /* noLimit: the page is being rendered live in a browser (the card and
+     host previews), where a big data: photo costs nothing — the size cap
+     only protects a file that gets written to disk or committed. */
+  function faviconTags(photo, up, noLimit) {
+    var src = typeof photo === 'string' ? photo.trim() : '';
+    var mime = '';
+
+    if (src.slice(0, 5) === 'data:') {
+      if (!noLimit && src.length > MAX_INLINE_ICON) src = '';
+      else mime = (/^data:(image\/[\w.+-]+)/.exec(src) || ['', ''])[1];
+    } else if (src) {
+      mime = ICON_MIME[String((/\.([a-z0-9]+)(?:[?#]|$)/i.exec(src) || ['', ''])[1]).toLowerCase()] || '';
+    }
+
+    if (!src) {
+      return [
+        '<link rel="icon" href="' + up + 'images/logo/favicon.svg" type="image/svg+xml">',
+        '<link rel="icon" href="' + up + 'images/logo/favicon-32.png" type="image/png" sizes="32x32">'
+      ].join(NL);
+    }
+
+    return [
+      '<link rel="icon" href="' + esc(src) + '"' + (mime ? ' type="' + mime + '"' : '') + '>',
+      '<link rel="apple-touch-icon" href="' + esc(src) + '">'
+    ].join(NL);
+  }
+
+  /* The same rule applied to a page that is already open. card.html mounts
+     the card into itself rather than building a document, so its tab icon
+     is swapped here once the draft is known. Safe to call with no photo:
+     the InviteAura mark goes back in its place. */
+  function applyPageIcon(photo, up) {
+    if (typeof document === 'undefined' || !document.head) return;
+
+    var head = document.head;
+    var old = head.querySelectorAll(
+      'link[rel="icon"],link[rel="apple-touch-icon"],link[rel="shortcut icon"]'
+    );
+    for (var i = 0; i < old.length; i++) old[i].parentNode.removeChild(old[i]);
+
+    var holder = document.createElement('div');
+    holder.innerHTML = faviconTags(photo, typeof up === 'string' ? up : '', true);
+    while (holder.firstChild) {
+      var node = holder.firstChild;
+      holder.removeChild(node);
+      if (node.nodeType === 1) head.appendChild(node);
+    }
   }
 
   /* An image the host picked out of the repository is written as a path
@@ -2336,8 +2406,7 @@
       opts && opts.image ? '<meta property="og:image" content="' + esc(opts.image) + '">' : '',
       opts && opts.image ? '<meta name="twitter:card" content="summary_large_image">' : '',
       '',
-      '<link rel="icon" href="' + up + 'images/logo/favicon.svg" type="image/svg+xml">',
-      '<link rel="icon" href="' + up + 'images/logo/favicon-32.png" type="image/png" sizes="32x32">',
+      faviconTags(data.photo, up, opts && opts.liveIcon),
       '<link rel="preconnect" href="https://fonts.googleapis.com">',
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap">',
@@ -2859,6 +2928,14 @@
       '<title>' + esc(title) + '</title>',
       '<meta name="generator" content="InviteAura">',
       '<meta name="robots" content="noindex">',
+      /* Shared into WhatsApp or a message, the card link should unfurl
+         with the couple's (or host's) own photo, not a blank box. */
+      '<meta property="og:type" content="website">',
+      '<meta property="og:title" content="' + esc(title) + '">',
+      opts && opts.canonical ? '<meta property="og:url" content="' + esc(opts.canonical) + '">' : '',
+      opts && opts.image ? '<meta property="og:image" content="' + esc(opts.image) + '">' : '',
+      opts && opts.image ? '<meta name="twitter:card" content="summary_large_image">' : '',
+      faviconTags(data.photo, up, opts && opts.liveIcon),
       '<link rel="preconnect" href="https://fonts.googleapis.com">',
       '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
       '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Playfair+Display:wght@600;700&family=Great+Vibes&family=Cormorant+Garamond:wght@600;700&family=Cinzel:wght@600;700;800&family=Noto+Serif+Telugu:wght@500;600;700&family=Noto+Serif+Tamil:wght@500;600;700&family=Marcellus&family=Parisienne&family=Bodoni+Moda:ital,wght@0,500;0,600;1,500&family=Josefin+Sans:wght@400;600&family=Allura&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Fredoka:wght@500;600&family=Pacifico&family=Nunito:wght@500;700&display=swap">',
@@ -2887,6 +2964,11 @@
     /* Music plays from a corner button (as on card.html), not inside the card. */
     var music = data.musicFile;
     var body = [
+      /* js/share.js reads this when the Share button is pressed, so a copy
+         saved to a phone still shares the hosted card, not a file:// path. */
+      (opts && opts.canonical
+        ? '<span data-share-link hidden>' + esc(opts.canonical) + '</span>'
+        : ''),
       '<div id="card-fit"><div class="invitation-container" id="card-root">',
       IH.invitation.render(Object.assign({}, data, { musicFile: '' })),
       '</div></div>'
@@ -2902,6 +2984,9 @@
       (opts && opts.download ? '<script src="' + up + 'js/html-to-image.js" defer></script><script src="' + HTML2CANVAS + '" defer></script>' : ''),
       '<script src="' + up + 'js/main.js" defer></script>',
       '<script src="' + up + 'js/countdown.js" defer></script>',
+      /* The card's own Share button is [data-share-invitation]; without
+         this script nothing listens for it and the button does nothing. */
+      '<script src="' + up + 'js/share.js" defer></script>',
       '<script>',
       '  /* Deferred scripts have run by DOMContentLoaded. */',
       '  document.addEventListener("DOMContentLoaded", function () { if (window.IH && IH.countdown) IH.countdown.mount(document.body); });',
@@ -3068,6 +3153,7 @@
     buildHtml: buildHtml,
     buildCardHtml: buildCardHtml,
     cardAssetState: cardAssetState,
+    applyPageIcon: applyPageIcon,
     CARD_DIR: SAVE_DIR,
     download: download,
     saveFiles: saveFiles
