@@ -867,6 +867,11 @@
      ------------------------------------------------------------------ */
 
   function boot() {
+    // Guard against the script being included twice on one page: a second boot
+    // would bind every handler (theme toggle, nav, forms...) a second time, so a
+    // single click would fire twice and appear to do nothing.
+    if (IH._booted) return;
+    IH._booted = true;
     IH.theme.init();
     IH.hydrateIcons();
     initNav();
