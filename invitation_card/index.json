@@ -101,5 +101,32 @@
     ],
     "paymentId": "pay_TxX1p4s3QNiQfN",
     "hostingStatus": "active"
+  },
+  {
+    "invitationId": "a186af0f",
+    "filename": "nani-and-lovely-a186af0f.html",
+    "publicUrl": "https://www.inviteaura.in/invitation_card/nani-and-lovely-a186af0f.html",
+    "eventType": "wedding",
+    "eventTitle": "wedding invitation",
+    "eventDate": "2026-12-12",
+    "createdAt": "2026-11-13T17:00:06.327Z",
+    "hostedAt": "2026-11-13T17:00:06.327Z",
+    "expiresAt": "2027-01-12T18:29:59.999Z",
+    "files": [
+      "invitation_card/nani-and-lovely-a186af0f.html",
+      "invitation_card/invitations/nani-and-lovely-a186af0f.html",
+      "invitation_card/main_image/Nani_Lovely_12-12-2026_1212_image.jpg",
+      "invitation_card/background_image/Nani_Lovely_12-12-2026_1212_background.jpg",
+      "invitation_card/main_image/Nani_Lovely_12-12-2026_1212_venue.jpg",
+      "invitation_card/sample_images/Nani_Lovely_12-12-2026_1212_image1.jpg",
+      "invitation_card/sample_images/Nani_Lovely_12-12-2026_1212_image2.jpg",
+      "invitation_card/sample_images/Nani_Lovely_12-12-2026_1212_image3.jpg",
+      "invitation_card/sample_images/Nani_Lovely_12-12-2026_1212_image4.jpg",
+      "invitation_card/sample_images/Nani_Lovely_12-12-2026_1212_image5.jpg",
+      "invitation_card/sample_images/Nani_Lovely_12-12-2026_1212_image6.jpg",
+      "invitation_card/background_music/Nani_Lovely_12-12-2026_1212_music.mp3"
+    ],
+    "paymentId": "pay_TzjaAAarBxpf2A",
+    "hostingStatus": "active"
   }
 ]
