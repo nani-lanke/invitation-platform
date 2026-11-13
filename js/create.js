@@ -2322,18 +2322,50 @@
      If the mobile invitation is already rendered in the Live Preview, clones it.
      Otherwise, renders the mobile invitation off-screen temporarily.
      ------------------------------------------------------------------ */
-  /* Helper to find the invitation element in the preview area,
-     checking both directly or inside the host-preview iframe. */
+  /* Helper to find the invitation element in the preview area. Only the
+     Card view mounts one: the Host Page view writes the whole guest page
+     into the preview iframe, and that page has no .invitation element at
+     all, so in that mode the card is rendered off-screen instead
+     (renderOffscreenInvitation below). */
   function getInvitationElement() {
     var previewStage = qs('.preview-stage', root);
     if (!previewStage) return null;
-    var el = previewStage.querySelector('.invitation');
-    if (el) return el;
-    var iframe = qs('#host-preview-iframe', root);
-    if (iframe && iframe.contentDocument) {
-      return iframe.contentDocument.querySelector('.invitation');
-    }
-    return null;
+    return previewStage.querySelector('.invitation');
+  }
+
+  /* The JPG download is free and must work from any step and in either
+     preview mode. When no card is on screen — the Host Page view is
+     showing, or the preview column has not mounted yet — one is rendered
+     off-screen from the current draft, captured, then removed again.
+     Off-screen rather than hidden: the capture needs a laid-out,
+     painted element, which display:none or visibility:hidden would not
+     give. */
+  function renderOffscreenInvitation() {
+    if (!IH.invitation || !IH.invitation.mount) return null;
+
+    var holder = document.createElement('div');
+    holder.setAttribute('data-jpg-offscreen', '');
+    holder.style.cssText = 'position:fixed;top:0;left:-20000px;width:420px;z-index:-1;pointer-events:none;';
+
+    /* .is-still keeps the entrance animation out of the picture, exactly
+       as it does in the live preview. */
+    var mountZone = document.createElement('div');
+    mountZone.className = 'invitation-container is-still';
+    holder.appendChild(mountZone);
+    document.body.appendChild(holder);
+
+    var cardData = previewData();
+    cardData.musicFile = '';   // a still picture has no player
+    IH.invitation.mount(mountZone, cardData);
+
+    /* Nothing here is in the viewport, so lazy images would never be
+       fetched and would come out blank (or hang the wait below). */
+    var imgs = mountZone.querySelectorAll('img[loading="lazy"]');
+    for (var i = 0; i < imgs.length; i++) imgs[i].loading = 'eager';
+
+    var card = mountZone.querySelector('.invitation');
+    if (!card) { holder.remove(); return null; }
+    return { holder: holder, card: card };
   }
 
   /* Helper to poll briefly for the live invitation element if the preview is currently mounting */
@@ -2389,12 +2421,20 @@
     }).catch(function () { return true; });
   }
 
-  /* Wait for all images inside an element to be complete and decoded */
-  function waitForImages(rootEl) {
+  /* Wait for all images inside an element to be complete and decoded.
+     Cards carry loading="lazy" images (the venue photo, gallery tiles,
+     programme icons). An image the browser considers off-screen — below
+     the preview's scroll fold, or in the off-screen render used when the
+     Host Page view is showing — is never fetched at all, so it would
+     never fire load or error and the capture would wait for ever.
+     Switching them to eager starts those fetches, and the whole wait is
+     capped so one stubborn image cannot stall the download. */
+  function waitForImages(rootEl, maxWaitMs) {
     var images = rootEl.querySelectorAll('img');
     var promises = [];
     for (var k = 0; k < images.length; k++) {
       var img = images[k];
+      if (img.loading === 'lazy') img.loading = 'eager';
       if (!img.complete || img.naturalWidth === 0) {
         promises.push(new Promise(function (resolve) {
           img.addEventListener('load', resolve, { once: true });
@@ -2405,7 +2445,10 @@
         promises.push(img.decode().catch(function () {}));
       }
     }
-    return Promise.all(promises);
+    return Promise.race([
+      Promise.all(promises),
+      new Promise(function (resolve) { setTimeout(resolve, maxWaitMs || 8000); })
+    ]);
   }
 
   // Ensure html2canvas is loaded
@@ -2423,7 +2466,20 @@
 
     setJpgDownloadLoading(true);
 
-    waitForLiveInvitation(2500).then(function (liveInvitation) {
+    /* Polling only makes sense while the Card view is still mounting;
+       the Host Page view never grows an .invitation element, so that
+       case goes straight to an off-screen render. */
+    var offscreen = null;
+    var findCard = state.previewMode === 'card'
+      ? waitForLiveInvitation(2500)
+      : Promise.resolve(null);
+
+    findCard.then(function (liveInvitation) {
+      if (!liveInvitation) {
+        offscreen = renderOffscreenInvitation();
+        liveInvitation = offscreen && offscreen.card;
+        if (liveInvitation) console.log('[create] No card in the preview column — captured an off-screen render');
+      }
       if (!liveInvitation) {
         setJpgDownloadLoading(false);
         IH.toast.error('No invitation preview found to download. Please wait a moment and try again.');
@@ -2435,8 +2491,10 @@
       var targetDoc = liveInvitation.ownerDocument || document;
       var targetWin = targetDoc.defaultView || window;
 
-      // Scroll target preview window to top before measuring and capturing
-      if (targetWin && targetWin.scrollTo) {
+      /* Scroll the preview window to the top before measuring and capturing.
+         An off-screen render is position:fixed, so scrolling would only yank
+         the editor about for nothing. */
+      if (!offscreen && targetWin && targetWin.scrollTo) {
         try { targetWin.scrollTo(0, 0); } catch (e) {}
       }
 
@@ -2477,6 +2535,8 @@
       console.error('[create] Invitation JPG capture failed:', err);
       IH.toast.error('Unable to download the invitation image. Please try again.');
     }).finally(function () {
+      if (offscreen && offscreen.holder) offscreen.holder.remove();
+      offscreen = null;
       setJpgDownloadLoading(false);
     });
   }
