@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Goa Sunset Vows — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-goa-sunset-vows" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF5EC"/>
+      <stop offset="55%" stop-color="#FCE0CA"/>
+      <stop offset="100%" stop-color="#FFF5EC"/>
+    </linearGradient>
+    <radialGradient id="gl-goa-sunset-vows" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-goa-sunset-vows" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-goa-sunset-vows)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-goa-sunset-vows)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-goa-sunset-vows)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Portuguese Azulejo Corners &amp; Sunset Palm Silhouette -->
+      <g stroke="#D64C27" stroke-width="1.6" fill="none" opacity="0.7">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <!-- Azulejo Corner Tiles -->
+        <g stroke="#327A7B" stroke-width="1.2">
+          <rect x="46" y="46" width="30" height="30"/>
+          <rect x="524" y="46" width="30" height="30"/>
+          <rect x="46" y="724" width="30" height="30"/>
+          <rect x="524" y="724" width="30" height="30"/>
+        </g>
+      </g>
+      <!-- Sunset Sky Gradient &amp; Swaying Coconut Palms -->
+      <g transform="translate(300, 270)">
+        <!-- Fiery Sun Sphere -->
+        <circle cx="0" cy="0" r="90" fill="#D64C27" opacity="0.2"/>
+        <circle cx="0" cy="0" r="70" fill="#FCE0CA" stroke="#D64C27" stroke-width="1.5" opacity="0.9"/>
+        <!-- Palm Trees Silhouette -->
+        <g fill="#3D1B14" opacity="0.85">
+          <!-- Left Palm Trunk -->
+          <path d="M -30 70 Q -25 20 -40 -15 L -35 -15 Q -20 20 -25 70 Z"/>
+          <!-- Left Palm Fronds -->
+          <path d="M -40 -15 Q -75 -40 -90 -20 Q -65 -15 -40 -15 Z"/>
+          <path d="M -40 -15 Q -60 -55 -45 -60 Q -40 -35 -40 -15 Z"/>
+          <path d="M -40 -15 Q -20 -55 -15 -45 Q -25 -25 -40 -15 Z"/>
+          <!-- Right Palm Trunk &amp; Fronds -->
+          <path d="M 30 70 Q 25 30 40 0 L 45 0 Q 30 30 35 70 Z"/>
+          <path d="M 40 0 Q 75 -25 90 -5 Q 65 0 40 0 Z"/>
+          <path d="M 40 0 Q 60 -40 45 -45 Q 40 -20 40 0 Z"/>
+        </g>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#327A7B" opacity="0.85">DESTINATION GOA</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#327A7B" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#327A7B" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#327A7B" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#3D1B14">Goa Sunset Vows</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#3D1B14" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#327A7B" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#3D1B14" opacity="0.6">SUNSET BY THE SEA</text>
+</svg>

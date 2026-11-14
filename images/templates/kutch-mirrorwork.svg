@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Kutch Mirrorwork — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-kutch-mirrorwork" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDF7F2"/>
+      <stop offset="55%" stop-color="#F8E5D8"/>
+      <stop offset="100%" stop-color="#FDF7F2"/>
+    </linearGradient>
+    <radialGradient id="gl-kutch-mirrorwork" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-kutch-mirrorwork" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-kutch-mirrorwork)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-kutch-mirrorwork)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-kutch-mirrorwork)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Rabari Embroidery Chevron &amp; Mirror Borders -->
+      <g stroke="#B52151" stroke-width="1.8" fill="none" opacity="0.6">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <!-- Chevron Zigzag border top &amp; bottom -->
+        <path d="M 50 55 L 61 45 L 72 55 M 72 55 L 83 45 L 94 55 M 94 55 L 105 45 L 116 55 M 116 55 L 127 45 L 138 55 M 138 55 L 149 45 L 160 55 M 160 55 L 171 45 L 182 55 M 182 55 L 193 45 L 204 55 M 204 55 L 215 45 L 226 55 M 226 55 L 237 45 L 248 55 M 248 55 L 259 45 L 270 55 M 270 55 L 281 45 L 292 55 M 292 55 L 303 45 L 314 55 M 314 55 L 325 45 L 336 55 M 336 55 L 347 45 L 358 55 M 358 55 L 369 45 L 380 55 M 380 55 L 391 45 L 402 55 M 402 55 L 413 45 L 424 55 M 424 55 L 435 45 L 446 55 M 446 55 L 457 45 L 468 55 M 468 55 L 479 45 L 490 55 M 490 55 L 501 45 L 512 55 M 512 55 L 523 45 L 534 55" stroke="#E68A2E" stroke-width="1.8"/>
+        <path d="M 50 745 L 61 755 L 72 745 M 72 745 L 83 755 L 94 745 M 94 745 L 105 755 L 116 745 M 116 745 L 127 755 L 138 745 M 138 745 L 149 755 L 160 745 M 160 745 L 171 755 L 182 745 M 182 745 L 193 755 L 204 745 M 204 745 L 215 755 L 226 745 M 226 745 L 237 755 L 248 745 M 248 745 L 259 755 L 270 745 M 270 745 L 281 755 L 292 745 M 292 745 L 303 755 L 314 745 M 314 745 L 325 755 L 336 745 M 336 745 L 347 755 L 358 745 M 358 745 L 369 755 L 380 745 M 380 745 L 391 755 L 402 745 M 402 745 L 413 755 L 424 745 M 424 745 L 435 755 L 446 745 M 446 745 L 457 755 L 468 745 M 468 745 L 479 755 L 490 745 M 490 745 L 501 755 L 512 745 M 512 745 L 523 755 L 534 745" stroke="#E68A2E" stroke-width="1.8"/>
+      </g>
+      <!-- Central Abhala (Mirror) Medallion -->
+      <g transform="translate(300, 270)">
+        <!-- Embroidered Sunburst Ring -->
+        
+          <g transform="rotate(0)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(22.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(45)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(67.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(90)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(112.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(135)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(157.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(180)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(202.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(225)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(247.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(270)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(292.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(315)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+          <g transform="rotate(337.5)">
+            <polygon points="0,-115 6,-95 -6,-95" fill="#B52151" opacity="0.75"/>
+            <circle cx="0" cy="-80" r="5" fill="#E68A2E"/>
+          </g>
+        
+        <circle cx="0" cy="0" r="70" fill="#FFFFFF" stroke="#B52151" stroke-width="4" opacity="0.95"/>
+        <circle cx="0" cy="0" r="58" fill="#FDF7F2" stroke="#E68A2E" stroke-width="2" stroke-dasharray="4 3"/>
+        <!-- Shimmering Mirror Center -->
+        <circle cx="0" cy="0" r="42" fill="#EAF0F6" stroke="#8A9BA8" stroke-width="1.5"/>
+        <ellipse cx="-12" cy="-12" rx="15" ry="8" fill="#FFFFFF" opacity="0.8" transform="rotate(-30 -12 -12)"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#E68A2E" opacity="0.85">SHUBH VIVAH</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#E68A2E" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#E68A2E" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#E68A2E" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#361622">Kutch Mirrorwork</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#361622" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#E68A2E" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#361622" opacity="0.6">ROYAL GUJARATI CEREMONY</text>
+</svg>

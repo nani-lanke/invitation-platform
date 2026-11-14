@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Cinematic Love Story — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-cinematic-love-story" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#100C14"/>
+      <stop offset="55%" stop-color="#241A2D"/>
+      <stop offset="100%" stop-color="#100C14"/>
+    </linearGradient>
+    <radialGradient id="gl-cinematic-love-story" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-cinematic-love-story" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-cinematic-love-story)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-cinematic-love-story)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-cinematic-love-story)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Anamorphic Widescreen 2.39:1 Frame Lines &amp; Spotlight -->
+      <g stroke="#E8B4B8" fill="none">
+        <rect x="36" y="36" width="528" height="728" stroke-width="1.5" opacity="0.7"/>
+        <!-- Cinema Letterbox Bars -->
+        <line x1="36" y1="100" x2="564" y2="100" stroke-width="1" opacity="0.4"/>
+        <line x1="36" y1="670" x2="564" y2="670" stroke-width="1" opacity="0.4"/>
+      </g>
+      <!-- Atmospheric Spotlight &amp; Film Billing Block Center -->
+      <g transform="translate(300, 260)">
+        <!-- Radiant Spotlight Beam -->
+        <polygon points="0,-120 -110,60 110,60" fill="#E8B4B8" opacity="0.12"/>
+        <!-- Film Reel Medallion -->
+        <circle cx="0" cy="-20" r="70" fill="none" stroke="#E8B4B8" stroke-width="2" opacity="0.8"/>
+        <circle cx="0" cy="-20" r="55" fill="none" stroke="#9D7494" stroke-width="1" stroke-dasharray="6 4"/>
+        
+          <circle cx="35" cy="-20" r="8" fill="#100C14" stroke="#E8B4B8" stroke-width="1.5"/>
+        
+          <circle cx="17.500000000000004" cy="10.310889132455351" r="8" fill="#100C14" stroke="#E8B4B8" stroke-width="1.5"/>
+        
+          <circle cx="-17.499999999999993" cy="10.310889132455355" r="8" fill="#100C14" stroke="#E8B4B8" stroke-width="1.5"/>
+        
+          <circle cx="-35" cy="-19.999999999999996" r="8" fill="#100C14" stroke="#E8B4B8" stroke-width="1.5"/>
+        
+          <circle cx="-17.500000000000014" cy="-50.310889132455344" r="8" fill="#100C14" stroke="#E8B4B8" stroke-width="1.5"/>
+        
+          <circle cx="17.500000000000004" cy="-50.31088913245535" r="8" fill="#100C14" stroke="#E8B4B8" stroke-width="1.5"/>
+        
+        <circle cx="0" cy="-20" r="14" fill="#E8B4B8"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#9D7494" opacity="0.85">A ROMANTIC FEATURE FILM</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#9D7494" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#9D7494" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#9D7494" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#FAF5FF">Cinematic Love Story</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Futura, Arial, sans-serif" font-size="20" fill="#FAF5FF" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#9D7494" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Futura, Arial, sans-serif" font-size="16" letter-spacing="4.5" fill="#FAF5FF" opacity="0.6">PREMIERING WORLDWIDE</text>
+</svg>

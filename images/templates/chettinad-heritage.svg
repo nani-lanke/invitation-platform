@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Chettinad Heritage — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-chettinad-heritage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FDF5ED"/>
+      <stop offset="55%" stop-color="#EED6C2"/>
+      <stop offset="100%" stop-color="#FDF5ED"/>
+    </linearGradient>
+    <radialGradient id="gl-chettinad-heritage" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-chettinad-heritage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-chettinad-heritage)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-chettinad-heritage)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-chettinad-heritage)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Athangudi Tile Geometric Borders -->
+      <g fill="none" stroke="#A2482B" stroke-width="1.5" opacity="0.65">
+        <rect x="35" y="35" width="530" height="730" stroke="#C68841" stroke-width="2"/>
+        <rect x="45" y="45" width="510" height="710" stroke-width="1"/>
+      </g>
+      <!-- Athangudi Tile Diamonds around top &amp; bottom -->
+      <g fill="#A2482B" opacity="0.45">
+        <polygon points="80,40 90,50 80,60 70,50" /><polygon points="118,40 128,50 118,60 108,50" /><polygon points="156,40 166,50 156,60 146,50" /><polygon points="194,40 204,50 194,60 184,50" /><polygon points="232,40 242,50 232,60 222,50" /><polygon points="270,40 280,50 270,60 260,50" /><polygon points="308,40 318,50 308,60 298,50" /><polygon points="346,40 356,50 346,60 336,50" /><polygon points="384,40 394,50 384,60 374,50" /><polygon points="422,40 432,50 422,60 412,50" /><polygon points="460,40 470,50 460,60 450,50" /><polygon points="498,40 508,50 498,60 488,50" />
+        <polygon points="80,740 90,750 80,760 70,750" /><polygon points="118,740 128,750 118,760 108,750" /><polygon points="156,740 166,750 156,760 146,750" /><polygon points="194,740 204,750 194,760 184,750" /><polygon points="232,740 242,750 232,760 222,750" /><polygon points="270,740 280,750 270,760 260,750" /><polygon points="308,740 318,750 308,760 298,750" /><polygon points="346,740 356,750 346,760 336,750" /><polygon points="384,740 394,750 384,760 374,750" /><polygon points="422,740 432,750 422,760 412,750" /><polygon points="460,740 470,750 460,760 450,750" /><polygon points="498,740 508,750 498,760 488,750" />
+      </g>
+      <!-- Antique Pillars and Kuthu Vilakku (Lamps) -->
+      <g transform="translate(100, 270)" fill="#C68841" stroke="#A2482B" stroke-width="1">
+        <!-- Left Lamp -->
+        <path d="M 0 60 L 20 60 L 15 40 L 18 10 L 0 0 L -18 10 L -15 40 L -20 60 Z" opacity="0.75"/>
+        <path d="M 0 0 L 0 -25" stroke-width="2"/>
+        <circle cx="0" cy="-30" r="5" fill="#A2482B"/>
+        <!-- Flame -->
+        <path d="M 0 -36 C -4 -42, -4 -48, 0 -54 C 4 -48, 4 -42, 0 -36 Z" fill="#D64218" stroke="none"/>
+      </g>
+      <g transform="translate(500, 270)" fill="#C68841" stroke="#A2482B" stroke-width="1">
+        <!-- Right Lamp -->
+        <path d="M 0 60 L 20 60 L 15 40 L 18 10 L 0 0 L -18 10 L -15 40 L -20 60 Z" opacity="0.75"/>
+        <path d="M 0 0 L 0 -25" stroke-width="2"/>
+        <circle cx="0" cy="-30" r="5" fill="#A2482B"/>
+        <!-- Flame -->
+        <path d="M 0 -36 C -4 -42, -4 -48, 0 -54 C 4 -48, 4 -42, 0 -36 Z" fill="#D64218" stroke="none"/>
+      </g>
+      <!-- Center Athangudi Mandala -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="80" fill="none" stroke="#A2482B" stroke-width="2" opacity="0.5"/>
+        <rect x="-45" y="-45" width="90" height="90" fill="none" stroke="#C68841" stroke-width="2" transform="rotate(45)" opacity="0.7"/>
+        <rect x="-35" y="-35" width="70" height="70" fill="#A2482B" transform="rotate(45)" opacity="0.2"/>
+        <circle cx="0" cy="0" r="24" fill="#C68841" opacity="0.8"/>
+        <circle cx="0" cy="0" r="10" fill="#A2482B"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#C68841" opacity="0.85">TWO FAMILIES UNITE</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#C68841" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#C68841" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#C68841" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#3D2016">Chettinad Heritage</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#3D2016" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#C68841" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#3D2016" opacity="0.6">HERITAGE TRADITION</text>
+</svg>

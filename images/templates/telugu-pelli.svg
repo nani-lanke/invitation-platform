@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Telugu Pelli — traditional South Indian wedding invitation template preview">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bg-parchment" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF5EC"/>
+      <stop offset="50%" stop-color="#F5EADB"/>
+      <stop offset="100%" stop-color="#FAF5EC"/>
+    </linearGradient>
+    <radialGradient id="bg-glow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold-foil" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#996515"/>
+      <stop offset="25%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#FFF3A8"/>
+      <stop offset="75%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <linearGradient id="stone-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8C7355"/>
+      <stop offset="50%" stop-color="#AA8D6E"/>
+      <stop offset="100%" stop-color="#735C40"/>
+    </linearGradient>
+    <linearGradient id="leaf-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2E7D32"/>
+      <stop offset="60%" stop-color="#1B5E20"/>
+      <stop offset="100%" stop-color="#0E3813"/>
+    </linearGradient>
+    <radialGradient id="marigold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="45%" stop-color="#FFA726"/>
+      <stop offset="85%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </radialGradient>
+    <linearGradient id="lotus-petal" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#FFF0F3"/>
+      <stop offset="40%" stop-color="#F48FB1"/>
+      <stop offset="80%" stop-color="#D81B60"/>
+      <stop offset="100%" stop-color="#880E4F"/>
+    </linearGradient>
+    <linearGradient id="lake-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E1EBEB" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#CFDFE0" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#B2CDD0" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Reusable Symbols -->
+    <g id="mango-leaf">
+      <path d="M 0 0 C -7 10 -11 25 -9 38 C -7 46 0 54 0 56 C 0 54 7 46 9 38 C 11 25 7 10 0 0 Z" fill="url(#leaf-grad)" stroke="#2E5014" stroke-width="0.7"/>
+      <path d="M 0 0 L 0 52" stroke="#689F38" stroke-width="0.8" opacity="0.8"/>
+      <path d="M 0 14 Q -4 20 -7 24 M 0 24 Q -5 30 -7 36 M 0 14 Q 4 20 7 24 M 0 24 Q 5 30 7 36" stroke="#689F38" stroke-width="0.5" fill="none" opacity="0.6"/>
+    </g>
+    <g id="white-flower">
+      <ellipse cx="0" cy="-6" rx="3.5" ry="6" fill="#FFFFFF" stroke="#DEC596" stroke-width="0.5"/>
+      <ellipse cx="6" cy="0" rx="6" ry="3.5" fill="#FFFFFF" stroke="#DEC596" stroke-width="0.5"/>
+      <ellipse cx="0" cy="6" rx="3.5" ry="6" fill="#FFFFFF" stroke="#DEC596" stroke-width="0.5"/>
+      <ellipse cx="-6" cy="0" rx="6" ry="3.5" fill="#FFFFFF" stroke="#DEC596" stroke-width="0.5"/>
+      <ellipse cx="4.2" cy="-4.2" rx="3.5" ry="5.5" transform="rotate(45 4.2 -4.2)" fill="#FFFDE7" stroke="#DEC596" stroke-width="0.4"/>
+      <ellipse cx="4.2" cy="4.2" rx="3.5" ry="5.5" transform="rotate(-45 4.2 4.2)" fill="#FFFDE7" stroke="#DEC596" stroke-width="0.4"/>
+      <ellipse cx="-4.2" cy="4.2" rx="3.5" ry="5.5" transform="rotate(45 -4.2 4.2)" fill="#FFFDE7" stroke="#DEC596" stroke-width="0.4"/>
+      <ellipse cx="-4.2" cy="-4.2" rx="3.5" ry="5.5" transform="rotate(-45 -4.2 -4.2)" fill="#FFFDE7" stroke="#DEC596" stroke-width="0.4"/>
+      <circle cx="0" cy="0" r="3.2" fill="#FDD835" stroke="#F57F17" stroke-width="0.4"/>
+      <circle cx="0" cy="0" r="1.2" fill="#E65100"/>
+    </g>
+    <g id="marigold-flower">
+      <circle cx="0" cy="0" r="11" fill="url(#marigold)"/>
+      <circle cx="0" cy="0" r="8" fill="#FFA726" stroke="#E65100" stroke-width="0.6"/>
+      <circle cx="0" cy="0" r="3.5" fill="#BF360C"/>
+      <circle cx="0" cy="0" r="1.5" fill="#FFF176"/>
+    </g>
+    <g id="bell">
+      <line x1="0" y1="0" x2="0" y2="18" stroke="#D4AF37" stroke-width="1.2"/>
+      <circle cx="0" cy="18" r="2.5" fill="#996515"/>
+      <path d="M -8 34 C -8 24 -4 20 0 20 C 4 20 8 24 8 34 Z" fill="url(#gold-foil)" stroke="#996515" stroke-width="0.7"/>
+      <path d="M -9 34 L 9 34 L 7 36 L -7 36 Z" fill="#996515"/>
+      <circle cx="0" cy="38" r="2" fill="#D4AF37"/>
+    </g>
+    <g id="hanging-lamp">
+      <line x1="0" y1="0" x2="0" y2="28" stroke="#D4AF37" stroke-width="1.2"/>
+      <path d="M -10 36 C -10 29 -5 27 0 27 C 5 27 10 29 10 36 Z" fill="url(#gold-foil)" stroke="#996515" stroke-width="0.7"/>
+      <ellipse cx="0" cy="36" rx="10" ry="3" fill="#D4AF37" stroke="#996515" stroke-width="0.6"/>
+      <path d="M 0 33 C -2 30 -3 24 0 20 C 3 24 2 30 0 33 Z" fill="#FFF176" stroke="#FF9800" stroke-width="0.5"/>
+      <circle cx="0" cy="27" r="8" fill="#FFF9C4" opacity="0.35"/>
+    </g>
+    <g id="lotus-bloom">
+      <path d="M 0 6 C -8 1 -18 -4 -24 -14 C -14 -15 -6 -6 0 6 Z" fill="url(#lotus-petal)" stroke="#880E4F" stroke-width="0.5"/>
+      <path d="M 0 6 C 8 1 18 -4 24 -14 C 14 -15 6 -6 0 6 Z" fill="url(#lotus-petal)" stroke="#880E4F" stroke-width="0.5"/>
+      <path d="M 0 -24 C 7 -14 8 -3 0 8 C -8 -3 -7 -14 0 -24 Z" fill="url(#lotus-petal)" stroke="#880E4F" stroke-width="0.6"/>
+      <path d="M 0 7 C -6 0 -14 -6 -16 -18 C -9 -17 -3 -8 0 7 Z" fill="url(#lotus-petal)" stroke="#AD1457" stroke-width="0.5"/>
+      <path d="M 0 7 C 6 0 14 -6 16 -18 C 9 -17 3 -8 0 7 Z" fill="url(#lotus-petal)" stroke="#AD1457" stroke-width="0.5"/>
+      <ellipse cx="0" cy="5" rx="5" ry="2.5" fill="#FDD835"/>
+    </g>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="600" height="800" fill="url(#bg-parchment)"/>
+  <rect width="600" height="800" fill="url(#bg-glow)"/>
+
+  <!-- Ornate Decorative Frame -->
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="url(#gold-foil)" stroke-width="2.2" opacity="0.85"/>
+  <rect x="34" y="34" width="532" height="732" fill="none" stroke="#996515" stroke-width="0.8" opacity="0.45"/>
+  <rect x="42" y="42" width="516" height="716" fill="none" stroke="url(#gold-foil)" stroke-width="1.2" stroke-dasharray="6,4" opacity="0.6"/>
+
+  <!-- Corner Flourishes -->
+  <g transform="translate(34 34)">
+    <circle cx="0" cy="0" r="4" fill="#996515"/>
+    <path d="M 0 0 Q 18 0 18 18 Q 0 18 0 0" fill="none" stroke="url(#gold-foil)" stroke-width="1"/>
+  </g>
+  <g transform="translate(566 34)">
+    <circle cx="0" cy="0" r="4" fill="#996515"/>
+    <path d="M 0 0 Q -18 0 -18 18 Q 0 18 0 0" fill="none" stroke="url(#gold-foil)" stroke-width="1"/>
+  </g>
+  <g transform="translate(34 766)">
+    <circle cx="0" cy="0" r="4" fill="#996515"/>
+    <path d="M 0 0 Q 18 0 18 -18 Q 0 -18 0 0" fill="none" stroke="url(#gold-foil)" stroke-width="1"/>
+  </g>
+  <g transform="translate(566 766)">
+    <circle cx="0" cy="0" r="4" fill="#996515"/>
+    <path d="M 0 0 Q -18 0 -18 -18 Q 0 -18 0 0" fill="none" stroke="url(#gold-foil)" stroke-width="1"/>
+  </g>
+
+  <!-- Side Carved Temple Pillars -->
+  <g id="side-pillars" opacity="0.9">
+    <!-- Left Pillar -->
+    <image href="../background_images/pillers_image_one/pillersimage_1.png" xlink:href="../background_images/pillers_image_one/pillersimage_1.png" x="38" y="110" width="30" height="240" preserveAspectRatio="xMidYMid meet"/>
+    <!-- Right Pillar -->
+    <image href="../background_images/pillers_image_one/pillersimage_1.png" xlink:href="../background_images/pillers_image_one/pillersimage_1.png" x="532" y="110" width="30" height="240" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <!-- Side Jasmine Garlands -->
+  <g id="jasmine-garland-left" transform="translate(53 100)">
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 0) scale(0.8)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 16) scale(0.8)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(0 32) scale(0.55)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 48) scale(0.8)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 64) scale(0.8)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(0 80) scale(0.55)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 96) scale(0.8)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 112) scale(0.8)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(0 128) scale(0.55)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 144) scale(0.8)"/>
+    <circle cx="0" cy="156" r="2.5" fill="#E65100"/>
+  </g>
+  <g id="jasmine-garland-right" transform="translate(547 100)">
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 0) scale(0.8)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 16) scale(0.8)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(0 32) scale(0.55)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 48) scale(0.8)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 64) scale(0.8)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(0 80) scale(0.55)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 96) scale(0.8)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 112) scale(0.8)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(0 128) scale(0.55)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(0 144) scale(0.8)"/>
+    <circle cx="0" cy="156" r="2.5" fill="#E65100"/>
+  </g>
+
+  <!-- Top Dravidian Temple Arch and Toran Structure -->
+  <g id="top-arch">
+    <!-- Ornate Golden Arch Backdrop -->
+    <path d="M 40 40 L 560 40 L 560 52 C 440 52 380 96 300 96 C 220 96 160 52 40 52 Z" fill="#F7F1E6" stroke="#DEC596" stroke-width="0.8"/>
+    <path d="M 40 52 Q 300 112 560 52" fill="none" stroke="url(#gold-foil)" stroke-width="2.4" opacity="0.85"/>
+    <path d="M 40 55 Q 300 115 560 55" fill="none" stroke="#E65100" stroke-width="1.2" opacity="0.7"/>
+
+    <!-- Mango Leaf Toran -->
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(68 54) rotate(-14) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(112 66) rotate(-10) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(158 76) rotate(-6) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(204 84) rotate(-2) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(250 88) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(300 90) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(350 88) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(396 84) rotate(2) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(442 76) rotate(6) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(488 66) rotate(10) scale(0.85)"/>
+    <use href="#mango-leaf" xlink:href="#mango-leaf" transform="translate(532 54) rotate(14) scale(0.85)"/>
+
+    <!-- Floral Garland Beads -->
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(90 62) scale(0.75)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(135 73) scale(0.9)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(181 82) scale(0.75)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(227 88) scale(0.9)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(373 88) scale(0.9)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(419 82) scale(0.75)"/>
+    <use href="#white-flower" xlink:href="#white-flower" transform="translate(465 73) scale(0.9)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(510 62) scale(0.75)"/>
+
+    <!-- Sacred Lord Vinayaka Centerpiece -->
+    <image href="images/background_images/vinayaka_images/vinayaka_image_2.png" xlink:href="images/background_images/vinayaka_images/vinayaka_image_2.png" x="268" y="18" width="64" height="64" preserveAspectRatio="xMidYMid meet"/>
+
+    <!-- Hanging Bells and Kuthu Vilakku Lamps -->
+    <use href="#hanging-lamp" xlink:href="#hanging-lamp" transform="translate(75 48)"/>
+    <use href="#bell" xlink:href="#bell" transform="translate(140 42) scale(0.88)"/>
+    <use href="#bell" xlink:href="#bell" transform="translate(210 38) scale(0.82)"/>
+    <use href="#bell" xlink:href="#bell" transform="translate(390 38) scale(0.82)"/>
+    <use href="#bell" xlink:href="#bell" transform="translate(460 42) scale(0.88)"/>
+    <use href="#hanging-lamp" xlink:href="#hanging-lamp" transform="translate(525 48)"/>
+  </g>
+
+  <!-- Bottom Sacred Lake and Mandapam Elements with Inward-Facing Ceremonial Elephants -->
+  <g id="bottom-ceremony" transform="translate(0 590)">
+    <!-- Serene Temple Pond Water -->
+    <rect x="0" y="60" width="600" height="150" fill="url(#lake-water)"/>
+    <line x1="0" y1="60" x2="600" y2="60" stroke="url(#gold-foil)" stroke-width="1.4"/>
+
+    <!-- Left Flank Ceremonial Elephant Vector -->
+    <image href="images/background_images/elephant_vector/elephant_vector_1.png" xlink:href="images/background_images/elephant_vector/elephant_vector_1.png" x="18" y="55" width="125" height="122" preserveAspectRatio="xMidYMid meet"/>
+
+    <!-- Right Flank Ceremonial Elephant Vector -->
+    <image href="images/background_images/elephant_vector/elephant_vector_4.png" xlink:href="images/background_images/elephant_vector/elephant_vector_4.png" x="444" y="56" width="138" height="120" preserveAspectRatio="xMidYMid meet"/>
+
+    <!-- Blooming Lotuses and Water Lilies -->
+    <use href="#lotus-bloom" xlink:href="#lotus-bloom" transform="translate(75 174) scale(0.7)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(115 180) scale(0.6)"/>
+    <use href="#lotus-bloom" xlink:href="#lotus-bloom" transform="translate(525 174) scale(0.7)"/>
+    <use href="#marigold-flower" xlink:href="#marigold-flower" transform="translate(485 180) scale(0.6)"/>
+
+    <!-- Center Auspicious Flourish -->
+    <g transform="translate(300 172)">
+      <path d="M -90 0 Q 0 -14 90 0 Q 0 14 -90 0 Z" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.6"/>
+      <path d="M -60 4 Q 0 -6 60 4 Q 0 14 -60 4 Z" fill="none" stroke="#996515" stroke-width="0.8" opacity="0.5"/>
+      <circle cx="-55" cy="0" r="2.5" fill="#D4AF37"/>
+      <circle cx="-28" cy="0" r="2.5" fill="#D4AF37"/>
+      <circle cx="0" cy="0" r="3.5" fill="#145A32"/>
+      <circle cx="28" cy="0" r="2.5" fill="#D4AF37"/>
+      <circle cx="55" cy="0" r="2.5" fill="#D4AF37"/>
+      <use href="#lotus-bloom" xlink:href="#lotus-bloom" transform="translate(0 -10) scale(0.8)"/>
+    </g>
+  </g>
+</svg>

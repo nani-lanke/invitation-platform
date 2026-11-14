@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Coorg Kodava — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-coorg-kodava" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F3F7F2"/>
+      <stop offset="55%" stop-color="#DCE7DA"/>
+      <stop offset="100%" stop-color="#F3F7F2"/>
+    </linearGradient>
+    <radialGradient id="gl-coorg-kodava" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-coorg-kodava" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-coorg-kodava)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-coorg-kodava)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-coorg-kodava)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Western Ghats Forest &amp; Kupya-Chele Sash Motif -->
+      <g stroke="#2F5938" stroke-width="1.5" fill="none" opacity="0.65">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#C29648" stroke-width="1" rx="6"/>
+      </g>
+      <!-- Coffee Leaves &amp; Berries Vignette -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="105" fill="none" stroke="#2F5938" stroke-width="1.8" opacity="0.4"/>
+        <circle cx="0" cy="0" r="90" fill="none" stroke="#C29648" stroke-width="1.2" stroke-dasharray="4 4"/>
+        <!-- Botanical Coffee Leaf Sprays -->
+        <g fill="#2F5938" opacity="0.6">
+          <path d="M 0 0 C -30 -40, -60 -40, -80 -20 C -60 0, -30 10, 0 0 Z"/>
+          <path d="M 0 0 C 30 -40, 60 -40, 80 -20 C 60 0, 30 10, 0 0 Z"/>
+          <path d="M 0 0 C -30 40, -60 40, -80 20 C -60 0, -30 -10, 0 0 Z"/>
+          <path d="M 0 0 C 30 40, 60 40, 80 20 C 60 0, 30 -10, 0 0 Z"/>
+        </g>
+        <!-- Ripe Red Coffee Berries -->
+        <g fill="#A82823">
+          <circle cx="-35" cy="-25" r="7"/>
+          <circle cx="-25" cy="-35" r="6"/>
+          <circle cx="35" cy="-25" r="7"/>
+          <circle cx="25" cy="-35" r="6"/>
+          <circle cx="-35" cy="25" r="7"/>
+          <circle cx="35" cy="25" r="7"/>
+        </g>
+        <!-- Traditional Gold Peeche-Kathi Crossed Dagger Motif -->
+        <g stroke="#C29648" stroke-width="2.5" fill="none" opacity="0.85">
+          <line x1="-35" y1="-35" x2="35" y2="35"/>
+          <line x1="35" y1="-35" x2="-35" y2="35"/>
+          <circle cx="0" cy="0" r="12" fill="#C29648" stroke="#2F5938"/>
+        </g>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#C29648" opacity="0.85">KODAVA DAMPATHY</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#C29648" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#C29648" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#C29648" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#182C1C">Coorg Kodava</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#182C1C" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#C29648" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#182C1C" opacity="0.6">WESTERN GHATS WEDDING</text>
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Kanchipuram Silk — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-kanchipuram-silk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF8EE"/>
+      <stop offset="55%" stop-color="#F3E6D0"/>
+      <stop offset="100%" stop-color="#FFF8EE"/>
+    </linearGradient>
+    <radialGradient id="gl-kanchipuram-silk" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-kanchipuram-silk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-kanchipuram-silk)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-kanchipuram-silk)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-kanchipuram-silk)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Gopuram / Temple border top &amp; bottom -->
+      <g fill="#D4AF37" opacity="0.6">
+        <path d="M 40 40 L 560 40 L 560 44 L 40 44 Z"/>
+        <path d="M 40 50 L 560 50 L 560 52 L 40 52 Z"/>
+        <!-- Temple triangles top -->
+        <polygon points="44,50 54.4,64 64.8,50" /><polygon points="64.8,50 75.2,64 85.6,50" /><polygon points="85.6,50 96,64 106.4,50" /><polygon points="106.4,50 116.80000000000001,64 127.2,50" /><polygon points="127.2,50 137.6,64 148,50" /><polygon points="148,50 158.4,64 168.8,50" /><polygon points="168.8,50 179.20000000000002,64 189.60000000000002,50" /><polygon points="189.6,50 200,64 210.39999999999998,50" /><polygon points="210.4,50 220.8,64 231.2,50" /><polygon points="231.20000000000002,50 241.60000000000002,64 252,50" /><polygon points="252,50 262.4,64 272.8,50" /><polygon points="272.8,50 283.2,64 293.6,50" /><polygon points="293.6,50 304,64 314.40000000000003,50" /><polygon points="314.40000000000003,50 324.8,64 335.20000000000005,50" /><polygon points="335.2,50 345.59999999999997,64 356,50" /><polygon points="356,50 366.4,64 376.8,50" /><polygon points="376.8,50 387.2,64 397.6,50" /><polygon points="397.6,50 408,64 418.40000000000003,50" /><polygon points="418.40000000000003,50 428.8,64 439.20000000000005,50" /><polygon points="439.2,50 449.59999999999997,64 460,50" /><polygon points="460,50 470.4,64 480.8,50" /><polygon points="480.8,50 491.2,64 501.6,50" /><polygon points="501.6,50 512,64 522.4,50" /><polygon points="522.4000000000001,50 532.8000000000001,64 543.2,50" /><polygon points="543.2,50 553.6,64 564,50" />
+
+        <path d="M 40 760 L 560 760 L 560 756 L 40 756 Z"/>
+        <path d="M 40 750 L 560 750 L 560 748 L 40 748 Z"/>
+        <!-- Temple triangles bottom -->
+        <polygon points="44,750 54.4,736 64.8,750" /><polygon points="64.8,750 75.2,736 85.6,750" /><polygon points="85.6,750 96,736 106.4,750" /><polygon points="106.4,750 116.80000000000001,736 127.2,750" /><polygon points="127.2,750 137.6,736 148,750" /><polygon points="148,750 158.4,736 168.8,750" /><polygon points="168.8,750 179.20000000000002,736 189.60000000000002,750" /><polygon points="189.6,750 200,736 210.39999999999998,750" /><polygon points="210.4,750 220.8,736 231.2,750" /><polygon points="231.20000000000002,750 241.60000000000002,736 252,750" /><polygon points="252,750 262.4,736 272.8,750" /><polygon points="272.8,750 283.2,736 293.6,750" /><polygon points="293.6,750 304,736 314.40000000000003,750" /><polygon points="314.40000000000003,750 324.8,736 335.20000000000005,750" /><polygon points="335.2,750 345.59999999999997,736 356,750" /><polygon points="356,750 366.4,736 376.8,750" /><polygon points="376.8,750 387.2,736 397.6,750" /><polygon points="397.6,750 408,736 418.40000000000003,750" /><polygon points="418.40000000000003,750 428.8,736 439.20000000000005,750" /><polygon points="439.2,750 449.59999999999997,736 460,750" /><polygon points="460,750 470.4,736 480.8,750" /><polygon points="480.8,750 491.2,736 501.6,750" /><polygon points="501.6,750 512,736 522.4,750" /><polygon points="522.4000000000001,750 532.8000000000001,736 543.2,750" /><polygon points="543.2,750 553.6,736 564,750" />
+      </g>
+      <!-- Corner ornaments -->
+      <g stroke="#D4AF37" stroke-width="1.4" fill="none" opacity="0.75">
+        <path d="M 44 80 L 44 44 L 80 44"/>
+        <path d="M 556 80 L 556 44 L 520 44"/>
+        <path d="M 44 720 L 44 756 L 80 756"/>
+        <path d="M 556 720 L 556 756 L 520 756"/>
+        <circle cx="56" cy="56" r="3.5" fill="#8E1538"/>
+        <circle cx="544" cy="56" r="3.5" fill="#8E1538"/>
+        <circle cx="56" cy="744" r="3.5" fill="#8E1538"/>
+        <circle cx="544" cy="744" r="3.5" fill="#8E1538"/>
+      </g>
+      <!-- Central Sari Zari Medallion &amp; Peacocks -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="110" fill="none" stroke="#D4AF37" stroke-width="2" opacity="0.45"/>
+        <circle cx="0" cy="0" r="95" fill="none" stroke="#8E1538" stroke-width="1.2" stroke-dasharray="4 4" opacity="0.6"/>
+        <circle cx="0" cy="0" r="75" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
+        <!-- 12 Petal Lotus Center -->
+        
+          <g transform="rotate(0)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(30)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(60)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(90)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(120)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(150)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(180)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(210)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(240)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(270)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(300)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+          <g transform="rotate(330)">
+            <path d="M 0 -30 C 12 -50, 12 -70, 0 -75 C -12 -70, -12 -50, 0 -30 Z" fill="#8E1538" opacity="0.75"/>
+            <circle cx="0" cy="-60" r="2.5" fill="#D4AF37"/>
+          </g>
+        
+        <circle cx="0" cy="0" r="22" fill="#D4AF37" opacity="0.85"/>
+        <circle cx="0" cy="0" r="14" fill="#8E1538"/>
+        <circle cx="0" cy="0" r="5" fill="#FFF8EE"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#D4AF37" opacity="0.85">THE WEDDING OF</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#D4AF37" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#401018">Kanchipuram Silk</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#401018" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#D4AF37" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#401018" opacity="0.6">SOUTH INDIAN TRADITION</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Rosewater Romance — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-rosewater-romance" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF2F2"/>
+      <stop offset="55%" stop-color="#EEDADB"/>
+      <stop offset="100%" stop-color="#FAF2F2"/>
+    </linearGradient>
+    <radialGradient id="gl-rosewater-romance" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-rosewater-romance" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-rosewater-romance)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-rosewater-romance)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-rosewater-romance)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Dusty Rose Botanical Wreath &amp; Calligraphic Vignette -->
+      <g stroke="#A64B5D" stroke-width="1.4" fill="none" opacity="0.6">
+        <rect x="36" y="36" width="528" height="728" rx="12"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#CF9D76" stroke-width="1" stroke-dasharray="5 3" rx="10"/>
+      </g>
+      <!-- Watercolor Rose Bouquet Centerpiece -->
+      <g transform="translate(300, 270)">
+        <circle cx="0" cy="0" r="110" fill="none" stroke="#CF9D76" stroke-width="1.5" opacity="0.45"/>
+        <!-- Soft Layered Rose Petals -->
+        <g fill="#A64B5D" opacity="0.75">
+          <circle cx="0" cy="0" r="28"/>
+          <path d="M -25 -10 C -40 -35, -10 -50, 0 -35 C 10 -50, 40 -35, 25 -10 Z"/>
+          <path d="M -25 10 C -40 35, -10 50, 0 35 C 10 50, 40 35, 25 10 Z"/>
+          <circle cx="-32" cy="0" r="18" fill="#CF9D76" opacity="0.8"/>
+          <circle cx="32" cy="0" r="18" fill="#CF9D76" opacity="0.8"/>
+        </g>
+        <circle cx="0" cy="0" r="14" fill="#FAF2F2"/>
+        <circle cx="0" cy="0" r="6" fill="#A64B5D"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#CF9D76" opacity="0.85">CELEBRATING TRUE LOVE</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#CF9D76" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#CF9D76" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#CF9D76" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#422026">Rosewater Romance</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#422026" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#CF9D76" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#422026" opacity="0.6">FOREVER &amp; ALWAYS</text>
+</svg>

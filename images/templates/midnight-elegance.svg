@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 800" width="600" height="800" role="img" aria-label="Midnight Elegance — wedding invitation template preview">
+  <defs>
+    <linearGradient id="bg-midnight-elegance" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0D1A"/>
+      <stop offset="55%" stop-color="#161D36"/>
+      <stop offset="100%" stop-color="#0A0D1A"/>
+    </linearGradient>
+    <radialGradient id="gl-midnight-elegance" cx="50%" cy="34%" r="62%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh-midnight-elegance" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="600" height="800" fill="url(#bg-midnight-elegance)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#gl-midnight-elegance)"/>
+  <rect x="0" y="0" width="600" height="800" fill="url(#sh-midnight-elegance)"/>
+
+  <!-- Custom Vector Art -->
+  
+      <!-- Midnight Velvet &amp; 24k Gold Constellation Filigree -->
+      <g stroke="#D4AF37" stroke-width="1.5" fill="none" opacity="0.75">
+        <rect x="36" y="36" width="528" height="728" rx="8"/>
+        <rect x="46" y="46" width="508" height="708" stroke="#8CA4D8" stroke-width="0.8" stroke-dasharray="5 3" rx="6"/>
+      </g>
+      <!-- Celestial Constellations &amp; Gold Starlight Crest -->
+      <g transform="translate(300, 260)">
+        <circle cx="0" cy="0" r="110" fill="none" stroke="#D4AF37" stroke-width="1.5" opacity="0.5"/>
+        <circle cx="0" cy="0" r="95" fill="none" stroke="#8CA4D8" stroke-width="0.8" stroke-dasharray="3 4"/>
+        <!-- 8-Point Starlight Center -->
+        
+          <g transform="rotate(0)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(45)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(90)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(135)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(180)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(225)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(270)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+          <g transform="rotate(315)">
+            <polygon points="0,-75 6,-25 -6,-25" fill="#D4AF37" opacity="0.85"/>
+            <circle cx="0" cy="-85" r="2.5" fill="#F5F7FA"/>
+          </g>
+        
+        <circle cx="0" cy="0" r="24" fill="#D4AF37" opacity="0.9"/>
+        <circle cx="0" cy="0" r="12" fill="#0A0D1A"/>
+        <circle cx="0" cy="0" r="5" fill="#F5F7FA"/>
+      </g>
+    
+
+  <!-- Typography -->
+  <text x="300" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="19" letter-spacing="7" fill="#8CA4D8" opacity="0.85">WRITTEN IN THE STARS</text>
+  <line x1="210" y1="495" x2="275" y2="495" stroke="#8CA4D8" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="300" cy="495" r="3.5" fill="#8CA4D8" opacity="0.75"/>
+  <line x1="325" y1="495" x2="390" y2="495" stroke="#8CA4D8" stroke-width="1.2" opacity="0.5"/>
+
+  <text x="300" y="575" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-style="italic" fill="#F5F7FA">Midnight Elegance</text>
+  <text x="300" y="630" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#F5F7FA" opacity="0.72">Groom &amp; Bride</text>
+  <g opacity="0.55">
+    <line x1="225" y1="680" x2="375" y2="680" stroke="#8CA4D8" stroke-width="1"/>
+  </g>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, serif" font-size="16" letter-spacing="4.5" fill="#F5F7FA" opacity="0.6">AN EVENING GALA</text>
+</svg>
