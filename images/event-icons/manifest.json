@@ -126,5 +126,673 @@
   "raw": "ai-generated/comfyui-raw/EVENT-ICONS/star__1316913.png",
   "coverage": 0.15,
   "edgeTouch": 0
+ },
+ "stage": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2639085,
+  "prompt": "An ornate royal two-seater Indian wedding reception sofa in deep red velvet with a carved gold frame, decorated with garlands of white jasmine and red roses, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/stage__2639085.png",
+  "coverage": 0.431,
+  "edgeTouch": 0
+ },
+ "cradle": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9159738,
+  "prompt": "A traditional Indian carved wooden baby cradle decorated with orange marigold garlands and soft white cushions inside, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/cradle__9159738.png",
+  "coverage": 0.313,
+  "edgeTouch": 0
+ },
+ "gradcap": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1769847,
+  "prompt": "A black graduation mortarboard cap with a gold tassel resting on a rolled diploma scroll tied with a red ribbon, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/gradcap__1769847.png",
+  "coverage": 0.278,
+  "edgeTouch": 0
+ },
+ "crackers": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8261067,
+  "prompt": "A festive bundle of colourful Diwali firework rockets and a lit golden sparkler throwing bright sparks, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/crackers__8261067.png",
+  "coverage": 0.138,
+  "edgeTouch": 0
+ },
+ "dj": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3724635,
+  "prompt": "A modern black DJ turntable controller with two round decks and glowing coloured buttons, a pair of headphones resting on top, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/dj__3724635.png",
+  "coverage": 0.256,
+  "edgeTouch": 0
+ },
+ "bouquet": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5564510,
+  "prompt": "A welcoming bouquet of fresh red roses, white lilies and pink carnations wrapped in cream paper and tied with a gold ribbon, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/bouquet__5564510.png",
+  "coverage": 0.277,
+  "edgeTouch": 0
+ },
+ "medal": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8957996,
+  "prompt": "A small shiny round gold winner medal with a laurel wreath design, lying flat with its short red and blue ribbon neatly folded beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/medal__8957996.png",
+  "coverage": 0.119,
+  "edgeTouch": 0
+ },
+ "mandap": {
+  "source": "images/ceremony-icons/wedding.png",
+  "note": "256px copy of the homam fire picture the user chose (2026-11-14), not generated by this script"
+ },
+ "couple": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1299021,
+  "prompt": "A cute 3D animated cartoon illustration of a bride and groom standing close together smiling, big round brown eyes, rosy cheeks, the bride in a white lace off-shoulder wedding gown with a long veil holding a bouquet of pink and white roses, the groom in a black tuxedo with a bow tie and a white rose boutonniere, half-length portrait, behind them a round wedding arch of pink and white roses with soft pink drapes, pastel colours, soft warm light, charming storybook animation film style, one compact scene centred in the frame, the whole scene fully visible with a wide empty white margin on every side, not touching the edges of the image, not photorealistic, no text, no letters, no watermark, no logo, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/couple__1299021.png",
+  "coverage": 0.436,
+  "edgeTouch": 0
+ },
+ "thali": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8234087,
+  "prompt": "A Tamil wedding thali: a gold mangalyam pendant on a thick yellow turmeric thread, laid on a brass plate with turmeric roots, betel leaves, a coconut and white jasmine flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/thali__8234087.png",
+  "coverage": 0.346,
+  "edgeTouch": 0
+ },
+ "nilavilakku": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6678386,
+  "prompt": "A tall Kerala brass nilavilakku oil lamp with lit wicks, beside a brass para measure filled with rice paddy and a spray of golden coconut flowers, on a green banana leaf, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/nilavilakku__6678386.png",
+  "coverage": 0.207,
+  "edgeTouch": 0
+ },
+ "chooda": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7357155,
+  "prompt": "A set of Punjabi bridal red and ivory chooda bangles stacked together with golden kalire ornaments hanging from them, resting on a folded pink phulkari cloth with marigold flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/chooda__7357155.png",
+  "coverage": 0.249,
+  "edgeTouch": 0
+ },
+ "topor": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5227073,
+  "prompt": "A Bengali wedding white sholapith topor groom crown and a white bridal mukut tiara, with red and white shankha pola bangles and a small pot of red sindoor beside them, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/topor__5227073.png",
+  "coverage": 0.199,
+  "edgeTouch": 0
+ },
+ "chori": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5281166,
+  "prompt": "A Gujarati wedding chori: four stacks of brightly painted clay pots with green mango leaves and a coconut on top, joined by marigold garlands, a small sacred fire in a brass vessel at the centre, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/chori__5281166.png",
+  "coverage": 0.3,
+  "edgeTouch": 0
+ },
+ "mundavalya": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1375557,
+  "prompt": "A Maharashtrian wedding set: two strings of white pearl mundavalya with gold beads, green glass bangles and a pearl nath nose ring, arranged on a folded purple and gold paithani silk cloth, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/mundavalya__1375557.png",
+  "coverage": 0.245,
+  "edgeTouch": 0
+ },
+ "safa": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3185764,
+  "prompt": "A royal Rajasthani groom red and gold bandhani safa turban with a jewelled kalgi brooch and feather, beside a pearl necklace and a small ornate sword, on a red velvet cushion, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/safa__3185764.png",
+  "coverage": 0.331,
+  "edgeTouch": 0
+ },
+ "horse": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9467814,
+  "prompt": "A beautiful white wedding mare standing calmly, dressed for an Indian baraat in a richly embroidered red and gold saddle cloth, gold tassels and a jewelled headpiece, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/horse__9467814.png",
+  "coverage": 0.202,
+  "edgeTouch": 0
+ },
+ "varmala": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7324423,
+  "prompt": "Two thick Indian wedding varmala garlands of red roses and white tuberose flowers with gold tassels, laid together in a circle on a brass plate, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/varmala__7324423.png",
+  "coverage": 0.289,
+  "edgeTouch": 0
+ },
+ "doli": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7653075,
+  "prompt": "A traditional Indian bridal doli palanquin of carved wood painted red and gold, with red silk curtains, gold tassels and marigold garlands, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/doli__7653075.png",
+  "coverage": 0.332,
+  "edgeTouch": 0
+ },
+ "nikah": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9818944,
+  "prompt": "An ornate silver tray holding two gold wedding rings on green velvet, a small crystal attar perfume bottle, red roses, and a silver bowl of dates, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/nikah__9818944.png",
+  "coverage": 0.276,
+  "edgeTouch": 0
+ },
+ "bells": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1852561,
+  "prompt": "Two silver wedding bells tied together with a large white satin ribbon bow, decorated with white roses and green leaves, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/bells__1852561.png",
+  "coverage": 0.227,
+  "edgeTouch": 0
+ },
+ "lotus": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8921756,
+  "prompt": "A brass bowl of floating pink lotus flowers with small lit candles, beside a polished brass oil lamp and white jasmine garlands, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/lotus__8921756.png",
+  "coverage": 0.229,
+  "edgeTouch": 0
+ },
+ "sake": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8509097,
+  "prompt": "A Japanese wedding san-san-kudo set: three stacked red lacquer sake cups and a gold sake pourer decorated with gold and silver mizuhiki cord knots, on a small black lacquer tray, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/sake__8509097.png",
+  "coverage": 0.194,
+  "edgeTouch": 0
+ },
+ "ducks": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6755729,
+  "prompt": "A pair of traditional Korean wooden wedding ducks painted in bright colours, tied together with red and blue silk cloth, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/ducks__6755729.png",
+  "coverage": 0.176,
+  "edgeTouch": 0
+ },
+ "tea": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6023337,
+  "prompt": "A Chinese wedding tea ceremony set: a red porcelain teapot with gold patterns and two matching lidded cups on a red lacquer tray, with red dates and lotus seeds, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/tea__6023337.png",
+  "coverage": 0.292,
+  "edgeTouch": 0
+ },
+ "roka": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8260218,
+  "prompt": "An Indian roka shagun thali: a decorated silver plate holding a coconut wrapped in red cloth, a box of sweets, dry fruits, a small bowl of red kumkum and marigold flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/roka__8260218.png",
+  "coverage": 0.304,
+  "edgeTouch": 0
+ },
+ "tilak": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9895322,
+  "prompt": "An Indian tilak ceremony thali: a brass plate with a small bowl of red kumkum, a bowl of rice grains, a lit diya lamp, a coconut and marigold flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/tilak__9895322.png",
+  "coverage": 0.258,
+  "edgeTouch": 0
+ },
+ "couple-indian": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2751823,
+  "prompt": "A cute 3D animated cartoon illustration of an Indian bride and groom standing close together smiling, big round brown eyes, rosy cheeks, the bride in a red and gold bridal lehenga with a red dupatta over her head and gold jewellery, the groom in a cream and gold sherwani with a red safa turban, half-length portrait, behind them a reception stage arch of red roses and marigolds with warm fairy lights, soft warm light, charming storybook animation film style, one compact scene centred in the frame, the whole scene fully visible with a wide empty white margin on every side, not touching the edges of the image, not photorealistic, no text, no letters, no watermark, no logo, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/couple-indian__2751823.png",
+  "coverage": 0.547,
+  "edgeTouch": 0
+ },
+ "couple-south": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9793809,
+  "prompt": "A cute 3D animated cartoon illustration of a South Indian bride and groom standing close together smiling, big round brown eyes, rosy cheeks, the bride in a red and gold kanchipuram silk saree with jasmine flowers in her hair and gold temple jewellery, the groom in a cream silk shirt and a white veshti with a gold border, half-length portrait, behind them a reception stage arch of jasmine garlands, marigolds and banana leaves with brass lamps, soft warm light, charming storybook animation film style, one compact scene centred in the frame, the whole scene fully visible with a wide empty white margin on every side, not touching the edges of the image, not photorealistic, no text, no letters, no watermark, no logo, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/couple-south__9793809.png",
+  "coverage": 0.523,
+  "edgeTouch": 0
+ },
+ "couple-brides": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3031709,
+  "prompt": "A cute 3D animated cartoon illustration of two brides standing close together smiling, big round brown eyes, rosy cheeks, one bride in a white lace wedding gown with a veil holding a bouquet of pink roses, the other bride in a cream satin wedding gown with flowers in her hair, half-length portrait, behind them a round wedding arch of pink and white roses with soft pink drapes, pastel colours, soft warm light, charming storybook animation film style, one compact scene centred in the frame, the whole scene fully visible with a wide empty white margin on every side, not touching the edges of the image, not photorealistic, no text, no letters, no watermark, no logo, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/couple-brides__3031709.png",
+  "coverage": 0.491,
+  "edgeTouch": 0
+ },
+ "couple-grooms": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2625003,
+  "prompt": "A cute 3D animated cartoon illustration of two grooms standing close together smiling, big round brown eyes, rosy cheeks, one groom in a black tuxedo with a bow tie, the other groom in a navy blue suit with a white rose boutonniere, half-length portrait, behind them a round wedding arch of white roses and green leaves with soft cream drapes, pastel colours, soft warm light, charming storybook animation film style, one compact scene centred in the frame, the whole scene fully visible with a wide empty white margin on every side, not touching the edges of the image, not photorealistic, no text, no letters, no watermark, no logo, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/couple-grooms__2625003.png",
+  "coverage": 0.476,
+  "edgeTouch": 0
+ },
+ "gulal": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2058146,
+  "prompt": "Five small brass bowls heaped with bright Holi gulal colour powders in pink, yellow, green, blue and orange, arranged on a brass plate with a few marigold flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/gulal__2058146.png",
+  "coverage": 0.279,
+  "edgeTouch": 0
+ },
+ "dandiya": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6446513,
+  "prompt": "A pair of crossed Navratri dandiya sticks wrapped in bright red, yellow and green cloth with mirror work and gold tassels, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/dandiya__6446513.png",
+  "coverage": 0.096,
+  "edgeTouch": 0
+ },
+ "modak": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9683223,
+  "prompt": "A brass plate piled with white steamed modak sweets, decorated with red hibiscus flowers and green durva grass, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/modak__9683223.png",
+  "coverage": 0.307,
+  "edgeTouch": 0
+ },
+ "matki": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2652433,
+  "prompt": "A decorated clay dahi handi pot painted in bright colours, hung with marigold garlands, with a bamboo flute and a peacock feather resting against it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/matki__2652433.png",
+  "coverage": 0.194,
+  "edgeTouch": 0.004
+ },
+ "rakhi": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8001130,
+  "prompt": "A Raksha Bandhan thali: a silver plate with two ornate rakhi threads with beads, a small diya lamp, a bowl of red kumkum, rice grains and Indian sweets, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/rakhi__8001130.png",
+  "coverage": 0.4,
+  "edgeTouch": 0
+ },
+ "pongalpot": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2445253,
+  "prompt": "A decorated clay Pongal pot overflowing with boiling sweet rice, tied with turmeric leaves, standing beside sugarcane stalks and a kolam of rice flour, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/pongalpot__2445253.png",
+  "coverage": 0.36,
+  "edgeTouch": 0
+ },
+ "kite": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1717718,
+  "prompt": "Three colourful Indian paper kites in red, yellow and blue with a wooden spool of kite string, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/kite__1717718.png",
+  "coverage": 0.194,
+  "edgeTouch": 0
+ },
+ "pookalam": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6701445,
+  "prompt": "A round Onam pookalam flower carpet of concentric rings of orange, yellow, white and red flower petals with a small brass lamp at its centre, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/pookalam__6701445.png",
+  "coverage": 0.289,
+  "edgeTouch": 0
+ },
+ "sadhya": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6862743,
+  "prompt": "A traditional South Indian feast served on a fresh green banana leaf: white rice, sambar, several colourful vegetable curries, papadam, banana chips and payasam in a small bowl, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/sadhya__6862743.png",
+  "coverage": 0.33,
+  "edgeTouch": 0.014
+ },
+ "bonfire": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5748532,
+  "prompt": "A festive Lohri bonfire of stacked wooden logs with bright flames, with popcorn, peanuts and sweets in small baskets beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/bonfire__5748532.png",
+  "coverage": 0.235,
+  "edgeTouch": 0
+ },
+ "lantern": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9673007,
+  "prompt": "An ornate golden Ramadan fanous lantern with coloured glass panels and a warm glowing candle inside, beside a small gold crescent moon ornament and a bowl of dates, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/lantern__9673007.png",
+  "coverage": 0.213,
+  "edgeTouch": 0
+ },
+ "candles": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6547569,
+  "prompt": "Three lit ivory pillar candles of different heights on a round gold tray, decorated with white flowers and green leaves, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/candles__6547569.png",
+  "coverage": 0.259,
+  "edgeTouch": 0
+ },
+ "xmastree": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3479126,
+  "prompt": "A small decorated Christmas tree with red and gold baubles, warm fairy lights and a gold star on top, with a few wrapped presents beneath it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/xmastree__3479126.png",
+  "coverage": 0.224,
+  "edgeTouch": 0
+ },
+ "eastereggs": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2690169,
+  "prompt": "A wicker Easter basket filled with brightly painted Easter eggs, with yellow tulips and a pastel ribbon bow, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/eastereggs__2690169.png",
+  "coverage": 0.31,
+  "edgeTouch": 0
+ },
+ "menorah": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3528875,
+  "prompt": "A polished gold Hanukkah menorah with nine lit blue and white candles, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/menorah__3528875.png",
+  "coverage": 0.151,
+  "edgeTouch": 0
+ },
+ "redlantern": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5103412,
+  "prompt": "Two round red Chinese New Year paper lanterns with gold tassels hanging from a branch of pink plum blossom, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/redlantern__5103412.png",
+  "coverage": 0.249,
+  "edgeTouch": 0.006
+ },
+ "hearts": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2470576,
+  "prompt": "A bunch of glossy red heart-shaped balloons tied with gold ribbon above a small bouquet of red roses, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/hearts__2470576.png",
+  "coverage": 0.223,
+  "edgeTouch": 0
+ },
+ "pumpkin": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8801087,
+  "prompt": "A carved orange Halloween jack-o-lantern pumpkin glowing from inside, with two small pumpkins and autumn leaves beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/pumpkin__8801087.png",
+  "coverage": 0.254,
+  "edgeTouch": 0
+ },
+ "toys": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7705276,
+  "prompt": "A soft brown teddy bear with a blue bow sitting beside colourful plain wooden building blocks and two pastel balloons, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/toys__7705276.png",
+  "coverage": 0.283,
+  "edgeTouch": 0
+ },
+ "rocket": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6886229,
+  "prompt": "A shiny red and white toy space rocket standing upright with a small toy astronaut and two little planets beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/rocket__6886229.png",
+  "coverage": 0.099,
+  "edgeTouch": 0
+ },
+ "dino": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4147005,
+  "prompt": "A friendly green toy dinosaur wearing a small colourful party hat, standing beside tropical jungle leaves, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/dino__4147005.png",
+  "coverage": 0.264,
+  "edgeTouch": 0
+ },
+ "unicorn": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2644503,
+  "prompt": "A plush white toy unicorn with a pastel rainbow mane, a golden horn and a small sparkly tiara, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/unicorn__2644503.png",
+  "coverage": 0.108,
+  "edgeTouch": 0
+ },
+ "football": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4708472,
+  "prompt": "A round soccer ball with black pentagons and white hexagons, with a gold trophy cup and a whistle on a ribbon beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/football__4708472.png",
+  "coverage": 0.188,
+  "edgeTouch": 0
+ },
+ "balloons": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7623933,
+  "prompt": "An elegant bunch of gold, white and champagne balloons tied together with long gold ribbons, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/balloons__7623933.png",
+  "coverage": 0.199,
+  "edgeTouch": 0
+ },
+ "babygift": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 3922267,
+  "prompt": "A wicker baby gift basket holding a soft white teddy bear, a pair of knitted cream baby booties, a baby bottle and a rattle, tied with a cream satin bow, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/babygift__3922267.png",
+  "coverage": 0.266,
+  "edgeTouch": 0
+ },
+ "babyblue": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9463913,
+  "prompt": "A wicker baby gift basket holding a soft teddy bear with a blue bow, a pair of knitted pastel blue baby booties, a baby bottle and a rattle, tied with a blue satin bow, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/babyblue__9463913.png",
+  "coverage": 0.282,
+  "edgeTouch": 0
+ },
+ "babypink": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1638873,
+  "prompt": "A wicker baby gift basket holding a soft teddy bear with a pink bow, a pair of knitted pastel pink baby booties, a baby bottle and a rattle, tied with a pink satin bow, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/babypink__1638873.png",
+  "coverage": 0.294,
+  "edgeTouch": 0
+ },
+ "babymoon": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9316548,
+  "prompt": "A baby nursery mobile of a soft plush crescent moon with a sleeping teddy bear on it and small hanging gold stars and white clouds, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/babymoon__9316548.png",
+  "coverage": 0.171,
+  "edgeTouch": 0
+ },
+ "toran": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5531061,
+  "prompt": "A carved wooden Indian front door decorated with a toran of green mango leaves and marigold flowers, with a brass kalash pot topped by a coconut on the doorstep and a rangoli in front, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/toran__5531061.png",
+  "coverage": 0.278,
+  "edgeTouch": 0
+ },
+ "keys": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7378701,
+  "prompt": "A set of shiny golden house keys on a ring with a small house-shaped keychain, tied with a red satin ribbon bow, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/keys__7378701.png",
+  "coverage": 0.189,
+  "edgeTouch": 0
+ },
+ "villa": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4198011,
+  "prompt": "A miniature model of a grand white two-storey villa with tall columns, balconies, a red tiled roof and warm glowing windows, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/villa__4198011.png",
+  "coverage": 0.281,
+  "edgeTouch": 0
+ },
+ "cottage": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2219454,
+  "prompt": "A miniature model of a cosy cottage with a thatched roof, climbing roses on the walls, a small flower garden and a white picket fence, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/cottage__2219454.png",
+  "coverage": 0.293,
+  "edgeTouch": 0
+ },
+ "cakesilver": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5215980,
+  "prompt": "A two-tier anniversary cake with smooth white frosting, silver ribbon bands, silver sugar pearls and white sugar roses, on a silver cake stand, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/cakesilver__5215980.png",
+  "coverage": 0.232,
+  "edgeTouch": 0
+ },
+ "cakegold": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5180327,
+  "prompt": "A two-tier anniversary cake with smooth ivory frosting, gold leaf details, gold ribbon bands and golden sugar roses, on a gold cake stand, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/cakegold__5180327.png",
+  "coverage": 0.255,
+  "edgeTouch": 0
+ },
+ "cakerose": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9545098,
+  "prompt": "A two-tier anniversary cake with smooth blush pink frosting covered in deep red sugar roses and rose petals, on a gold cake stand, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/cakerose__9545098.png",
+  "coverage": 0.331,
+  "edgeTouch": 0
+ },
+ "brunch": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4322873,
+  "prompt": "A brunch tray with a stack of golden pancakes topped with berries, a croissant, a glass of orange juice and a white cup of coffee, with a small vase of flowers, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/brunch__4322873.png",
+  "coverage": 0.202,
+  "edgeTouch": 0
+ },
+ "diploma": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4302813,
+  "prompt": "A rolled cream diploma scroll tied with a maroon ribbon and a gold wax seal, resting beside a small gold laurel wreath, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/diploma__4302813.png",
+  "coverage": 0.156,
+  "edgeTouch": 0
+ },
+ "suitcase": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5650988,
+  "prompt": "A vintage brown leather travel suitcase with colourful blank travel stickers, a small desk globe and a toy paper plane beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/suitcase__5650988.png",
+  "coverage": 0.335,
+  "edgeTouch": 0
+ },
+ "books": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6445777,
+  "prompt": "A neat stack of three colourful hardcover books with a shiny red apple on top and two sharpened pencils beside them, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/books__6445777.png",
+  "coverage": 0.175,
+  "edgeTouch": 0
+ },
+ "ribbon": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 4144745,
+  "prompt": "A wide red satin grand opening ribbon tied in a large bow with a pair of ceremonial golden scissors laid across it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/ribbon__4144745.png",
+  "coverage": 0.214,
+  "edgeTouch": 0
+ },
+ "laptop": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8068077,
+  "prompt": "A slim modern silver laptop open with a plain glowing blank blue screen, a spiral notebook, a pen and a cup of coffee beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/laptop__8068077.png",
+  "coverage": 0.306,
+  "edgeTouch": 0
+ },
+ "science": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2554813,
+  "prompt": "A brass and black laboratory microscope beside a glass conical flask of blue liquid, a test tube rack with coloured liquids and a small model of an atom, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/science__2554813.png",
+  "coverage": 0.196,
+  "edgeTouch": 0
+ },
+ "palette": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 6165216,
+  "prompt": "A wooden artist palette with bright dabs of oil paint, three paint brushes and a small blank canvas on a mini easel, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/palette__6165216.png",
+  "coverage": 0.132,
+  "edgeTouch": 0
+ },
+ "beachball": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 8509869,
+  "prompt": "A bright striped inflatable beach ball beside a pink flamingo pool float, a pair of sunglasses and a tropical drink with a paper umbrella, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/beachball__8509869.png",
+  "coverage": 0.321,
+  "edgeTouch": 0
+ },
+ "bbq": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7061532,
+  "prompt": "A small round black barbecue grill with skewers of grilled vegetables and paneer and corn on the cob cooking over glowing coals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/bbq__7061532.png",
+  "coverage": 0.182,
+  "edgeTouch": 0
+ },
+ "popcorn": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7529546,
+  "prompt": "A red and white striped box overflowing with popcorn beside a black film clapperboard and a reel of film, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/popcorn__7529546.png",
+  "coverage": 0.226,
+  "edgeTouch": 0
+ },
+ "mask": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5353449,
+  "prompt": "An ornate Venetian masquerade mask in gold and black with purple feathers and jewels on a gold handle, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/mask__5353449.png",
+  "coverage": 0.16,
+  "edgeTouch": 0
+ },
+ "sapling": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 2146843,
+  "prompt": "A young green tree sapling growing from a mound of rich soil in a small burlap sack, with a small garden trowel and a green watering can beside it, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/sapling__2146843.png",
+  "coverage": 0.185,
+  "edgeTouch": 0
+ },
+ "charity": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5465811,
+  "prompt": "A clear glass donation jar filled with coins with a red heart on its front, tied with a red ribbon, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/charity__5465811.png",
+  "coverage": 0.21,
+  "edgeTouch": 0
+ },
+ "ringemerald": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 5019821,
+  "prompt": "A pair of gold engagement rings, one set with a large green emerald, resting together on a small round emerald green velvet cushion with white rose petals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/ringemerald__5019821.png",
+  "coverage": 0.191,
+  "edgeTouch": 0
+ },
+ "ringsapphire": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 1455217,
+  "prompt": "A pair of white gold engagement rings, one set with a large blue sapphire, resting together on a small round navy blue velvet cushion with white rose petals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/ringsapphire__1455217.png",
+  "coverage": 0.15,
+  "edgeTouch": 0
+ },
+ "ringpearl": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 9255881,
+  "prompt": "A pair of gold engagement rings, one set with a lustrous white pearl, resting together on a small round ivory satin cushion with white pearls and rose petals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/ringpearl__9255881.png",
+  "coverage": 0.177,
+  "edgeTouch": 0
+ },
+ "ringrose": {
+  "model": "flux-2-klein-4b.safetensors",
+  "seed": 7070472,
+  "prompt": "A pair of rose gold engagement rings with a small pink diamond, resting together on a small round blush pink velvet cushion with pink rose petals, a single compact object centred in the frame, front three-quarter view, photorealistic premium product photography, soft even studio light, rich true colours, ultra fine detail, the whole object fully visible with a wide empty white margin on every side, not touching the edges of the image, no text, no letters, no numbers, no watermark, no logo, no people, no hands, no cast shadow, isolated on a plain pure white background",
+  "raw": "ai-generated/comfyui-raw/EVENT-ICONS/ringrose__7070472.png",
+  "coverage": 0.16,
+  "edgeTouch": 0
  }
 }

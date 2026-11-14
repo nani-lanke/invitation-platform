@@ -2513,7 +2513,8 @@
       body.push('<div class="site-hero__apex">');
       body.push('  <img class="site-hero__apex-img" src="' + up + 'images/invitation-assets/tamil-thirumanam/apex-murugan.png" alt="Murugan Vel" width="70" height="70">');
       body.push('</div>');
-    } else if (wdSpec) {
+    } else if (wdSpec && !(wdLa && wdLa.style === 'backdrop')) {
+      // Backdrop cards have no crest (the painted border is the decoration), as on the card.
       var wdMotif = up + 'images/wedding-motifs/' + wdSpec.slug + '.svg';
       // Birthday and the one-name occasions have no SVG motif: a missing crest is hidden.
       var wdNoMotif = wdSpec.occasion === 'birthday' || WD.isOneName(wdSpec) || !!(wdLa && wdLa.style === 'backdrop');
@@ -2650,6 +2651,7 @@
         : (data.photo
           // The host's main photo, framed, in place of the crest.
           ? '<img class="site-invite__photo" src="' + esc(data.photo) + '" alt="' + esc(brandText(state)) + '">'
+          : (wdLa && wdLa.style === 'backdrop') ? ''
           : '<img class="site-invite__crest" src="' + esc(wdLa ? wdLa.crest : up + 'images/wedding-motifs/' + wdSpec.slug + '.svg') + '" alt="" aria-hidden="true"' +
             (wdLa && wdLa.style === 'backdrop' ? ' onerror="this.style.display=\'none\'"'
               : wdLa ? ' onerror="this.onerror=null;this.src=\'' + esc(up + 'images/wedding-motifs/' + wdSpec.slug + '.svg') + '\'"' : '') + '>');

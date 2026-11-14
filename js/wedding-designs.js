@@ -1250,7 +1250,18 @@
   }
 
   /* ---- Markup ------------------------------------------------------------ */
+  /* Script capitals run together ("WITH JOY IN OUR HEARTS" is unreadable in
+     a calligraphy face), so an all-caps line shown in the flourish (script)
+     heading is set in sentence case instead. Mixed-case text is untouched. */
+  function readableScript(text) {
+    var s = String(text || '');
+    if (/[a-z]/.test(s) || !/[A-Z].*[A-Z]/.test(s)) return s;
+    s = s.toLowerCase().replace(/\bi\b/g, 'I');
+    return s.replace(/[a-z]/i, function (c) { return c.toUpperCase(); });
+  }
+
   function headingHtml(spec, text, icon, ctx) {
+    if (spec.heading === 'flourish') text = readableScript(text);
     var mark = '';
     if (spec.heading === 'rules' && icon) mark = '<span class="wd-heading__icon">' + ctx.icon(icon, 16) + '</span>';
     if (spec.heading === 'diamond') mark = '<span class="wd-heading__gem" aria-hidden="true"></span>';

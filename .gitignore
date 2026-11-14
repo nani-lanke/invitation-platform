@@ -31,3 +31,6 @@ redesign-100/integration/shots/
 
 # Original AI-generated source images (keep locally)
 ai-generated/comfyui-raw/
+
+# Editor settings
+.vscode/

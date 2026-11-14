@@ -20,3 +20,6 @@
 /.claude.zip
 /.vscode
 /.playwright-mcp
+
+# Local dev tooling (ai-background server) — not part of the site
+/tools

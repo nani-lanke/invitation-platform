@@ -967,6 +967,11 @@
           html.push(IH.countdown.markup(toDateTime(data.date, data.time), '', data.eventType));
         }
 
+        /* Site images by absolute address on a published page: the card page
+           sits two folders deep, where a bare 'images/…' path 404s. Empty in
+           the editor preview, where the bare path is right. */
+        var ap = (data && data.assetPrefix) || '';
+
         // 9. Venue , Full address and Google Maps URL
         if (data.venue || data.address) {
           var mapsUrl = getMapsUrl(data);
@@ -974,8 +979,8 @@
 
           html.push('<div class="invitation__venue-section">');
 
-          var venueImgSrc = data.venueImage || 'images/templates/venue-default.jpg';
-          html.push('<img class="invitation__venue-img" src="' + escapeHtml(venueImgSrc) + '" onerror="this.onerror=null; this.src=\'images/templates/wedding-day-mandap.svg\';" alt="Venue">');
+          var venueImgSrc = data.venueImage || ap + 'images/templates/venue-default.jpg';
+          html.push('<img class="invitation__venue-img" src="' + escapeHtml(venueImgSrc) + '" onerror="this.onerror=null; this.src=\'' + escapeHtml(ap) + 'images/templates/wedding-day-mandap.svg\';" alt="Venue">');
 
           html.push('<div class="invitation__venue-info">' +
             (data.venue ? '<div class="invitation__venue-name"><strong>' + escapeHtml(data.venue) + '</strong></div>' : '') +
@@ -989,10 +994,10 @@
 
         // Wedding celebrations
         var events = [
-          { enabled: data.haldiEnabled, title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: 'images/ceremony-icons/haldi.png', fallback: 'images/templates/haldi-ceremony.svg' },
-          { enabled: data.mehndiEnabled, title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: 'images/ceremony-icons/mehndi.png', fallback: 'images/templates/mehendi-ceremony.svg' },
-          { enabled: data.ceremonyEnabled, title: 'WEDDING', date: data.ceremonyDate, time: data.ceremonyTime, image: 'images/ceremony-icons/wedding.png', fallback: 'images/templates/wedding-day-mandap.svg' },
-          { enabled: data.receptionEnabled, title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: 'images/ceremony-icons/reception.png', fallback: 'images/templates/reception-evening.svg' }
+          { enabled: data.haldiEnabled, title: 'HALDI', date: data.haldiDate, time: data.haldiTime, image: ap + 'images/ceremony-icons/haldi.png', fallback: ap + 'images/templates/haldi-ceremony.svg' },
+          { enabled: data.mehndiEnabled, title: 'MEHNDI', date: data.mehndiDate, time: data.mehndiTime, image: ap + 'images/ceremony-icons/mehndi.png', fallback: ap + 'images/templates/mehendi-ceremony.svg' },
+          { enabled: data.ceremonyEnabled, title: 'WEDDING', date: data.ceremonyDate, time: data.ceremonyTime, image: ap + 'images/ceremony-icons/wedding.png', fallback: ap + 'images/templates/wedding-day-mandap.svg' },
+          { enabled: data.receptionEnabled, title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: ap + 'images/ceremony-icons/reception.png', fallback: ap + 'images/templates/reception-evening.svg' }
         ].filter(function(e) { return e.enabled; });
         /* An engagement has a ring ceremony and a meal, not wedding rituals. */
         var isEngagement = type === 'engagement';
@@ -1184,7 +1189,9 @@
           '<p class="invitation__blessings-msg wd-closing__msg">We can&rsquo;t wait to celebrate with you.</p></div></div>');
       } else if (wdOn && WD.isOneName(WD.spec(tplSlug))) {
         // Baby shower, naming ceremony, housewarming, anniversary: the occasion's own closing words.
-        var wdClose = WD.OCCASIONS[type].closing;
+        /* Keyed by the design's own occasion, not the event type: a one-name
+           design opened with another event type (?event=… link) must not throw. */
+        var wdClose = WD.OCCASIONS[WD.spec(tplSlug).occasion].closing;
         html.push('<div class="invitation__blessings wd-bday-closing"><div class="wd-closing"><span class="wd-closing__heart" aria-hidden="true">' + IH.icon('heart', 16) + '</span>' +
           '<p class="invitation__blessings-subheading wd-closing__title">' + escapeHtml(wdClose[0]) + '</p>' +
           '<p class="invitation__blessings-msg wd-closing__msg">' + escapeHtml(wdClose[1]) + '</p></div></div>');

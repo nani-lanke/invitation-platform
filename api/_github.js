@@ -185,6 +185,47 @@ async function exists(repoPath) {
   return true;
 }
 
+/* One subtree per top-level folder (on top of that folder's current tree),
+   then a root tree that only swaps those folders in. Retried once, since
+   the timeout is usually momentary on GitHub's side. */
+async function treeIncremental(cfg, rootSha, entries) {
+  const root = await api(cfg, '/git/trees/' + rootSha);
+  const groups = {};
+  const top = [];
+
+  entries.forEach(function (e) {
+    const cut = e.path.indexOf('/');
+    if (cut < 0) { top.push(e); return; }
+    const dir = e.path.slice(0, cut);
+    (groups[dir] = groups[dir] || []).push(Object.assign({}, e, { path: e.path.slice(cut + 1) }));
+  });
+
+  for (const dir of Object.keys(groups)) {
+    const existing = (root.tree || []).filter(function (t) {
+      return t.path === dir && t.type === 'tree';
+    })[0];
+    const body = { tree: groups[dir] };
+    if (existing) body.base_tree = existing.sha;
+
+    let sub;
+    for (let attempt = 1; ; attempt++) {
+      try {
+        sub = await api(cfg, '/git/trees', { method: 'POST', body: JSON.stringify(body) });
+        break;
+      } catch (err) {
+        if (attempt >= 2) throw err;
+        await new Promise(function (r) { setTimeout(r, 1500); });
+      }
+    }
+    top.push({ path: dir, mode: '040000', type: 'tree', sha: sub.sha });
+  }
+
+  return api(cfg, '/git/trees', {
+    method: 'POST',
+    body: JSON.stringify({ base_tree: rootSha, tree: top })
+  });
+}
+
 /* files: [{ path, content }] where content is base64 of the raw bytes,
    or [{ path, remove: true }] to delete that path in the same commit.
    The blobs go up together, so a page with a gallery and a track does
@@ -208,10 +249,21 @@ async function putFiles(files, message) {
     });
   }));
 
-  const tree = await api(cfg, '/git/trees', {
-    method: 'POST',
-    body: JSON.stringify({ base_tree: head.tree.sha, tree: blobs })
-  });
+  let tree;
+  try {
+    tree = await api(cfg, '/git/trees', {
+      method: 'POST',
+      body: JSON.stringify({ base_tree: head.tree.sha, tree: blobs })
+    });
+  } catch (err) {
+    /* On a large repository GitHub can give up on a deep-path tree
+       ("422 ... your request timed out ... build the tree incrementally").
+       The blobs are already uploaded, so rebuild only the touched top-level
+       folders and swap them into the root: each request is small. */
+    if (!/GitHub (422|5\d\d) on \/git\/trees/.test(err.message)) throw err;
+    console.warn('[GITHUB] tree timed out, building incrementally:', err.message.slice(0, 120));
+    tree = await treeIncremental(cfg, head.tree.sha, blobs);
+  }
 
   const commit = await api(cfg, '/git/commits', {
     method: 'POST',
