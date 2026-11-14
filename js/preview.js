@@ -335,31 +335,31 @@
     'baby-shower': { venue: 'Shower venue', title: 'A LITTLE ONE IS ON THE WAY', subtitle: 'BABY SHOWER\nPlease join us for a baby shower in honour of', message: 'With love and blessings',
       programme: 'Shower programme', items: [['Welcome & Games', 'games'], ['Godh Bharai & Blessings', 'diya'], ['Lunch / Dinner', 'meal'], ['Gifts & Wishes', 'gift']] },
     'naming-ceremony': { venue: 'Ceremony venue', title: 'WITH THE BLESSINGS OF GOD', subtitle: 'NAMING CEREMONY\nPlease join us for the naming ceremony of', message: 'Bless our little one',
-      programme: 'Ceremony programme', items: [['Puja & Rituals', 'diya'], ['Naming Ceremony', 'star'], ['Blessings & Photos', 'camera'], ['Lunch', 'meal']] },
+      programme: 'Ceremony programme', items: [['Puja & Rituals', 'diya'], ['Naming Ceremony', 'cradle'], ['Blessings & Photos', 'camera'], ['Lunch', 'meal']] },
     'house-warming': { venue: 'New home / Venue', title: 'GRIHA PRAVESH', subtitle: 'A NEW BEGINNING\nPlease join us as we step into our new home', message: 'Bless our new home',
       programme: 'Housewarming programme', items: [['Griha Pravesh Puja', 'diya'], ['Home Tour', 'home'], ['Lunch / Dinner', 'meal'], ['Get-together', 'music']] },
     anniversary: { venue: 'Celebration venue', title: 'CELEBRATING LOVE', subtitle: 'YEARS OF TOGETHERNESS\nPlease join us to celebrate the anniversary of', message: 'A journey of love',
       programme: 'Anniversary programme', items: [['Welcome Drinks', 'reception'], ['Cake Cutting', 'cake'], ['Dinner', 'meal'], ['Music & Dance', 'music']] },
     graduation: { venue: 'Ceremony venue', title: 'A PROUD MILESTONE', subtitle: 'GRADUATION\nPlease join us to celebrate the graduation of', message: 'Hard work, rewarded',
-      programme: 'Graduation programme', items: [['Graduation Ceremony', 'award'], ['Photo Session', 'camera'], ['Lunch / Dinner', 'meal'], ['Celebration Party', 'music']] },
+      programme: 'Graduation programme', items: [['Graduation Ceremony', 'gradcap'], ['Photo Session', 'camera'], ['Lunch / Dinner', 'meal'], ['Celebration Party', 'music']] },
     retirement: { venue: 'Party venue', title: 'A LIFE WELL SERVED', subtitle: 'HAPPY RETIREMENT\nPlease join us to honour the retirement of', message: 'With gratitude',
-      programme: 'Retirement programme', items: [['Welcome', 'reception'], ['Speeches & Tributes', 'mic'], ['Lunch / Dinner', 'meal'], ['Memories & Photos', 'camera']] },
+      programme: 'Retirement programme', items: [['Welcome', 'bouquet'], ['Speeches & Tributes', 'mic'], ['Lunch / Dinner', 'meal'], ['Memories & Photos', 'camera']] },
     farewell: { venue: 'Farewell venue', title: 'A FOND FAREWELL', subtitle: 'WITH BEST WISHES\nPlease join us to bid farewell to', message: 'Thank you for the memories',
-      programme: 'Farewell programme', items: [['Welcome', 'reception'], ['Speeches & Memories', 'mic'], ['Lunch / Dinner', 'meal'], ['Send-off & Gifts', 'gift']] },
+      programme: 'Farewell programme', items: [['Welcome', 'bouquet'], ['Speeches & Memories', 'mic'], ['Lunch / Dinner', 'meal'], ['Send-off & Gifts', 'gift']] },
     corporate: { venue: 'Event venue', title: 'YOU ARE INVITED', subtitle: 'CORPORATE EVENT\nWe are pleased to invite you to', message: 'About the event',
       programme: 'Event agenda', items: [['Registration', 'badge'], ['Keynote & Sessions', 'mic'], ['Networking', 'reception'], ['Lunch / Dinner', 'meal']] },
     festival: { venue: 'Celebration venue', title: 'FESTIVE GREETINGS', subtitle: 'JOIN THE CELEBRATIONS\nPlease join us to celebrate', message: 'Festive wishes',
-      programme: 'Festival programme', items: [['Puja & Prayers', 'diya'], ['Cultural Programme', 'music'], ['Lunch / Dinner', 'meal'], ['Fireworks & Fun', 'star']] },
+      programme: 'Festival programme', items: [['Puja & Prayers', 'diya'], ['Cultural Programme', 'music'], ['Lunch / Dinner', 'meal'], ['Fireworks & Fun', 'crackers']] },
     'school-events': { venue: 'School / Event venue', title: 'YOU ARE INVITED', subtitle: 'SCHOOL EVENT\nWe cordially invite you to', message: 'About the event',
       programme: 'Event programme', items: [['Inauguration', 'diya'], ['Cultural Programme', 'music'], ['Prize Distribution', 'award'], ['Vote of Thanks', 'mic']] },
     'college-events': { venue: 'College / Event venue', title: 'YOU ARE INVITED', subtitle: 'COLLEGE EVENT\nWe cordially invite you to', message: 'About the event',
-      programme: 'Event programme', items: [['Inauguration', 'diya'], ['Events & Competitions', 'star'], ['Prize Distribution', 'award'], ['DJ Night', 'music']] },
+      programme: 'Event programme', items: [['Inauguration', 'diya'], ['Events & Competitions', 'medal'], ['Prize Distribution', 'award'], ['DJ Night', 'dj']] },
     party: { venue: 'Party venue', title: 'LET’S PARTY', subtitle: 'GOOD TIMES AHEAD\nPlease join us for', message: 'Join the fun',
       programme: 'Party programme', items: [['Welcome Drinks', 'reception'], ['Games & Fun', 'games'], ['Dinner', 'meal'], ['Music & Dance', 'music']] },
     'community-events': { venue: 'Event venue', title: 'COMMUNITY GATHERING', subtitle: 'ALL ARE WELCOME\nWe warmly invite you to', message: 'About the event',
-      programme: 'Event programme', items: [['Welcome', 'reception'], ['Meeting & Discussion', 'mic'], ['Cultural Programme', 'music'], ['Lunch / Dinner', 'meal']] },
+      programme: 'Event programme', items: [['Welcome', 'bouquet'], ['Meeting & Discussion', 'mic'], ['Cultural Programme', 'music'], ['Lunch / Dinner', 'meal']] },
     other: { venue: 'Event venue', title: 'YOU ARE INVITED', subtitle: 'JOIN US\nPlease join us for', message: 'About the event',
-      programme: 'Event programme', items: [['Welcome', 'reception'], ['Main Event', 'star'], ['Lunch / Dinner', 'meal'], ['Celebrations', 'music']] }
+      programme: 'Event programme', items: [['Welcome', 'bouquet'], ['Main Event', 'star'], ['Lunch / Dinner', 'meal'], ['Celebrations', 'music']] }
   };
   var PROGRAMME_SLOTS = ['haldi', 'mehndi', 'ceremony', 'reception'];
 
@@ -693,7 +693,13 @@
         var ed = formatDate(e.date);
         var when = ed.full ? (ed.weekday + ', ' + ed.day + ' ' + ed.month.slice(0, 3) + ' ' + ed.year) : '';
         html.push('<div class="tp-event">' +
-          teluguImg(data, e.icon, 'tp-event__icon') +
+          (function () {
+            /* The regional icon set has no picture for a reception, a ring ceremony or a meal:
+               those come from images/event-icons so the picture matches the title. */
+            var WDa = IH.weddingDesigns, art = WDa && WDa.eventArt ? WDa.eventArt(e.title, '', data.template) : '';
+            return art ? '<img src="' + escapeHtml(WDa.eventIconSrc(art, (data && data.assetPrefix) || '')) + '" class="tp-event__icon" alt="" aria-hidden="true" onerror="this.style.display=\'none\'">'
+              : teluguImg(data, e.icon, 'tp-event__icon');
+          })() +
           '<strong class="tp-event__title">' + escapeHtml(e.title) + '</strong>' +
           (when ? '<span class="tp-event__date">' + escapeHtml(when) + '</span>' : '') +
           (e.time ? '<span class="tp-event__time">' + escapeHtml(formatTime(e.time)) + '</span>' : '') +
@@ -1138,7 +1144,7 @@
           occEvents.forEach(function (e) {
             var ed = formatDate(e.date);
             html.push('<div class="invitation__event-card">' +
-              (iconSrc ? '<img class="invitation__event-img" src="' + iconSrc(e.icon) + '" alt="" aria-hidden="true" loading="lazy">' : '') +
+              (iconSrc ? '<img class="invitation__event-img" src="' + iconSrc(IH.weddingDesigns.eventArt(e.title, e.icon, data.template)) + '" alt="" aria-hidden="true" loading="lazy">' : '') +
               '<strong class="invitation__event-title">' + escapeHtml(e.title) + '</strong>' +
               '<span class="invitation__event-weekday">' + escapeHtml(ed.weekday || '') + '</span>' +
               '<span class="invitation__event-date">' + escapeHtml(ed.full || '') + '</span>' +
