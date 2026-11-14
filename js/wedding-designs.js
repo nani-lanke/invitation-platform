@@ -1072,6 +1072,162 @@
   EVENT_ICONS.home = '<path d="M3 11 L12 3 L21 11"/><path d="M5 9.5 V21 H19 V9.5"/><path d="M10 21 V15 H14 V21"/>';
   EVENT_ICONS.badge = '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4 V2.5 H15 V4"/><circle cx="12" cy="11" r="2.5"/><path d="M8 17.5 C8.5 15.5 10 14.5 12 14.5 C14 14.5 15.5 15.5 16 17.5"/>';
   EVENT_ICONS.star = '<path d="M12 3 L14.6 8.6 L20.6 9.2 L16 13.3 L17.4 19.3 L12 16.1 L6.6 19.3 L8 13.3 L3.4 9.2 L9.4 8.6 Z"/>';
+  // Kinds added so the picture says what the title says (scripts/generate-event-icons.js).
+  /* The picture follows the programme TITLE, not the slot it was typed into (an
+     engagement lunch is a meal, reception cocktails are glasses, not rings), and
+     for a wedding it follows the DESIGN's tradition: a Tamil card shows a thali,
+     a nikah card a ring tray, a church wedding bells. Kind -> the designs using it. */
+  var CEREMONY_ART = {
+    thali: 'tamil-thirumanam gopuram-vows kanchipuram-silk tanjore-grandeur chettinad-heritage jasmine-temple-wedding',
+    nilavilakku: 'kerala-mangalyam kasavu-gold-border',
+    chooda: 'punjabi-phulkari anand-karaj anand-karaj-ardas',
+    topor: 'bengali-alpona shankha-pola bangladeshi-jamdani',
+    chori: 'gujarati-toran bandhani-bloom kutch-mirrorwork',
+    mundavalya: 'marathi-paithani mundavalya-pearls',
+    safa: 'rajasthani-jharokha haveli-jaali jewel-of-jaipur udaipur-romance royal-shehnai royal-durbar maharaja-palace',
+    horse: 'baraat-procession',
+    varmala: 'jaimala-exchange',
+    doli: 'vidaai-farewell',
+    nikah: 'nikah-ceremony nikah-nama awadhi-nawab lucknawi-chikankari pakistani-truck-art persian-boteh moroccan-zellige',
+    bells: 'christian-wedding goan-azulejo',
+    lotus: 'buddhist-union sri-lankan-poruwa thai-lai-kranok vietnamese-lotus lotus-garden',
+    sake: 'japanese-mizuhiki',
+    ducks: 'korean-dancheong',
+    tea: 'chinese-double-joy',
+    wedding: 'parsi-lagan interfaith-union civil-ceremony filipino-sampaguita indonesian-batik italian-rinascimento french-fleur-de-lis greek-meander spanish-mudejar british-regency nigerian-adire ghanaian-kente mexican-papel-picado brazilian-tropical caribbean-hibiscus ethiopian-habesha european-escape bride-and-bride groom-and-groom black-tie-romance deco-gatsby'
+  };
+  /* Reception: a cartoon couple dressed for the design (never photo-real people). */
+  var RECEPTION_ART = {
+    'couple-south': 'tamil-thirumanam kalasam-blessing gopuram-vows telugu-pelli talambralu-pearls kerala-mangalyam kasavu-gold-border mysore-madhuve kanchipuram-silk tanjore-grandeur chettinad-heritage andhra-kalamkari telangana-bathukamma coorg-kodava jasmine-temple-wedding sri-lankan-poruwa',
+    'couple-brides': 'bride-and-bride',
+    'couple-grooms': 'groom-and-groom',
+    couple: 'christian-wedding goan-azulejo parsi-lagan interfaith-union civil-ceremony japanese-mizuhiki korean-dancheong chinese-double-joy filipino-sampaguita thai-lai-kranok indonesian-batik vietnamese-lotus italian-rinascimento french-fleur-de-lis greek-meander spanish-mudejar british-regency nigerian-adire ghanaian-kente mexican-papel-picado brazilian-tropical caribbean-hibiscus ethiopian-habesha european-escape black-tie-romance deco-gatsby'
+  };
+  function artBySlug(table) {
+    var map = {};
+    Object.keys(table).forEach(function (kind) {
+      EVENT_ICONS[kind] = EVENT_ICONS[kind] || EVENT_ICONS.star;
+      table[kind].split(' ').forEach(function (slug) { map[slug] = kind; });
+    });
+    return map;
+  }
+  ['mandap', 'couple-indian', 'roka', 'tilak', 'stage', 'cradle', 'gradcap', 'crackers', 'dj', 'bouquet', 'medal'].forEach(function (k) { EVENT_ICONS[k] = EVENT_ICONS.star; });
+  var CEREMONY_BY_SLUG = artBySlug(CEREMONY_ART), RECEPTION_BY_SLUG = artBySlug(RECEPTION_ART);
+  var TITLE_ART = { 'ring ceremony': 'wedding', 'roka ceremony': 'roka', 'tilak ceremony': 'tilak', 'engagement lunch': 'meal', 'engagement dinner': 'meal', 'welcome & cocktails': 'reception', 'dinner & dance': 'meal' };
+  /* Every other category: the picture also follows the DESIGN. Each row is
+     [picture, the slot's usual picture, the designs that swap it]; '@category'
+     swaps it for a whole category. A Holi card shows colour powders where a
+     Diwali card shows fireworks, a space birthday a rocket, a pool party a beach ball. */
+  var ART_SWAP = [
+    ['modak', 'diya', 'ganpati-bappa ganesh-aarti'],
+    ['matki', 'diya', 'krishna-janmashtami'],
+    ['rakhi', 'diya', 'raksha-bandhan rakhi-festoon'],
+    ['pongalpot', 'diya', 'pongal-harvest thai-pongal pongal-sun makar-sankranti'],
+    ['pookalam', 'diya', 'onam-harvest onam-pookalam onam-sadhya onam-waves vishu'],
+    ['sadhya', 'meal', 'onam-harvest onam-pookalam onam-sadhya onam-waves vishu pongal-harvest thai-pongal pongal-sun ugadi'],
+    ['lantern', 'diya', 'eid-mubarak eid-crescent eid-lantern eid-al-adha ramadan-kareem ramadan-lantern babys-first-eid golden-eid-arch'],
+    ['candles', 'diya', 'christmas-joy star-of-bethlehem christmas-pine christmas-bells candy-cane-christmas babys-first-christmas christmas-eve watercolor-christmas orthodox-christmas boxing-day easter-joy easter-flowers orthodox-easter good-friday passover-seder rosh-hashanah yom-kippur purim nowruz nowruz-bloom new-year-sparkle new-year-clock valentine-love valentine-roses st-patricks-day halloween-pumpkin halloween-party thanksgiving-feast thanksgiving-harvest carnival-rio mardi-gras oktoberfest cinco-de-mayo bastille-day australia-day canada-day mothers-day fathers-day grandparents-day womens-day earth-day environment-day friendship-day world-music-day'],
+    ['menorah', 'diya', 'hanukkah-menorah hanukkah-night'],
+    ['redlantern', 'diya', 'lunar-new-year spring-festival'],
+    ['lotus', 'diya', 'buddha-purnima vesak-day mahavir-jayanti golden-lotus-naming'],
+    ['gulal', 'crackers', 'holi-colours holi-rang gulal-splash holi-hearts babys-first-holi'],
+    ['dandiya', 'crackers', 'navratri-nights garba-nights navratri-peacock navratri-mandala'],
+    ['kite', 'crackers', 'makar-sankranti kite-sky basant-panchami'],
+    ['bonfire', 'crackers', 'lohri-bonfire baisakhi'],
+    ['xmastree', 'crackers', 'christmas-joy star-of-bethlehem christmas-pine christmas-bells candy-cane-christmas babys-first-christmas christmas-eve watercolor-christmas orthodox-christmas boxing-day'],
+    ['eastereggs', 'crackers', 'easter-joy easter-flowers orthodox-easter'],
+    ['hearts', 'crackers', 'valentine-love valentine-roses'],
+    ['pumpkin', 'crackers', 'halloween-pumpkin halloween-party thanksgiving-feast thanksgiving-harvest'],
+    ['bouquet', 'crackers', 'mothers-day womens-day'],
+    ['gift', 'crackers', 'fathers-day grandparents-day friendship-day raksha-bandhan rakhi-festoon'],
+    ['games', 'crackers', 'childrens-day kids-festival kids-carnival'],
+    ['sapling', 'crackers', 'earth-day environment-day'],
+    ['toys', 'games', 'kids-birthday first-birthday teddy-bear-birthday cute-animal-party toyland-celebration farmyard-birthday little-explorer little-artist rainbow-birthday watercolor-balloons-birthday under-the-sea-birthday'],
+    ['rocket', 'games', 'space-birthday space-adventure-birthday'],
+    ['dino', 'games', 'dinosaur-adventure jungle-party safari-birthday'],
+    ['unicorn', 'games', 'princess-birthday fairy-tale-birthday magical-unicorn'],
+    ['football', 'games', 'sports-birthday racing-birthday superhero-birthday pirate-adventure adventure-birthday'],
+    ['balloons', 'games', 'floral-elegance rose-garden butterfly-birthday blush-celebration pink-champagne lavender-dreams pearl-birthday elegant-bloom luxury-rose-gold garden-soiree classic-gentleman black-and-gold-birthday royal-navy-birthday midnight-gentleman vintage-gentleman modern-masculine golden-birthday silver-celebration champagne-glow minimal-birthday modern-luxury black-velvet emerald-elegance sunset-celebration tropical-birthday rustic-birthday boho-birthday botanical-birthday celestial-birthday midnight-stars grand-birthday sweet-16 18th-birthday 21st-birthday 25th-birthday 30th-birthday 40th-birthday 50th-birthday 60th-birthday 70th-birthday 80th-birthday golden-sparkle-birthday floral-garden-birthday'],
+    ['dj', 'music', 'neon-nights neon-party music-night disco-dreams retro-party street-style-birthday trendy-birthday birthday-vibes purple-party social-celebration starry-birthday'],
+    ['cakegold', 'cake', 'golden-birthday 50th-birthday golden-sparkle-birthday black-and-gold-birthday'],
+    ['cakesilver', 'cake', 'silver-celebration 25th-birthday'],
+    ['cakerose', 'cake', 'rose-garden blush-celebration pink-champagne luxury-rose-gold floral-elegance'],
+    ['babygift', 'gift', '@baby-shower'],
+    ['babyblue', 'gift', 'little-prince blue-dream royal-heir'],
+    ['babypink', 'gift', 'little-princess pink-petals blush-blooms-shower butterfly-kisses'],
+    ['toys', 'games', 'teddys-welcome teddy-garden-shower elephant-parade little-lamb bumble-baby'],
+    ['babymoon', 'games', 'twinkle-twinkle-little-one little-star minimal-moon cloud-nine watercolor-clouds-shower baby-dreams'],
+    ['babymoon', 'cradle', 'moonlit-blessing starlight-naming starry-moon-naming our-precious-little-star aurora-naming'],
+    ['toran', 'home', 'shubh-griha-pravesh vastu-harmony golden-toran-griha kolam-welcome-housewarming home-blessing new-home-new-blessings'],
+    ['keys', 'home', 'keys-to-happiness open-doors golden-threshold sage-door-housewarming new-beginnings fresh-beginning'],
+    ['villa', 'home', 'villa-dreams royal-residence gold-and-ivory champagne-housewarming mediterranean-home city-nest modern-nest'],
+    ['cottage', 'home', 'rustic-farmhouse garden-housewarming blooms-and-bricks boho-home botanical-welcome tropical-hideaway watercolor-home-garden nordic-nest'],
+    ['cakesilver', 'cake', 'silver-jubilee silver-moonlight-anniversary pearl-anniversary pearl-lace-anniversary diamond-anniversary'],
+    ['cakegold', 'cake', 'golden-jubilee golden-love golden-vines-anniversary royal-anniversary luxury-anniversary'],
+    ['cakerose', 'cake', 'ruby-anniversary rose-anniversary watercolor-roses-anniversary peony-love-anniversary floral-anniversary romantic-anniversary'],
+    ['diploma', 'gradcap', 'diploma-day maroon-scroll-graduation degree-and-dreams commencement-ceremony navy-gold-convocation'],
+    ['medal', 'gradcap', 'honour-roll honors-and-achievement class-valedictorian academic-achievement watercolor-laurel-graduation'],
+    ['dj', 'music', 'graduation-party confetti-grad-party graduation-gala graduation-celebration'],
+    ['brunch', 'meal', 'graduation-brunch retirement-brunch business-breakfast brunch-party tea-party lunch-party wedding-brunch'],
+    ['reception', 'bouquet', 'cheers-to-retirement retirement-party retirement-celebration cheers-to-new-beginnings a-toast-to-your-next-adventure golden-toast-farewell'],
+    ['suitcase', 'gift', 'bon-voyage safe-travels new-adventures-await new-journey-begins watercolor-paper-planes starry-road-farewell a-toast-to-your-next-adventure see-you-on-the-other-side'],
+    ['books', 'gift', 'goodbye-teacher farewell-classmates farewell-seniors graduation-goodbye'],
+    ['award', 'mic', 'corporate-awards-night employee-appreciation client-appreciation'],
+    ['ribbon', 'mic', 'office-opening new-branch-opening grand-opening product-launch'],
+    ['laptop', 'mic', 'business-workshop professional-seminar'],
+    ['medal', 'award', 'school-sports-day sports-pennant-school'],
+    ['football', 'music', 'school-sports-day sports-pennant-school community-sports-day'],
+    ['science', 'music', 'school-science-exhibition'],
+    ['palette', 'music', 'school-art-exhibition watercolor-crayons-school'],
+    ['gradcap', 'award', 'school-graduation-ceremony school-graduation-party'],
+    ['books', 'mic', 'school-teachers-day parent-teacher-meeting chalkboard-school-event school-open-house school-orientation-day'],
+    ['laptop', 'medal', 'tech-symposium college-tech-fest hackathon circuit-tech-college'],
+    ['science', 'medal', 'science-exhibition'],
+    ['palette', 'medal', 'college-art-exhibition'],
+    ['football', 'medal', 'college-sports-day inter-college-sports-meet'],
+    ['gradcap', 'medal', 'graduation-ceremony convocation-ceremony college-graduation-party'],
+    ['mic', 'medal', 'seminar guest-lecture workshop college-debate-competition quiz-competition'],
+    ['badge', 'medal', 'career-fair placement-drive orientation-day freshers-orientation alumni-meet alumni-reunion'],
+    ['music', 'medal', 'music-festival college-dance-night talent-show culturals-night cultural-fest'],
+    ['beachball', 'games', 'pool-party beach-party tropical-fiesta-party'],
+    ['bbq', 'meal', 'bbq-party picnic-party community-picnic neighborhood-bbq picnic-day-community'],
+    ['mic', 'music', 'karaoke-party'],
+    ['dj', 'music', 'dance-party disco-party retro-bash neon-bash disco-night-party music-party rooftop-night'],
+    ['popcorn', 'games', 'movie-night'],
+    ['xmastree', 'games', 'christmas-party holiday-party'],
+    ['pumpkin', 'games', 'halloween-bash'],
+    ['toys', 'games', 'kids-party pajama-party'],
+    ['mask', 'games', 'masquerade-party'],
+    ['balloons', 'games', 'birthday-party surprise-party celebration-party anniversary-party watercolor-confetti-party'],
+    ['gradcap', 'games', 'graduation-bash'],
+    ['sapling', 'mic', 'tree-planting-day community-clean-up green-earth-community'],
+    ['charity', 'mic', 'charity-fundraiser charity-walk charity-hearts-community community-volunteer-day'],
+    ['dj', 'meal', 'after-party midnight-soiree'],
+    ['ringemerald', 'wedding', 'emerald-engagement emerald-gold-engagement botanical-engagement garden-engagement'],
+    ['ringsapphire', 'wedding', 'sapphire-engagement moonlight-engagement starry-engagement celestial-engagement starlit-velvet-engagement'],
+    ['ringpearl', 'wedding', 'pearl-engagement minimal-engagement classic-engagement'],
+    ['ringrose', 'wedding', 'rose-gold-engagement blush-engagement romantic-engagement floral-engagement lavender-mist-engagement watercolor-promise-engagement']
+  ];
+  var SWAP_BY_SLUG = {};
+  ART_SWAP.forEach(function (r) {
+    EVENT_ICONS[r[0]] = EVENT_ICONS[r[0]] || EVENT_ICONS.star;
+    r[2].split(' ').forEach(function (slug) { (SWAP_BY_SLUG[slug] = SWAP_BY_SLUG[slug] || {})[r[1]] = r[0]; });
+  });
+  function swapArt(kind, slug) {
+    var own = SWAP_BY_SLUG[slug];
+    if (own && own[kind]) return own[kind];
+    var tpl = IH.data && IH.data.getTemplate ? IH.data.getTemplate(slug) : null;
+    var cat = tpl && SWAP_BY_SLUG['@' + tpl.category];
+    return (cat && cat[kind]) || kind;
+  }
+  /* slug: the card's design. Returns the EVENT_ICONS kind to draw ('' = keep the caller's own picture). */
+  function eventArt(title, kind, slug) {
+    var t = String(title || '').toLowerCase().trim();
+    if (t === 'wedding ceremony' || t === 'wedding') return CEREMONY_BY_SLUG[slug] || 'mandap';
+    if (t === 'reception') return RECEPTION_BY_SLUG[slug] || 'couple-indian';
+    var k = TITLE_ART[t] || kind || '';
+    return k ? swapArt(k, slug) : '';
+  }
   var BIRTHDAY_EVENTS = [
     { on: 'haldiEnabled', date: 'haldiDate', time: 'haldiTime', title: 'Welcome & Games', icon: 'games' },
     { on: 'mehndiEnabled', date: 'mehndiDate', time: 'mehndiTime', title: 'Cake Cutting', icon: 'cake' },
@@ -1317,7 +1473,7 @@
       html.push('<div class="wd-events wd-events--' + spec.events + ' wd-events--n' + events.length + '">' + events.map(function (e) {
         var ed = ctx.formatDate(e.date);
         var when = ed.full ? ed.weekday + ', ' + ed.day + ' ' + ed.month.slice(0, 3) + ' ' + ed.year : '';
-        return '<div class="wd-event">' + eventIcon(e.icon, pre, esc(e.title)) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
+        return '<div class="wd-event">' + eventIcon(eventArt(e.title, e.icon, spec.slug), pre, esc(e.title)) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
           (when ? '<span class="wd-event__date">' + esc(when) + '</span>' : '') +
           (e.time ? '<span class="wd-event__time">' + esc(ctx.formatTime(e.time)) + '</span>' : '') + '</div>';
       }).join('') + '</div>');
@@ -1401,7 +1557,7 @@
       '<div class="wd-events wd-events--' + spec.events + ' wd-events--n' + events.length + '">' + events.map(function (e) {
         var ed = ctx.formatDate(e.date);
         var when = ed.full ? ed.weekday + ', ' + ed.day + ' ' + ed.month.slice(0, 3) + ' ' + ed.year : '';
-        return '<div class="wd-event">' + eventIcon(e.icon, pre, esc(e.title)) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
+        return '<div class="wd-event">' + eventIcon(eventArt(e.title, e.icon, spec.slug), pre, esc(e.title)) + '<strong class="wd-event__title">' + esc(e.title) + '</strong>' +
           (when ? '<span class="wd-event__date">' + esc(when) + '</span>' : '') +
           (e.time ? '<span class="wd-event__time">' + esc(ctx.formatTime(e.time)) + '</span>' : '') + '</div>';
       }).join('') + '</div>';
@@ -1571,6 +1727,7 @@
     isOneName: function (spec) { return !!(spec && OCCASIONS[spec.occasion] && OCCASIONS[spec.occasion].closing); },
     eventIconSvg: function (kind) { return EVENT_ICONS[kind] || ''; },
     eventIconSrc: eventIconSrc,
+    eventArt: eventArt,
     articleAttrs: articleAttrs,
     palette: palette,
     FONTS: FONTS
