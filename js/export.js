@@ -2335,6 +2335,15 @@
       { enabled: !!data.ceremonyEnabled, title: 'WEDDING', date: data.ceremonyDate || data.date, time: data.ceremonyTime || data.time, image: isTeluguPelli ? tpAsset('tp-icon-mangalsutra.png') : up + 'images/ceremony-icons/wedding.png', fallback: up + 'images/templates/wedding-day-mandap.svg' },
       { enabled: !!data.receptionEnabled, title: 'RECEPTION', date: data.receptionDate, time: data.receptionTime, image: isTeluguPelli ? tpAsset('tp-icon-kalasam.png') : up + 'images/ceremony-icons/reception.png', fallback: up + 'images/templates/reception-evening.svg' }
     ].filter(function (e) { return e.enabled; });
+    /* Cards on the design engine draw their programme with images/event-icons;
+       the host page must show the very same pictures as the card. */
+    if (!isTeluguPelli && WD && WD.eventIconSrc && WD.applies(state.template) &&
+        (data.eventType === 'wedding' || data.eventType === 'engagement' || data.eventType === 'reception')) {
+      celebrations.forEach(function (e) {
+        var src = WD.eventIconSrc(e.title.toLowerCase(), up);
+        e.image = src; e.fallback = src;
+      });
+    }
     /* Engagement cards on the design engine: engagement ceremony names. */
     var wdEngaged = data.eventType === 'engagement' || !!(wdSpec && wdSpec.occasion === 'engagement');
     var wdBirthday = !!(wdSpec && wdSpec.occasion === 'birthday');
@@ -2343,13 +2352,13 @@
     var occHost = wdBirthday || !!occCfg;
     if (occCfg) {
       celebrations = inv.occasionEvents(data).map(function (e) {
-        var src = WD.eventIconSrc(e.icon, up);
+        var src = WD.eventIconSrc(WD.eventArt(e.title, e.icon, state.template), up);
         return { enabled: true, title: e.title.toUpperCase(), date: e.date, time: e.time, image: src, fallback: src };
       });
     } else if (wdBirthday) {
       // Birthday: the party programme from Additional Details, drawn with the card's own icons.
       celebrations = WD.birthdayEvents(data).map(function (e) {
-        var src = WD.eventIconSrc(e.icon, up);
+        var src = WD.eventIconSrc(WD.eventArt(e.title, e.icon, state.template), up);
         return { enabled: true, title: e.title.toUpperCase(), date: e.date, time: e.time, image: src, fallback: src };
       });
     } else if (wdSpec && wdSpec.occasion === 'reception') {
@@ -2359,6 +2368,15 @@
       // Ring ceremony and the lunch/dinner only.
       celebrations = celebrations.filter(function (e) { return e.title === 'WEDDING' || e.title === 'RECEPTION'; });
       celebrations.forEach(function (e) { e.title = (e.title === 'WEDDING' ? ((wdSpec && wdSpec.mainEvent) || 'Ring Ceremony') :(/^(0\d|1[0-5]):/.test(e.time || '') ? 'Engagement Lunch' : 'Engagement Dinner')).toUpperCase(); });
+    }
+
+    /* The picture follows the title (WD.eventArt): renamed slots (ring ceremony,
+       engagement lunch, cocktails, dinner) and the regional reception. */
+    if (WD && WD.eventArt) {
+      celebrations.forEach(function (e) {
+        var art = WD.eventArt(e.title, '', state.template);
+        if (art) { e.image = WD.eventIconSrc(art, up); e.fallback = e.image; }
+      });
     }
 
     /* Family blessings check */
